@@ -6,7 +6,7 @@
 3. Last few pieces look odd and am just curious
 
 # Request Header
-''' html
+'''html
 POST /_private/browser/stats HTTP/1.1
 Host: api.github.com
 Accept: */*
