@@ -1,7 +1,8 @@
 # Github Upload Policy Overide
 This is the HTTP request I was sending and getting an error when trying to upload some files. Just a little fishy I think considering it was working before.
-a. What is it doing?
-b. What caused it to force a fail upload?
+
+* What is it doing?
+* What caused it to force a fail upload?
 
 
 ## Request Header
