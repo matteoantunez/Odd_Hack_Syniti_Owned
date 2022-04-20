@@ -1,0 +1,43 @@
+﻿2022-04-19 22:49:22, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 22:54:15, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 22:55:20, Error                        CDlpWimCapture::GatherSplitCaptureFiles(458): Result = 0x80070015[gle=0x00000015]
+2022-04-19 22:55:20, Error                        CDlpWimCapture::Gather(131): Result = 0x80070015[gle=0x00000015]
+2022-04-19 22:55:20, Error                        CDlpActionLayoutUsb::PrepareUsbMedia(2444): Result = 0x80070015[gle=0x00000015]
+2022-04-19 22:55:20, Error                        CDlpActionLayoutUsb::ExecuteRoutine(954): Result = 0x80070015[gle=0x00000015]
+2022-04-19 22:55:20, Error                        CDlpActionImpl<class CDlpErrorImpl<class CDlpObjectInternalImpl<class CUnknownImpl<class IDlpAction> > > >::Execute(493): Result = 0x80070015[gle=0x00000015]
+2022-04-19 22:55:20, Error                        CDlpTask::ExecuteAction(3300): Result = 0x80070015[gle=0x00000015]
+2022-04-19 22:55:41, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 22:55:43, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 22:57:27, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:03:15, Error                        CDlpWimCapture::WimSplitCaptureFile(573): Result = 0x80070022[gle=0x00000022]
+2022-04-19 23:03:15, Error                        CDlpWimCapture::Capture(207): Result = 0x80070022[gle=0x00000022]
+2022-04-19 23:03:15, Error                        CDlpActionLayoutUsb::CopyFileLists(1217): Result = 0x80070022[gle=0x000003ee]
+2022-04-19 23:03:15, Error                        CDlpActionLayoutUsb::PrepareUsbMedia(2699): Result = 0x80070022[gle=0x000003ee]
+2022-04-19 23:03:15, Error                        CDlpActionLayoutUsb::ExecuteRoutine(954): Result = 0x80070022
+2022-04-19 23:03:15, Error                        CDlpActionImpl<class CDlpErrorImpl<class CDlpObjectInternalImpl<class CUnknownImpl<class IDlpAction> > > >::Execute(493): Result = 0x80070022
+2022-04-19 23:03:15, Error                        CDlpTask::ExecuteAction(3300): Result = 0x80070022
+2022-04-19 23:03:15, Error                        CDlpTask::ExecuteActions(3454): Result = 0x80070022
+2022-04-19 23:03:15, Error                        CDlpTask::Execute(1631): Result = 0x80070022
+2022-04-19 23:03:15, Error                        CreateRecoveryUsb(727): Result = 0x80070022[gle=0x00000715]
+2022-04-19 23:03:15, Error                        UsbCreateThreadProc(573): Result = 0x80070022[gle=0x00000715]
+2022-04-19 23:03:24, Error                        RecoveryDrive.exe execution failed: 0x80070022
+2022-04-19 23:06:27, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:06:29, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:08:31, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:09:01, Error                        CDlpWimCapture::GatherSplitCaptureFiles(458): Result = 0x80070015[gle=0x00000015]
+2022-04-19 23:10:16, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:10:18, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:11:36, Error                        GetESDImageLocation(183): Result = 0x80070002
+2022-04-19 23:18:58, Error                        CDlpWimCapture::RefreshWimHandles(755): Result = 0x80070003[gle=0x00000003]
+2022-04-19 23:18:58, Error                        CDlpWimCapture::WimSplitCaptureFile(573): Result = 0x80070057[gle=0x00000057]
+2022-04-19 23:18:58, Error                        CDlpWimCapture::Capture(207): Result = 0x80070057[gle=0x00000057]
+2022-04-19 23:18:58, Error                        CDlpActionLayoutUsb::CopyFileLists(1217): Result = 0x80070057[gle=0x00000003]
+2022-04-19 23:18:58, Error                        CDlpActionLayoutUsb::PrepareUsbMedia(2699): Result = 0x80070057[gle=0x00000003]
+2022-04-19 23:18:58, Error                        CDlpActionLayoutUsb::ExecuteRoutine(954): Result = 0x80070057
+2022-04-19 23:18:58, Error                        CDlpActionImpl<class CDlpErrorImpl<class CDlpObjectInternalImpl<class CUnknownImpl<class IDlpAction> > > >::Execute(493): Result = 0x80070057
+2022-04-19 23:18:58, Error                        CDlpTask::ExecuteAction(3300): Result = 0x80070057
+2022-04-19 23:18:58, Error                        CDlpTask::ExecuteActions(3454): Result = 0x80070057
+2022-04-19 23:18:58, Error                        CDlpTask::Execute(1631): Result = 0x80070057
+2022-04-19 23:18:58, Error                        CreateRecoveryUsb(727): Result = 0x80070057[gle=0x00000715]
+2022-04-19 23:18:58, Error                        UsbCreateThreadProc(573): Result = 0x80070057[gle=0x00000715]
+2022-04-19 23:27:14, Error                        RecoveryDrive.exe execution failed: 0x80070057

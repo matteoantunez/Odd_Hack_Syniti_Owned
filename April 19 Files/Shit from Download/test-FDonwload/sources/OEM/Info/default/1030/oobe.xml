@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>           
+	<language>1030</language>      
+        <timezone>Romance Standard Time</timezone>
+	<location>61</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Support og beskyttelse</title><subtitle>Konfigurer din beskyttelses- og præferenceindstillinger.</subtitle><customerinfo><label>For at spare tid, når denne ASUS-konto oprettes, accepterer jeg at gemme min e-mailadresse på denne enhed og autoudfyld den i ASUS-medlemsformularen i appen MyASUS.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Tryk på “Næste”, for at konfigurere dine indstillinger</label><link>linkfile1.html</link></link1><link2><label>Privatlivserklæring fra ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

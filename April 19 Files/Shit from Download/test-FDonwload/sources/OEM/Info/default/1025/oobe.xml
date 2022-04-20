@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>1025</language>        
+        <timezone>Arab Standard Time</timezone>
+	<location>205</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>الدعم والحماية</title><subtitle>قم بتهيئة إعدادات الحماية والتفضيلات لديك.</subtitle><customerinfo><label>لتوفير الوقت أثناء عملية تسجيل عضويتي بـ ASUS؛ أوافق على حفظ عنوان بريدي الإلكتروني على هذا الجهاز وملء الخانة الخاصة به تلقائيًا أثناء تسجيل عضويتي بـ ASUS من خلال تطبيق MyASUS.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>اضغط على “Next” لضبط إعدادات التفضيلات لديك</label><link>linkfile1.html</link></link1><link2><label>سياسة الخصوصية الخاصة بـ ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

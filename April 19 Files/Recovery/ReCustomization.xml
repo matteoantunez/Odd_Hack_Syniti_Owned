@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- AddDiagnosticsToolToBootMenu.xml -->
+<BootShell>
+   <WinRETool locale="en-us">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnose your PC in Windows Recovery Environment (WinRE) to help you solve the problem.</Description>
+   </WinRETool>
+   <WinRETool locale="zh-tw">
+         <Name>MyASUS in WinRE</Name>
+         <Description>在 Windows Recovery Environment (WinRE) 下偵測您的電腦，以幫助您解決問題。</Description>
+   </WinRETool>
+   <WinRETool locale="zh-cn">
+         <Name>MyASUS in WinRE</Name>
+         <Description>在 Windows Recovery Environment (WinRE) 下检测您的电脑，以帮助您解决问题。</Description>
+   </WinRETool>
+   <WinRETool locale="ar-sa">
+         <Name>MyASUS in WinRE</Name>
+         <Description>شخِّص حالة حاسوبك الشخصي في بيئة إصلاح Windows (WinRE) لمساعدتك في حل المشكلة.</Description>
+   </WinRETool>
+   <WinRETool locale="cs-cz">
+         <Name>MyASUS in WinRE</Name>
+         <Description>K vyřešení problému proveďte diagnostiku počítače v prostředí Windows Recovery Environment (WinRE).</Description>
+   </WinRETool>
+   <WinRETool locale="nl-nl">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Stel een diagnose van uw pc in de Windows Herstelomgeving (WinRE) om u te helpen bij het oplossen van het probleem.</Description>
+   </WinRETool>
+   <WinRETool locale="fr-fr">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Effectuez un diagnostic de votre PC dans l'Environnement de récupération Windows (WinRE) pour vous aider à résoudre le problème.</Description>
+   </WinRETool>
+   <WinRETool locale="de-de">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Führen Sie Ihre PC-Diagnose in der Windows-Wiederherstellungsumgebung (WinRE) durch, um das Problem zu beheben.</Description>
+   </WinRETool>
+    <WinRETool locale="he-il">
+         <Name>MyASUS in WinRE</Name>
+         <Description>אבחן את המחשב שלך בסביבת Windows Recovery Environment (WinRE) כדי לפתור את הבעיה.</Description>
+   </WinRETool>
+    <WinRETool locale="hu-hu">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnosztizálja a számítógépét a Windows Recovery Environment (WinRE) segítségével, hogy segítsen a probléma megoldásában.</Description>
+   </WinRETool>
+     <WinRETool locale="id-id">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnosis PC Anda di Lingkungan Pemulihan Windows (WinRE) untuk membantu Anda mengatasi masalah.</Description>
+   </WinRETool>
+   <WinRETool locale="it-it">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Esegui una diagnosi del PC tramite Ambiente di ripristino Windows (WinRE) per provare a risolvere il problema.</Description>
+   </WinRETool>  
+   <WinRETool locale="ja-jp">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Windows 回復環境（WinRE）で PC を診断して、問題が解決できるか確認します。</Description>
+   </WinRETool>
+   <WinRETool locale="ko-kr">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Windows 복구 환경(WinRE)에서 PC를 진단하면 문제를 해결하는 데 도움이 됩니다.</Description>
+   </WinRETool>
+   <WinRETool locale="pl-pl">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Aby rozwiązać problem, zdiagnozuj komputer w środowisku odzyskiwania systemu Windows (WinRE).</Description>
+   </WinRETool>
+   <WinRETool locale="pt-br">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnostique o seu PC em Windows Recovery Environment (WinRE) para lhe ajudar a resolver o problema.</Description>
+   </WinRETool>
+   <WinRETool locale="pt-pt">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Faça o diagnóstico do seu PC no Ambiente de Recuperação do Windows (WinRE) para ajudar a resolver o problema.</Description>
+   </WinRETool>
+   <WinRETool locale="ro-ro">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnosticați calculatorul în Windows Recovery Environment (WinRE) pentru a vă ajuta în soluționarea problemelor.</Description>
+   </WinRETool>
+   <WinRETool locale="ru-ru">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Для решения проблемы выполните диагностику компьютера в среде восстановления Windows (WinRE).</Description>
+   </WinRETool>
+   <WinRETool locale="es-es">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnostique su PC en el Entorno de recuperación de Windows (WinRE) para ayudarle a resolver el problema.</Description>
+   </WinRETool>
+   <WinRETool locale="sv-se">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Diagnostisera din dator i Windows Recovery Environment (WinRE) för att få hjälp att lösa problemet.</Description>
+   </WinRETool>
+    <WinRETool locale="th-th">
+         <Name>MyASUS in WinRE</Name>
+         <Description>วินิจฉัยเครื่อง PC ของคุณใน Windows Recovery Environment (WinRE) เพื่อช่วยคุณแก้ปัญหา</Description>
+   </WinRETool>
+   <WinRETool locale="tr-tr">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Sorunu çözmenize yardımcı olması için PC'nizi Windows Kurtarma Ortamında (WinRE) tanılayın.</Description>
+   </WinRETool>
+   <WinRETool locale="uk-ua">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Проведіть діагностику ПК в Оточенні Відновлення Windows (WinRE). Це допоможе усунути проблему.</Description>
+   </WinRETool>
+   <WinRETool locale="vi-vn">
+         <Name>MyASUS in WinRE</Name>
+         <Description>Hãy chẩn đoán máy tính ở Windows Recovery Environment (WinRE) để giúp bạn khắc phục sự cố.</Description>
+   </WinRETool>
+</BootShell>

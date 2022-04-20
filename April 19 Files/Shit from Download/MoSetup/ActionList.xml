@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ActionList xmlns="urn:schemas-microsoft-com:os-update-actionlist" SessionId="2022-04-20T00:34:58" Revision="1" SessionData="DesktopServicing" BuildInfo="vb_release.19041.1.191206-1406" CorrelationVector="RDx8EJy6mUe3rthv.3.1.4.1" Operation="DesktopServicing">
+    <Downloads>
+        <Package Id="Package_for_KB4562830" Reason="GDR" PayloadType="PSFX" FeatureId="GDR_KB4562830">
+            <Payload Hash="9zX7K1tViYlftGXVd6084SvrNS/3M/UHfGRo4t/2f2I=" DownloadSize="90889562" SourceName="Windows10.0-KB4562830-x64.cab"/>
+        </Package>
+        <Package Id="Package_for_KB5011577" Reason="SafeOSDU" PayloadType="PSFX" FeatureId="SafeOSUpdate_KB5011577">
+            <Payload Hash="REiyKioKHvFkjZxf0Y71S/sWAj8LOlIeZtvjefksMHM=" DownloadSize="2369355" SourceName="Windows10.0-KB5011577-x64.cab"/>
+        </Package>
+        <Package Id="Package_for_RollupFix" Reason="CumulativeUpdate" PayloadType="PSFX" FeatureId="CumulativeUpdate_KB5012599">
+            <Payload Hash="PBFJO8yxXJa+/qJk5zBiI1Es1fgUOu14WqT44tYXNaI=" DownloadSize="661092763" SourceName="Windows10.0-KB5012599-x64.cab"/>
+        </Package>
+    </Downloads>
+    <Plan>
+        <InstallFeature Id="CumulativeUpdate_KB5012599" Group="Microsoft"/>
+        <InstallFeature Id="GDR_KB4562830" Group="Microsoft"/>
+        <InstallFeature Id="SafeOSUpdate_KB5011577" Group="Microsoft"/>
+    </Plan>
+    <Actions>
+        <InstallPackage Keyform="Package_for_KB4562830~~amd64~~10.0.1.3" InstalledSize="97551751" StagedSize="0" PayloadType="PSFX" FilePath="Windows10.0-KB4562830-x64.cab" Reason="GDR" FeatureId="GDR_KB4562830" Partition="MainOS" BinaryPartition="false"/>
+        <InstallPackage Keyform="Package_for_RollupFix~~amd64~~19041.1645.1.11" InstalledSize="7596481884" StagedSize="0" PayloadType="PSFX" FilePath="Windows10.0-KB5012599-x64.cab" Reason="CumulativeUpdate" FeatureId="CumulativeUpdate_KB5012599" Partition="MainOS" BinaryPartition="false"/>
+        <InstallPackage Keyform="Package_for_KB5011577~~amd64~~19041.1616.1.1" InstalledSize="73492248" StagedSize="0" PayloadType="PSFX" FilePath="Windows10.0-KB5011577-x64.cab" Reason="SafeOSDU" FeatureId="SafeOSUpdate_KB5011577" Partition="WinRE" BinaryPartition="false"/>
+    </Actions>
+</ActionList>

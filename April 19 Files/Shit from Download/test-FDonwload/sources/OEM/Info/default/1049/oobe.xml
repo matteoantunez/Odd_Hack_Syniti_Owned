@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults> 
+	<language>1049</language>           
+        <timezone>Russian Standard Time</timezone>
+	<location>203</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Поддержка и защита</title><subtitle>Настройте защиту и предпочитаемые настройки.</subtitle><customerinfo><label>В целях экономии времени в процессе регистрации учетной записи ASUS, я соглашаюсь сохранить свой адрес электронной почты на этом устройстве и автоматически заполнять его в форме приложения MyASUS.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Нажмите "Далее" для установки предпочитаемых настроек</label><link>linkfile1.html</link></link1><link2><label>Политика конфиденциальности ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

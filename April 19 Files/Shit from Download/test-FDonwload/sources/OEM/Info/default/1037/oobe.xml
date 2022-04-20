@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults> 
+	<language>1037</language>               
+        <timezone>Israel Standard Time</timezone>
+	<location>117</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>תמיכה והגנה</title><subtitle>קבע את הגדרות ההגנה וההעדפות שלך.</subtitle><customerinfo><label>אני מרשה ל-ASUS לשמור את כתובת האימייל שלי במכשיר הזה כדי לחסוך לי זמן בתהליך ההרשמה ל-ASUS, ולמלא אותה אוטומטית בטופס ההרשמה ל-ASUS באפליקציית MyASUS.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>לחץ "Next" (הבא) כדי לקבוע את העדפתך</label><link>linkfile1.html</link></link1><link2><label>מדיניות הפרטיות של ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

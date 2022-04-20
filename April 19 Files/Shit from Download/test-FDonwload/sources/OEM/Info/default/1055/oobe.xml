@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults> 
+	<language>1055</language>            
+        <timezone>GTB Standard Time</timezone>
+	<location>235</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Destek ve koruma</title><subtitle>Koruma ve tercih ayarınızı yapılandırın.</subtitle><customerinfo><label>ASUS üye kayıt işlemi sırasında zaman kazanmak için e-posta adresimi bu cihaza kaydetmeyi ve MyASUS uygulamasındaki ASUS üye kayıt formunu otomatik doldurmayı kabul ediyorum.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Tercih ayarınızı yapmak için "İleri"ye basın</label><link>linkfile1.html</link></link1><link2><label>ASUS Gizlilik İlkesi</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

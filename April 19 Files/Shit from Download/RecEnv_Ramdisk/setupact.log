@@ -1,0 +1,126 @@
+﻿2022-04-20 00:24:07, Info                         Starting enumeration of PnP devices.
+2022-04-20 00:24:09, Error                         GetCurrentOsGuid failed. error = 0x2[gle=0x00000012]
+2022-04-20 00:24:09, Error                        IsSourceDriveOnVHD() failed. error = 0x00000002[gle=0x00000012]
+2022-04-20 00:24:09, Info                         Attempting to assign a drive letter for the source drive.
+2022-04-20 00:24:09, Error                         GetCurrentOsGuid failed. error = 0x2[gle=0x000000ea]
+2022-04-20 00:24:09, Error                        IsSourceDriveOnVHD() failed. error = 0x00000002[gle=0x000000ea]
+2022-04-20 00:24:09, Info                         CBootCfg::GetAssociatedOs() did not find an OS. error = 0x2
+2022-04-20 00:24:09, Info                         [recenv.exe] Enter WinReIsWimBootEnabled
+2022-04-20 00:24:09, Info                         [recenv.exe] Parameters: pszWinDir: C:\Windows
+2022-04-20 00:24:10, Info                         Finished enumeration of PnP devices.
+2022-04-20 00:24:10, Info                         [recenv.exe] RegGetValue failed. Error: 0x2.
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReIsWimBootEnabled returns 0 with last error: 0x0
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReGetConfig
+2022-04-20 00:24:10, Info                         [recenv.exe] Parameters: configWinDir: NULL
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE config file path: C:\Windows\system32\Recovery\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] Wim dir location: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] System is WimBoot: FALSE
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReGetConfig return value: 1, last error: 0x0
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReGetConfig
+2022-04-20 00:24:10, Info                         [recenv.exe] Parameters: configWinDir: NULL
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE config file path: C:\Windows\system32\Recovery\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] Wim dir location: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] System is WimBoot: FALSE
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReGetConfig return value: 1, last error: 0x0
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReGetConfig
+2022-04-20 00:24:10, Info                         [recenv.exe] Parameters: configWinDir: NULL
+2022-04-20 00:24:10, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE config file path: \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] Wim dir location: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] System is WimBoot: FALSE
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReGetConfig return value: 1, last error: 0x0
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReGetConfig
+2022-04-20 00:24:10, Info                         [recenv.exe] Parameters: configWinDir: NULL
+2022-04-20 00:24:10, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE config file path: \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] Wim dir location: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] System is WimBoot: FALSE
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReGetConfig return value: 1, last error: 0x0
+2022-04-20 00:24:10, Info                         Auto launch narrator not specified
+2022-04-20 00:24:10, Info                         Custom boot app not specified
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReGetConfig
+2022-04-20 00:24:10, Info                         [recenv.exe] Parameters: configWinDir: NULL
+2022-04-20 00:24:10, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE config file path: \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] Wim dir location: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] System is WimBoot: FALSE
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReGetConfig return value: 1, last error: 0x0
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReCreateLogInstanceEx
+2022-04-20 00:24:10, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReCreateLogInstanceEx returns error code 0x0
+2022-04-20 00:24:10, Info                         [recenv.exe] Enter WinReGetConfig
+2022-04-20 00:24:10, Info                         [recenv.exe] Parameters: configWinDir: NULL
+2022-04-20 00:24:10, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE config file path: \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:10, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:10, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:10, Info                         [recenv.exe] WinRE is installed at: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] Wim dir location: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\WindowsRE
+2022-04-20 00:24:10, Info                         [recenv.exe] System is WimBoot: FALSE
+2022-04-20 00:24:10, Info                         [recenv.exe] Exit WinReGetConfig return value: 1, last error: 0x0
+2022-04-20 00:24:10, Info                         Offline scanning application not configured
+2022-04-20 00:24:10, Error                        Invalid path specified
+2022-04-20 00:24:10, Info                         Copying logs from [X:\windows\Logs\RecEnv] to [C:\Windows\Logs\RecEnv_Ramdisk]
+2022-04-20 00:24:11, Info                         Entering RjvBareMetalResetAvailable
+2022-04-20 00:24:11, Info                         Entering RjvPIsMediaBoot
+2022-04-20 00:24:11, Info                         Launch type is SystemDisk
+2022-04-20 00:24:11, Info                         RjvPIsMediaBoot returning FALSE
+2022-04-20 00:24:11, Info                         RjvBareMetalResetAvailable returning FALSE
+
+2022-04-20 00:24:16, Info                         [recenv.exe] Enter WinReGetCustomization
+2022-04-20 00:24:16, Info                         [recenv.exe] Parameters: configWinDir: NULL, pwszLocale: en-US
+2022-04-20 00:24:16, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReCustomization.xml
+2022-04-20 00:24:16, Info                         [recenv.exe] Exit WinReGetCustomization return value: 1, last error: 0x0
+2022-04-20 00:24:16, Info                         Session: Trying to establish working directories on [X:\$SysReset]
+2022-04-20 00:24:16, Info                         WorkingDirs: Creating root work directory at [X:\$SysReset]
+2022-04-20 00:24:16, Info                         WorkingDirs: Creating subdirectory [X:\$SysReset\Logs]
+2022-04-20 00:24:16, Info                         WorkingDirs: Creating subdirectory [X:\$SysReset\Scratch]
+2022-04-20 00:24:16, Info                         WorkingDirs: Creating subdirectory [X:\$SysReset\MDM]
+2022-04-20 00:24:16, Info                         WorkingDirs: Creating subdirectory [X:\$SysReset\OldOS]
+2022-04-20 00:24:16, Info                         WorkingDirs: Creating subdirectory [X:\$SysReset\CloudImage]
+2022-04-20 00:24:16, Info                         [X:\$SysReset\Scratch\$TRIGGER_WIPEWARNING.MARKER] does not exist, skip.
+2022-04-20 00:24:16, Info                         [X:\$SysReset\Scratch\$PBR_TEST_RUNNER_WORK_DRIVE.MARKER] does not exist, skip.
+2022-04-20 00:24:16, Info                         [X:\$SysReset\Scratch\$BMR_TEST_RECOVERYDRIVE_PARTITION.MARKER] does not exist, skip.
+2022-04-20 00:24:16, Info                         [X:\$SysReset\Scratch\$PBR_TEST_TARGET_DRIVE.MARKER] does not exist, skip.
+2022-04-20 00:24:16, Info                         LogSession: Starting a new log session at [X:\$SysReset\Logs]
+2022-04-20 00:24:16, Info                         Registry: Loading SOFTWARE hive from online OS
+2022-04-20 00:24:16, Info                         ResetCreateSession: Succeeded
+2022-04-20 00:24:16, Info                         ResetCloudEndpointAvailable: Checking whether [OEM] endpoint is available
+2022-04-20 00:24:16, Error                        0x80070490 in PushButtonReset::OEMConnection::Create (base\reset\engine\cloud\src\oemconnection.cpp:57): Did not find OEM plugin [X:\sources\recovery\tools\cloudrecplugin.dll] in running OS[gle=0x00000002]
+2022-04-20 00:24:16, Error                        0x80070490 in PushButtonReset::CloudConnection::Create (base\reset\engine\cloud\src\connection.cpp:60): Failed to create connection of type [1][gle=0x00000002]
+2022-04-20 00:24:16, Info                         ResetCloudEndpointAvailalbe: Endpoint not available: [0x80070490]
+2022-04-20 00:24:16, Info                         ResetReleaseSession: Releasing session
+2022-04-20 00:24:20, Info                         [recenv.exe] Enter WinReRestoreLogFiles
+2022-04-20 00:24:20, Info                         [recenv.exe]  Using recovery file at \\?\GLOBALROOT\Device\HarddiskVolume4\RECOVERY\WINDOWSRE\ReAgent.xml
+2022-04-20 00:24:20, Info                         [recenv.exe] Update enhanced config info is enabled.
+2022-04-20 00:24:20, Info                         [recenv.exe] ReAgentConfig::ReadBcdAndUpdateEnhancedConfigInfo (In WinPE) Using winre guid from the config file
+2022-04-20 00:24:21, Info                         [recenv.exe] WinRE is installed
+2022-04-20 00:24:21, Info                         [recenv.exe] Enter WinReSetTriggerFile
+2022-04-20 00:24:21, Info                         [recenv.exe] Parameters: DirName: \\?\GLOBALROOT\device\harddisk0\partition4\Recovery\Logs, fDelete: 0
+2022-04-20 00:24:21, Info                         [recenv.exe] Exit WinReSetTriggerFile return error code: 0x0
+2022-04-20 00:24:21, Info                         [recenv.exe] Exit WinReRestoreLogFiles returns 1 with last error: 0x0
+2022-04-20 00:24:21, Info                         Copying logs from [X:\windows\Logs\RecEnv] to [C:\Windows\Logs\RecEnv_Ramdisk]

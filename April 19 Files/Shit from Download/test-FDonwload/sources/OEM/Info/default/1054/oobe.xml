@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>1054</language>                 
+        <timezone>SE Asia Standard Time</timezone>
+	<location>227</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>การรองรับและการป้องกัน</title><subtitle>กำหนดค่าการป้องกันและการตั้งค่าการกำหนดลักษณะของคุณ</subtitle><customerinfo><label>เพื่อประหยัดเวลาในระหว่างขั้นตอนการลงทะเบียนสมาชิก ASUS ฉันตกลงที่จะบันทึกที่อยู่อีเมลบนอุปกรณ์นี้และป้อนที่อยู่อีเมลอัตโนมัติในแบบฟอร์มการลงทะเบียนสมาชิก ASUS ที่แอป MyASUS</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>กด “Next (ถัดไป)” เพื่อตั้งค่าการกำหนดลักษณะของคุณ</label><link>linkfile1.html</link></link1><link2><label>นโยบายความเป็นส่วนตัวของ ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe></FirstExperience>

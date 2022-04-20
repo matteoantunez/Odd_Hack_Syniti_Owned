@@ -1,0 +1,258 @@
+﻿<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+</rs:data>
+</xml>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="236" Fil="" Fun="PushButtonReset::Logging::TraceErr" Uid="33554432" Msg="0x80070032 in WinREAgent::Executor::ScheduleExecution (base\diagnosis\srt\winreagent\dll\executor.cpp:180): Could not schedule scenario operations" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="WinREAgent.dll" Err="234" MD="" DT="2022-04-19T23:56:45"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="236" Fil="" Fun="PushButtonReset::Logging::TraceErr" Uid="33554432" Msg="0x80070032 in WinREAgent::WinREServicingManager::CanService (base\diagnosis\srt\winreagent\dll\winreservicingmanager.cpp:269): Failed to schedule execution" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="WinREAgent.dll" Err="122" MD="" DT="2022-04-19T23:56:45"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="236" Fil="" Fun="PushButtonReset::Logging::TraceErr" Uid="33554432" Msg="0x800700b7 in WinREAgent::TelemetrySession::Create (base\diagnosis\srt\winreagent\lib\telemetry\telemetrysession.cpp:57): Only one TelemetrySession can be active at a time" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="WinREAgent.dll" Err="183" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="236" Fil="" Fun="PushButtonReset::Logging::TraceErr" Uid="33554432" Msg="0x8007000e in WinREAgent::WinREServicingManager::Initialize (base\diagnosis\srt\winreagent\dll\winreservicingmanager.cpp:213): Failed to allocate m_telemetry" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="WinREAgent.dll" Err="183" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="236" Fil="" Fun="PushButtonReset::Logging::TraceErr" Uid="33554432" Msg="0x8007000e in WinREAgent::CreateWinREServicingManager (base\diagnosis\srt\winreagent\dll\winreagent.cpp:49): Failed to initialize servicing manager" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="WinREAgent.dll" Err="183" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="0" Fil="" Fun="Windows::Rtl::SystemImplementation::DirectRegistryProvider::SysQueryValueKey" Uid="98304" Msg="00000001 (F) STATUS_OBJECT_NAME_NOT_FOUND #40# from Windows::Rtl::SystemImplementation::DirectRegistryProvider::SysQueryValueKey(flags = 0, key = 6bc (&apos;\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion&apos;), vn = [l:19 ml:20]&apos;AllowInPlaceUpgrade&apos;, kvic = 2, kvi = 2, disp = 0)" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="UpdateAgent.dll" Err="-805306316" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="0" Fil="" Fun="Windows::Rtl::SystemImplementation::CKey::QueryValue" Uid="98304" Msg="00000002 (F) STATUS_OBJECT_NAME_NOT_FOUND #39# from Windows::Rtl::SystemImplementation::CKey::QueryValue(flags = 0, kn = [l:60]&apos;\Registry\Machine\SOFTWARE\Microsoft\Windows\CurrentVersion\&apos;, vn = [l:19 ml:20]&apos;AllowInPlaceUpgrade&apos;, ic = KeyValuePartialInformation, info = {l:0 b:}, disp = 0)" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="UpdateAgent.dll" Err="-805306316" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="0" Fil="" Fun="Windows::Rtl::SystemImplementation::DirectRegistryProvider::SysQueryValueKey" Uid="98304" Msg="00000003 (F) STATUS_OBJECT_NAME_NOT_FOUND #47# from Windows::Rtl::SystemImplementation::DirectRegistryProvider::SysQueryValueKey(flags = 0, key = 680 (&apos;\REGISTRY\MACHINE\SYSTEM\Setup&apos;), vn = [l:7 ml:8]&apos;Compact&apos;, kvic = 2, kvi = 2, disp = 0)" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="UpdateAgent.dll" Err="-805306316" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="0" Fil="" Fun="Windows::Rtl::SystemImplementation::CKey::QueryValue" Uid="98304" Msg="00000004 (F) STATUS_OBJECT_NAME_NOT_FOUND #46# from Windows::Rtl::SystemImplementation::CKey::QueryValue(flags = 0, kn = [l:31]&apos;\Registry\Machine\SYSTEM\Setup\&apos;, vn = [l:7 ml:8]&apos;Compact&apos;, ic = KeyValuePartialInformation, info = {l:0 b:}, disp = 0)" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="UpdateAgent.dll" Err="-805306316" MD="" DT="2022-04-19T23:58:14"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="0" Fil="" Fun="Windows::Rtl::SystemImplementation::DirectRegistryProvider::SysQueryValueKey" Uid="98304" Msg="00000005 (F) STATUS_OBJECT_NAME_NOT_FOUND #850# from Windows::Rtl::SystemImplementation::DirectRegistryProvider::SysQueryValueKey(flags = 0, key = 60c (&apos;\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts&apos;), vn = [l:21 ml:22]&apos;Arial Nova (TrueType)&apos;, kvic = 2, kvi = 2, disp = 0)" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="UpdateAgent.dll" Err="-805306316" MD="" DT="2022-04-19T23:58:27"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="0" Fil="" Fun="Windows::Rtl::SystemImplementation::CKey::QueryValue" Uid="98304" Msg="00000006 (F) STATUS_OBJECT_NAME_NOT_FOUND #849# from Windows::Rtl::SystemImplementation::CKey::QueryValue(flags = 0, kn = [l:69]&apos;\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts\&apos;, vn = [l:21 ml:22]&apos;Arial Nova (TrueType)&apos;, ic = KeyValuePartialInformation, info = {l:0 b:}, disp = 0)" PID="2232" TID="4504" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="UpdateAgent.dll" Err="-805306316" MD="" DT="2022-04-19T23:58:27"/>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+</rs:data>
+</xml>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="236" Fil="" Fun="PushButtonReset::Logging::TraceErr" Uid="33554432" Msg="0x80004001 in WinREAgent::Executor::ScheduleExecution (base\diagnosis\srt\winreagent\dll\executor.cpp:198): Scenario case is not implemented" PID="7684" TID="7508" Con="" Exe="C:\Windows\system32\wuauclt.exe" Mod="WinREAgent.dll" Err="234" MD="" DT="2022-04-20T00:35:12"/>
+</rs:data>
+</xml>

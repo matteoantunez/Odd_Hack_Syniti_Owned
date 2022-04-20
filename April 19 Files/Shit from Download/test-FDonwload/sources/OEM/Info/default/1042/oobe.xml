@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults> 
+	<language>1042</language>               
+        <timezone>Korea Standard Time</timezone>
+	<location>134</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>지원 및 보호</title><subtitle>보호 및 기본 설정을 구성합니다.</subtitle><customerinfo><label>ASUS 회원 등록 과정 동안 시간을 절약하기 위해 본인은  MyASUS 앱에서 본인의 이메일 주소를 이 장치에 저장하여ASUS 회원 등록 양식에 이를 자동으로 입력하는 데 동의합니다.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>“Next(다음)”를 눌러 기본 설정을 설정합니다.</label><link>linkfile1.html</link></link1><link2><label>ASUS 개인정보 보호정책</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

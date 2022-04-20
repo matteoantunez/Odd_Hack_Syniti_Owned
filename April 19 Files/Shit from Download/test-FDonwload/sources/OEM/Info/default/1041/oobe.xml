@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>1041</language>                 
+        <timezone>Tokyo Standard Time</timezone>
+	<location>122</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>サポートと保護</title><subtitle>保護と環境設定を設定します。</subtitle><customerinfo><label>ASUS メンバーの登録を短時間で行うため、このデバイスに私のメールアドレスを保存し、MyASUS アプリのASUS メンバーの登録フォームに自動入力することに同意します。</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>｢次へ｣を選択して環境設定を設定します。</label><link>linkfile1.html</link></link1><link2><label>ASUS個人情報保護方針</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

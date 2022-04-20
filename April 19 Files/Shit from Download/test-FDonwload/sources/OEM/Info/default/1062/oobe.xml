@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>1062</language>    
+        <timezone>FLE Standard Time</timezone>
+	<location>140</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Atbalsts un aizsardzība</title><subtitle>Konfigurējiet aizsardzības un preferenču iestatījumu.</subtitle><customerinfo><label>Lai ietaupītu laiku ASUS dalībnieka reģistrācijas procesā, es piekrītu saglabāt savu e-pasta adresi šajā ierīcē un automātiski aizpildīt to ASUS dalībnieka reģistrācijas veidlapā MyASUS lietotnē.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Nospiediet “Next” (Tālāk), lai iestatītu preferenču iestatījumu</label><link>linkfile1.html</link></link1><link2><label>ASUS Konfidencialitātes politikai</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

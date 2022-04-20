@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>          
+	<language>1028</language>    
+        <timezone>Taipei Standard Time</timezone>
+	<location>237</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>支援與保護</title><subtitle>設置您的保護及偏好設定。</subtitle><customerinfo><label>為節省註冊華碩會員流程時間，我同意將我的電子郵件位址儲存於我的裝置中，並自動填入於 MyASUS 註冊華碩會員表格中。</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>選取「下一步」以設置您的偏好設定</label><link>linkfile1.html</link></link1><link2><label>華碩隱私權保護政策</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

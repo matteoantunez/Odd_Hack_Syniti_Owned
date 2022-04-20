@@ -1,0 +1,7 @@
+﻿2022-04-20 00:24:09, Error                         GetCurrentOsGuid failed. error = 0x2[gle=0x00000012]
+2022-04-20 00:24:09, Error                        IsSourceDriveOnVHD() failed. error = 0x00000002[gle=0x00000012]
+2022-04-20 00:24:09, Error                         GetCurrentOsGuid failed. error = 0x2[gle=0x000000ea]
+2022-04-20 00:24:09, Error                        IsSourceDriveOnVHD() failed. error = 0x00000002[gle=0x000000ea]
+2022-04-20 00:24:10, Error                        Invalid path specified
+2022-04-20 00:24:16, Error                        0x80070490 in PushButtonReset::OEMConnection::Create (base\reset\engine\cloud\src\oemconnection.cpp:57): Did not find OEM plugin [X:\sources\recovery\tools\cloudrecplugin.dll] in running OS[gle=0x00000002]
+2022-04-20 00:24:16, Error                        0x80070490 in PushButtonReset::CloudConnection::Create (base\reset\engine\cloud\src\connection.cpp:60): Failed to create connection of type [1][gle=0x00000002]

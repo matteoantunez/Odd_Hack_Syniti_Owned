@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>1035</language>                  
+        <timezone>FLE Standard Time</timezone>
+	<location>76</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Tuki ja suojaus</title><subtitle>Määritä tuotteesi ja ensisijainen asetus.</subtitle><customerinfo><label>Ajan säästämiseksi ASUS-jäsenyyden rekisteröintiprosessissa, hyväksyn sähköpostiosoitteeni tallentamisen tähän laitteeseen ja sen täyttämisen automaattisesti ASUS-jäseneksi rekisteröitymislomakkeessa MyASUS-sovelluksessa.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Paina ”Next” (Seuraava) asettaaksesi ensisijaisen asetuksesi</label><link>linkfile1.html</link></link1><link2><label>ASUS-tietosuojakäytäntö</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

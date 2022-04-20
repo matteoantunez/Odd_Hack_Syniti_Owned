@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>2074</language>    
+        <timezone>Central Europe Standard Time</timezone>
+	<location>269</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Podrška i zaštita</title><subtitle>Konfigurišite svoju zaštitu i željena podešavanja.</subtitle><customerinfo><label>Da bi se uštedelo vreme tokom registracije za ASUS članstvo, slažem se da sačuvam svoju adresu e-pošte na ovom uređaju i da se ona automatski popuni na registracionom formularu za članstvo na MyASUS aplikaciji.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Pritisnite “Next” (Dalje) da podesite željena podešavanja</label><link>linkfile1.html</link></link1><link2><label>ASUS politika privatnosti</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

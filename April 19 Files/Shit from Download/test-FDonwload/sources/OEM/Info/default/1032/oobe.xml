@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults> 
+	<language>1032</language>               
+        <timezone>GTB Standard Time</timezone>
+	<location>98</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Υποστήριξη και προστασία</title><subtitle>Διαμορφώστε τις ρυθμίσεις προστασίας και τις προτιμήσεις σας.</subtitle><customerinfo><label> Για εξοικονόμηση χρόνου κατά τη διαδικασία εγγραφής μέλους της ASUS, συμφωνώ με την αποθήκευση της διεύθυνσης email μου σε αυτήν τη συσκευή και την αυτόματη συμπλήρωσή της στη φόρμα εγγραφής μέλους της ASUS στην εφαρμογή MyASUS. </label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Πατήστε “Next” (Επόμενο) για να ρυθμίσετε την επιθυμητή ρύθμιση</label><link>linkfile1.html</link></link1><link2><label>Πολιτική Απορρήτου  της ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

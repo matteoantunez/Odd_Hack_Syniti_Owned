@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>1057</language>            
+        <timezone>SE Asia Standard Time</timezone>
+	<location>111</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Bantuan dan perlindungan</title><subtitle>Mengkonfigurasi perlindungan dan pengaturan preferensi.</subtitle><customerinfo><label>Untuk menghemat waktu selama proses pendaftaran anggota ASUS, saya setuju untuk menyimpan alamat email di perangkat ini, dan mengisi otomatis data di formulir pendaftaran anggota ASUS di aplikasi MyASUS.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Tekan "Berikutnya" untuk menetapkan pengaturan preferensi</label><link>linkfile1.html</link></link1><link2><label>Kebijakan Privasi ASUS</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults> 
+	<language>1061</language>             
+        <timezone>FLE Standard Time</timezone>
+	<location>70</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Tugiteenus ja kaitse</title><subtitle>Seadistage endale sobiv kaitsetase ja eelistuste säte.</subtitle><customerinfo><label>Aja säästmiseks ASUS-e liikmeks registreerimisel, nõustun minu e-posti aadressi salvestamisega selles seadmes ja luban ASUS-e liikmeks registreerimisel automaatselt sisestada e-posti aadressi rakendusse MyASUS.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Vajutage „Next“ (Edasi), et määrata eelistuste säte</label><link>linkfile1.html</link></link1><link2><label>ASUS’e privaatsuspoliitika</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

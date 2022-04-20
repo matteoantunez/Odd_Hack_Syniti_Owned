@@ -1,0 +1,291 @@
+﻿<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="11100" TID="6784" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T22:49:22"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="11100" TID="1812" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T22:54:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::GatherSplitCaptureFiles(458): Result = 0x80070015" PID="11100" TID="4340" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T22:55:20"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::Gather(131): Result = 0x80070015" PID="11100" TID="4340" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T22:55:20"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::PrepareUsbMedia(2444): Result = 0x80070015" PID="11100" TID="4340" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T22:55:20"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::ExecuteRoutine(954): Result = 0x80070015" PID="11100" TID="4340" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T22:55:20"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionImpl&lt;class CDlpErrorImpl&lt;class CDlpObjectInternalImpl&lt;class CUnknownImpl&lt;class IDlpAction&gt; &gt; &gt; &gt;::Execute(493): Result = 0x80070015" PID="11100" TID="4340" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T22:55:20"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::ExecuteAction(3300): Result = 0x80070015" PID="11100" TID="4340" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T22:55:20"/>
+</rs:data>
+</xml>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="4632" TID="6980" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T22:55:41"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="4632" TID="136" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T22:55:43"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="4632" TID="9420" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T22:57:27"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::WimSplitCaptureFile(573): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="34" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::Capture(207): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="34" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::CopyFileLists(1217): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="1006" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::PrepareUsbMedia(2699): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="1006" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::ExecuteRoutine(954): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionImpl&lt;class CDlpErrorImpl&lt;class CDlpObjectInternalImpl&lt;class CUnknownImpl&lt;class IDlpAction&gt; &gt; &gt; &gt;::Execute(493): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::ExecuteAction(3300): Result = 0x80070022" PID="4632" TID="528" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::ExecuteActions(3454): Result = 0x80070022" PID="4632" TID="8196" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::Execute(1631): Result = 0x80070022" PID="4632" TID="8196" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CreateRecoveryUsb(727): Result = 0x80070022" PID="4632" TID="8196" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="1813" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="UsbCreateThreadProc(573): Result = 0x80070022" PID="4632" TID="8196" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="1813" MD="" DT="2022-04-19T23:03:15"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="RecoveryDrive.exe execution failed: 0x80070022" PID="4632" TID="6980" Con="" Exe="C:\Windows\system32\recoverydrive.exe" Mod="recoverydrive.exe" Err="0" MD="" DT="2022-04-19T23:03:24"/>
+</rs:data>
+</xml>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="6292" TID="6136" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:06:27"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="6292" TID="9576" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:06:29"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="6292" TID="6228" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:08:31"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::GatherSplitCaptureFiles(458): Result = 0x80070015" PID="6292" TID="4600" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="21" MD="" DT="2022-04-19T23:09:01"/>
+</rs:data>
+</xml>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="11588" TID="2428" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:10:16"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="11588" TID="9720" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:10:18"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="GetESDImageLocation(183): Result = 0x80070002" PID="11588" TID="11908" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:11:36"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::RefreshWimHandles(755): Result = 0x80070003" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="3" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::WimSplitCaptureFile(573): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="87" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpWimCapture::Capture(207): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="87" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::CopyFileLists(1217): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="3" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::PrepareUsbMedia(2699): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="3" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionLayoutUsb::ExecuteRoutine(954): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpActionImpl&lt;class CDlpErrorImpl&lt;class CDlpObjectInternalImpl&lt;class CUnknownImpl&lt;class IDlpAction&gt; &gt; &gt; &gt;::Execute(493): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::ExecuteAction(3300): Result = 0x80070057" PID="11588" TID="7200" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::ExecuteActions(3454): Result = 0x80070057" PID="11588" TID="7892" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CDlpTask::Execute(1631): Result = 0x80070057" PID="11588" TID="7892" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="CreateRecoveryUsb(727): Result = 0x80070057" PID="11588" TID="7892" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="1813" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="UsbCreateThreadProc(573): Result = 0x80070057" PID="11588" TID="7892" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="1813" MD="" DT="2022-04-19T23:18:58"/>
+<z:row Cls="D" Sev="33554432" Maj="Def" Min="Def" LN="116" Fil="" Fun="CDiagnostics::LogString" Uid="33554432" Msg="RecoveryDrive.exe execution failed: 0x80070057" PID="11588" TID="2428" Con="" Exe="C:\Windows\system32\RecoveryDrive.exe" Mod="RecoveryDrive.exe" Err="0" MD="" DT="2022-04-19T23:27:14"/>
+</rs:data>
+</xml>

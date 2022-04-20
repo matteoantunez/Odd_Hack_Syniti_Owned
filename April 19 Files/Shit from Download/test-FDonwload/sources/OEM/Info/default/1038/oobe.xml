@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>   
+	<language>1038</language>               
+        <timezone>Central Europe Standard Time</timezone>
+	<location>109</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Támogatás és védelem</title><subtitle>Konfiguirálja a védelmi és preferenciák beállítást</subtitle><customerinfo><label>Az ASUS tagság regisztrálása során időmegtakarítás céljából beleegyezek, hogy elmentse az e-mail címemet ezen az eszközön és automatikusan kitöltse az ASUS tagsági regisztrációs űrlapon a MyASUS alkalmazásban.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Nyomja meg a „Tovább” gombot a preferenciák beállításához</label><link>linkfile1.html</link></link1><link2><label>Az ASUS Adatvédelmi szabályzata</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>   
+	<language>66617</language>    
+        <timezone>India Standard Time</timezone>
+	<location>113</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>Support and protection</title><subtitle>Configure your protection and preference setting.</subtitle><customerinfo><label>To save time during the ASUS member registration process, I agree to save my email address on this device, and autofill it in ASUS member registration form at MyASUS app.</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>Press “Next” to set your preference setting</label><link>linkfile1.html</link></link1><link2><label>ASUS Privacy Policy</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

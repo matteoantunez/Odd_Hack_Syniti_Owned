@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirstExperience>
+<oobe>
+    <defaults>
+	<language>2052</language>           
+        <timezone>China Standard Time</timezone>
+	<location>45</location>
+    </defaults>
+	<oem>
+		<eulafilename>EULA.rtf</eulafilename>
+	<registration><title>支持与保护</title><subtitle>设置您的保护及偏好设定</subtitle><customerinfo><label>为节省注册华硕会员流程时间，我同意将我的电子邮件地址保存于我的设备，并自动填入 MyASUS 注册华硕会员表格中。</label><defaultvalue>false</defaultvalue></customerinfo><link1><label>选取“下一步”以设置您的偏好设定</label><link>linkfile1.html</link></link1><link2><label>华硕使用条款</label><link>linkfile2.html</link></link2><hideSkip>true</hideSkip></registration>
+</oem>
+</oobe>
+</FirstExperience>

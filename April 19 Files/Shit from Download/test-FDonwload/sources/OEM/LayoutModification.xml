@@ -1,0 +1,9 @@
+<LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" Version="1">
+  <RequiredStartGroupsCollection>
+    <RequiredStartGroups>
+      <AppendGroup Name="ASUS">
+        <start:Tile AppUserModelID="B9ECED6F.ASUSPCAssistant_qmba6cd70vzyy!App" Column="0" Row="0" Size="4x2" />
+      </AppendGroup>
+    </RequiredStartGroups>
+  </RequiredStartGroupsCollection>
+</LayoutModificationTemplate>
