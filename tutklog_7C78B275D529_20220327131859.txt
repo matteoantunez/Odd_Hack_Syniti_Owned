@@ -1,0 +1,33 @@
+{
+  "IOTC Version":"3.4.4.3-0-g85fdb4a_openssl_Mips_T31_4.7.2_uclibc",
+  "System Time":"2022-03-27 13:18:59",
+  "TCP Relay Status":"OFF",
+  "My Nat Type":2,
+  "Login Protocl":"UDP",
+  "LANConnectionTimeout(ms)":1500,
+  "P2PConnectionTimeout(ms)":1500,
+  "SessionAliveTimeout(ms)":30000,
+  "Master Resolve Status":"RESOLVE_SUCCESS",
+  "P2PServerList Exist":true,
+  "VPG":[
+    49193,
+    62209,
+    61776
+  ],
+  "MSG_HELLO1_R Received":true,
+  "MSG_DEVICE_REGISTER_R Received":true,
+  "IOTC_Device_Login() Return":"0",
+  "Port Change Count":0,
+  "Current Session Count":0,
+  "connectionHandler Alive":true,
+  "tutk_SockTaskMng Alive":false,
+  "Server IP":"162.255.116.92:10001",
+  "Recv Count of MSG_NOTIFY_DEVICE_REGISTER":0,
+  "Last RTT(ms) of Alive Msg":68,
+  "Send Count of MSG_DEVICE_REGISTER_ALIVE":1073,
+  "Recv Count of MSG_DEVICE_REGISTER_ALIVE_R":1072,
+  "Lost Rate of Alive Msg":0,
+  "Last Return Value of Send MSG_DEVICE_REGISTER_ALIVE":48,
+  "Last MSG_DEVICE_REGISTER_ALIVE Send Time":"13:18:48.706",
+  "Last MSG_DEVICE_REGISTER_ALIVE_R Recv Time":"13:18:48.774"
+}
