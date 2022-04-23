@@ -1,0 +1,164 @@
+Apr 23 00:00:27 Matteos-MacBook-Pro login[776]: DEAD_PROCESS: 776 ttys003
+Apr 23 00:16:22 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 00:32:57 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.mail" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.performance" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.iokit.power" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.mkb" sharing output destination "/private/var/log/keybagd.log" with ASL Module "com.apple.mkb.internal".
+	Output parameters from ASL Module "com.apple.mkb.internal" override any specified in ASL Module "com.apple.mkb".
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.mkb" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.MessageTracer" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:32:58 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 00:50:26 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 01:07:55 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 01:25:11 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 01:42:03 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 01:59:05 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 02:14:14 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 02:30:43 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 02:48:35 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 03:06:11 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 03:23:12 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 03:40:18 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 03:57:53 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 04:15:44 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 04:32:33 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 04:48:31 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 05:06:02 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 05:23:52 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 05:39:25 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 05:55:31 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 06:12:58 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 06:30:16 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 06:47:17 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 07:03:56 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 07:21:44 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 07:37:08 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 07:54:58 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 08:11:05 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 08:26:10 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 08:43:11 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 09:00:04 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 09:16:45 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 09:32:26 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 09:50:08 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 10:06:38 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 10:23:44 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 10:40:34 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 10:57:05 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 11:12:44 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 11:23:32 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.mail" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.performance" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.iokit.power" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.mkb" sharing output destination "/private/var/log/keybagd.log" with ASL Module "com.apple.mkb.internal".
+	Output parameters from ASL Module "com.apple.mkb.internal" override any specified in ASL Module "com.apple.mkb".
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.mkb" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.MessageTracer" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:31:15 Matteos-MacBook-Pro syslogd[102]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Apr 23 11:37:25 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:_AMMuxedDeviceDisconnected, mux-device:4
+Apr 23 11:37:25 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:4
+Apr 23 11:37:25 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
+Apr 23 11:37:25 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:_AMMuxedDeviceDisconnected, mux-device:4
+Apr 23 11:37:25 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:4
+Apr 23 11:37:25 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:_AMMuxedDeviceDisconnected, mux-device:4
+Apr 23 11:37:25 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:4
+Apr 23 11:37:32 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:_AMMuxedDeviceDisconnected, mux-device:5
+Apr 23 11:37:32 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:5
+Apr 23 11:37:32 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:_AMMuxedDeviceDisconnected, mux-device:5
+Apr 23 11:37:32 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:_AMMuxedDeviceDisconnected, mux-device:5
+Apr 23 11:37:32 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:5
+Apr 23 11:37:32 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:5
+Apr 23 11:37:40 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:_AMMuxedDeviceDisconnected, mux-device:6
+Apr 23 11:37:40 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:6
+Apr 23 11:37:40 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:_AMMuxedDeviceDisconnected, mux-device:6
+Apr 23 11:37:40 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:6
+Apr 23 11:37:40 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:_AMMuxedDeviceDisconnected, mux-device:6
+Apr 23 11:37:40 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:6
+Apr 23 11:38:15 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:_AMMuxedDeviceDisconnected, mux-device:7
+Apr 23 11:38:15 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:7
+Apr 23 11:38:15 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:_AMMuxedDeviceDisconnected, mux-device:7
+Apr 23 11:38:15 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:7
+Apr 23 11:38:15 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:_AMMuxedDeviceDisconnected, mux-device:7
+Apr 23 11:38:15 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:7
+Apr 23 11:38:50 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:_AMMuxedDeviceDisconnected, mux-device:8
+Apr 23 11:38:50 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:8
+Apr 23 11:38:50 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:_AMMuxedDeviceDisconnected, mux-device:8
+Apr 23 11:38:50 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:_AMMuxedDeviceDisconnected, mux-device:8
+Apr 23 11:38:50 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:8
+Apr 23 11:38:50 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:8
+Apr 23 11:39:35 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:_AMMuxedDeviceDisconnected, mux-device:9
+Apr 23 11:39:35 Matteos-MacBook-Pro com.apple.configurator.xpc.DeviceService[967]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:9
+Apr 23 11:39:35 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:_AMMuxedDeviceDisconnected, mux-device:9
+Apr 23 11:39:35 Matteos-MacBook-Pro MobileDeviceUpdater[724]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:9
+Apr 23 11:39:35 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:_AMMuxedDeviceDisconnected, mux-device:9
+Apr 23 11:39:35 Matteos-MacBook-Pro AMPDeviceDiscoveryAgent[435]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:9
+Apr 23 11:47:46 Matteos-MacBook-Pro syslogd[102]: ASL Sender Statistics
