@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>你已註冊</string>
+			<string>接(上)?(你|我|大家|各位)</string>
+			<string>(從)(.{0,10})(地鐵站出發)</string>
+			<string>(我|你|大家)的地方</string>
+			<string>邀請(你|你們|大家|各位)</string>
+			<string>我們會面</string>
+			<string>聊一聊</string>
+			<string>碰頭</string>
+			<string>敬請光臨</string>
+			<string>在(.{0,10})見面</string>
+			<string>邀約</string>
+			<string>蒞臨</string>
+			<string>讓大家相會</string>
+			<string>務必趕到</string>
+			<string>碰面</string>
+			<string>邀請</string>
+			<string>預定</string>
+			<string>(來|黎|到|去)(佢|你|我)(屋企|家)</string>
+			<string>車(你|我|佢)</string>
+			<string>請咗</string>
+			<string>(揾|搵)咗</string>
+			<string>品嚐會</string>
+			<string>來一起</string>
+			<string>你陪我</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@（%2$@）</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

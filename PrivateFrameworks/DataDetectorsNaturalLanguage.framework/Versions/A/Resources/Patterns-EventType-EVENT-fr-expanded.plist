@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(se|vous|te) joindre [aà] nous</string>
+			<string>(on peut|nous pouvons) (se|te|vous|les) (rejoindre|retrouver|rencontrer)</string>
+			<string>(venir|viennent|venez|vienne|viens|passez|passer|passe|passent) [aà] la maison</string>
+			<string>(passe|arrive|viens|passer|arriver|venir) (.{0,50})quand tu (veux|souhaite)</string>
+			<string>(passez|arrivez|venez|passer|arriver|venir) (.{0,50})quand vous (voulez|souhaitez)</string>
+			<string>invité(s)?</string>
+			<string>invitation</string>
+			<string>invit['’]</string>
+			<string>(rendez-vous|rdv|rv)</string>
+			<string>(on se retrouve|retrouvons nous)</string>
+			<string>(on se retrouve|retrouvons[- ]nous|on ((n['’])?a qu['’][aà]|peut) se retrouver)</string>
+			<string>sera lanc[eé]e? .{0,15} le</string>
+			<string>nous vous invitons [aà] (participer|assister|venir assister|l['’][eé]v[eè]nement)</string>
+			<string>vous propose de partager un moment (de plaisir|de convivialit[eé]|convivial)</string>
+			<string>nous serons heureux de vous accueillir</string>
+			<string>le plaisir de vous inviter [aà]</string>
+			<string>merci de noter (la|cette) date</string>
+			<string>confirmation d['’]inscription</string>
+			<string>[cç]a (te|vous) di(t|s|rai[ts]) (de venir avec (moi|nous)|qu['’]on se voit|de se voir|d['’]aller voir)</string>
+			<string>je vous convie( (tous et toutes|toutes et tous))? [aà]</string>
+			<string>tu veux venir avec nous</string>
+			<string>r[eé]servation ([aà]|pour)</string>
+			<string>(on a|nous avons|j['’]ai|c['’]est) r[eé]serv[eé] ([aà]|pour)</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@ avec %2$@</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

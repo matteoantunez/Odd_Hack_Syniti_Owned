@@ -1,0 +1,5 @@
+image_size_config {
+    min_image_size: 128
+    min_aspect_ratio: 0.1
+    max_aspect_ratio: 10
+}

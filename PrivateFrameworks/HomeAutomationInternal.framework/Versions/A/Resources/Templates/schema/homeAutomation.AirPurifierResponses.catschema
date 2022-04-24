@@ -1,0 +1,15 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.AirPurifierResponses
+extends: homeAutomation.EntityResponses
+
+properties:
+    active:
+        type: homeAutomation.AirPurifierResponses
+        description: A collection of air purifier responses that are currently active
+    inactive:
+        type: homeAutomation.AirPurifierResponses
+        description: A collection of air purifier responses that are currently inactive
+    idle:
+        type: homeAutomation.AirPurifierResponses
+        description: A collection of air purifier responses that are currently idle

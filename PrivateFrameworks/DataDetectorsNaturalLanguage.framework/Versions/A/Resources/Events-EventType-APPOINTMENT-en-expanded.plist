@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT::EDUCATION::CONFERENCE</key>
+	<array>
+		<string>leadership summit</string>
+		<string>grace hopper conference</string>
+	</array>
+	<key>APPOINTMENT::GENERICMEETING</key>
+	<array>
+		<string>(employee|team|recruitment) meeting</string>
+		<string>workers[['’] ]( )?council meeting</string>
+		<string>all[ -]hands</string>
+		<string>kick-?off meeting</string>
+		<string>info(rmation)* session</string>
+		<string>(global|regional|annual|monthly|weekly|bi-weekly) (.{1,20} )?meeting</string>
+	</array>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<array>
+		<string>well-woman exam</string>
+		<string>routine checkup</string>
+		<string>(physical|medical|clinical|pediatric|obstetric) exam(ination)?</string>
+		<string>(office|well-care|doctor['’]s) visit</string>
+	</array>
+</dict>
+</plist>

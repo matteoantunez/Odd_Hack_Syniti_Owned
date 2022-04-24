@@ -1,0 +1,86 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 50 × 4)",
+        "shortDescription" : "",
+        "shape" : "[1, 50, 4]",
+        "name" : "nmsBoxes",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 50 × 80)",
+        "shortDescription" : "",
+        "shape" : "[1, 50, 80]",
+        "name" : "nmsScores",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 4,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "512",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1.4",
+      "com.github.apple.coremltools.source" : "onnx==1.6.0"
+    },
+    "generatedClassName" : "flash_detector_effdetflow_5e4yierjpa_300000_nms_perclass_0_35_0_05_50_Q__nbits_16",
+    "neuralNetworkLayerTypeHistogram" : {
+      "DivideBroadcastable" : 1,
+      "AddBroadcastable" : 46,
+      "SubtractBroadcastable" : 1,
+      "Convolution" : 135,
+      "Clip" : 34,
+      "ActivationSigmoid" : 1,
+      "ReshapeStatic" : 8,
+      "LoadConstantND" : 66,
+      "MultiplyBroadcastable" : 63,
+      "ConstantPad" : 5,
+      "Transpose" : 8,
+      "PoolingMax" : 14,
+      "UpsampleNearestNeighbor" : 12,
+      "Slice" : 6,
+      "ConcatND" : 5,
+      "UnaryExp" : 1,
+      "ActivationReLU" : 48,
+      "NonMaximumSuppression" : 1
+    },
+    "method" : "predict"
+  }
+]

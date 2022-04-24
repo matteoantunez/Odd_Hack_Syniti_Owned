@@ -1,0 +1,1569 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation xml:lang="en">
+      Visual CAT schema
+      Copyright (c) 2021 Apple. All rights reserved.
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:element name="cat">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="meta" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:attribute name="name" type="xsd:string"/>
+            <xsd:attribute name="value" type="xsd:string"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="parameters" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="parameter" maxOccurs="unbounded" type="Parameter"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="conditions" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="condition" maxOccurs="unbounded" type="Condition"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="phrases" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence maxOccurs="unbounded">
+              <xsd:element name="random" type="Random" minOccurs="0"/>
+              <xsd:element name="first" type="First" minOccurs="0"/>
+              <xsd:element name="switch" type="Switch" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="response" type="SnippetUI.Response"/>
+      </xsd:sequence>
+<!-- lxml BAD: does not allow attribute with name "xmlns"
+      <xsd:attribute name="xmlns" type="string" use="required"/>
+-->
+      <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="Parameter">
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="type" type="xsd:string" use="required"/>
+    <xsd:attribute name="description" type="xsd:string"/>
+    <xsd:attribute name="semanticConcept" type="xsd:string"/>
+    <xsd:attribute name="sampleValue" type="xsd:string"/>
+    <xsd:attribute name="deprecated" type="xsd:string"/>
+    <xsd:attribute name="profanityFilter" type="xsd:string"/>
+    <xsd:attribute name="optional" type="xsd:string"/>
+    <xsd:attribute name="valueFromCat" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- conditions are named boolean expressions -->
+  <xsd:group name="condition_elements">
+    <xsd:sequence>
+      <xsd:element name="expression" type="Expression" minOccurs="0"/>
+      <xsd:element name="sub-condition" type="SubCondition" minOccurs="0"/>
+      <xsd:element name="and" type="And" minOccurs="0"/>
+      <xsd:element name="or" type="Or" minOccurs="0"/>
+      <xsd:element name="not" type="Not" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:group>
+
+  <xsd:complexType name="Condition">
+    <xsd:group ref="condition_elements" minOccurs="0" maxOccurs="1"/>
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- a single expression within a condition -->
+  <xsd:complexType name="Expression">
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="op" type="xsd:string"/>
+    <xsd:attribute name="value" type="xsd:string"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- a nested sub condition within a condition -->
+  <xsd:complexType name="SubCondition">
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- the set of boolean operators we support -->
+  <xsd:complexType name="And">
+    <xsd:group ref="condition_elements" minOccurs="0" maxOccurs="unbounded"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType name="Or">
+    <xsd:group ref="condition_elements" minOccurs="0" maxOccurs="unbounded"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType name="Not">
+    <xsd:group ref="condition_elements" minOccurs="0" maxOccurs="unbounded"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- phrases are embeddable and reusable pieces of text -->
+  <xsd:group name="grouping_elements">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="random" type="Random"/>
+        <xsd:element name="first" type="First"/>
+        <xsd:element name="switch" type="Switch"/>
+        <xsd:element name="all" type="All"/>
+        <xsd:element name="text" type="PhraseGroupText"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:group>
+
+  <xsd:attributeGroup name="group_elem_attrs">
+    <xsd:attribute name="id" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+    <xsd:attribute name="phrase" type="xsd:string"/>
+    <xsd:attribute name="case" type="xsd:string"/>
+    <xsd:attribute name="weight" type="xsd:string"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:attributeGroup>
+
+  <xsd:complexType name="Random">
+    <xsd:group ref="grouping_elements"/>
+    <xsd:attributeGroup ref="group_elem_attrs"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="First">
+    <xsd:group ref="grouping_elements"/>
+    <xsd:attributeGroup ref="group_elem_attrs"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="Switch">
+    <xsd:group ref="grouping_elements"/>
+    <xsd:attributeGroup ref="group_elem_attrs"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="All">
+    <xsd:group ref="grouping_elements"/>
+    <xsd:attributeGroup ref="group_elem_attrs"/>
+  </xsd:complexType>
+
+  <!-- CAT text element, not to be confused with SnippetUI text element -->
+  <xsd:complexType name="PhraseGroupText" mixed="true">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:group ref="grouping_elements"/>
+        <xsd:group ref="dialog_elements"/>
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+    <xsd:attribute name="case" type="xsd:string"/>
+    <xsd:attribute name="weight" type="xsd:string"/>
+    <xsd:attribute name="note" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- CAT elements used as children of SnippetUI leaf elements -->
+  <xsd:group name="dialog_elements">
+    <xsd:sequence>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element name="var" type="Var"/>
+        <xsd:element name="phrase" type="Phrase"/>
+        <xsd:element name="opt" type="Opt"/>
+        <xsd:element name="transform" type="Transform"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:group>
+
+  <!-- the var element supports variable substitution -->
+  <xsd:complexType name="Var">
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="inflect" type="xsd:string"/>
+    <xsd:attribute name="transform" type="xsd:string"/>
+    <xsd:attribute name="number" type="xsd:string"/>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="separator" type="xsd:string"/>
+    <xsd:attribute name="beforefirst" type="xsd:string"/>
+    <xsd:attribute name="afterfirst" type="xsd:string"/>
+    <xsd:attribute name="beforelast" type="xsd:string"/>
+    <xsd:attribute name="afterlast" type="xsd:string"/>
+    <xsd:attribute name="itemprefix" type="xsd:string"/>
+    <xsd:attribute name="itemsuffix" type="xsd:string"/>
+    <xsd:attribute name="itemformat" type="xsd:string"/>
+    <xsd:attribute name="ground" type="xsd:string"/>
+    <xsd:attribute name="groundvar" type="xsd:string"/>
+    <xsd:attribute name="semanticConcept" type="xsd:string"/>
+    <xsd:attribute name="id" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- the phrase element lets you embed other segments of text -->
+  <xsd:complexType name="Phrase">
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="id" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- opt defines optional output if variable substitutions were empty -->
+  <xsd:complexType name="Opt" mixed="true">
+    <xsd:group ref="dialog_elements"/>
+  </xsd:complexType>
+
+  <!-- transform the child text in various ways, e.g., uppercase -->
+  <xsd:complexType name="Transform" mixed="true">
+    <xsd:group ref="dialog_elements"/>
+    <xsd:attribute name="mode" type="xsd:string" use="required"/>
+  </xsd:complexType>
+
+  <!-- elements with string values, dialog_elements, and/or condition attributes -->
+  <xsd:complexType name="DialogElements" mixed="true">
+    <xsd:group ref="dialog_elements"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="DialogElements.Repeated" mixed="true">
+    <xsd:group ref="dialog_elements"/>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="DialogElements.WithCondition" mixed="true">
+    <xsd:group ref="dialog_elements"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="DialogElements.Repeated.WithCondition" mixed="true">
+    <xsd:group ref="dialog_elements"/>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="String.Repeated" mixed="true">
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="String.WithCondition" mixed="true">
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="String.Repeated.WithCondition" mixed="true">
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <!-- visual elements for the SnippetUI protobuffer data model -->
+
+  <xsd:complexType name="SnippetUI.ActionElement">
+    <xsd:sequence>
+      <xsd:element name="command" type="SnippetUI.Command" minOccurs="0"/>
+      <xsd:element name="text-elements" type="SnippetUI.TextElement" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ActionProperty">
+    <xsd:sequence>
+      <xsd:element name="actions" type="SnippetUI.ActionElement" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.BackgroundElement">
+    <xsd:sequence>
+      <xsd:element name="visual" type="SnippetUI.VisualElement" minOccurs="0"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="is-hidden-on-idioms" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.BinaryButton">
+    <xsd:sequence>
+      <xsd:element name="primary-button" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="secondary-button" type="SnippetUI.Button" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Button">
+    <xsd:sequence>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="label" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="form-action" type="SnippetUI.Button.FormAction" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Button_Container">
+    <xsd:sequence>
+      <xsd:element name="button-items" type="SnippetUI.Button_Container.ButtonItem" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Button_Container.ButtonItem">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="button" type="SnippetUI.Button"/>
+            <xsd:element name="player-button" type="SnippetUI.PlayerButton"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Color">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="hex-value" type="SnippetUI.Color.HexValue"/>
+            <xsd:element name="name" type="SnippetUI.Color.Name"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Color.HexValue">
+    <xsd:sequence>
+      <xsd:element name="rgba" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ColorElement">
+    <xsd:sequence>
+      <xsd:element name="color" type="SnippetUI.Color" minOccurs="0"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Command">
+    <xsd:sequence>
+      <xsd:element name="is-navigation" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="no-op" type="DialogElements.WithCondition"/>
+            <xsd:element name="ace-command" type="DialogElements.WithCondition"/>
+            <xsd:element name="response" type="DialogElements.WithCondition"/>
+            <xsd:element name="utterance" type="DialogElements.WithCondition"/>
+            <xsd:element name="change-background" type="SnippetUI.Command.ChangeBackground"/>
+            <xsd:element name="sf-command" type="DialogElements.WithCondition"/>
+            <xsd:element name="direct-invocation" type="DialogElements.WithCondition"/>
+            <xsd:element name="response-group" type="SnippetUI.Command.ResponseGroup"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Command.ChangeBackground">
+    <xsd:sequence>
+      <xsd:element name="background" type="SnippetUI.BackgroundElement" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Command.ResponseGroup">
+    <xsd:sequence>
+      <xsd:element name="group-id" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Control_Slider">
+    <xsd:sequence>
+      <xsd:element name="slider" type="SnippetUI.Slider" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Control_Switch">
+    <xsd:sequence>
+      <xsd:element name="switch" type="SnippetUI.Switch" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.CoreChart">
+    <xsd:sequence>
+      <xsd:element name="data" type="DialogElements.WithCondition" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.CoreChartElement">
+    <xsd:sequence>
+      <xsd:element name="chart" type="SnippetUI.CoreChart" minOccurs="0"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.CustomCanvas">
+    <xsd:sequence>
+      <xsd:element name="bundle-name" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="view-id" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="view-data" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.CustomElement">
+    <xsd:sequence>
+      <xsd:element name="canvas" type="SnippetUI.CustomCanvas" minOccurs="0"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.FactItem_Button">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="button-1" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="button-2" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="button-3" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.FactItem_HeroNumber">
+    <xsd:sequence>
+      <xsd:element name="number" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.FactItem_ShortNumber">
+    <xsd:sequence>
+      <xsd:element name="number" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="unit" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.FactItem_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-5" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.HeroHeader">
+    <xsd:sequence>
+      <xsd:element name="banner" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="watch-list-button" type="SnippetUI.WatchListButton" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.HorizontalList_Standard">
+    <xsd:sequence>
+      <xsd:element name="items" type="SnippetUI.HorizontalList_Standard.Item" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.HorizontalList_Standard.Item">
+    <xsd:sequence>
+      <xsd:element name="style" type="SnippetUI.HorizontalList_Standard.Item.Style" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement">
+    <xsd:sequence>
+      <xsd:element name="sources" type="SnippetUI.ImageElement.Source" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement.AppIcon">
+    <xsd:sequence>
+      <xsd:element name="application-bundle-identifier" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement.Bundle">
+    <xsd:sequence>
+      <xsd:element name="name" type="DialogElements.WithCondition" minOccurs="0"/>
+      <xsd:element name="bundle-id" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement.Data">
+    <xsd:sequence>
+      <xsd:element name="png-data" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement.Source">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="data" type="SnippetUI.ImageElement.Data"/>
+            <xsd:element name="bundle" type="SnippetUI.ImageElement.Bundle"/>
+            <xsd:element name="url" type="SnippetUI.ImageElement.Url"/>
+            <xsd:element name="symbol" type="SnippetUI.ImageElement.Symbol"/>
+            <xsd:element name="app-icon" type="SnippetUI.ImageElement.AppIcon"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement.Symbol">
+    <xsd:sequence>
+      <xsd:element name="name" type="DialogElements.WithCondition" minOccurs="0"/>
+      <xsd:element name="tint-color" type="SnippetUI.Color" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.ImageElement.Url">
+    <xsd:sequence>
+      <xsd:element name="source" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="content-mode" type="SnippetUI.ImageElement.ContentMode" minOccurs="0"/>
+      <xsd:element name="loading_image" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="data-loading-image" type="SnippetUI.ImageElement.Data"/>
+            <xsd:element name="bundle-loading-image" type="SnippetUI.ImageElement.Bundle"/>
+            <xsd:element name="symbol-loading-image" type="SnippetUI.ImageElement.Symbol"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.IntentsUI_Standard">
+    <xsd:sequence>
+      <xsd:element name="interaction" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="slots" type="SnippetUI.IntentsUI_Standard.Slot" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.IntentsUI_Standard.Slot">
+    <xsd:sequence>
+      <xsd:element name="parameter-key-paths" type="DialogElements.Repeated" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="fallback" type="SnippetUI.Response.Component" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.LongItem_Text">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.MultilineTextProperty">
+    <xsd:sequence>
+      <xsd:element name="lines" type="SnippetUI.MultilineTextProperty.Line" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="redacted" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="focus-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="selected-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.MultilineTextProperty.Line">
+    <xsd:sequence>
+      <xsd:element name="text-elements" type="SnippetUI.TextElement" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.OptionalBool">
+    <xsd:sequence>
+      <xsd:element name="value" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.OptionalDouble">
+    <xsd:sequence>
+      <xsd:element name="value" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.OptionalInt">
+    <xsd:sequence>
+      <xsd:element name="value" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.OrnamentElement">
+    <xsd:sequence>
+      <xsd:element name="visual" type="SnippetUI.VisualElement" minOccurs="0"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="is-hidden-on-idioms" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Player">
+    <xsd:sequence>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="control" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="player-button" type="SnippetUI.PlayerButton"/>
+            <xsd:element name="custom-canvas" type="SnippetUI.CustomCanvas"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.PlayerButton">
+    <xsd:sequence>
+      <xsd:element name="play-button" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="pause-button" type="SnippetUI.Button" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.PrimaryHeader_Marquee">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.PrimaryHeader_Rich">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.PrimaryHeader_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Reference_Button">
+    <xsd:sequence>
+      <xsd:element name="label" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Reference_Footnote">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Reference_Logo">
+    <xsd:sequence>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Reference_Rich">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Reference_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Response">
+    <xsd:sequence>
+      <xsd:element name="hide-redacted-elements" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="sections" type="SnippetUI.Response.Section" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="backgrounds" type="SnippetUI.BackgroundElement" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="ornaments" type="SnippetUI.OrnamentElement" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="groups" type="SnippetUI.Response.Group" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Response.Component">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="custom-canvas" type="SnippetUI.CustomCanvas"/>
+            <xsd:element name="fact-item-standard" type="SnippetUI.FactItem_Standard"/>
+            <xsd:element name="fact-item-short-number" type="SnippetUI.FactItem_ShortNumber"/>
+            <xsd:element name="fact-item-hero-number" type="SnippetUI.FactItem_HeroNumber"/>
+            <xsd:element name="summary-item-standard" type="SnippetUI.SummaryItem_Standard"/>
+            <xsd:element name="summary-item-short-number" type="SnippetUI.SummaryItem_ShortNumber"/>
+            <xsd:element name="summary-item-text" type="SnippetUI.SummaryItem_Text"/>
+            <xsd:element name="summary-item-large-text" type="SnippetUI.SummaryItem_LargeText"/>
+            <xsd:element name="summary-item-detailed-text" type="SnippetUI.SummaryItem_DetailedText"/>
+            <xsd:element name="simple-item-standard" type="SnippetUI.SimpleItem_Standard"/>
+            <xsd:element name="simple-item-rich" type="SnippetUI.SimpleItem_Rich"/>
+            <xsd:element name="simple-item-visual" type="SnippetUI.SimpleItem_Visual"/>
+            <xsd:element name="primary-header-standard" type="SnippetUI.PrimaryHeader_Standard"/>
+            <xsd:element name="primary-header-marquee" type="SnippetUI.PrimaryHeader_Marquee"/>
+            <xsd:element name="primary-header-rich" type="SnippetUI.PrimaryHeader_Rich"/>
+            <xsd:element name="secondary-header-standard" type="SnippetUI.SecondaryHeader_Standard"/>
+            <xsd:element name="button" type="SnippetUI.Button"/>
+            <xsd:element name="binary-button" type="SnippetUI.BinaryButton"/>
+            <xsd:element name="status-indicator-success" type="SnippetUI.StatusIndicator_Success"/>
+            <xsd:element name="status-indicator-error" type="SnippetUI.StatusIndicator_Error"/>
+            <xsd:element name="status-indicator-in-progress" type="SnippetUI.StatusIndicator_InProgress"/>
+            <xsd:element name="status-indicator-cancelled" type="SnippetUI.StatusIndicator_Cancelled"/>
+            <xsd:element name="text-input" type="SnippetUI.TextInput"/>
+            <xsd:element name="control-switch" type="SnippetUI.Control_Switch"/>
+            <xsd:element name="control-slider" type="SnippetUI.Control_Slider"/>
+            <xsd:element name="group-id" type="xsd:string"/>
+            <xsd:element name="reference-standard" type="SnippetUI.Reference_Standard"/>
+            <xsd:element name="reference-logo" type="SnippetUI.Reference_Logo"/>
+            <xsd:element name="reference-rich" type="SnippetUI.Reference_Rich"/>
+            <xsd:element name="reference-button" type="SnippetUI.Reference_Button"/>
+            <xsd:element name="summary-item-pair" type="SnippetUI.SummaryItem_Pair"/>
+            <xsd:element name="summary-item-pair-number" type="SnippetUI.SummaryItem_PairNumber"/>
+            <xsd:element name="summary-item-button" type="SnippetUI.SummaryItem_Button"/>
+            <xsd:element name="fact-item-button" type="SnippetUI.FactItem_Button"/>
+            <xsd:element name="table" type="SnippetUI.Table"/>
+            <xsd:element name="reference-footnote" type="SnippetUI.Reference_Footnote"/>
+            <xsd:element name="long-item-text" type="SnippetUI.LongItem_Text"/>
+            <xsd:element name="visualization-chart" type="SnippetUI.Visualization_Chart"/>
+            <xsd:element name="summary-item-player" type="SnippetUI.SummaryItem_Player"/>
+            <xsd:element name="simple-item-player" type="SnippetUI.SimpleItem_Player"/>
+            <xsd:element name="simple-item-reverse-rich" type="SnippetUI.SimpleItem_ReverseRich"/>
+            <xsd:element name="secondary-header-emphasized" type="SnippetUI.SecondaryHeader_Emphasized"/>
+            <xsd:element name="summary-item-switch" type="SnippetUI.SummaryItem_Switch"/>
+            <xsd:element name="system-text-clarification-title" type="SnippetUI.SystemText_ClarificationTitle"/>
+            <xsd:element name="visualization-image" type="SnippetUI.Visualization_Image"/>
+            <xsd:element name="visualization-map" type="SnippetUI.Visualization_Map"/>
+            <xsd:element name="button-container" type="SnippetUI.Button_Container"/>
+            <xsd:element name="intentsui-standard" type="SnippetUI.IntentsUI_Standard"/>
+            <xsd:element name="sash-standard" type="SnippetUI.Sash_Standard"/>
+            <xsd:element name="hero-header" type="SnippetUI.HeroHeader"/>
+            <xsd:element name="horizontal-list-standard" type="SnippetUI.HorizontalList_Standard"/>
+            <xsd:element name="section-header-standard" type="SnippetUI.SectionHeader_Standard"/>
+            <xsd:element name="section-header-rich" type="SnippetUI.SectionHeader_Rich"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Response.Component.Repeated">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="custom-canvas" type="SnippetUI.CustomCanvas"/>
+            <xsd:element name="fact-item-standard" type="SnippetUI.FactItem_Standard"/>
+            <xsd:element name="fact-item-short-number" type="SnippetUI.FactItem_ShortNumber"/>
+            <xsd:element name="fact-item-hero-number" type="SnippetUI.FactItem_HeroNumber"/>
+            <xsd:element name="summary-item-standard" type="SnippetUI.SummaryItem_Standard"/>
+            <xsd:element name="summary-item-short-number" type="SnippetUI.SummaryItem_ShortNumber"/>
+            <xsd:element name="summary-item-text" type="SnippetUI.SummaryItem_Text"/>
+            <xsd:element name="summary-item-large-text" type="SnippetUI.SummaryItem_LargeText"/>
+            <xsd:element name="summary-item-detailed-text" type="SnippetUI.SummaryItem_DetailedText"/>
+            <xsd:element name="simple-item-standard" type="SnippetUI.SimpleItem_Standard"/>
+            <xsd:element name="simple-item-rich" type="SnippetUI.SimpleItem_Rich"/>
+            <xsd:element name="simple-item-visual" type="SnippetUI.SimpleItem_Visual"/>
+            <xsd:element name="primary-header-standard" type="SnippetUI.PrimaryHeader_Standard"/>
+            <xsd:element name="primary-header-marquee" type="SnippetUI.PrimaryHeader_Marquee"/>
+            <xsd:element name="primary-header-rich" type="SnippetUI.PrimaryHeader_Rich"/>
+            <xsd:element name="secondary-header-standard" type="SnippetUI.SecondaryHeader_Standard"/>
+            <xsd:element name="button" type="SnippetUI.Button"/>
+            <xsd:element name="binary-button" type="SnippetUI.BinaryButton"/>
+            <xsd:element name="status-indicator-success" type="SnippetUI.StatusIndicator_Success"/>
+            <xsd:element name="status-indicator-error" type="SnippetUI.StatusIndicator_Error"/>
+            <xsd:element name="status-indicator-in-progress" type="SnippetUI.StatusIndicator_InProgress"/>
+            <xsd:element name="status-indicator-cancelled" type="SnippetUI.StatusIndicator_Cancelled"/>
+            <xsd:element name="text-input" type="SnippetUI.TextInput"/>
+            <xsd:element name="control-switch" type="SnippetUI.Control_Switch"/>
+            <xsd:element name="control-slider" type="SnippetUI.Control_Slider"/>
+            <xsd:element name="group-id" type="xsd:string"/>
+            <xsd:element name="reference-standard" type="SnippetUI.Reference_Standard"/>
+            <xsd:element name="reference-logo" type="SnippetUI.Reference_Logo"/>
+            <xsd:element name="reference-rich" type="SnippetUI.Reference_Rich"/>
+            <xsd:element name="reference-button" type="SnippetUI.Reference_Button"/>
+            <xsd:element name="summary-item-pair" type="SnippetUI.SummaryItem_Pair"/>
+            <xsd:element name="summary-item-pair-number" type="SnippetUI.SummaryItem_PairNumber"/>
+            <xsd:element name="summary-item-button" type="SnippetUI.SummaryItem_Button"/>
+            <xsd:element name="fact-item-button" type="SnippetUI.FactItem_Button"/>
+            <xsd:element name="table" type="SnippetUI.Table"/>
+            <xsd:element name="reference-footnote" type="SnippetUI.Reference_Footnote"/>
+            <xsd:element name="long-item-text" type="SnippetUI.LongItem_Text"/>
+            <xsd:element name="visualization-chart" type="SnippetUI.Visualization_Chart"/>
+            <xsd:element name="summary-item-player" type="SnippetUI.SummaryItem_Player"/>
+            <xsd:element name="simple-item-player" type="SnippetUI.SimpleItem_Player"/>
+            <xsd:element name="simple-item-reverse-rich" type="SnippetUI.SimpleItem_ReverseRich"/>
+            <xsd:element name="secondary-header-emphasized" type="SnippetUI.SecondaryHeader_Emphasized"/>
+            <xsd:element name="summary-item-switch" type="SnippetUI.SummaryItem_Switch"/>
+            <xsd:element name="system-text-clarification-title" type="SnippetUI.SystemText_ClarificationTitle"/>
+            <xsd:element name="visualization-image" type="SnippetUI.Visualization_Image"/>
+            <xsd:element name="visualization-map" type="SnippetUI.Visualization_Map"/>
+            <xsd:element name="button-container" type="SnippetUI.Button_Container"/>
+            <xsd:element name="intentsui-standard" type="SnippetUI.IntentsUI_Standard"/>
+            <xsd:element name="sash-standard" type="SnippetUI.Sash_Standard"/>
+            <xsd:element name="hero-header" type="SnippetUI.HeroHeader"/>
+            <xsd:element name="horizontal-list-standard" type="SnippetUI.HorizontalList_Standard"/>
+            <xsd:element name="section-header-standard" type="SnippetUI.SectionHeader_Standard"/>
+            <xsd:element name="section-header-rich" type="SnippetUI.SectionHeader_Rich"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Response.Group">
+    <xsd:sequence>
+      <xsd:element name="id" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="components" type="SnippetUI.Response.Component.Repeated" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Response.Section">
+    <xsd:sequence>
+      <xsd:element name="component-list" type="SnippetUI.Response.Component.Repeated" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="level-of-detail" type="SnippetUI.Response.LevelOfDetail" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="is-hidden-on-idioms" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+    <xsd:attribute name="id" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Sash_Standard">
+    <xsd:sequence>
+      <xsd:element name="title" type="SnippetUI.Sash_Standard.SashTitle" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="title-color" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="background-color" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Sash_Standard.SashTitle">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="application-bundle-identifier" type="DialogElements"/>
+            <xsd:element name="text" type="DialogElements"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SecondaryHeader_Emphasized">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SecondaryHeader_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SectionHeader_Rich">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SectionHeader_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SimpleItem_Player">
+    <xsd:sequence>
+      <xsd:element name="player" type="SnippetUI.Player" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SimpleItem_ReverseRich">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SimpleItem_Rich">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-5" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SimpleItem_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SimpleItem_Visual">
+    <xsd:sequence>
+      <xsd:element name="thumbnails" type="SnippetUI.VisualProperty.Repeated" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Slider">
+    <xsd:sequence>
+      <xsd:element name="identifier" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="minimum" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="maximum" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="step" type="SnippetUI.OptionalDouble" minOccurs="0"/>
+      <xsd:element name="initial-value" type="SnippetUI.OptionalDouble" minOccurs="0"/>
+      <xsd:element name="invocation-payload" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="leading-thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="trailing-thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.StatusIndicator_Cancelled">
+    <xsd:sequence>
+      <xsd:element name="text" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.StatusIndicator_Error">
+    <xsd:sequence>
+      <xsd:element name="text" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.StatusIndicator_InProgress">
+    <xsd:sequence>
+      <xsd:element name="text" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.StatusIndicator_Success">
+    <xsd:sequence>
+      <xsd:element name="text" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_Button">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="button-1" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="button-2" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="button-3" type="SnippetUI.Button" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_DetailedText">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-5" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_LargeText">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_Pair">
+    <xsd:sequence>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-6" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-5" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-7" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-8" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-9" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-10" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail-1" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail-2" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_PairNumber">
+    <xsd:sequence>
+      <xsd:element name="number-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="number-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-5" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-6" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-7" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-8" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-9" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail-1" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail-2" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_Player">
+    <xsd:sequence>
+      <xsd:element name="player" type="SnippetUI.Player" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_ShortNumber">
+    <xsd:sequence>
+      <xsd:element name="number" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_Standard">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="thumbnail" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="text-4" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_Switch">
+    <xsd:sequence>
+      <xsd:element name="switch" type="SnippetUI.Switch" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SummaryItem_Text">
+    <xsd:sequence>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-3" type="SnippetUI.MultilineTextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Switch">
+    <xsd:sequence>
+      <xsd:element name="identifier" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="on-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="off-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="initial-value" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="invocation-payload" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.SystemText_ClarificationTitle">
+    <xsd:sequence>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table">
+    <xsd:sequence>
+      <xsd:element name="separator-lines" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="columns" type="SnippetUI.Table.Column" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="header" type="SnippetUI.Table.Header" minOccurs="0"/>
+      <xsd:element name="rows" type="SnippetUI.Table.Row" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.AutoColumnSize">
+    <xsd:sequence/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.Column">
+    <xsd:sequence>
+      <xsd:element name="cell" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="content" type="SnippetUI.Table.ContentColumnCell"/>
+            <xsd:element name="spacer" type="SnippetUI.Table.SpacerColumnCell"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.Content">
+    <xsd:sequence>
+      <xsd:element name="line-limit" type="SnippetUI.OptionalInt" minOccurs="0"/>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="empty" type="SnippetUI.Table.EmptyCell"/>
+            <xsd:element name="text" type="SnippetUI.MultilineTextProperty"/>
+            <xsd:element name="visual" type="SnippetUI.VisualProperty"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.Content.Repeated">
+    <xsd:sequence>
+      <xsd:element name="line-limit" type="SnippetUI.OptionalInt" minOccurs="0"/>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="empty" type="SnippetUI.Table.EmptyCell"/>
+            <xsd:element name="text" type="SnippetUI.MultilineTextProperty"/>
+            <xsd:element name="visual" type="SnippetUI.VisualProperty"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.ContentColumnCell">
+    <xsd:sequence>
+      <xsd:element name="alignment" type="SnippetUI.Table.ColumnAlignment" minOccurs="0"/>
+      <xsd:element name="size" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="auto" type="SnippetUI.Table.AutoColumnSize"/>
+            <xsd:element name="fixed" type="SnippetUI.Table.FixedColumnSize"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.EmptyCell">
+    <xsd:sequence/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.FixedColumnSize">
+    <xsd:sequence>
+      <xsd:element name="percent" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.Header">
+    <xsd:sequence>
+      <xsd:element name="cells" type="SnippetUI.Table.HeaderCell" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.HeaderCell">
+    <xsd:sequence>
+      <xsd:element name="content" type="SnippetUI.Table.Content" minOccurs="0"/>
+      <xsd:element name="column-span" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="alignment" type="SnippetUI.Table.ColumnAlignment" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.Row">
+    <xsd:sequence>
+      <xsd:element name="cells" type="SnippetUI.Table.Content.Repeated" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="backgrounds" type="SnippetUI.BackgroundElement" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Table.SpacerColumnCell">
+    <xsd:sequence/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.TextElement">
+    <xsd:sequence>
+      <xsd:element name="font" type="SnippetUI.TextElement.Font" minOccurs="0"/>
+      <xsd:element name="weight" type="SnippetUI.TextElement.FontWeight" minOccurs="0"/>
+      <xsd:element name="color" type="SnippetUI.Color" minOccurs="0"/>
+      <xsd:element name="is-italic" type="SnippetUI.OptionalBool" minOccurs="0"/>
+      <xsd:element name="is-bold" type="SnippetUI.OptionalBool" minOccurs="0"/>
+      <xsd:element name="idioms" type="SnippetUI.Idiom" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="line-limit" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="plain" type="DialogElements"/>
+            <xsd:element name="attributed" type="DialogElements"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.TextElement.Font">
+    <xsd:sequence>
+      <xsd:element name="value" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="named" type="SnippetUI.TextElement.Font.NamedFont"/>
+            <xsd:element name="system" type="SnippetUI.TextElement.Font.SystemFont"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.TextElement.Font.SystemFont">
+    <xsd:sequence>
+      <xsd:element name="size" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="weight" type="SnippetUI.TextElement.Font.Weight" minOccurs="0"/>
+      <xsd:element name="design" type="SnippetUI.TextElement.Font.Design" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.TextElement.FontWeight">
+    <xsd:sequence>
+      <xsd:element name="value" type="SnippetUI.TextElement.Font.Weight" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.TextInput">
+    <xsd:sequence>
+      <xsd:element name="identifier" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="initial-value" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="placeholder-text" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="validation-mode" type="SnippetUI.TextInput.ValidationMode" minOccurs="0"/>
+      <xsd:element name="invocation-payload" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="label-text" type="SnippetUI.TextProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.TextProperty">
+    <xsd:sequence>
+      <xsd:element name="text-elements" type="SnippetUI.TextElement" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="redacted" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="focus-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="selected-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.VisualElement">
+    <xsd:sequence>
+      <xsd:element name="element" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="image-element" type="SnippetUI.ImageElement"/>
+            <xsd:element name="color-element" type="SnippetUI.ColorElement"/>
+            <xsd:element name="custom-element" type="SnippetUI.CustomElement"/>
+            <xsd:element name="chart-element" type="SnippetUI.CoreChartElement"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.VisualElement.Repeated">
+    <xsd:sequence>
+      <xsd:element name="element" minOccurs="0">
+        <xsd:complexType>
+          <xsd:choice>
+            <xsd:element name="image-element" type="SnippetUI.ImageElement"/>
+            <xsd:element name="color-element" type="SnippetUI.ColorElement"/>
+            <xsd:element name="custom-element" type="SnippetUI.CustomElement"/>
+            <xsd:element name="chart-element" type="SnippetUI.CoreChartElement"/>
+          </xsd:choice>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.VisualProperty">
+    <xsd:sequence>
+      <xsd:element name="visuals" type="SnippetUI.VisualElement.Repeated" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="redacted" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="focus-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="selected-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.VisualProperty.Repeated">
+    <xsd:sequence>
+      <xsd:element name="visuals" type="SnippetUI.VisualElement" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="redacted" type="DialogElements" minOccurs="0"/>
+      <xsd:element name="focus-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+      <xsd:element name="selected-action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="list" type="xsd:string"/>
+    <xsd:attribute name="iterator" type="xsd:string"/>
+    <xsd:attribute name="condition" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Visualization_Chart">
+    <xsd:sequence>
+      <xsd:element name="visual" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Visualization_Image">
+    <xsd:sequence>
+      <xsd:element name="visual" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.Visualization_Map">
+    <xsd:sequence>
+      <xsd:element name="map-property" type="SnippetUI.VisualProperty" minOccurs="0"/>
+      <xsd:element name="text-1" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="text-2" type="SnippetUI.TextProperty" minOccurs="0"/>
+      <xsd:element name="action" type="SnippetUI.ActionProperty" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="SnippetUI.WatchListButton">
+    <xsd:sequence>
+      <xsd:element name="canonical-id" type="DialogElements" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- SnippetUI enumerations -->
+
+  <xsd:simpleType name="SnippetUI.Button.FormAction">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NONE"/>
+      <xsd:enumeration value="SUBMIT"/>
+      <xsd:enumeration value="CANCEL"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.Color.Name">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="DEFAULT"/>
+      <xsd:enumeration value="CLEAR"/>
+      <xsd:enumeration value="BLACK"/>
+      <xsd:enumeration value="WHITE"/>
+      <xsd:enumeration value="GRAY"/>
+      <xsd:enumeration value="RED"/>
+      <xsd:enumeration value="GREEN"/>
+      <xsd:enumeration value="BLUE"/>
+      <xsd:enumeration value="ORANGE"/>
+      <xsd:enumeration value="YELLOW"/>
+      <xsd:enumeration value="PINK"/>
+      <xsd:enumeration value="PURPLE"/>
+      <xsd:enumeration value="PRIMARY"/>
+      <xsd:enumeration value="SECONDARY"/>
+      <xsd:enumeration value="BROWN"/>
+      <xsd:enumeration value="CYAN"/>
+      <xsd:enumeration value="INDIGO"/>
+      <xsd:enumeration value="MINT"/>
+      <xsd:enumeration value="TEAL"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.HorizontalList_Standard.Item.Style">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ROUNDED_IMAGE"/>
+      <xsd:enumeration value="INLINE_IMAGE"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.Idiom">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="DEFAULT"/>
+      <xsd:enumeration value="PHONE"/>
+      <xsd:enumeration value="PAD"/>
+      <xsd:enumeration value="POD"/>
+      <xsd:enumeration value="CAR"/>
+      <xsd:enumeration value="TV"/>
+      <xsd:enumeration value="WATCH"/>
+      <xsd:enumeration value="MAC"/>
+      <xsd:enumeration value="RESERVED_DEVICE"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.ImageElement.ContentMode">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="FIT"/>
+      <xsd:enumeration value="FILL"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.Response.LevelOfDetail">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="CONTENT"/>
+      <xsd:enumeration value="CAPTION"/>
+      <xsd:enumeration value="FULL"/>
+      <xsd:enumeration value="SUPPORTING"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.Table.ColumnAlignment">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="DEFAULT"/>
+      <xsd:enumeration value="LEADING"/>
+      <xsd:enumeration value="CENTER"/>
+      <xsd:enumeration value="TRAILING"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.TextElement.Font.Design">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SERIF"/>
+      <xsd:enumeration value="ROUNDED"/>
+      <xsd:enumeration value="MONOSPACED"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.TextElement.Font.NamedFont">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="LARGE_TITLE"/>
+      <xsd:enumeration value="TITLE"/>
+      <xsd:enumeration value="TITLE2"/>
+      <xsd:enumeration value="TITLE3"/>
+      <xsd:enumeration value="HEADLINE"/>
+      <xsd:enumeration value="SUBHEADLINE"/>
+      <xsd:enumeration value="BODY"/>
+      <xsd:enumeration value="CALLOUT"/>
+      <xsd:enumeration value="FOOTNOTE"/>
+      <xsd:enumeration value="CAPTION"/>
+      <xsd:enumeration value="CAPTION2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.TextElement.Font.Weight">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="REGULAR"/>
+      <xsd:enumeration value="BLACK"/>
+      <xsd:enumeration value="BOLD"/>
+      <xsd:enumeration value="HEAVY"/>
+      <xsd:enumeration value="LIGHT"/>
+      <xsd:enumeration value="MEDIUM"/>
+      <xsd:enumeration value="SEMIBOLD"/>
+      <xsd:enumeration value="THIN"/>
+      <xsd:enumeration value="ULTRALIGHT"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SnippetUI.TextInput.ValidationMode">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NONE"/>
+      <xsd:enumeration value="NONEMPTY"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+</xsd:schema>

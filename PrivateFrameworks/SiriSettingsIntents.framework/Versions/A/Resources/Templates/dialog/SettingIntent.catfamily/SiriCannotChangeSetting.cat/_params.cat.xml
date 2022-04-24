@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#SiriCannotChangeSetting">
+    <meta name="description" value="User requested something that Siri cannot change."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters>
+        <parameter name="buttonExists" type="dialog.Boolean" description="This is true if there is a punchout URI to a setting in the form of a button."/>
+    </parameters>
+</cat>

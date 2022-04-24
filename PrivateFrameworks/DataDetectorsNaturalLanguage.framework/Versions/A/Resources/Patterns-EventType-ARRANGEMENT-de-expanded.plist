@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ARRANGEMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::GROCERIES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(supermarkt|einkaufen|lebensmittel) (.{0,10} )?(gehen|einkaufen fahren)</string>
+			<string>(aldi|edeka|kaufland|lidl|penny|rewe)</string>
+			<string>(wochen|super|getränke|fisch)markt</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Einkaufen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>aufgabeln</string>
+			<string>gabel (mich|dich|ihn|sie|uns|euch)(.{0,50})auf</string>
+			<string>abzuholen</string>
+			<string>hol(t|st) (du|ihr) (mich|uns) (.{0,50})ab</string>
+			<string>(komm|kann)(e|t|st) (du|ihr) (mich|uns) (.{0,50})abholen</string>
+			<string>hol(e)? ich (dich|euch)( .{0,35})? ab</string>
+			<string>holen wir (dich|euch)(.{0,20})? ab</string>
+			<string>hol(e)? mich( .{0,25})? ab</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Abholen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP::AIRPORT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(am|vom) (flughafen|airport) (abholen|aufgabeln)</string>
+			<string>(hol|gabel)(st|t)? (du|ihr) (mich|dich|ihn|sie|uns|euch).{0,30}(flughafen|airport).{0,20}(auf|ab)</string>
+			<string>(flughafen|airport) .{0,30}ab(zu)?holen</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Vom Flughafen abholen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(shopping|bummeln|outlet|shoppen)</string>
+			<string>shoppingcenter</string>
+			<string>einkaufszentrum</string>
+			<string>geschenk(e)? kaufen</string>
+			<string>geschäft</string>
+			<string>fachhandel</string>
+			<string>kaufen</string>
+			<string>einkaufsbummel</string>
+			<string>second hand shop</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Shopping</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING::SALES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(sale|wsv|ssv|(winter|sommer)[- ]?schlussverkauf)</string>
+			<string>(total)?(aus|ab|räumungs)verkauf</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Schlussverkauf</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(ver)?reisen? (ich|wir) (nach|zum|an|in die)</string>
+			<string>(urlaub|flug|mietwagen|hotel|motel|hostel|pension).{0,25} gebucht</string>
+			<string>(trip|reise) nach</string>
+			<string>road[ -]?trip</string>
+			<string>(könnten|können).{0,25} ((los|ab)fahren|aufbrechen)</string>
+			<string>(abfahrt|abreise) (per|(mit|via) (dem|der)) ((fern)?(bus|zug|bahn|ice)|flieger|flugzeug)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Reise</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL::FIELDTRIP</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(schul|abschluss|kindergarten|klassen|studien)[ -]?(trip|ausflug|reise|fahrt)</string>
+			<string>(exkursion|ausflug)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Ausflug</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

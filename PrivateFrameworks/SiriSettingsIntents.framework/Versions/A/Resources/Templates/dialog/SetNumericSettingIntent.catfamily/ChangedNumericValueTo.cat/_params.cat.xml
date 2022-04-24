@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetNumericSettingIntent#ChangedNumericValueTo">
+	<meta name="description" value="Tell the user what setting we changed, and to what."/>
+	<meta name="category" value="Handled"/>
+	<meta name="readyForLoc" value="true"/>
+	<parameters>
+		<parameter name="wasSmartVolumeDisabled" description="Indicates if smart volume was just disabled" type="dialog.Boolean"/>
+		<parameter name="setting" description="The setting that the user changed." type="settings.NumericSetting"/>
+		<parameter name="action" description="The change the user requested." type="settings.NumericSettingAction"/>
+		<parameter name="deviceState" description="Contains details about the user’s device." type="sirikit.DeviceState"/>
+		<parameter name="isStickyOffsetEnabledUp" description="Indicates whether the siri voice volume sticky offset was enabled and increased for subsequent tts." type="dialog.Boolean"/>
+		<parameter name="isStickyOffsetEnabledDown" description="Indicates whether the siri voice volume sticky offset was enabled and lowered for subsequent tts." type="dialog.Boolean"/>
+	</parameters>
+</cat>

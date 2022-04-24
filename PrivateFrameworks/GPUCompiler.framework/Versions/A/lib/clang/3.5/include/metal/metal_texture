@@ -1,0 +1,2713 @@
+//===-- metal_texture -----------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_TEXTURE
+#define __METAL_TEXTURE
+
+typedef device struct _texture_1d_t *texture_1d_t;
+typedef device struct _texture_1d_array_t *texture_1d_array_t;
+typedef device struct _texture_2d_t *texture_2d_t;
+typedef device struct _texture_2d_array_t *texture_2d_array_t;
+typedef device struct _texture_3d_t *texture_3d_t;
+typedef device struct _texture_cube_t *texture_cube_t;
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+typedef device struct _texture_cube_array_t *texture_cube_array_t;
+#endif
+typedef device struct _texture_2d_ms_t *texture_2d_ms_t;
+typedef device struct _depth_2d_t *depth_2d_t;
+typedef device struct _depth_2d_array_t *depth_2d_array_t;
+typedef device struct _depth_cube_t *depth_cube_t;
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+typedef device struct _depth_cube_array_t *depth_cube_array_t;
+#endif
+typedef device struct _depth_2d_ms_t *depth_2d_ms_t;
+
+typedef __constant struct _sampler_t *sampler_t;
+
+#define _AIR_DEPTH_FLOAT32 1
+
+namespace metal {
+  // 2.5 Textures
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__)
+  #define _is_valid_default_construct(_a) (_a == access::read || _a == access::sample)
+  #define _err_default_construct_msg "Default constructor for textures must use access::sample or access::read as the access qualifier"
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+  #define _is_valid_copy_assign(_a) (_a == access::read || _a == access::sample)
+  #define _err_copy_assign_msg "Assignment of textures supports only texture with access::sample or access::read access qualifier"
+#endif
+#if defined(__HAVE_TEXTURE_READWRITE__)
+  enum class access { sample, read, write, read_write };
+  #define _is_valid_read(_a) (_a == access::read || _a == access::sample || _a == access::read_write)
+  #define _err_read_access_msg "Invalid texture access qualifier.  Must use access::sample, access::read, or access::read_write as the access qualifier"
+  #define _is_valid_write(_a) (_a == access::write || _a == access::read_write)
+  #define _err_write_access_msg "Invalid texture access qualifier.  Must use access::write or access::read_write as the access qualifier"
+#else
+  enum class access { sample, read, write };
+  #define _is_valid_read(_a) (_a == access::read || _a == access::sample)
+  #define _err_read_access_msg "Invalid texture access qualifier.  Must use access::sample or access::read as the access qualifier"
+  #define _is_valid_write(_a) (_a == access::write)
+  #define _err_write_access_msg "Invalid texture access qualifier.  Must use access::write as the access qualifier"
+#endif
+
+  template<typename T, access a = access::sample> struct texture1d;
+  template<typename T, access a = access::sample> struct texture1d_array;
+  template<typename T, access a = access::sample> struct texture2d;
+  template<typename T, access a = access::sample> struct texture2d_array;
+  template<typename T, access a = access::sample> struct texture3d;
+  template<typename T, access a = access::sample> struct texturecube;
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+  template<typename T, access a = access::sample> struct texturecube_array;
+#endif
+  template<typename T, access a = access::read> struct texture2d_ms;
+
+  template<typename T, access a = access::sample> struct depth2d;
+  template<typename T, access a = access::sample> struct depth2d_array;
+  template<typename T, access a = access::sample> struct depthcube;
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+  template<typename T, access a = access::sample> struct depthcube_array;
+#endif
+  template<typename T, access a = access::read> struct depth2d_ms;
+
+  // 2.6 Samplers
+  enum class coord { normalized = 0, pixel = 1 };
+  enum class filter { nearest = 0, linear = 1 };
+  enum class s_address {
+    clamp_to_zero = 0,
+    clamp_to_edge = 1,
+    repeat = 2,
+    mirrored_repeat = 3,
+#if defined(__HAVE_BORDER_COLOR__)
+    clamp_to_border = 8
+#endif
+  };
+  enum class t_address {
+    clamp_to_zero = 0,
+    clamp_to_edge = 1,
+    repeat = 2,
+    mirrored_repeat = 3,
+#if defined(__HAVE_BORDER_COLOR__)
+    clamp_to_border = 8
+#endif
+  };
+  enum class r_address {
+    clamp_to_zero = 0,
+    clamp_to_edge = 1,
+    repeat = 2,
+    mirrored_repeat = 3,
+#if defined(__HAVE_BORDER_COLOR__)
+    clamp_to_border = 8
+#endif
+  };
+  enum class address {
+    clamp_to_zero = 0,
+    clamp_to_edge = 1,
+    repeat = 2,
+    mirrored_repeat = 3,
+#if defined(__HAVE_BORDER_COLOR__)
+    clamp_to_border = 8
+#endif
+  };
+  enum class mip_filter { none = 0, nearest = 1, linear = 2 };
+  enum class compare_func {
+#if defined(__HAVE_NONE_COMPARE_FUNCTION__)
+    none = 0,
+#endif
+    less = 1,
+    less_equal = 2,
+    greater = 3,
+    greater_equal = 4,
+    equal = 5,
+    not_equal = 6,
+#if defined(__HAVE_ALWAYS_NEVER_COMPARE_FUNCTION__)
+    always = 7,
+    never = 8
+#endif
+  };
+  enum class mag_filter   { nearest = 0, linear = 1 };
+  enum class min_filter   { nearest = 0, linear = 1 };
+
+#if defined(__HAVE_BORDER_COLOR__)
+  enum class border_color {
+    transparent_black = 0,
+    opaque_black = 1,
+    opaque_white = 2
+  };
+#endif
+
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+  struct max_anisotropy {
+    METAL_FUNC constexpr explicit max_anisotropy(int v)
+      : value(v-1) {} // Given value 1 to 16 is stored as 4 bits 0 to 15
+    uchar value : 4;
+  };
+  struct lod_clamp {
+    METAL_FUNC constexpr explicit lod_clamp(float min, float max)
+      : bits((static_cast<uint>(toHalfBits(as_type<uint>(max))) << 16) |
+             toHalfBits(as_type<uint>(min))) {}
+    uint bits;
+private:
+    static constexpr ushort combine(uint sign, uint exponent, uint mantissa) {
+      return (sign << 15) | (exponent << 10) | mantissa;
+    }
+    static constexpr uint sign(uint f32) {
+      return (f32 >> 31) & 0x1;
+    }
+    static constexpr uint exp(uint f32) {
+      return (f32 >> 23) & ((1 << 8)-1);
+    }
+    static constexpr uint mant(uint f32) {
+      return f32 & ((1 << 23)-1);
+    }
+    static constexpr ushort NaNMantissa(uint mantissa) {
+      return (mantissa >> (23-10)) |                        // upper 10
+             ((mantissa >> (23-13)) & ((1 << 3)-1) << 3) |  // middle 3
+             (mantissa & ((1 << 10)-1));                    // lower 10
+    }
+    static constexpr ushort toHalfNaN(uint f32) {
+      return combine(sign(f32), 0x1f, NaNMantissa(mant(f32)));
+    }
+    static constexpr ushort denormMantissa(uint mantissa) {
+      // Use the upper 10 bits of mantissa unless these are all zero, in which
+      // case use the bottom 10 bits
+      return ((mantissa >> (23-10)) == 0 ?
+               ((mantissa & ((1 << 10)-1)) == 0 ?
+                 1 :
+                 (mantissa & ((1 << 10)-1))) :
+               (mantissa >> (23-10)));
+    }
+    static constexpr ushort toHalfDenorm(uint f32) {
+      return combine(sign(f32), 0, denormMantissa(mant(f32)));
+    }
+    static constexpr ushort toHalfNormalized(uint f32, int biased_e) {
+      return (1 <= biased_e && biased_e <= 30) ?
+               combine(sign(f32), biased_e, mant(f32) >> (23-10)) :
+             (biased_e > 30) ?
+               combine(sign(f32), 0x1e, 0x3ff) :  // e > 15; return maximum
+               combine(sign(f32), 0x1,  0x0);     // e <= -14; return minimum
+    }
+    static constexpr ushort toHalfBits(uint f32) {
+      return
+        (f32 == 0x00000000) ?
+          0x0000 :                                  // positive 0
+        (f32 == 0x80000000) ?
+          0x8000 :                                  // negative 0
+        (f32 == 0x7f800000) ?
+          0x7c00 :                                  // positive infinity
+        (f32 == 0xff800000) ?
+          0xfc00 :                                  // negative infinity
+        (f32 == 0x7f7fffff) ?
+          0x7bff :                                  // positive max normalized
+        (f32 == 0xff7fffff) ?
+          0xfbff :                                  // negative max normalized
+        (f32 == 0x00800000) ?
+          0x0400 :                                  // positive min normalized
+        (f32 == 0x80800000) ?
+          0x8400 :                                  // negative min normalized
+        (exp(f32) == 0xff) ?
+          toHalfNaN(f32) :
+        (exp(f32) == 0) ?
+          toHalfDenorm(f32) :
+          toHalfNormalized(f32, exp(f32) - 127 + 15); // unbias and re-bias exp
+    }
+  };
+#endif
+
+  struct sampler {
+  private:
+    using __uint64_t = unsigned __metal_internal_int64_t;
+  public:
+    thread sampler &operator=(const thread sampler&) thread = delete;
+    thread sampler &operator=(const constant sampler&) thread = delete;
+    thread sampler *operator&() thread = delete;
+    const thread sampler *operator&() const thread = delete;
+
+    METAL_FUNC constexpr sampler() thread
+      : val(build(nullptr, (1ULL << marker_bit) |
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+            ((__uint64_t) default_lod_clamp.bits << lod_clamp_base) |
+            ((__uint64_t) default_anisotropy.value << anisotropy_base) |
+#endif
+            ((__uint64_t) default_compare_func << compare_base) |
+            ((__uint64_t) address::clamp_to_edge << s_address_base) |
+            ((__uint64_t) address::clamp_to_edge << t_address_base) |
+            ((__uint64_t) address::clamp_to_edge << r_address_base),
+            ~__uint64_t(0))) {}
+
+    constexpr sampler(const thread sampler &) thread = default;
+    constexpr sampler(const constant sampler &) thread = default;
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(coord mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << normalized_base,
+                  normalized_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(s_address mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << s_address_base,
+                  s_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(t_address mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << t_address_base,
+                  t_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(r_address mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << r_address_base,
+                  r_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(address mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  ((__uint64_t(mode) << s_address_base) & s_address_mask) |
+                  ((__uint64_t(mode) << t_address_base) & t_address_mask) |
+                  ((__uint64_t(mode) << r_address_base) & r_address_mask),
+                  s_address_mask | t_address_mask | r_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(mag_filter mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << mag_filter_base,
+                  mag_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(min_filter mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << min_filter_base,
+                  min_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(filter mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  (__uint64_t(mode) << mag_filter_base) |
+                  (__uint64_t(mode) << min_filter_base),
+                  mag_filter_mask | min_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(mip_filter mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << mip_filter_base,
+                  mip_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(compare_func mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << compare_base,
+                  compare_mask)) {}
+
+#if defined(__HAVE_BORDER_COLOR__)
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(border_color mode, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << border_color_base,
+                  border_color_mask)) {}
+#endif
+
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__)
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(max_anisotropy aniso, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(aniso.value) << anisotropy_base,
+                  anisotropy_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(lod_clamp lod, Ts... t) thread
+      : val(build(sampler(t...).val,
+                  __uint64_t(lod.bits) << lod_clamp_base,
+                  lod_clamp_mask)) {}
+#endif
+
+  public:
+    constant sampler &operator=(const thread sampler&) constant = delete;
+    constant sampler &operator=(const constant sampler&) constant = delete;
+    const constant sampler *operator&() const constant = delete;
+
+    METAL_FUNC constexpr sampler() constant
+      : val(build(nullptr, (1ULL << marker_bit) |
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+            ((__uint64_t) default_lod_clamp.bits << lod_clamp_base) |
+            ((__uint64_t) default_anisotropy.value << anisotropy_base) |
+#endif
+            ((__uint64_t) default_compare_func << compare_base) |
+            ((__uint64_t) address::clamp_to_edge << s_address_base) |
+            ((__uint64_t) address::clamp_to_edge << t_address_base) |
+            ((__uint64_t) address::clamp_to_edge << r_address_base),
+            ~__uint64_t(0))) {}
+
+    constexpr sampler(const thread sampler &) constant = default;
+    constexpr sampler(const constant sampler &) constant = default;
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(coord mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << normalized_base,
+                  normalized_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(s_address mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << s_address_base,
+                  s_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(t_address mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << t_address_base,
+                  t_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(r_address mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << r_address_base,
+                  r_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(address mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  ((__uint64_t(mode) << s_address_base) & s_address_mask) |
+                  ((__uint64_t(mode) << t_address_base) & t_address_mask) |
+                  ((__uint64_t(mode) << r_address_base) & r_address_mask),
+                  s_address_mask | t_address_mask | r_address_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(mag_filter mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << mag_filter_base,
+                  mag_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(min_filter mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << min_filter_base,
+                  min_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(filter mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  (__uint64_t(mode) << mag_filter_base) |
+                  (__uint64_t(mode) << min_filter_base),
+                  mag_filter_mask | min_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(mip_filter mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << mip_filter_base,
+                  mip_filter_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(compare_func mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << compare_base,
+                  compare_mask)) {}
+
+#if defined(__HAVE_BORDER_COLOR__)
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(border_color mode, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(mode) << border_color_base,
+                  border_color_mask)) {}
+#endif
+
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__)
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(max_anisotropy aniso, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(aniso.value) << anisotropy_base,
+                  anisotropy_mask)) {}
+
+    template<typename... Ts>
+    METAL_FUNC constexpr sampler(lod_clamp lod, Ts... t) constant
+      : val(build(sampler(t...).val,
+                  __uint64_t(lod.bits) << lod_clamp_base,
+                  lod_clamp_mask)) {}
+#endif
+
+  private :
+    sampler_t val;
+
+  private:
+    // Values to help calculate offsets.
+    constexpr const static constant unsigned s_address_bits    =  3; // bits[2:0]   s_address mode
+    constexpr const static constant unsigned t_address_bits    =  3; // bits[5:3]   t_address mode
+    constexpr const static constant unsigned r_address_bits    =  3; // bits[8:6]   r_address mode
+    constexpr const static constant unsigned mag_filter_bits   =  2; // bits[10:9]  mag filter mode
+    constexpr const static constant unsigned min_filter_bits   =  2; // bits[12:11] min filter mode
+    constexpr const static constant unsigned mip_filter_bits   =  2; // bits[14:13] mip filter mode
+    constexpr const static constant unsigned normalized_bits   =  1; // bits[15:15] normalized mode
+    constexpr const static constant unsigned compare_bits      =  4; // bits[19:16] compare func
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+    constexpr const static constant unsigned anisotropy_bits   =  4; // bits[23:20] max anisotropy level
+    constexpr const static constant unsigned lod_clamp_bits    = 32; // bits[39:24] lod min value
+                                                                     // bits[55:40] lod max value
+#else
+    constexpr const static constant unsigned reserved1_bits    = 36; // bits[55:20] reserved1
+#endif
+    constexpr const static constant unsigned border_color_bits =  2; // bits[57:56] border_color
+                                                                     // bits[62:58] reserved2
+    constexpr const static constant unsigned marker_bit        = 63; // bits[63:63] constant sampler indicator.
+
+    constexpr const static constant unsigned s_address_base     = 0;
+    constexpr const static constant unsigned t_address_base     = s_address_base  + s_address_bits;
+    constexpr const static constant unsigned r_address_base     = t_address_base  + t_address_bits;
+    constexpr const static constant unsigned mag_filter_base    = r_address_base  + r_address_bits;
+    constexpr const static constant unsigned min_filter_base    = mag_filter_base + mag_filter_bits;
+    constexpr const static constant unsigned mip_filter_base    = min_filter_base + min_filter_bits;
+    constexpr const static constant unsigned normalized_base    = mip_filter_base + mip_filter_bits;
+    constexpr const static constant unsigned compare_base       = normalized_base + normalized_bits;
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+    constexpr const static constant unsigned anisotropy_base    = compare_base    + compare_bits;
+    constexpr const static constant unsigned lod_clamp_base     = anisotropy_base + anisotropy_bits;
+    constexpr const static constant unsigned border_color_base  = lod_clamp_base  + lod_clamp_bits;
+#else
+    constexpr const static constant unsigned reserved1_base     = compare_base + compare_bits;
+    constexpr const static constant unsigned border_color_base  = reserved1_base + reserved1_bits;
+#endif
+
+    constexpr const static constant __uint64_t s_address_mask     = ((1ULL << s_address_bits   ) - 1) << s_address_base;
+    constexpr const static constant __uint64_t t_address_mask     = ((1ULL << t_address_bits   ) - 1) << t_address_base;
+    constexpr const static constant __uint64_t r_address_mask     = ((1ULL << r_address_bits   ) - 1) << r_address_base;
+    constexpr const static constant __uint64_t mag_filter_mask    = ((1ULL << mag_filter_bits  ) - 1) << mag_filter_base;
+    constexpr const static constant __uint64_t min_filter_mask    = ((1ULL << min_filter_bits  ) - 1) << min_filter_base;
+    constexpr const static constant __uint64_t mip_filter_mask    = ((1ULL << mip_filter_bits  ) - 1) << mip_filter_base;
+    constexpr const static constant __uint64_t normalized_mask    = ((1ULL << normalized_bits  ) - 1) << normalized_base;
+    constexpr const static constant __uint64_t compare_mask       = ((1ULL << compare_bits     ) - 1) << compare_base;
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+    constexpr const static constant __uint64_t anisotropy_mask    = ((1ULL << anisotropy_bits  ) - 1) << anisotropy_base;
+    constexpr const static constant __uint64_t lod_clamp_mask     = ((1ULL << lod_clamp_bits   ) - 1) << lod_clamp_base;
+#endif
+    constexpr const static constant __uint64_t border_color_mask  = ((1ULL << border_color_bits) - 1) << border_color_base;
+
+#if defined(__HAVE_ALWAYS_NEVER_COMPARE_FUNCTION__)
+    constexpr const static constant compare_func default_compare_func = compare_func::never;
+#else
+    constexpr const static constant compare_func default_compare_func = compare_func::none;
+#endif
+#if defined(__HAVE_ANISOTROPY_LOD_MIN_MAX__) ||                                \
+    defined(__HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__)
+    constexpr const static constant max_anisotropy default_anisotropy = max_anisotropy(1);
+    constexpr const static constant lod_clamp default_lod_clamp = lod_clamp(0.0, FLT_MAX);
+#endif
+
+  private:
+    static constexpr sampler_t build(sampler_t base, __uint64_t value,
+                                     __uint64_t value_mask) {
+      return __metal_sampler_t_encode(
+          (__metal_sampler_t_decode(base) & ~value_mask) |
+          (value & value_mask));
+    }
+
+  private:
+    template<typename T, access a> friend struct texture1d;
+    template<typename T, access a> friend struct texture1d_array;
+    template<typename T, access a> friend struct texture2d;
+    template<typename T, access a> friend struct texture2d_array;
+    template<typename T, access a> friend struct texture3d;
+    template<typename T, access a> friend struct texturecube;
+  #if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+    template<typename T, access a> friend struct texturecube_array;
+  #endif
+    template<typename T, access a> friend struct texture2d_ms;
+
+    template<typename T, access a> friend struct depth2d;
+    template<typename T, access a> friend struct depth2d_array;
+    template<typename T, access a> friend struct depthcube;
+  #if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+    template<typename T, access a> friend struct depthcube_array;
+  #endif
+    template<typename T, access a> friend struct depth2d_ms;
+  };
+
+  struct bias {
+    METAL_FUNC constexpr bias(float value) : value(value) {}
+    float value;
+  };
+
+  struct level {
+    METAL_FUNC constexpr level(float lod) : lod(lod) {}
+    float lod;
+  };
+
+  // To allow level to be used in constant argument checks.
+  template <>
+  struct _constarg_traits<level> {
+    constexpr static METAL_INTERNAL bool check(level l) { return l.lod == l.lod; }
+  };
+
+  struct gradient2d {
+    METAL_FUNC gradient2d(float2 dPdx, float2 dPdy) : dPdx(dPdx), dPdy(dPdy) {}
+    float2 dPdx;
+    float2 dPdy;
+  };
+
+  struct gradient3d {
+    METAL_FUNC gradient3d(float3 dPdx, float3 dPdy) : dPdx(dPdx), dPdy(dPdy) {}
+    float3 dPdx;
+    float3 dPdy;
+  };
+
+  struct gradientcube {
+    METAL_FUNC gradientcube(float3 dPdx, float3 dPdy) : dPdx(dPdx), dPdy(dPdy) {}
+    float3 dPdx;
+    float3 dPdy;
+  };
+
+  enum class component { x, y, z, w };
+
+  // To allow component to be used in constant argument checks.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wtautological-compare"
+  template <>
+  struct _constarg_traits<component> {
+    constexpr static METAL_INTERNAL bool check(component c) { return c == c; }
+  };
+#pragma clang diagnostic pop
+
+  // To check if an argument is zero.
+  METAL_INTERNAL constexpr static inline bool _is_zero(uint a) { return a == 0; }
+  METAL_INTERNAL constexpr static inline bool _is_zero(level a) { return a.lod == 0; }
+  #define METAL_ZERO_ARG(A) \
+    METAL_ENABLE_IF(_is_zero(A), "'" #A "' argument value must be 0")
+
+  #if defined(__HAVE_ZERO_LOD_ARG__)
+    #define METAL_VALID_LOD_ARG(A) \
+      METAL_CONST_ARG(A) METAL_ZERO_ARG(A)
+  #else
+    #define METAL_VALID_LOD_ARG(A)
+  #endif
+
+  #if defined(__HAVE_ZERO_LOD_ARG__)
+    #define METAL_VALID_LEVEL_ARG(A) \
+      METAL_CONST_ARG(A) METAL_ZERO_ARG(A)
+  #else
+    #define METAL_VALID_LEVEL_ARG(A)
+  #endif
+
+  // 5.10 Texture Functions
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+  // 5.10.14 Texture Fence Utility functions
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_1d(texture_1d_t tex) __asm("air.fence_texture_1d");
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_1d_array(texture_1d_array_t tex) __asm("air.fence_texture_1d_array");
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_2d(texture_2d_t tex) __asm("air.fence_texture_2d");
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_2d_array(texture_2d_array_t tex) __asm("air.fence_texture_2d_array");
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_3d(texture_3d_t tex) __asm("air.fence_texture_3d");
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_cube(texture_cube_t tex) __asm("air.fence_texture_cube");
+  METAL_INTERNAL METAL_CONVERGENT void _air_fence_texture_cube_array(texture_cube_array_t tex) __asm("air.fence_texture_cube_array");
+#endif
+
+#if defined(__HAVE_NULL_TEXTURE__)
+  // 5.10.15 Null Texture Functions
+  METAL_INTERNAL texture_1d_t _air_get_null_texture_1d() __asm("air.get_null_texture_1d");
+  METAL_INTERNAL texture_1d_array_t _air_get_null_texture_1d_array() __asm("air.get_null_texture_1d_array");
+  METAL_INTERNAL texture_2d_t _air_get_null_texture_2d() __asm("air.get_null_texture_2d");
+  METAL_INTERNAL texture_2d_array_t _air_get_null_texture_2d_array() __asm("air.get_null_texture_2d_array");
+  METAL_INTERNAL texture_3d_t _air_get_null_texture_3d() __asm("air.get_null_texture_3d");
+  METAL_INTERNAL texture_cube_t _air_get_null_texture_cube() __asm("air.get_null_texture_cube");
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+  METAL_INTERNAL texture_cube_array_t _air_get_null_texture_cube_array() __asm("air.get_null_texture_cube_array");
+#endif
+  METAL_INTERNAL texture_2d_ms_t _air_get_null_texture_2d_ms() __asm("air.get_null_texture_2d_ms");
+  METAL_INTERNAL depth_2d_t _air_get_null_depth_2d() __asm("air.get_null_depth_2d");
+  METAL_INTERNAL depth_2d_array_t _air_get_null_depth_2d_array() __asm("air.get_null_depth_2d_array");
+  METAL_INTERNAL depth_cube_t _air_get_null_depth_cube() __asm("air.get_null_depth_cube");
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+  METAL_INTERNAL depth_cube_array_t _air_get_null_depth_cube_array() __asm("air.get_null_depth_cube_array");
+#endif
+  METAL_INTERNAL depth_2d_ms_t _air_get_null_depth_2d_ms() __asm("air.get_null_depth_2d_ms");
+
+  METAL_INTERNAL bool _air_is_null_texture_1d(texture_1d_t tex) __asm("air.is_null_texture_1d");
+  METAL_INTERNAL bool _air_is_null_texture_1d_array(texture_1d_array_t tex) __asm("air.is_null_texture_1d_array");
+  METAL_INTERNAL bool _air_is_null_texture_2d(texture_2d_t tex) __asm("air.is_null_texture_2d");
+  METAL_INTERNAL bool _air_is_null_texture_2d_array(texture_2d_array_t tex) __asm("air.is_null_texture_2d_array");
+  METAL_INTERNAL bool _air_is_null_texture_3d(texture_3d_t tex) __asm("air.is_null_texture_3d");
+  METAL_INTERNAL bool _air_is_null_texture_cube(texture_cube_t tex) __asm("air.is_null_texture_cube");
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+  METAL_INTERNAL bool _air_is_null_texture_cube_array(texture_cube_array_t tex) __asm("air.is_null_texture_cube_array");
+#endif
+  METAL_INTERNAL bool _air_is_null_texture_2d_ms(texture_2d_ms_t tex) __asm("air.is_null_texture_2d_ms");
+  METAL_INTERNAL bool _air_is_null_depth_2d(depth_2d_t tex) __asm("air.is_null_depth_2d");
+  METAL_INTERNAL bool _air_is_null_depth_2d_array(depth_2d_array_t tex) __asm("air.is_null_depth_2d_array");
+  METAL_INTERNAL bool _air_is_null_depth_cube(depth_cube_t tex) __asm("air.is_null_depth_cube");
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+  METAL_INTERNAL bool _air_is_null_depth_cube_array(depth_cube_array_t tex) __asm("air.is_null_depth_cube_array");
+#endif
+  METAL_INTERNAL bool _air_is_null_depth_2d_ms(depth_2d_ms_t tex) __asm("air.is_null_depth_2d_ms");
+
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texture1d<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texture1d_array<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texture2d<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texture2d_array<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texture3d<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texturecube<T, a> tex);
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texturecube_array<T, a> tex);
+#endif
+  template <typename T, access a> METAL_FUNC bool is_null_texture(texture2d_ms<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(depth2d<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(depth2d_array<T, a> tex);
+  template <typename T, access a> METAL_FUNC bool is_null_texture(depthcube<T, a> tex);
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+  template <typename T, access a> METAL_FUNC bool is_null_texture(depthcube_array<T, a> tex);
+#endif
+  template <typename T, access a> METAL_FUNC bool is_null_texture(depth2d_ms<T, a> tex);
+#endif
+
+  // 5.10.1 1D Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<T,4> color, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<T,4> color, ushort lod);
+#endif
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod) __asm("air.read_texture_1d.v4f32");
+  template<> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<float,4> color, uint lod) __asm("air.write_texture_1d.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod) {
+    return _air_read_texture_1d<float>(tex, static_cast<uint>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<float,4> color, ushort lod) {
+    _air_write_texture_1d<float>(tex, static_cast<uint>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod) __asm("air.read_texture_1d.s.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<int,4> color, uint lod) __asm("air.write_texture_1d.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod) {
+    return _air_read_texture_1d<int>(tex, static_cast<uint>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<int,4> color, ushort lod) {
+    _air_write_texture_1d<int>(tex, static_cast<uint>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod) __asm("air.read_texture_1d.u.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<uint,4> color, uint lod) __asm("air.write_texture_1d.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod) {
+    return _air_read_texture_1d<uint>(tex, static_cast<uint>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<uint,4> color, ushort lod) {
+    _air_write_texture_1d<uint>(tex, static_cast<uint>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod) __asm("air.read_texture_1d.v4f16");
+  template<> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<half,4> color, uint lod) __asm("air.write_texture_1d.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod) {
+    return _air_read_texture_1d<half>(tex, static_cast<uint>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<half,4> color, ushort lod) {
+    _air_write_texture_1d<half>(tex, static_cast<uint>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod) __asm("air.read_texture_1d.s.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<short,4> color, uint lod) __asm("air.write_texture_1d.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod) {
+    return _air_read_texture_1d<short>(tex, static_cast<uint>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<short,4> color, ushort lod) {
+    _air_write_texture_1d<short>(tex, static_cast<uint>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_1d(texture_1d_t tex, sampler smp, float coord, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_1d(texture_1d_t tex, uint coord, uint lod) __asm("air.read_texture_1d.u.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_1d(texture_1d_t tex, uint coord, vec<ushort,4> color, uint lod) __asm("air.write_texture_1d.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_1d(texture_1d_t tex, ushort coord, ushort lod) {
+    return _air_read_texture_1d<ushort>(tex, static_cast<uint>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d(texture_1d_t tex, ushort coord, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_1d<ushort>(tex, static_cast<uint>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  METAL_INTERNAL int _air_get_width_texture_1d(texture_1d_t tex, uint lod) __asm("air.get_width_texture_1d");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_1d(texture_1d_t tex) __asm("air.get_num_mip_levels_texture_1d");
+
+  template<typename T, access a>
+  struct texture1d {
+    static_assert(_is_valid_type_texture_1d<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread const texture1d<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texture1d() : t(_air_get_null_texture_1d()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texture1d() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texture1d<T, a>& operator=(thread const texture1d<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texture1d<T, a>& operator=(thread const texture1d<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float coord) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_1d<T>(t, s, coord, false, 0, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> read(uint coord, uint lod = 0) const METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_1d<T>(t, coord, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, uint coord, uint lod = 0) METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_1d<T>(t, coord, color, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort coord, ushort lod = 0) const METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_1d<T>(t, coord, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, ushort coord, ushort lod = 0) METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_1d<T>(t, coord, color, lod);
+    }
+#endif  // defined(__HAVE_16B_COORDS__)
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_1d(t);
+    }
+#endif
+
+    METAL_FUNC uint get_width(uint lod = 0) const METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      return _air_get_width_texture_1d(t, lod);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_1d(t);
+    }
+    private:
+    texture_1d_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texture1d<T, a>);
+#endif
+  };
+
+  // 5.10.2 1D Texture Array
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<T,4> color, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<T,4> color, ushort lod);
+#endif
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d_array.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod) __asm("air.read_texture_1d_array.v4f32");
+  template<> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<float,4> color, uint lod) __asm("air.write_texture_1d_array.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod) {
+    return _air_read_texture_1d_array<float>(tex, static_cast<uint>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<float,4> color, ushort lod) {
+    _air_write_texture_1d_array<float>(tex, static_cast<uint>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d_array.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod) __asm("air.read_texture_1d_array.s.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<int,4> color, uint lod) __asm("air.write_texture_1d_array.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod) {
+    return _air_read_texture_1d_array<int>(tex, static_cast<uint>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<int,4> color, ushort lod) {
+    _air_write_texture_1d_array<int>(tex, static_cast<uint>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d_array.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod) __asm("air.read_texture_1d_array.u.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<uint,4> color, uint lod) __asm("air.write_texture_1d_array.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod) {
+    return _air_read_texture_1d_array<uint>(tex, static_cast<uint>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<uint,4> color, ushort lod) {
+    _air_write_texture_1d_array<uint>(tex, static_cast<uint>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d_array.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod) __asm("air.read_texture_1d_array.v4f16");
+  template<> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<half,4> color, uint lod) __asm("air.write_texture_1d_array.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod) {
+    return _air_read_texture_1d_array<half>(tex, static_cast<uint>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<half,4> color, ushort lod) {
+    _air_write_texture_1d_array<half>(tex, static_cast<uint>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d_array.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod) __asm("air.read_texture_1d_array.s.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<short,4> color, uint lod) __asm("air.write_texture_1d_array.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod) {
+    return _air_read_texture_1d_array<short>(tex, static_cast<uint>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<short,4> color, ushort lod) {
+    _air_write_texture_1d_array<short>(tex, static_cast<uint>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_1d_array<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_1d_array(texture_1d_array_t tex, sampler smp, float coord, uint array, bool offset_en, int offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_1d_array.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, uint lod) __asm("air.read_texture_1d_array.u.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_1d_array(texture_1d_array_t tex, uint coord, uint array, vec<ushort,4> color, uint lod) __asm("air.write_texture_1d_array.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, ushort lod) {
+    return _air_read_texture_1d_array<ushort>(tex, static_cast<uint>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_1d_array(texture_1d_array_t tex, ushort coord, ushort array, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_1d_array<ushort>(tex, static_cast<uint>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  METAL_INTERNAL int _air_get_width_texture_1d_array(texture_1d_array_t tex, uint lod) __asm("air.get_width_texture_1d_array");
+  METAL_INTERNAL int _air_get_array_size_texture_1d_array(texture_1d_array_t tex) __asm("air.get_array_size_texture_1d_array");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_1d_array(texture_1d_array_t tex) __asm("air.get_num_mip_levels_texture_1d_array");
+
+  template<typename T, access a>
+  struct texture1d_array {
+    static_assert(_is_valid_type_texture_1d_array<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread  const texture1d_array<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texture1d_array() : t(_air_get_null_texture_1d_array()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texture1d_array() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texture1d_array<T, a>& operator=(thread const texture1d_array<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texture1d_array<T, a>& operator=(thread const texture1d_array<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float coord, uint array) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_1d_array<T>(t, s, coord, array, false, 0, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> read(uint coord, uint array, uint lod = 0) const METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_1d_array<T>(t, coord, array, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, uint coord, uint array, uint lod = 0) METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_1d_array<T>(t, coord, array, color, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort coord, ushort array, ushort lod = 0) const METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_1d_array<T>(t, coord, array, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, ushort coord, ushort array, ushort lod = 0) METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_1d_array<T>(t, coord, array, color, lod);
+    }
+#endif  // defined(__HAVE_16B_COORDS__)
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_1d_array(t);
+    }
+#endif
+
+    METAL_FUNC uint get_width(uint lod = 0) const METAL_CONST_ARG(lod) METAL_ZERO_ARG(lod) {
+      return _air_get_width_texture_1d_array(t, lod);
+    }
+    METAL_FUNC uint get_array_size() const {
+      return _air_get_array_size_texture_1d_array(t);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_1d_array(t);
+    }
+    private:
+    texture_1d_array_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texture1d_array<T, a>);
+#endif
+  };
+
+  // 5.10.3 2D Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<T,4> color, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<T,4> color, ushort lod);
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_2d<float>(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_grad.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod) __asm("air.read_texture_2d.v4f32");
+  template<> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<float,4> color, uint lod) __asm("air.write_texture_2d.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod) {
+    return _air_read_texture_2d<float>(tex, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<float,4> color, ushort lod) {
+    _air_write_texture_2d<float>(tex, static_cast<uint2>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d.v4f32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_2d<int>(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_grad.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod) __asm("air.read_texture_2d.s.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<int,4> color, uint lod) __asm("air.write_texture_2d.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod) {
+    return _air_read_texture_2d<int>(tex, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<int,4> color, ushort lod) {
+    _air_write_texture_2d<int>(tex, static_cast<uint2>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<int,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d.s.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_2d<uint>(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_grad.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod) __asm("air.read_texture_2d.u.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<uint,4> color, uint lod) __asm("air.write_texture_2d.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod) {
+    return _air_read_texture_2d<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<uint,4> color, ushort lod) {
+    _air_write_texture_2d<uint>(tex, static_cast<uint2>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<uint,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d.u.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_2d<half>(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_grad.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod) __asm("air.read_texture_2d.v4f16");
+  template<> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<half,4> color, uint lod) __asm("air.write_texture_2d.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod) {
+    return _air_read_texture_2d<half>(tex, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<half,4> color, ushort lod) {
+    _air_write_texture_2d<half>(tex, static_cast<uint2>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<half,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d.v4f16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_2d<short>(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_grad.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod) __asm("air.read_texture_2d.s.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<short,4> color, uint lod) __asm("air.write_texture_2d.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod) {
+    return _air_read_texture_2d<short>(tex, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<short,4> color, ushort lod) {
+    _air_write_texture_2d<short>(tex, static_cast<uint2>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<short,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d.s.v4i16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_2d<ushort>(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_2d_grad(texture_2d_t tex, sampler smp, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_grad.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_2d(texture_2d_t tex, uint2 coord, uint lod) __asm("air.read_texture_2d.u.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_2d(texture_2d_t tex, uint2 coord, vec<ushort,4> color, uint lod) __asm("air.write_texture_2d.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_2d(texture_2d_t tex, ushort2 coord, ushort lod) {
+    return _air_read_texture_2d<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d(texture_2d_t tex, ushort2 coord, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_2d<ushort>(tex, static_cast<uint2>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<ushort,4> _air_gather_texture_2d(texture_2d_t tex, sampler smp, float2 coord, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d.u.v4i16");
+  METAL_INTERNAL int _air_get_width_texture_2d(texture_2d_t tex, uint lod) __asm("air.get_width_texture_2d");
+  METAL_INTERNAL int _air_get_height_texture_2d(texture_2d_t tex, uint lod) __asm("air.get_height_texture_2d");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_2d(texture_2d_t tex) __asm("air.get_num_mip_levels_texture_2d");
+
+  template<typename T, access a>
+  struct texture2d {
+    static_assert(_is_valid_type_texture_2d<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread  const texture2d<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texture2d() : t(_air_get_null_texture_2d()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texture2d() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texture2d<T, a>& operator=(thread const texture2d<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texture2d<T, a>& operator=(thread const texture2d<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d<T>(t, s, coord, true, offset, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, bias options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d<T>(t, s, coord, true, offset, false, options.value);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, level options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d<T>(t, s, coord, true, offset, true, options.lod);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, gradient2d options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d_grad<T>(t, s, coord, options.dPdx, options.dPdy, true, offset);
+    }
+    METAL_FUNC vec<T,4> read(uint2 coord, uint lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_2d<T>(t, coord, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, uint2 coord, uint lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_2d<T>(t, coord, color, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort2 coord, ushort lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_2d<T>(t, coord, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, ushort2 coord, ushort lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_2d<T>(t, coord, color, lod);
+    }
+#endif  // defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> gather(sampler s, float2 coord, int2 offset = int2(0), component c = component::x) const METAL_CONST_ARG(c) {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_texture_2d<T>(t, s, coord, true, offset, int(c));
+    }
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_2d(t);
+    }
+#endif
+
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_texture_2d(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_texture_2d(t, lod);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_2d(t);
+    }
+    private:
+    texture_2d_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texture2d<T, a>);
+#endif
+  };
+
+  // 5.10.4 2D Texture Array
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<T,4> color, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<T,4> color, ushort lod);
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d_array.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_array_grad.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod) __asm("air.read_texture_2d_array.v4f32");
+  template<> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<float,4> color, uint lod) __asm("air.write_texture_2d_array.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_texture_2d_array<float>(tex, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<float,4> color, ushort lod) {
+    _air_write_texture_2d_array<float>(tex, static_cast<uint2>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d_array.v4f32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d_array.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_array_grad.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod) __asm("air.read_texture_2d_array.s.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<int,4> color, uint lod) __asm("air.write_texture_2d_array.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_texture_2d_array<int>(tex, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<int,4> color, ushort lod) {
+    _air_write_texture_2d_array<int>(tex, static_cast<uint2>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<int,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d_array.s.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d_array.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_array_grad.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod) __asm("air.read_texture_2d_array.u.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<uint,4> color, uint lod) __asm("air.write_texture_2d_array.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_texture_2d_array<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<uint,4> color, ushort lod) {
+    _air_write_texture_2d_array<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<uint,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d_array.u.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d_array.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_array_grad.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod) __asm("air.read_texture_2d_array.v4f16");
+  template<> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<half,4> color, uint lod) __asm("air.write_texture_2d_array.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_texture_2d_array<half>(tex, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<half,4> color, ushort lod) {
+    _air_write_texture_2d_array<half>(tex, static_cast<uint2>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<half,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d_array.v4f16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d_array.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_array_grad.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod) __asm("air.read_texture_2d_array.s.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<short,4> color, uint lod) __asm("air.write_texture_2d_array.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_texture_2d_array<short>(tex, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<short,4> color, ushort lod) {
+    _air_write_texture_2d_array<short>(tex, static_cast<uint2>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<short,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d_array.s.v4i16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_array<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_2d_array.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_2d_array_grad(texture_2d_array_t tex, sampler smp, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_texture_2d_array_grad.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, uint lod) __asm("air.read_texture_2d_array.u.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_2d_array(texture_2d_array_t tex, uint2 coord, uint array, vec<ushort,4> color, uint lod) __asm("air.write_texture_2d_array.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_texture_2d_array<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_2d_array(texture_2d_array_t tex, ushort2 coord, ushort array, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_2d_array<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<ushort,4> _air_gather_texture_2d_array(texture_2d_array_t tex, sampler smp, float2 coord, uint array, bool offset_en, int2 offset, int component) __asm("air.gather_texture_2d_array.u.v4i16");
+  METAL_INTERNAL int _air_get_width_texture_2d_array(texture_2d_array_t tex, uint lod) __asm("air.get_width_texture_2d_array");
+  METAL_INTERNAL int _air_get_height_texture_2d_array(texture_2d_array_t tex, uint lod) __asm("air.get_height_texture_2d_array");
+  METAL_INTERNAL int _air_get_array_size_texture_2d_array(texture_2d_array_t tex) __asm("air.get_array_size_texture_2d_array");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_2d_array(texture_2d_array_t tex) __asm("air.get_num_mip_levels_texture_2d_array");
+
+  template<typename T, access a>
+  struct texture2d_array {
+    static_assert(_is_valid_type_texture_2d_array<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread  const texture2d_array<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texture2d_array() : t(_air_get_null_texture_2d_array()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texture2d_array() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texture2d_array<T, a>& operator=(thread const texture2d_array<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texture2d_array<T, a>& operator=(thread const texture2d_array<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, uint array, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d_array<T>(t, s, coord, array, true, offset, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, uint array, bias options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d_array<T>(t, s, coord, array, true, offset, false, options.value);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, uint array, level options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d_array<T>(t, s, coord, array, true, offset, true, options.lod);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float2 coord, uint array, gradient2d options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_2d_array_grad<T>(t, s, coord, array, options.dPdx, options.dPdy, true, offset);
+    }
+    METAL_FUNC vec<T,4> read(uint2 coord, uint array, uint lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_2d_array<T>(t, coord, array, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, uint2 coord, uint array, uint lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_2d_array<T>(t, coord, array, color, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort2 coord, ushort array, ushort lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_2d_array<T>(t, coord, array, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, ushort2 coord, ushort array, ushort lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_2d_array<T>(t, coord, array, color, lod);
+    }
+#endif  // defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> gather(sampler s, float2 coord, uint array, int2 offset = int2(0), component c = component::x) const METAL_CONST_ARG(c) {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_texture_2d_array<T>(t, s, coord, array, true, offset, int(c));
+    }
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_2d_array(t);
+    }
+#endif
+
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_texture_2d_array(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_texture_2d_array(t, lod);
+    }
+    METAL_FUNC uint get_array_size() const {
+      return _air_get_array_size_texture_2d_array(t);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_2d_array(t);
+    }
+    private:
+    texture_2d_array_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texture2d_array<T, a>);
+#endif
+  };
+
+  // 5.10.5 3D Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<T,4> color, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<T,4> color, ushort lod);
+#endif
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_3d.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset) __asm("air.sample_texture_3d_grad.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod) __asm("air.read_texture_3d.v4f32");
+  template<> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<float,4> color, uint lod) __asm("air.write_texture_3d.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod) {
+    return _air_read_texture_3d<float>(tex, static_cast<uint3>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<float,4> color, ushort lod) {
+    _air_write_texture_3d<float>(tex, static_cast<uint3>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_3d.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset) __asm("air.sample_texture_3d_grad.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod) __asm("air.read_texture_3d.s.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<int,4> color, uint lod) __asm("air.write_texture_3d.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod) {
+    return _air_read_texture_3d<int>(tex, static_cast<uint3>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<int,4> color, ushort lod) {
+    _air_write_texture_3d<int>(tex, static_cast<uint3>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_3d.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset) __asm("air.sample_texture_3d_grad.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod) __asm("air.read_texture_3d.u.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<uint,4> color, uint lod) __asm("air.write_texture_3d.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod) {
+    return _air_read_texture_3d<uint>(tex, static_cast<uint3>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<uint,4> color, ushort lod) {
+    _air_write_texture_3d<uint>(tex, static_cast<uint3>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_3d.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset) __asm("air.sample_texture_3d_grad.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod) __asm("air.read_texture_3d.v4f16");
+  template<> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<half,4> color, uint lod) __asm("air.write_texture_3d.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod) {
+    return _air_read_texture_3d<half>(tex, static_cast<uint3>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<half,4> color, ushort lod) {
+    _air_write_texture_3d<half>(tex, static_cast<uint3>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_3d.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset) __asm("air.sample_texture_3d_grad.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod) __asm("air.read_texture_3d.s.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<short,4> color, uint lod) __asm("air.write_texture_3d.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod) {
+    return _air_read_texture_3d<short>(tex, static_cast<uint3>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<short,4> color, ushort lod) {
+    _air_write_texture_3d<short>(tex, static_cast<uint3>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_3d<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_3d(texture_3d_t tex, sampler smp, float3 coord, bool offset_en, int3 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_3d.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_3d_grad(texture_3d_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy, bool offset_en, int3 offset) __asm("air.sample_texture_3d_grad.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_3d(texture_3d_t tex, uint3 coord, uint lod) __asm("air.read_texture_3d.u.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_3d(texture_3d_t tex, uint3 coord, vec<ushort,4> color, uint lod) __asm("air.write_texture_3d.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_3d(texture_3d_t tex, ushort3 coord, ushort lod) {
+    return _air_read_texture_3d<ushort>(tex, static_cast<uint3>(coord), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_3d(texture_3d_t tex, ushort3 coord, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_3d<ushort>(tex, static_cast<uint3>(coord), color, static_cast<uint>(lod));
+  }
+#endif
+  METAL_INTERNAL int _air_get_width_texture_3d(texture_3d_t tex, uint lod) __asm("air.get_width_texture_3d");
+  METAL_INTERNAL int _air_get_height_texture_3d(texture_3d_t tex, uint lod) __asm("air.get_height_texture_3d");
+  METAL_INTERNAL int _air_get_depth_texture_3d(texture_3d_t tex, uint lod) __asm("air.get_depth_texture_3d");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_3d(texture_3d_t tex) __asm("air.get_num_mip_levels_texture_3d");
+
+  template<typename T, access a>
+  struct texture3d {
+    static_assert(_is_valid_type_texture_3d<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread  const texture3d<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texture3d() : t(_air_get_null_texture_3d()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texture3d() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texture3d<T, a>& operator=(thread const texture3d<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texture3d<T, a>& operator=(thread const texture3d<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, int3 offset = int3(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_3d<T>(t, s, coord, true, offset, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, bias options, int3 offset = int3(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_3d<T>(t, s, coord, true, offset, false, options.value);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, level options, int3 offset = int3(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_3d<T>(t, s, coord, true, offset, true, options.lod);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, gradient3d options, int3 offset = int3(0)) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_3d_grad<T>(t, s, coord, options.dPdx, options.dPdy, true, offset);
+    }
+    METAL_FUNC vec<T,4> read(uint3 coord, uint lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_3d<T>(t, coord, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, uint3 coord, uint lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_3d<T>(t, coord, color, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort3 coord, ushort lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_3d<T>(t, coord, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, ushort3 coord, ushort lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_3d<T>(t, coord, color, lod);
+    }
+#endif  // defined(__HAVE_16B_COORDS__)
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_3d(t);
+    }
+#endif
+
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_texture_3d(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_texture_3d(t, lod);
+    }
+    METAL_FUNC uint get_depth(uint lod = 0) const {
+      return _air_get_depth_texture_3d(t, lod);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_3d(t);
+    }
+    private:
+    texture_3d_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texture3d<T, a>);
+#endif
+  };
+
+  // 5.10.6 Cube-Map Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy);
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod);
+  #if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod);
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<typename T> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<T,4> color, uint lod);
+  #if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<T,4> color, ushort lod);
+  #endif
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_grad.v4f32");
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod) __asm("air.read_texture_cube.v4f32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_texture_cube<float>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<float,4> color, uint lod) __asm("air.write_texture_cube.v4f32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<float,4> color, ushort lod) {
+    _air_write_texture_cube<float>(tex, static_cast<uint2>(coord), static_cast<uint>(face), color, static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component) __asm("air.gather_texture_cube.v4f32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_grad.s.v4i32");
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod) __asm("air.read_texture_cube.s.v4i32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_texture_cube<int>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<int,4> color, uint lod) __asm("air.write_texture_cube.s.v4i32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<int,4> color, ushort lod) {
+    _air_write_texture_cube<int>(tex, static_cast<uint2>(coord), static_cast<uint>(face), color, static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<int,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component) __asm("air.gather_texture_cube.s.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_grad.u.v4i32");
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod) __asm("air.read_texture_cube.u.v4i32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_texture_cube<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<uint,4> color, uint lod) __asm("air.write_texture_cube.u.v4i32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<uint,4> color, ushort lod) {
+    _air_write_texture_cube<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(face), color, static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<uint,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component) __asm("air.gather_texture_cube.u.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_grad.v4f16");
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod) __asm("air.read_texture_cube.v4f16");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_texture_cube<half>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<half,4> color, uint lod) __asm("air.write_texture_cube.v4f16");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<half,4> color, ushort lod) {
+    _air_write_texture_cube<half>(tex, static_cast<uint2>(coord), static_cast<uint>(face), color, static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<half,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component) __asm("air.gather_texture_cube.v4f16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_grad.s.v4i16");
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod) __asm("air.read_texture_cube.s.v4i16");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_texture_cube<short>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<short,4> color, uint lod) __asm("air.write_texture_cube.s.v4i16");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<short,4> color, ushort lod) {
+    _air_write_texture_cube<short>(tex, static_cast<uint2>(coord), static_cast<uint>(face), color, static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<short,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component) __asm("air.gather_texture_cube.s.v4i16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_cube(texture_cube_t tex, sampler smp, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_cube_grad(texture_cube_t tex, sampler smp, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_grad.u.v4i16");
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_cube(texture_cube_t tex, uint2 coord, uint face, uint lod) __asm("air.read_texture_cube.u.v4i16");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_texture_cube<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+  template<> METAL_INTERNAL void _air_write_texture_cube(texture_cube_t tex, uint2 coord, uint face, vec<ushort,4> color, uint lod) __asm("air.write_texture_cube.u.v4i16");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube(texture_cube_t tex, ushort2 coord, ushort face, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_cube<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(face), color, static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<ushort,4> _air_gather_texture_cube(texture_cube_t tex, sampler smp, float3 coord, int component) __asm("air.gather_texture_cube.u.v4i16");
+  METAL_INTERNAL int _air_get_width_texture_cube(texture_cube_t tex, uint lod) __asm("air.get_width_texture_cube");
+  METAL_INTERNAL int _air_get_height_texture_cube(texture_cube_t tex, uint lod) __asm("air.get_height_texture_cube");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_cube(texture_cube_t tex) __asm("air.get_num_mip_levels_texture_cube");
+
+  template<typename T, access a>
+  struct texturecube {
+    static_assert(_is_valid_type_texture_cube<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread  const texturecube<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texturecube() : t(_air_get_null_texture_cube()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texturecube() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texturecube<T, a>& operator=(thread const texturecube<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texturecube<T, a>& operator=(thread const texturecube<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube<T>(t, s, coord, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, bias options) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube<T>(t, s, coord, false, options.value);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, level options) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube<T>(t, s, coord, true, options.lod);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, gradientcube options) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube_grad<T>(t, s, coord, options.dPdx, options.dPdy);
+    }
+#if defined(__HAVE_TEXTURE_CUBE_READ__)
+    METAL_FUNC vec<T,4> read(uint2 coord, uint face, uint lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_cube<T>(t, coord, face, lod);
+    }
+    #if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort2 coord, ushort face, ushort lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_cube<T>(t, coord, face, lod);
+    }
+    #endif
+#endif
+#if defined(__HAVE_TEXTURE_CUBE_WRITE__)
+    METAL_FUNC void write(vec<T,4> color, uint2 coord, uint face, uint lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_cube<T>(t, coord, face, color, lod);
+    }
+    #if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC void write(vec<T,4> color, ushort2 coord, ushort face, ushort lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_cube<T>(t, coord, face, color, lod);
+    }
+    #endif
+#endif
+    METAL_FUNC vec<T,4> gather(sampler s, float3 coord, component c = component::x) const METAL_CONST_ARG(c) {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_texture_cube<T>(t, s, coord, int(c));
+    }
+
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_cube(t);
+    }
+#endif
+
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_texture_cube(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_texture_cube(t, lod);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_cube(t);
+    }
+    private:
+    texture_cube_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texturecube<T, a>);
+#endif
+  };
+
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+  // 5.10.7 Cube-Map Texture Array
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<T,4> color, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod);
+  template<typename T> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<T,4> color, ushort lod);
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube_array.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_array_grad.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod) __asm("air.read_texture_cube_array.v4f32");
+  template<> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<float,4> color, uint lod) __asm("air.write_texture_cube_array.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod) {
+    return _air_read_texture_cube_array<float>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<float,4> color, ushort lod) {
+    _air_write_texture_cube_array<float>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component) __asm("air.gather_texture_cube_array.v4f32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube_array.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_array_grad.s.v4i32");
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod) __asm("air.read_texture_cube_array.s.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<int,4> color, uint lod) __asm("air.write_texture_cube_array.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod) {
+    return _air_read_texture_cube_array<int>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<int,4> color, ushort lod) {
+    _air_write_texture_cube_array<int>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<int,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component) __asm("air.gather_texture_cube_array.s.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube_array.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_array_grad.u.v4i32");
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod) __asm("air.read_texture_cube_array.u.v4i32");
+  template<> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<uint,4> color, uint lod) __asm("air.write_texture_cube_array.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod) {
+    return _air_read_texture_cube_array<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<uint,4> color, ushort lod) {
+    _air_write_texture_cube_array<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<uint,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component) __asm("air.gather_texture_cube_array.u.v4i32");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube_array.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_array_grad.v4f16");
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod) __asm("air.read_texture_cube_array.v4f16");
+  template<> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<half,4> color, uint lod) __asm("air.write_texture_cube_array.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod) {
+    return _air_read_texture_cube_array<half>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<half,4> color, ushort lod) {
+    _air_write_texture_cube_array<half>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<half,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component) __asm("air.gather_texture_cube_array.v4f16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube_array.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_array_grad.s.v4i16");
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod) __asm("air.read_texture_cube_array.s.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<short,4> color, uint lod) __asm("air.write_texture_cube_array.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod) {
+    return _air_read_texture_cube_array<short>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<short,4> color, ushort lod) {
+    _air_write_texture_cube_array<short>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<short,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component) __asm("air.gather_texture_cube_array.s.v4i16");
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_cube_array<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_texture_cube_array.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_sample_texture_cube_array_grad(texture_cube_array_t tex, sampler smp, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_texture_cube_array_grad.u.v4i16");
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, uint lod) __asm("air.read_texture_cube_array.u.v4i16");
+  template<> METAL_INTERNAL void _air_write_texture_cube_array(texture_cube_array_t tex, uint2 coord, uint face, uint array, vec<ushort,4> color, uint lod) __asm("air.write_texture_cube_array.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, ushort lod) {
+    return _air_read_texture_cube_array<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+  template<> METAL_INTERNAL METAL_FUNC void _air_write_texture_cube_array(texture_cube_array_t tex, ushort2 coord, ushort face, ushort array, vec<ushort,4> color, ushort lod) {
+    _air_write_texture_cube_array<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), color, static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<ushort,4> _air_gather_texture_cube_array(texture_cube_array_t tex, sampler smp, float3 coord, uint array, int component) __asm("air.gather_texture_cube_array.u.v4i16");
+  METAL_INTERNAL int _air_get_width_texture_cube_array(texture_cube_array_t tex, uint lod) __asm("air.get_width_texture_cube_array");
+  METAL_INTERNAL int _air_get_height_texture_cube_array(texture_cube_array_t tex, uint lod) __asm("air.get_height_texture_cube_array");
+  METAL_INTERNAL int _air_get_array_size_texture_cube_array(texture_cube_array_t tex) __asm("air.get_array_size_texture_cube_array");
+  METAL_INTERNAL int _air_get_num_mip_levels_texture_cube_array(texture_cube_array_t tex) __asm("air.get_num_mip_levels_texture_cube_array");
+
+  template<typename T, access a>
+  struct texturecube_array {
+    static_assert(_is_valid_type_texture_cube_array<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    void operator&() = delete;
+    void operator,(thread  const texturecube_array<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texturecube_array() : t(_air_get_null_texture_cube_array()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texturecube_array() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texturecube_array<T, a>& operator=(thread const texturecube_array<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texturecube_array<T, a>& operator=(thread const texturecube_array<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, uint array) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube_array<T>(t, s, coord, array, false, 0.0f);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, uint array, bias options) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube_array<T>(t, s, coord, array, false, options.value);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, uint array, level options) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube_array<T>(t, s, coord, array, true, options.lod);
+    }
+    METAL_FUNC vec<T,4> sample(sampler s, float3 coord, uint array, gradientcube options) const {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_texture_cube_array_grad<T>(t, s, coord, array, options.dPdx, options.dPdy);
+    }
+    METAL_FUNC vec<T,4> read(uint2 coord, uint face, uint array, uint lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_cube_array<T>(t, coord, face, array, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, uint2 coord, uint face, uint array, uint lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_cube_array<T>(t, coord, face, array, color, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort2 coord, ushort face, ushort array, ushort lod = 0) const {
+      static_assert(_is_valid_read(a), _err_read_access_msg);
+      return _air_read_texture_cube_array<T>(t, coord, face, array, lod);
+    }
+    METAL_FUNC void write(vec<T,4> color, ushort2 coord, ushort face, ushort array, ushort lod = 0) METAL_VALID_LOD_ARG(lod) {
+      static_assert(_is_valid_write(a), _err_write_access_msg);
+      return _air_write_texture_cube_array<T>(t, coord, face, array, color, lod);
+    }
+#endif  // defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> gather(sampler s, float3 coord, uint array, component c = component::x) const METAL_CONST_ARG(c) {
+      static_assert(a == access::sample, "Invalid texture access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_texture_cube_array<T>(t, s, coord, array, int(c));
+    }
+#if defined(__HAVE_TEXTURE_READWRITE__)
+    METAL_FUNC void fence() {
+      _air_fence_texture_cube_array(t);
+    }
+#endif
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_texture_cube_array(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_texture_cube_array(t, lod);
+    }
+    METAL_FUNC uint get_array_size() const {
+      return _air_get_array_size_texture_cube_array(t);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_texture_cube_array(t);
+    }
+    private:
+    texture_cube_array_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texturecube_array<T, a>);
+#endif
+  };
+#endif // defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+
+  // 5.10.8 2D Multi-sampled Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms() { return false; }
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL vec<T,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample);
+#endif
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms<float>() { return true; }
+  template<> METAL_INTERNAL vec<float,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample) __asm("air.read_texture_2d_ms.v4f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<float,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample) {
+    return _air_read_texture_2d_ms<float>(tex, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms<int>() { return true; }
+  template<> METAL_INTERNAL vec<int,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample) __asm("air.read_texture_2d_ms.s.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<int,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample) {
+    return _air_read_texture_2d_ms<int>(tex, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms<uint>() { return true; }
+  template<> METAL_INTERNAL vec<uint,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample) __asm("air.read_texture_2d_ms.u.v4i32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<uint,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample) {
+    return _air_read_texture_2d_ms<uint>(tex, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms<half>() { return true; }
+  template<> METAL_INTERNAL vec<half,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample) __asm("air.read_texture_2d_ms.v4f16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<half,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample) {
+    return _air_read_texture_2d_ms<half>(tex, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms<short>() { return true; }
+  template<> METAL_INTERNAL vec<short,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample) __asm("air.read_texture_2d_ms.s.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<short,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample) {
+    return _air_read_texture_2d_ms<short>(tex, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_texture_2d_ms<ushort>() { return true; }
+  template<> METAL_INTERNAL vec<ushort,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, uint2 coord, uint sample) __asm("air.read_texture_2d_ms.u.v4i16");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC vec<ushort,4> _air_read_texture_2d_ms(texture_2d_ms_t tex, ushort2 coord, ushort sample) {
+    return _air_read_texture_2d_ms<ushort>(tex, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  METAL_INTERNAL int _air_get_width_texture_2d_ms(texture_2d_ms_t tex) __asm("air.get_width_texture_2d_ms");
+  METAL_INTERNAL int _air_get_height_texture_2d_ms(texture_2d_ms_t tex) __asm("air.get_height_texture_2d_ms");
+  METAL_INTERNAL int _air_get_num_samples_texture_2d_ms(texture_2d_ms_t tex) __asm("air.get_num_samples_texture_2d_ms");
+
+  template<typename T, access a>
+  struct texture2d_ms {
+    static_assert(_is_valid_type_texture_2d_ms<T>(), "Invalid type, valid types are float, int, uint, half, short, ushort");
+    static_assert(a == access::read, "Invalid ms texture access qualifier.  Must use access::read as the access qualifier");
+    void operator&() = delete;
+    void operator,(thread  const texture2d_ms<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    texture2d_ms() : t(_air_get_null_texture_2d_ms()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    texture2d_ms() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread texture2d_ms<T, a>& operator=(thread const texture2d_ms<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread texture2d_ms<T, a>& operator=(thread const texture2d_ms<T, a>&) = delete;
+#endif
+
+    METAL_FUNC vec<T,4> read(uint2 coord, uint sample) const {
+      static_assert(a == access::read, "Invalid ms texture access qualifier.  Must use access::read as the access qualifier");
+      return _air_read_texture_2d_ms<T>(t, coord, sample);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC vec<T,4> read(ushort2 coord, ushort sample) const {
+      static_assert(a == access::read, "Invalid ms texture access qualifier.  Must use access::read as the access qualifier");
+      return _air_read_texture_2d_ms<T>(t, coord, sample);
+    }
+#endif
+    METAL_FUNC uint get_width() const {
+      return _air_get_width_texture_2d_ms(t);
+    }
+    METAL_FUNC uint get_height() const {
+      return _air_get_height_texture_2d_ms(t);
+    }
+    METAL_FUNC uint get_num_samples() const {
+      return _air_get_num_samples_texture_2d_ms(t);
+    }
+    private:
+    texture_2d_ms_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(texture2d_ms<T, a>);
+#endif
+  };
+
+  // 5.10.9 2D Depth Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_depth_2d() { return false; }
+  template<typename T> METAL_INTERNAL T _air_sample_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL T _air_sample_depth_2d_grad(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset);
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float compare_value, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENT2D_OVERLOAD__)
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_2d_grad(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float compare_value, float2 dPdx, float2 dPdy, bool offset_en, int2 offset);
+#endif
+  template<typename T> METAL_INTERNAL T _air_read_depth_2d(depth_2d_t tex, uint depth_format, uint2 coord, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL T _air_read_depth_2d(depth_2d_t tex, uint depth_format, ushort2 coord, ushort lod);
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, bool offset_en, int2 offset);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_compare_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float compare_value, bool offset_en, int2 offset);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_depth_2d<float>() { return true; }
+  template<> METAL_INTERNAL float _air_sample_depth_2d<float>(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_depth_2d.f32");
+  template<> METAL_INTERNAL float _air_sample_depth_2d_grad(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_depth_2d_grad.f32");
+  template<> METAL_INTERNAL float _air_sample_compare_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float compare_value, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_compare_depth_2d.f32");
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENT2D_OVERLOAD__)
+  template<> METAL_INTERNAL float _air_sample_compare_depth_2d_grad(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float compare_value, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_compare_depth_2d_grad.f32");
+#endif
+  template<> METAL_INTERNAL float _air_read_depth_2d(depth_2d_t tex, uint depth_format, uint2 coord, uint lod) __asm("air.read_depth_2d.f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC float _air_read_depth_2d(depth_2d_t tex, uint depth_format, ushort2 coord, ushort lod) {
+    return _air_read_depth_2d<float>(tex, depth_format, static_cast<uint2>(coord), static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, bool offset_en, int2 offset) __asm("air.gather_depth_2d.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_gather_compare_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, float compare_value, bool offset_en, int2 offset) __asm("air.gather_compare_depth_2d.f32");
+  METAL_INTERNAL int _air_get_width_depth_2d(depth_2d_t tex, uint lod) __asm("air.get_width_depth_2d");
+  METAL_INTERNAL int _air_get_height_depth_2d(depth_2d_t tex, uint lod) __asm("air.get_height_depth_2d");
+  METAL_INTERNAL int _air_get_num_mip_levels_depth_2d(depth_2d_t tex) __asm("air.get_num_mip_levels_depth_2d");
+
+  template<typename T, access a>
+  struct depth2d {
+    static_assert(_is_valid_type_depth_2d<T>(), "Invalid type, valid types are float");
+    static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+    void operator&() = delete;
+    void operator,(thread  const depth2d<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    depth2d() : t(_air_get_null_depth_2d()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    depth2d() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread depth2d<T, a>& operator=(thread const depth2d<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread depth2d<T, a>& operator=(thread const depth2d<T, a>&) = delete;
+#endif
+
+    METAL_FUNC T sample(sampler s, float2 coord, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, true, offset, false, 0.0f);
+    }
+    METAL_FUNC T sample(sampler s, float2 coord, bias options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, true, offset, false, options.value);
+    }
+    METAL_FUNC T sample(sampler s, float2 coord, level options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, true, offset, true, options.lod);
+    }
+    METAL_FUNC T sample(sampler s, float2 coord, gradient2d options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, options.dPdx, options.dPdy, true, offset);
+    }
+    METAL_FUNC T sample_compare(sampler s, float2 coord, float compare_value, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, true, offset, false, 0.0f);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_BIAS_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float2 coord, float compare_value, bias options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, true, offset, false, options.value);
+    }
+#endif
+    METAL_FUNC T sample_compare(sampler s, float2 coord, float compare_value, level options, int2 offset = int2(0)) const METAL_VALID_LEVEL_ARG(options) {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, true, offset, true, options.lod);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENT2D_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float2 coord, float compare_value, gradient2d options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, options.dPdx, options.dPdy, true, offset);
+    }
+#endif
+    METAL_FUNC T read(uint2 coord, uint lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_2d<T>(t, _AIR_DEPTH_FLOAT32, coord, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC T read(ushort2 coord, ushort lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_2d<T>(t, _AIR_DEPTH_FLOAT32, coord, lod);
+    }
+#endif
+    METAL_FUNC vec<T,4> gather(sampler s, float2 coord, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, true, offset);
+    }
+    METAL_FUNC vec<T,4> gather_compare(sampler s, float2 coord, float compare_value, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_compare_depth_2d<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, true, offset);
+    }
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_depth_2d(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_depth_2d(t, lod);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_depth_2d(t);
+    }
+    private:
+    depth_2d_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(depth2d<T, a>);
+#endif
+  };
+
+  // 5.10.10 2D Depth Texture Array
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_depth_2d_array() { return false; }
+  template<typename T> METAL_INTERNAL T _air_sample_depth_2d(depth_2d_t tex, sampler smp, uint depth_format, float2 coord, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL T _air_sample_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL T _air_sample_depth_2d_array_grad(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset);
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float compare_value, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value);
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENT2D_OVERLOAD__)
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_2d_array_grad(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float compare_value, float2 dPdx, float2 dPdy, bool offset_en, int2 offset);
+#endif
+  template<typename T> METAL_INTERNAL T _air_read_depth_2d_array(depth_2d_array_t tex, uint depth_format, uint2 coord, uint array, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL T _air_read_depth_2d_array(depth_2d_array_t tex, uint depth_format, ushort2 coord, ushort array, ushort lod);
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, bool offset_en, int2 offset);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_compare_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float compare_value, bool offset_en, int2 offset);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_depth_2d_array<float>() { return true; }
+  template<> METAL_INTERNAL float _air_sample_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_depth_2d_array.f32");
+  template<> METAL_INTERNAL float _air_sample_depth_2d_array_grad(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_depth_2d_array_grad.f32");
+  template<> METAL_INTERNAL float _air_sample_compare_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float compare_value, bool offset_en, int2 offset, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_compare_depth_2d_array.f32");
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENT2D_OVERLOAD__)
+  template<> METAL_INTERNAL float _air_sample_compare_depth_2d_array_grad(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float compare_value, float2 dPdx, float2 dPdy, bool offset_en, int2 offset) __asm("air.sample_compare_depth_2d_array_grad.f32");
+#endif
+  template<> METAL_INTERNAL float _air_read_depth_2d_array(depth_2d_array_t tex, uint depth_format, uint2 coord, uint array, uint lod) __asm("air.read_depth_2d_array.f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC float _air_read_depth_2d_array(depth_2d_array_t tex, uint depth_format, ushort2 coord, ushort array, ushort lod) {
+    return _air_read_depth_2d_array<float>(tex, depth_format, static_cast<uint2>(coord), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, bool offset_en, int2 offset) __asm("air.gather_depth_2d_array.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_gather_compare_depth_2d_array(depth_2d_array_t tex, sampler smp, uint depth_format, float2 coord, uint array, float compare_value, bool offset_en, int2 offset) __asm("air.gather_compare_depth_2d_array.f32");
+  METAL_INTERNAL int _air_get_width_depth_2d_array(depth_2d_array_t tex, uint lod) __asm("air.get_width_depth_2d_array");
+  METAL_INTERNAL int _air_get_height_depth_2d_array(depth_2d_array_t tex, uint lod) __asm("air.get_height_depth_2d_array");
+  METAL_INTERNAL int _air_get_array_size_depth_2d_array(depth_2d_array_t tex) __asm("air.get_array_size_depth_2d_array");
+  METAL_INTERNAL int _air_get_num_mip_levels_depth_2d_array(depth_2d_array_t tex) __asm("air.get_num_mip_levels_depth_2d_array");
+
+  template<typename T, access a>
+  struct depth2d_array {
+    static_assert(_is_valid_type_depth_2d_array<T>(), "Invalid type, valid types are float");
+    static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+    void operator&() = delete;
+    void operator,(thread  const depth2d_array<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    depth2d_array() : t(_air_get_null_depth_2d_array()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    depth2d_array() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread depth2d_array<T, a>& operator=(thread const depth2d_array<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread depth2d_array<T, a>& operator=(thread const depth2d_array<T, a>&) = delete;
+#endif
+
+    METAL_FUNC T sample(sampler s, float2 coord, uint array, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, true, offset, false, 0.0f);
+    }
+    METAL_FUNC T sample(sampler s, float2 coord, uint array, bias options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, true, offset, false, options.value);
+    }
+    METAL_FUNC T sample(sampler s, float2 coord, uint array, level options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, true, offset, true, options.lod);
+    }
+    METAL_FUNC T sample(sampler s, float2 coord, uint array, gradient2d options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_2d_array_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, options.dPdx, options.dPdy, true, offset);
+    }
+    METAL_FUNC T sample_compare(sampler s, float2 coord, uint array, float compare_value, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, true, offset, false, 0.0f);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_BIAS_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float2 coord, uint array, float compare_value, bias options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, true, offset, false, options.value);
+    }
+#endif
+    METAL_FUNC T sample_compare(sampler s, float2 coord, uint array, float compare_value, level options, int2 offset = int2(0)) const METAL_VALID_LOD_ARG(options) {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, true, offset, false, options.lod);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENT2D_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float2 coord, uint array, float compare_value, gradient2d options, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_2d_array_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, options.dPdx, options.dPdy, true, offset);
+    }
+#endif
+    METAL_FUNC T read(uint2 coord, uint array, uint lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_2d_array<T>(t, _AIR_DEPTH_FLOAT32, coord, array, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC T read(ushort2 coord, ushort array, ushort lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_2d_array<T>(t, _AIR_DEPTH_FLOAT32, coord, array, lod);
+    }
+#endif
+    METAL_FUNC vec<T,4> gather(sampler s, float2 coord, uint array, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, true, offset);
+    }
+    METAL_FUNC vec<T,4> gather_compare(sampler s, float2 coord, uint array, float compare_value, int2 offset = int2(0)) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_compare_depth_2d_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, true, offset);
+    }
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_depth_2d_array(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_depth_2d_array(t, lod);
+    }
+    METAL_FUNC uint get_array_size() const {
+      return _air_get_array_size_depth_2d_array(t);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_depth_2d_array(t);
+    }
+    private:
+    depth_2d_array_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(depth2d_array<T, a>);
+#endif
+  };
+
+  // 5.10.11 Cube-Map Depth Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_depth_cube() { return false; }
+  template<typename T> METAL_INTERNAL T _air_sample_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL T _air_sample_depth_cube_grad(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float3 dPdx, float3 dPdy);
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float compare_value, bool lod_or_bias, float lod_or_bias_value);
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENTCUBE_OVERLOAD__)
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_cube_grad(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float compare_value, float3 dPdx, float3 dPdy);
+#endif
+#if defined(__HAVE_DEPTH_CUBE_READ__)
+  template<typename T> METAL_INTERNAL T _air_read_depth_cube(depth_cube_t tex, uint depth_format, uint2 coord, uint face, uint lod);
+  #if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL T _air_read_depth_cube(depth_cube_t tex, uint depth_format, ushort2 coord, ushort face, ushort lod);
+  #endif
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_compare_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float compare_value);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_depth_cube<float>() { return true; }
+  template<> METAL_INTERNAL float _air_sample_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_depth_cube.f32");
+  template<> METAL_INTERNAL float _air_sample_depth_cube_grad(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float3 dPdx, float3 dPdy) __asm("air.sample_depth_cube_grad.f32");
+  template<> METAL_INTERNAL float _air_sample_compare_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float compare_value, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_compare_depth_cube.f32");
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENTCUBE_OVERLOAD__)
+  template<> METAL_INTERNAL float _air_sample_compare_depth_cube_grad(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float compare_value, float3 dPdx, float3 dPdy) __asm("air.sample_compare_depth_cube_grad.f32");
+#endif
+#if defined(__HAVE_DEPTH_CUBE_READ__)
+  template<> METAL_INTERNAL float _air_read_depth_cube(depth_cube_t tex, uint depth_format, uint2 coord, uint face, uint lod) __asm("air.read_depth_cube.f32");
+  #if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC float _air_read_depth_cube(depth_cube_t tex, uint depth_format, ushort2 coord, ushort face, ushort lod) {
+    return _air_read_depth_cube<float>(tex, depth_format, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(lod));
+  }
+  #endif
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord) __asm("air.gather_depth_cube.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_gather_compare_depth_cube(depth_cube_t tex, sampler smp, uint depth_format, float3 coord, float compare_value) __asm("air.gather_compare_depth_cube.f32");
+  METAL_INTERNAL int _air_get_width_depth_cube(depth_cube_t tex, uint lod) __asm("air.get_width_depth_cube");
+  METAL_INTERNAL int _air_get_height_depth_cube(depth_cube_t tex, uint lod) __asm("air.get_height_depth_cube");
+  METAL_INTERNAL int _air_get_num_mip_levels_depth_cube(depth_cube_t tex) __asm("air.get_num_mip_levels_depth_cube");
+
+  template<typename T, access a>
+  struct depthcube {
+    static_assert(_is_valid_type_depth_cube<T>(), "Invalid type, valid types are float");
+    static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+    void operator&() = delete;
+    void operator,(thread  const depthcube<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    depthcube() : t(_air_get_null_depth_cube()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    depthcube() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread depthcube<T, a>& operator=(thread const depthcube<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread depthcube<T, a>& operator=(thread const depthcube<T, a>&) = delete;
+#endif
+
+    METAL_FUNC T sample(sampler s, float3 coord) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, false, 0.0f);
+    }
+    METAL_FUNC T sample(sampler s, float3 coord, bias options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, false, options.value);
+    }
+    METAL_FUNC T sample(sampler s, float3 coord, level options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, true, options.lod);
+    }
+    METAL_FUNC T sample(sampler s, float3 coord, gradientcube options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, options.dPdx, options.dPdy);
+    }
+    METAL_FUNC T sample_compare(sampler s, float3 coord, float compare_value) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, false, 0.0f);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_BIAS_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float3 coord, float compare_value, bias options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, false, options.value);
+    }
+#endif
+    METAL_FUNC T sample_compare(sampler s, float3 coord, float compare_value, level options) const METAL_VALID_LEVEL_ARG(options) {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, true, options.lod);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENTCUBE_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float3 coord, float compare_value, gradientcube options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value, options.dPdx, options.dPdy);
+    }
+#endif
+#if defined(__HAVE_DEPTH_CUBE_READ__)
+    METAL_FUNC T read(uint2 coord, uint face, uint lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_cube<T>(t, _AIR_DEPTH_FLOAT32, coord, face, lod);
+    }
+    #if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC T read(ushort2 coord, ushort face, ushort lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_cube<T>(t, _AIR_DEPTH_FLOAT32, coord, face, lod);
+    }
+    #endif
+#endif
+    METAL_FUNC vec<T,4> gather(sampler s, float3 coord) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord);
+    }
+    METAL_FUNC vec<T,4> gather_compare(sampler s, float3 coord, float compare_value) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_compare_depth_cube<T>(t, s, _AIR_DEPTH_FLOAT32, coord, compare_value);
+    }
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_depth_cube(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_depth_cube(t, lod);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_depth_cube(t);
+    }
+    private:
+    depth_cube_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(depthcube<T, a>);
+#endif
+  };
+
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+  // 5.10.12 Cube-Map Depth Texture Array
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_depth_cube_array() { return false; }
+  template<typename T> METAL_INTERNAL T _air_sample_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value);
+  template<typename T> METAL_INTERNAL T _air_sample_depth_cube_array_grad(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float3 dPdx, float3 dPdy);
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float compare_value, bool lod_or_bias, float lod_or_bias_value);
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENTCUBE_OVERLOAD__)
+  template<typename T> METAL_INTERNAL T _air_sample_compare_depth_cube_array_grad(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float compare_value, float3 dPdx, float3 dPdy);
+#endif
+  template<typename T> METAL_INTERNAL T _air_read_depth_cube_array(depth_cube_array_t tex, uint depth_format, uint2 coord, uint face, uint array, uint lod);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL T _air_read_depth_cube_array(depth_cube_array_t tex, uint depth_format, ushort2 coord, ushort face, ushort array, ushort lod);
+#endif
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array);
+  template<typename T> METAL_INTERNAL vec<T,4> _air_gather_compare_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float compare_value);
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_depth_cube_array<float>() { return true; }
+  template<> METAL_INTERNAL float _air_sample_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_depth_cube_array.f32");
+  template<> METAL_INTERNAL float _air_sample_depth_cube_array_grad(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float3 dPdx, float3 dPdy) __asm("air.sample_depth_cube_array_grad.f32");
+  template<> METAL_INTERNAL float _air_sample_compare_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float compare_value, bool lod_or_bias, float lod_or_bias_value) __asm("air.sample_compare_depth_cube_array.f32");
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENTCUBE_OVERLOAD__)
+  template<> METAL_INTERNAL float _air_sample_compare_depth_cube_array_grad(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float compare_value, float3 dPdx, float3 dPdy) __asm("air.sample_compare_depth_cube_array_grad.f32");
+#endif
+  template<> METAL_INTERNAL float _air_read_depth_cube_array(depth_cube_array_t tex, uint depth_format, uint2 coord, uint face, uint array, uint lod) __asm("air.read_depth_cube_array.f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC float _air_read_depth_cube_array(depth_cube_array_t tex, uint depth_format, ushort2 coord, ushort face, ushort array, ushort lod)  {
+    return _air_read_depth_cube_array<float>(tex, depth_format, static_cast<uint2>(coord), static_cast<uint>(face), static_cast<uint>(array), static_cast<uint>(lod));
+  }
+#endif
+  template<> METAL_INTERNAL vec<float,4> _air_gather_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array) __asm("air.gather_depth_cube_array.v4f32");
+  template<> METAL_INTERNAL vec<float,4> _air_gather_compare_depth_cube_array(depth_cube_array_t tex, sampler smp, uint depth_format, float3 coord, uint array, float compare_value) __asm("air.gather_compare_depth_cube_array.f32");
+  METAL_INTERNAL int _air_get_width_depth_cube_array(depth_cube_array_t tex, uint lod) __asm("air.get_width_depth_cube_array");
+  METAL_INTERNAL int _air_get_height_depth_cube_array(depth_cube_array_t tex, uint lod) __asm("air.get_height_depth_cube_array");
+  METAL_INTERNAL int _air_get_array_size_depth_cube_array(depth_cube_array_t tex) __asm("air.get_array_size_depth_cube_array");
+  METAL_INTERNAL int _air_get_num_mip_levels_depth_cube_array(depth_cube_array_t tex) __asm("air.get_num_mip_levels_depth_cube_array");
+
+  template<typename T, access a>
+  struct depthcube_array {
+    static_assert(_is_valid_type_depth_cube_array<T>(), "Invalid type, valid types are float");
+    static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+    void operator&() = delete;
+    void operator,(thread  const depthcube_array<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    depthcube_array() : t(_air_get_null_depth_cube_array()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    depthcube_array() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread depthcube_array<T, a>& operator=(thread const depthcube_array<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread depthcube_array<T, a>& operator=(thread const depthcube_array<T, a>&) = delete;
+#endif
+
+    METAL_FUNC T sample(sampler s, float3 coord, uint array) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, false, 0.0f);
+    }
+    METAL_FUNC T sample(sampler s, float3 coord, uint array, bias options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, false, options.value);
+    }
+    METAL_FUNC T sample(sampler s, float3 coord, uint array, level options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, true, options.lod);
+    }
+    METAL_FUNC T sample(sampler s, float3 coord, uint array, gradientcube options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_depth_cube_array_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, options.dPdx, options.dPdy);
+    }
+    METAL_FUNC T sample_compare(sampler s, float3 coord, uint array, float compare_value) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, false, 0.0f);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_BIAS_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float3 coord, uint array, float compare_value, bias options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, false, options.value);
+    }
+#endif
+    METAL_FUNC T sample_compare(sampler s, float3 coord, uint array, float compare_value, level options) const METAL_VALID_LEVEL_ARG(options) {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, true, options.lod);
+    }
+#if defined(__HAVE_SAMPLE_COMPARE_GRADIENTCUBE_OVERLOAD__)
+    METAL_FUNC T sample_compare(sampler s, float3 coord, uint array, float compare_value, gradientcube options) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_sample_compare_depth_cube_array_grad<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value, options.dPdx, options.dPdy);
+    }
+#endif
+    METAL_FUNC T read(uint2 coord, uint face, uint array, uint lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_cube_array<T>(t, _AIR_DEPTH_FLOAT32, coord, face, array, lod);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC T read(ushort2 coord, ushort face, ushort array, ushort lod = 0) const {
+      static_assert(a == access::sample || a == access::read, "Invalid depth access qualifier.  Must use access::sample or access::read as the access qualifier");
+      return _air_read_depth_cube_array<T>(t, _AIR_DEPTH_FLOAT32, coord, face, array, lod);
+    }
+#endif
+    METAL_FUNC vec<T,4> gather(sampler s, float3 coord, uint array) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array);
+    }
+    METAL_FUNC vec<T,4> gather_compare(sampler s, float3 coord, uint array, float compare_value) const {
+      static_assert(a == access::sample, "Invalid depth access qualifier.  Must use access::sample as the access qualifier");
+      return _air_gather_compare_depth_cube_array<T>(t, s, _AIR_DEPTH_FLOAT32, coord, array, compare_value);
+    }
+    METAL_FUNC uint get_width(uint lod = 0) const {
+      return _air_get_width_depth_cube_array(t, lod);
+    }
+    METAL_FUNC uint get_height(uint lod = 0) const {
+      return _air_get_height_depth_cube_array(t, lod);
+    }
+    METAL_FUNC uint get_array_size() const {
+      return _air_get_array_size_depth_cube_array(t);
+    }
+    METAL_FUNC uint get_num_mip_levels() const {
+      return _air_get_num_mip_levels_depth_cube_array(t);
+    }
+    private:
+    depth_cube_array_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(depthcube_array<T, a>);
+#endif
+  };
+#endif // defined(__HAVE_DEPTH_CUBE_ARRAY__)
+
+  // 5.10.13 2D Multi-sampled Depth Texture
+  template<typename T> METAL_INTERNAL constexpr bool _is_valid_type_depth_2d_ms() { return false; }
+  template<typename T> METAL_INTERNAL T _air_read_depth_2d_ms(depth_2d_ms_t tex, uint depth_format, uint2 coord, uint sample);
+#if defined(__HAVE_16B_COORDS__)
+  template<typename T> METAL_INTERNAL T _air_read_depth_2d_ms(depth_2d_ms_t tex, uint depth_format, ushort2 coord, ushort sample);
+#endif
+
+  template<> METAL_INTERNAL constexpr bool _is_valid_type_depth_2d_ms<float>() { return true; }
+  template<> METAL_INTERNAL float _air_read_depth_2d_ms(depth_2d_ms_t tex, uint depth_format, uint2 coord, uint sample) __asm("air.read_depth_2d_ms.f32");
+#if defined(__HAVE_16B_COORDS__)
+  template<> METAL_INTERNAL METAL_FUNC float _air_read_depth_2d_ms(depth_2d_ms_t tex, uint depth_format, ushort2 coord, ushort sample) {
+    return _air_read_depth_2d_ms<float>(tex, depth_format, static_cast<uint2>(coord), static_cast<uint>(sample));
+  }
+#endif
+  METAL_INTERNAL int _air_get_width_depth_2d_ms(depth_2d_ms_t tex) __asm("air.get_width_depth_2d_ms");
+  METAL_INTERNAL int _air_get_height_depth_2d_ms(depth_2d_ms_t tex) __asm("air.get_height_depth_2d_ms");
+  METAL_INTERNAL int _air_get_num_samples_depth_2d_ms(depth_2d_ms_t tex) __asm("air.get_num_samples_depth_2d_ms");
+
+  template<typename T, access a>
+  struct depth2d_ms {
+    static_assert(_is_valid_type_depth_2d_ms<T>(), "Invalid type, valid types are float");
+    static_assert(a == access::read, "Invalid ms depth access qualifier.  Must use access::read as the access qualifier");
+    void operator&() = delete;
+    void operator,(thread  const depth2d_ms<T, a>&) = delete;
+
+#if defined(__HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__) && defined(__HAVE_NULL_TEXTURE__)
+    depth2d_ms() : t(_air_get_null_depth_2d_ms()) {
+      static_assert(_is_valid_default_construct(a), _err_default_construct_msg);
+    }
+#else
+    depth2d_ms() = delete;
+#endif
+#if defined(__HAVE_COPY_ASSIGNABLE_TEXTURE__)
+    thread depth2d_ms<T, a>& operator=(thread const depth2d_ms<T, a>& that) {
+      static_assert(_is_valid_copy_assign(a), _err_copy_assign_msg);
+      this->t = that.t;
+      return *this;
+    }
+#else
+    thread depth2d_ms<T, a>& operator=(thread const depth2d_ms<T, a>&) = delete;
+#endif
+
+    METAL_FUNC T read(uint2 coord, uint sample) const {
+      static_assert(a == access::read, "Invalid ms depth access qualifier.  Must use access::read as the access qualifier");
+      return _air_read_depth_2d_ms<T>(t, _AIR_DEPTH_FLOAT32, coord, sample);
+    }
+#if defined(__HAVE_16B_COORDS__)
+    METAL_FUNC T read(ushort2 coord, ushort sample) const {
+      static_assert(a == access::read, "Invalid ms depth access qualifier.  Must use access::read as the access qualifier");
+      return _air_read_depth_2d_ms<T>(t, _AIR_DEPTH_FLOAT32, coord, sample);
+    }
+#endif
+    METAL_FUNC uint get_width() const {
+      return _air_get_width_depth_2d_ms(t);
+    }
+    METAL_FUNC uint get_height() const {
+      return _air_get_height_depth_2d_ms(t);
+    }
+    METAL_FUNC uint get_num_samples() const {
+      return _air_get_num_samples_depth_2d_ms(t);
+    }
+    private:
+    depth_2d_ms_t t;
+
+#if defined(__HAVE_NULL_TEXTURE__)
+    friend METAL_FUNC bool metal::is_null_texture<T, a>(depth2d_ms<T, a>);
+#endif
+  };
+
+#if defined(__HAVE_NULL_TEXTURE__)
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texture1d<T, a> tex) {
+      return _air_is_null_texture_1d(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texture1d_array<T, a> tex) {
+    return _air_is_null_texture_1d_array(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texture2d<T, a> tex) {
+    return _air_is_null_texture_2d(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texture2d_array<T, a> tex) {
+    return _air_is_null_texture_2d_array(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texture3d<T, a> tex) {
+    return _air_is_null_texture_3d(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texturecube<T, a> tex) {
+    return _air_is_null_texture_cube(tex.t);
+  }
+#if defined(__HAVE_TEXTURE_CUBE_ARRAY__)
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texturecube_array<T, a> tex) {
+    return _air_is_null_texture_cube_array(tex.t);
+  }
+#endif
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(texture2d_ms<T, a> tex) {
+    return _air_is_null_texture_2d_ms(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(depth2d<T, a> tex) {
+    return _air_is_null_depth_2d(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(depth2d_array<T, a> tex) {
+    return _air_is_null_depth_2d_array(tex.t);
+  }
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(depthcube<T, a> tex) {
+    return _air_is_null_depth_cube(tex.t);
+  }
+#if defined(__HAVE_DEPTH_CUBE_ARRAY__)
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(depthcube_array<T, a> tex) {
+    return _air_is_null_depth_cube_array(tex.t);
+  }
+#endif
+  template <typename T, access a>
+  METAL_FUNC bool is_null_texture(depth2d_ms<T, a> tex) {
+    return _air_is_null_depth_2d_ms(tex.t);
+  }
+#endif // defined(__HAVE_NULL_TEXTURE__)
+} // namespace metal
+
+#endif // __METAL_TEXTURE

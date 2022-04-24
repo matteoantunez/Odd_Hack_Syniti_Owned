@@ -1,0 +1,227 @@
+{
+  "layers" : [
+    {
+      "bottom" : "OnlinePTTR",
+      "weights" : {
+
+      },
+      "nd_mode" : 1,
+      "debug_info" : "model\/pTTR\/Shape",
+      "axis" : -1,
+      "top" : "model\/pTTR\/Shape",
+      "type" : "get_shape",
+      "name" : "model\/pTTR\/Shape",
+      "attributes" : {
+        "basic_block_head" : 1
+      }
+    },
+    {
+      "bottom" : "",
+      "k" : 1,
+      "n" : 1,
+      "weights" : {
+
+      },
+      "h" : 1,
+      "debug_info" : "model\/pTTR\/LessEqual",
+      "constant_blob" : 1,
+      "top" : "model\/pTTR\/LessEqual_load_constant_2",
+      "w" : 1,
+      "type" : "load_constant",
+      "name" : "model\/pTTR\/LessEqual_load_constant_2"
+    },
+    {
+      "bottom" : "OnlinePTTR,model\/pTTR\/LessEqual_load_constant_2",
+      "alpha" : 1,
+      "operation" : 104,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "model\/pTTR\/LessEqual",
+      "top" : "model\/pTTR\/LessEqual",
+      "type" : "elementwise",
+      "name" : "model\/pTTR\/LessEqual",
+      "beta" : 0
+    },
+    {
+      "bottom" : "",
+      "k" : 1,
+      "n" : 1,
+      "weights" : {
+
+      },
+      "h" : 1,
+      "debug_info" : "model\/pTTR\/GreaterEqual",
+      "constant_blob" : 3,
+      "top" : "model\/pTTR\/GreaterEqual_load_constant_3",
+      "w" : 1,
+      "type" : "load_constant",
+      "name" : "model\/pTTR\/GreaterEqual_load_constant_3"
+    },
+    {
+      "bottom" : "OnlinePTTR,model\/pTTR\/GreaterEqual_load_constant_3",
+      "alpha" : 1,
+      "operation" : 106,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "model\/pTTR\/GreaterEqual",
+      "top" : "model\/pTTR\/GreaterEqual",
+      "type" : "elementwise",
+      "name" : "model\/pTTR\/GreaterEqual",
+      "beta" : 0
+    },
+    {
+      "alpha" : 0,
+      "bottom" : "model\/pTTR\/Shape",
+      "distribution" : 0,
+      "dynamic_shape" : true,
+      "weights" : {
+
+      },
+      "seed" : 0,
+      "debug_info" : "model\/pTTR\/random_uniform\/RandomUniform",
+      "top" : "model\/pTTR\/random_uniform\/RandomUniform",
+      "type" : "load_random",
+      "name" : "model\/pTTR\/random_uniform\/RandomUniform",
+      "beta" : 1
+    },
+    {
+      "bottom" : "model\/pTTR\/LessEqual,model\/pTTR\/GreaterEqual",
+      "alpha" : 1,
+      "operation" : 110,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "model\/pTTR\/and",
+      "top" : "model\/pTTR\/and",
+      "type" : "elementwise",
+      "name" : "model\/pTTR\/and",
+      "attributes" : {
+        "basic_block_head" : 1
+      }
+    },
+    {
+      "bottom" : "model\/pTTR\/and",
+      "alpha" : 1,
+      "operation" : 112,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "model\/pTTR\/LogicalNot",
+      "top" : "model\/pTTR\/LogicalNot",
+      "type" : "elementwise",
+      "name" : "model\/pTTR\/LogicalNot",
+      "beta" : 0
+    },
+    {
+      "name" : "model\/pTTR\/SelectV2",
+      "fused_relu" : 0,
+      "beta" : 0,
+      "operation" : 101,
+      "type" : "elementwise",
+      "alpha" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "model\/pTTR\/LogicalNot,model\/pTTR\/random_uniform\/RandomUniform,OnlinePTTR",
+      "debug_info" : "model\/pTTR\/SelectV2",
+      "nd_mode" : true,
+      "weights" : {
+
+      },
+      "top" : "pTTR"
+    }
+  ],
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 300,
+  "shape" : {
+    "layer_shapes" : {
+      "model\/pTTR\/LessEqual" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      },
+      "OnlinePTTR" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      },
+      "model\/pTTR\/Shape" : {
+        "k" : 1,
+        "w" : 2,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "pTTR" : {
+        "k" : 1,
+        "w" : 2,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      },
+      "model\/pTTR\/and" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      },
+      "model\/pTTR\/GreaterEqual_load_constant_3" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "h" : 1
+      },
+      "model\/pTTR\/random_uniform\/RandomUniform" : {
+        "k" : 1,
+        "w" : 2,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "model\/pTTR\/LessEqual_load_constant_2" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "h" : 1
+      },
+      "model\/pTTR\/GreaterEqual" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      },
+      "model\/pTTR\/LogicalNot" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      }
+    },
+    "global_shapes" : {
+
+    }
+  },
+  "subnetworks" : {
+
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "layers" : [
+    {
+      "top" : "weights",
+      "w" : 46,
+      "h" : 1,
+      "weights" : {
+
+      },
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "attributes" : {
+        "basic_block_head" : 1
+      },
+      "bottom" : "",
+      "debug_info" : "weights",
+      "n" : 1,
+      "name" : "weights",
+      "constant_blob" : 1
+    },
+    {
+      "bottom" : "weights,inputs",
+      "weights" : {
+
+      },
+      "debug_info" : "score_r2",
+      "top" : "score_r2",
+      "type" : "batch_matmul",
+      "name" : "score_r2",
+      "channel_mode" : false
+    },
+    {
+      "bottom" : "score_r2",
+      "size_of_axes" : 1,
+      "axes_0" : 0,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "scores",
+      "version" : 1,
+      "top" : "scores",
+      "type" : "squeeze",
+      "name" : "scores",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "bottom" : "scores",
+      "axis" : 0,
+      "weights" : {
+
+      },
+      "num_k" : 1,
+      "debug_info" : "best_1",
+      "top" : "top_values,top_indices",
+      "single_axis_topk" : true,
+      "type" : "topk",
+      "name" : "best_1"
+    },
+    {
+      "bottom" : "top_values",
+      "end" : 1,
+      "start" : 0,
+      "weights" : {
+
+      },
+      "axis" : 0,
+      "debug_info" : "top1",
+      "top" : "top1",
+      "type" : "slice",
+      "name" : "top1"
+    },
+    {
+      "top" : "neg10",
+      "w" : 1,
+      "h" : 1,
+      "name" : "neg10",
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "bottom" : "",
+      "debug_info" : "neg10",
+      "n" : 1,
+      "weights" : {
+
+      },
+      "constant_blob" : 3
+    },
+    {
+      "top" : "half",
+      "w" : 1,
+      "h" : 1,
+      "name" : "half",
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "bottom" : "",
+      "debug_info" : "half",
+      "n" : 1,
+      "weights" : {
+
+      },
+      "constant_blob" : 5
+    },
+    {
+      "top" : "one",
+      "w" : 1,
+      "h" : 1,
+      "name" : "one",
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "bottom" : "",
+      "debug_info" : "one",
+      "n" : 1,
+      "weights" : {
+
+      },
+      "constant_blob" : 7
+    },
+    {
+      "bottom" : "scores,neg10",
+      "alpha" : 1,
+      "operation" : 105,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "showToUser",
+      "top" : "showToUser",
+      "type" : "elementwise",
+      "name" : "showToUser",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "axis_mode" : 1,
+      "bottom" : "showToUser",
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "debug_info" : "candidateCount",
+      "use_version" : 1,
+      "top" : "candidateCount",
+      "type" : "reduce",
+      "name" : "candidateCount"
+    },
+    {
+      "bottom" : "candidateCount,one",
+      "alpha" : 1,
+      "operation" : 100,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "is1Candidate",
+      "top" : "is1Candidate",
+      "type" : "elementwise",
+      "name" : "is1Candidate",
+      "beta" : 0
+    },
+    {
+      "bottom" : "top1,half",
+      "alpha" : 1,
+      "operation" : 106,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "isTop1Confident",
+      "top" : "isTop1Confident",
+      "type" : "elementwise",
+      "name" : "isTop1Confident",
+      "beta" : 0
+    },
+    {
+      "bottom" : "is1Candidate,isTop1Confident",
+      "alpha" : 1,
+      "operation" : 110,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "topMatchIsConfident",
+      "top" : "topMatchIsConfident",
+      "type" : "elementwise",
+      "name" : "topMatchIsConfident",
+      "attributes" : {
+        "is_output" : 1
+      }
+    }
+  ],
+  "storage" : "model.espresso.weights",
+  "metadata_in_weights" : [
+
+  ],
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 300,
+  "shape" : {
+    "layer_shapes" : {
+      "score_r2" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 1
+      },
+      "candidateCount" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "showToUser" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "neg10" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "is1Candidate" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "isTop1Confident" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "top_indices" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "topMatchIsConfident" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "scores" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "top_values" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "top1" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "one" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "inputs" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 2,
+        "h" : 46
+      },
+      "weights" : {
+        "k" : 1,
+        "w" : 46,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      },
+      "half" : {
+        "k" : 1,
+        "w" : 1,
+        "n" : 1,
+        "_rank" : 1,
+        "h" : 1
+      }
+    },
+    "global_shapes" : {
+
+    }
+  },
+  "subnetworks" : {
+
+  }
+}

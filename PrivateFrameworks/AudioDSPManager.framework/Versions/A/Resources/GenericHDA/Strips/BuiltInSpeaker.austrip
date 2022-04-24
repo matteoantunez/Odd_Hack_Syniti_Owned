@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>displayname</key>
+	<string>BuiltInSpeaker</string>
+	<key>name</key>
+	<string>BuiltInSpeaker</string>
+	<key>strips</key>
+	<array>
+		<dict>
+			<key>effects</key>
+			<array>
+				<dict>
+					<key>aupreset</key>
+					<dict>
+						<key>data</key>
+						<data>
+						AAAAAAAAAAAAAAApAAAAAAAAAAAA
+						AAABQQAAAAAAAAJBAAAAAAAAA0JI
+						AAAAAAAEQAAAAAAAAAVBoAAAAAAA
+						BkHwAAAAAAAHQkgAAAAAAAhCyAAA
+						AAAACUWcQAAAAAAKRupgAAAAAAtB
+						IAAAAAAADAAAAAAAAAANR3//AAAA
+						AA5BAAAAAAAAD0EAAAAAAAAQQkgA
+						AAAAABFAAAAAAAAAEkGgAAAAAAAT
+						QfAAAAAAABRCSAAAAAAAFULIAAAA
+						AAAWRZxAAAAAABdG6mAAAAAAGEEg
+						AAAAAAAZAAAAAAAAABoAAAAAAAAA
+						G0EAAAAAAAAcQQAAAAAAAB1CSAAA
+						AAAAHkAAAAAAAAAfQaAAAAAAACBB
+						8AAAAAAAIUJIAAAAAAAiQsgAAAAA
+						ACNFnEAAAAAAJEbqYAAAAAAlQSAA
+						AAAAACYAAAAAAAAAJwAAAAAAAAAo
+						AAAAAA==
+						</data>
+						<key>manufacturer</key>
+						<integer>1634758764</integer>
+						<key>name</key>
+						<string>Untitled</string>
+						<key>subtype</key>
+						<integer>1635021680</integer>
+						<key>type</key>
+						<integer>1635083896</integer>
+						<key>version</key>
+						<integer>0</integer>
+					</dict>
+					<key>bypass</key>
+					<integer>0</integer>
+					<key>displayname</key>
+					<string>AUSpeakerProtection</string>
+					<key>unit</key>
+					<dict>
+						<key>manufacturer</key>
+						<integer>1634758764</integer>
+						<key>subtype</key>
+						<integer>1635021680</integer>
+						<key>type</key>
+						<integer>1635083896</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>Ingen tilgang</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- Localization notes: see blockpage.html  -->
+	
+	<body onload="javascript:LoadNetworkPage(	'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 
+												32, 51)" >
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						Hei sann! Du kan ikke vise sider fra dette nettstedet.
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						Du kan ikke vise siden
+						&#171;<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>&#187;
+						fordi den ikke er i Godkjent-listen i Skjermtid.
+					</p>
+					
+					<p class="text"		id="HowToAddText">
+						Hvis du vil at dette nettstedet skal legges til i Godkjent-listen, kontakter du nettverksadministratoren.
+					</p>
+
+					<p class="text"		id="GoBackText">
+						Hvis du vil gå tilbake til forrige side, klikker du på Gå tilbake. 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  Gå tilbake  " onclick="GoBack()" />
+					</p>
+					
+					
+					<p class="title"			id="AllowedWebsitesTitle">
+						Tillatte nettsteder
+					</p>			
+					
+					<div class="allowedlinks"	id="AllowedWebsitesLinks">
+						 
+						ALLOWED_LIST_OF_WEBSITES_NO_LOC
+						
+						<!--
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>						
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>						
+						<a href="www.apple.com">Apple</a>
+						<br>
+						-->	
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>

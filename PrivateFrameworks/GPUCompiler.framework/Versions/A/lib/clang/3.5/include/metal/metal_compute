@@ -1,0 +1,80 @@
+//===-- metal_compute -----------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_COMPUTE
+#define __METAL_COMPUTE
+
+#define _AIR_MEM_FLAG_NONE 0x0
+#define _AIR_MEM_FLAG_GLOBAL 0x1
+#define _AIR_MEM_FLAG_LOCAL 0x2
+#define _AIR_MEM_FLAG_TEXTURE 0x4
+
+namespace metal {
+  // 5.8 Compute Functions
+
+  // 5.8.1 Threadgroup Synchronization Functions
+  enum class mem_flags { mem_none = _AIR_MEM_FLAG_NONE,
+                         mem_device = _AIR_MEM_FLAG_GLOBAL,
+                         mem_threadgroup = _AIR_MEM_FLAG_LOCAL,
+#if defined(__HAVE_TEXTURE_READWRITE__)
+                         mem_texture = _AIR_MEM_FLAG_TEXTURE,
+#endif
+                         mem_device_and_threadgroup = _AIR_MEM_FLAG_GLOBAL | _AIR_MEM_FLAG_LOCAL
+  };
+  // mem_device_and_threadgroup is deprecated.
+
+#if defined(__HAVE_MEMFLAG_OPERATORS__)
+  METAL_FUNC constexpr mem_flags operator|(mem_flags x, mem_flags y) {
+    return static_cast<mem_flags>(static_cast<int>(x) | static_cast<int>(y));
+  }
+
+  METAL_FUNC constexpr mem_flags operator&(mem_flags x, mem_flags y) {
+    return static_cast<mem_flags>(static_cast<int>(x) & static_cast<int>(y));
+  }
+
+  METAL_FUNC constexpr mem_flags operator^(mem_flags x, mem_flags y) {
+    return static_cast<mem_flags>(static_cast<int>(x) ^ static_cast<int>(y));
+  }
+
+  METAL_FUNC constexpr mem_flags operator~(mem_flags x) {
+    return static_cast<mem_flags>(~static_cast<int>(x));
+  }
+#endif
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wtautological-compare"
+  template <>
+  struct _constarg_traits<mem_flags> {
+    constexpr static METAL_INTERNAL bool check(mem_flags flags) { return flags == flags; }
+  };
+#pragma clang diagnostic pop
+
+  METAL_INTERNAL METAL_CONVERGENT void _air_wg_barrier(mem_flags flags, int scope = _AIR_MEM_SCOPE_WORK_GROUP) __asm("air.wg.barrier");
+  METAL_FUNC void threadgroup_barrier(mem_flags flags) {
+    _air_wg_barrier(flags);
+  }
+
+#if defined (__HAVE_SIMDGROUP_BARRIER__)
+  METAL_INTERNAL METAL_CONVERGENT void _air_simdgroup_barrier(mem_flags flags, int scope = _AIR_MEM_SCOPE_WORK_GROUP) __asm("air.simdgroup.barrier");
+  METAL_FUNC void simdgroup_barrier(mem_flags flags) {
+    _air_simdgroup_barrier(flags);
+  }
+#endif // defined (__HAVE_SIMDGROUP_BARRIER__)
+
+#if defined(__HAVE_DRAW_INDIRECT__)
+  struct MTLDispatchThreadgroupsIndirectArguments {
+    uint threadgroupsPerGrid[3];
+  };
+#endif
+
+#if defined(__HAVE_COMPUTE_IMPROVED_INDIRECT__)
+  struct MTLDispatchThreadsIndirectArguments {
+    uint threadsPerGrid[3];
+    uint threadsPerThreadgroup[3];
+  };
+#endif
+
+} // namespace metal
+
+#endif // __METAL_COMPUTE

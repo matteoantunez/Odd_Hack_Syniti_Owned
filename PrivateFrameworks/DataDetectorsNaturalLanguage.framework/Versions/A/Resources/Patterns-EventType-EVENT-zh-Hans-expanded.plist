@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>你已注册</string>
+			<string>接(上)?(你|我|大家|各位)</string>
+			<string>庆祝</string>
+			<string>聚一聚</string>
+			<string>遇见你</string>
+			<string>(从)(.{0,25})(地铁站出发)</string>
+			<string>(我|你|大家)的地方</string>
+			<string>邀请(你|你们|大家|各位)</string>
+			<string>我们会面</string>
+			<string>聚一下</string>
+			<string>聊一聊</string>
+			<string>碰头</string>
+			<string>敬请光临</string>
+			<string>聚会</string>
+			<string>在(.{0,25})见面</string>
+			<string>邀约</string>
+			<string>莅临</string>
+			<string>让大家相会</string>
+			<string>打麻将</string>
+			<string>务必赶到</string>
+			<string>到(你|我|他)家</string>
+			<string>聚聚</string>
+			<string>碰面</string>
+			<string>度假村</string>
+			<string>邀约</string>
+			<string>小聚</string>
+			<string>预定</string>
+			<string>邀请</string>
+			<string>营队</string>
+			<string>游船河</string>
+			<string>游车河</string>
+			<string>露营</string>
+			<string>来我家</string>
+			<string>你和我一起去吧</string>
+			<string>去你家</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@（%2$@）</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

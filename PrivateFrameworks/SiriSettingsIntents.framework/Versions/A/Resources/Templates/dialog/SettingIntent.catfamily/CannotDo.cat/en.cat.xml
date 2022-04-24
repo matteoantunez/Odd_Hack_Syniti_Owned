@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#CannotDo" locale="en">
+  <first>
+      <random>
+          <dialog>Sorry, I can't help you with that.</dialog>
+          <dialog>I'm sorry, I'm afraid I can't do that.</dialog>
+          <dialog>Sorry, I can't do that.</dialog>
+      </random>
+  </first>
+</cat>

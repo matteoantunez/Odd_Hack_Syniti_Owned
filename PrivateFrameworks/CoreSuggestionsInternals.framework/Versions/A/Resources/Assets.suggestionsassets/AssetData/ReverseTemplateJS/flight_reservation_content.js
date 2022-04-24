@@ -1,0 +1,1 @@
+(function(){return{"airindia.in":/[\d\-]/,"airbusan.com":/[\d]/,"aeromexico.co.kr":/[\d\-]/}}).call();

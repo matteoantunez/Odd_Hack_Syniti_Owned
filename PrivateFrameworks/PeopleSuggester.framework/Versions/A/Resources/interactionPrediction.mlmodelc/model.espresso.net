@@ -1,0 +1,47 @@
+{
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "metadata_in_weights" : [
+
+  ],
+  "layers" : [
+    {
+      "nB" : 2,
+      "top" : "dense_1_output",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 2,
+      "blob_weights" : 3,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input1",
+      "blob_biases" : 1,
+      "has_tanh" : 0,
+      "debug_info" : "dense_1",
+      "name" : "dense_1",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "dense_1_output",
+      "attributes" : {
+        "is_output" : 1
+      },
+      "weights" : {
+
+      },
+      "debug_info" : "dense_1__activation__",
+      "top" : "output1",
+      "C" : 2,
+      "type" : "softmax",
+      "name" : "dense_1__activation__"
+    }
+  ]
+}

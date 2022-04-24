@@ -1,0 +1,1431 @@
+{
+  "tagIDs" : [
+    "SongPace_Fast",
+    "Mood_Action"
+  ],
+  "mainSegments" : [
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -23.04866649246216,
+      "bars" : 1,
+      "transitions" : {
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body05a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 16941,
+      "peakValue" : 0.1501950323581696,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "xgame_In0_1beat"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.39351846313476,
+      "bars" : 1,
+      "transitions" : {
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body05a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body01d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07b " : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body01c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body02a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 33995,
+      "peakValue" : 0.3883669376373291,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "xgame_In1_2beat"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.82341028785705,
+      "sliceable" : true,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body06c" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body04a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body07c" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body06b" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body05a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body01d" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body06a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body07b " : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body01c" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+        ],
+        "xgame_Body07a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body03d" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body01b" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03c" : [
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+        ],
+        "xgame_Body01a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body04c" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body03b" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body06d" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body02a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+        ]
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.465593010187149,
+      "priority" : 100,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body01a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.63630534744263,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body01b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body01d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271058,
+      "peakValue" : 0.4351099133491516,
+      "priority" : 81,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body01b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.23292495346069,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body01c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4348025321960449,
+      "priority" : 82,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body01c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -18.99661637878418,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body01b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body01d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4268554151058197,
+      "priority" : 83,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body01d"
+    },
+    {
+      "beatsPerBar" : 2,
+      "loudness" : -21.91919185256958,
+      "bars" : 7,
+      "transitions" : {
+        "xgame_Body02a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body05a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 237176,
+      "peakValue" : 0.5128148794174194,
+      "priority" : 65,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body02a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.07414437866211,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body04c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body05a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.5184444189071655,
+      "priority" : 91,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body03a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.16563393211365,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.566868782043457,
+      "priority" : 84,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body03b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.78047587013245,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body03c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4738484025001526,
+      "priority" : 93,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body03c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.90873791313171,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body03b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4753196239471436,
+      "priority" : 80,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body03d"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.16037465667725,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body07c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07b " : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body05a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4265562891960144,
+      "priority" : 75,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body04a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.88190414047241,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271058,
+      "peakValue" : 0.4443197250366211,
+      "priority" : 76,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body04b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.22860981559753,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body04a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body05a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4482493102550507,
+      "priority" : 77,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body04c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.21197654342651,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body04d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4228253960609436,
+      "priority" : 78,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body04d"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.2539506111145,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07b " : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07c" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4882656037807465,
+      "priority" : 90,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body05a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.26217772102356,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.6261174082756042,
+      "priority" : 67,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body06a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.27350021934509,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07b " : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.5711125135421753,
+      "priority" : 68,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body06b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.23193551635742,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Out0" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271058,
+      "peakValue" : 0.4906984269618988,
+      "priority" : 69,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body06c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.8748800907135,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body07b " : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body06b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4197017848491669,
+      "priority" : 70,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body06d"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.17447806930542,
+      "sliceable" : true,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Out0" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 25,
+            "fadeIn" : 25,
+            "prevented" : false
+          },
+          {
+
+          }
+        ],
+        "xgame_Body07a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "xgame_Body07b " : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "xgame_Body07c" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ]
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.513508141040802,
+      "priority" : 85,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body07a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.31557299232483,
+      "bars" : 4,
+      "transitions" : {
+        "xgame_Body07b " : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 271059,
+      "peakValue" : 0.4390469789505005,
+      "priority" : 86,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body07b "
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -19.73026730155945,
+      "bars" : 4,
+      "peakValue" : 0.4614576101303101,
+      "sampleCount" : 203294,
+      "priority" : 87,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body07c"
+    },
+    {
+      "markers" : {
+        "OUTRO_EARLY_FADE" : 149695,
+        "OUTRO_STINGER" : 118356
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -19.60752584075928,
+      "bars" : 3,
+      "sampleCount" : 203294,
+      "peakValue" : 0.5073902606964111,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "xgame_Out0"
+    }
+  ],
+  "audioEncoderPresetName" : "HE-AAC v1 64",
+  "songName" : "Adrenalize",
+  "artistName" : "Root Basket",
+  "uuid" : "D8379B0A-5068-42F9-8054-225D218AC1BE",
+  "crossFadeSegments" : [
+    {
+      "beatsPerBar" : 4,
+      "bars" : 1,
+      "peakValue" : 0.3527809679508209,
+      "sampleCount" : 1200,
+      "priority" : 1,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body02a-6-Body4a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "bars" : 1,
+      "peakValue" : 0.2962389588356018,
+      "sampleCount" : 1200,
+      "priority" : 1,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body05a-3-Body7c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "bars" : 1,
+      "peakValue" : 0.235743522644043,
+      "sampleCount" : 1200,
+      "priority" : 1,
+      "sampleRate" : 48000,
+      "name" : "xgame_Body07a-2-Out0"
+    }
+  ],
+  "contentVersion" : 1,
+  "compatibilityVersion" : 1,  
+  "sampleRate" : 48000,
+  "audioFileExtension" : "m4a"
+}

@@ -1,0 +1,110 @@
+{
+  "transform_params" : {
+    "aspect" : {
+      "bias_a" : 0,
+      "bias_g" : 0,
+      "bias_r" : 0,
+      "bias_b" : 0,
+      "center_mean" : 0,
+      "is_network_bgr" : 0,
+      "scale" : 0.0039215688593685627
+    },
+    "image" : {
+      "bias_a" : 0,
+      "bias_g" : 0,
+      "bias_r" : 0,
+      "bias_b" : 0,
+      "center_mean" : 0,
+      "is_network_bgr" : 0,
+      "scale" : 0.0039215688593685627
+    }
+  },
+  "properties" : {
+
+  },
+  "storage" : "recognition.espresso.weights",
+  "format_version" : 200,
+  "layers" : [
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "Activation",
+      "blob_weights" : 3,
+      "K" : 1,
+      "blob_biases" : 1,
+      "name" : "conv1\/Conv2D",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 2,
+      "bottom" : "image",
+      "weights" : {
+
+      },
+      "pad_mode" : 1,
+      "Nx" : 3,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "nB" : 512,
+      "top" : "fc1\/Relu",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 64,
+      "blob_weights" : 7,
+      "type" : "inner_product",
+      "has_relu" : 1,
+      "bottom" : "Activation",
+      "blob_biases" : 5,
+      "has_tanh" : 0,
+      "name" : "fc1\/MatMul",
+      "has_prelu" : 0
+    },
+    {
+      "weights" : {
+
+      },
+      "top" : "concat",
+      "type" : "concat",
+      "name" : "concat",
+      "bottom" : "fc1\/Relu,aspect"
+    },
+    {
+      "nB" : 65,
+      "top" : "fc_final\/MatMul",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 154,
+      "blob_weights" : 11,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "concat",
+      "blob_biases" : 9,
+      "has_tanh" : 0,
+      "name" : "fc_final\/MatMul",
+      "has_prelu" : 0
+    },
+    {
+      "C" : 2,
+      "weights" : {
+
+      },
+      "top" : "pred_label",
+      "type" : "softmax",
+      "name" : "pred_label",
+      "bottom" : "fc_final\/MatMul"
+    }
+  ]
+}

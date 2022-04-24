@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL</key>
+	<array>
+		<string>actual festival</string>
+		<string>animal( )?sound</string>
+		<string>azero['’]s rock festival</string>
+		<string>azkena rock festival</string>
+		<string>barcelona beach festival</string>
+		<string>barcelona psych fest</string>
+		<string>bcn live(!)?</string>
+		<string>bis festival</string>
+		<string>black is [bb]ack [ww]eekend</string>
+		<string>black music festival</string>
+		<string>canelaparty</string>
+		<string>culturefest</string>
+		<string>ebrofest</string>
+		<string>electroweekend</string>
+		<string>enofestival</string>
+		<string>face festival</string>
+		<string>festimad</string>
+		<string>festival anfifrock</string>
+		<string>festival de la cerveza</string>
+		<string>festival de les arts</string>
+		<string>festival de los sentidos</string>
+		<string>festival gradual</string>
+		<string>festival internacional de cine de berl[ií]n</string>
+		<string>(festival de cannes|festival internacional de cine de cannes)</string>
+		<string>festival internacional de cine de san sebasti[aá]n</string>
+		<string>festival noches del bot[aá]nico</string>
+		<string>festival pulpop</string>
+		<string>festival sinsal</string>
+		<string>festival sueños de libertad</string>
+		<string>festival tomavistas</string>
+		<string>fib</string>
+		<string>fiv</string>
+		<string>freek fest</string>
+		<string>guitar festival bcn</string>
+		<string>gij[oó]n sound festival</string>
+		<string>granada sound</string>
+		<string>happy sundays festival</string>
+		<string>jazzaldia</string>
+		<string>let['’]s festival</string>
+		<string>loveland barcelona festival</string>
+		<string>lurrazpiko festa</string>
+		<string>mad cool festival</string>
+		<string>mad music city (\(d[ií]a de la m[uú]sica\))?</string>
+		<string>madrid popfest</string>
+		<string>madrid winter festival</string>
+		<string>mallorca live festival</string>
+		<string>mbc fest</string>
+		<string>metro dance festival</string>
+		<string>montgorock festival</string>
+		<string>mulafest</string>
+		<string>muestra internacional de cine de venecia</string>
+		<string>mutek</string>
+		<string>no sin [mm][uú]sica festival</string>
+		<string>primavera trompetera</string>
+		<string>primavera sound</string>
+		<string>polifonik sound</string>
+		<string>qfestival</string>
+		<string>rock fest (bcn|barcelona)</string>
+		<string>santander music</string>
+		<string>sons al botànic</string>
+		<string>s[oó]nar</string>
+		<string>sonoracc festival</string>
+		<string>sonorama</string>
+		<string>sound isidro</string>
+		<string>spring festival</string>
+		<string>starlite</string>
+		<string>territorios sevilla</string>
+		<string>tibidabo live festival</string>
+		<string>tres setenta festival</string>
+		<string>utop[ií]a sound festival</string>
+		<string>wegow day festival</string>
+		<string>xtrarradio musicfest</string>
+		<string>zaid[ií]n rock</string>
+	</array>
+	<key>ENTERTAINMENT::FAIR</key>
+	<array>
+		<string>mercado medieval.{0,5}</string>
+		<string>feria de abril</string>
+		<string>feria del (caballo|libro|vino|turismo)</string>
+		<string>feria de la (cerveza|vendimia)</string>
+		<string>feria de (montjuïc|barcelona)</string>
+		<string>(feria de madrid|ifema)</string>
+		<string>(mobile world congress|mwc)</string>
+		<string>sal[oó]n (internacional )?del autom[oó]vil.{0,5}</string>
+		<string>sal[oó]n del manga de barcelona</string>
+	</array>
+	<key>ENTERTAINMENT::GAME</key>
+	<array>
+		<string>partidas de billar</string>
+	</array>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT</key>
+	<array>
+		<string>noche de cartas</string>
+		<string>noche de juegos</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::AMUSEMENT</key>
+	<array>
+		<string>disneyland( par[ií]s)?</string>
+		<string>europa[- ]?park</string>
+		<string>walibi</string>
+		<string>disney world</string>
+		<string>futuroscope</string>
+		<string>isla m[aá]gica</string>
+		<string>katmand[uú] park</string>
+		<string>loro parque</string>
+		<string>parque de atracciones de madrid</string>
+		<string>parque warner</string>
+		<string>port( )?aventura</string>
+		<string>terra m[ií]tica</string>
+		<string>territorio din[oó]polis</string>
+		<string>universal studios?</string>
+		<string>walt disney studios?</string>
+		<string>six flags</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::WATERPARK</key>
+	<array>
+		<string>aqualandia</string>
+		<string>aquopolis (costa dorada|sevilla)</string>
+		<string>aquatica</string>
+		<string>aqua center</string>
+		<string>aqua tropic</string>
+		<string>bah[ií]a park</string>
+		<string>costa marti[aá]nez</string>
+		<string>port( )?aventura aquatic park</string>
+		<string>siam park</string>
+		<string>water world</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT</key>
+	<array>
+		<string>indianapolis 500</string>
+		<string>kentucky derby</string>
+		<string>juegos ol[ií]mpicos</string>
+		<string>juegos ol[ií]mpicos de (verano|invierno)</string>
+		<string>juegos paral[ií]mpicos</string>
+		<string>copa del mundo</string>
+		<string>campeonato europeo de atletismo</string>
+		<string>campeonato mundial de nataci[oó]n</string>
+		<string>rally dakar</string>
+		<string>(campeonato mundial de pilotos de )?f[oó]rmula 1</string>
+		<string>(campeonato mundial de )?(moto gp|motociclismo)</string>
+		<string>atletismo</string>
+		<string>b[aá]dminton</string>
+		<string>nataci[oó]n</string>
+		<string>boxeo</string>
+		<string>judo</string>
+		<string>k[aá]rate</string>
+		<string>equitaci[oó]n</string>
+		<string>esgrima</string>
+		<string>squash</string>
+		<string>(aquagym|aer[oó]bic acu[aá]tico)</string>
+		<string>karting</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::AMERICAN_FOOTBALL</key>
+	<array>
+		<string>super bowl</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASEBALL</key>
+	<array>
+		<string>copa europea de b[eé]isbol</string>
+		<string>copa de la ceb</string>
+		<string>final four</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASKETBALL</key>
+	<array>
+		<string>copa (mundial de baloncesto de la fiba|mundial de baloncesto|mundial fiba|del mundo de baloncesto)</string>
+		<string>copa (del|de su majestad el) rey de baloncesto</string>
+		<string>euroliga de (baloncesto|basket)</string>
+		<string>liga (endesa? )acb de baloncesto</string>
+		<string>(finales de la )?nba</string>
+		<string>(nba )?all[- ]star game</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BIKE</key>
+	<array>
+		<string>giro de italia</string>
+		<string>vuelta a españa</string>
+		<string>tour de francia</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GOLF</key>
+	<array>
+		<string>open de españa</string>
+		<string>los masters</string>
+		<string>abierto de (ee\.( )?uu\.|estados unidos)</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GYMWORKOUT</key>
+	<array>
+		<string>pilates</string>
+		<string>body ?pump</string>
+		<string>zumba</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::HOCKEY</key>
+	<array>
+		<string>ok liga</string>
+		<string>ok liga femenina</string>
+		<string>campeonato (mundial|del mundo) de hockey (sobre )?patines</string>
+		<string>copa de (sm )?la reina</string>
+		<string>copa (del|de sm el) rey( hockey (sobre )?patines)?</string>
+		<string>copa de sar la princesa</string>
+		<string>supercopa de españa</string>
+		<string>campeonato de europa</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUGBY</key>
+	<array>
+		<string>copa de las naciones europeas</string>
+		<string>divisi[oó]n de honor</string>
+		<string>7['’]s grand prix series</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUNNING::MARATHON</key>
+	<array>
+		<string>(medio )(marat[oó]n (popular )?de madrid|mapoma)</string>
+		<string>(medio )marat[oó]n (popular )?de barcelona</string>
+		<string>(medio )marat[oó]n (ciudad de )?sevilla</string>
+		<string>(medio )marat[oó]n (divina pastora valencia|de valencia)</string>
+		<string>(medio )marat[oó]n (internacional )?de (bilbao|calvi[à[aá]]|san sebasti[aá]n|lanzarote)</string>
+		<string>(medio )(marat[oó]n de asturias valle del nal[oó]n|maranal[oó]n)</string>
+		<string>(medio )marat[oó]n de toral de los vados</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::SOCCER</key>
+	<array>
+		<string>(copa de europa|copa de naciones de europa|eurocopa|campeonato europeo de f[uú]tbol)</string>
+		<string>(copa del mundo|copa mundial de f[uú]tbol|mundialito de clube?s)</string>
+		<string>copa del rey</string>
+		<string>liga ( bbva)?</string>
+		<string>(liga de campeones( de la uefa)?|champions league)</string>
+		<string>euro 20[0-9][0-9]</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::TENNIS</key>
+	<array>
+		<string>(abierto de australia|australian open)</string>
+		<string>(abierto de banc sabadell de barcelona|barcelona open banco sabadell| trofeo conde de god[oó]|god[oó])</string>
+		<string>(abierto de estados unidos|us open)</string>
+		<string>copa davis</string>
+		<string>(copa federaci[oó]n|fed cup)</string>
+		<string>(campeonato de )?wimbledon</string>
+		<string>(torneo )?roland( |-)garros</string>
+	</array>
+</dict>
+</plist>

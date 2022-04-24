@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ChangedBinaryValueToSpokenOnly" locale="en">
+    <conditions>
+        <condition name="isLocationServices">
+            <expression name="setting.identifier" op="eq" value="'locationServices'"/>
+        </condition>
+        <condition name="isNightShift">
+            <expression name="setting.identifier" op="eq" value="'nightShift'"/>
+        </condition>
+        <condition name="isFlashlight">
+            <expression name="setting.identifier" op="eq" value="'flashlight'"/>
+        </condition>
+        <condition name="isUntilTimeOfDay">
+            <expression name="partOfDay" op="nonempty"/>
+        </condition>
+        <condition name="isUntilMorning">
+            <expression name="partOfDay" op="eq" value="'morning'"/>
+        </condition>
+        <condition name="isUntilAfternoon">
+            <expression name="partOfDay" op="eq" value="'afternoon'"/>
+        </condition>
+        <condition name="isUntilEvening">
+            <expression name="partOfDay" op="eq" value="'evening'"/>
+        </condition>
+        <condition name="isUntilTomorrowMorning">
+            <and>
+                <expression name="partOfDay" op="eq" value="'morning'"/>
+                <expression name="isTimeNextDay" op="eq" value="true"/>
+            </and>
+        </condition>
+        <condition name="isUntilTomorrowAfternoon">
+            <and>
+                <expression name="partOfDay" op="eq" value="'afternoon'"/>
+                <expression name="isTimeNextDay" op="eq" value="true"/>
+            </and>
+        </condition>
+        <condition name="isUntilTomorrowEvening">
+            <and>
+                <expression name="partOfDay" op="eq" value="'evening'"/>
+                <expression name="isTimeNextDay" op="eq" value="true"/>
+            </and>
+        </condition>
+        <condition name="appNamePresent">
+            <expression name="appName" op="defined"/>
+        </condition>
+        <condition name="isUntilMorningApp">
+            <and>
+                <expression name="partOfDay" op="eq" value="'morning'"/>
+                <expression name="appName" op="defined"/>
+            </and>
+        </condition>
+        <condition name="isUntilAfternoonApp">
+            <and>
+                <expression name="partOfDay" op="eq" value="'afternoon'"/>
+                <expression name="appName" op="defined"/>
+            </and>
+        </condition>
+        <condition name="isUntilEveningApp">
+            <and>
+                <expression name="partOfDay" op="eq" value="'evening'"/>
+                <expression name="appName" op="defined"/>
+            </and>
+        </condition>
+        <condition name="isUntilTomorrowMorningApp">
+            <and>
+                <expression name="partOfDay" op="eq" value="'morning'"/>
+                <expression name="isTimeNextDay" op="eq" value="true"/>
+                <expression name="appName" op="defined"/>
+            </and>
+        </condition>
+        <condition name="isUntilTomorrowAfternoonApp">
+            <and>
+                <expression name="partOfDay" op="eq" value="'afternoon'"/>
+                <expression name="isTimeNextDay" op="eq" value="true"/>
+                <expression name="appName" op="defined"/>
+            </and>
+        </condition>
+        <condition name="isUntilTomorrowEveningApp">
+            <and>
+                <expression name="partOfDay" op="eq" value="'evening'"/>
+                <expression name="isTimeNextDay" op="eq" value="true"/>
+                <expression name="appName" op="defined"/>
+            </and>
+        </condition>
+    </conditions>
+    
+    <first>
+        <first condition="verbose">
+            <dialog condition="isLocationServices">OK, Location Services is now on for this device. You can change location access for specific apps in Settings.</dialog>
+            <dialog condition="isNightShift">I've turned on Night Shift until sunrise tomorrow. You can schedule Night Shift to turn on every night in Settings.</dialog>
+            <first note="This dialog should never be hit, because settings without verbose dialog should never trigger the verbose flag."> 
+                <dialog condition="updatedValue">OK, I turned <var name="setting.name"/> on.</dialog>
+                <dialog>OK, I turned <var name="setting.name"/> off.</dialog>
+            </first>
+        </first>
+        <first condition="isFlashlight">
+            <dialog condition="updatedValue">
+                <content>OK, I turned <var name="setting.name"/> on.</content>
+                <caption>It's on now.</caption>
+            </dialog>
+            <dialog>
+                <content>OK, I turned <var name="setting.name"/> off.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+        </first>
+        <first condition="isUntilTimeOfDay">
+            <dialog condition="isUntilTomorrowMorningApp">
+                <content>OK, I turned off <var name="setting.name"/> for <var name="appName"/> until tomorrow morning.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilTomorrowAfternoonApp">
+                <content>OK, I turned off <var name="setting.name"/> for <var name="appName"/> until tomorrow afternoon.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilTomorrowEveningApp">
+                <content>OK, I turned off <var name="setting.name"/> for <var name="appName"/> until tomorrow evening.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilMorningApp">
+                <content>OK, I turned  off <var name="setting.name"/> for <var name="appName"/> until this morning.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilAfternoonApp">
+                <content>OK, I turned off <var name="setting.name"/> for <var name="appName"/> until this afternoon.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilEveningApp">
+                <content>OK, I turned off <var name="setting.name"/> for <var name="appName"/> until this evening.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilTomorrowMorning">
+                <content>OK, I turned <var name="setting.name"/> off until tomorrow morning.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilTomorrowAfternoon">
+                <content>OK, I turned <var name="setting.name"/> off until tomorrow afternoon.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilTomorrowEvening">
+                <content>OK, I turned <var name="setting.name"/> off until tomorrow evening.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilMorning">
+                <content>OK, I turned <var name="setting.name"/> off until this morning.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog condition="isUntilAfternoon">
+                <content>OK, I turned <var name="setting.name"/> off until this afternoon.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+            <dialog>
+                <content>OK, I turned <var name="setting.name"/> off until this evening.</content>
+                <caption>It's off now.</caption>
+            </dialog>
+        </first>
+        <first condition="updatedValue">
+            <dialog condition="appNamePresent">OK, I turned on <var name="setting.name"/> for <var name="appName"/>.</dialog>
+            <random>
+                <dialog spokenOnly="true">OK, I turned <var name="setting.name"/> on.</dialog>
+                <dialog spokenOnly="true">OK, <var name="setting.name"/> is now on.</dialog>
+            </random>
+        </first>
+        <dialog condition="appNamePresent">OK, I turned off <var name="setting.name"/> for <var name="appName"/>.</dialog>
+        <random>
+            <dialog spokenOnly="true">OK, I turned <var name="setting.name"/> off.</dialog>
+            <dialog spokenOnly="true">OK, <var name="setting.name"/> is now off.</dialog>
+        </random>
+    </first>
+</cat>
+

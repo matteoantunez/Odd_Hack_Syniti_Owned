@@ -1,0 +1,99 @@
+{
+  "storage" : "model.espresso.weights",
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "layers" : [
+    {
+      "size_of_axes" : 2,
+      "axes_0" : 1,
+      "bottom" : "appUsageVector",
+      "axes_1" : 2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "top" : "appUsageVectorEx",
+      "type" : "expand_dims",
+      "name" : "expandAppUsageVector"
+    },
+    {
+      "size_of_axes" : 2,
+      "axes_0" : 1,
+      "bottom" : "appVector",
+      "axes_1" : 2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "top" : "appVectorEx",
+      "type" : "expand_dims",
+      "name" : "expandAppVector"
+    },
+    {
+      "bottom" : "appUsageVectorEx,appVectorEx",
+      "alpha" : 1,
+      "operation" : 21,
+      "weights" : {
+
+      },
+      "hint_fallback_from_metal" : 1,
+      "fused_relu" : 0,
+      "top" : "usageAdCosineSim",
+      "type" : "elementwise",
+      "name" : "cosineSim",
+      "beta" : 0
+    },
+    {
+      "bottom" : "pTTRLogit,usageAdCosineSim",
+      "weights" : {
+
+      },
+      "nd_mode" : true,
+      "axis" : 0,
+      "top" : "concatOutEx",
+      "type" : "general_concat",
+      "name" : "concat"
+    },
+    {
+      "size_of_axes" : 0,
+      "bottom" : "concatOutEx",
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "top" : "concatOut",
+      "type" : "squeeze",
+      "name" : "squeeze",
+      "squeeze_all" : true
+    },
+    {
+      "nB" : 2,
+      "top" : "linearOut",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 1,
+      "blob_weights" : 3,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "concatOut",
+      "blob_biases" : 1,
+      "has_tanh" : 0,
+      "name" : "linear",
+      "has_prelu" : 0
+    },
+    {
+      "mode" : 3,
+      "weights" : {
+
+      },
+      "top" : "pTTR",
+      "type" : "activation",
+      "name" : "sigmoid",
+      "bottom" : "linearOut"
+    }
+  ]
+}

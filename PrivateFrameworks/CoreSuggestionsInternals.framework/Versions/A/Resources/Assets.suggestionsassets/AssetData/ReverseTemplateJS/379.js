@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("tickets-generic",function(e){return loadHelper("ShouldDownloadMessageWithClassifier.js")(e,"ticket")},function(e){var t=loadHelper("override_to_category.js")(e);return t&&"function"==typeof t?t(e):loadHelper("tickets_generic.js")(e)},"SGaceedbbf")]);

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>no disponible el</string>
+	<string>(desde|hasta|excepto|entre (ahora|hoy) y) ((el|este) )?(lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana)</string>
+	<string>el siguiente (lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana)</string>
+	<string>de (lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana) al? (lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana)</string>
+	<string>(lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana) pasado</string>
+	<string>(cualquier|cada|buen|feliz|excepto|cada|en teoría (era|debía (de )?ser|debería (de )?ser)( (el|este))?) (lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana)</string>
+	<string>(nos vemos|te veo|no (puede|podrá ser)) ((el|este) )?(lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana)</string>
+	<string>(dime algo|espero (confirmación|respuesta)) antes ((del|de este) )?(lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo|finde|fin de semana)</string>
+	<string>estará (colgado|disponible online)</string>
+	<string>cualquier día (menos|excepto)</string>
+	<string>se envió a (.{0,50}) (a las|el|en)</string>
+	<string>(pedir|reservar) antes de </string>
+	<string>no (.{0,10})?será posible</string>
+	<string>fecha (tope|límite)</string>
+	<string>(cog|tom).{0,10} (el|un) dia libre</string>
+	<string>no después de</string>
+	<string>agenda</string>
+	<string>(editar|modificar|cambiar)</string>
+	<string>(entregado|envío|enviado)</string>
+	<string>(se (enviará|devolverá)|será (enviado|devuelto))</string>
+	<string>(cerrado|cierran?|abierto|abren?) a las? ((.{0,50})(pm|am)|(de la )?(noche|mañana|tarde))</string>
+	<string>resumen del</string>
+	<string>horario de (trabajo|atención)</string>
+	<string>notas del</string>
+	<string>(enviado)(\Wel)?(\W)?:</string>
+	<string>impos(s)?ible</string>
+	<string>resumen</string>
+	<string>el (mes|año) pasado</string>
+	<string>cada (día|semana|finde|fin de semana|mes)</string>
+	<string>caduca (en|el)</string>
+	<string>menú de(l| los)?</string>
+	<string>la semana pasada</string>
+	<string>fecha de pago</string>
+	<string>(buenas (tardes|noches)|buenos días)</string>
+	<string>hace un (mes|año)</string>
+	<string>hace una semana</string>
+	<string>(entrega|llegada) prevista</string>
+	<string>envío</string>
+	<string>(antes|después) (de (desayunar|comer|almorzar|merendar|cenar|la (cena|comida|merienda))|del (desayuno|almuerzo))</string>
+</array>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="GetSettingIntent#DescribeBinarySettingState" locale="en">
+    <conditions>
+        <condition name="isConfirmation">
+            <and>
+                <expression name="settingValueToBeConfirmed" op="defined"/>
+                <expression name="settingValueToBeConfirmed" op="eq" value="setting.value"/>
+            </and>
+        </condition>
+        <condition name="isCorrection">
+            <and>
+                <expression name="settingValueToBeConfirmed" op="defined"/>
+                <expression name="settingValueToBeConfirmed" op="ne" value="setting.value"/>
+            </and>
+        </condition>
+        <condition name="isBass">
+            <or>
+                <expression name="setting.identifier" op="eq" value="'bass'"/>
+                <expression name="setting.identifier" op="eq" value="'bassReduce'"/>
+            </or>
+        </condition>
+    </conditions>
+    
+    <first>
+        <first condition="isBass">
+            <first condition="isConfirmation">
+                <dialog condition="setting.value">Yes, the bass is turned on.</dialog>
+                <dialog>Yes, the bass is turned off.</dialog>
+            </first>
+            <first condition="isCorrection">
+                <dialog condition="setting.value">No, the bass is turned on.</dialog>
+                <dialog>No, the bass is turned off.</dialog>
+            </first>
+            <first>
+                <dialog condition="setting.value">The bass is turned on.</dialog>
+                <dialog>The bass is turned off.</dialog>
+            </first>
+        </first>
+        <first condition="isConfirmation">
+            <dialog condition="setting.value">
+                <content>Yes, <var name="setting.name"/> is on.</content>
+                <caption>Yes.</caption>
+            </dialog>
+            <dialog>
+                <content>Yes, <var name="setting.name"/> is off.</content>
+                <caption>Yes.</caption>
+            </dialog>
+        </first>
+        <first condition="isCorrection">
+            <dialog condition="setting.value">
+                <content>No, <var name="setting.name"/> is on.</content>
+                <caption>No.</caption>
+            </dialog>
+            <dialog>
+                <content>No, <var name="setting.name"/> is off.</content>
+                <caption>No.</caption>
+            </dialog>
+        </first>
+        <first condition="verbose">
+            <all condition="setting.value">
+                <dialog><var name="setting.name"/> is on.</dialog>
+                <dialog>Let me know if you want to turn it off.</dialog>
+            </all>
+            <all>
+                <dialog><var name="setting.name"/> is off.</dialog>
+                <dialog>Let me know if you want to turn it on.</dialog>
+            </all>
+        </first>
+        <first>
+            <dialog condition="setting.value"><var name="setting.name"/> is on.</dialog>
+            <dialog><var name="setting.name"/> is off.</dialog>
+        </first>
+    </first>
+</cat>

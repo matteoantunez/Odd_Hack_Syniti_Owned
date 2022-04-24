@@ -1,0 +1,10 @@
+(if (entitlement "com.apple.security.personal-information.calendars")
+	(begin
+	  (allow mach-lookup (global-name "com.apple.CalendarAgent"))
+	  (allow mach-lookup (global-name "com.apple.CalendarAgent.debug"))
+	  (allow mach-lookup (global-name "com.apple.CalendarAgent.proxy"))
+      (allow mach-lookup (global-name "com.apple.CalendarAgent.database"))
+      (allow file-read* (home-literal "/Library/Application Support/SyncServices/Local/SyncingClients.plist"))
+      (allow mach-lookup (global-name "com.apple.CalendarAgent.store"))))
+(allow mach-lookup (global-name "com.apple.ContactsAgent.addressbook"))
+(allow mach-lookup (global-name "com.apple.ContactsAgent.general"))

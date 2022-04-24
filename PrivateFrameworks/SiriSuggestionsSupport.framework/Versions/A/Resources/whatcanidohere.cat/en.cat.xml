@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="Suggestions#whatcanidohere" locale="en">    
+    <all>
+        <random>
+            <dialog>Here's what you can do</dialog>
+            <dialog>How about you try asking me</dialog>
+            <dialog>Try asking me</dialog>
+            <dialog>Here's some things you can ask me</dialog>
+        </random>
+        <dialog>
+            <var name="suggestionsList" list="or"/>
+        </dialog>
+    </all>
+</cat>

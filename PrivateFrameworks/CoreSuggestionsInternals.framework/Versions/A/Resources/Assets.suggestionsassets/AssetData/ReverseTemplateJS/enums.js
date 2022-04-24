@@ -1,0 +1,1 @@
+(function(){return{UseCaseClassifierModeEnum:{HighRecall:"high_recall",Regular:"regular",HighPrecision:"high_precision"}}}).call();

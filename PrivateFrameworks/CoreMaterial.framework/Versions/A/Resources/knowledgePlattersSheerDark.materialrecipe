@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>materialSettingsVersion</key>
+	<integer>2</integer>
+	<key>styles</key>
+	<dict>
+		<key>stroke</key>
+		<string>platterStrokeDark</string>
+		<key>fill</key>
+		<string>platterFillDark</string>
+	</dict>
+	<key>baseMaterial</key>
+	<dict>
+		<key>materialFiltering</key>
+		<dict>
+			<key>luminanceAmount</key>
+			<real>0.4</real>
+			<key>luminanceValues</key>
+			<array>
+				<real>0.41</real>
+				<real>-0.4</real>
+				<real>0.3</real>
+				<integer>0</integer>
+			</array>
+			<key>saturation</key>
+			<real>1.4</real>
+			<key>brightness</key>
+			<real>-0.03</real>
+			<key>blurRadius</key>
+			<integer>30</integer>
+			<key>backdropScale</key>
+			<real>0.25</real>
+			<key>blurAtEnd</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

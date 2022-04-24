@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL</key>
+	<array>
+		<string>art basel miami</string>
+		<string>austin city limits festival</string>
+		<string>brooklyn hip-hop festival</string>
+		<string>bumbershoot</string>
+		<string>blizzcon</string>
+		<string>burning man</string>
+		<string>chicago blues festival</string>
+		<string>coachella</string>
+		<string>d[ií]a de los muertos</string>
+		<string>electric daisy carnival</string>
+		<string>electric forest festival</string>
+		<string>festival (international )?de jazz de montr[eé]al</string>
+		<string>food (and|&amp;) wine classic in aspen</string>
+		<string>hangout music festival</string>
+		<string>hardly strictly bluegrass festival</string>
+		<string>high sierra music festival</string>
+		<string>international folk art market</string>
+		<string>la calaca</string>
+		<string>lollapalooza</string>
+		<string>monterey jazz festival</string>
+		<string>movement electronic music</string>
+		<string>national cowboy poetry gathering</string>
+		<string>national pyrotechnic festival</string>
+		<string>new orleans jazz (and|&amp;) heritage festival</string>
+		<string>new york city wine (and|&amp;) food festival</string>
+		<string>newport folk festival</string>
+		<string>pitchfork music festival</string>
+		<string>sxsw</string>
+		<string>south by (southwest|south west)</string>
+		<string>san francisco pride</string>
+		<string>sasquatch!</string>
+		<string>sasquatch festival</string>
+		<string>(shambhala|shambhala) music festival</string>
+		<string>stagecoach</string>
+		<string>summerfest</string>
+		<string>sundance film festival</string>
+		<string>taste of chicago food festival</string>
+		<string>telluride film festival</string>
+		<string>the village halloween parade</string>
+		<string>ultra music festival</string>
+		<string>vive latino</string>
+		<string>wanderlust</string>
+		<string>outside lands</string>
+		<string>wakarusa</string>
+		<string>frozen dead guy days</string>
+		<string>the governors ball music festival</string>
+		<string>bonnaroo</string>
+		<string>albuquerque international balloon fiesta</string>
+		<string>calgary stampede</string>
+		<string>calle ocho</string>
+		<string>cheyenne frontier days</string>
+		<string>cinco de mayo</string>
+		<string>comic(-?)con</string>
+		<string>decibel festival</string>
+		<string>fantasy fest</string>
+		<string>lightning in a bottle</string>
+		<string>moogfest</string>
+		<string>sturgis motorcycle rally</string>
+		<string>firefly music festival</string>
+		<string>texas renaissance festival</string>
+		<string>(beerfeast|beer festival)</string>
+		<string>(music|food|drink|food and drink|arts|fire|film) festival</string>
+	</array>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL::TESTFEST</key>
+	<array>
+		<string>test fest(ival)?</string>
+	</array>
+	<key>ENTERTAINMENT::CULTURE::MUSEUM</key>
+	<array>
+		<string>night at the museum</string>
+	</array>
+	<key>ENTERTAINMENT::CULTURE::SHOW</key>
+	<array>
+		<string>puppet show</string>
+		<string>fan fest</string>
+		<string>stand-?up comedy</string>
+		<string>comedy show</string>
+	</array>
+	<key>ENTERTAINMENT::FAIR</key>
+	<array>
+		<string>(kentucky|great new york|iowa|minnesota|alaska|washington|ohio|oregon|north carolina|indiana|missouri|california|illinois|wisconsin|colorado|georgia|arizona|oklahoma) state fair</string>
+		<string>state fair of texas</string>
+		<string>french fair</string>
+		<string>the big e</string>
+		<string>(tech|state) fair</string>
+	</array>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT</key>
+	<array>
+		<string>quiz night</string>
+	</array>
+	<key>ENTERTAINMENT::MOVIES</key>
+	<array>
+		<string>film screening</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::AMUSEMENT</key>
+	<array>
+		<string>cedar point</string>
+		<string>knoebels</string>
+		<string>(walt disney world['’]s magic kingdom|walt disney( world)?|magic kingdom)</string>
+		<string>disneyland</string>
+		<string>disney world</string>
+		<string>universal['’]s islands of adventure</string>
+		<string>universal studios?</string>
+		<string>hollywood studios</string>
+		<string>(six|6) flags( magic mountain| great adventure)?</string>
+		<string>kings island</string>
+		<string>dells water parks</string>
+		<string>hersheypark</string>
+		<string>knott['’]s berry farm</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::WATERPARK</key>
+	<array>
+		<string>typhoon lagoon water park</string>
+		<string>blizzard beach water park</string>
+		<string>aquatica</string>
+		<string>water country</string>
+		<string>slidewaters</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT</key>
+	<array>
+		<string>indianapolis 500</string>
+		<string>kentucky derby</string>
+		<string>(the )?olympics? games</string>
+		<string>summer olympics</string>
+		<string>winter olympics</string>
+		<string>nascar daytona 500</string>
+		<string>paralympic games</string>
+		<string>playoffs</string>
+		<string>handball</string>
+		<string>ice skating</string>
+		<string>badminton</string>
+		<string>judo</string>
+		<string>karate</string>
+		<string>horse riding</string>
+		<string>play squash</string>
+		<string>swimming pool</string>
+		<string>water aerobics</string>
+		<string>karting</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::AMERICAN_FOOTBALL</key>
+	<array>
+		<string>rose bowl</string>
+		<string>super bowl</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASEBALL</key>
+	<array>
+		<string>little league world series</string>
+		<string>world series</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASKETBALL</key>
+	<array>
+		<string>nba finals</string>
+		<string>final four</string>
+		<string>(nba )?all[-| ]star game</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BIKE</key>
+	<array>
+		<string>world track championships</string>
+		<string>tour de france</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::CRICKET</key>
+	<array>
+		<string>icc world twenty20</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GOLF</key>
+	<array>
+		<string>the masters( tournament)?</string>
+		<string>us open</string>
+		<string>british open</string>
+		<string>mini(ature)? golf</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GYMWORKOUT</key>
+	<array>
+		<string>pilates</string>
+		<string>bodypump</string>
+		<string>zumba</string>
+		<string>crossfit</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::HOCKEY</key>
+	<array>
+		<string>stanley cup</string>
+		<string>iihf world championship</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUNNING::MARATHON</key>
+	<array>
+		<string>(half[- ])(boston|new[- ]?york) marathon</string>
+		<string>penn relays</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::SOCCER</key>
+	<array>
+		<string>world cup soccer</string>
+		<string>fa cup final</string>
+		<string>champions league</string>
+		<string>euro 20[0-9][0-9]</string>
+		<string>bubble soccer</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::TENNIS</key>
+	<array>
+		<string>u.s. open tennis championships</string>
+		<string>french open</string>
+		<string>roland garros</string>
+		<string>wimbledon</string>
+		<string>us open</string>
+	</array>
+</dict>
+</plist>

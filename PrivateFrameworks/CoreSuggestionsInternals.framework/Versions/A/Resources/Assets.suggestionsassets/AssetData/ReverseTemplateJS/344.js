@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("restaurant-generic",function(e){return loadHelper("ShouldDownloadMessageWithClassifier.js")(e,"restaurant")},function(e){var r=loadHelper("override_to_category.js")(e);return r&&"function"==typeof r?r(e):loadHelper("restaurant_generic.js")(e)},"SG55a72240")]);

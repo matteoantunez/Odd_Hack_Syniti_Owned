@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>du (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche) au (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)</string>
+	<string>la limite est fixée au</string>
+	<string>déjà un (.{0,50}) de prévu</string>
+	<string>(bon|a|à) (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|week-end|weekend|demain)</string>
+	<string>bonne soirée</string>
+	<string>bon(ne)? après-midi</string>
+	<string>bon (d[eé]jeuner|d[iî]ner)</string>
+	<string>24 h/24</string>
+	<string>seulement de</string>
+	<string>occupé</string>
+	<string>(posé|poser) mon (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)</string>
+	<string>date limite</string>
+	<string>note(s)? du</string>
+	<string>(ai|aurait|aurais|aura|auront) pas le temps</string>
+	<string>sous l&apos;eau</string>
+	<string>pas possible</string>
+	<string>(tous les|chaque) (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|week-end|weekend)(s)?</string>
+	<string>jusque vers</string>
+	<string>en congés</string>
+	<string>(date d&apos;envoi)(\W)?:</string>
+	<string>absent</string>
+	<string>(répondre|réponse) avant</string>
+	<string>(prendra|pris|prendront) effet (le|en)</string>
+	<string>newsletter</string>
+	<string>(depuis|avant|sauf) le (.{0,50}) (janvier|février|mars|avril|mai|juin|juillet|ao[uû]t|septembre|octobre|novembre|décembre)</string>
+	<string>fermeture (exceptionnelle|à)</string>
+	<string>deadline</string>
+	<string>la limite c&apos;est le</string>
+	<string>(envoyé|expédié)(\Wle)?(\W)?:</string>
+	<string>(d&apos;ici à|avant|avant le|en dehors de|à part|sauf|au plus tard le) (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|(ce|le) (week-end|weekend))</string>
+	<string>(résumé|notes) (du|de)</string>
+	<string>la semaine (dernière|passée)</string>
+	<string>le mois dernier</string>
+	<string>l&apos;année dernière</string>
+	<string>(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|weekend|week-end) dernier</string>
+	<string>tous les jours</string>
+	<string>(au|le) menu (du jour|pour le|du)</string>
+	<string>(terminé|fini|rendu|débloqué|achevé|résolu)(.{0,10}) (le|pour le)</string>
+	<string>quelles dates</string>
+	<string>(quelles|quelle) date(s)? .{0,30} ((pourrai(en)?t convenir)|dispo(nible)?s?)</string>
+	<string>malheureusement</string>
+	<string>pas (demain|demain la veille) (qu|que)</string>
+	<string>pas dispo(nible)?(s)?</string>
+	<string>notes (du|de)</string>
+	<string>permanence(s) téléphonique(s)</string>
+	<string>ouvert(s)? du (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche) (.{0,30}) au</string>
+	<string>horraires d&apos;ouverture</string>
+	<string>je (suis|serais?) en déplacement</string>
+	<string>[aà] partir du ([0-9]|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|weekend|week-end)</string>
+	<string>[aà] partir de (ce )?(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|weekend|week-end)</string>
+	<string>pourrais pas être (disponible(s)?|présent(s)?|là|des v[ôo]tres)</string>
+	<string>bon matin</string>
+	<string>livraison</string>
+	<string>expédition</string>
+	<string>sera fermé(e)?</string>
+	<string>seront fermé(e)?s</string>
+	<string>(après|avant) (le )?(déjeuner|dîner)</string>
+	<string>(lun|mar(d)?|mer|jeu|ven(d)?|sam|dim)(\.)? (-|–|—|au) (lun|mar(d)?|mer|jeu|ven(d)?|sam|dim)(\.)?</string>
+	<string>(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche) (-|–|—|au) (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)</string>
+	<string>il est (environ )?[0-9][0-9]?[:h][0-9][0-9]</string>
+	<string>nous sommes le (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)</string>
+</array>
+</plist>

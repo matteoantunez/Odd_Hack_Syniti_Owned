@@ -1,0 +1,121 @@
+[
+  {
+    "shortDescription" : "A model trained to classify products",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : "Text label"
+      }
+    ],
+    "version" : "1.0",
+    "modelParameters" : [
+
+    ],
+    "author" : "Zachary King",
+    "specificationVersion" : 4,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_textClassifier"
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "text",
+        "shortDescription" : "Input text"
+      }
+    ],
+    "classLabels" : [
+      "Apparel & Accessories > Clothing",
+      "Home & Garden > Lighting",
+      "Home & Garden > Lawn & Garden",
+      "Food, Beverages & Tobacco > Food Items",
+      "Health & Beauty > Personal Care",
+      "Vehicles & Parts > Vehicle Parts & Accessories",
+      "Arts & Entertainment > Hobbies & Creative Arts",
+      "Home & Garden > Household Supplies",
+      "Health & Beauty > Health Care",
+      "Office Supplies > General Office Supplies",
+      "Apparel & Accessories > Costumes & Accessories",
+      "Electronics > Electronics Accessories",
+      "Hardware > Tools",
+      "Hardware > Hardware Accessories",
+      "Apparel & Accessories > Jewelry",
+      "Electronics > Communications",
+      "Furniture > Furniture Sets",
+      "Home & Garden > Household Appliance Accessories",
+      "Home & Garden > Linens & Bedding",
+      "Hardware > Plumbing",
+      "Apparel & Accessories > Clothing Accessories",
+      "Sporting Goods > Athletics",
+      "Home & Garden > Kitchen & Dining",
+      "Baby & Toddler > Diapering",
+      "Hardware > Tool Accessories",
+      "Baby & Toddler > Nursing & Feeding",
+      "Apparel & Accessories > Shoes",
+      "Toys & Games > Toys",
+      "Home & Garden > Bathroom Accessories",
+      "Apparel & Accessories > Handbag & Wallet Accessories",
+      "Animals & Pet Supplies > Pet Supplies",
+      "Sporting Goods > Outdoor Recreation",
+      "Baby & Toddler > Baby Health",
+      "Furniture > Shelving",
+      "Furniture > Cabinets & Storage",
+      "Furniture > Office Furniture",
+      "Cameras & Optics > Camera & Optic Accessories",
+      "Sporting Goods > Exercise & Fitness",
+      "Food, Beverages & Tobacco > Beverages",
+      "Electronics > Audio",
+      "Business & Industrial > Medical",
+      "Home & Garden > Household Appliances",
+      "Furniture > Baby & Toddler Furniture",
+      "Hardware > Building Consumables",
+      "Office Supplies > Shipping Supplies",
+      "Office Supplies > Presentation Supplies",
+      "Office Supplies > Filing & Organization",
+      "Electronics > Computers",
+      "Baby & Toddler > Baby Toys & Activity Equipment",
+      "Furniture > Tables",
+      "Furniture > Outdoor Furniture",
+      "Electronics > Video",
+      "Apparel & Accessories > Handbags, Wallets & Cases",
+      "Furniture > Chairs",
+      "Hardware > Power & Electrical Supplies",
+      "Office Supplies > Office Instruments",
+      "Toys & Games > Games",
+      "Home & Garden > Plants",
+      "Software > Computer Software",
+      "Furniture > Beds & Accessories",
+      "Home & Garden > Business & Home Security",
+      "Hardware > Building Materials",
+      "Baby & Toddler > Baby Transport",
+      "Hardware > Locks & Keys",
+      "Home & Garden > Pool & Spa",
+      "Business & Industrial > Work Safety Protective Gear",
+      "Electronics > Print, Copy, Scan & Fax",
+      "Furniture > Sofas",
+      "Baby & Toddler > Baby Safety",
+      "Toys & Games > Puzzles",
+      "Office Supplies > Office Equipment",
+      "Cameras & Optics > Cameras",
+      "Furniture > Entertainment Centers & TV Stands"
+    ],
+    "generatedClassName" : "ProductMLModel",
+    "userDefinedMetadata" : {
+      "com.apple.createml.version" : "11.0.0"
+    },
+    "method" : "predict"
+  }
+]

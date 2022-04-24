@@ -1,0 +1,17 @@
+;;
+;; Internet Accounts framework - sandbox profile
+;; Copyright (c) 2012 Apple Inc. All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice. The contents of this file are also auto-generated and not
+;; user editable; it may be overwritten at any time.
+;;
+(allow file-read* (literal "/Library/Preferences/com.apple.internetaccounts.plist"))
+(allow file-read* (literal "/System/Library/PreferencePanes/InternetAccounts.prefPane"))
+(allow file-read* (literal "/System/Library/Caches/com.apple.internetaccounts.domainscache.plist"))
+(allow user-preference* (preference-domain "com.apple.internetaccounts"))
+(allow user-preference* (preference-domain "MobileMeAccounts"))
+(allow file-read* file-write* (subpath (string-append (param "_HOME") "/Library/Logs/InternetAccounts")))
+(if (entitlement "com.apple.private.iaaccounts")
+    (allow mach-lookup (global-name "com.apple.CalendarAgent.store")))

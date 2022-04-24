@@ -1,0 +1,66 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../../shared/cam.scnz"
+  },
+  "emoji" : "😴",
+  "identifier" : "sleeping_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "boar" : {
+      "L_ear_DYN" : {
+        "offset" : [
+          -0.75987529754638672,
+          -0.034095287322998047,
+          0.1322779655456543
+        ]
+      },
+      "R_ear_DYN" : {
+        "offset" : [
+          0.75917625427246094,
+          0.034689426422119141,
+          -0.13587117195129395
+        ]
+      },
+      "tongue_DYN" : {
+        "offset" : [
+          0.00067996978759765625,
+          0.49655580520629883,
+          -0.00034427642822265625
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "eyeBlink_L" : 1,
+    "eyeBlink_R" : 1,
+    "jawOpen" : 0.20185458660125732,
+    "mouthSmile_L" : 0.19559231400489807,
+    "mouthSmile_R" : 0.22038573026657104,
+    "mouthStretch_L" : 0.02627808041870594,
+    "neckOrientation" : [
+      0.031751170754432678,
+      -0.16621141135692596,
+      -0.030051911249756813,
+      0.98512059450149536
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "image" : "../../../shared/sleeping_face/zs.heic",
+      "position" : {
+        "x" : -0.10000000000000001,
+        "y" : -0.14999999999999999,
+        "z" : 30
+      }
+    }
+  ]
+}

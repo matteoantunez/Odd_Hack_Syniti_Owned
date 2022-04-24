@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ConfirmBeforeTurningOffAnnounceNotifications" locale="en">
+    <conditions>
+        <condition name="isHeadphones">
+            <expression name="confirmationMode" op="eq" value="'headphonesConnected'"/>
+        </condition>
+        <condition name="isCarplay">
+            <expression name="confirmationMode" op="eq" value="'carplayConnected'"/>
+        </condition>
+        <condition name="isHeadphonesAndCarplay">
+            <expression name="confirmationMode" op="eq" value="'headphonesAndCarplayConnected'"/>
+        </condition>
+        <condition name="appNamePresent">
+            <expression name="appName" op="defined"/>
+        </condition>
+    </conditions>
+    <first>
+        <first condition="appNamePresent">
+            <dialog>You won’t get announcements from the <var name="appName"/> app when using CarPlay or headphones. Should I go ahead?</dialog>
+        </first>
+	<first condition="isHeadphones">
+            <dialog>Notifications won’t be announced when connected to headphones. Is that OK?</dialog>
+        </first>
+        
+        <first condition="isCarplay">
+            <dialog>Notifications won’t be announced when connected to CarPlay. Is that OK?</dialog>
+        </first>
+        
+        <first condition="isHeadphonesAndCarplay">
+            <dialog>Notifications won’t be announced when connected to headphones or CarPlay. Is that OK?</dialog>
+        </first>
+
+        <first>
+            <dialog>Notifications won’t be announced when connected to headphones or CarPlay. Is that OK?</dialog>
+        </first>
+    </first>
+</cat>

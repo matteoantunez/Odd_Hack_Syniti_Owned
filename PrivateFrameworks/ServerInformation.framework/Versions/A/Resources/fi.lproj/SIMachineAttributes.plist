@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook, jossa on Intel Core Duo -prosessori (saatavana mustana tai valkoisena).</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, jossa on Intel Core 2 Duo -prosessori (saatavana mustana tai valkoisena).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, jossa on Intel Core 2 Duo -prosessori (saatavana mustana tai valkoisena).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, jossa on Intel Core 2 Duo -prosessori (saatavana mustana tai valkoisena).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (yksiosainen alumiinikoteloinen)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2008 loppupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (valkoinen, alkuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Valkoinen MacBook, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2009 alkupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (valkoinen, loppuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Valkoinen MacBook, jossa on Intel Core 2 Duo -prosessori ja LED-näyttö (esiteltiin vuoden 2009 loppupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (valkoinen, vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Valkoinen unibody-koteloinen MacBook, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12 tuuman MacBook (alkuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core M</string>
+			<key>description</key>
+			<string>12 tuuman MacBook, jossa Retina-näyttö (esiteltiin alkuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12 tuuman MacBook (alkuvuosi 2016)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core m3, Intel Core m5 tai Intel Core m7</string>
+			<key>description</key>
+			<string>12 tuuman MacBook, jossa Retina-näyttö (esiteltiin alkuvuodesta 2016).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12 tuuman MacBook (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core m3, Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>12 tuuman MacBook, jossa Retina-näyttö (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(alkuperäinen)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, jossa on Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, jossa on Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 tuuman MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 11 tuuman näyttö (esiteltiin loppuvuodesta 2010).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 13 tuuman näyttö (esiteltiin loppuvuodesta 2010).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 tuuman MacBook Air (vuoden 2011 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 11 tuuman näyttö (esiteltiin vuoden 2011 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Air (vuoden 2011 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 13 tuuman näyttö (esiteltiin vuoden 2011 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 tuuman MacBook Air (vuoden 2012 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 11 tuuman näyttö (esiteltiin vuoden 2012 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Air (vuoden 2012 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 13 tuuman näyttö (esiteltiin vuoden 2012 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 tuuman MacBook Air (vuoden 2013 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 11 tuuman näyttö (esiteltiin vuoden 2013 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Air (vuoden 2013 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 13 tuuman näyttö (esiteltiin vuoden 2013 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 tuuman MacBook Air (alkuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 11 tuuman näyttö (esiteltiin alkuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Air (alkuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa 13 tuuman näyttö (esiteltiin alkuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (loppuvuosi 2018)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, jossa Retina-näyttö ja Touch ID (esiteltiin loppuvuodesta 2018).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (vuoden 2019 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Air, jossa Retina-näyttö ja Touch ID (esiteltiin vuoden 2019 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, jossa on Intel Core Duo -prosessori ja 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, jossa on Intel Core Duo -prosessori ja 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, jossa on Intel Core 2 Duo -prosessori ja 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, jossa on Intel Core 2 Duo -prosessori ja 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, jossa on Intel Core 2 Duo -prosessori ja 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, jossa on Intel Core 2 Duo -prosessori, 15 tai 17 tuuman näyttö ja Multi-Touch-ohjauslevy.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (yksiosainen alumiinikoteloinen) (loppuvuosi 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2008 loppupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (yksiosainen alumiinikoteloinen) (alkuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2009 alkupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (yksiosainen alumiinikoteloinen) (vuoden 2009 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2009 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (yksiosainen alumiinikoteloinen) (vuoden 2009 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2009 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (yksiosainen alumiinikoteloinen) (vuoden 2009 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2009 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core i5- tai i7-prosessori ja 15 tai 17 tuuman näyttö (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen (yksiosainen) MacBook Pro, jossa on Intel Core i5- tai i7-prosessori ja 15 tai 17 tuuman näyttö (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13 tuuman alumiinikoteloinen (yksiosainen ) MacBook Pro, jossa on Intel Core 2 Duo -prosessori (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, 13 tuuman Intel Core i7 (alkuvuosi 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa kaksiytiminen Intel Core i5- tai Intel Core i7 -prosessori ja alumiininen unibody (esiteltiin alkuvuodesta 2011).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman MacBook Pro Intel Core i7 (alkuvuosi 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman MacBook Pro, jossa neliytiminen Intel Core i7 -prosessori ja alumiininen unibody (esiteltiin alkuvuodesta 2011).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>17 tuuman MacBook Pro Intel Core i7 (alkuvuosi 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17 tuuman MacBook Pro, jossa neliytiminen Intel Core i7 -prosessori ja alumiininen unibody (esiteltiin alkuvuodesta 2011).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 tuumaa (vuoden 2012 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman MacBook Pro, jossa kaksiytiminen Intel Core i7 -prosessori ja alumiininen unibody (esiteltiin vuoden 2012 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 tuumaa (vuoden 2012 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa kaksiytiminen Intel Core i5- tai Intel Core i7 -prosessori ja alumiininen unibody (esiteltiin vuoden 2012 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina-näytöllinen MacBook Pro, Intel Core i7, 15 tuumaa (vuoden 2012 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman Retina-näytöllinen MacBook Pro, jossa kaksiytiminen Intel Core i7 -prosessori ja alumiininen unibody (esiteltiin vuoden 2012 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina-näytöllinen MacBook Pro, Intel Core i5, Intel Core i7, 13 tuumaa (loppuvuosi 2012)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman Retina-näytöllinen MacBook Pro, jossa kaksiytiminen Intel Core i5- tai i7-prosessori ja alumiininen unibody (esiteltiin loppuvuodesta 2012).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman Retina-näytöllinen MacBook Pro (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman yksiosainen alumiinikoteloinen Retina-näytöllinen MacBook Pro (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman Retina-näytöllinen MacBook Pro (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman yksiosainen alumiinikoteloinen Retina-näytöllinen MacBook Pro (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman Retina-näytöllinen MacBook Pro, jossa erillinen NVIDIA-näytönohjain (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman yksiosainen alumiinikoteloinen Retina-näytöllinen MacBook Pro, jossa erillinen NVIDIA-näytönohjain (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman Retina-näytöllinen MacBook Pro (vuoden 2015 puoliväli)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman yksiosainen alumiinikoteloinen Retina-näytöllinen MacBook Pro (esiteltiin vuoden 2015 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman Retina-näytöllinen MacBook Pro (vuoden 2015 puoliväli)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman yksiosainen alumiinikoteloinen Retina-näytöllinen MacBook Pro, jossa erillinen AMD-näytönohjain (esiteltiin vuoden 2015 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman Retina-näytöllinen MacBook Pro (alkuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman yksiosainen alumiinikoteloinen Retina-näytöllinen MacBook Pro (esiteltiin alkuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 (loppuvuosi 2016)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 (esiteltiin loppuvuodesta 2016).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (loppuvuosi 2016)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (esiteltiin loppuvuodesta 2016).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (loppuvuosi 2016)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (esiteltiin loppuvuodesta 2016).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>15 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (vuoden 2018 puoliväli)</string>
+			<key>processor</key>
+			<string>Kuusiytimiset Intel Core i7 ja Intel Core i9</string>
+			<key>description</key>
+			<string>15 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (esiteltiin vuoden 2018 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (vuoden 2018 puoliväli)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>13 tuuman MacBook Pro, jossa Thunderbolt 3 ja Touch ID (esiteltiin vuoden 2018 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (vuoden 2006 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Työpöytätorni (alumiinikoteloinen).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (vuoden 2006 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Työpöytätorni (alumiinikoteloinen).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (alkuvuosi 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Työpöytätorni (alumiinikoteloinen).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (alkuvuosi 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Työpöytätorni (alumiinikoteloinen).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (alkuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen työpöytätorni (esiteltiin vuoden 2009 alkupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Alumiinikoteloinen työpöytätorni (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Pro-työpöytärunko (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (alkuvuosi 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Kätevä Mac-työpöytätietokone, jossa on Intel Core 2 Duo-, Intel Core Duo- tai Intel Core Solo -prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (vuoden 2007 puoliväli)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Kätevä Mac-työpöytätietokone, jossa on Intel Core 2 Duo-, Intel Core Duo- tai Intel Core Solo -prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (alkuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini, jossa on NVIDIA GeForce 9400M (esiteltiin vuoden 2009 alkupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini, jossa on NVIDIA GeForce 320M (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (vuoden 2011 puoliväli), jossa on Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini, jossa on Intel Dual-Core i5 ja Intel HD Graphics 3000 (esiteltiin vuoden 2011 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (vuoden 2011 puoliväli), jossa on AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini, jossa on Intel Dual-Core i5 tai i7 ja AMD Radeon HD 6630M (esiteltiin vuoden 2011 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini -palvelin (vuoden 2011 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini -palvelin, jossa on kaksiytiminen i7 ja Intel HD Graphics 3000 (esiteltiin vuoden 2011 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (loppuvuosi 2012)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini, jossa on kaksiytiminen i5 ja Intel HD Graphics 4000 (esiteltiin loppuvuodesta 2012).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (loppuvuosi 2012)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini, jossa on neliytiminen i7 ja Intel HD Graphics 4000 (esiteltiin loppuvuodesta 2012).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (loppuvuosi 2014)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5 tai Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini, jossa on Intelin kaksiytiminen prosessori ja integroitu näytönohjain (esiteltiin loppuvuodesta 2014).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (loppuvuosi 2018)</string>
+			<key>processor</key>
+			<string>8. sukupolven Intel-prosessori (neliytiminen Core i3, kuusiytiminen Core i5, kuusiytiminen Core i7)</string>
+			<key>description</key>
+			<string>Mac mini, jossa on 8. sukupolven Intel-prosessori ja Intel UHD graphics 630 -näytönohjain (esiteltiin loppuvuodesta 2018).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Kannettava tietokone mustassa muovista ja kumista tehdystä kotelossa, jossa on muotoillut sivut.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen kirkasvärisen ”simpukankuorisen” kannettavan, jossa on sisäinen kahva ja myöhemmissä malleissa hopeanvalkea suorakulmainen muovikotelo ja 12 tai 14 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Valkoinen iBooks, jossa on G4-prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Valkoinen iBooks, jossa on G4-prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Valkoinen iBooks, jossa on G4-prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sisältää alkuperäisen ohuen titaanikotelon ja 15 tuuman litteän näytön ja myöhemmissä malleissa alumiinikotelo ja 12, 15 tai 17 tuuman näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sinivalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sinivalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kätevä Mac G4 -työpöytätietokone, joka voidaan liittää melkein kaikkiin LCD- tai VGA-näyttöihin.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kätevä Mac G4 -työpöytätietokone, joka voidaan liittää melkein kaikkiin LCD- tai VGA-näyttöihin.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumiininen työpöytätietokone (tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumiininen työpöytätietokone (tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Litteänäyttöinen G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, mukaan lukien alkuperäinen sinivalkoinen muovikotelo ja myöhemmin valittavana monia muita ”makuja”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, mukaan lukien alkuperäinen sinivalkoinen muovikotelo ja myöhemmin valittavana monia muita ”makuja”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Harmaavalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Harmaavalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Harmaavalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Harmaavalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Harmaavalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Harmaavalkoinen työpöytätietokone (muovinen tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, mukaan lukien alkuperäinen sinivalkoinen muovikotelo ja myöhemmin valittavana monia muita ”makuja”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, kupolimainen jalusta ja 15, 17 tai 20 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, sisäinen litteä CRT-näyttö tilaasäästävässä pyöreässä kotelossa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, kupolimainen jalusta ja 15, 17 tai 20 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kuutionmuotoinen työpöytätietokone (läpinäkyvä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kuutionmuotoinen työpöytätietokone (läpinäkyvä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, kupolimainen jalusta ja 15, 17 tai 20 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, kupolimainen jalusta ja 15, 17 tai 20 tuuman litteä näyttö.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kaikki yhdessä -design, sisäinen litteä CRT-näyttö tilaasäästävässä pyöreässä kotelossa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumiininen työpöytätietokone (tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumiininen työpöytätietokone (tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Litteänäyttöinen G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Litteänäyttöinen G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumiininen työpöytätietokone (tornimainen kotelo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Telineeseen asennettava G4-palvelin, jossa on joko kelkallinen tai kelkaton optinen asema ja neljä laajennuspaikkaa tai klusterisolmuinen G4-malli, jossa on yksi laajennuspaikka.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Telineeseen asennettava G4-palvelin, jossa on joko kelkallinen tai kelkaton optinen asema ja neljä laajennuspaikkaa tai klusterisolmuinen G4-malli, jossa on yksi laajennuspaikka.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Telineeseen asennettava G5-palvelintietokone, jossa on kelkaton CD- tai DVD-ROM-asema ja kolme laajennuspaikkaa tai klusterisolmumalli, jossa ei ole laajennuspaikkoja.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (loppuvuosi 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 -sarja</string>
+			<key>description</key>
+			<string>Intel Xeon 5100 -sarjan telineeseen asennettava palvelin, (esiteltiin vuoden 2006 loppupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (alkuvuosi 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 -sarja</string>
+			<key>description</key>
+			<string>Intel Xeon 5400 -sarjan telineeseen asennettava palvelin, (esiteltiin vuoden 2008 alkupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (alkuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 -sarja</string>
+			<key>description</key>
+			<string>Intel Xeon 5500 -sarjan telineeseen asennettava palvelin, (esiteltiin vuoden 2009 alkupuolella).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Litteänäyttöinen iMac Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Litteänäyttöinen iMac Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Litteänäyttöinen iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Litteänäyttöinen iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Litteänäyttöinen iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alumiinikoteloinen) (vuoden 2007 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20 tai 24 tuuman litteänäyttöinen iMac (alumiinikotelo), jossa on Intel Core 2 Duo -prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alumiinikoteloinen) (alkuvuosi 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20 tai 24 tuuman litteänäyttöinen iMac (alumiinikotelo), jossa on Intel Core 2 Duo -prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alumiinikoteloinen) (alkuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20 tai 24 tuuman litteänäyttöinen iMac (alumiinikotelo), jossa on Intel Core 2 Duo -prosessori.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (laajakuva, loppuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21,5 tai 27 tuuman iMac, jossa laajakuvainen LED-näyttö (esiteltiin loppuvuodesta 2009).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (laajakuva, loppuvuosi 2009)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa neliytiminen prosessori ja laajakuvainen LED-näyttö (esiteltiin loppuvuodesta 2009).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-näyttö (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (vuoden 2010 puoliväli)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa laajakuvainen LED-näyttö (esiteltiin vuoden 2010 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (alkuvuosi 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa Thunderbolt (esiteltiin alkuvuodesta 2011)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (alkuvuosi 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa Thunderbolt (esiteltiin alkuvuodesta 2011)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (loppuvuosi 2012)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2012).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (loppuvuosi 2012)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2012).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (alkuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i3</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin alkuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (loppuvuosi 2013)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i3</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2013).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (vuoden 2014 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin vuoden 2014 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (loppuvuosi 2014)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2014).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (loppuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen LED-taustavalaistu näyttö (esiteltiin loppuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (loppuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvainen tai Retina 4K -näyttö (esiteltiin loppuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (loppuvuosi 2015)</string>
+			<key>processor</key>
+			<string>Neliytimiset Intel Core i5 ja Intel Core i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa laajakuvainen tai Retina 5K -näyttö (esiteltiin loppuvuodesta 2015).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Kaksiytiminen Intel Core i5</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa laajakuvanäyttö (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa Retina 4K -näyttö (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (vuoden 2017 puoliväli)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i5/i7</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa Retina 5K -näyttö (esiteltiin vuoden 2017 puolivälissä).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 tuuman iMac (alkuvuosi 2019)</string>
+			<key>processor</key>
+			<string>Kuusiytiminen Intel Core i5 ja kahdeksanytiminen Intel Core i9</string>
+			<key>description</key>
+			<string>27 tuuman iMac, jossa Retina 5K -näyttö (esiteltiin alkuvuodesta 2019).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 tuuman iMac (alkuvuosi 2019)</string>
+			<key>processor</key>
+			<string>Neliytiminen Intel Core i3 ja kuusiytiminen Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21,5 tuuman iMac, jossa Retina 4K -näyttö (esiteltiin alkuvuodesta 2019).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (loppuvuosi 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro, jossa Xeon W -prosessori ja Radeon Pro Vega -näytönohjain (esiteltiin loppuvuodesta 2017).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+(function(){return function(a,n){var o=loadHelper("category_separators.js");return!(!o[n.domain]||!o[n.domain][n.documentType])&&(separatorRegexForDomain=o[n.domain][n.documentType],separatorRegexForDomain[a].forEach(function(a){var o=n.plain.match(a);o&&o instanceof Array&&(n.plain=o[0])}),n)}}).call();

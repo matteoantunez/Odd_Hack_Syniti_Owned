@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Application-Group</key>
+	<array>
+		<string>ConfigurationProfiles</string>
+		<string>apple</string>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>20A241128</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>FontService</string>
+	<key>CFBundleExecutable</key>
+	<string>FontService</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.managedclient.pds.Font</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>FontService</string>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleVisibleComponentName</key>
+	<string>Profiles (Font)</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>13E6049a</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>12.3</string>
+	<key>DTSDKBuild</key>
+	<string>21E216a</string>
+	<key>DTSDKName</key>
+	<string>macosx12.3.internal</string>
+	<key>DTXcode</key>
+	<string>1330</string>
+	<key>DTXcodeBuild</key>
+	<string>13E6049a</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.3</string>
+	<key>ProfileDomainService</key>
+	<dict>
+		<key>DomainsSupported</key>
+		<array>
+			<string>com.apple.font</string>
+		</array>
+		<key>ExcludeDomainsFromManagedPrefs</key>
+		<true/>
+		<key>ReplacesBundleIDs</key>
+		<array>
+			<string>com.apple.managedclient.profileplugin.font</string>
+		</array>
+	</dict>
+	<key>XPCService</key>
+	<dict>
+		<key>JoinExistingSession</key>
+		<true/>
+		<key>RunLoopType</key>
+		<string>NSRunLoop</string>
+		<key>ServiceType</key>
+		<string>Application</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,49 @@
+{
+  "widgetSectionConfig": [
+      {
+          "identifier": "tag",
+          "name": "",
+          "name_color": "#5cc08c",
+          "section_type": 6,
+          "display_order": 0,
+          "fallback_order": 0,
+          "cached_result_cutoff_time": 28800,
+          "aggregation_policy": 0,
+          "minimum_slot_allocation": 0,
+          "read_stories_filter_method": 1,
+          "seen_stories_filter_method": 1,
+          "filter_duplicate_clusters_within_section": true,
+          "filter_duplicate_clusters_across_sections": true,
+          "cutoff_time": 129600,
+          "subscriptions_fetch_count": 20,
+          "headlines_per_feed_fetch_count": 10,
+          "fetching_bin": 2,
+          "channel_muting_enabled": true,
+          "seen_stories_minimum_time_since_first_seen_to_filter": 0,
+          "personalization_feature_id": "f8+foryou",
+          "shown_in_favorites_only_mode": true,
+          "presence_determined_by_personalization": true,
+          "personalized_presence_method": 1,
+          "personalized_presence_impression_prior": 100,
+          "personalized_presence_click_prior": 7,
+          "personalized_presence_CTR_to_show": 1,
+          "personalized_presence_CTR_to_hide": 0,
+          "personalized_presence_min_probability_to_show": 0,
+          "personalized_presence_section_edition": 0,
+          "personalized_presence_relative_scalar": 1.3,
+          "queue_membership": [
+              2
+          ],
+          "glanceable": true,
+          "enabled": false,
+          "supported_versions": [
+              "TIGRIS"
+          ],
+          "personalized_presence_feature_id": "f6+BestOfEdition"
+      }
+  ],
+  "max_slot_count": 7,
+  "user_segmentation_background_refresh_rate": 1200,
+  "user_segmentation_foreground_refresh_rate": 300
+}
+

@@ -1,0 +1,2 @@
+(if (entitlement "com.apple.private.corefollowup.internal")
+(allow mach-lookup (global-name "com.apple.corefollowup.agent")))

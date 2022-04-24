@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.oahd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.oahd</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/rosetta/oahd</string>
+	</array>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>UserName</key>
+	<string>_oahd</string>
+</dict>
+</plist>

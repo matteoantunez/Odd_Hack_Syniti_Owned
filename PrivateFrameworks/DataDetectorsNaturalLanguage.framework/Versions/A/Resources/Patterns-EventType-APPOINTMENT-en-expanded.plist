@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!i have an )appointment</string>
+			<string>book an appointment</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>appointment</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::BEAUTY</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>beauty salon</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Beauty Salon</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::BEAUTY::MANICURE</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(manicure|mani-pedi)</string>
+			<string>get (our|my) nails done</string>
+			<string>nail salon</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Manicure</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::BEAUTY::PEDICURE</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>pedicure</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Pedicure</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::CONFERENCE</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!(audio|tele|video)[ -])conference(?! (room|code|call|seed)s?)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Conference</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::CONGRESS</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>300</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>congress</string>
+		</array>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::HACKATHON</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>300</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>hack day</string>
+			<string>hack(athon|fest)</string>
+			<string>codefest</string>
+			<string>[37] day startup</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(hack day|hackfest|codefest|day startup)</string>
+		<key>TITLE</key>
+		<string>Hackathon</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::KEYNOTE</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(watch|attend) .{0,30} keynote</string>
+			<string>keynote will be (shown|streamed|broadcasted)</string>
+			<string>keynote speaker</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Keynote</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::MEETUP</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(host(ing)?|go(ing)? to|attend) .{0,50} meet[- ]?up</string>
+			<string>meetup</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(talk|talks|lecture|colloquium|conversation|(speaker|lecture) series|101|meet[- ]?up)</string>
+		<key>TITLE</key>
+		<string>Meetup</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::SEMINAR</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>300</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>seminar</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(talk|class|seminar)</string>
+		<key>TITLE</key>
+		<string>Seminar</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::TALK</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>HIGH_PRIORITY</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(host(ing)?|go(ing)? to|attend) .{0,50} (talk)</string>
+			<string>(featuring|giving) a (talk|lecture) (by|on)</string>
+			<string>(lecture|talk) will be delivered by</string>
+			<string>colloquium</string>
+			<string>speaker.{1,20}prof(essor)?</string>
+			<string>present (his|her|my|our) research</string>
+			<string>join us for a conversation with</string>
+			<string>discuss .{0,20} papers</string>
+			<string>each presenters will discuss</string>
+			<string>seeing you at the talk</string>
+			<string>(speaker|lecture) series</string>
+			<string>this presentation introduces</string>
+			<string>join us (with|for) (a|the).{0,10} presentation (from|on|by)</string>
+			<string>will give a detailed introduction to</string>
+			<string>an introductory talk on</string>
+			<string>speaker information</string>
+			<string>invited to a talk (with|about)</string>
+			<string>we will also have .{0,7} talks from</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(talk|talks|lecture|colloquium|conversation|(speaker|lecture) series|101|meet[- ]?up|spotlight on:|summit)</string>
+		<key>TITLE</key>
+		<string>Talk</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::TALK::TECHTALK</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>HIGH_PRIORITY</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>tech[- ]?talks?</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(talk|lecture)</string>
+		<key>TITLE</key>
+		<string>Tech Talk</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::TRAINING</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!(during|of) )training(?! (room|data|toolkit|pipeline|regime|job)s?)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(talk|class|training)</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::WEBCAST</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<false/>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>webcast</string>
+			<string>webinar</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Webcast</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::EDUCATION::WORKSHOP</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>workshop</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Workshop</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>meeting</string>
+			<string>review session</string>
+			<string>please stop by if you can</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(meeting|all hands|session|wrap up|brainstorming|brainstorm|project)</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING::BOOKCLUB</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>book[ -]?club</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Book Club</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING::BROWNBAG</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>brown[- ]?bag</string>
+		</array>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>brown[- ]?bag</string>
+		<key>TITLE</key>
+		<string>Brown Bag</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING::BUSINESSMEETING</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>business meeting</string>
+			<string>work meeting</string>
+			<string>sync-up</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(meeting|sync-up|project)</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING::COMMUNICATIONMEETING</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(employee|comms?|communications?) meeting</string>
+			<string>comm mtg</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Communications Meeting</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING::OFFSITE</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<string>YES</string>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>offsite</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Offsite</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::GENERICMEETING::ONE_ON_ONE</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(one to one|one-to-one|one on one|one-on-one)</string>
+			<string>(1-to-1|1 to 1)</string>
+			<string>1[\-\:]1</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>1:1</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::HAIRDRESSER</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>hair( salon|cut| ?stylist)</string>
+			<string>barber shop</string>
+			<string>hairdresser(['’]s)?</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Hair Appointment</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::INTERVIEW</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>your interview(s)?</string>
+			<string>interview(s)? with</string>
+			<string>phone screening</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Interview</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::STOPBY</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>please stop by (my|the|for|at|if you can)</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>wellness appointment</string>
+			<string>wellness center</string>
+			<string>(vaccination|vaccine)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Wellness Appointment</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::ACUPUNCTURE</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>acupuncture</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Acupuncture</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(doctor|medical) appointment</string>
+			<string>appointment with dr\.?</string>
+			<string>medical (fitness )?exam</string>
+			<string>health check([- ]up)?</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Doctor</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH::CHIROPRACTIC</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>chiropract(ic|or)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Chiropractor</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH::DENTIST</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>dentist</string>
+			<string>dental appointment</string>
+			<string>dental hygienist</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Dentist</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH::DERMATOLOGIST</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>dermatologist</string>
+			<string>dermatology (visit|appointment)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Dermatologist</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH::OPTOMETRY</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>optometr(ic|y|ist)</string>
+			<string>(vision|eye|sight) (exam(ination)?|test)</string>
+			<string>eye doctor</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Optometrist</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::MASSAGE</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(massage|reiki|bodywork)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Massage</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::NUTRITIONIST</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(nutritionist|dietician)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Nutritionist</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::REFLEXOLOGY</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>reflexology</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Reflexology</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>APPOINTMENT::WELLNESS::SPA</key>
+	<dict>
+		<key>APPOINTMENT_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>spa</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Spa</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

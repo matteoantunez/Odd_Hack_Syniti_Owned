@@ -1,0 +1,44 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.EntityResponse
+
+inputs:
+  entityName:
+    access_mode: public
+  room:
+    access_mode: public
+  zones:
+    access_mode: public
+  home:
+    access_mode: public
+  type:
+    access_mode: public
+  types:
+    access_mode: public
+  states:
+    access_mode: public
+    
+properties:
+  entityName:
+    type: dialog.String
+    description: The name of the entity, it could be an acessory or a service. Said name can be personalized by the user.
+  room:
+    type: dialog.String
+    description: The room name of the entity. Said name can be personalized by the user.
+  zones:
+    type: dialog.String[]
+    description: The zone names of the entity. Said names can be personalized by the user.
+  home:
+    type: dialog.String
+    description: The home name of the entity. Said name can be personalized by the user.
+  type:
+    type: dialog.String
+    semantic_concept: homeAutomationService
+    description: The type of the entity, e.g., light, fan. These types are a semantic that is determined by the kind of accessory.
+  types:
+    type: dialog.String[]
+    semantic_concept: homeAutomationService
+    description: Some entities may have sub types or associated types which will be included in this property. For example, a switch may be considered also a light.
+  states:
+    type: homeAutomation.EntityState[]
+    description: The current states of the entity

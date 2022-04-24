@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>chill out at (my|your) place</string>
+			<string>let['’]s( get ready to)? celebrate</string>
+			<string>celebration</string>
+			<string>(we are|i am) hosting</string>
+			<string>let(['’]?s| us) go out on</string>
+			<string>get[- ]together</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>celebration</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>ALLOW_GENERIC_PATTERNS_KEYWORDS</key>
+		<string>NO</string>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>HIGH_PRIORITY</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>celebrat(ing|e|ion) .{0,10} anniversary</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Anniversary</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>ALLOW_GENERIC_PATTERNS_KEYWORDS</key>
+		<string>NO</string>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>HIGH_PRIORITY</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!happy( belated)? )(birthday|bday)(?! (gifts?|presents?))</string>
+			<string>celebrate birthdays</string>
+			<string>invite you to .{0,25} bday</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(party|bday)</string>
+		<key>TITLE</key>
+		<string>Birthday</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::BBQ</key>
+	<dict>
+		<key>DURATION</key>
+		<string>240</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(bbq|barbecue|barbeque)(?! (sauce|chips))</string>
+		</array>
+		<key>START_TIME</key>
+		<string>11:00 AM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(bbq|barbeque)</string>
+		<key>TITLE</key>
+		<string>Barbecue</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::CEREMONY</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!(opening|closing) )ceremony</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>celebration</string>
+		<key>TITLE</key>
+		<string>Ceremony</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>communion</string>
+			<string>baptism</string>
+			<string>ba[rt] mitzvah</string>
+			<string>quinceañera</string>
+		</array>
+		<key>START_TIME</key>
+		<string>10:00 AM</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::CEREMONY::WEDDING</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>wedding</string>
+			<string>invite you to join us for.{0,10} our union</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(wedding|union)</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>drinks .{0,30}at</string>
+			<string>(have|get|grab|up for|go( out)? for|drink|pop by for|drop by for) ((a|one|few|some) )?(drink|beverage|beer|martini)s?</string>
+			<string>(wine|chardonnay|pinot grigio|sauvignon blanc|riesling|cabernet sauvignon|pinot noir|merlot|champagne)</string>
+			<string>lemonade</string>
+			<string>smoothie</string>
+			<string>pre(-?)game</string>
+			<string>pre(-?)party</string>
+			<string>(🍻|🍷|🍹|🍾)</string>
+			<string>at the (new |irish )?(pub|bar)</string>
+			<string>booze</string>
+			<string>out for a (beer|drink) or two</string>
+			<string>discuss .{0,20} around drinks</string>
+			<string>(suggested a .{0,30}|(we|i) found a) bar</string>
+			<string>i suggest( going out for| grabbing| getting)? drinks</string>
+		</array>
+		<key>START_TIME</key>
+		<string>06:00 PM</string>
+		<key>TITLE</key>
+		<string>Drinks</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::COCKTAIL</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(drink|go for|have (a|some|a couple of|few)) cocktails?</string>
+			<string>🍸</string>
+		</array>
+		<key>START_TIME</key>
+		<string>06:00 PM</string>
+		<key>TITLE</key>
+		<string>Cocktails</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::COFFEE</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(let['’]s|let us|want to|should we|we should|would you like to) (grab|meet( and.{0,10})? for|have|get)( a|some)? (coffee|☕|☕️)</string>
+			<string>what about (grabbing|meeting for|having|getting)( a|some)? coffee</string>
+			<string>want to (go to|meet at) (starbucks|dunkin['’] donuts|peet['’]s coffee|peet['’]s)</string>
+			<string>coffee time</string>
+			<string>over coffee</string>
+			<string>coffee date</string>
+		</array>
+		<key>TITLE</key>
+		<string>Coffee</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::HAPPY_HOUR</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>happy hour</string>
+		</array>
+		<key>START_TIME</key>
+		<string>05:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>happy[- ]hour</string>
+		<key>TITLE</key>
+		<string>Happy Hour</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>GATHERING::DRINKS::HOTCHOCOLATE</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(warm|hot) chocolate</string>
+			<string>hot choc</string>
+		</array>
+		<key>START_TIME</key>
+		<string>3:00 PM</string>
+		<key>TITLE</key>
+		<string>Hot Chocolate</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::TEA</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(have|come|let['’]s get|want to get|want to have|want to try) (.{0,25} )?tea</string>
+			<string>tea (lounge|house|rooms?|salon)</string>
+			<string>🍵</string>
+			<string>(bubble|buba|bubba) tea</string>
+			<string>bubba tea</string>
+			<string>pearl tea</string>
+		</array>
+		<key>START_TIME</key>
+		<string>3:00 PM</string>
+		<key>TITLE</key>
+		<string>Tea</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::TEA::ELEVENSES</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>elevenses</string>
+		</array>
+		<key>START_TIME</key>
+		<string>11:00 AM</string>
+		<key>TITLE</key>
+		<string>Elevenses</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::HANGOUT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(we can|want to|wanna|let['’]s|up to) (hang(ing)? out|chill)</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Hanging Out</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>go to eat</string>
+			<string>let(s|[['’]-]s)( go| go out| try( out)?)?( and)?( grab .{0,15})?( to| at)?( the| that) .{0,30}restaurant</string>
+			<string>steakhouse</string>
+			<string>meal</string>
+			<string>(supper|ramen|pasta|noodles|sushi(s)?|tacos|(?&lt;!free )pizza(s)?|(ham|cheese)?(burger)(s)?|burrito(s)?|salad(s)?|dim sum|pho|pad thai|grilled cheese)</string>
+			<string>grab a bite</string>
+			<string>(book|booking|booked|reserved) a table</string>
+			<string>taqueria</string>
+			<string>(🍕|🍔|🍟|🍴|🍣|🍲|🍝|🍳|🍜|🌯|🌮|🍛|🍱)</string>
+			<string>(have|go out for|eat) .{0,25} food</string>
+			<string>come( and)? eat at home</string>
+			<string>(we|i)( have| put)?( a reservation| reserved)?( a spot| a table| a place)?( down)?( for us)?( at| for) the restaurant</string>
+			<string>join( me| us)? at the restaurant</string>
+			<string>meet( with)?( me| us|.{0,30})? at the restaurant</string>
+			<string>come with( me| us)? to the restaurant</string>
+			<string>come( try| meet| to)?( me| us)?( at| to)? the( .{0,15})? restaurant( with)?( me| us| them)?</string>
+			<string>(do|would)?( you| anyone| anybody)? want( to go| to come with us| (to )?join me| to have| to go out| to try .{0,30}| to meet)?( to| at| for.{0,15}| with (me|us) for)?( dinner at| supper at)?( this.{0,30}| that.{0,30}) restaurant( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>( going to( have)?| having| have)( dinner| supper) with .{0,30} at( the| this| that)(.{0,30})? restaurant(,)( are you interested( in)?| coming| do you| would you)?( like| want)?( to come| coming)?</string>
+			<string>will( you| anybody| anyone)? be( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))?( dinner| supper)?( at the)?(.{0,15})? restaurant( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>are you( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))?( dinner| supper)?( at the)?(.{0,15})? restaurant( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>will( you| anybody| anyone)?(( join| come with)?( me| us| them)?( at .{0,30})?( for| to))?( dinner| supper)?( at the)?(.{0,15})? restaurant( with (me|us|them)?)?( tomorrow| today)?( at .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)? like( to go| to join us| to come with (us|me)| (to )?join me| to go out| to do| to get| to try .{0,30}| to meet)?( to| for)?( dinner| supper)?( at( the| this| that)| this| that)?(.{0,15})? restaurant( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)? like( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)?( dinner| supper)?( with( me| us| them)| together)?( at( the| this| that)| this| that)?(.{0,15})? restaurant( tomorrow| today| on .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)? be interested in( going| joining( us| me)?| coming with( us| me)?| having| doing| grabbing| going out| getting| trying .{0,30}| meeting)?( to| for)?( dinner| supper)?( at( the| this| that)| this| that)?(.{0,15})? restaurant( with( me| us| them| some of us)?| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)? want( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? (dinner|supper)?( at( the| this| that)| this| that)?(.{0,15})? restaurant( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::BREAKFAST</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>let(s|[['’]-]s)( do| have| get| go out( to| for)?| go to| grab| try .{0,30} for)? breakfast( tomorrow| together| today)?( at)?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? want( to go| to join us| to come with us| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for| with (me|us) for)? breakfast( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>will( you| anybody| anyone)?( (from|in) this group)? be( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))? breakfast( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>are you( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))? breakfast( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>will( you| anybody| anyone)?( (from|in) this group)?(( join| come with)?( me| us| them)?( at .{0,30})?( for| to))? breakfast( with (me|us|them)?)?( tomorrow| today)?( at .{0,30})?</string>
+			<string>can( you| anybody| anyone)?( (from|in) this group)?( have| do| get| meet for| join me for| come with me to| come with me for)? breakfast( tomorrow| today| at .{0,30}| anytime)?( at .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? like( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? breakfast( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? be interested in( going| joining( us| me)?| coming with( us|me)?| having| doing| grabbing| going out| getting| trying .{0,30}| meeting)?( to| for)? breakfast( with( me| us| them| some of us)?| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>we( have| put)?( a reservation| reserved)?( a spot| a table| a place)?( down)? for breakfast</string>
+			<string>( going to( have)?| having| have) breakfast with .{0,30}(,)( are you interested( in)?| coming| do you| would you)?( like| want)?( to come| coming)?</string>
+			<string>join( me| us| them)? for breakfast</string>
+			<string>come with( me| us| them)?( for| to)? breakfast</string>
+			<string>come( grab| do| try| meet| to)?( for)? breakfast with( me| us| them)?</string>
+			<string>down for breakfast</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? want( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? breakfast( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>is( you| anybody| anyone)?( (from|in) this group)?( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to| with me for))? breakfast( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>can (we|you)( do| have) breakfast</string>
+			<string>i would like to invite your for breakfast</string>
+			<string>pick a (breakfast place|place for breakfast)</string>
+			<string>(we|i)(['’]ll| will) be hosting a .{0,40}breakfast</string>
+			<string>let['’]s( all)? meet.{0,50} to have breakfast</string>
+			<string>let(['’]s| us) go for breakfast</string>
+			<string>would love to get breakfast</string>
+			<string>who would be in for a .{0,20} breakfast</string>
+			<string>wanna get breakfast</string>
+			<string>available to have breakfast</string>
+			<string>breakfast reservation</string>
+			<string>can we do breakfast</string>
+			<string>rsvp for( the)? breakfast</string>
+			<string>anybody up for breakfast</string>
+			<string>we do a.{0,10} breakfast</string>
+			<string>come over for breakfast</string>
+			<string>i suggest (going out for|grabbing|getting|cooking) breakfast</string>
+			<string>breakfast plans for (this|next|the following)?</string>
+			<string>(we|they|he|she)( is| are)( doing| having| hosting)( his| her| their| our)( (bi(-)?( )?)?monthly| (bi(-)?( )?)?weekly)?(.{0,20})? breakfast</string>
+			<string>(this|(the )?next|the following)( month(['’]s)?| week(['’]s)?) breakfast is( on| at)</string>
+			<string>(today(['’]s)?|tomorrow(['’]s)?) breakfast is( on| at)</string>
+			<string>see you at the restaurant at</string>
+			<string>early breakfast</string>
+			<string>join us for a hot breakfast</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>08:00 AM</string>
+		<key>START_TIME_MAX</key>
+		<string>10:30 AM</string>
+		<key>START_TIME_MIN</key>
+		<string>06:00 AM</string>
+		<key>TITLE</key>
+		<string>Breakfast</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<true/>
+	</dict>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>brunch</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>11:00 AM</string>
+		<key>START_TIME_MAX</key>
+		<string>2:00 PM</string>
+		<key>START_TIME_MIN</key>
+		<string>10:00 AM</string>
+		<key>TITLE</key>
+		<string>Brunch</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::DINNER</key>
+	<dict>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>let(s|[['’]-]s)( do| have| get| go out( to| for)?| go to| grab| try .{0,30} for)? (supper|dinner)( tomorrow| together| today)?( at)?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? want( to go| to join us| to come with us| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for| with (me|us) for)? (dinner|supper)( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>will( you| anybody| anyone)?( (from|in) this group)? be( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))? (dinner|supper)( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>are you( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))? (dinner|supper)( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>will( you| anybody| anyone)?( (from|in) this group)?(( join| come with)?( me| us| them)?( at .{0,30})?( for| to))? (dinner|supper)( with (me|us|them)?)?( tomorrow| today)?( at .{0,30})?</string>
+			<string>can( you| anybody| anyone)?( (from|in) this group)?( have| do| get| meet for| join me for| come with me to| come with me for)? (dinner|supper)( tomorrow| today| at .{0,30}| anytime)?( at .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? like( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? (dinner|supper)( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? be interested in( going| joining( us| me)?| coming with( us|me)?| having| doing| grabbing| going out| getting| trying .{0,30}| meeting)?( to| for)? (dinner|supper)( with( me| us| them| some of us)?| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>we( have| put)?( a reservation| reserved)?( a spot| a table| a place)?( down)? for (dinner|supper)</string>
+			<string>( going to( have)?| having| have) (dinner|supper) with .{0,30}(,)( are you interested( in)?| coming| do you| would you)?( like| want)?( to come| coming)?</string>
+			<string>join( me| us| them)? for (dinner|supper)</string>
+			<string>come with( me| us| them)?( for| to)? (dinner|supper)</string>
+			<string>come( grab| do| try| meet| to)?( for)? (dinner|supper) with( me| us| them)</string>
+			<string>want to (grab|do)? (dinner|supper)</string>
+			<string>down for (dinner|supper)</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? want( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? (dinner|supper)( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>is( you| anybody| anyone)?( (from|in) this group)?( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to| with me for))? (dinner|supper)( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>can (we|you)( do| have) dinner</string>
+			<string>i would like to invite your for dinner</string>
+			<string>pick a (dinner place|place for dinner)</string>
+			<string>(we|i)(['’]ll| will) be hosting a .{0,40}dinner</string>
+			<string>let['’]s( all)? meet.{0,50} to have dinner</string>
+			<string>let(['’]s| us) go for dinner</string>
+			<string>would love to get dinner</string>
+			<string>who would be in for a .{0,20} dinner</string>
+			<string>wanna get dinner</string>
+			<string>available to have dinner</string>
+			<string>dinner reservation</string>
+			<string>can we do dinner</string>
+			<string>rsvp for( the)? dinner</string>
+			<string>anybody up for dinner</string>
+			<string>we do a.{0,10} dinner</string>
+			<string>come over for dinner</string>
+			<string>i suggest (going out for|grabbing|getting|cooking) dinner</string>
+			<string>dinner plans for (this|next|the following)?</string>
+			<string>(we|they|he|she)( is| are)( doing| having| hosting)( his| her| their| our)( (bi(-)?( )?)?monthly| (bi(-)?( )?)?weekly)?(.{0,20})? dinner</string>
+			<string>(this|(the )?next|the following)( month(['’]s)?| week(['’]s)?) dinner is( on| at)</string>
+			<string>(today(['’]s)?|tomorrow(['’]s)?) dinner is( on| at)</string>
+			<string>see you at the restaurant at</string>
+			<string>going to be late tonight for the restaurant</string>
+			<string>how about dinner</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>07:00 PM</string>
+		<key>START_TIME_MAX</key>
+		<string>10:00 PM</string>
+		<key>START_TIME_MIN</key>
+		<string>05:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Dinner</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<true/>
+	</dict>
+	<key>GATHERING::MEAL::DINNER::MOVIES</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(movie|dvd|film) (.{0,50} )?dinner</string>
+			<string>dinner (.{0,50} )?(movie|dvd|film)</string>
+			<string>movie and pizza</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>MOVIE_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>7:00 PM</string>
+		<key>TITLE</key>
+		<string>Movie Dinner</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::ICECREAM</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>ice cream</string>
+			<string>gelato</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>3:00 PM</string>
+		<key>TITLE</key>
+		<string>Ice Cream</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>let(s|[['’]-]s)( do| have| get| go out( to| for)?| go to| grab| try .{0,30} for)? lunch( tomorrow| together| today)?( at)?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? want( to go| to join us| to come with us| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for| with (me|us) for)? lunch( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>will( you| anybody| anyone)?( (from|in) this group)? be( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))? lunch( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>are you( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to))? lunch( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>will( you| anybody| anyone)?( (from|in) this group)?(( join| come with)?( me| us| them)?( at .{0,30})?( for| to))? lunch( with (me|us|them)?)?( tomorrow| today)?( at .{0,30})?</string>
+			<string>can( you| anybody| anyone)?( (from|in) this group)?( have| do| get| meet for| join me for| come with me to| come with me for)? lunch( tomorrow| today| at .{0,30}| anytime)?( at .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? like( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? lunch( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? be interested in( going| joining( us| me)?| coming with( us|me)?| having| doing| grabbing| going out| getting| trying .{0,30}| meeting)?( to| for)? lunch( with( me| us| them| some of us)?| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>we( have| put)?( a reservation| reserved)?( a spot| a table| a place)?( down)? for lunch</string>
+			<string>( going to( have)?| having| have) lunch with .{0,30}(,)( are you interested( in)?| coming| do you| would you)?( like| want)?( to come| coming)?</string>
+			<string>join( me| us| them)? for lunch</string>
+			<string>come with( me| us| them)?( for| to)? lunch</string>
+			<string>come( grab| do| try| meet| to)?( for)? lunch with( me| us| them)?</string>
+			<string>down for lunch</string>
+			<string>(will you be|are you) lunching with( us| me)</string>
+			<string>(do|would)?( you| anyone| anybody)?( (from|in) this group)? want( to go| to join us| to come with (us|me)| (to )?join me| to have| to do| to grab| to go out| to get| to try .{0,30}| to meet)?( to| for)? lunch( with( me| us| them)| together)?( tomorrow| today| on .{0,30})?</string>
+			<string>is( you| anybody| anyone)?( (from|in) this group)?( free| coming to| joining us| going to)?( at .{0,30}| anytime(( at)? .{0,30})?)?( for| to go to| to( come| go)?( with( me| us| them)?)?( for| to| with me for))? lunch( with (me|us|them)?)?( tomorrow| today)?</string>
+			<string>can( we| you)( do| have) lunch</string>
+			<string>i would like to invite your for lunch</string>
+			<string>pick a (lunch place|place for lunch)</string>
+			<string>(we|i)(['’]ll| will) be hosting a .{0,40}lunch</string>
+			<string>let['’]s( all)? meet.{0,50} to have lunch</string>
+			<string>let(['’]s| us) go for lunch</string>
+			<string>would love to get lunch</string>
+			<string>who would be in for a .{0,20} lunch</string>
+			<string>why don['’]t we .{0,40} get lunch</string>
+			<string>wanna get lunch</string>
+			<string>(let['’]s|wanna) do( | .{0,20} )lunch</string>
+			<string>available to have lunch</string>
+			<string>let['’]s have lunch</string>
+			<string>lunch reservation</string>
+			<string>can we do lunch</string>
+			<string>rsvp for( the)? lunch</string>
+			<string>anybody up for lunch</string>
+			<string>come over for lunch</string>
+			<string>how about lunch</string>
+			<string>lunch plans for (this|next|the following)?</string>
+			<string>(we|they|he|she)( is| are)( doing| having| hosting)( his| her| their| our)( (bi(-)?( )?)?monthly| (bi(-)?( )?)?weekly)?(.{0,20})? lunch</string>
+			<string>(this|(the )?next|the following)( month(['’]s)?| week(['’]s)?) lunch is( on| at)</string>
+			<string>(today(['’]s)?|tomorrow(['’]s)?) lunch is( on| at)</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>START_TIME_MAX</key>
+		<string>02:00 PM</string>
+		<key>START_TIME_MIN</key>
+		<string>11:00 AM</string>
+		<key>TITLE</key>
+		<string>Lunch</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<true/>
+	</dict>
+	<key>GATHERING::MEAL::SNACK</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>snack</string>
+			<string>collation</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>4:30 PM</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MIXER</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(networking|business) (mixer|event)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Networking Mixer</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!(1st|2nd|3rd|first|second|third|labour|democrat(ic)?|republican|one|if a|welcome to the)[- ])party</string>
+			<string>ballroom</string>
+			<string>banquet</string>
+			<string>carousal</string>
+			<string>festivity</string>
+			<string>fete</string>
+			<string>prom</string>
+			<string>soiree</string>
+			<string>(at|a|the) (\w )?(\w )?(fiesta|gala|bash)</string>
+			<string>night out</string>
+			<string>(boys|girls)( )?(night)</string>
+			<string>welcome reception</string>
+			<string>costume bash</string>
+			<string>dance parties</string>
+			<string>having a party</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(night out|[0-9]{1,2}(th|st|nd) annual|get[- ]together|reception)</string>
+		<key>TITLE</key>
+		<string>Party</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::CLUBBING</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>go(ing)? clubbing</string>
+			<string>go(ing)? to the club</string>
+			<string>night[- ]?club</string>
+		</array>
+		<key>START_TIME</key>
+		<string>09:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(night)?club</string>
+		<key>TITLE</key>
+		<string>Clubbing</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::COCKTAIL</key>
+	<dict>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>cocktail party</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>cocktail</string>
+		<key>TITLE</key>
+		<string>Cocktail Party</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::GRADUATION</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(graduation party|party .{0,50} graduation)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Graduation Party</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::HOUSEWARMING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>housewarming</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Housewarming Party</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::RETIREMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(retirement (.{0,50} )?party|party (.{0,50} )?retirement)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Retirement Party</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PICNIC</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>picnic</string>
+		</array>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>TITLE</key>
+		<string>Picnic</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::POTLUCK</key>
+	<dict>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>potluck</string>
+		</array>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>TITLE</key>
+		<string>Potluck</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::REUNION</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::REUNION::ALUMNI</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(alumni|class) reunion</string>
+		</array>
+		<key>START_TIME</key>
+		<string>07:00 PM</string>
+		<key>TITLE</key>
+		<string>Class Reunion</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::REUNION::FAMILY</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>family reunion</string>
+		</array>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>TITLE</key>
+		<string>Family Reunion</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

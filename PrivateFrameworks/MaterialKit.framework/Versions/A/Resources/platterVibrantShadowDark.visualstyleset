@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>visualStyleSetVersion</key>
+	<integer>1</integer>
+	<key>secondary</key>
+	<string>platterVibrantShadowLight</string>
+	<key>styles</key>
+	<dict>
+		<key>platterVibrantShadowLight</key>
+		<dict>
+			<key>filtering</key>
+			<dict>
+				<key>filterType</key>
+				<string>vibrantColorMatrix</string>
+				<key>filterProperties</key>
+				<dict>
+					<key>darkenAll</key>
+					<real>0.25</real>
+					<key>darkenShadowHighlights</key>
+					<real>-0.5</real>
+					<key>saturationAdjustment</key>
+					<real>0.25</real>
+					<key>blueYellowContrast</key>
+					<real>-0.5</real>
+					<key>redGreenContrast</key>
+					<real>-0.25</real>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

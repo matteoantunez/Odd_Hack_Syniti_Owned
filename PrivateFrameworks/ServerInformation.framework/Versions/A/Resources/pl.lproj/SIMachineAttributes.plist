@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook z procesorem Intel Core Duo, dostępny w kolorze białym i czarnym.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook z procesorem Intel Core 2 Duo, dostępny w kolorze białym i czarnym.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook z procesorem Intel Core 2 Duo, dostępny w kolorze białym i czarnym.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook z procesorem Intel Core 2 Duo, dostępny w kolorze białym i czarnym.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook z procesorem Intel Core 2 Duo (i aluminiową obudową)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z końca 2008 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook z procesorem Intel Core 2 Duo (biały, z początku 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Biały MacBook z procesorem Intel Core 2 Duo, z początku 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook z procesorem Intel Core 2 Duo (biały, z końca 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Biały MacBook z procesorem Intel Core 2 Duo i ekranem LED display, z końca 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook z procesorem Intel Core 2 Duo (biały, z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook z procesorem Intel Core 2 Duo i białą obudową unibody, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-calowy MacBook (z początku 2015 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core M</string>
+			<key>description</key>
+			<string>12-calowy MacBook z wyświetlaczem Retina, z początku 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-calowy MacBook (z początku 2016 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core m3, dwurdzeniowy procesor Intel Core m5, dwurdzeniowy procesor Intel Core m7</string>
+			<key>description</key>
+			<string>12-calowy MacBook z wyświetlaczem Retina, z początku 2016 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-calowy MacBook (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core m3, dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>12-calowy MacBook z wyświetlaczem Retina, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(oryginalny)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air z procesorem Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air z procesorem Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-calowy MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air z 11-calowym wyświetlaczem, z końca 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air z 13-calowym wyświetlaczem, z końca 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-calowy MacBook Air (z połowy 2011 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 11-calowym wyświetlaczem, z połowy 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Air (z połowy 2011 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 13-calowym wyświetlaczem, z połowy 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-calowy MacBook Air (z połowy 2012 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 11-calowym wyświetlaczem, z połowy 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Air (z połowy 2012 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 13-calowym wyświetlaczem, z połowy 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-calowy MacBook Air (z połowy 2013 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 11-calowym wyświetlaczem, z połowy 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Air (z połowy 2013 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 13-calowym wyświetlaczem, z połowy 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-calowy MacBook Air (z początku 2015 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 11-calowym wyświetlaczem, z końca 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Air (z początku 2015 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z 13-calowym wyświetlaczem, z początku 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (z końca 2018 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air z wyświetlaczem Retina i czytnikiem Touch ID, z końca 2018 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (z połowy 2019 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air z 13-calowym wyświetlaczem Retina i czytnikiem Touch ID, z połowy 2019 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core Duo i 15- lub 17-calowym wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core Duo i 15- lub 17-calowym wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i 15- lub 17-calowym wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i 15- lub 17-calowym wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i 15- lub 17-calowym wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo, 15- lub 17-calowym wyświetlaczem i gładzikiem Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo (i aluminiową obudową) (z końca 2008 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z końca 2008 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo (i aluminiową obudową) (z początku 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z początku 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo (i aluminiową obudową) (z połowy 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z połowy 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo (i aluminiową obudową) (z połowy 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z połowy 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo (i aluminiową obudową) (z połowy 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z połowy 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core i5 lub Intel Core i7 (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core i5 lub Intel Core i7, 15- lub 17-calowym wyświetlaczem i aluminiową obudową unibody, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core i5 lub Intel Core i7 (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro z procesorem Intel Core i5 lub Intel Core i7, 15- lub 17-calowym wyświetlaczem i aluminiową obudową unibody, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro z procesorem Intel Core 2 Duo (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro z procesorem Intel Core 2 Duo i aluminiową obudową unibody, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro z procesorem Intel Core i5, Intel Core i7 (z początku 2011 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro z dwurdzeniowym procesorem Intel Core i5 lub Intel Core i7 i aluminiową obudową unibody, z początku 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z procesorem Intel Core i7 (z początku 2011 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z czterordzeniowym procesorem Intel Core i7 i aluminiową obudową unibody, z początku 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>17-calowy MacBook Pro z procesorem Intel Core i7 (z początku 2011 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17-calowy MacBook Pro z czterordzeniowym procesorem Intel Core i7 i aluminiową obudową unibody, z początku 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z procesorem Intel Core i7 (z połowy 2012 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z dwurdzeniowym procesorem Intel Core i7 i aluminiową obudową unibody, z połowy 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro z procesorem Intel Core i5 lub Intel Core i7 (z połowy 2012 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro z dwurdzeniowym procesorem Intel Core i5 lub Intel Core i7 i aluminiową obudową unibody, z połowy 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina i procesorem Intel Core i7 (z połowy 2012 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina, dwurdzeniowym procesorem Intel Core i7 i aluminiową obudową unibody, z połowy 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro z wyświetlaczem Retina i procesorem Intel Core i5, Intel Core i7 (z końca 2012 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro z wyświetlaczem Retina, dwurdzeniowym procesorem Intel Core i5 lub i7 i aluminiową obudową unibody, z końca 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro z wyświetlaczem Retina (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro z wyświetlaczem Retina i aluminiową obudową unibody, z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina i aluminiową obudową unibody, z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina i dedykowaną kartą graficzną NVIDIA (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina, aluminiową obudową unibody i dedykowaną kartą graficzną NVIDIA z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina (z połowy 2015 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina i aluminiową obudową unibody, z połowy 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina (z połowy 2015 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro z wyświetlaczem Retina, aluminiową obudową unibody i dedykowaną kartą graficzną AMD z połowy 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro z wyświetlaczem Retina (z początku 2015 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro z wyświetlaczem Retina i aluminiową obudową unibody, z początku 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 (z końca 2016 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3, z końca 2016 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID (z końca 2016 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID, z końca 2016 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID (z końca 2016 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID, z końca 2016 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID (z połowy 2018 roku)</string>
+			<key>processor</key>
+			<string>Sześciordzeniowy procesor Intel Core i7, sześciordzeniowy procesor Intel Core i9</string>
+			<key>description</key>
+			<string>15-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID, z połowy 2018 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID (z połowy 2018 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>13-calowy MacBook Pro ze złączem Thunderbolt 3 i Touch ID, z połowy 2018 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z połowy 2006 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z połowy 2006 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z początku 2007 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z początku 2008 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z początku 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”, z początku 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Obudowa Pro do komputerów stacjonarnych, z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini z procesorem Intel Core (z początku 2006 roku)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Niewielki stacjonarny Mac z procesorem Intel Core 2 Duo, Intel Core Duo lub Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (z połowy 2007 roku)</string>
+			<key>marketingModel</key>
+			<string>Mac mini z procesorem Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Niewielki stacjonarny Mac z procesorem Intel Core 2 Duo, Intel Core Duo lub Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini z procesorem Intel Core (z początku 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini z kartą graficzną NVIDIA GeForce 9400M, z początku 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini z procesorem Intel Core (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini z kartą graficzną NVIDIA GeForce 320M, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (z połowy 2011 roku) z kartą graficzną Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini z dwurdzeniowym procesorem Intel i5 i kartą graficzną Intel HD Graphics 3000, z połowy 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (z połowy 2011 roku) z kartą graficzną AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini z dwurdzeniowym procesorem Intel i5 lub i7 i kartą graficzną AMD Radeon HD 6630M, z połowy 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini server (z połowy 2011 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini server z dwurdzeniowym procesorem i7 i kartą graficzną Intel HD Graphics 3000, z połowy 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (z końca 2012 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini z dwurdzeniowym procesorem i5 i kartą graficzną Intel HD Graphics 4000, z końca 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (z końca 2012 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini z czterordzeniowym procesorem i7 i kartą graficzną Intel HD Graphics 4000, z końca 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (z końca 2014 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5, dwurdzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini z dwurdzeniowym procesorem i zintegrowaną kartą graficzną, z końca 2014 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (z końca 2018 roku)</string>
+			<key>processor</key>
+			<string>Procesor Intel 8. generacji (Core i3 czterordzeniowy, Core i5 sześciordzeniowy, Core i7 sześciordzeniowy)</string>
+			<key>description</key>
+			<string>Mac mini z procesorem Intel 8. generacji oraz kartą graficzną Intel UHD 630, z końca 2018 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Komputer przenośny w czarnej obudowie z tworzywa i gumy, z wciętymi bokami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, kolorowy model „muszelka” z wbudowanym uchwytem, jak i późniejsze modele w srebrnych i białych obudowach z płaskimi, 12- i 14-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Biały komputer iBook z procesorem G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Biały komputer iBook z procesorem G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Biały komputer iBook z procesorem G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zarówno pierwszy, cienki model w tytanowej obudowie, z 15-calowym płaskim wyświetlaczem, jak i późniejsze modele w obudowach aluminiowych, z płaskimi, 12-, 15- i 17-calowymi wyświetlaczami.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, niebiesko-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, niebiesko-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Niewielki stacjonarny Mac z procesorem G4, zgodny z prawie każdym wyświetlaczem LCD lub VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Niewielki stacjonarny Mac z procesorem G4, zgodny z prawie każdym wyświetlaczem LCD lub VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac z procesorem G5 i płaskim ekranem</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zintegrowany design w obudowie z tworzywa (początkowo biało-niebieskiej, potem dostępnej w wielu kolorach).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zintegrowany design w obudowie z tworzywa (początkowo biało-niebieskiej, potem dostępnej w wielu kolorach).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, szaro-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, szaro-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, szaro-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, szaro-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, szaro-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w niepowtarzalnej, szaro-białej obudowie typu „tower” z tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Zintegrowany design w obudowie z tworzywa (początkowo biało-niebieskiej, potem dostępnej w wielu kolorach).</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zintegrowane urządzenie z podstawą w kształcie kopuły i 15-, 17- lub 20-calowym płaskim wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zintegrowane, kompaktowe urządzenie z wbudowanym, płaskim wyświetlaczem kineskopowym.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zintegrowane urządzenie z podstawą w kształcie kopuły i 15-, 17- lub 20-calowym płaskim wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w obudowie w kształcie kostki, wykonanej z przezroczystego tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w obudowie w kształcie kostki, wykonanej z przezroczystego tworzywa.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zintegrowane urządzenie z podstawą w kształcie kopuły i 15-, 17- lub 20-calowym płaskim wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zintegrowane urządzenie z podstawą w kształcie kopuły i 15-, 17- lub 20-calowym płaskim wyświetlaczem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Zintegrowane, kompaktowe urządzenie z wbudowanym, płaskim wyświetlaczem kineskopowym.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac z procesorem G5 i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac z procesorem G5 i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer stacjonarny w aluminiowej obudowie typu „tower”.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Panelowy serwer z procesorem G4, ładowanym przez szczelinę lub za pomocą tacy napędem optycznym oraz czterema gniazdami rozszerzeń, albo model klastrowy z jednym gniazdem rozszerzeń.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Panelowy serwer z procesorem G4, ładowanym przez szczelinę lub za pomocą tacy napędem optycznym oraz czterema gniazdami rozszerzeń, albo model klastrowy z jednym gniazdem rozszerzeń.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Panelowy serwer z procesorem G5, ładowanym przez szczelinę napędem CD-ROM lub DVD-ROM oraz trzema gniazdami rozszerzeń, albo model klastrowy bez gniazd rozszerzeń.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (z końca 2006 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 Series</string>
+			<key>description</key>
+			<string>Panelowy serwer z procesorami Intel Xeon 5100 Series, z końca 2006 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (z początku 2008 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 Series</string>
+			<key>description</key>
+			<string>Panelowy serwer z procesorami Intel Xeon 5400 Series, z końca 2008 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (z początku 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 Series</string>
+			<key>description</key>
+			<string>Panelowy serwer z procesorami Intel Xeon 5500 Series, z końca 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac z procesorem Intel Core Duo i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac z procesorem Intel Core Duo i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac z procesorem Intel Core 2 Duo i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac z procesorem Intel Core 2 Duo i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac z procesorem Intel Core 2 Duo i płaskim ekranem.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac z procesorem Intel Core 2 Duo (i aluminiową obudową) (z połowy 2007 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20- lub 24-calowy iMac z płaskim ekranem (i aluminiową obudową) oraz procesorem Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac z procesorem Intel Core 2 Duo (i aluminiową obudową) (z początku 2008 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20- lub 24-calowy iMac z płaskim ekranem (i aluminiową obudową) oraz procesorem Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac z procesorem Intel Core 2 Duo (i aluminiową obudową) (z początku 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20- lub 24-calowy iMac z płaskim ekranem (i aluminiową obudową) oraz procesorem Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac z procesorem Intel Core 2 Duo (ekran panoramiczny, z końca 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21,5- lub 27-calowy iMac z panoramicznym ekranem LED, z końca 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac z procesorem Intel Core i5, Intel Core i7 (ekran panoramiczny, z końca 2009 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-calowy iMac z czterordzeniowym procesorem i panoramicznym ekranem LED, z końca 2009 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-calowy iMac z panoramicznym ekranem LED, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-calowy iMac (z połowy 2010 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-calowy iMac z panoramicznym ekranem LED, z połowy 2010 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z początku 2011 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-calowy iMac z portem Thunderbolt, z początku 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-calowy iMac (z początku 2011 roku)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-calowy iMac z portem Thunderbolt, z początku 2011 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5–calowy iMac (z końca 2012 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym z podświetleniem LED, z końca 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27–calowy iMac (z końca 2012 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 27-calowym ekranem panoramicznym z podświetleniem LED, z końca 2012 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z początku 2013 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i3</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym z podświetleniem LED (z początku 2013 roku).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5–calowy iMac (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym z podświetleniem LED, z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27–calowy iMac (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 27-calowym ekranem panoramicznym z podświetleniem LED, z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5–calowy iMac (z końca 2013 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i3</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym z podświetleniem LED, z końca 2013 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z połowy 2014 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym z podświetleniem LED, z połowy 2014 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-calowy iMac (z końca 2014 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 27-calowym ekranem panoramicznym z podświetleniem LED, z końca 2014 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z końca 2015 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym z podświetleniem LED, z końca 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z końca 2015 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym lub Retina 4K, z końca 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-calowy iMac (z końca 2015 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5, czterordzeniowy procesor Intel Core i7</string>
+			<key>description</key>
+			<string>iMac z 27-calowym ekranem panoramicznym lub Retina 5K, z końca 2015 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Dwurdzeniowy procesor Intel Core i5</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym ekranem panoramicznym, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym wyświetlaczem Retina 4K, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-calowy iMac (z połowy 2017 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac z 27-calowym wyświetlaczem Retina 5K, z połowy 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-calowy iMac (z początku 2019 roku)</string>
+			<key>processor</key>
+			<string>Sześciordzeniowy procesor Intel Core i5, ośmiordzeniowy procesor Intel Core i9</string>
+			<key>description</key>
+			<string>iMac z 27-calowym wyświetlaczem Retina 5K, z początku 2019 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-calowy iMac (z początku 2019 roku)</string>
+			<key>processor</key>
+			<string>Czterordzeniowy procesor Intel Core i3, sześciordzeniowy procesor Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac z 21,5-calowym wyświetlaczem Retina 4K, z początku 2019 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (z końca 2017 roku)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro z procesorem Xeon W i kartą graficzną Radeon Pro Vega, z końca 2017 roku.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

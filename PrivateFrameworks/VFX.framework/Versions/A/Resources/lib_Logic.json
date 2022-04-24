@@ -1,0 +1,158 @@
+{
+    "color": [0.982, 0.886, 0.196],
+    "snippets":[
+        {
+            "name" : "Greater",
+            "label" : "Greater (a > b)",
+            "genericTypes" : ["Float", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "$a > $b",
+                "metal" : "$a > $b",
+                "c"     : "$a > $b"
+            }
+        },
+        {
+            "name" : "GreaterEquals",
+            "label" : "GreaterEquals (a >= b)",
+            "genericTypes" : ["Float", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "$a >= $b",
+                "metal" : "$a >= $b",
+                "c"     : "$a >= $b"
+            }
+        },
+        {
+            "name" : "InRange",
+            "label" : "InRange (inclusive)",
+            "defaultInParameter": "v",
+            "genericTypes" : ["Float", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b", "v"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "$a...$b ~= $v",
+                "metal" : "($v >= $a) && ($v <= $b)",
+                "c"     : "($v >= $a) && ($v <= $b)"
+            }
+        },
+        {
+            "name" : "Equals",
+            "genericTypes" : ["Float", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "$a == $b",
+                "metal" : "$a == $b",
+                "c"     : "$a == $b"
+            }
+        },
+        {
+            "name" : "Equals",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "c|swift|metal" : "vfx_equal($a, $b)"
+            }
+        },
+        {
+            "name" : "And",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Bool", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "$a && $b",
+                "metal" : "$a && $b",
+                "c"     : "$a && $b"
+            }
+        },
+        {
+            "name" : "Nand",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Bool", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "!($a && $b)",
+                "metal" : "!($a && $b)",
+                "c"     : "!($a && $b)"
+            }
+        },
+        {
+            "name" : "Or",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Bool", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "$a || $b",
+                "metal" : "$a || $b",
+                "c"     : "$a || $b"
+            }
+        },
+        {
+            "name" : "Nor",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Bool", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "!($a || $b)",
+                "metal" : "!($a || $b)",
+                "c"     : "!($a || $b)"
+            }
+        },
+        {
+            "name" : "Not",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "!$a",
+                "metal" : "!$a",
+                "c"     : "!$a"
+            }
+        },
+        {
+            "name" : "Select",
+            "label" : "Select (cond ? a : b)",
+            "useDynamicBranching" : true,
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b", "cond"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "$cond ? $a : $b",
+                "metal" : "$cond ? $a : $b",
+                "c"     : "$cond ? $a : $b"
+            }
+        }
+    ]
+}

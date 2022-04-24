@@ -1,0 +1,137 @@
+{
+    "supportedLanguages" : ["swift"],
+    "contexts": {
+        "()->(Float)": {
+            "assignments": [
+                {
+                    "baseType": "ContextExit",
+                    "baseUID": "TimedSin",
+                    "parameterName": "out"
+                },
+                {
+                    "baseType": "CodeSnippet",
+                    "baseUID": "Sin_0",
+                    "parameterName": "out"
+                },
+                {
+                    "baseType": "CodeSnippet",
+                    "baseUID": "Sin_0",
+                    "parameterName": "in"
+                },
+                {
+                    "baseType": "CodeSnippet",
+                    "baseUID": "Time_33",
+                    "parameterName": "out"
+                }
+            ],
+            "contextEntryMap": {
+                "TimedSin": {
+                    "metadataDict": {
+                        "label": {
+                            "keyName": "label",
+                            "label": "TimedSin (Inputs)",
+                            "valueType": "String"
+                        },
+                        "name": {
+                            "keyName": "name",
+                            "name": "TimedSin",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -870.1318359375,
+                                209.30467224121094
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "uid": "TimedSin"
+                }
+            },
+            "contextExitMap": {
+                "TimedSin": {
+                    "inParameterNames": [
+                        "out"
+                    ],
+                    "inParameterTypes": [
+                        "Float"
+                    ],
+                    "metadataDict": {
+                        "label": {
+                            "keyName": "label",
+                            "label": "TimedSin (Outputs)",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -195.41360473632812,
+                                242.95893859863281
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "uid": "TimedSin"
+                }
+            },
+            "idx": 0,
+            "metadataDict": {
+                "name": {
+                    "keyName": "name",
+                    "name": "TimedSin",
+                    "valueType": "String"
+                }
+            },
+            "outParameterNames": [
+                "out"
+            ],
+            "outParameterTypes": [
+                "Float"
+            ],
+            "snippets": {
+                "Sin_0": {
+                    "libraryName": "Math",
+                    "metadataDict": {
+                        "name": {
+                            "keyName": "name",
+                            "name": "Sin",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -445.41360473632812,
+                                242.95893859863281
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "snippetName": "Sin",
+                    "snippetSignature": "(Float)->(Float)"
+                },
+                "Time_33": {
+                    "libraryName": "ECS",
+                    "metadataDict": {
+                        "name": {
+                            "keyName": "name",
+                            "name": "Time",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -620.1318359375,
+                                209.30467224121094
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "snippetName": "Time",
+                    "snippetSignature": "()->(Float)"
+                }
+            },
+            "uid": "2f73c98f-a35b-49ea-bdc6-316715694e84"
+        }
+    }
+}

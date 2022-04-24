@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ARRANGEMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>pickup</string>
+			<string>(andare|andiamo|vai|vieni|veniamo|vado|va|vengo) a (prendere|prenderti)</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Pickup</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP::AIRPORT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(andare|andiamo|vai|vieni|veniamo|vado|va) a prendere (in |all['’])aeroporto</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Aeroporto</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(andare|andiamo|un giro) al (centro commerciale|negozio|supermercato|grande magazzino)</string>
+			<string>(andare|andiamo|vai|vieni|veniamo|vado|va) a (fare|far) (shopping|spese|la spesa|compere)</string>
+			<string>shopping marathon</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Shopping</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING::SALES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>saldi</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Saldi</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>viaggiare</string>
+			<string>viaggio (a|in)</string>
+			<string>(prenot(are|a|i|iamo)|riserv(o|i|a|iamo|are)|prend(o|i|iamo|ere)) (un hotel|un albergo|una pensione|un bed and breakfast|un b&amp;b)</string>
+			<string>viaggio in (macchina|auto|aereo|nave|barca|treno|pullman|moto)</string>
+			<string>crociera</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Viaggio</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL::FIELDTRIP</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>escursione scolastica</string>
+			<string>gita</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Gita</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

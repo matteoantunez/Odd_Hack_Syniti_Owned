@@ -1,0 +1,43 @@
+#!/bin/sh
+
+LOGDIR="/tmp/dsdiagnose.$$"
+SCUTIL="/usr/sbin/scutil"
+LDAPSEARCH="/usr/bin/ldapsearch"
+
+echo "Gathering OpenDirectory Server diagnostic information"
+
+mkdir "$LOGDIR"
+
+"$SCUTIL" --dns > "$LOGDIR/scutil-dns"
+"$SCUTIL" --get HostName > "$LOGDIR/scutil-hostname"
+
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -b "" -s base \* + > "$LOGDIR/rootdse"
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -ZZ -b "" -s base \* + > "$LOGDIR/rootdse.ssl"
+SUFFIX=`cat "$LOGDIR"/rootdse | grep -i namingContext | head -1 | sed -e 's/namingContexts:\ //'`
+
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -b "$SUFFIX" cn=passwordserver > "$LOGDIR/cn=passwordserver"
+
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -b "$SUFFIX" cn=KerberosKDC > "$LOGDIR/cn=KerberosKDC"
+
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -b "$SUFFIX" cn=KerberosClient > "$LOGDIR/cn=KerberosClient"
+
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -b "$SUFFIX" cn=macosxodpolicy > "$LOGDIR/cn=macosxodpolicy"
+
+"$LDAPSEARCH" -x -H ldap://127.0.0.1 -b "$SUFFIX" cn=dirserv > "$LOGDIR/cn=dirserv"
+
+/usr/sbin/ktutil list > "$LOGDIR/ktutil.list"
+
+mkdir "$LOGDIR/opendirectory"
+cp /Library/Preferences/OpenDirectory/Configurations/LDAPv3/* "$LOGDIR/opendirectory/"
+
+ps aux > "$LOGDIR/ps.txt"
+ifconfig > "$LOGDIR/ifconfig.txt"
+hostname > "$LOGDIR/hostname.txt"
+
+dscl /Local/Default -read /Computers/localhost > "$LOGDIR/localhost.txt"
+
+/usr/sbin/slapconfig -diagnose > /dev/null 2>&1
+
+tar -C "$LOGDIR" -jcf "${LOGDIR}.tar.bz2" . > /dev/null 2>&1
+rm -rf "$LOGDIR"
+echo "Logs are now ready for upload at ${LOGDIR}.tar.bz2"

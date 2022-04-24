@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook med Intel Core Duo-processor i svart eller vitt.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook med Intel Core 2 Duo-processor i svart eller vitt.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook med Intel Core 2 Duo-processor i svart eller vitt.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook med Intel Core 2 Duo-processor i svart eller vitt.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (Unibody-hölje i aluminium)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook med Intel Core 2 Duo och Unibody-hölje i aluminium, introducerad sent 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (vit, tidigt 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Vit MacBook med Intel Core 2 Duo-processor, introducerad tidigt 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (vit, sent 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Vit MacBook med Intel Core 2 Duo-processor och LED-skärm, introducerad sent 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (vit, mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13-tums MacBook med Intel Core 2 Duo-processor och vitt Unibody-hölje, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-tums MacBook (tidigt 2015)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core M</string>
+			<key>description</key>
+			<string>12-tums MacBook med Retina-skärm, introducerad tidigt 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-tums MacBook (tidigt 2016)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core m3, Dual-Core Intel Core m5, Dual-Core Intel Core m7</string>
+			<key>description</key>
+			<string>12-tums MacBook med Retina-skärm, introducerad tidigt 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-tums MacBook (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core m3, Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook med 12-tums Retina-skärm, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(original)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air med Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air med Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-tums MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air med 11-tums skärm, introducerad sent 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air med 13-tums skärm, introducerad sent 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-tums MacBook Air (mitten av 2011)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 11-tums skärm, introducerad i mitten av 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Air (mitten av 2011)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 13-tums skärm, introducerad i mitten av 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-tums MacBook Air (mitten av 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 11-tums skärm, introducerad i mitten av 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Air (mitten av 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 13-tums skärm, introducerad i mitten av 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-tums MacBook Air (mitten av 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 11-tums skärm, introducerad i mitten av 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Air (mitten av 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 13-tums skärm, introducerad i mitten av 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-tums MacBook Air (tidigt 2015)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 11-tums skärm, introducerad tidigt 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Air (tidigt 2015)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med 13-tums skärm, introducerad tidigt 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (sent 2018)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air med Retina-skärm och Touch ID, introducerad sent 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (mitten av 2019)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air med 13-tums Retina-skärm och Touch ID, introducerad i mitten av 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core Duo-processor och 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core Duo-processor och 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo-processor och 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo-processor och 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo-processor och 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo-processor, 15- eller 17-tums skärm och styrplatta med Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Unibody-hölje i aluminium, sent 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo och Unibody-hölje i aluminium, introducerad sent 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Unibody-hölje i aluminium, tidigt 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo och Unibody-hölje i aluminium, introducerad tidigt 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Unibody-hölje i aluminium, mitten av 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo och Unibody-hölje i aluminium, introducerad i mitten av 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Unibody-hölje i aluminium, mitten av 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo och Unibody-hölje i aluminium, introducerad i mitten av 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Unibody-hölje i aluminium, mitten av 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core 2 Duo och Unibody-hölje i aluminium, introducerad i mitten av 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core i5- eller Intel Core i7-processor, 15- eller 17-tums skärm och Unibody-hölje i aluminium, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro med Intel Core i5- eller Intel Core i7-processor, 15- eller 17-tums skärm och Unibody-hölje i aluminium, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Intel Core 2 Duo-processor och Unibody-hölje i aluminium, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 tum (tidigt 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Dual-Core Intel Core i5- eller Intel Core i7-processor och Unibody-hölje i aluminium, introducerad tidigt 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 tum (tidigt 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Quad-Core Intel Core i7-processor och Unibody-hölje i aluminium, introducerad tidigt 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17 tum (tidigt 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17-tums MacBook Pro med Quad-Core Intel Core i7-processor och Unibody-hölje i aluminium, introducerad tidigt 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 tum (mitten av 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med tvåkärnig Intel Core i7-processor och aluminium Unibody-hölje, introducerad i mitten av 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 tum (mitten av 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med tvåkärnig Intel Core i5 eller Intel Core i7-processor och aluminium Unibody-hölje, introducerad i mitten av 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro med Retina-skärm, Intel Core i7, 15 tum (mitten av 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Retina-skärm, tvåkärnig Intel Core i7-processor och aluminium Unibody-hölje, introducerad i mitten av 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro med Retina-skärm, Intel Core i5, Intel Core i7, 13 tum (sent 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Retina-skärm, Dual-Core Intel Core i5- eller i7-processor och Unibody-hölje i aluminium, introducerad sent 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Retina-skärm (sent 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Retina-skärm och Unibody-hölje i aluminium, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Retina-skärm (sent 2013)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Retina-skärm och Unibody-hölje i aluminium, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Retina-skärm, separat NVIDIA-grafikkort (sent 2013)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Retina-skärm och Unibody-hölje i aluminium, separat NVIDIA-grafikkort, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Retina-skärm (mitten av 2015)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Retina-skärm och Unibody-hölje i aluminium, introducerad i mitten av 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Retina-skärm (mitten av 2015)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Retina-skärm och Unibody-hölje i aluminium, separat AMD-grafikkort, introducerad i mitten av 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Retina-skärm (tidigt 2015)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Retina-skärm och Unibody-hölje i aluminium, introducerad tidigt 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 (sent 2016)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3, introducerad sent 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 och Touch ID (sent 2016)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 och Touch ID, introducerad sent 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Thunderbolt 3 och Touch ID (sent 2016)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Thunderbolt 3 och Touch ID, introducerad sent 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 och Touch ID (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 och Touch ID, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Thunderbolt 3 och Touch ID (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Thunderbolt 3 och Touch ID, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-tums MacBook Pro med Thunderbolt 3 och Touch ID (mitten av 2018)</string>
+			<key>processor</key>
+			<string>6-Core Intel Core i7, 6-Core Intel Core i9</string>
+			<key>description</key>
+			<string>15-tums MacBook Pro med Thunderbolt 3 och Touch ID, introducerad i mitten av 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 och Touch ID (mitten av 2018)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>13-tums MacBook Pro med Thunderbolt 3 och Touch ID, introducerad i mitten av 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (mitten av 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stationärt torn (aluminiumhölje).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (mitten av 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stationärt torn (aluminiumhölje).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (tidigt 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stationärt torn (aluminiumhölje).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (tidigt 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stationärt torn (aluminiumhölje).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (tidigt 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stationärt torn (aluminiumhölje), introducerad tidigt 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stationärt torn (aluminiumhölje), introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (sent 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Stationär proffsdator, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (tidigt 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Liten stationär Mac med Intel Core 2 Duo-, Intel Core Duo- eller Intel Core Solo-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (mitten av 2007)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Liten stationär Mac med Intel Core 2 Duo-, Intel Core Duo- eller Intel Core Solo-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (tidigt 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini med NVIDIA GeForce 9400M, introducerad tidigt 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini med NVIDIA GeForce 320M, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (mitten av 2011) med Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini med Intel Dual-Core i5 och Intel HD Graphics 3000, introducerad i mitten av 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (mitten av 2011) med AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini med Intel Dual-Core i5 eller i7 och AMD Radeon HD 6630M, introducerad i mitten av 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini server (mitten av 2011)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini server med Dual-Core i7 och Intel HD Graphics 3000, introducerad i mitten av 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (sent 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini med Dual-Core i5 och Intel HD Graphics 4000, introducerad sent 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (sent 2012)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini med Quad-Core i7 och Intel HD Graphics 4000, introducerad sent 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (sent 2014)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini med Intel Dual-Core-processor och integrerad grafik, introducerad sent 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (sent 2018)</string>
+			<key>processor</key>
+			<string>8:e generationens Intel-processor (Quad-Core Core i3, 6-Core Core i5, 6-Core Core i7)</string>
+			<key>description</key>
+			<string>Mac mini med 8:e generationens Intel-processor och Intel UHD graphics 630, introducerad sent 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bärbar dator i svart hölje av plast och gummi med skulpterade sidor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga, bärbara ”snäckskalsmodellen” i starka färger med inbyggt handtag och senare, silvervita modeller med rektangulära plasthöljen och 12- eller 14-tums plattskärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Vita iBook-datorer med G4-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Vita iBook-datorer med G4-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Vita iBook-datorer med G4-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Inklusive den ursprungliga tunna titanmodellen med 15-tums plattskärm och senare modeller med aluminiumhölje och 12-, 15- eller 17-tums skärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Blåvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Blåvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Liten stationär Mac G4 som kan anslutas till nästan alla LCD- eller VGA-skärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Liten stationär Mac G4 som kan anslutas till nästan alla LCD- eller VGA-skärmar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Stående stationär dator med aluminiumhölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Stående stationär dator med aluminiumhölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 med plattskärm</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med det ursprungliga blåvita plasthöljet och senare många andra ”smaker” att välja bland.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med det ursprungliga blåvita plasthöljet och senare många andra ”smaker” att välja bland.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gråvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gråvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gråvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gråvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gråvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gråvit stående stationär dator med plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med det ursprungliga blåvita plasthöljet och senare många andra ”smaker” att välja bland.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med en kupolformad bas och 15-, 17- eller 20-tums plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med inbyggd platt CRT-skärm i utrymmesekonomiskt rundat hölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med en kupolformad bas och 15-, 17- eller 20-tums plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kubformad stationär dator med genomskinligt plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kubformad stationär dator med genomskinligt plasthölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med en kupolformad bas och 15-, 17- eller 20-tums plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med en kupolformad bas och 15-, 17- eller 20-tums plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Allt-i-ett-design med inbyggd platt CRT-skärm i utrymmesekonomiskt rundat hölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Stående stationär dator med aluminiumhölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Stående stationär dator med aluminiumhölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Stående stationär dator med aluminiumhölje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Rackmonterad G4-server med antingen fackmatad eller direktmatad optisk enhet och fyra expansionsfack, eller G4-modellen med klusternod och ett enstaka expansionsfack.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Rackmonterad G4-server med antingen fackmatad eller direktmatad optisk enhet och fyra expansionsfack, eller G4-modellen med klusternod och ett enstaka expansionsfack.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Rackmonterad G5-baserad server med direktmatad CD- eller DVD-enhet och tre expansionsfack, eller modellen med klusternod som saknar expansionsfack.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (sent 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100-serien</string>
+			<key>description</key>
+			<string>Intel Xeon 5100-serienbaserad rackmonterad server, introducerad sent 2006.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (tidigt 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400-serien</string>
+			<key>description</key>
+			<string>Intel Xeon 5400-serienbaserad rackmonterad server, introducerad tidigt 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (tidigt 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500-serien</string>
+			<key>description</key>
+			<string>Intel Xeon 5500-serienbaserad rackmonterad server, introducerad tidigt 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo med plattskärm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (aluminiumhölje, mitten av 2007)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20- eller 24-tums iMac (aluminiumhölje) med plattskärm och Intel Core 2 Duo-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (aluminiumhölje, tidigt 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20- eller 24-tums iMac (aluminiumhölje) med plattskärm och Intel Core 2 Duo-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (aluminiumhölje, tidigt 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20- eller 24-tums iMac (aluminiumhölje) med plattskärm och Intel Core 2 Duo-processor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (widescreen, sent 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21,5- eller 27-tums iMac med widescreen-LED-skärm, introducerad sent 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (widescreen, sent 2009)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-tums iMac med Quad-Core-processor och widescreen-LED-skärm, introducerad sent 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-tums iMac med widescreen-LED-skärm, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (mitten av 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-tums iMac med widescreen-LED-skärm, introducerad i mitten av 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (tidigt 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-tums iMac med Thunderbolt, introducerad tidigt 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (tidigt 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-tums iMac med Thunderbolt, introducerad tidigt 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (sent 2012)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 21,5-tums widescreen-LED-skärm, introducerad sent 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (sent 2012)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 27-tums widescreen-LED-skärm, introducerad sent 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (tidigt 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i3</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 21,5-tums widescreen-LED-skärm, introducerad tidigt 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (sent 2013)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 21,5-tums widescreen-LED-skärm, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (sent 2013)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 27-tums widescreen-LED-skärm, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (sent 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i3</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 21,5-tums widescreen-LED-skärm, introducerad sent 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (mitten av 2014)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 21,5-tums widescreen-LED-skärm, introducerad i mitten av 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (sent 2014)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 27-tums widescreen-LED-skärm, introducerad sent 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (sent 2015)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>iMac med bakbelyst 21,5-tums widescreen-LED-skärm, introducerad sent 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (sent 2015)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med 21,5-tums widescreen- eller Retina 4K-skärm, introducerad sent 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (sent 2015)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5, Quad-Core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac med 27-tums widescreen- eller Retina 5K-skärm, introducerad sent 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>iMac med 21,5-tums widescreenskärm, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac med 21,5-tums Retina 4K-skärm, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (mitten av 2017)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac med 27-tums Retina 5K-skärm, introducerad i mitten av 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-tums iMac (tidigt 2019)</string>
+			<key>processor</key>
+			<string>6-Core Intel Core i5, 8-Core Intel Core i9</string>
+			<key>description</key>
+			<string>iMac med 27-tums Retina 5K-skärm, introducerad tidigt 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-tums iMac (tidigt 2019)</string>
+			<key>processor</key>
+			<string>Quad-Core Intel Core i3, 6-Core Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac med 21,5-tums Retina 4K-skärm, introducerad tidigt 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (sent 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro med Xeon W-processor och Radeon Pro Vega-grafik, introducerad sent 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,158 @@
+{
+    "tests": [
+        {
+            "name":"testHomePodSameRoomAwake",
+            "description": "Test for an empty dialog string on homepod when the target device is in the same room and also awake",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": false,
+                "isInSameRoom": true,
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", ""]
+        },
+        {
+            "name":"testHomePodSameRoomAsleep",
+            "description": "Test for a returned dialog when the from a HomePod, the target device is in the same room and asleep",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": true,
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN"]
+        },
+        {
+            "name":"testHomePodSameRoomAsleepWithIgnoredRoomName",
+            "description": "Test for a returned dialog when the from a HomePod, the target device is in the same room and asleep",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": true,
+                "roomName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN"]
+        },
+        {
+            "name":"testHomePodSameRoomAsleepWithIgnoredDeviceName",
+            "description": "Test for a returned dialog when the from a HomePod, the target device is in the same room and asleep",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": true,
+                "deviceName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN"]
+        },
+        {
+            "name":"testHomePodNotSameRoomAsleepWithRoomAsTarget",
+            "description": "Expecting to get the dialog for launching in a Room when present against a sleeping device.",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": false,
+                "roomName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN on the Living Room TV"]
+        },
+        {
+            "name":"testHomePodNotSameRoomAwakeWithRoomAsTarget",
+            "description": "Expecting to get the dialog for launching in a Room when present against an awake device.",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": false,
+                "isInSameRoom": false,
+                "roomName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "CNN is up on the Living Room TV"]
+        },
+        {
+            "name":"testHomePodNotSameRoomAsleepWithDeviceAsTarget",
+            "description": "Expecting to get the dialog for launching on a sleeping device, when room is not present",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": false,
+                "deviceName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN on Living Room"]
+        },
+        {
+            "name":"testHomePodNotSameRoomAwakeWithDeviceAsTarget",
+            "description": "Expecting to get the dialog for launching on an awake device, when room is not present",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": false,
+                "isInSameRoom": false,
+                "deviceName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "CNN is up on Living Room"]
+        },
+        {
+            "name":"testHomePodNotSameRoomAsleepWithDeviceAsTarget",
+            "description": "Dialog expected for a target device that's asleep with no room present",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": false,
+                "deviceName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN on Living Room"]
+        },
+        {
+            "name":"testHomePodWithRoomNameAndDeviceName",
+            "description": "When both a device and room name are provided, we expect to use the room name first.",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": false,
+                "roomName": "Living Room",
+                "deviceName": "Living Room",
+                "device": {
+                    "isHomePod": true
+                }
+            },
+            "expect": ["content", "eq", "Launching CNN on the Living Room TV"]
+        },
+        {
+            "name":"testNonHomePod",
+            "description": "Validate non-homepod dialog for on-device appLaunch scenarios.",
+            "parameters": {
+                "appName": "CNN",
+                "isDeviceAsleep": true,
+                "isInSameRoom": false,
+                "roomName": "Living Room",
+                "deviceName": "Living Room",
+                "device": {
+                    "isHomePod": false
+                }
+            },
+            "expect": ["content", "eq", "Opening CNN on the Living Room"]
+        },
+    ]
+}

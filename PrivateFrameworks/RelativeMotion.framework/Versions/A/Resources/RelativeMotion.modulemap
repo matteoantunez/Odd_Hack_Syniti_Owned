@@ -1,0 +1,7 @@
+framework module RelativeMotion [extern_c] {
+  umbrella header "RelativeMotion.h"
+  export *
+  module * {
+    export *
+  }
+}

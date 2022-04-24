@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ConfirmBeforeTurningOffLocationServices" locale="en">
+    <all>
+        <first>
+            <dialog condition="dialogState.isFirstTime">Turning off Location Services will disable access to your location data for all apps, including Find My.</dialog>
+            <dialog>Turning off Location Services disables all access to your location data.</dialog>
+        </first>
+        <dialog>Should I go ahead and turn off Location Services?</dialog>
+    </all>
+</cat>

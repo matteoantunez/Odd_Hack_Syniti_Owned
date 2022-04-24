@@ -1,0 +1,144 @@
+-- All tables are a 1-1 relationship with the requests table.
+
+CREATE TABLE requests (
+	request_id	INTEGER	PRIMARY KEY,
+
+	adam_id          	INTEGER,
+	bundle_id        	TEXT,
+	bundle_version   	TEXT,
+	external_version 	INTEGER,
+	player_gcid        	TEXT,
+	time_stamp       	INTEGER,
+	verification_hash	BLOB
+);
+
+CREATE TABLE scores (
+	request_id	INTEGER,
+
+	context                 	INTEGER,
+	eligible_challenge_ids  	BLOB,
+	leaderboard_id          	TEXT,
+	should_screen_challenges	INTEGER,
+	value                   	INTEGER,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE statuses (
+	request_id	INTEGER,
+
+	status	TEXT,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE ratings (
+	request_id	INTEGER,
+
+    rating      INTEGER,
+	payload     BLOB,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE photos (
+	request_id	INTEGER,
+
+	photo_data	BLOB, -- ew.
+    avatar_type INTEGER,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE remove_games (
+	request_id	INTEGER,
+    
+	removed_bundle_id	TEXT,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE friend_requests (
+	request_id	INTEGER,
+
+	payload	BLOB,
+	type   	INTEGER,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE accept_friend_requests (
+	request_id	INTEGER,
+
+	payload	BLOB,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE reject_friend_requests (
+	request_id	INTEGER,
+
+	payload	BLOB,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE remove_friend (
+	request_id	INTEGER,
+    
+	payload	BLOB,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE delete_photos (
+	request_id	INTEGER,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE challenges (
+	request_id	INTEGER,
+
+	payload     	BLOB,
+	request_type	INTEGER,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+CREATE TABLE achievements (
+	request_id	INTEGER,
+
+	eligible_challenge_ids  	BLOB,
+	identifier              	TEXT,
+	percent_complete        	FLOAT,
+	should_screen_challenges	INTEGER,
+
+	FOREIGN KEY(request_id) REFERENCES requests(request_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+);
+
+

@@ -1,0 +1,103 @@
+#usda 1.0
+(
+    "This file describes the USD Render schemata for code generation."
+    subLayers = [
+        @usd/schema.usda@
+    ]
+)
+
+over "GLOBAL" (
+    customData = {
+        string libraryName      = "usdRender"
+        string libraryPath      = "pxr/usd/usdRender"
+        dictionary libraryTokens = {
+            dictionary renderSettingsPrimPath = {
+                string             }
+        }
+    }
+)
+{
+}
+
+class "RenderSettingsBase" (
+    inherits = </Typed>
+        customData = {
+         string className = "SettingsBase"
+    }
+)
+{
+    rel camera (
+            )
+    uniform int2 resolution = (2048, 1080) (
+            )
+    uniform float pixelAspectRatio = 1.0 (
+            )
+    uniform token aspectRatioConformPolicy = "expandAperture" (
+                allowedTokens = ["expandAperture", "cropAperture", "adjustApertureWidth", "adjustApertureHeight", "adjustPixelAspectRatio"]
+    )
+    uniform float4 dataWindowNDC = (0.0, 0.0, 1.0, 1.0) (
+            )
+    uniform bool instantaneousShutter = false (
+            )
+}
+ 
+class RenderSettings "RenderSettings" (
+    inherits = </RenderSettingsBase>
+        customData = {
+         string className = "Settings"
+         string extraIncludes = """
+#include "pxr/base/gf/frustum.h"
+"""
+    }
+)
+{
+    rel products (
+            )
+    uniform token[] includedPurposes = ["default", "render"] (
+            )
+    uniform token[] materialBindingPurposes = ["full", ""] (
+        allowedTokens = ["full", "preview", ""]
+            )
+}
+
+class "RenderSettingsAPI" (
+    inherits = </APISchemaBase>
+    customData = {
+        token apiSchemaType = "singleApply"
+        string className = "SettingsAPI"
+    }
+    ) {
+}
+ 
+class RenderVar "RenderVar" (
+    inherits = </Typed>
+        customData = {
+         string className = "Var"
+    }
+) {
+    uniform token dataType = "color3f" (
+            )
+    uniform string sourceName = "" (
+            )
+    uniform token sourceType = "raw" (
+                allowedTokens = ["raw", "primvar", "lpe", "intrinsic"]
+    )
+}
+ 
+class RenderProduct "RenderProduct" (
+    inherits = </RenderSettingsBase>
+        customData = {
+         string className = "Product"
+         dictionary schemaTokens = {
+            dictionary raster = {
+                string             }
+         }
+    }
+) {
+    uniform token productType = "raster" (
+            )
+    token productName = "" (
+            )
+    rel orderedVars (
+            )
+}

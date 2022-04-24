@@ -1,0 +1,68 @@
+{               
+    "1-9": {
+        "veryHotHSVAdjustment":[0, 0.1, 0.01],
+        "arcticHSVAdjustment":[3, -0.1, 0],
+        "veryWetHSVAdjustment":[6, -0.05, 0],
+        "veryDryHSVAdjustment":[-4, 0, 0.02]
+	},
+    "1": {
+        "groundElevationScale": 14
+    },
+    "2": {
+        "groundElevationScale": 9
+    },
+    "3": {
+        "groundElevationScale": 7
+    },
+    "4": {
+        "groundElevationScale": 5
+    },
+    "5": {
+        "groundElevationScale": 3.25
+    },
+    "6": {
+        "groundElevationScale": 2.50
+    },
+    "7": {
+        "groundElevationScale": 1.5
+    },
+    "8": {
+        "groundElevationScale": 1.4
+    },
+    "9": {
+        "groundElevationScale": 1.35
+    },
+    "10": {
+        "groundElevationScale": 1.3
+    },
+    "11": {
+        "groundElevationScale": 1.25
+    },
+    "12": {
+        "groundElevationScale": 1.25
+    },
+    "13": {
+        "groundElevationScale": 1.25
+    },
+    "14": {
+        "groundElevationScale": 1.25
+    },
+    "15": {
+        "groundElevationScale": 1.25
+    },
+    "16": {
+        "groundElevationScale": 1.15
+    },
+    "17": {
+        "groundElevationScale": 1
+    },
+    "18": {
+        "groundElevationScale": 1
+    },
+    "19": {
+        "groundElevationScale": 1
+    },
+    "20": {
+        "groundElevationScale": 1
+    }
+}

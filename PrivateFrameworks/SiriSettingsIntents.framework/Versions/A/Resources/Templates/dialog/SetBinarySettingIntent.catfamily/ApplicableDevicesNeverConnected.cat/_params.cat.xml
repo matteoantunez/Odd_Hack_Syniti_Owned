@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ApplicableDevicesNeverConnected">
+    <meta name="description" value="Siri cannot enable or disable Announce Notifications until a certain compatible device has been connected to the phone, such as headphones or CarPlay."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters></parameters>
+
+</cat>

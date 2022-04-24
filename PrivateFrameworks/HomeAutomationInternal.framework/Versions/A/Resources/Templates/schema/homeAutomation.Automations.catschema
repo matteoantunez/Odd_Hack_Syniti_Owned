@@ -1,0 +1,32 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.Automations
+
+inputs:
+  automations:
+    access_mode: public
+    type: homeAutomation.Automation[]
+    
+properties:
+    automations:
+        type: homeAutomation.Automation[]
+    count:
+        type: dialog.Number
+        optional: no
+        description: The length of the response list
+    names:
+        type: dialog.String[]
+        description: A collection of the automation names without de-duplication. Said names can be personalized by the user
+    sameHome:
+        type: dialog.String
+        description: Represents the name of the home if all automations are in the same home
+    areInSameHome:
+        type: dialog.Boolean
+        description: True if automations are in the same home, False otherwise
+    
+    hasOneAutomation:
+        type: dialog.Boolean
+        description: True if there is only one automation, False otherwise
+    hasMoreThanOneAndLessThanSixAutomations:
+        type: dialog.Boolean
+        description: True if the number of automations in the response list is between one and six (exclusive)

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>每个星期(一|二|三|四|五|六|日|末)</string>
+        <string>从现在到星期(一|二|三|四|五|六|日|末)</string>
+        <string>从星期(一|二|三|四|五|六|日|末)到星期(一|二|三|四|五|六|日|末)</string>
+        <string>(日時|日付|日期):</string>
+	<string>可以给你答复</string>
+	<string>(我|我还)?真(的)?不确定</string>
+	<string>还(要|得)?和(.{0,25})确定</string>
+	<string>去(了|过)</string>
+	<string>发送时间</string>
+	<string>(一|二|三|四|五|六|日|末)见(.{0,25})再约</string>
+	<string>最后期限</string>
+	<string>会议记(录|要)</string>
+	<string>太忙</string>
+	<string>(尽快|晚些)(.{0,5})(答|回)复</string>
+	<string>(我们|那(我们)?(就|么)?)?(下)?(周|星期|礼拜)(一|二|三|四|五|六|日|末)见</string>
+	<string>上星期</string>
+	<string>装船</string>
+	<string>交货</string>
+	<string>运输</string>
+	<string>报名期限</string>
+	<string>截止报名</string>
+	<string>(报名)?截止</string>
+        <string>都(行|可以)(.{0,5})除了</string>
+        <string>除了(.{0,15})都(行|可以)</string>
+        <string>(营业|工作)时间</string>
+        <string>电子报</string>
+        <string>(文摘|摘要|摘录|订阅|简讯)</string>
+        <string>(不晚于|最晚不超过)</string>
+        <string>关门(时间)?</string>
+        <string>(早饭|午饭|晚饭)(前|后)</string>
+        <string>每(天|星期)</string>
+        <string>(早上|下午|晚上)好</string>
+        <string>(估计|大概)时间</string>
+        <string>到(公司|单位)</string>
+        <string>(休假|休息|请假)</string>
+        <string>点(.{0,10})打电话</string>
+        <string>过期</string>
+        <string>回复函|(请)?(答|回)复</string>
+        <string>对不起|很抱歉|不好意思</string>
+        <string>去年|上周|上(个)?(星期|礼拜)|上个月</string>
+</array>
+</plist>

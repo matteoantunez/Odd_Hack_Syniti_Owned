@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SortedTokensToDownWeight</key>
+	<array>
+		<string>address</string>
+		<string>arrow</string>
+		<string>click</string>
+		<string>format</string>
+		<string>function</string>
+		<string>image</string>
+		<string>issue</string>
+		<string>key</string>
+		<string>log</string>
+		<string>manual</string>
+		<string>monitor</string>
+		<string>numbers</string>
+		<string>off</string>
+		<string>on</string>
+		<string>pages</string>
+		<string>screen</string>
+		<string>track</string>
+		<string>type</string>
+		<string>volume</string>
+		<string>windows</string>
+	</array>
+</dict>
+</plist>

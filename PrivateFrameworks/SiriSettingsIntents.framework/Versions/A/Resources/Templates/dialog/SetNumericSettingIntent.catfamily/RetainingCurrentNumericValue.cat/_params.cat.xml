@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetNumericSettingIntent#RetainingCurrentNumericValue">
+	<meta name="description" value="The user changed their mind after getting a confirmation."/>
+	<meta name="category" value="User Declined"/>
+	<meta name="readyForLoc" value="true"/>
+	<parameters>
+		<parameter name="deviceState" description="Contains details about the user’s device." type="sirikit.DeviceState"/>
+	</parameters>
+</cat>

@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("testing",function(e){return/^TemplateTest/.test(e.subject)},function(e){if(/^TemplateTest/.test(e.subject)){var t=Scanner.fromMessage(e);t.setLocale("en_US");var n=t.getSpan().innerCapture(/Dear (.+?),/,1),a=t.getSpan().innerCapture(/Failure is a (.+?)\./,1);ASSERT(n,a)}},"SG2b604b86")]);

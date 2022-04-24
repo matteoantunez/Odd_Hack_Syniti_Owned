@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>Label</key>
+	<string>com.apple.batteryintelligenced</string>
+	<key>UserName</key>
+	<string>root</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.batteryintelligenced.dailytask</key>
+			<dict>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>Interval</key>
+				<integer>86400</integer>
+				<key>AllowBattery</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>Program</key>
+	<string>/usr/libexec/batteryintelligenced</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+</dict>
+</plist>

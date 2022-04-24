@@ -1,0 +1,1 @@
+(function(){return function(n){return(n=n.replace(/<script type="application\/ld(?:\u2020|&#134;)json">/,'<script type="application/ld+json">')).replace('style="display:none>','style="display:none">')}}).call();

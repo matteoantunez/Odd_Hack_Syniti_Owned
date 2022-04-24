@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>Hozzáférés korlátozva</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- Localization notes: see blockpage.html  -->
+	
+	<body>
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						Sajnáljuk, nem tekintheti meg a webhely oldalait.
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						A(z)
+						&#8220;<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>&#8221;
+						oldalt nem tekintheti meg, mivel az oldal nem szerepel a Képernyőidő funkcióval jóváhagyott oldalakat tartalmazó listán.
+					</p>
+					
+					<p class="text"		id="HowToAddText">
+						Ha a webhelyet hozzá szeretné adni a jóváhagyott oldalak listájához, kattintson a Webhely hozzáadása gombra. 
+					</p>
+					
+					<form class="button" id="OverrideForm" name="OverrideInfo"	action="SEND_FORM_TO_URL_NO_LOC"	method="POST">
+						<input type="hidden" name="Title"	value="PAGE_TO_OVERRIDE_TITLE_NO_LOC" />
+						<input type="hidden" name="URL" 	value="PAGE_TO_OVERRIDE_URL_NO_LOC" />
+						
+						<input type="submit" value="  Webhely hozzáadása  " />
+					</form>
+
+					<p class="text"		id="GoBackText">
+						Ha vissza szeretne térni az előző oldalra, kattintson a Visszalépés gombra. 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  Visszalépés  " onclick="GoBack()" />
+					</p>
+					
+					
+					<p class="title"			id="AllowedWebsitesTitle">
+						Engedélyezett webhelyek
+					</p>			
+					
+					<div class="allowedlinks"	id="AllowedWebsitesLinks">
+						 
+						ALLOWED_LIST_OF_WEBSITES_NO_LOC
+						
+						<!--
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>						
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>						
+						<a href="www.apple.com">Apple</a>
+						<br>
+						-->	
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+        <script	type="text/javascript">
+            LoadPage( 'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 32, 51);
+        </script>
+
+	</body>
+
+</html>

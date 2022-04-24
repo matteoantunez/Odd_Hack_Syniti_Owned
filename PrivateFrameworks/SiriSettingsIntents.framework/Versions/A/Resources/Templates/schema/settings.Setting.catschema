@@ -1,0 +1,17 @@
+#CAT-SCHEMA 1.0
+
+name: settings.Setting
+
+inputs:
+    identifier:
+        type: dialog.String
+        description: The unique identifier for this setting.
+        optional: no
+        access_mode: public
+
+properties:
+    identifier:
+        type: dialog.String
+        description: The unique identifier for this setting.
+        sample_value: AIRPLANEMODE, LOWPOWERMODE
+        optional: false

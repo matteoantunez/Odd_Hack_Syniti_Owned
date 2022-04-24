@@ -1,0 +1,40 @@
+; =========================================================================
+; standard client DSPgraph
+; =========================================================================
+
+graphName "SiriPlayback"
+
+; -------------------------------------------------------------------------
+; Definitions
+; -------------------------------------------------------------------------
+[def sampleRateIn 44100]
+[def numChannels 2]
+
+; -------------------------------------------------------------------------
+; Graph Ins and Outs
+; -------------------------------------------------------------------------
+
+in in
+out out
+
+; -------------------------------------------------------------------------
+; Boxes and AUs
+; -------------------------------------------------------------------------
+box NFP nfnp 1 1
+box AUChannelSelector ( aufx clsl appl ) 1 1
+box AUNBandEQ (aufx nbeq appl) 1 1
+box AUMeisterStueck (aufx mstk appl) 1 1
+
+; -------------------------------------------------------------------------
+; DSP Graph topology
+; -------------------------------------------------------------------------
+wire in NFP ([sampleRateIn] [numChannels])
+wire NFP AUChannelSelector ([sampleRateIn] [numChannels])
+wire AUChannelSelector AUNBandEQ ([sampleRateIn] [numChannels])
+wire AUNBandEQ AUMeisterStueck ([sampleRateIn] [numChannels])
+
+; -------------------------------------------------------------------------
+; Graph outputs
+; -------------------------------------------------------------------------
+
+wire AUMeisterStueck out ([sampleRateIn] [numChannels])

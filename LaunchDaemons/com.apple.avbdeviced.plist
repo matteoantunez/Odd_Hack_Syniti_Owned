@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.avbdeviced</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.avb.audio.driver</key>
+		<true/>
+		<key>com.apple.avb.audio.configuration</key>
+		<true/>
+		<key>com.apple.avb.acquiremode</key>
+		<true/>
+		<key>com.apple.avb.daemonconfig</key>
+		<true/>
+	</dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/Library/Application Support/Apple/com.apple.avbdeviced.devices</key>
+			<true/>
+			<key>/Library/Application Support/Apple/com.apple.avbdeviced.virtual</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/sbin/avbdeviced</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>ATDECCRemoteDevice</key>
+			<dict>
+				<key>IOProviderClass</key>
+				<string>IOAVB17221RemoteEntity</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

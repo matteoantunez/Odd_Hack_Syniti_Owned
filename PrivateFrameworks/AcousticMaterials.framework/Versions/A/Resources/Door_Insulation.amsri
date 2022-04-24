@@ -1,0 +1,13 @@
+{
+    "materialName": "Door_Insulation",
+    "materialDescription": "Doors with insulating filling between panels, such as wood fiber, air, glass fiber. Hardwood doors are also included due to insulating characters of the material.",
+    "frequencyBands": [20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500, 630,800,1000,1250,1600,2000,2500,3150,4000,5000,6300,8000,10000,12500,16000,20000],
+    "soundReductionIndexUserData": [22.2,22.2,22.2,22.2,22.2,22.2,21.7,21.8,21.9,22.6,24.5,25.6,26.5,27.7,29.2,29.8,29.9,30.5,31.5,31.5,31.8,33.9,35.4,36.8,36.5,36.2,35.9,35.9,35.9,35.9,35.9],
+    "soundReductionIndexReferenceData": [22.2,22.2,22.2,22.2,22.2,22.2,21.7,21.8,21.9,22.6,24.5,25.6,26.5,27.7,29.2,29.8,29.9,30.5,31.5,31.5,31.8,33.9,35.4,36.8,36.5,36.2,35.9,35.9,35.9,35.9,35.9],
+    "uncertaintyReferenceData": [4.7,4.7,4.7,4.7,4.7,4.7,4.5,4.4,4.3,4.4,4.7,5.3,5.4,5.5,6.0,6.1,6.7,6.3,5.7,6.1,6.8,5.8,5.3,5.3,5.2,5.3,5.4,5.4,5.4,5.4,5.4],
+    "averageSoundReductionIndex": 29,
+    "numDataPointsReferenceData": [0,0,0,0,0,2,0,0,20,7,7,20,7,7,20,7,7,20,7,7,20,7,7,20,0,0,6,0,0,0,0],
+    "totalNumDataSetsReferenceData": 20,
+    "materialDepth": 0.0461,
+    "uncertaintyMaterialDepth": 0.01302
+}

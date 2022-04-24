@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT::INTERVIEW</key>
+	<array>
+		<string>会见|接见|接待|采访|面试|会谈|面谈</string>
+	</array>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<array>
+		<string>(妇女健康|妇科|产前)检查</string>
+		<string>(定期|常规|例行)?(儿科|内科|外科)?(((身体|健康)检查)|体检)</string>
+		<string>(定期|常规|例行|预约)?(产检|血检|尿检)</string>
+		<string>(预约)?(门诊|体检|挂号|就诊|就医)</string>
+	</array>
+</dict>
+</plist>

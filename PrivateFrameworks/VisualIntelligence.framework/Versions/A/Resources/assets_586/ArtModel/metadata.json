@@ -1,0 +1,74 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float32, Int8)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "embedding",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "AddBroadcastable" : 8,
+      "UnaryThreshold" : 28,
+      "Convolution" : 64,
+      "MaxBroadcastable" : 1,
+      "Scale" : 5,
+      "Transpose" : 1,
+      "LoadConstantND" : 2,
+      "MultiplyBroadcastable" : 9,
+      "PaddingConstant" : 5,
+      "UnaryRsqrt" : 1,
+      "ReduceSum" : 1,
+      "Add" : 23,
+      "Multiply" : 49,
+      "ActivationLinear" : 56,
+      "ActivationReLU" : 48,
+      "PoolingAverage" : 9
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1.1",
+      "com.github.apple.coremltools.source" : "tensorflow==1.13.2"
+    },
+    "generatedClassName" : "ArtModel",
+    "inputSchema" : [
+      {
+        "formattedType" : "Image (Color 360 × 360)",
+        "hasSizeFlexibility" : "1",
+        "shortDescription" : "",
+        "sizeRange" : "[[360, 360], [360, 360]]",
+        "width" : "360",
+        "type" : "Image",
+        "isColor" : "1",
+        "height" : "360",
+        "sizeFlexibility" : "360 × 360",
+        "colorspace" : "RGB",
+        "name" : "image",
+        "isOptional" : "0"
+      }
+    ],
+    "method" : "predict"
+  }
+]

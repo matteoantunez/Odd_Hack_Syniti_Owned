@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.datastored</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/datastored</string>
+	</array>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<false/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>PublishesEvents</key>
+	<string>com.apple.xpc.datastores.publish</string>
+	<key>Disabled</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.xpc.datastore</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

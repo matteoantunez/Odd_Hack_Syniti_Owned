@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Assets</key>
+    <array>
+      <dict>
+	<key>Footprint</key>
+	<string>premium</string>
+	<key>Gender</key>
+	<string>female</string>
+	<key>Languages</key>
+	<array>
+	  <string>en-US</string>
+	</array>
+	<key>Name</key>
+	<string>nora</string>
+	<key>Type</key>
+	<string>neural</string>
+	<key>Compatibility</key>
+	<integer>36</integer>
+	<key>Version</key>
+	<integer>999</integer>
+      </dict>
+    </array>
+    <key>Source</key>
+    <string>Preinstalled</string>
+    <key>FormatVersion</key>
+    <integer>1</integer>
+    <key>LastUpdated</key>
+    <date>2021-01-15T01:02:23Z</date>
+</dict>
+</plist>

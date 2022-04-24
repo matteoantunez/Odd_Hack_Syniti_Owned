@@ -1,0 +1,34 @@
+<!ELEMENT pattern (settings|meta|group)*>
+<!ATTLIST pattern
+        xmlns CDATA #REQUIRED
+        type CDATA #REQUIRED
+        id CDATA #IMPLIED>
+
+<!-- The pattern settings -->
+<!ELEMENT settings (setting)*>
+<!ELEMENT setting EMPTY>
+<!ATTLIST setting
+        name CDATA #REQUIRED
+        value CDATA #REQUIRED>
+
+<!-- Any metadata for this pattern file, e.g., description, category, tags, etc. -->
+<!ELEMENT meta EMPTY>
+<!ATTLIST meta
+        name CDATA #REQUIRED
+        value CDATA #REQUIRED>
+
+<!-- groups hold a pairing of dialog and visual components -->
+<!ELEMENT group (dialog|visual)*>
+<!ATTLIST group
+        name CDATA #REQUIRED
+        pattern CDATA #IMPLIED>
+
+<!-- a single dialog component within a group -->
+<!ELEMENT dialog EMPTY>
+<!ATTLIST dialog
+        id CDATA #REQUIRED>
+
+<!-- a single visual component within a group -->
+<!ELEMENT visual EMPTY>
+<!ATTLIST visual
+        id CDATA #REQUIRED>

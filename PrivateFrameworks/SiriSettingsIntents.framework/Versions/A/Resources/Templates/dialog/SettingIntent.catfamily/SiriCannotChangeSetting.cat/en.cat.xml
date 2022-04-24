@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#SiriCannotChangeSetting" locale="en">
+  <first>
+      <dialog condition="buttonExists">I can’t help with that, but you can change it in Settings.</dialog>
+      <dialog>I'm not able to change that setting for you.</dialog>
+  </first>
+</cat>

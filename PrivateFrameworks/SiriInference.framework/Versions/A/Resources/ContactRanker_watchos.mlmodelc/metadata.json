@@ -1,0 +1,86 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "v1.6.1.watchos",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "scores",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "showToUser",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "topMatchIsConfident",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Double",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "46 × 1...",
+        "shapeRange" : "[[46, 46], [1, -1]]",
+        "formattedType" : "MultiArray (Double 46 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[46, 1]",
+        "name" : "inputs",
+        "shortDescription" : ""
+      }
+    ],
+    "generatedClassName" : "ContactRanker_watchos",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ReduceSum" : 1,
+      "GreaterThan" : 1,
+      "Squeeze" : 1,
+      "TopK" : 1,
+      "Equal" : 1,
+      "BatchedMatmul" : 1,
+      "LoadConstantND" : 4,
+      "LogicalAnd" : 1,
+      "Slice" : 1,
+      "GreaterEqual" : 1
+    },
+    "method" : "predict"
+  }
+]

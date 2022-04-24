@@ -1,0 +1,29 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.EntityState
+
+inputs:
+  attribute:
+    access_mode: public
+  stateValue:
+    access_mode: public
+    type: homeAutomation.EntityStateValue
+  userTaskType:
+    access_mode: public
+    type: dialog.String
+    
+properties:
+  toString:
+    type: dialog.String
+    semantic_concept: homeAutomationState
+    description: Return string form of the value with semantic via attribute.
+  attribute:
+    type: dialog.String
+    semantic_concept: homeAutomationNoun
+    description: The attribute of the state.
+  stateValue:
+    type: homeAutomation.EntityStateValue
+    description: The value of the state.
+  userTaskType:
+    type: dialog.String
+    description: The user task type associated with the state. This SpeakableString has no associated Semantic and is not valid for including in dialog output.

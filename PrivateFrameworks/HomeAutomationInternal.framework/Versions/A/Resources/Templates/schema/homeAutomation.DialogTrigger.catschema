@@ -1,0 +1,40 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.DialogTrigger
+
+inputs:
+  event:
+    access_mode: public
+  time:
+    access_mode: public
+  offset:
+    access_mode: public
+  home:
+    access_mode: public
+  isOffsetToPast:
+    access_mode: public
+    
+properties:
+  time:
+    type: dialog.Calendar
+    description: If provided, defines the time of the day that will trigger the future action
+  event:
+    type: dialog.String
+    semantic_concept: homeAutomationEvent
+    description: If provided, defines the event that will trigger the future action
+  offset:
+    type: dialog.Duration
+    description: If provided, defines the offset from the event that the trigger sets off at
+  home:
+    type: dialog.String
+    description: If provided, defines the home that the trigger will set off in
+  isOffsetToPast:
+    type: dialog.Boolean
+    description: True if the offset is towards the past "e.g. thirty minutes before", rather than towards the future "e.g. thirty minutes after"
+  isEventBased:
+    type: dialog.Boolean
+    description: True if the trigger is event based
+  isTimeBased:
+    type: dialog.Boolean
+    description: True if the trigger is time based
+

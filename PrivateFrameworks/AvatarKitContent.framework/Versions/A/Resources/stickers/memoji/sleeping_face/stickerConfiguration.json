@@ -1,0 +1,181 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/cam.scnz"
+  },
+  "emoji" : "😴",
+  "identifier" : "sleeping_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "memoji" : {
+      "lowerBack_DYN" : {
+        "offset" : [
+          -0.019962310791015625,
+          0.89807939529418945,
+          2.9254445621518244e-07
+        ]
+      },
+      "lowerBackLeft_DYN" : {
+        "offset" : [
+          -0.042048454284667969,
+          0.66714906692504883,
+          -0.8612295389175415
+        ]
+      },
+      "lowerBackRight_DYN" : {
+        "offset" : [
+          -0.042049407958984375,
+          0.66714954376220703,
+          0.86122894287109375
+        ]
+      },
+      "lowerFront_DYN" : {
+        "offset" : [
+          -0.065907478332519531,
+          0.943359375,
+          1.4038634787993942e-07
+        ]
+      },
+      "lowerFrontLeft_DYN" : {
+        "offset" : [
+          -0.085750579833984375,
+          -0.62614965438842773,
+          -0.9788362979888916
+        ]
+      },
+      "lowerFrontRight_DYN" : {
+        "offset" : [
+          -0.085749626159667969,
+          -0.62614965438842773,
+          0.97883725166320801
+        ]
+      },
+      "lowerLeft_DYN" : {
+        "offset" : [
+          -0.083613395690917969,
+          0.060731410980224609,
+          -1.2931528091430664
+        ]
+      },
+      "lowerRight_DYN" : {
+        "offset" : [
+          -0.083614349365234375,
+          -0.060729503631591797,
+          -1.2931526899337769
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "eyeBlink_L" : 1,
+    "eyeBlink_R" : 1,
+    "jawOpen" : 0.20185458660125732,
+    "mouthSmile_L" : 0.19559231400489807,
+    "mouthSmile_R" : 0.22038573026657104,
+    "mouthStretch_L" : 0.02627808041870594,
+    "neckOrientation" : [
+      -0.066273912787437439,
+      0,
+      0,
+      0.99780154228210449
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "adjustments" : {
+        "age" : [
+          {
+            "position" : {
+              "x" : 0,
+              "y" : 0,
+              "z" : 0
+            },
+            "value" : "child"
+          },
+          {
+            "position" : {
+              "x" : 0,
+              "y" : -0.01,
+              "z" : 0
+            },
+            "value" : "child_75"
+          },
+          {
+            "position" : {
+              "x" : 0,
+              "y" : -0.02,
+              "z" : 0
+            },
+            "value" : "child_50"
+          },
+          {
+            "position" : {
+              "x" : 0,
+              "y" : -0.029999999999999999,
+              "z" : 0
+            },
+            "value" : "child_25"
+          }
+        ]
+      },
+      "image" : "../../shared/sleeping_face/zs.heic",
+      "position" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : 20
+      }
+    },
+    {
+      "adjustments" : {
+        "age" : [
+          {
+            "position" : {
+              "x" : 0,
+              "y" : 0,
+              "z" : 0
+            },
+            "value" : "child"
+          },
+          {
+            "position" : {
+              "x" : 0,
+              "y" : -0.01,
+              "z" : 0
+            },
+            "value" : "child_75"
+          },
+          {
+            "position" : {
+              "x" : 0,
+              "y" : -0.02,
+              "z" : 0
+            },
+            "value" : "child_50"
+          },
+          {
+            "position" : {
+              "x" : 0,
+              "y" : -0.029999999999999999,
+              "z" : 0
+            },
+            "value" : "child_25"
+          }
+        ]
+      },
+      "image" : "zs_shadow.heic",
+      "position" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : 19
+      }
+    }
+  ]
+}

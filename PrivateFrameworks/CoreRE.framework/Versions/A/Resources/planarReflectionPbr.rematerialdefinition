@@ -1,0 +1,51 @@
+{
+    "Name": "PlanarReflectionPbr",
+    "OverrideMaterial": "engine:pbrCommon.rematerialdefinition",
+    "Techniques": [
+        {
+            "Name": "ReflectiveOpaque",
+            "VertexShader": {
+                "Entry": "vsRealityPbr"
+            },
+            "PixelShader": {
+                "Entry": "fsRealityPbr"
+            },
+            "State" : {
+                "AlphaBlend" : false,
+                "WriteDepth" : true,
+                "DepthCompareFunction" : "GreaterEqual"
+            },
+            "FunctionConstants" : {
+                "EnableBaseColorMap"        : "false",
+                "EnableNormalMap"           : "true",
+                "EnableEmissiveMap"         : "false",
+                "EnableAreaLight"           : "true",
+                "EnableSeparateRMAS"        : "true",
+                "EnableSingleRMAS"          : "false",
+                "EnableRoughnessMap"        : "false",
+                "EnableMetallicMap"         : "false",
+                "EnableAOMap"               : "true",
+                "EnableSpecularMap"         : "false",
+                "EnableClearcoat"           : "false",
+                "VertexColorOption"         : "0",
+                "EnableIBL"                 : "true",
+                "UseBaseColorMapAsTintMask" : "false",
+                "EnableAREnvProbe"          : "false",
+                "EnableDynamicLighting"     : "false",
+                "EnableCloth"               : "false",
+                "EnableSSAO"                : "false",
+                "EnableSSDO"                : "false",
+                "EnableMultiUVs"            : "false",
+                "EnablePlanarReflection"    : "true",
+            },
+            "DebugMapping": "PbrDebug"
+        }
+    ],
+    "TechniqueMapping": {
+        "Opaque": "ReflectiveOpaque",
+        "Shadow": "Shadow",
+        "SSO_GBuffer":"SSO_GBufferMtl"
+    }
+}
+
+

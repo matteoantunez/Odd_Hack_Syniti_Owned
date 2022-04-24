@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lowFrequency</key>
+	<integer>125</integer>
+	<key>lowPattern</key>
+	<integer>0</integer>
+	<key>lowSharpness</key>
+	<integer>1</integer>
+	<key>midFrequency</key>
+	<integer>1000</integer>
+	<key>midPattern</key>
+	<real>0.3292129039764404</real>
+	<key>midSharpness</key>
+	<real>3.732019782066345</real>
+	<key>highFrequency</key>
+	<real>3000</real>
+	<key>highPattern</key>
+	<real>0.4775009453296661</real>
+	<key>highSharpness</key>
+	<real>4.563073813915253</real>
+</dict>
+</plist>

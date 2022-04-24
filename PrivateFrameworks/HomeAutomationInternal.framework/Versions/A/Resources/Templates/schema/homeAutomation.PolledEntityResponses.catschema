@@ -1,0 +1,16 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.PolledEntityResponses
+extends: homeAutomation.EntityResponses
+description: Entity responses from entities that required polling, such as door locks, garage doors or security systems.
+    
+properties:
+  inTarget:
+    type: homeAutomation.PolledEntityResponses
+    description: Returns the sublist of EntityResponses filtered to include only those in the target state. When an entityResponse has only one state, it is in target.
+  notInTarget:
+    type: homeAutomation.PolledEntityResponses
+    description: Returns the sublist of EntityResponses filtered to include only those not in the target state. When an entityResponse has two states, it is not in target. states[0] is target value while states[1] is current value.
+  targetState:
+    type: homeAutomation.EntityState
+    description: The desired target state for the polled entities. Note, this info can be derived from inTarget/notInTarget respectively. It is currently left for backward compatibility and will be removed after the localization adopts the change.

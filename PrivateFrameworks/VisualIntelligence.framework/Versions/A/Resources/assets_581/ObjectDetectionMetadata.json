@@ -1,0 +1,42 @@
+{
+  "prefilter_classes": true,
+  "crop_and_scale_option": 1,
+  "default_threshold": 0.2,
+  "thresholds": {
+    "47": 0.5,
+    "48": 0.5
+  },
+  "box_output_index": 1,
+  "box_output_name": "nmsBoxes",
+  "confidence_output_index": 0,
+  "confidence_output_name": "nmsScores",
+  "model_description": {
+      "inputs": [
+        {
+          "width": 512,
+          "height": 512,
+          "layer_name": "image",
+          "pixel_format_type": 1111970369
+        }
+      ],
+      "outputs": [
+        {
+          "shape": [
+            1,
+            50,
+            80
+          ],
+          "layer_name": "nmsScores"
+        },
+        {
+          "shape": [
+            1,
+            50,
+            4
+          ],
+          "layer_name": "nmsBoxes"
+        }
+      ],
+      "weights_checksum": ""
+  }
+}

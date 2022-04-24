@@ -1,0 +1,25 @@
+{
+    "model": [
+        {
+            "info": {
+				"name": "puck",
+				"muid": 1227230898458463907
+			}
+        }
+    ],
+    "materialMap": [
+        {
+            "info": {
+                "name": "regularPuck",
+                "muid": 1226104998551640113
+            }
+        },
+        {
+            "info": {
+                "name": "occludedPuck",
+                "muid": 1226297690876737074
+            }
+        }
+    ],
+	"material": []
+}

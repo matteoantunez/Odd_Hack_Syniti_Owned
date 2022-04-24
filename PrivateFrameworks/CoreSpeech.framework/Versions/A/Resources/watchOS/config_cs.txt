@@ -1,0 +1,7 @@
+#include "$(NROOT)/config.txt"
+
+[external]
+twoshot_phrase_index: 1
+
+[detector]
+keyword_label:   hs,sil30

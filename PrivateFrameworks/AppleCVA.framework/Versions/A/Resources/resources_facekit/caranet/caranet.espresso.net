@@ -1,0 +1,4149 @@
+{
+  "storage" : "caranet.espresso.weights",
+  "properties" : {
+    "ane_compiler_batch" : "1",
+    "compress_sparse" : "1",
+    "network_version" : "cara_chkp_id=666184__tongue_chkp_id=467974"
+  },
+  "configurations" : {
+    "3" : {
+      "input_shapes" : {
+        "network-inputs\/transpose:0_bridge" : {
+          "k" : 3,
+          "w" : 128,
+          "n" : 3,
+          "h" : 128
+        },
+        "network-inputs\/transpose_1:0_bridge" : {
+          "k" : 10,
+          "w" : 1,
+          "n" : 3,
+          "h" : 1
+        }
+      }
+    },
+    "1" : {
+      "input_shapes" : {
+        "network-inputs\/transpose:0_bridge" : {
+          "k" : 3,
+          "w" : 128,
+          "n" : 1,
+          "h" : 128
+        },
+        "network-inputs\/transpose_1:0_bridge" : {
+          "k" : 10,
+          "w" : 1,
+          "n" : 1,
+          "h" : 1
+        }
+      }
+    },
+    "4" : {
+      "input_shapes" : {
+        "network-inputs\/transpose:0_bridge" : {
+          "k" : 3,
+          "w" : 128,
+          "n" : 4,
+          "h" : 128
+        },
+        "network-inputs\/transpose_1:0_bridge" : {
+          "k" : 10,
+          "w" : 1,
+          "n" : 4,
+          "h" : 1
+        }
+      }
+    },
+    "2" : {
+      "input_shapes" : {
+        "network-inputs\/transpose:0_bridge" : {
+          "k" : 3,
+          "w" : 128,
+          "n" : 2,
+          "h" : 128
+        },
+        "network-inputs\/transpose_1:0_bridge" : {
+          "k" : 10,
+          "w" : 1,
+          "n" : 2,
+          "h" : 1
+        }
+      }
+    }
+  },
+  "format_version" : 200,
+  "analyses" : {
+
+  },
+  "layers" : [
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_rgb\/0-conv-block\/add",
+      "K" : 3,
+      "blob_biases" : 1,
+      "stride_x" : 2,
+      "name" : "features_rgb\/0-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "network-inputs\/transpose:0_bridge",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 3
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/0-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/0-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/0-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/1-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/add",
+      "K" : 32,
+      "blob_biases" : 5,
+      "name" : "features_rgb\/1-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/0-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 7
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/1-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/1-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/1-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/1-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/1-densenet\/1-concat",
+      "bottom" : "features_rgb\/1-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/leaky_relu,features_rgb\/0-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/1-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/add",
+      "K" : 48,
+      "blob_biases" : 9,
+      "name" : "features_rgb\/1-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/1-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 11
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/1-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/1-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/1-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/1-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/1-densenet\/3-concat",
+      "bottom" : "features_rgb\/1-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/leaky_relu,features_rgb\/1-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/1-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "K" : 64,
+      "blob_biases" : 13,
+      "name" : "features_rgb\/1-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/1-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 15
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/1-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/1-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/1-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/1-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/1-densenet\/5-concat",
+      "bottom" : "features_rgb\/1-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu,features_rgb\/1-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/2-conv-block\/add",
+      "K" : 80,
+      "blob_biases" : 17,
+      "name" : "features_rgb\/2-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/1-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 19
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/2-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/2-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/2-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_rgb\/3-conv-block\/add",
+      "K" : 32,
+      "blob_biases" : 21,
+      "stride_x" : 2,
+      "name" : "features_rgb\/3-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_rgb\/2-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 23
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/3-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/3-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/3-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "K" : 64,
+      "blob_biases" : 25,
+      "name" : "features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/3-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 27
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/4-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/4-densenet\/1-concat",
+      "bottom" : "features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu,features_rgb\/3-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/add",
+      "K" : 80,
+      "blob_biases" : 29,
+      "name" : "features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/4-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 31
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/4-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/4-densenet\/3-concat",
+      "bottom" : "features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/leaky_relu,features_rgb\/4-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/add",
+      "K" : 96,
+      "blob_biases" : 33,
+      "name" : "features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/4-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 35
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/4-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/4-densenet\/5-concat",
+      "bottom" : "features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/leaky_relu,features_rgb\/4-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/5-conv-block\/add",
+      "K" : 112,
+      "blob_biases" : 37,
+      "name" : "features_rgb\/5-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_rgb\/4-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 39
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/5-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/5-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/5-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_rgb\/6-conv-block\/add",
+      "K" : 64,
+      "blob_biases" : 41,
+      "stride_x" : 2,
+      "name" : "features_rgb\/6-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_rgb\/5-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 43
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/6-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/6-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/6-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "K" : 64,
+      "blob_biases" : 45,
+      "name" : "features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/6-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 47
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/7-densenet\/1-concat",
+      "bottom" : "features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/leaky_relu,features_rgb\/6-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/add",
+      "K" : 80,
+      "blob_biases" : 49,
+      "name" : "features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/7-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 51
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/7-densenet\/3-concat",
+      "bottom" : "features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/leaky_relu,features_rgb\/7-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/add",
+      "K" : 96,
+      "blob_biases" : 53,
+      "name" : "features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/7-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 55
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/7-densenet\/5-concat",
+      "bottom" : "features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/leaky_relu,features_rgb\/7-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/add",
+      "K" : 112,
+      "blob_biases" : 57,
+      "name" : "features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_rgb\/7-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 59
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/7-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/7-densenet\/7-concat",
+      "bottom" : "features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/leaky_relu,features_rgb\/7-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/8-conv-block\/add",
+      "K" : 128,
+      "blob_biases" : 61,
+      "name" : "features_rgb\/8-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_rgb\/7-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 63
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/8-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/8-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/8-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_rgb\/9-conv-block\/add",
+      "K" : 64,
+      "blob_biases" : 65,
+      "stride_x" : 2,
+      "name" : "features_rgb\/9-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_rgb\/8-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 67
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/9-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/9-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/9-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/add",
+      "K" : 64,
+      "blob_biases" : 69,
+      "name" : "features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/9-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 71
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/10-densenet\/1-concat",
+      "bottom" : "features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/leaky_relu,features_rgb\/9-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/10-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/add",
+      "K" : 96,
+      "blob_biases" : 73,
+      "name" : "features_rgb\/10-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/10-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 75
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/10-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/10-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/10-densenet\/3-concat",
+      "bottom" : "features_rgb\/10-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/leaky_relu,features_rgb\/10-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/10-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/add",
+      "K" : 128,
+      "blob_biases" : 77,
+      "name" : "features_rgb\/10-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/10-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 79
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/10-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/10-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/10-densenet\/5-concat",
+      "bottom" : "features_rgb\/10-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/leaky_relu,features_rgb\/10-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/10-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/add",
+      "K" : 160,
+      "blob_biases" : 81,
+      "name" : "features_rgb\/10-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/10-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 83
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/10-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/10-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/10-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/10-densenet\/7-concat",
+      "bottom" : "features_rgb\/10-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/leaky_relu,features_rgb\/10-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/11-conv-block\/add",
+      "K" : 192,
+      "blob_biases" : 85,
+      "name" : "features_rgb\/11-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_rgb\/10-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 87
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/11-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/11-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/11-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_rgb\/12-conv-block\/add",
+      "K" : 64,
+      "blob_biases" : 89,
+      "stride_x" : 2,
+      "name" : "features_rgb\/12-conv-block\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "features_rgb\/11-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 91
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/12-conv-block\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/12-conv-block\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/12-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/13-densenet\/0-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/add",
+      "K" : 128,
+      "blob_biases" : 93,
+      "name" : "features_rgb\/13-densenet\/0-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/12-conv-block\/leaky_relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 95
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/13-densenet\/0-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/0-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/13-densenet\/0-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/13-densenet\/1-concat",
+      "bottom" : "features_rgb\/13-densenet\/0-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/leaky_relu,features_rgb\/12-conv-block\/leaky_relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/13-densenet\/2-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/add",
+      "K" : 160,
+      "blob_biases" : 97,
+      "name" : "features_rgb\/13-densenet\/2-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/13-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 99
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/13-densenet\/2-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/2-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/13-densenet\/2-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/13-densenet\/3-concat",
+      "bottom" : "features_rgb\/13-densenet\/2-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/leaky_relu,features_rgb\/13-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/13-densenet\/4-conv-block\/conv-3x3-192-32-variables\/conv-3x3-192-32-variables\/add",
+      "K" : 192,
+      "blob_biases" : 101,
+      "name" : "features_rgb\/13-densenet\/4-conv-block\/conv-3x3-192-32-variables\/conv-3x3-192-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/13-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 103
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/13-densenet\/4-conv-block\/conv-3x3-192-32-variables\/conv-3x3-192-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/4-conv-block\/conv-3x3-192-32-variables\/conv-3x3-192-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/13-densenet\/4-conv-block\/conv-3x3-192-32-variables\/conv-3x3-192-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/13-densenet\/5-concat",
+      "bottom" : "features_rgb\/13-densenet\/4-conv-block\/conv-3x3-192-32-variables\/conv-3x3-192-32-variables\/leaky_relu,features_rgb\/13-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_rgb\/13-densenet\/6-conv-block\/conv-3x3-224-32-variables\/conv-3x3-224-32-variables\/add",
+      "K" : 224,
+      "blob_biases" : 105,
+      "name" : "features_rgb\/13-densenet\/6-conv-block\/conv-3x3-224-32-variables\/conv-3x3-224-32-variables\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_rgb\/13-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 107
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "features_rgb\/13-densenet\/6-conv-block\/conv-3x3-224-32-variables\/conv-3x3-224-32-variables\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/6-conv-block\/conv-3x3-224-32-variables\/conv-3x3-224-32-variables\/leaky_relu",
+      "type" : "activation",
+      "name" : "features_rgb\/13-densenet\/6-conv-block\/conv-3x3-224-32-variables\/conv-3x3-224-32-variables\/leaky_relu"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_rgb\/13-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "features_rgb\/13-densenet\/7-concat",
+      "bottom" : "features_rgb\/13-densenet\/6-conv-block\/conv-3x3-224-32-variables\/conv-3x3-224-32-variables\/leaky_relu,features_rgb\/13-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 4,
+      "top" : "features_rgb\/14-avg-pool",
+      "top_shape_style" : 0,
+      "stride_x" : 4,
+      "avg_or_max" : 0,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "features_rgb\/14-avg-pool",
+      "pad_t" : 0,
+      "stride_y" : 4,
+      "bottom" : "features_rgb\/13-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 4,
+      "pad_value" : 0
+    },
+    {
+      "bottom" : "network-inputs\/transpose_1:0_bridge",
+      "end" : 1,
+      "start" : 0,
+      "weights" : {
+
+      },
+      "axis" : 0,
+      "debug_info" : "",
+      "top" : "index",
+      "type" : "slice",
+      "name" : "index"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "concatenate",
+      "type" : "concat",
+      "name" : "concatenate",
+      "bottom" : "features_rgb\/14-avg-pool,index"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "id_fusion_features\/add",
+      "K" : 266,
+      "blob_biases" : 109,
+      "name" : "id_fusion_features\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 256,
+      "bottom" : "concatenate",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 111
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "id_fusion_features\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "id_fusion_features\/id_fusion_features",
+      "type" : "activation",
+      "name" : "id_fusion_features\/id_fusion_features"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "bs_fc1\/add",
+      "K" : 256,
+      "blob_biases" : 113,
+      "name" : "bs_fc1\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 256,
+      "bottom" : "id_fusion_features\/id_fusion_features",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 115
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "bs_fc1\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "bs_fc1\/bs_fc1",
+      "type" : "activation",
+      "name" : "bs_fc1\/bs_fc1"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "bs_fc2\/add",
+      "K" : 256,
+      "blob_biases" : 117,
+      "name" : "bs_fc2\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "bs_fc1\/bs_fc1",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 119
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "bs_fc2\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "bs_fc2\/bs_fc2",
+      "type" : "activation",
+      "name" : "bs_fc2\/bs_fc2"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "bs_latent_output",
+      "K" : 128,
+      "blob_biases" : 121,
+      "name" : "bs_latent_output",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 35,
+      "bottom" : "bs_fc2\/bs_fc2",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "blob_weights_f16" : 123
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "angles_fc1\/add",
+      "K" : 256,
+      "blob_biases" : 125,
+      "name" : "angles_fc1\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "id_fusion_features\/id_fusion_features",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 127
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "angles_fc1\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "angles_fc1\/angles_fc1",
+      "type" : "activation",
+      "name" : "angles_fc1\/angles_fc1"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "angles_fc2\/add",
+      "K" : 32,
+      "blob_biases" : 129,
+      "name" : "angles_fc2\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "angles_fc1\/angles_fc1",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 131
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "angles_fc2\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "angles_fc2\/angles_fc2",
+      "type" : "activation",
+      "name" : "angles_fc2\/angles_fc2"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "angles_regression\/angles_regression",
+      "K" : 32,
+      "blob_biases" : 133,
+      "name" : "angles_regression\/angles_regression",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 3,
+      "bottom" : "angles_fc2\/angles_fc2",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 135
+    },
+    {
+      "bottom" : "angles_regression\/angles_regression",
+      "alpha" : -1.5700000524520874,
+      "beta" : 1.5700000524520874,
+      "mode" : 14,
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "angles_output",
+      "type" : "activation",
+      "name" : "angles_output",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "translation_fc1\/add",
+      "K" : 256,
+      "blob_biases" : 137,
+      "name" : "translation_fc1\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "id_fusion_features\/id_fusion_features",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 139
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "translation_fc1\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "translation_fc1\/translation_fc1",
+      "type" : "activation",
+      "name" : "translation_fc1\/translation_fc1"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "translation_fc2\/add",
+      "K" : 32,
+      "blob_biases" : 141,
+      "name" : "translation_fc2\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "translation_fc1\/translation_fc1",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 143
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "translation_fc2\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "translation_fc2\/translation_fc2",
+      "type" : "activation",
+      "name" : "translation_fc2\/translation_fc2"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "translation_output",
+      "K" : 32,
+      "blob_biases" : 145,
+      "name" : "translation_output",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 3,
+      "bottom" : "translation_fc2\/translation_fc2",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "blob_weights_f16" : 147
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "gaze_fc1\/add",
+      "K" : 256,
+      "blob_biases" : 149,
+      "name" : "gaze_fc1\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "id_fusion_features\/id_fusion_features",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 151
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "gaze_fc1\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "gaze_fc1\/gaze_fc1",
+      "type" : "activation",
+      "name" : "gaze_fc1\/gaze_fc1"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "gaze_fc2\/add",
+      "K" : 32,
+      "blob_biases" : 153,
+      "name" : "gaze_fc2\/add",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "gaze_fc1\/gaze_fc1",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 155
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "gaze_fc2\/add",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "",
+      "top" : "gaze_fc2\/gaze_fc2",
+      "type" : "activation",
+      "name" : "gaze_fc2\/gaze_fc2"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "gaze_output",
+      "K" : 32,
+      "blob_biases" : 157,
+      "name" : "gaze_output",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 3,
+      "bottom" : "gaze_fc2\/gaze_fc2",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "blob_weights_f16" : 159
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/0-conv-block\/relu",
+      "K" : 3,
+      "blob_biases" : 161,
+      "stride_x" : 2,
+      "name" : "features_failure\/0-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "network-inputs\/transpose:0_bridge",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 163
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/1-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 165,
+      "name" : "features_failure\/1-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/0-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 167
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/1-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_failure\/1-densenet\/1-concat",
+      "bottom" : "features_failure\/1-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu,features_failure\/0-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/1-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "K" : 20,
+      "blob_biases" : 169,
+      "name" : "features_failure\/1-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/1-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 171
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/1-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_failure\/1-densenet\/3-concat",
+      "bottom" : "features_failure\/1-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu,features_failure\/1-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/1-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 173,
+      "name" : "features_failure\/1-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/1-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 175
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/1-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_failure\/1-densenet\/5-concat",
+      "bottom" : "features_failure\/1-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu,features_failure\/1-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/2-conv-block\/relu",
+      "K" : 28,
+      "blob_biases" : 177,
+      "name" : "features_failure\/2-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/1-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 179
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/3-conv-block\/relu",
+      "K" : 16,
+      "blob_biases" : 181,
+      "stride_x" : 2,
+      "name" : "features_failure\/3-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/2-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 183
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/4-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 185,
+      "name" : "features_failure\/4-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/3-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 187
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/4-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_failure\/4-densenet\/1-concat",
+      "bottom" : "features_failure\/4-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu,features_failure\/3-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/4-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "K" : 20,
+      "blob_biases" : 189,
+      "name" : "features_failure\/4-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/4-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 191
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/4-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_failure\/4-densenet\/3-concat",
+      "bottom" : "features_failure\/4-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu,features_failure\/4-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/4-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 193,
+      "name" : "features_failure\/4-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/4-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 195
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/4-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_failure\/4-densenet\/5-concat",
+      "bottom" : "features_failure\/4-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu,features_failure\/4-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/5-conv-block\/relu",
+      "K" : 28,
+      "blob_biases" : 197,
+      "name" : "features_failure\/5-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/4-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 199
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/6-conv-block\/relu",
+      "K" : 16,
+      "blob_biases" : 201,
+      "stride_x" : 2,
+      "name" : "features_failure\/6-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/5-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 203
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/7-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 205,
+      "name" : "features_failure\/7-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/6-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 207
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/7-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_failure\/7-densenet\/1-concat",
+      "bottom" : "features_failure\/7-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu,features_failure\/6-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/7-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "K" : 20,
+      "blob_biases" : 209,
+      "name" : "features_failure\/7-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/7-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 211
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/7-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_failure\/7-densenet\/3-concat",
+      "bottom" : "features_failure\/7-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu,features_failure\/7-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/7-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 213,
+      "name" : "features_failure\/7-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/7-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 215
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/7-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_failure\/7-densenet\/5-concat",
+      "bottom" : "features_failure\/7-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu,features_failure\/7-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/7-densenet\/6-conv-block\/conv-3x3-28-4-variables\/conv-3x3-28-4-variables\/relu",
+      "K" : 28,
+      "blob_biases" : 217,
+      "name" : "features_failure\/7-densenet\/6-conv-block\/conv-3x3-28-4-variables\/conv-3x3-28-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/7-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 219
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/7-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "features_failure\/7-densenet\/7-concat",
+      "bottom" : "features_failure\/7-densenet\/6-conv-block\/conv-3x3-28-4-variables\/conv-3x3-28-4-variables\/relu,features_failure\/7-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/8-conv-block\/relu",
+      "K" : 32,
+      "blob_biases" : 221,
+      "name" : "features_failure\/8-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/7-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 223
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/9-conv-block\/relu",
+      "K" : 16,
+      "blob_biases" : 225,
+      "stride_x" : 2,
+      "name" : "features_failure\/9-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/8-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 227
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/10-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 229,
+      "name" : "features_failure\/10-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/9-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 231
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/10-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_failure\/10-densenet\/1-concat",
+      "bottom" : "features_failure\/10-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu,features_failure\/9-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/10-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "K" : 20,
+      "blob_biases" : 233,
+      "name" : "features_failure\/10-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/10-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 235
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/10-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_failure\/10-densenet\/3-concat",
+      "bottom" : "features_failure\/10-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu,features_failure\/10-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/10-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 237,
+      "name" : "features_failure\/10-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/10-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 239
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/10-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_failure\/10-densenet\/5-concat",
+      "bottom" : "features_failure\/10-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu,features_failure\/10-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/10-densenet\/6-conv-block\/conv-3x3-28-4-variables\/conv-3x3-28-4-variables\/relu",
+      "K" : 28,
+      "blob_biases" : 241,
+      "name" : "features_failure\/10-densenet\/6-conv-block\/conv-3x3-28-4-variables\/conv-3x3-28-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "features_failure\/10-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 243
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/10-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "features_failure\/10-densenet\/7-concat",
+      "bottom" : "features_failure\/10-densenet\/6-conv-block\/conv-3x3-28-4-variables\/conv-3x3-28-4-variables\/relu,features_failure\/10-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/11-conv-block\/relu",
+      "K" : 32,
+      "blob_biases" : 245,
+      "name" : "features_failure\/11-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/10-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 247
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/12-conv-block\/relu",
+      "K" : 16,
+      "blob_biases" : 249,
+      "stride_x" : 2,
+      "name" : "features_failure\/12-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "features_failure\/11-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 251
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/13-densenet\/0-conv-block\/conv-3x3-16-8-variables\/conv-3x3-16-8-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 253,
+      "name" : "features_failure\/13-densenet\/0-conv-block\/conv-3x3-16-8-variables\/conv-3x3-16-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "features_failure\/12-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 255
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/13-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "features_failure\/13-densenet\/1-concat",
+      "bottom" : "features_failure\/13-densenet\/0-conv-block\/conv-3x3-16-8-variables\/conv-3x3-16-8-variables\/relu,features_failure\/12-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/13-densenet\/2-conv-block\/conv-3x3-24-8-variables\/conv-3x3-24-8-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 257,
+      "name" : "features_failure\/13-densenet\/2-conv-block\/conv-3x3-24-8-variables\/conv-3x3-24-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "features_failure\/13-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 259
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/13-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "features_failure\/13-densenet\/3-concat",
+      "bottom" : "features_failure\/13-densenet\/2-conv-block\/conv-3x3-24-8-variables\/conv-3x3-24-8-variables\/relu,features_failure\/13-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/13-densenet\/4-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "K" : 32,
+      "blob_biases" : 261,
+      "name" : "features_failure\/13-densenet\/4-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "features_failure\/13-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 263
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/13-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "features_failure\/13-densenet\/5-concat",
+      "bottom" : "features_failure\/13-densenet\/4-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu,features_failure\/13-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "features_failure\/13-densenet\/6-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu",
+      "K" : 40,
+      "blob_biases" : 265,
+      "name" : "features_failure\/13-densenet\/6-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "features_failure\/13-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 267
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "features_failure\/13-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "features_failure\/13-densenet\/7-concat",
+      "bottom" : "features_failure\/13-densenet\/6-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu,features_failure\/13-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/14-conv-block\/relu",
+      "K" : 48,
+      "blob_biases" : 269,
+      "stride_x" : 2,
+      "name" : "features_failure\/14-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "features_failure\/13-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 271
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "features_failure\/15-conv-block\/relu",
+      "K" : 32,
+      "blob_biases" : 273,
+      "stride_x" : 2,
+      "name" : "features_failure\/15-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "features_failure\/14-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 275
+    },
+    {
+      "bottom" : "network-inputs\/transpose_1:0_bridge",
+      "end" : 1,
+      "start" : 0,
+      "weights" : {
+
+      },
+      "axis" : 0,
+      "debug_info" : "",
+      "top" : "index_1",
+      "type" : "slice",
+      "name" : "index_1"
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "concatenate_1",
+      "type" : "concat",
+      "name" : "concatenate_1",
+      "bottom" : "features_failure\/15-conv-block\/relu,index_1,bs_latent_output,angles_output,translation_output,gaze_output"
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "failure_regression\/0-fully-connected\/relu",
+      "K" : 118,
+      "blob_biases" : 277,
+      "name" : "failure_regression\/0-fully-connected\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "concatenate_1",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 279
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "failure_regression\/1-fully-connected\/relu",
+      "K" : 64,
+      "blob_biases" : 281,
+      "name" : "failure_regression\/1-fully-connected\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "failure_regression\/0-fully-connected\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 283
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "failure_logit_output",
+      "K" : 32,
+      "blob_biases" : 285,
+      "name" : "failure_logit_output",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 1,
+      "bottom" : "failure_regression\/1-fully-connected\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "blob_weights_f16" : 287
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/0-conv-block\/relu",
+      "K" : 3,
+      "blob_biases" : 289,
+      "stride_x" : 2,
+      "name" : "tongue_features\/0-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "network-inputs\/transpose:0_bridge",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 291
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/1-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 293,
+      "name" : "tongue_features\/1-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "tongue_features\/0-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 295
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/1-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/1-densenet\/1-concat",
+      "bottom" : "tongue_features\/1-densenet\/0-conv-block\/conv-3x3-16-4-variables\/conv-3x3-16-4-variables\/relu,tongue_features\/0-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/1-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "K" : 20,
+      "blob_biases" : 297,
+      "name" : "tongue_features\/1-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "tongue_features\/1-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 299
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/1-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/1-densenet\/3-concat",
+      "bottom" : "tongue_features\/1-densenet\/2-conv-block\/conv-3x3-20-4-variables\/conv-3x3-20-4-variables\/relu,tongue_features\/1-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/1-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 301,
+      "name" : "tongue_features\/1-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 4,
+      "bottom" : "tongue_features\/1-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 303
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/1-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/1-densenet\/5-concat",
+      "bottom" : "tongue_features\/1-densenet\/4-conv-block\/conv-3x3-24-4-variables\/conv-3x3-24-4-variables\/relu,tongue_features\/1-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/2-conv-block\/relu",
+      "K" : 28,
+      "blob_biases" : 305,
+      "name" : "tongue_features\/2-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "tongue_features\/1-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 307
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/3-conv-block\/relu",
+      "K" : 16,
+      "blob_biases" : 309,
+      "stride_x" : 2,
+      "name" : "tongue_features\/3-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "tongue_features\/2-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 311
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/4-densenet\/0-conv-block\/conv-3x3-16-8-variables\/conv-3x3-16-8-variables\/relu",
+      "K" : 16,
+      "blob_biases" : 313,
+      "name" : "tongue_features\/4-densenet\/0-conv-block\/conv-3x3-16-8-variables\/conv-3x3-16-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/3-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 315
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/4-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/4-densenet\/1-concat",
+      "bottom" : "tongue_features\/4-densenet\/0-conv-block\/conv-3x3-16-8-variables\/conv-3x3-16-8-variables\/relu,tongue_features\/3-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/4-densenet\/2-conv-block\/conv-3x3-24-8-variables\/conv-3x3-24-8-variables\/relu",
+      "K" : 24,
+      "blob_biases" : 317,
+      "name" : "tongue_features\/4-densenet\/2-conv-block\/conv-3x3-24-8-variables\/conv-3x3-24-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/4-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 319
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/4-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/4-densenet\/3-concat",
+      "bottom" : "tongue_features\/4-densenet\/2-conv-block\/conv-3x3-24-8-variables\/conv-3x3-24-8-variables\/relu,tongue_features\/4-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/4-densenet\/4-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "K" : 32,
+      "blob_biases" : 321,
+      "name" : "tongue_features\/4-densenet\/4-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/4-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 323
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/4-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/4-densenet\/5-concat",
+      "bottom" : "tongue_features\/4-densenet\/4-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu,tongue_features\/4-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/5-conv-block\/relu",
+      "K" : 40,
+      "blob_biases" : 325,
+      "name" : "tongue_features\/5-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "tongue_features\/4-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 327
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/6-conv-block\/relu",
+      "K" : 32,
+      "blob_biases" : 329,
+      "stride_x" : 2,
+      "name" : "tongue_features\/6-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "tongue_features\/5-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 331
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/7-densenet\/0-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "K" : 32,
+      "blob_biases" : 333,
+      "name" : "tongue_features\/7-densenet\/0-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/6-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 335
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/7-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/7-densenet\/1-concat",
+      "bottom" : "tongue_features\/7-densenet\/0-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu,tongue_features\/6-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/7-densenet\/2-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu",
+      "K" : 40,
+      "blob_biases" : 337,
+      "name" : "tongue_features\/7-densenet\/2-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/7-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 339
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/7-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/7-densenet\/3-concat",
+      "bottom" : "tongue_features\/7-densenet\/2-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu,tongue_features\/7-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/7-densenet\/4-conv-block\/conv-3x3-48-8-variables\/conv-3x3-48-8-variables\/relu",
+      "K" : 48,
+      "blob_biases" : 341,
+      "name" : "tongue_features\/7-densenet\/4-conv-block\/conv-3x3-48-8-variables\/conv-3x3-48-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/7-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 343
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/7-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/7-densenet\/5-concat",
+      "bottom" : "tongue_features\/7-densenet\/4-conv-block\/conv-3x3-48-8-variables\/conv-3x3-48-8-variables\/relu,tongue_features\/7-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/7-densenet\/6-conv-block\/conv-3x3-56-8-variables\/conv-3x3-56-8-variables\/relu",
+      "K" : 56,
+      "blob_biases" : 345,
+      "name" : "tongue_features\/7-densenet\/6-conv-block\/conv-3x3-56-8-variables\/conv-3x3-56-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/7-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 347
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/7-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/7-densenet\/7-concat",
+      "bottom" : "tongue_features\/7-densenet\/6-conv-block\/conv-3x3-56-8-variables\/conv-3x3-56-8-variables\/relu,tongue_features\/7-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/8-conv-block\/relu",
+      "K" : 64,
+      "blob_biases" : 349,
+      "name" : "tongue_features\/8-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "tongue_features\/7-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 351
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/9-conv-block\/relu",
+      "K" : 32,
+      "blob_biases" : 353,
+      "stride_x" : 2,
+      "name" : "tongue_features\/9-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "tongue_features\/8-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 355
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/10-densenet\/0-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "K" : 32,
+      "blob_biases" : 357,
+      "name" : "tongue_features\/10-densenet\/0-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/9-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 359
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/10-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/10-densenet\/1-concat",
+      "bottom" : "tongue_features\/10-densenet\/0-conv-block\/conv-3x3-32-8-variables\/conv-3x3-32-8-variables\/relu,tongue_features\/9-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/10-densenet\/2-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu",
+      "K" : 40,
+      "blob_biases" : 361,
+      "name" : "tongue_features\/10-densenet\/2-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/10-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 363
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/10-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/10-densenet\/3-concat",
+      "bottom" : "tongue_features\/10-densenet\/2-conv-block\/conv-3x3-40-8-variables\/conv-3x3-40-8-variables\/relu,tongue_features\/10-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/10-densenet\/4-conv-block\/conv-3x3-48-8-variables\/conv-3x3-48-8-variables\/relu",
+      "K" : 48,
+      "blob_biases" : 365,
+      "name" : "tongue_features\/10-densenet\/4-conv-block\/conv-3x3-48-8-variables\/conv-3x3-48-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/10-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 367
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/10-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/10-densenet\/5-concat",
+      "bottom" : "tongue_features\/10-densenet\/4-conv-block\/conv-3x3-48-8-variables\/conv-3x3-48-8-variables\/relu,tongue_features\/10-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/10-densenet\/6-conv-block\/conv-3x3-56-8-variables\/conv-3x3-56-8-variables\/relu",
+      "K" : 56,
+      "blob_biases" : 369,
+      "name" : "tongue_features\/10-densenet\/6-conv-block\/conv-3x3-56-8-variables\/conv-3x3-56-8-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 8,
+      "bottom" : "tongue_features\/10-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 371
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/10-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/10-densenet\/7-concat",
+      "bottom" : "tongue_features\/10-densenet\/6-conv-block\/conv-3x3-56-8-variables\/conv-3x3-56-8-variables\/relu,tongue_features\/10-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/11-conv-block\/relu",
+      "K" : 64,
+      "blob_biases" : 373,
+      "name" : "tongue_features\/11-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "tongue_features\/10-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 375
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/12-conv-block\/relu",
+      "K" : 32,
+      "blob_biases" : 377,
+      "stride_x" : 2,
+      "name" : "tongue_features\/12-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "tongue_features\/11-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 379
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/13-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/relu",
+      "K" : 32,
+      "blob_biases" : 381,
+      "name" : "tongue_features\/13-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "tongue_features\/12-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 383
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/13-densenet\/1-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/13-densenet\/1-concat",
+      "bottom" : "tongue_features\/13-densenet\/0-conv-block\/conv-3x3-32-16-variables\/conv-3x3-32-16-variables\/relu,tongue_features\/12-conv-block\/relu"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/13-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/relu",
+      "K" : 48,
+      "blob_biases" : 385,
+      "name" : "tongue_features\/13-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "tongue_features\/13-densenet\/1-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 387
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/13-densenet\/3-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/13-densenet\/3-concat",
+      "bottom" : "tongue_features\/13-densenet\/2-conv-block\/conv-3x3-48-16-variables\/conv-3x3-48-16-variables\/relu,tongue_features\/13-densenet\/1-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/13-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu",
+      "K" : 64,
+      "blob_biases" : 389,
+      "name" : "tongue_features\/13-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "tongue_features\/13-densenet\/3-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 391
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/13-densenet\/5-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/13-densenet\/5-concat",
+      "bottom" : "tongue_features\/13-densenet\/4-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu,tongue_features\/13-densenet\/3-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "tongue_features\/13-densenet\/6-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu",
+      "K" : 80,
+      "blob_biases" : 393,
+      "name" : "tongue_features\/13-densenet\/6-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "tongue_features\/13-densenet\/5-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 395
+    },
+    {
+      "weights" : {
+
+      },
+      "debug_info" : "",
+      "top" : "tongue_features\/13-densenet\/7-concat",
+      "type" : "concat",
+      "name" : "tongue_features\/13-densenet\/7-concat",
+      "bottom" : "tongue_features\/13-densenet\/6-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu,tongue_features\/13-densenet\/5-concat"
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/14-conv-block\/relu",
+      "K" : 96,
+      "blob_biases" : 397,
+      "stride_x" : 2,
+      "name" : "tongue_features\/14-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "tongue_features\/13-densenet\/7-concat",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 399
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "top" : "tongue_features\/15-conv-block\/relu",
+      "K" : 64,
+      "blob_biases" : 401,
+      "stride_x" : 2,
+      "name" : "tongue_features\/15-conv-block\/relu",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "tongue_features\/14-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "blob_weights_f16" : 403
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "tongue_logits_output",
+      "K" : 128,
+      "blob_biases" : 405,
+      "name" : "tongue_logits_output",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 2,
+      "bottom" : "tongue_features\/15-conv-block\/relu",
+      "weights" : {
+
+      },
+      "Nx" : 1,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "blob_weights_f16" : 407
+    }
+  ]
+}

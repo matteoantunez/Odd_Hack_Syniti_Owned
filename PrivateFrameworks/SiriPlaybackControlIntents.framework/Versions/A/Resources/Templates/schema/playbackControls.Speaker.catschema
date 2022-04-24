@@ -1,0 +1,32 @@
+#CAT-SCHEMA 1.0
+
+name: playbackControls.Speaker
+
+properties:
+  hasRoutes:
+    type: dialog.Boolean
+    description: True if this speaker represents a routed request
+  hasThreeOrMoreRooms:
+    type: dialog.Boolean
+    description: True if there are three or more rooms represented by this routing
+  isAllSpeakers:
+    type: dialog.Boolean
+    description: True if the user requested the action everywhere
+  isInHere:
+    type: dialog.Boolean
+    description: True if the user requested the action on the local device
+  firstSpeakerName:
+    type: dialog.String
+    description: Name of the first requested speaker
+  secondSpeakerName:
+    type: dialog.String
+    description: Name of the second requested speaker
+  firstRoom:
+    type: dialog.String
+    description: Name of the first requested room
+  secondRoom:
+    type: dialog.String
+    description: Name of the second requested room
+  otherRoomsCount:
+    type: dialog.Number
+    description: Number of rooms other than the room of the Siri request device

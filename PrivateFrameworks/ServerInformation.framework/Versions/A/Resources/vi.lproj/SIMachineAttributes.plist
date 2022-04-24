@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook với bộ xử lý Intel Core Duo, vỏ trắng hoặc đen.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook với bộ xử lý Intel Core 2 Duo, vỏ trắng hoặc đen.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook với bộ xử lý Intel Core 2 Duo, vỏ trắng hoặc đen.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook với bộ xử lý Intel Core 2 Duo, vỏ trắng hoặc đen.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (thân nhôm liền khối)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook với Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào cuối năm 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (trắng, Đầu năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook màu trắng với bộ xử lý Intel Core 2 Duo, được giới thiệu vào đầu năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (trắng, Cuối năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook màu trắng với bộ xử lý Intel Core 2 Duo và màn hình LED, được giới thiệu vào cuối năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (trắng, Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook với bộ xử lý Intel Core 2 Duo và vỏ trắng liền khối, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12 inch (Đầu năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core M Lõi kép</string>
+			<key>description</key>
+			<string>MacBook 12 inch với màn hình Retina, được giới thiệu vào đầu năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12 inch (Đầu năm 2016)</string>
+			<key>processor</key>
+			<string>Intel Core m3 lõi kép, Intel Core m5 lõi kép, Intel Core m7 lõi kép</string>
+			<key>description</key>
+			<string>MacBook 12 inch với màn hình Retina, được giới thiệu vào đầu năm 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12 inch (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core m3 lõi kép, Intel Core i5 lõi kép, Intel Core i7 lõi kép</string>
+			<key>description</key>
+			<string>MacBook với màn hình Retina 12 inch, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(Nguyên bản)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air với Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air với Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 inch</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 11 inch, được giới thiệu vào cuối năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 inch</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 13 inch, được giới thiệu vào cuối năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 inch (Giữa năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 11 inch, được giới thiệu vào giữa năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 inch (Giữa năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 13 inch, được giới thiệu vào giữa năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 inch (Giữa năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 11 inch, được giới thiệu vào giữa năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 inch (Giữa năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 13 inch, được giới thiệu vào giữa năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 inch (Giữa năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 11 inch, được giới thiệu vào giữa năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 inch (Giữa năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 13 inch, được giới thiệu vào giữa năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 inch (Đầu năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 11 inch, được giới thiệu vào đầu năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 inch (Đầu năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình 13 inch, được giới thiệu vào đầu năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (Cuối năm 2018)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình Retina và Touch ID, được giới thiệu vào cuối năm 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (Giữa năm 2019)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Air với màn hình Retina 13 inch và Touch ID, được giới thiệu vào giữa năm 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core Duo và màn hình 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core Duo và màn hình 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và màn hình 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và màn hình 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và màn hình 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo, màn hình 15 hoặc 17 inch và bàn di chuột Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (thân nhôm liền khối) (Cuối năm 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào cuối năm 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (thân nhôm liền khối) (Đầu năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào đầu năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (thân nhôm liền khối) (Giữa năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào giữa năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (thân nhôm liền khối) (Giữa năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào giữa năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (thân nhôm liền khối) (Giữa năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào giữa năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core i5 hoặc Intel Core i7, màn hình 15 hoặc 17 inch và thân nhôm liền khối, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro với bộ xử lý Intel Core i5 hoặc Intel Core i7, màn hình 15 hoặc 17 inch và thân nhôm liền khối, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với bộ xử lý Intel Core 2 Duo và thân nhôm liền khối, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 inch (Đầu năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với bộ xử lý Intel Core i5 hoặc Intel Core i7 lõi kép và thân nhôm liền khối, được giới thiệu vào đầu năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 inch (Đầu năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với bộ xử lý Intel Core i7 lõi tứ và thân nhôm liền khối, được giới thiệu vào đầu năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17 inch (Đầu năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 17 inch với bộ xử lý Intel Core i7 lõi tứ và thân nhôm liền khối, được giới thiệu vào đầu năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 inch (Giữa năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với bộ xử lý Intel Core i7 lõi kép và thân nhôm liền khối, được giới thiệu vào giữa năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 inch (Giữa năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với bộ xử lý Intel Core i5 hoặc Intel Core i7 lõi kép và thân nhôm liền khối, được giới thiệu vào giữa năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro với màn hình Retina, Intel Core i7, 15 inch (Giữa năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với màn hình Retina, bộ xử lý Intel Core i7 lõi kép và thân nhôm liền khối, được giới thiệu vào giữa năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro với màn hình Retina, Intel Core i5, Intel Core i7, 13 inch (Cuối năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với màn hình Retina, bộ xử lý Intel Core i5 hoặc i7 lõi kép và thân nhôm liền khối, được giới thiệu vào cuối năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 inch với màn hình Retina (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với màn hình Retina và thân nhôm liền khối, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với màn hình Retina (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với màn hình Retina và thân nhôm liền khối, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với màn hình Retina, đồ họa NVIDIA rời (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với màn hình Retina và thân nhôm liền khối, đồ họa NVIDIA rời, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với màn hình Retina (Giữa năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với màn hình Retina và thân nhôm liền khối, được giới thiệu vào giữa năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với màn hình Retina (Giữa năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với màn hình Retina và thân nhôm liền khối, đồ họa AMD rời, được giới thiệu vào giữa năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 inch với màn hình Retina (Đầu năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với màn hình Retina và thân nhôm liền khối, được giới thiệu vào đầu năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" với Thunderbolt 3 (Cuối năm 2016)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13" với Thunderbolt 3, được giới thiệu vào cuối năm 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" với Thunderbolt 3 và Touch ID (Cuối năm 2016)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13" với Thunderbolt 3 và Touch ID, được giới thiệu vào cuối năm 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với Thunderbolt 3 và Touch ID (Cuối năm 2016)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 15" với Thunderbolt 3 và Touch ID, được giới thiệu vào cuối năm 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" với Thunderbolt 3 (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13" với Thunderbolt 3, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" với Thunderbolt 3 và Touch ID (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>MacBook Pro 13" với Thunderbolt 3 và Touch ID, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với Thunderbolt 3 và Touch ID (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 15" với Thunderbolt 3 và Touch ID, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 inch với Thunderbolt 3 và Touch ID (Giữa năm 2018)</string>
+			<key>processor</key>
+			<string>Intel Core i7 6 lõi, Intel Core i9 6 lõi</string>
+			<key>description</key>
+			<string>MacBook Pro 15 inch với Thunderbolt 3 và Touch ID, được giới thiệu vào giữa năm 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 inch với Thunderbolt 3 và Touch ID (Giữa năm 2018)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>MacBook Pro 13 inch với Thunderbolt 3 và Touch ID, được giới thiệu vào giữa năm 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Giữa năm 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Cây máy tính Để bàn (vỏ nhôm).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Giữa năm 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Cây máy tính Để bàn (vỏ nhôm).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Đầu năm 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Cây máy tính Để bàn (vỏ nhôm).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Đầu năm 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Cây máy tính Để bàn (vỏ nhôm).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Đầu năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Cây máy tính Để bàn (vỏ nhôm), được giới thiệu vào đầu năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Cây máy tính Để bàn (vỏ nhôm), được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Vỏ máy Mac Pro để bàn, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (Đầu năm 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Máy tính Mac để bàn cỡ nhỏ với bộ xử lý Intel Core 2 Duo, Intel Core Duo hoặc Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (Giữa năm 2007)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Máy tính Mac để bàn cỡ nhỏ với bộ xử lý Intel Core 2 Duo, Intel Core Duo hoặc Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (Đầu năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini với NVIDIA GeForce 9400M, được giới thiệu vào đầu năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini với NVIDIA GeForce 320M, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Giữa năm 2011) với Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi Kép</string>
+			<key>description</key>
+			<string>Mac mini với Intel i5 Lõi Kép và Intel HD Graphics 3000, được giới thiệu vào giữa năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Giữa năm 2011) với AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>Mac mini với Intel i5 hoặc i7 Lõi Kép và AMD Radeon HD 6630M, được giới thiệu vào giữa năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Máy chủ Mac mini (Giữa năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi Kép</string>
+			<key>description</key>
+			<string>Máy chủ Mac mini với i7 Lõi Kép và Intel HD Graphics 3000, được giới thiệu vào giữa năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Cuối năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép</string>
+			<key>description</key>
+			<string>Mac mini với Intel i5 lõi kép và Intel HD Graphics 4000, được giới thiệu vào cuối năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Cuối năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>Mac mini với i7 lõi tứ và Intel HD Graphics 4000, được giới thiệu vào cuối năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Cuối năm 2014)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép, Intel Core i7 Lõi kép</string>
+			<key>description</key>
+			<string>Mac mini với bộ xử lý Intel lõi kép và thẻ đồ họa tích hợp, được giới thiệu vào cuối năm 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Cuối năm 2018)</string>
+			<key>processor</key>
+			<string>Bộ xử lý Intel thế hệ thứ 8 (Core i3 lõi tứ, Core i5 6 lõi, Core i7 6 lõi)</string>
+			<key>description</key>
+			<string>Mac mini với bộ xử lý Intel thế hệ thứ 8 và Đồ họa Intel UHD 630, được giới thiệu vào cuối năm 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Máy tính xách tay bọc vỏ nhựa-cao su đen, cạnh bên có viền bảo vệ.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Bao gồm máy tính xách tay nguyên bản với nắp gập dạng "vỏ ốc", có màu sáng và tay cầm tích hợp sẵn, các kiểu sau đó có vỏ nhựa màu trắng-bạc, hình chữ nhật và màn hình phẳng 12 hoặc 14 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBooks màu trắng với bộ xử lý G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBooks màu trắng với bộ xử lý G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBooks màu trắng với bộ xử lý G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Bao gồm kiểu nguyên bản có lớp vỏ titan mỏng và màn hình phẳng 15 inch, các kiểu sau đó sử dụng vỏ nhôm và màn hình 12, 15 hoặc 17 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ lam-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ lam-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính Mac G4 để bàn cỡ nhỏ, kết nối được với hầu hết các loại màn hình LCD hoặc VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính Mac G4 để bàn cỡ nhỏ, kết nối được với hầu hết các loại màn hình LCD hoặc VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhôm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhôm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 Màn hình phẳng</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, bao gồm lớp vỏ nhựa lam-trắng nguyên bản và sau đó là vô vàn "tổ hợp" màu sắc để bạn chọn.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, bao gồm lớp vỏ nhựa lam-trắng nguyên bản và sau đó là vô vàn "tổ hợp" màu sắc để bạn chọn.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ xám-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ xám-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ xám-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ xám-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ xám-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhựa, có lớp bảo vệ xám-trắng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, bao gồm lớp vỏ nhựa lam-trắng nguyên bản và sau đó là vô vàn "tổ hợp" màu sắc để bạn chọn.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, nổi bật với phần bệ dạng vòm và màn hình phẳng 15, 17 hoặc 20 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một với màn hình CRT phẳng tích hợp trong lớp vỏ tròn nhỏ gọn.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, nổi bật với phần bệ dạng vòm và màn hình phẳng 15, 17 hoặc 20 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn dạng khối, vỏ nhựa trong.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy tính để bàn dạng khối, vỏ nhựa trong.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, nổi bật với phần bệ dạng vòm và màn hình phẳng 15, 17 hoặc 20 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một, nổi bật với phần bệ dạng vòm và màn hình phẳng 15, 17 hoặc 20 inch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Thiết kế tất cả trong một với màn hình CRT phẳng tích hợp trong lớp vỏ tròn nhỏ gọn.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhôm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhôm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Máy tính để bàn kiểu tháp, vỏ nhôm.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy chủ G4 đặt trên giá với ổ đĩa quang lắp trên khay hoặc trong rãnh và bốn khe mở rộng hoặc G4 kiểu nút cụm với một khe mở rộng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Máy chủ G4 đặt trên giá với ổ đĩa quang lắp trên khay hoặc trong rãnh và bốn khe mở rộng hoặc G4 kiểu nút cụm với một khe mở rộng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Máy tính máy chủ dựa trên G5, đặt trên giá với ổ đĩa CD- hoặc DVD-ROM và ba khe mở rộng hoặc kiểu nút cụm không có khe mở rộng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (Cuối năm 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon Sê ri 5100</string>
+			<key>description</key>
+			<string>Máy chủ sử dụng Intel Xeon Sê ri 5100, đặt trên giá, được giới thiệu vào cuối năm 2006.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (Đầu năm 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon Sê ri 5400</string>
+			<key>description</key>
+			<string>Máy chủ sử dụng Intel Xeon Sê ri 5400, đặt trên giá, được giới thiệu vào cuối năm 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (Đầu năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon Sê ri 5500</string>
+			<key>description</key>
+			<string>Máy chủ sử dụng Intel Xeon Sê ri 5500, đặt trên giá, được giới thiệu vào cuối năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo Màn hình phẳng.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (vỏ nhôm) (Giữa năm 2007)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac màn hình phẳng (vỏ nhôm) 20 hoặc 24 inch với bộ xử lý Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (vỏ nhôm) (Đầu năm 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac màn hình phẳng (vỏ nhôm) 20 hoặc 24 inch với bộ xử lý Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (vỏ nhôm) (Đầu năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac màn hình phẳng (vỏ nhôm) 20 hoặc 24 inch với bộ xử lý Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (màn hình rộng, Cuối năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac 21,5 hoặc 27 inch với màn hình LED rộng, được giới thiệu vào đầu năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (màn hình rộng, Cuối năm 2009)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 inch với bộ xử lý lõi tứ và màn hình LED rộng, được giới thiệu vào cuối năm 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED rộng, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Giữa năm 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 inch với màn hình LED rộng, được giới thiệu vào giữa năm 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Đầu năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với Thunderbolt, được giới thiệu vào đầu năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Đầu năm 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 inch với Thunderbolt, được giới thiệu vào đầu năm 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Cuối năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED chiếu nền, được giới thiệu vào cuối năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Cuối năm 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 27 inch với màn hình LED chiếu nền, được giới thiệu vào cuối năm 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Đầu năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i3 Lõi kép</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED chiếu nền, được giới thiệu vào đầu năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED chiếu nền, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 27 inch với màn hình LED chiếu nền, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Cuối năm 2013)</string>
+			<key>processor</key>
+			<string>Intel Core i3 Lõi kép</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED chiếu nền, được giới thiệu vào cuối năm 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Giữa năm 2014)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED rộng chiếu nền, được giới thiệu vào giữa năm 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Cuối năm 2014)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 27 inch với màn hình LED rộng chiếu nền, được giới thiệu vào cuối năm 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Cuối năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình LED chiếu nền, được giới thiệu vào cuối năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Cuối năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 21,5 inch với màn hình Retina 4K, được giới thiệu vào cuối năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Cuối năm 2015)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi tứ, Intel Core i7 Lõi tứ</string>
+			<key>description</key>
+			<string>iMac 27 inch với màn hình Retina 5K, được giới thiệu vào cuối năm 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core i5 Lõi kép</string>
+			<key>description</key>
+			<string>iMac với màn hình rộng 21,5 inch, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core i5/i7 lõi tứ</string>
+			<key>description</key>
+			<string>iMac với màn hình Retina 4K 21,5 inch, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Giữa năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Core i5/i7 lõi tứ</string>
+			<key>description</key>
+			<string>iMac với màn hình Retina 5K 27 inch, được giới thiệu vào giữa năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 inch (Đầu năm 2019)</string>
+			<key>processor</key>
+			<string>Intel Core i5 6 lõi, Intel Core i9 8 lõi</string>
+			<key>description</key>
+			<string>iMac với màn hình Retina 5K 27 inch, được giới thiệu vào đầu năm 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 inch (Đầu năm 2019)</string>
+			<key>processor</key>
+			<string>Intel Core i3 lõi tứ, Intel Core i5/i7 6 lõi</string>
+			<key>description</key>
+			<string>iMac với màn hình Retina 4K 21,5 inch, được giới thiệu vào đầu năm 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (Cuối năm 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro với bộ xử lý Xeon W và đồ họa Radeon Pro Vega, được giới thiệu vào cuối năm 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

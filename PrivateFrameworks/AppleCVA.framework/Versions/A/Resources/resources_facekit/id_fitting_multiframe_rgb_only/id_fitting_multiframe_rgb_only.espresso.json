@@ -1,0 +1,1 @@
+{"Configurations": ["1"], "Inputs": ["network-inputs/transpose:0_bridge", "network-inputs/transpose_1:0_bridge", "network-inputs/transpose_2:0_bridge", "network-inputs/transpose_3:0_bridge"], "Outputs": ["latents_output", "neutral_pca_subset_coeffs_output"], "Checkpoints": {"id_fitting_multiframe_rgb_only": 501243}}

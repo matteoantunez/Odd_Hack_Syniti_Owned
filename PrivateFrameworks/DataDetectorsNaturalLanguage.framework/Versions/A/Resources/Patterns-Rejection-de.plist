@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>(auf|in|im) urlaub (sein|bin|sind)</string>
+	<string>(verreist|den ferien|unterwegs) (sind|bin)</string>
+	<string>(welt|gesch(ä|ae)fts)reise (sind|bin)</string>
+	<string>(leider)? ist es (mir|uns) nicht m(ö|oe)glich</string>
+	<string>abgelaufen</string>
+	<string>(leider)? (am|an) [a-z]{3,30} nicht</string>
+	<string>storniert</string>
+	<string>fristablauf</string>
+	<string>(dennoch|trotzdem) (.{0,50})f(ü|ue)r die einladung</string>
+	<string>gestrichen</string>
+	<string>nicht im b(ü|ue)ro</string>
+	<string>(wfh|arbeite(n)? (.{0,25})von zu( )?hause)</string>
+	<string>bleibe(n)? (.{0,25}) zu( )?hause</string>
+	<string>zu( )?hause bleiben</string>
+	<string>ausgelaufen</string>
+	<string>(ich|wir) (kann|k(ö|oe)nnen) am [a-z]{3,30} (leider)? nicht</string>
+	<string>nicht (teilnehmen|mitmachen|besuchen|vorbeikommen|anwesend sein)</string>
+	<string>absage</string>
+	<string>stornieren</string>
+	<string>abgesagt</string>
+	<string>(can­celn|gecancelt)</string>
+	<string>(leider)? ([a-z]{3,50}( )?)?(schon|bereits) verplant</string>
+	<string>auf eine(r|m) ([a-zäöüß]*)(party|feier|fete|fest|veranstaltung|hochzeit|beerdigung|taufe|firmung|zeremonie)</string>
+	<string>au(ß|ss)er kraft</string>
+	<string>(out of (the )?office|ooo)</string>
+	<string>(bin ich|sind wir) (leider )?nicht da</string>
+	<string>(bin ich|ich bin|sind wir|wir sind) (.{0,40})?(wieder (erreichbar|da|verfügbar|im B(ü|ue)ro))</string>
+	<string>absagen</string>
+	<string>verfallen</string>
+	<string>(leider)? geht (.{3,40}( )?)bei (uns|mir) nicht</string>
+	<string>(kann|k(ö|oe)nnen) ((am|an) [a-z]{3,30}?)?( )?(leider)? nicht</string>
+	<string>nicht einhalten</string>
+	<string>(leider)? ausfallen</string>
+	<string>ich muss (leider)? passen</string>
+	<string>auslaufen</string>
+	<string>nicht verf(ü|ue)gbar</string>
+	<string>automatische antwort</string>
+	<string>(arbeiten|(auf|in) die arbeit|(ins|in das) (b(ü|ue)ro|gesch(ä|ae)ft)) (muss|m(ü|ue)ssen)</string>
+	<string>(muss|m(ü|ue)ssen) (.{0,50})(arbeiten|(auf|in) die arbeit|(ins|in das) (b(ü|ue)ro|gesch(ä|ae)ft))</string>
+	<string>bis zum</string>
+	<string>(abwesend|abwesendheits(notitz|benachrichtigung|mitteilung|nachricht))</string>
+	<string>(gerade zu tisch|(macht|machen) gerade mittag|beim mittagessen)</string>
+</array>
+</plist>

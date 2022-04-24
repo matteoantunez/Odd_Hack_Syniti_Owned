@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook із процесором Intel Core Duo в корпусі чорного або білого кольору.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook із процесором Intel Core 2 Duo в корпусі чорного або білого кольору.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook із процесором Intel Core 2 Duo в корпусі чорного або білого кольору.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook із процесором Intel Core 2 Duo в корпусі чорного або білого кольору.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (суцільний алюмінієвий корпус)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook із процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений в кінці 2008 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (білий, початок 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook білого кольору з процесором Intel Core 2 Duo, представлений на початку 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (білий, кінець 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook білого кольору з процесором Intel Core 2 Duo та LED-дисплеєм, представлений в кінці 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (білий, середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook із процесором Intel Core 2 Duo в білому корпусі, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-дюймовий MacBook (початок 2015)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core M</string>
+			<key>description</key>
+			<string>12-дюймовий MacBook із дисплеєм Retina, представлений на початку 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-дюймовий MacBook (початок 2016)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core m3, двоядерний Intel Core m5, двоядерний Intel Core m7</string>
+			<key>description</key>
+			<string>12-дюймовий MacBook із дисплеєм Retina, представлений на початку 2016 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-дюймовий MacBook (середина 2017)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core m3, двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook із 12-дюймовим дисплеєм Retina, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(оригінальний)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-дюймовий MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air з 11-дюймовим дисплеєм, представлений в кінці 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air з 13-дюймовим дисплеєм, представлений в кінці 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-дюймовий MacBook Air (середина 2011)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air з 11-дюймовим дисплеєм, представлений в середині 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Air (середина 2011)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air з 13-дюймовим дисплеєм, представлений в середині 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-дюймовий MacBook Air (середина 2012)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air з 11-дюймовим дисплеєм, представлений в середині 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Air (середина 2012)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air з 13-дюймовим дисплеєм, представлений в середині 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-дюймовий MacBook Air (середина 2013)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air з 11-дюймовим дисплеєм, представлений в середині 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Air (середина 2013)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air з 13-дюймовим дисплеєм, представлений в середині 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-дюймовий MacBook Air (початок 2015)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air із 11-дюймовим дисплеєм, представлений на початку 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Air (початок 2015)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air із 13-дюймовим дисплеєм, представлений на початку 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (кінець 2018)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air із дисплеєм Retina й Touch ID, представлений наприкінці 2018 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (середина 2019 року)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air із 13-дюймовим дисплеєм Retina й Touch ID, представлений у середині 2019 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core Duo та 15- чи 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core Duo та 15- чи 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo та 15- чи 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo та 15- чи 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo та 15- чи 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo, 15- чи 17-дюймовим дисплеєм і трекпедом Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (суцільний алюмінієвий корпус, кінець 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений в кінці 2008 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (суцільний алюмінієвий корпус, початок 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений на початку 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (суцільний алюмінієвий корпус, середина 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений в середині 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (суцільний алюмінієвий корпус, середина 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений в середині 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (суцільний алюмінієвий корпус, середина 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений в середині 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core i5 або Intel Core i7, 15- або 17-дюймовим дисплеєм у суцільному алюмінієвому корпусі, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro з процесором Intel Core i5 або Intel Core i7, 15- або 17-дюймовим дисплеєм у суцільному алюмінієвому корпусі, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з двоядерним процесором Intel Core 2 Duo в суцільному алюмінієвому корпусі, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13-дюймовий (початок 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з двоядерним процесором Intel Core i5 або Intel Core i7 у суцільному алюмінієвому корпусі, представлений на початку 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15-дюймовий (початок 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з чотириядерним процесором Intel Core i7 у суцільному алюмінієвому корпусі, представлений на початку 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17-дюймовий (початок 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17-дюймовий MacBook Pro з чотириядерним процесором Intel Core i7 у суцільному алюмінієвому корпусі, представлений на початку 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 дюймів (середина 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з двоядерним процесором Intel Core i7 у суцільному алюмінієвому корпусі, представлений у середині 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 дюймів (середина 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з двоядерним процесором Intel Core i5 або Intel Core i7 у суцільному алюмінієвому корпусі, представлений у середині 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro з дисплеєм Retina, Intel Core i7, 15 дюймів (середина 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina та двоядерним процесором Intel Core i7 у суцільному алюмінієвому корпусі, представлений у середині 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro з дисплеєм Retina, Intel Core i5, Intel Core i7, 13 дюймів (кінець 2012)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з дисплеєм Retina і двоядерним процесором Intel Core i5 чи i7 у суцільному алюмінієвому корпусі, представлений наприкінці 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з дисплеєм Retina (кінець 2013)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з дисплеєм Retina в суцільному алюмінієвому корпусі, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina (кінець 2013)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina в суцільному алюмінієвому корпусі, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina та дискретною відеокартою NVIDIA (кінець 2013)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina в суцільному алюмінієвому корпусі та дискретною відеокартою NVIDIA, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina (середина 2015)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina в суцільному алюмінієвому корпусі, представлений у середині 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina (середина 2015)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з дисплеєм Retina та дискретною відеокартою AMD, у суцільному алюмінієвому корпусі, представлений у середині 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з дисплеєм Retina (початок 2015)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з дисплеєм Retina в суцільному алюмінієвому корпусі, представлений на початку 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 (кінець 2016)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3, представлений наприкінці 2016 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 та Touch ID (кінець 2016 р.)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 й Touch ID, представлений наприкінці 2016 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з Thunderbolt 3 та Touch ID (кінець 2016 р.)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з Thunderbolt 3 й Touch ID, представлений наприкінці 2016 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 (середина 2017 р.)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 та Touch ID (середина 2017 р.)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 й Touch ID, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з Thunderbolt 3 та Touch ID (середина 2017 р.)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з Thunderbolt 3 й Touch ID, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-дюймовий MacBook Pro з Thunderbolt 3 та Touch ID (середина 2018 р.)</string>
+			<key>processor</key>
+			<string>6-ядерний Intel Core i7, 6-ядерний Intel Core i9</string>
+			<key>description</key>
+			<string>15-дюймовий MacBook Pro з Thunderbolt 3 й Touch ID, представлений у середині 2018 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 та Touch ID (середина 2018 р.)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>13-дюймовий MacBook Pro з Thunderbolt 3 й Touch ID, представлений у середині 2018 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (середина 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Настільний комп’ютер (алюмінієвий корпус).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (середина 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Настільний комп’ютер (алюмінієвий корпус).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (початок 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Настільний комп’ютер (алюмінієвий корпус).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (початок 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Настільний комп’ютер (алюмінієвий корпус).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (початок 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Настільний комп’ютер (алюмінієвий корпус), представлений на початку 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Настільний комп’ютер (алюмінієвий корпус), представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (кінець 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Професійний настільний комп’ютер, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini з процесором Intel Core (початок 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Невеликий настільний комп’ютер Mac із процесором Intel Core 2 Duo, Intel Core Duo або Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (середина 2007)</string>
+			<key>marketingModel</key>
+			<string>Mac mini з процесором Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Невеликий настільний комп’ютер Mac із процесором Intel Core 2 Duo, Intel Core Duo або Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini з процесором Intel Core (початок 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini з відеокартою NVIDIA GeForce 9400M, представлений на початку 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini з процесором Intel Core (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini з відеокартою NVIDIA GeForce 320M, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (середина 2011) з відеокартою Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini з двоядерним процесором Intel i5 і відеоадаптером Intel HD Graphics 3000, представлений у середині 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (середина 2011) з відеокартою AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini з двоядерним процесором Intel i5 або i7 і відеоадаптером AMD Radeon HD 6630M, представлений у середині 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Сервер Mac mini (середина 2011)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>Сервер Mac mini з двоядерним процесором i7 і відеоадаптером Intel HD Graphics 3000, представлений у середині 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (кінець 2012)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini з двоядерним процесором i5 і відеоадаптером Intel HD Graphics 4000, представлений наприкінці 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (кінець 2012)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini з процесором dual-core i7 і відеокартою Intel HD Graphics 4000, представлений в кінці 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (кінець 2014)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5, двоядерний Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini з двоядерним процесором Intel і вбудованим відеоадаптером, представлений у кінці 2014 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (кінець 2018)</string>
+			<key>processor</key>
+			<string>Процесор Intel 8-го покоління (4-ядерний Core i3, 6-ядерний Core i5, 6-ядерний Core i7)</string>
+			<key>description</key>
+			<string>Mac mini з процесором Intel 8-го покоління і відеокартою Intel UHD graphics 630, представлений у кінці 2018 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Портативний комп’ютер у чорному корпусі з пластику й гуми з фігурними боками.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Комп’ютери з оригінальним яскравим розкривним корпусом-«мушлею» із вбудованою ручкою, а також пізніші моделі в сріблясто-білих прямокутних пластикових корпусах із 12- або 14-дюймовими пласкими дисплеями.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Комп’ютери iBook білого кольору з процесором G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Комп’ютери iBook білого кольору з процесором G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Комп’ютери iBook білого кольору з процесором G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Надтонкі комп’ютери в оригінальному титановому корпусі з пласким 15-дюймовим дисплеєм, а також пізніші моделі в алюмінієвому корпусі з 12-, 15- або 17-дюймовим дисплеєм.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі із синьо-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі із синьо-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Невеликий настільний комп’ютер Mac G4, який під’єднується до більшості LCD- або VGA-дисплеїв.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Невеликий настільний комп’ютер Mac G4, який під’єднується до більшості LCD- або VGA-дисплеїв.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному алюмінієвому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному алюмінієвому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Плаский комп’ютер G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному», включно з оригінальним синьо-білим пластиковим оздобленням, а також численними додатковими кольорами.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному», включно з оригінальним синьо-білим пластиковим оздобленням, а також численними додатковими кольорами.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі з сіро-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі з сіро-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі з сіро-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі з сіро-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі з сіро-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному корпусі з сіро-білим пластиковим оздобленням.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному», включно з оригінальним синьо-білим пластиковим оздобленням, а також численними додатковими кольорами.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному» і куполоподібна основа, а також 15-, 17- або 20-дюймовий плаский дисплей.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному» і вбудований плаский екран із променевою трубкою в компактному корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному» і куполоподібна основа, а також 15-, 17- або 20-дюймовий плаский дисплей.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у формі куба в прозорому пластиковому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у формі куба в прозорому пластиковому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному» і куполоподібна основа, а також 15-, 17- або 20-дюймовий плаский дисплей.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному» і куполоподібна основа, а також 15-, 17- або 20-дюймовий плаский дисплей.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Конструкція типу «усе-в-одному» і вбудований плаский екран із променевою трубкою в компактному корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному алюмінієвому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному алюмінієвому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Плаский комп’ютер G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Плаский комп’ютер G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Настільний комп’ютер у прямокутному алюмінієвому корпусі.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Сервер G4, що монтується в стійку, з оптичним дисководом (зі слотовим або лотковим дисководом) і чотирма відсіками для розширення, або кластерна модель G4 з єдиним відсіком для розширення.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Сервер G4, що монтується в стійку, з оптичним дисководом (зі слотовим або лотковим дисководом) і чотирма відсіками для розширення, або кластерна модель G4 з єдиним відсіком для розширення.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Сервер на базі комп’ютера G5, що монтується в стійку, зі слотовим CD- або DVD-дисководом і трьома відсіками для розширення, або кластерна модель без відсіків для розширення.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (кінець 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon серії 5100</string>
+			<key>description</key>
+			<string>Сервер, що монтується в стійку, на базі процесора Intel Xeon серії 5100, представлений в кінці 2006 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (початок 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon серії 5400</string>
+			<key>description</key>
+			<string>Сервер, що монтується в стійку, на базі процесора Intel Xeon серії 5400, представлений на початку 2008 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (початок 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon серії 5500</string>
+			<key>description</key>
+			<string>Сервер, що монтується в стійку, на базі процесора Intel Xeon серії 5500, представлений на початку 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Плаский комп’ютер iMac із процесором Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Плаский комп’ютер iMac із процесором Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Плаский комп’ютер iMac із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Плаский комп’ютер iMac із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Плаский комп’ютер iMac із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>Комп’ютер iMac із процесором Intel Core 2 Duo (алюмінієвий корпус, середина 2007)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20-дюймовий або 24-дюймовий плаский iMac (алюмінієвий корпус) із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>Комп’ютер iMac із процесором Intel Core 2 Duo (алюмінієвий корпус, початок 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20-дюймовий або 24-дюймовий плаский iMac (алюмінієвий корпус) із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>Комп’ютер iMac із процесором Intel Core 2 Duo (алюмінієвий корпус, початок 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20-дюймовий або 24-дюймовий плаский iMac (алюмінієвий корпус) із процесором Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>Комп’ютер iMac із процесором Intel Core 2 Duo (широкоформатний екран, кінець 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21,5-дюймовий або 27-дюймовий iMac із широкоформатним LED-дисплеєм, представлений в кінці 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>Комп’ютер iMac із процесором Intel Core i5 або Intel Core i7 (широкоформатний екран, кінець 2009)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із чотириядерним процесором і широкоформатним LED-дисплеєм, представлений в кінці 2009 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (середина 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із широкоформатним LED-дисплеєм, представлений в середині 2010 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (початок 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac з Thunderbolt, представлений на початку 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (початок 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із підтримкою Thunderbolt, представлений на початку 2011 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (кінець 2012)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений в кінці 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (кінець 2012)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений в кінці 2012 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (початок 2013)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i3</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений на початку 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (кінець 2013)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (кінець 2013)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (кінець 2013)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i3</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений наприкінці 2013 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (середина 2014)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений у середині 2014 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (кінець 2014)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений у кінці 2014 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (кінець 2015)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним LED-дисплеєм із заднім підсвічуванням, представлений наприкінці 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (кінець 2015)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним дисплеєм або дисплеєм Retina 4K, представлений наприкінці 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (кінець 2015)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5, Чотириядерний Intel Core i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із широкоформатним дисплеєм або дисплеєм Retina 5K, представлений наприкінці 2015 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (середина 2017)</string>
+			<key>processor</key>
+			<string>Двоядерний Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із широкоформатним дисплеєм, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (середина 2017)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із дисплеєм Retina 4K, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (середина 2017)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i5/i7</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із дисплеєм Retina 5K, представлений у середині 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-дюймовий iMac (початок 2019)</string>
+			<key>processor</key>
+			<string>6-ядерний Intel Core i5, 8-ядерний Intel Core i9</string>
+			<key>description</key>
+			<string>27-дюймовий iMac із дисплеєм Retina 5K, представлений на початку 2019 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-дюймовий iMac (початок 2019)</string>
+			<key>processor</key>
+			<string>Чотириядерний Intel Core i3, 6-ядерний Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21,5-дюймовий iMac із дисплеєм Retina 4K, представлений на початку 2019 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (кінець 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro з процесором Xeon W і відеоадаптером Radeon Pro Vega, представлений наприкінці 2017 року.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

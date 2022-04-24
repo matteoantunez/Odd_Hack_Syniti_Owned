@@ -1,0 +1,255 @@
+{
+    "color": [0.307, 0.535, 0.98],
+    "snippets":[
+        {
+            "name" : "QuadraticEaseIn",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quadraticEaseIn($in)"
+            }
+        },
+        {
+            "name" : "QuadraticEaseOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quadraticEaseOut($in)"
+            }
+        },
+        {
+            "name" : "QuadraticEaseInOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quadraticEaseInOut($in)"
+            }
+        },
+        {
+            "name" : "CubicEaseIn",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_cubicEaseIn($in)"
+            }
+        },
+        {
+            "name" : "CubicEaseOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_cubicEaseOut($in)"
+            }
+        },
+        {
+            "name" : "CubicEaseInOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_cubicEaseInOut($in)"
+            }
+        },
+        {
+            "name" : "QuarticEaseIn",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quarticEaseIn($in)"
+            }
+        },
+        {
+            "name" : "QuarticEaseOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quarticEaseOut($in)"
+            }
+        },
+        {
+            "name" : "QuarticEaseInOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quarticEaseInOut($in)"
+            }
+        },
+        {
+            "name" : "QuinticEaseIn",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quinticEaseIn($in)"
+            }
+        },
+        {
+            "name" : "QuinticEaseOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quinticEaseOut($in)"
+            }
+        },
+        {
+            "name" : "QuinticEaseInOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_quinticEaseInOut($in)"
+            }
+        },
+        {
+            "name" : "CircleEase",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "1.0 - vfx_sqrt(1.0 - $in * $in)"
+            }
+        },
+        {
+            "name" : "HermiteEase",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "$in * $in * (3 - $in) / 2"
+            }
+        },
+        {
+            "name" : "SineEaseIn",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "1 - vfx_cos(($in * .pi) / 2)",
+                "metal" : "1 - vfx_cos(($in * M_PI_F) / 2)",
+                "c"     : "1 - vfx_cos(($in * M_PI) / 2)"
+            }
+        },
+        {
+            "name" : "SineEaseOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_sin(($in * .pi) / 2)",
+                "metal" : "vfx_sin(($in * M_PI_F) / 2)",
+                "c"     : "vfx_sin(($in * M_PI) / 2)"
+            }
+        },
+        {
+            "name" : "SineEaseInOut",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "-(vfx_cos(.pi * $in) - 1) / 2",
+                "metal" : "-(vfx_cos(M_PI_F * $in) - 1) / 2",
+                "c"     : "-(vfx_cos(M_PI * $in) - 1) / 2"
+            }
+        },
+        {
+            "name" : "BackEase",
+            "showInParameterDefaultValues" : ["amplitude"],
+            "inParameterNames" : ["in", "amplitude"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$in * $in * $in - $in * $amplitude * sinf($in * .pi)",
+                "metal" : "$in * $in * $in - $in * $amplitude * sin($in * M_PI_F)",
+                "c"     : "$in * $in * $in - $in * $amplitude * sin($in * M_PI)"
+            }
+        },
+        {
+            "name" : "BounceEase",
+            "showInParameterDefaultValues" : ["bounces", "bounciness"],
+            "includeFunctions" : ["Easing@bounceEase"],
+            "inParameterNames" : ["in", "bounces", "bounciness"],
+            "inParameterTypes" : ["Float", "Int32", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "bounceEase##($in, $bounces, $bounciness)"
+            }
+        },
+        {
+            "name" : "ElasticEase",
+            "showInParameterDefaultValues" : ["oscillations", "springiness"],
+            "includeFunctions" : ["Easing@elasticEase"],
+            "inParameterNames" : ["in", "oscillations", "springiness"],
+            "inParameterTypes" : ["Float", "Int32", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "elasticEase##($in, $oscillations, $springiness)"
+            }
+        },
+        {
+            "name" : "ExponentialEase",
+            "showInParameterDefaultValues" : ["exponent"],
+            "inParameterNames" : ["in", "exponent"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "(1.0 - exp($exponent * $in)) / (1.0 - exp($exponent))"
+            }
+        },
+        {
+            "name" : "LogarithmicEase",
+            "showInParameterDefaultValues" : ["base"],
+            "includeFunctions" : ["Easing@logBase"],
+            "inParameterNames" : ["in", "base"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "logBase##(($base - 1) * $in + 1, base: $base)",
+                "metal" : "logBase##(($base - 1) * $in + 1, $base)",
+                "c"     : "logBase##(($base - 1) * $in + 1, $base)"
+            }
+        },
+        {
+            "name" : "PowerEase",
+            "showInParameterDefaultValues" : ["power"],
+            "inParameterNames" : ["in", "power"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift|c|metal" : "vfx_pow($in, $power)"
+            }
+        }        
+    ]
+}
+    

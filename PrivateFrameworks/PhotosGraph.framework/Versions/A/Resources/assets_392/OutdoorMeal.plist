@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<integer>1</integer>
+	<key>criteria</key>
+	<array>
+		<dict>
+			<key>ROI</key>
+			<dict>
+				<key>positiveROIs</key>
+				<array>
+					<string>Nature</string>
+					<string>Urban</string>
+					<string>Beach</string>
+				</array>
+				<key>minimumNumberOfROIs</key>
+				<integer>1</integer>
+			</dict>
+			<key>POI</key>
+			<dict>
+				<key>positivePOIs</key>
+				<array>
+					<string>Park</string>
+				</array>
+				<key>negativePOIs</key>
+				<array>
+					<string>Restaurant</string>
+				</array>
+				<key>minimumNumberOfPOIs</key>
+				<integer>1</integer>
+			</dict>
+			<key>Scene</key>
+			<dict>
+				<key>positiveScenes</key>
+				<array>
+					<string>food</string>
+					<string>drink</string>
+					<string>liquor</string>
+				</array>
+				<key>negativeScenes</key>
+				<array/>
+				<key>minimumNumberOfPositiveScenes</key>
+				<integer>2</integer>
+				<key>minimumNumberOfNegativeScenes</key>
+				<integer>1</integer>
+				<key>minimumNumberOfAssetsWithPositiveScenes</key>
+				<integer>1</integer>
+				<key>minimumNumberOfAssetsWithNegativeScenes</key>
+				<integer>4</integer>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

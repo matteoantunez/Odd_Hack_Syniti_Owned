@@ -1,0 +1,1 @@
+(function(){return function(r,e,n){var a=loadHelper(n+"_for_document.js")[e];return a&&a.forEach(function(e){var a=r.search(e);if(a>-1)switch(n){case"header":r=r.substring(0,a);break;case"footer":r=r.substring(a)}}),r}}).call();

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<array>
+		<string>(haus|allgemein|hals-nasen-ohren|halsnasenohren|hno|sport|kinder|frauen|rechts)\s?(arzt|ärztin|mediziner|medizinerin)</string>
+		<string>(doktor|allgemeinmediziner|chiropraktiker|anästhesist|arbeitsmediziner|nuklearmediziner|psychater)(n|in|en)?</string>
+		<string>(othopäd|chirurg|onkolog|endokrinolog|angiolog|gastroenterolog|hämatolog|kardiolog|pneumolog|nephrolog|neurolog|psycholog|physiolog|psychotherapeut|physiotherapeut|neuropatholog|patholog|pharmakolog|radiolog|strahlentherapeut|urolog)(e|en|in)</string>
+		<string>therapie(stunde|sitzung)</string>
+		<string>(seh|hör)test</string>
+		<string>medizinischer (fitness )?test</string>
+		<string>routineuntersuchung</string>
+		<string>musterung</string>
+	</array>
+</dict>
+</plist>

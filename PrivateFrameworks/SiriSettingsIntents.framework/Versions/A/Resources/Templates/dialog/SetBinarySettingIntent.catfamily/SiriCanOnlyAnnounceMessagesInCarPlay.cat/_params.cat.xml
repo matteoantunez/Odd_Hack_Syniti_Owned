@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#SiriCanOnlyAnnounceMessagesInCarPlay">
+    <meta name="description" value="When connected to CarPlay, Siri is unable to announce notifications from any app other than Messages."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters></parameters>
+
+</cat>

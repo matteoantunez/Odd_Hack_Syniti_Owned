@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL</key>
+	<array>
+		<string>oktober[- ]?fest</string>
+		<string>cannstatter volksfest</string>
+		<string>bremer freimarkt</string>
+		<string>grö(ß|ss)te kirmes am rhein</string>
+		<string>cranger kirmes</string>
+		<string>kieler woche</string>
+		<string>hamburger dom</string>
+		<string>nürnberger volksfest</string>
+		<string>libori</string>
+		<string>hamburger hafengeburtstag</string>
+		<string>kramermarkt</string>
+		<string>schützenfest hannover</string>
+		<string>michaeliskirchweih</string>
+		<string>gäubodenvolksfest</string>
+		<string>bergkirchweih</string>
+		<string>sterkrader fronleichnams[- ]?kirmes</string>
+		<string>stuttgarter frühlingsfest</string>
+		<string>pützchens[- ]?markt</string>
+		<string>allerheiligenkirmes</string>
+		<string>neusser bürger[- ]?schützenfest</string>
+		<string>rosenheimer herbstfest</string>
+		<string>palmkirmes</string>
+		<string>stoppelmarkt</string>
+		<string>annakirmes</string>
+		<string>heiner[- ]?fest</string>
+		<string>wormser backfisch[- ]?fest</string>
+		<string>dürkheimer wurstmarkt</string>
+		<string>kreuznacher jahrmarkt</string>
+		<string>johannisnacht</string>
+		<string>africa festival</string>
+		<string>bardentreffen</string>
+		<string>bochum total festival</string>
+		<string>breminale</string>
+		<string>düsseldorfer jazz[- ]?rally</string>
+		<string>internationales dixieland[- ]?festival dresden</string>
+		<string>klassik open air</string>
+		<string>rheinkultur</string>
+		<string>schlagermove</string>
+		<string>schleswig[- ]?holstein musik festival</string>
+		<string>sound of frankfurt</string>
+		<string>luft und liebe</string>
+		<string>electronics beats</string>
+		<string>modular festival</string>
+		<string>ikarus</string>
+		<string>rock am ring</string>
+		<string>kamehameha</string>
+		<string>hurricane festival</string>
+		<string>southside festival</string>
+		<string>kosmonaut</string>
+		<string>summerjam</string>
+		<string>splash</string>
+		<string>melt</string>
+		<string>wacken</string>
+		<string>nature one</string>
+		<string>rocco del schlacko</string>
+		<string>taubertal</string>
+		<string>summer breeze</string>
+		<string>ms dockville</string>
+		<string>rock am see</string>
+		<string>chiemsee summer festival</string>
+		<string>schlossgraben[- ]?fest</string>
+	</array>
+	<key>ENTERTAINMENT::FAIR</key>
+	<array>
+		<string>agritechnica</string>
+		<string>auto mobil international</string>
+		<string>boot(\w?messe)?( d(ü|ue)sseldorf)?</string>
+		<string>cebit</string>
+		<string>drupa</string>
+		<string>essen motor show</string>
+		<string>frankfurter buchmesse</string>
+		<string>hannover messe</string>
+		<string>iaa nutzfahrzeuge</string>
+		<string>iaa personenkraftwagen</string>
+		<string>internationale funkausstellung</string>
+		<string>internationale grüne woche</string>
+		<string>mannheimer maimarkt</string>
+		<string>bauma</string>
+		<string>games-?com</string>
+	</array>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT</key>
+	<array>
+		<string>quiz[- ]?(nacht|night)</string>
+		<string>pubquiz</string>
+		<string>kneipenquiz</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::AMUSEMENT</key>
+	<array>
+		<string>disney[- ]?land</string>
+		<string>lego[- ]?land</string>
+		<string>heide[- ]?park</string>
+		<string>serengeti[- ]?park</string>
+		<string>phantasialand</string>
+		<string>movie[- ]?park</string>
+		<string>tripsdrill</string>
+		<string>hansa[- ]?park</string>
+		<string>wunderland[- ]?kalkar</string>
+		<string>europa[- ]?park</string>
+		<string>walibi</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::WATERPARK</key>
+	<array>
+		<string>tropical island resort</string>
+		<string>badeparadies schwarzwald</string>
+		<string>alpamare</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT</key>
+	<array>
+		<string>gro(ß|ss)e(r)? preis von deutschland</string>
+		<string>(die )?olypmische(n)? (sommer|winter)?[- ]?spiele</string>
+		<string>(die )?paralympische(n)? (sommer|winter)?[- ]?spiele</string>
+		<string>paralympics</string>
+		<string>handball</string>
+		<string>ice skating</string>
+		<string>schlittschuh[- ]?laufen</string>
+		<string>schlittschu[- ]?fahren</string>
+		<string>kart[- ]?fahren</string>
+		<string>badminton</string>
+		<string>boxen</string>
+		<string>judo</string>
+		<string>karate</string>
+		<string>taekwondo</string>
+		<string>squash</string>
+		<string>wasser-aerobic</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::AMERICAN_FOOTBALL</key>
+	<array>
+		<string>rose[- ]?bowl</string>
+		<string>super[- ]?bowl</string>
+		<string>(german|junior)[- ]?bowl</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASEBALL</key>
+	<array>
+		<string>little league world series</string>
+		<string>world series</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASKETBALL</key>
+	<array>
+		<string>nba finals</string>
+		<string>(nba|d?bbl)([- ])?(halb|viertel|achtel)?([- ])?finale</string>
+		<string>final four</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BIKE</key>
+	<array>
+		<string>world track championships</string>
+		<string>tour de france</string>
+		<string>deutschland[- ]?tour</string>
+		<string>friedensfahrt</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::CRICKET</key>
+	<array>
+		<string>icc[- ]?world (twenty|20)20</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GOLF</key>
+	<array>
+		<string>the masters( tournament)?</string>
+		<string>us open</string>
+		<string>british open</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GYMWORKOUT</key>
+	<array>
+		<string>zumba</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::HOCKEY</key>
+	<array>
+		<string>stanley[- ]?cup</string>
+		<string>iihf world championship</string>
+		<string>iihf weltmeisterschaft</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUNNING</key>
+	<array>
+		<string>(berlin|bremerhaven|bremen|teichwiesen|elbtunnel|hamburg|stadtpark|kassel|frankfurt|wiesbaden|rostock|düsseldorf|köln|hambach|mainz|gutenberg)(er)?[- ]?marathon</string>
+		<string>(runtalya[- ]marathon|lauf der sympathie|marathon deutsche weinstra(ß|ss)e|paderborner osterlauf|würzburger residenzlauf|oberelbe[- ]marathon|südtiroler frühlings[- ]halbmarathon|bonn[- ]marathon|hannover[- ]marathon|drebber marathon|düsseldorf[- ]marathon|mannheim[- ]marathon|big 25 berlin|gutenberg[- ]marathon|kassel[- ]marathon|trollinger[- ]marathon|würzburg[- ]marathon|mittelrhein[- ]marathon|leverkusen[- ]halbmarathon|rhein[- ]ruhr[- ]marathon|darmstädter stadtlauf|metropolmarathon|hamburg[- ]halbmarathon|ez[- ]lauf|rostock[- ]marathon|monschau[- ]marathon|jever[- ]fun[- ]lauf|nürburgringlauf|altötting[- ]halbmarathon|mitteldeutscher marathon|alsterlauf|münster[- ]marathon|einstein[- ]marathon|baden[- ]marathon|neumarkter stadtlauf|marathon der (3|drei) länder am bodensee|rund um den baldeneysee|schwarzwald[- ]marathon|magdeburg[- ]marathon|dresden[- ]marathon|nikolauslauf tübingen|berliner firmenlauf|bottwartal[- ]marathon|korschenbroicher city[- ]lauf|frauenlauf mannheim|salzkotten[- ]marathon|reschenseelauf|hunsrück[- ]marathon|salzburg[- ]marathon|seenlandmarathon|spreewald[- ]marathon|kö[- ]lauf|halbmarathon bochum|elbdeichmarathon|prague[- ]marathon|weidener night run|wings for life run|swisscitymarathon|montafon[- ]arlberg[- ]marathon|königsforst[- ]marathon)</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUNNING::MARATHON</key>
+	<array>
+		<string>berlin-marathon</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::SOCCER</key>
+	<array>
+		<string>dfb[- ]?pokal[- ]?(halb|viertel|achtel)?finale</string>
+		<string>(fu(ß|ss)ball[- ])?weltmeisterschafts?\w?(halb|viertel|achtel)?finale</string>
+		<string>wm\w((halb|viertel|achtel)\w?)?finale</string>
+		<string>(fu(ß|ss)ball[- ])?europa([- ])?meisterschafts?\w?(halb|viertel|achtel)?finale</string>
+		<string>(fu(ß|ss)ball[- ])?[we]m\w((halb|viertel|achtel)\w?)?final(rund)?e</string>
+		<string>(fu(ß|ss)ball[- ])?champions[- ]?league[- ]?(finale|halbfinale|viertelfinale|achtelfinale)?</string>
+		<string>(fu(ß|ss)ball[- ])?euro[- ]?(finale|halbfinale|viertelfinale|achtelfinale)</string>
+		<string>(fu(ß|ss)ball[- ])?(euro|wm|em) 20[0-9][0-9]</string>
+		<string>(fu(ß|ss)ball[- ])?(wm|em) [0-9][0-9]</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::TENNIS</key>
+	<array>
+		<string>(u\.s\.|us)[- ]open( tennis championships)?</string>
+		<string>french[- ]open</string>
+		<string>roland garros</string>
+		<string>wimbledon finale</string>
+	</array>
+</dict>
+</plist>

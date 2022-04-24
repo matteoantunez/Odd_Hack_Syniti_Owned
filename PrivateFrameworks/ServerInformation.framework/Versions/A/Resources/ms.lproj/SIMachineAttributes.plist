@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook dengan pemproses Intel Core Duo tersedia dalam warna hitam atau putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook dengan pemproses Intel Core 2 Duo tersedia dalam warna hitam atau putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook dengan pemproses Intel Core 2 Duo tersedia dalam warna hitam atau putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook dengan pemproses Intel Core 2 Duo tersedia dalam warna hitam atau putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (unibody aluminum)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook dengan Intel Core 2 Duo dengan unibody aluminum, diperkenalkan pada akhir tahun 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (putih, Awal Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook putih dengan pemproses Intel Core 2 Duo, diperkenalkan pada awal tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (putih, Akhir Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook putih dengan pemproses Intel Core 2 Duo dan paparan LED, diperkenalkan pada akhir tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (putih, Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook dengan pemproses Intel Core 2 Duo dan bekas unibody putih, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12" (Awal Tahun 2015)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core M</string>
+			<key>description</key>
+			<string>MacBook 12" dengan paparan Retina, diperkenalkan pada awal tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12" (Awal Tahun 2016)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core m3, Dual-core Intel Core m5, Dual-core Intel Core m7</string>
+			<key>description</key>
+			<string>MacBook 12" dengan paparan Retina, diperkenalkan pada awal tahun 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12" (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core m3, Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook dengan paparan Retina 12", diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(Asal)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air dengan Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air dengan Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11"</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 11", diperkenalkan pada akhir tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13"</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 13", diperkenalkan pada akhir tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11" (Pertengahan Tahun 2011)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 11", diperkenalkan pada pertengahan tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13" (Pertengahan Tahun 2011)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 13", diperkenalkan pada pertengahan tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11" (Pertengahan Tahun 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 11", diperkenalkan pada pertengahan tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13" (Pertengahan Tahun 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 13", diperkenalkan pada pertengahan tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11" (Pertengahan Tahun 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 11", diperkenalkan pada pertengahan tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13" (Pertengahan Tahun 2013)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 13", diperkenalkan pada pertengahan tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11" (Awal Tahun 2015)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 11", diperkenalkan pada awal tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13" (Awal Tahun 2015)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan 13", diperkenalkan pada awal tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (Akhir Tahun 2018)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan Retina dan Touch ID, diperkenalkan pada akhir tahun 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (Pertengahan Tahun 2019)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air dengan paparan Retina 13" dan Touch ID, diperkenalkan pada pertengahan tahun 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core Duo dan paparan 15" atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core Duo dan paparan 15" atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core 2 Duo dan paparan 15" atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core 2 Duo dan paparan 15" atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core 2 Duo dan paparan 15" atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core 2 Duo, paparan 15" atau 17" dan trackpad Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (unibody aluminum) (Akhir Tahun 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan Intel Core 2 Duo dengan unibody aluminum, diperkenalkan pada akhir tahun 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (unibody aluminum) (Awal Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan Intel Core 2 Duo dengan unibody aluminum, diperkenalkan pada awal tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (unibody aluminum) (Pertengahan Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan Intel Core 2 Duo dengan unibody aluminum, diperkenalkan pada pertengahan tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (unibody aluminum) (Pertengahan Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan Intel Core 2 Duo dengan unibody aluminum, diperkenalkan pada pertengahan tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (unibody aluminum) (Pertengahan Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro dengan Intel Core 2 Duo dengan unibody aluminum, diperkenalkan pada pertengahan tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core i5 atau Intel Core i7, paparan 15" atau 17" dan unibody aluminum, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro dengan pemproses Intel Core i5 atau Intel Core i7, paparan 15" atau 17" dan unibody aluminum, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan pemproses Intel Core 2 Duo dan unibody aluminum, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13" (Awal Tahun 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan pemproses dual-core Intel Core i5 atau Intel Core i7 dan unibody aluminum, diperkenalkan pada awal tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15" (Awal Tahun 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan pemproses quad-core Intel Core i7 dan unibody aluminum, diperkenalkan pada awal tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17" (Awal Tahun 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 17" dengan pemproses quad-core Intel Core i7 dan unibody aluminum, diperkenalkan pada awal tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15" (Pertengahan Tahun 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan pemproses dual-core Intel Core i7 dan unibody aluminum, diperkenalkan pada pertengahan tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13" (Pertengahan Tahun 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan pemproses dual-core Intel Core i5 atau Intel Core i7 dan unibody aluminum, diperkenalkan pada pertengahan tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro dengan paparan Retina, Intel Core i7, 15" (Pertengahan Tahun 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan paparan Retina, pemproses dual-core Intel Core i7 dan unibody aluminum, diperkenalkan pada pertengahan tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro dengan paparan Retina, Intel Core i5, Intel Core i7, 13" (Akhir Tahun 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan paparan Retina, pemproses dual-core Intel Core i5 atau i7 dan unibody aluminum, diperkenalkan pada akhir tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan paparan Retina (Akhir Tahun 2013)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan paparan Retina dan unibody aluminum, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan paparan Retina (Akhir Tahun 2013)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan paparan Retina dan unibody aluminum, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan paparan Retina, grafik NVIDIA terpisah (Akhir tahun 2013)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan paparan Retina dan unibody aluminum, grafik NVIDIA terpisah, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan paparan Retina (Pertengahan Tahun 2015)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan paparan Retina dan unibody aluminum, diperkenalkan pada pertengahan tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan paparan Retina (Pertengahan Tahun 2015)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan paparan Retina dan unibody aluminum, grafik AMD terpisah, diperkenalkan pada pertengahan tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan paparan Retina (Akhir Tahun 2015)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan paparan Retina dan unibody aluminum, diperkenalkan pada awal tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3 (Akhir Tahun 2016)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3, diperkenalkan pada akhir tahun 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan Touch Bar (Akhir Tahun 2016)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3 dan Touch ID, diperkenalkan pada akhir tahun 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan Touch Bar (Akhir Tahun 2016)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan Thunderbolt 3 dan Touch ID, diperkenalkan pada akhir tahun 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3 (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3, diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan Touch Bar (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3 dan Touch ID, diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan Touch Bar (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan Thunderbolt 3 dan Touch ID, diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15" dengan Thunderbolt 3 dan Touch ID (Pertengahan Tahun 2018)</string>
+			<key>processor</key>
+			<string>6-core Intel Core i7, 6-core Intel Core i9</string>
+			<key>description</key>
+			<string>MacBook Pro 15" dengan Thunderbolt 3 dan Touch ID, diperkenalkan pada pertengahan tahun 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3 dan Touch ID (Pertengahan Tahun 2018)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13" dengan Thunderbolt 3 dan Touch ID, diperkenalkan pada pertengahan tahun 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Pertengahan Tahun 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Menara Desktop (bekas aluminum).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Pertengahan Tahun 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Menara Desktop (bekas aluminum).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Awal Tahun 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Menara Desktop (bekas aluminum).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Awal Tahun 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Menara Desktop (bekas aluminum).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Awal Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Menara Desktop (bekas aluminum), diperkenalkan pada awal tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Menara Desktop (bekas aluminum), diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (Akhir Tahun 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Bekas Pro desktop, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (Awal Tahun 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Desktop jejak kecil Mac dengan pemproses Intel Core 2 Duo, Intel Core Duo, atau Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (Pertengahan Tahun 2007)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Desktop jejak kecil Mac dengan pemproses Intel Core 2 Duo, Intel Core Duo, atau Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (Awal Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini dengan NVIDIA GeForce 9400M, diperkenalkan pada awal tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini dengan NVIDIA GeForce 320M, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Pertengahan Tahun 2011) dengan Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini dengan Intel Dual-Core i5 dan Intel HD Graphics 3000, diperkenalkan pada pertengahan tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Pertengahan Tahun 2011) dengan AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini dengan Intel Dual-Core i5 atau i7 dan AMD Radeon HD 6630M, diperkenalkan pada pertengahan tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Pelayan Mac mini (Pertengahan Tahun 2011)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>Pelayan Mac mini dengan Dual-Core i7 dan Intel HD Graphics 3000, diperkenalkan pada pertengahan tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Akhir Tahun 2012)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini dengan dual-core i5 dan Intel HD Graphics 4000, diperkenalkan pada akhir tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Akhir Tahun 2012)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini dengan quad-core i7 dan Intel HD Graphics 4000, diperkenalkan pada akhir tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Akhir Tahun 2014)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5, Dual-core Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini dengan pemproses Intel dual-core dan grafik bersepadu, diperkenalkan pada akhir tahun 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (Akhir Tahun 2018)</string>
+			<key>processor</key>
+			<string>Pemproses Intel generasi ke-8 (Quad-core Core i3, 6-core Core i5, 6-core Core i7)</string>
+			<key>description</key>
+			<string>Mac mini dengan pemproses Intel generasi ke-8 dan Intel UHD graphics 630, diperkenalkan pada akhir tahun 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Komputer mudah alih dalam bingkai plastik dan getah dengan sisi berukir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Termasuk model "clamshell" mudah alih asal yang berwarna terang dengan pemegang terbina dalam dan model lebih baharu dalam bekas segi empat plastik berwarna perak dan putih dengan paparan panel rata 12" atau 14".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBooks berwarna putih dengan Pemproses G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBooks berwarna putih dengan Pemproses G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBooks berwarna putih dengan Pemproses G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Termasuk bekas titanium profil tipis asal dengan paparan panel rata 15" dan model lebih baharu dalam bekas aluminium dengan paparan 12", 15", atau 17".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna biru dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna biru dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Desktop jejak kecil Mac G4 yang boleh bersambung kepada hampir sebarang paparan LCD atau VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Desktop jejak kecil Mac G4 yang boleh bersambung kepada hampir sebarang paparan LCD atau VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara aluminum.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara aluminum.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 dengan panel rata</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Boleh pilih daripada reka bentuk semua dalam satu, termasuk bekas plastik biru dan putih asal serta banyak "perisa" lebih baharu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Boleh pilih daripada reka bentuk semua dalam satu, termasuk bekas plastik biru dan putih asal serta banyak "perisa" lebih baharu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna kelabu dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna kelabu dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna kelabu dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna kelabu dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna kelabu dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara dengan plastik berukir serta berwarna kelabu dan putih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Boleh pilih daripada reka bentuk semua dalam satu, termasuk bekas plastik biru dan putih asal serta banyak "perisa" lebih baharu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Reka bentuk semua dalam satu dengan dasar berbentuk kubah dan paparan panel rata 15", 17", atau 20".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Reka bentuk semua dalam satu dengan CRT skrin rata terbina dalam yang terletak dalam bekas bulat yang jimat ruang.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Reka bentuk semua dalam satu dengan dasar berbentuk kubah dan paparan panel rata 15", 17", atau 20".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop dengan bentuk kiub plastik jernih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Komputer desktop dengan bentuk kiub plastik jernih.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Reka bentuk semua dalam satu dengan dasar berbentuk kubah dan paparan panel rata 15", 17", atau 20".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Reka bentuk semua dalam satu dengan dasar berbentuk kubah dan paparan panel rata 15", 17", atau 20".</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Reka bentuk semua dalam satu dengan CRT skrin rata terbina dalam yang terletak dalam bekas bulat yang jimat ruang.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara aluminum.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara aluminum.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Komputer desktop gaya menara aluminum.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Pelayan sedia lekap rak G4 dengan sama ada pemacu optik pemuatan talam atau pemuatan slot dan empat ruang pengembangan, atau model nod gugusan G4 dengan ruang pengembangan tunggal.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Pelayan sedia lekap rak G4 dengan sama ada pemacu optik pemuatan talam atau pemuatan slot dan empat ruang pengembangan, atau model nod gugusan G4 dengan ruang pengembangan tunggal.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Pelayan komputer sedia lekap rak yang berdasarkan G5 dengan pemacu CD-ROM atau DVD-ROM jenis pemuatan slot dan tiga ruang pengembangan, atau model nod gugusan tanpa ruang pengembangan.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (Akhir Tahun 2006)</string>
+			<key>processor</key>
+			<string>Siri Intel Xeon 5100</string>
+			<key>description</key>
+			<string>Pelayan sedia lekap rak yang berdasarkan Siri Intel Xeon 5100, diperkenalkan pada akhir tahun 2006.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (Awal Tahun 2008)</string>
+			<key>processor</key>
+			<string>Siri Intel Xeon 5400</string>
+			<key>description</key>
+			<string>Pelayan sedia lekap rak yang berdasarkan Siri Intel Xeon 5400, diperkenalkan pada awal tahun 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (Awal Tahun 2009)</string>
+			<key>processor</key>
+			<string>Siri Intel Xeon 5500</string>
+			<key>description</key>
+			<string>Pelayan sedia lekap rak yang berdasarkan Siri Intel Xeon 5500, diperkenalkan pada awal tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo dengan panel rata.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (bekas aluminum) (Pertengahan Tahun 2007)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac panel rata 20" atau 24" (bekas aluminum) dengan pemproses Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (bekas aluminum) (Awal Tahun 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac panel rata 20" atau 24" (bekas aluminum) dengan pemproses Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (bekas aluminum) (Awal Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac panel rata 20" atau 24" (bekas aluminum) dengan pemproses Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (skrin lebar, Akhir Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac 21.5" atau 27" dengan paparan LED skrin lebar, diperkenalkan pada akhir tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (skrin lebar, Akhir Tahun 2009)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27" dengan pemproses kuad core dan paparan LED skrin lebar, diperkenalkan pada akhir tahun 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>iMac 21.5" dengan paparan LED skrin lebar, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Pertengahan Tahun 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27" dengan paparan LED skrin lebar, diperkenalkan pada pertengahan tahun 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Awal Tahun 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21.5" dengan Thunderbolt, diperkenalkan pada awal tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Awal Tahun 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27" dengan Thunderbolt, diperkenalkan pada awal tahun 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Akhir Tahun 2012)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan 21.5" skrin lebar paparan cahaya belakang LED, diperkenalkan pada akhir tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Akhir Tahun 2012)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan 27" skrin lebar paparan cahaya belakang LED, diperkenalkan pada akhir tahun 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Awal Tahun 2013)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i3</string>
+			<key>description</key>
+			<string>iMac dengan 21.5" skrin lebar paparan cahaya belakang LED, diperkenalkan pada awal tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Akhir Tahun 2013)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan 21.5" skrin lebar paparan cahaya belakang LED, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Akhir Tahun 2013)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan 27" skrin lebar paparan cahaya belakang LED, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Akhir Tahun 2013)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i3</string>
+			<key>description</key>
+			<string>iMac dengan 21.5" skrin lebar paparan cahaya belakang LED, diperkenalkan pada akhir tahun 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Pertengahan Tahun 2014)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5</string>
+			<key>description</key>
+			<string>iMac dengan 21.5" skrin lebar paparan cahaya belakang LED, diperkenalkan pertengahan tahun 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Akhir Tahun 2014)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan 27" skrin lebar paparan cahaya belakang LED, diperkenalkan pertengahan tahun 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Akhir Tahun 2015)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5</string>
+			<key>description</key>
+			<string>iMac dengan 21.5" skrin lebar paparan cahaya belakang LED, diperkenalkan pada akhir tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Akhir Tahun 2015)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan paparan skrin lebar 21.5" atau Retina 4K, diperkenalkan pada akhir tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Akhir Tahun 2015)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5, Quad-core Intel Core i7</string>
+			<key>description</key>
+			<string>iMac dengan paparan skrin lebar 27" atau Retina 5K, diperkenalkan pada akhir tahun 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Dual-core Intel Core i5</string>
+			<key>description</key>
+			<string>iMac dengan skrin lebar 21.5", diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac dengan paparan Retina 4K 21.5", diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Pertengahan Tahun 2017)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac dengan paparan Retina 5K 27", diperkenalkan pada pertengahan tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27" (Awal Tahun 2019)</string>
+			<key>processor</key>
+			<string>6-core Intel Core i5, 8-core Intel Core i9</string>
+			<key>description</key>
+			<string>iMac dengan paparan Retina 5K 27", diperkenalkan pada awal tahun 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21.5" (Awal Tahun 2019)</string>
+			<key>processor</key>
+			<string>Quad-core Intel Core i3, 6-core Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac dengan paparan Retina 4K 21.5", diperkenalkan pada awal tahun 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (Akhir Tahun 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro dengan pemproses Xeon W dan grafik Radeon Pro Vega, diperkenalkan pada akhir tahun 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

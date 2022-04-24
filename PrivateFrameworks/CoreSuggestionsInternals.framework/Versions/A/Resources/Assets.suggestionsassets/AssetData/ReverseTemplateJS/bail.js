@@ -1,0 +1,1 @@
+(function(){return function(e,r,l,t,i){if(loadHelper("baildomainforepoch.js")(r,t))return!0;if(loadHelper("bailMultipleTickets.js")(r,e)&&/tickets|movie/.test(i))return!0;if(loadHelper("schemaorgBailKeyword.js")(e,null,r.locale_,r))return!0;var n=r.getSpan();return e[l=l||"bailKeyword"].some(function(e){return n.first(e).exists()})}}).call();

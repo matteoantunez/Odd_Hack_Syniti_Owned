@@ -1,0 +1,29 @@
+#define CNA_MODULE_NAME com.apple.contacts.ContactsAutocomplete
+
+#if TARGET_OS_SIMULATOR
+#define CNA_BASE_PATH $ENV(SIMULATOR_LOG_ROOT)/CNA_MODULE_NAME
+#define CNA_EXTRA
+#elif TARGET_OS_IPHONE
+#define CNA_BASE_PATH /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/CNA_MODULE_NAME
+#define CNA_EXTRA     uid=501 gid=501
+#else
+#define CNA_BASE_PATH /var/log/CNA_MODULE_NAME
+#define CNA_EXTRA
+#endif
+
+#define CNA_FORMAT fmt='$(Time) $(Host) $(Sender)[$(PID):$(ThreadID)] <$((Level)(str))>: $(Function):$(Line) | $(Message)'
+
+#define CNA_REDIRECT_CATEGORY(__category__) ? [= Facility CNA_MODULE_NAME] [= Category __category__] file CNA_BASE_PATH/__category__.log rotate=__category__.local.log ttl=7 file_max=10M all_max=200M compress CNA_FORMAT CNA_EXTRA
+
+> CNA_BASE_PATH CNA_EXTRA mode=0750
+
+? [= Facility CNA_MODULE_NAME] claim only
+
+CNA_REDIRECT_CATEGORY(Debug)
+
+CNA_REDIRECT_CATEGORY(Performance)
+
+CNA_REDIRECT_CATEGORY(Sorting)
+
+CNA_REDIRECT_CATEGORY(Probes)
+

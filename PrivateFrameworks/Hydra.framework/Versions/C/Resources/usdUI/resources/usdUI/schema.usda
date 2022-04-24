@@ -1,0 +1,83 @@
+#usda 1.0
+(
+    "This file describes the USD Shader schemata for code generation."
+    subLayers = [
+        @usd/schema.usda@
+    ]
+)
+
+over "GLOBAL" (
+    customData = {
+        string libraryName      = "usdUI"
+        string libraryPath      = "pxr/usd/usdUI"
+        # dictionary libraryTokens = {}
+    }
+)
+{
+}
+
+class "NodeGraphNodeAPI"(
+    inherits = </APISchemaBase>
+    ) {
+    uniform float2 ui:nodegraph:node:pos (
+                customData = {
+            string apiName = "pos"
+        }
+    )
+
+    uniform int ui:nodegraph:node:stackingOrder (
+                customData = {
+            string apiName = "stackingOrder"
+        }
+    )
+
+    uniform color3f ui:nodegraph:node:displayColor (
+                customData = {
+            string apiName = "displayColor"
+        }
+    )
+
+    uniform asset ui:nodegraph:node:icon (
+                customData = {
+            string apiName = "icon"
+        }
+    )
+
+    uniform token ui:nodegraph:node:expansionState (
+        allowedTokens = ["open", "closed", "minimized"]
+                customData = {
+            string apiName = "expansionState"
+        }
+    )
+
+    uniform float2 ui:nodegraph:node:size (
+                customData = {
+            string apiName = "size"
+        }
+    )
+}
+
+
+class "SceneGraphPrimAPI"(
+    inherits = </APISchemaBase>
+    ) {
+    uniform token ui:displayName (
+                customData = {
+            string apiName = "displayName"
+        }
+    )
+    uniform token ui:displayGroup (
+                customData = {
+            string apiName = "displayGroup"
+        }
+    )
+}
+
+class Backdrop "Backdrop" (
+    inherits = </Typed>
+            customData = {
+            string apiName = "description"
+        }
+    )
+}
+

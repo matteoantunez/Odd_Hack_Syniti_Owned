@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="Suggestions#whatcanidohere">
+  <meta name="category" value="Domain"/>
+  <meta name="readyForLoc" value="true"/>
+  <meta name="description" value="Displays suggestions"/>
+  <parameters>
+    <parameter name="device" type="sirikit.DeviceState"/>
+    <parameter name="suggestionsList" type="dialog.String[]"/>
+  </parameters>
+</cat>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENTERTAINMENT::CULTURE::CONCERT</key>
+	<array>
+		<string>caf[eé] concert</string>
+	</array>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL</key>
+	<array>
+		<string>solidays</string>
+		<string>(les vieilles charrues?|festival des vieilles charrues)</string>
+		<string>festival d['’]avignon</string>
+		<string>francofolies?</string>
+		<string>festival de cannes</string>
+		<string>eurock([eé]ennes?)?</string>
+		<string>hellfest</string>
+		<string>jardin du michel</string>
+		<string>electrobeach</string>
+		<string>musilac</string>
+		<string>festival de carcassonne</string>
+		<string>jazz in marciac</string>
+		<string>festival interceltique</string>
+		<string>nuits? de fourvi[eè]re</string>
+		<string>f[eê]te des lumi[eè]res?</string>
+		<string>route du rock</string>
+		<string>rock en seine</string>
+	</array>
+	<key>ENTERTAINMENT::FAIR</key>
+	<array>
+		<string>foire du (livre|vin)</string>
+		<string>foire aux? vins?</string>
+		<string>foire de printemps</string>
+		<string>(foire (internationale |expo(sition)? )|foirexpo )(de (nice|lyon|rennes|toulouse|nantes|poitier|paris|b[eé]ziers|rouen|tarbes)|d['’]orl[eé]ans)</string>
+		<string>march[eé] de no[eë]l</string>
+	</array>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT</key>
+	<array>
+		<string>soir[eé]es? (quiz|jeux)</string>
+		<string>soir[eé]es? trivial pursuit</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::AMUSEMENT</key>
+	<array>
+		<string>disneyland( paris)?</string>
+		<string>eurodisney</string>
+		<string>walt disney studios?</string>
+		<string>futuroscope</string>
+		<string>nigloland</string>
+		<string>fraispertuis city</string>
+		<string>parc de la coccinelle</string>
+		<string>parc ast[eé]rix</string>
+		<string>dennlys parc</string>
+		<string>europark</string>
+		<string>europa[- ]park</string>
+		<string>walibi</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::WATERPARK</key>
+	<array>
+		<string>aquaboulevard</string>
+		<string>speed water park</string>
+		<string>aqualud du touquet</string>
+		<string>(aquaparc|aquapark)</string>
+		<string>oc[eé]anile</string>
+		<string>aqualand</string>
+		<string>aquasplash</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT</key>
+	<array>
+		<string>grand prix de monaco</string>
+		<string>jeux (olympiques?|paralympiques?)</string>
+		<string>coupe du monde</string>
+		<string>championnats? (d['’]europe)? d['’]athl[eé](tisme)?</string>
+		<string>hand(ball)?</string>
+		<string>patinage artistique</string>
+		<string>athl[eé](tisme)?</string>
+		<string>badminton</string>
+		<string>natation</string>
+		<string>boxe</string>
+		<string>judo</string>
+		<string>karat[eé]</string>
+		<string>[eé]quitation</string>
+		<string>escrime</string>
+		<string>aviron</string>
+		<string>tir [aà] l['’]arc</string>
+		<string>squash</string>
+		<string>piscine</string>
+		<string>aquagym</string>
+		<string>karting</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::AMERICAN_FOOTBALL</key>
+	<array>
+		<string>super bowl</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASKETBALL</key>
+	<array>
+		<string>finales?( de la)? nba</string>
+		<string>nba all[- ]star game</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BIKE</key>
+	<array>
+		<string>(tour de france|paris-roubaix)</string>
+		<string>(tour|course|promenade|sortie|balade)( de|en|[aà])? (v[eé]lo|vtt|vtc|bicyclette)</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GOLF</key>
+	<array>
+		<string>mini(ature)? golf</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GYMWORKOUT</key>
+	<array>
+		<string>pilates</string>
+		<string>body ?pump</string>
+		<string>zumba</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::HOCKEY</key>
+	<array>
+		<string>championnats?( du monde)? de hockey( sur glace)?</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUGBY</key>
+	<array>
+		<string>tournoi des (six|vi) nations</string>
+		<string>coupe (d['’]europe)? de rugby</string>
+		<string>championnats? (d['’]europe)? de rugby</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUNNING::MARATHON</key>
+	<array>
+		<string>((demi|semi) )marathon de paris</string>
+		<string>mud day</string>
+		<string>color run</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::SOCCER</key>
+	<array>
+		<string>coupe du monde</string>
+		<string>coupe de la ligue</string>
+		<string>ligue des champions</string>
+		<string>euro 20[0-9][0-9]</string>
+		<string>championnats? d['’]europe des nations</string>
+		<string>coupe des nations</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::TENNIS</key>
+	<array>
+		<string>roland( |-)garros</string>
+		<string>coupe davis</string>
+		<string>wimbledon</string>
+		<string>us open</string>
+	</array>
+</dict>
+</plist>

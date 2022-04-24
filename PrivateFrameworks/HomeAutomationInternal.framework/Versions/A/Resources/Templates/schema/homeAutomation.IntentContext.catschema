@@ -1,0 +1,157 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.IntentContext
+
+inputs:
+    hasAllQuantifier:
+        access_mode: public
+    smallestUserMentionedContainerLayer:
+        access_mode: public
+    isRemoteHomeRequest:
+        access_mode: public
+    attribute:
+        access_mode: public
+    entityNames:
+        access_mode: public
+    roomNames:
+        access_mode: public
+    zoneNames:
+        access_mode: public
+    targetedHomeName:
+        access_mode: public
+    deviceTypes:
+        access_mode: public
+    targetState:
+        access_mode: public
+    isSensorTrippedRequest:
+        access_mode: public
+    isGarageDoorRequest:
+        access_mode: public
+    userDefinedDuration:
+        access_mode: public
+    isOpenRequest:
+        access_mode: public
+    isCloseRequest:
+        access_mode: public
+    isLockRequest:
+        access_mode: public
+    isUnlockRequest:
+        access_mode: public
+    isDisarmRequest:
+        access_mode: public
+    isTVRequest:
+        access_mode: public
+    numericValue:
+        access_mode: public
+    isInCurrentRoom:
+        access_mode: public
+    isColorRequest:
+        access_mode: public
+    isScheduleRequest:
+        access_mode: public
+    isSceneRequest:
+        access_mode: public
+    targetColor:
+        access_mode: public
+    
+properties:
+    hasAllQuantifier:
+        type: dialog.Boolean
+        description: True if the user requested to target all the entities of a given category (e.g. "Turn on all lights").
+    smallestUserMentionedContainerLayer:
+        type: dialog.String
+        description: The smallest container layer mentioned by the user. Possible values - group | room | zone | home.
+    isRemoteHomeRequest:
+        type: dialog.Boolean
+        description: True if this is a remote home request
+    attribute:
+        type: dialog.String
+        description: The attribute contained in the intent
+        semantic_concept: homeAutomationNoun
+    entityNames:
+        type: dialog.String[]
+        description: The accessory or service names the user employed in the intent
+    numEntityNames:
+        type: dialog.Number
+        description: The number of entity names the user employed in the intent
+    roomNames:
+        type: dialog.String[]
+        description: The room names the user employed in the intent
+    noRoomsMentioned:
+        type: dialog.Boolean
+        description: True if no rooms were mentioned in the intent
+    zoneNames:
+        type: dialog.String[]
+        description: The zone names the user employed in the intent
+    noZonesMentioned:
+        type: dialog.Boolean
+        description: True if no zones were mentioned in the intent
+    deviceTypes:
+        type: dialog.String[]
+        semantic_concept: homeAutomationService
+        description: A list of mentioned accessory or service types the user employed in the intent. Currently used for detecting number of types mentioned since morphun currently does not support an array of semantic concepts
+    noDeviceTypesMentioned:
+        type: dialog.Boolean
+        description: True if no device types were mentioned in the intent
+    oneDeviceTypeMentioned:
+        type: dialog.Boolean
+        description: True if only one device type was mentioned in the intent
+    moreThanOneDeviceTypeMentioned:
+        type: dialog.Boolean
+        description: True if more than one device type was mentioned in the intent
+    targetedHomeName:
+        type: dialog.String
+        description: The home name if explicitly targeted by the user utterance in the intent
+    targetState:
+        type: dialog.String
+        description: The target state contained in the intent
+        semantic_concept: homeAutomationState
+    isSensorTrippedRequest:
+        type: dialog.Boolean
+        description: True if the nl intent contains SENSOR_TRIPPED node. It is used to solve cases like "is my alarm going off" - which would be translated into a GET security_system command. However, we would want to answer this specific question rather than just giving the current state.
+    isGarageDoorRequest:
+        type: dialog.Boolean
+        description: True if this is a garage door request
+    isRequestToLockOrClose:
+        type: dialog.Boolean
+        description: True if this is a request to lock or close (a lock or garage door)
+    isCloseRequest:
+        type: dialog.Boolean
+        description: True if this is a request to close(a motorized window/door or garage door)
+    isOpenRequest:
+        type: dialog.Boolean
+        description: True if this is a request to open(a motorized window/door or garage door)
+    isLockRequest:
+        type: dialog.Boolean
+        description: True if this is a request to lock(a door lock)
+    isUnlockRequest:
+        type: dialog.Boolean
+        description: True if this is a request to unlock(a door lock)
+    isDisarmRequest:
+        type: dialog.Boolean
+        description: True if this is a request to disarm(a security system)
+    isTVRequest:
+        type: dialog.Boolean
+        description: True if this is a request targetting a television (matchpoint or Apple TV)
+    userDefinedDuration:
+        type: dialog.Duration
+        description: The duration mentioned in the intent, mainly used in setting sprinkler duration use cases.
+    numericValue:
+        type: homeAutomation.AbstractMeasurement
+        description: The numeric value we are targeting in the intent. It can be a temperature measurement/percent measurement/number measurement
+    isInCurrentRoom:
+        type: dialog.Boolean
+        description: True if the request targets the room where the processing device is in
+    isColorRequest:
+        type: dialog.Boolean
+        description: True if the request is to set a specific color
+    isScheduleRequest:
+        type: dialog.Boolean
+        description: True if the request is to schedule a HomeKit scene or action for future execution
+    isSceneRequest:
+        type: dialog.Boolean
+        description: True if the request targets a scene
+    targetColor:
+        type: dialog.String
+        description: For color requests, defines the target color to be set
+        semantic_concept: homeAutomationHue

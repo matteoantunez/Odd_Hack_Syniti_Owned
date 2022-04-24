@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>endpointsecurityd</string>
+	</array>
+	<key>Program</key>
+	<string>/usr/libexec/endpointsecurityd</string>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>Label</key>
+	<string>com.apple.endpointsecurity.endpointsecurityd</string>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+		<key>PathState</key>
+		<dict>
+			<key>/Library/SystemExtensions/EndpointSecurity/.launch_esd</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.endpointsecurity.endpointsecurityd.xpc</key>
+		<true/>
+		<key>com.apple.endpointsecurity.system-extensions</key>
+		<true/>
+		<key>com.apple.endpointsecurity.endpointsecurityd.mig</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

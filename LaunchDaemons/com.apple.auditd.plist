@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/
+PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.auditd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.auditd</key>
+		<dict>
+			<key>HostSpecialPort</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+		<key>PathState</key>
+		<dict>
+			<key>/var/audit/audit_quick_start_error.log</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>TimeOut</key>
+	<integer>60</integer>
+	<key>Program</key>
+	<string>/usr/sbin/auditd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>auditd</string>
+		<string>-l</string>
+	</array>
+</dict>
+</plist>

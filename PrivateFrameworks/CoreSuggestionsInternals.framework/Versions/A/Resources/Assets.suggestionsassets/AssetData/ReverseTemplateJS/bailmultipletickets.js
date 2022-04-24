@@ -1,0 +1,1 @@
+(function(){return function(i,t){if(t.bailMultipleTickets)for(var e=i.getSpan(),l=0;l<t.bailMultipleTickets.length;l++){if(e.innerCapture(t.bailMultipleTickets[l],0).exists())return!0}return!1}}).call();

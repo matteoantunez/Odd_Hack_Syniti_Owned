@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="GetSettingIntent#DescribeNumericSettingState">
+
+    <meta name="description" value="The user asked what a setting value is."/>
+    <meta name="category" value="Handled"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters>
+        <parameter name="setting" type="settings.NumericSetting" description="The setting that the user asked about."/>
+        <parameter name="deviceState" type="sirikit.DeviceState" description="Contains details about the user’s device."/>
+        <parameter name="shouldExplainSmartVolume" type="dialog.Boolean" description="Indicates whether smart volume should be explained to the user."/>
+        <parameter name="isGetBatteryForAirpods" type="dialog.Boolean" description="Indicates whether user asked to read battery level of their airpods"/>
+        <parameter name="isGetBatteryForGenericHeadphones" type="dialog.Boolean" description="Indicates whether user asked to read battery level of their bluetooth headphones"/>
+    </parameters>
+
+</cat>

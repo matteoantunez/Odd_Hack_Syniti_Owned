@@ -1,0 +1,267 @@
+{
+    "color": [1, 0.589, 0.553],
+    "snippets":[
+        {
+            "name" : "AlphaPremultiplied",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4(vfx_get_xyz($in) * $in.w, $in.w)",
+                "metal" : "vfx_make_float4($in.xyz * $in.w, $in.w)",
+                "c"     : "vfx_make_float4($in.xyz * $in.w, $in.w)"
+            }
+        },
+        {
+            "name" : "RGBAColor",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["r", "g", "b", "a"],
+            "inParameterTypes" : ["Float", "Float", "Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($r, $g, $b, $a)",
+                "metal" : "vfx_make_float4($r, $g, $b, $a)",
+                "c"     : "vfx_make_float4($r, $g, $b, $a)"
+            }
+        },
+        {
+            "name" : "Linear_to_sRGB",
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["rgb"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_linear_to_srgb($rgb)",
+                "metal" : "vfx_linear_to_srgb($rgb)",
+                "c"     : "vfx_linear_to_srgb($rgb)"
+            }
+        },
+        {
+            "name" : "sRGB_to_Linear",
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["rgb"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_srgb_to_linear($rgb)",
+                "metal" : "vfx_srgb_to_linear($rgb)",
+                "c"     : "vfx_srgb_to_linear($rgb)"
+            }
+        },
+        {
+            "name" : "RGBtoHSB",
+            "inParameterNames" : ["rgb"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_rgb_to_hsb($rgb)",
+                "metal" : "vfx_rgb_to_hsb($rgb)",
+                "c"     : "vfx_rgb_to_hsb($rgb)"
+            }
+        },
+        {
+            "name" : "RGBtoHSB",
+            "inParameterNames" : ["rgb"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_rgb_to_hsb($rgb)",
+                "metal" : "vfx_rgb_to_hsb($rgb)",
+                "c"     : "vfx_rgb_to_hsb($rgb)"
+            }
+        },
+        {
+            "name" : "HSBtoRGB",
+            "inParameterNames" : ["hsb"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_hsb_to_rgb($hsb)",
+                "metal" : "vfx_hsb_to_rgb($hsb)",
+                "c"     : "vfx_hsb_to_rgb($hsb)"
+            }
+        },
+        {
+            "name" : "HSBAtoRGB",
+            "inParameterNames" : ["hsba"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_hsb_to_rgb($hsba)",
+                "metal" : "vfx_hsb_to_rgb($hsba)",
+                "c"     : "vfx_hsb_to_rgb($hsba)"
+            }
+        },
+        {
+            "name" : "HSBColor",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["hue", "saturation", "brightness"],
+            "inParameterTypes" : ["Float", "Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb(vfx_make_float3($hue, $saturation, $brightness))), 1)",
+                "metal" : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb(vfx_make_float3($hue, $saturation, $brightness))), 1)",
+                "c"     : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb(vfx_make_float3($hue, $saturation, $brightness))), 1)"
+            }
+        },
+        {
+            "name" : "sRGBColor",
+            "inParameterNames" : ["srgb"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb($srgb)), 1)",
+                "metal" : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb($srgb)), 1)",
+                "c"     : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb($srgb)), 1)"
+            }
+        },
+        {
+            "name" : "sRGBColor",
+            "inParameterNames" : ["srgb", "alpha"],
+            "inParameterTypes" : ["Float3", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb($srgb)), $alpha)",
+                "metal" : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb($srgb)), $alpha)",
+                "c"     : "vfx_make_float4(vfx_srgb_to_linear(vfx_hsb_to_rgb($srgb)), $alpha)"
+            }
+        },
+        {
+            "name" : "Evaluate",
+            "label" : "Evaluate ColorRamp",
+            "disableable" : false,
+            "showInParameterDefaultValues" : ["t"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "t", "t" : 0.5, "valueType" : "Float" }
+            ],
+            "inParameterNames" : ["colorRamp", "t"],
+            "inParameterTypes" : ["ColorRamp", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_script_color_ramp_evaluate($colorRamp, $t)"
+            }
+        },
+        {
+            "name" : "Evaluate",
+            "label" : "Evaluate ColorRamp",
+            "disableable" : false,
+            "showInParameterDefaultValues" : ["t"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "t", "t" : 0.5, "valueType" : "Float" }
+            ],
+            "inParameterNames" : ["colorRamp", "t"],
+            "inParameterTypes" : ["ColorRampTexture", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_sample1d($colorRamp, $t)",
+                "metal"   : "$colorRamp.texture.sample($colorRamp.sampler, $t)"
+            }
+        },
+        {
+            "name" : "SetColor",
+            "tooltip" : "ColorRamp can only be modified on CPU",
+            "disableable" : false,
+            "showInParameterDefaultValues" : ["colorValue", "index"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "colorValue", "colorValue" : [1.0, 1.0, 1.0, 1.0], "valueType" : "Float4" },
+                { "keyName" : "index", "index" : 0, "valueType" : "Int" }
+            ],
+            "inParameterNames" : ["colorRamp", "colorValue", "index"],
+            "inParameterTypes" : ["ColorRamp", "Float4", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["ColorRamp"],
+            "code" : {
+                "c|swift" : "vfx_script_color_ramp_create_setting_color(scriptContext, $colorRamp, $colorValue, $index)"
+            },
+            "cleanupCode":{
+                "c|swift" : "vfx_script_color_ramp_destroy(scriptContext, $out)"
+            }
+        },
+        {
+            "name" : "RGBA",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["inColor"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["outR", "outG", "outB", "outA"],
+            "outParameterTypes" : ["Float", "Float", "Float", "Float"],
+            "code" : {
+                "swift" : "$outR = $inColor.x; $outG = $inColor.y; $outB = $inColor.z; $outA = $inColor.w",
+                "metal" : "$outR = $inColor.x; $outG = $inColor.y; $outB = $inColor.z; $outA = $inColor.w",
+                "c"     : "$outR = $inColor.x; $outG = $inColor.y; $outB = $inColor.z; $outA = $inColor.w"
+            }
+        },
+        {
+            "name" : "R",
+            "inParameterNames" : ["color"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$color.x",
+                "metal" : "$color.x",
+                "c"     : "$color.x"
+            }
+        },
+        {
+            "name" : "G",
+            "inParameterNames" : ["color"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$color.y",
+                "metal" : "$color.y",
+                "c"     : "$color.y"
+            }
+        },
+        {
+            "name" : "B",
+            "inParameterNames" : ["color"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$color.z",
+                "metal" : "$color.z",
+                "c"     : "$color.z"
+            }
+        },
+        {
+            "name" : "A",
+            "inParameterNames" : ["color"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$color.w",
+                "metal" : "$color.w",
+                "c"     : "$color.w"
+            }
+        },
+        {
+            "name" : "Luminance",
+            "inParameterNames" : ["color"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "dot(vfx_get_xyz($color), vfx_make_float3(0.2126, 0.7152, 0.0722))",
+                "metal" : "metal::dot($color.xyz, vfx_make_float3(0.2126, 0.7152, 0.0722))",
+                "c"     : "simd_dot($color.xyz, vfx_make_float3(0.2126, 0.7152, 0.0722))"
+            }
+        }
+    ]
+}

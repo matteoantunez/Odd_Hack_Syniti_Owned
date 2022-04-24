@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>values</key>
+	<dict>
+		<key>minimumDurationToFilter</key>
+		<integer>20</integer>
+		<key>maximumDurationToSendAll</key>
+		<integer>9</integer>
+		<key>minimumScoreAllowedAsBRoll</key>
+		<integer>-5</integer>
+		<key>minimumScoreAllowed</key>
+		<integer>-5</integer>
+		<key>bRollAdjustPercentageDefault</key>
+		<real>0.5</real>
+		<key>bRollSlowAdjustPercentage</key>
+		<real>0.3</real>
+		<key>bRollMediumAdjustPercentage</key>
+		<real>0.4</real>
+		<key>bRollFastAdjustPercentage</key>
+		<real>0.5</real>
+		<key>bRollAdjustForRequiredBrollPercentage</key>
+		<real>0.3</real>
+		<key>assumedPhotoDuration</key>
+		<integer>3</integer>
+		<key>tooShortDurationInSeconds</key>
+		<integer>2</integer>
+		<key>postSelectionDupeTestDurationInSeconds</key>
+		<real>60</real>
+		<key>sloMoClusterTimeDurationInSeconds</key>
+		<integer>4200</integer>
+		<key>addBackMoreAfterDurationInSecondsFast</key>
+		<integer>3</integer>
+		<key>addBackMoreAfterDurationInSecondsMedium</key>
+		<integer>6</integer>
+		<key>addBackMoreAfterDurationInSecondsSlow</key>
+		<integer>10</integer>
+		<key>clusterCountToTrim</key>
+		<integer>2</integer>
+		<key>clusterTooLargeTrim</key>
+		<integer>6</integer>
+		<key>shootingRatioMinBestDuration</key>
+		<real>20</real>
+		<key>shootingRatioSmallSetRatio</key>
+		<real>0.85</real>
+		<key>shootingRatioMaxDurationRatioAbove</key>
+		<real>1.05</real>
+		<key>shootingRatioMaxOverSuggestedMultiplier</key>
+		<real>1</real>
+		<key>shootingRatioMaxDurationRatioBelow</key>
+		<real>0.65</real>
+		<key>endGroupingCount</key>
+		<integer>5</integer>
+		<key>minEndCountToAllowEndGrouping</key>
+		<integer>15</integer>
+	</dict>
+</dict>
+</plist>

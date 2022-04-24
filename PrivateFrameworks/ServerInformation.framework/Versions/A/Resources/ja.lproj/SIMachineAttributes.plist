@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Intel Core Duoプロセッサ搭載（黒または白）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duoプロセッサ搭載（黒または白）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duoプロセッサ搭載（黒または白）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duoプロセッサ搭載（黒または白）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo（アルミニウムユニボディ）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duoプロセッサ搭載MacBook（アルミニウムユニボディ）、2008年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo（White、Early 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>白のMacBook Intel Core 2 Duoプロセッサ搭載、2009年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo（White、Late 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>白のMacBook Intel Core 2 Duoプロセッサ搭載、LEDディスプレイを装備、2009年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo（White、Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duoプロセッサ搭載（白のユニボディ筐体）、2010年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12インチMacBook（Early 2015）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core M</string>
+			<key>description</key>
+			<string>12インチMacBook Retinaディスプレイを装備、2015年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12インチMacBook（Early 2016）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core m3、デュアルコアIntel Core m5、デュアルコアIntel Core m7</string>
+			<key>description</key>
+			<string>12インチMacBook Retinaディスプレイを装備、2016年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12インチMacBook（Mid 2017）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core m3、デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>MacBook 12インチRetinaディスプレイを装備、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>（オリジナル）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air Intel Core 2 Duo搭載。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air Intel Core 2 Duo搭載。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11インチMacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air 11インチディスプレイを装備、2010年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air 13インチディスプレイを装備、2010年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11インチMacBook Air（Mid 2011）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 11インチディスプレイを装備、2011年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Air（Mid 2011）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 13インチディスプレイを装備、2011年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11インチMacBook Air（Mid 2012）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 11インチディスプレイを装備、2012年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Air（Mid 2012）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 13インチディスプレイを装備、2012年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11インチMacBook Air（Mid 2013）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 11インチディスプレイを装備、2013年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Air（Mid 2013）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 13インチディスプレイを装備、2013年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11インチMacBook Air（Early 2015）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 11インチディスプレイを装備、2015年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Air（Early 2015）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air 13インチディスプレイを装備、2015年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air（Late 2018）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air RetinaディスプレイおよびTouch IDを装備、2018年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air（Mid 2019）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air 13インチRetinaディスプレイおよびTouch IDを装備、2019年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core Duoプロセッサ搭載、15または17インチディスプレイを装備。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core Duoプロセッサ搭載、15または17インチディスプレイを装備。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>（Core 2 Duo）</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duoプロセッサ搭載、15または17インチディスプレイを装備。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>（Core 2 Duo）</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duoプロセッサ搭載、15または17インチディスプレイを装備。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duoプロセッサ搭載、15または17インチディスプレイを装備。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duoプロセッサ搭載、15または17インチディスプレイとマルチタッチトラックパッドを装備。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo（アルミニウムユニボディ）（Late 2008）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo搭載（アルミニウムユニボディ）、2008年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo（アルミニウムユニボディ）（Early 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo搭載（アルミニウムユニボディ）、2009年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo（アルミニウムユニボディ）（Mid 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo搭載（アルミニウムユニボディ）、2009年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo（アルミニウムユニボディ）（Mid 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo搭載（アルミニウムユニボディ）、2009年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo（アルミニウムユニボディ）（Mid 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo搭載（アルミニウムユニボディ）、2009年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5、Intel Core i7（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core i5またはIntel Core i7プロセッサ搭載、15または17インチディスプレイを装備（アルミニウムユニボディ）、2010年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5、Intel Core i7（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core i5またはIntel Core i7プロセッサ搭載、15または17インチディスプレイを装備（アルミニウムユニボディ）、2010年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13インチMacBook Pro Intel Core 2 Duoプロセッサ搭載 （アルミニウムユニボディ）、2010年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5、Intel Core i7、13インチ（Early 2011）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro デュアルコアIntel Core i5またはIntel Core i7プロセッサ搭載 （アルミニウムユニボディ）、2011年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7、15インチ（Early 2011）</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro クアッドコアIntel Core i7プロセッサ搭載 （アルミニウムユニボディ）、2011年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7、17インチ（Early 2011）</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17インチMacBook Pro クアッドコアIntel Core i7プロセッサ搭載 （アルミニウムユニボディ）、2011年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7、15インチ（Mid 2012）</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro デュアルコアIntel Core i7プロセッサ搭載（アルミニウムユニボディ）、2012年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5、Intel Core i7、13インチ（Mid 2012）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro デュアルコアIntel Core i5またはIntel Core i7プロセッサ搭載（アルミニウムユニボディ）、2012年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro, Retinaディスプレイ, Intel Core i7 (Mid 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備、デュアルコアIntel Core i7プロセッサ搭載（アルミニウムユニボディ）、2012年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro, Retinaディスプレイ, Intel Core i5/i7 (Late 2012)</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro Retinaディスレプイを装備、デュアルコアIntel Core i5またはi7プロセッサ搭載（アルミニウムユニボディ）、2012年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro Retinaディスプレイを装備（Late 2013）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro Retinaディスプレイを装備（アルミニウムユニボディ）、2013年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（Late 2013）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（アルミニウムユニボディ）、2013年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備、ディスクリートNVIDIAグラフィックス（Late 2013）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（アルミニウムユニボディ）、ディスクリートNVIDIAグラフィックス、2013年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（Mid 2015）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（アルミニウムユニボディ）、2015年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（Mid 2015）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro Retinaディスプレイを装備（アルミニウムユニボディ）、ディスクリートAMDグラフィックス、2015年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro Retinaディスプレイを装備（Early 2015）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro Retinaディスプレイを装備（アルミニウムユニボディ）、2015年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro、Thunderbolt 3を装備（Late 2016）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro、Thunderbolt 3を装備、2016年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro、Thunderbolt 3とTouch IDを搭載（Late 2016）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro、Thunderbolt 3とTouch IDを搭載、2016年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro、Thunderbolt 3とTouch IDを搭載（Late 2016）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro、Thunderbolt 3とTouch IDを搭載、2016年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro、Thunderbolt 3を装備（Mid 2017）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro、Thunderbolt 3を装備、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro、Thunderbolt 3とTouch IDを搭載（Mid 2017）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro、Thunderbolt 3とTouch IDを搭載、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro、Thunderbolt 3とTouch IDを搭載（Mid 2017）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>15インチMacBook Pro、Thunderbolt 3とTouch IDを搭載、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15インチMacBook Pro、Thunderbolt 3とTouch IDを搭載（Mid 2018）</string>
+			<key>processor</key>
+			<string>6コアIntel Core i7、6コアIntel Core i9</string>
+			<key>description</key>
+			<string>15インチMacBook Pro、Thunderbolt 3とTouch IDを搭載、2018年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13インチMacBook Pro、Thunderbolt 3とTouch IDを搭載（Mid 2018）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>13インチMacBook Pro、Thunderbolt 3とTouch IDを搭載、2018年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Mid 2006）</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>タワー型デスクトップコンピュータ（アルミニウム筐体）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Mid 2006）</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>タワー型デスクトップコンピュータ（アルミニウム筐体）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Early 2007）</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>タワー型デスクトップコンピュータ（アルミニウム筐体）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Early 2008）</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>タワー型デスクトップコンピュータ（アルミニウム筐体）。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Early 2009）</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>タワー型デスクトップコンピュータ（アルミニウム筐体）、2009年初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>タワー型デスクトップコンピュータ（アルミニウム筐体）、2010年中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro（Late 2013）</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Proデスクトップ筐体、2013年後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core（Early 2006）</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo、Intel Core Duo、またはIntel Core Soloプロセッサ搭載小型Macデスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini（Mid 2007）</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo、Intel Core Duo、またはIntel Core Soloプロセッサ搭載小型Macデスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core（Early 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini NVIDIA GeForce 9400M搭載、2009年初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini NVIDIA GeForce 320M搭載、2010年中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini（Mid 2011）Intel HD Graphics 3000搭載。</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini Intel Dual-Core i5およびIntel HD Graphics 3000搭載、2011年中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini（Mid 2011）AMD Radeon HD 6630M搭載。</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini Intel Dual-Core i5またはi7とAMD Radeon HD 6630M搭載、2011年中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini server（Mid 2011）</string>
+			<key>processor</key>
+			<string>Dual-Core Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini server Dual-Core i7およびIntel HD Graphics 3000搭載、2011年中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini（Late 2012）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5</string>
+			<key>description</key>
+			<string>Mac mini デュアルコアi5およびIntel HD Graphics 4000搭載、2012年後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini（Late 2012）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>Mac mini クアッドコアi7およびIntel HD Graphics 4000搭載、2012年後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini（Late 2014）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5、デュアルコアIntel Core i7</string>
+			<key>description</key>
+			<string>Mac mini Intelデュアルコアプロセッサおよび統合型グラフィックス搭載、2014年後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini（Late 2018）</string>
+			<key>processor</key>
+			<string>第8世代Intelプロセッサ（クアッドコアCore i3、6コアCore i5、6コアCore i7）</string>
+			<key>description</key>
+			<string>Mac mini 第8世代IntelプロセッサおよびIntel UHD Graphics 630搭載、2018年後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>彫刻作品のような黒いプラスチックとゴム製のノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代はハンドル付きの明るい色の“クラムシェル”型、それ以降のモデルではシルバーと白のプラスチック製の四角い筐体の、12または14インチフラットパネルディスプレイを搭載したノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>白のiBook G4プロセッサ搭載。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>白のiBook G4プロセッサ搭載。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>白のiBook G4プロセッサ搭載。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>初代は15インチフラットパネルディスプレイを搭載したチタン製筐体、それ以降のモデルでは12、15、または17インチディスプレイを搭載したアルミニウム製筐体の、薄型ノート型コンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>彫刻作品のような青と白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>彫刻作品のような青と白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ほとんどのLCDまたはVGAディスプレイに接続できるG4プロセッサ搭載小型Macデスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ほとんどのLCDまたはVGAディスプレイに接続できるG4プロセッサ搭載小型Macデスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>アルミニウム製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>アルミニウム製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>フラットパネル型G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代は青と白の、それ以降はさまざまな色から選べる、プラスチック製筐体のオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代は青と白の、それ以降はさまざまな色から選べる、プラスチック製筐体のオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>彫刻作品のようなグレイと白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>彫刻作品のようなグレイと白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>彫刻作品のようなグレイと白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>彫刻作品のようなグレイと白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>彫刻作品のようなグレイと白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>彫刻作品のようなグレイと白のプラスチック製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>初代は青と白の、それ以降はさまざまな色から選べる、プラスチック製筐体のオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>半球形の本体に15、17、または20インチのフラットパネルディスプレイが付いたオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>丸みを帯びた省スペース型の筐体にフラットスクリーンCRTが内蔵されたオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>半球形の本体に15、17、または20インチのフラットパネルディスプレイが付いたオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>透明なプラスチック製キューブ型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>透明なプラスチック製キューブ型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>半球形の本体に15、17、または20インチのフラットパネルディスプレイが付いたオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>半球形の本体に15、17、または20インチのフラットパネルディスプレイが付いたオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>丸みを帯びた省スペース型の筐体にフラットスクリーンCRTが内蔵されたオールインワンデザイン。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>アルミニウム製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>アルミニウム製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>フラットパネル型G5 iMac。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>フラットパネル型G5 iMac。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>アルミニウム製タワー型デスクトップコンピュータ。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>トレイローディングまたはスロットローディング方式の光学式ドライブと4基の拡張ベイを装備したG4プロセッサ搭載ラックマウント型サーバ、または1基の拡張ベイを備えたG4プロセッサ搭載クラスタノードモデル。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>トレイローディングまたはスロットローディング方式の光学式ドライブと4基の拡張ベイを装備したG4プロセッサ搭載ラックマウント型サーバ、または1基の拡張ベイを備えたG4プロセッサ搭載クラスタノードモデル。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>スロットローディング方式のCD-ROMまたはDVD-ROMドライブと3基の拡張ベイを装備したG5プロセッサ搭載ラックマウント型サーバコンピュータ、または拡張ベイなしのクラスタノードモデル。</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve（Late 2006）</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100シリーズ</string>
+			<key>description</key>
+			<string>Intel Xeon 5100シリーズに基づくラックマウントサーバ、2006年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve（Early 2008）</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400シリーズ</string>
+			<key>description</key>
+			<string>Intel Xeon 5400シリーズに基づくラックマウントサーバ、2008年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve（Early 2009）</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500シリーズ</string>
+			<key>description</key>
+			<string>Intel Xeon 5500シリーズに基づくラックマウントサーバ、2009年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>フラットパネル型iMac Intel Core Duo。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>フラットパネル型iMac Intel Core Duo。</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>フラットパネル型iMac Intel Core 2 Duo。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>フラットパネル型iMac Intel Core 2 Duo。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>フラットパネル型iMac Intel Core 2 Duo。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo（アルミニウム筐体）（Mid 2007）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20または24インチフラットパネルiMac（アルミニウム筐体）Intel Core 2 Duoプロセッサ搭載 。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo（アルミニウム筐体）（Early 2008）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20または24インチフラットパネルiMac（アルミニウム筐体）Intel Core 2 Duoプロセッサ搭載 。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo（アルミニウム筐体）（Early 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20または24インチフラットパネルiMac（アルミニウム筐体）Intel Core 2 Duoプロセッサ搭載 。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo（ワイドスクリーン、Late 2009）</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21.5または27インチiMac ワイドスクリーンLEDディスプレイを装備、2009年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5、Intel Core i7（ワイドスクリーン、Late 2009）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>27インチiMac クアッドコアプロセッサ搭載、ワイドスクリーンLEDディスプレイを装備 、2009年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core i3、Intel Core i5</string>
+			<key>description</key>
+			<string>21.5インチiMac ワイドスクリーンLEDディスプレイを装備、2010年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Mid 2010）</string>
+			<key>processor</key>
+			<string>Intel Core i3、Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>27インチiMac ワイドスクリーンLEDディスプレイを装備、2010年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Early 2011）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>21.5インチiMac Thunderboltを装備、2011年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Early 2011）</string>
+			<key>processor</key>
+			<string>Intel Core i5、Intel Core i7</string>
+			<key>description</key>
+			<string>27インチiMac Thunderboltを装備、2011年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Late 2012）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンLEDバックライトディスプレイを装備、2012年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Late 2012）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 27インチワイドスクリーンLEDバックライトディスプレイを装備、2012年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Early 2013）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i3</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンLEDバックライトディスプレイを装備、2013年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Late 2013）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンLEDバックライトディスプレイを装備、2013年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Late 2013）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 27インチワイドスクリーンLEDバックライトディスプレイを装備、2013年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Late 2013）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i3</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンLEDバックライトディスプレイを装備、2013年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Mid 2014）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンLEDバックライトディスプレイを装備、2014年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Late 2014）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 27インチワイドスクリーンLEDバックライトディスプレイを装備、2014年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Late 2015）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンLEDバックライトディスプレイを装備、2015年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Late 2015）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンまたはRetina 4Kディスプレイを装備、2015年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Late 2015）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5、クアッドコアIntel Core i7</string>
+			<key>description</key>
+			<string>iMac 27インチワイドスクリーンまたはRetina 5Kディスプレイを装備、2015年の後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Mid 2017）</string>
+			<key>processor</key>
+			<string>デュアルコアIntel Core i5</string>
+			<key>description</key>
+			<string>iMac 21.5インチワイドスクリーンを装備、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Mid 2017）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac 21.5インチRetina 4Kディスプレイを装備、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Mid 2017）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac 27インチRetina 5Kディスプレイを装備、2017年の中期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27インチiMac（Early 2019）</string>
+			<key>processor</key>
+			<string>6コアIntel Core i5、8コアIntel Core i9</string>
+			<key>description</key>
+			<string>iMac 27インチRetina 5Kディスプレイを装備、2019年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5インチiMac（Early 2019）</string>
+			<key>processor</key>
+			<string>クアッドコアIntel Core i3、6コアIntel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac 21.5インチRetina 4Kディスプレイを装備、2019年の初期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro（Late 2017）</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro Xeon WプロセッサおよびRadeon Pro Vegaグラフィックス搭載、2017年後期に投入。</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

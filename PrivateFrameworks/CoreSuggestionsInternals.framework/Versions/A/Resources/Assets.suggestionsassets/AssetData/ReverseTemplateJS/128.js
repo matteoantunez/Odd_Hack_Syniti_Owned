@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("lufthansa.com-check-in-en",function(e){return/is now ready for Check-in$/.test(e.subject)},function(e){if(/is now ready for Check-in$/.test(e.subject)){var n="en_GB",t={name:" Passenger "};return loadHelper("lufthansa.com-check-in-skeleton.js")(e,n,t)}},"SG5523da45")]);

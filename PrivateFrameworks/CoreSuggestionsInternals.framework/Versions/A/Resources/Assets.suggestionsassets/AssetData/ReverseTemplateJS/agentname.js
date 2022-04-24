@@ -1,0 +1,1 @@
+(function(){return function(t){var e=loadHelper("AgentInfo.js"),n=/https?:\/\//.test(t)?t.match(/\/\/(?:w+\d*\.)?(.+?)\//):t.match(/<?.+@([^\s>]+)/),r=n&&2===n.length?n[1].toLowerCase():t.toLowerCase();if(r){var a=e[r];if(a&&a.hasOwnProperty("name"))return a.name}return null}}).call();

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<array>
+		<string>(visita|revisi[oó]n|prueba|consulta)( m[eé]dica)?( en la consulta)?(.{0,10}(pediatra|psiquiatra|endocrino|.{0,10}[oó]logo))</string>
+		<string>revisi[oó]n (m[eé]dica|pedi[aá]trica|ginecol[oó]gica)</string>
+		<string>(reconocimiento|examen) (m[eé]dico|pedi[aá]trico|ginecol[oó]gico)</string>
+	</array>
+</dict>
+</plist>

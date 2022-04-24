@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>结婚(周年)?纪念日</string>
+	</array>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<array>
+		<string>洗礼</string>
+		<string>浸礼</string>
+		<string>受洗</string>
+		<string>领洗</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>(十月)?啤酒节</string>
+		<string>红酒节</string>
+		<string>美酒(佳肴)?节</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>生日( ?brunch\b|早午餐)</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>(圣诞|复活节|感恩节)(大|晚)餐</string>
+		<string>(公司|团队|同事)晚餐</string>
+		<string>(家庭|家人)晚餐</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>(圣诞|复活节|感恩节)午餐</string>
+		<string>(家庭|家人)午餐</string>
+		<string>(公司|团队|同事)午餐</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>(大)?除夕(夜)?</string>
+		<string>春节</string>
+		<string>(农|旧)历新年</string>
+		<string>(大)?年初(一|二|三)</string>
+		<string>元宵(佳)?节</string>
+		<string>端午节</string>
+		<string>母亲节</string>
+		<string>父亲节</string>
+		<string>中秋节</string>
+		<string>万圣节</string>
+		<string>天后诞</string>
+		<string>冬(节|至)</string>
+		<string>做冬</string>
+		<string>感恩节</string>
+		<string>圣诞节</string>
+		<string>婚前派对</string>
+	</array>
+</dict>
+</plist>

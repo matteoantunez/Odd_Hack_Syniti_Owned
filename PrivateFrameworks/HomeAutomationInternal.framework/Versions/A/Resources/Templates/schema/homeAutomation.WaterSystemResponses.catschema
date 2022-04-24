@@ -1,0 +1,29 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.WaterSystemResponses
+extends: homeAutomation.EntityResponses
+    
+properties:
+  valveResponses:
+    type: homeAutomation.WaterSystemResponses
+    description: A collection of valve responses.
+  mainSystemResponses:
+    type: homeAutomation.WaterSystemResponses
+    description: A collection of main system(sprinkler/sink/shower) responses.
+  activeResponses:
+    type: homeAutomation.WaterSystemResponses
+    description: A collection of entity responses are active.
+  inactiveResponses:
+    type: homeAutomation.WaterSystemResponses
+    description: A collection of entity responses are inactive.
+  inUseResponses:
+    type: homeAutomation.WaterSystemResponses
+    description: A collection of entity responses are in use.
+  queuedResponses:
+    type: homeAutomation.WaterSystemResponses
+    description: A collection of entity responses that are active but not in use.
+  durations:
+    type: dialog.Duration[]
+    description: Get the durations of underlying entity responses
+  
+

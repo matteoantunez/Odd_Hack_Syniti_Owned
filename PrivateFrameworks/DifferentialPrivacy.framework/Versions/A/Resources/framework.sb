@@ -1,0 +1,11 @@
+;
+; framework.sb
+; DifferentialPrivacy.framework
+;
+; Copyright © 2018 Apple Inc. All Rights Reserved.
+;
+
+(when (entitlement "com.apple.private.dprivacyd.allow")
+    (allow mach-lookup
+        (global-name "com.apple.dprivacyd")
+        (global-name "com.apple.dprivacyagentd")))

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetNumericSettingIntent#UnspecifiedActionForSupportedNumericSetting" locale="en">
+    <conditions>
+        <condition name="isDisplayBrightness">
+            <expression name="setting.identifier" op="eq" value="'displayBrightness'"/>
+        </condition>
+        <condition name="isSiriVoiceVolume">
+            <expression name="setting.identifier" op="eq" value="'voice'"/>
+        </condition>
+    </conditions>
+
+    <first>
+        <dialog condition="isDisplayBrightness">Let me know if you’d like to make the screen brighter or darker.</dialog>
+        <dialog condition="isSiriVoiceVolume">I'm at <var name="action.value"/>.</dialog>
+    </first>
+</cat>

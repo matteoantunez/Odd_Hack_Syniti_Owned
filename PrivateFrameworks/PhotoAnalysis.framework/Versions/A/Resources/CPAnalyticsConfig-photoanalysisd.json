@@ -1,0 +1,133 @@
+{
+    "destinations": [
+        {
+            "name": "devLogging",
+            "enabled": true,
+            "config": {}
+        }, {
+            "name": "metricsDestination",
+            "enabled": true,
+            "config": {
+                "events": [
+                    {
+                        "destination": "CoreAnalytics",
+                        "includeProperties": [
+                            "cpa_feature_name",
+                            "cpa_feature_daily",
+                            "cpa_feature_weekly",
+                            "cpa_feature_monthly",
+                            "cpa_feature_total_months",
+                            "cpa_common_deviceFreeSpace",
+                            "cpa_common_deviceModel",
+                            "cpa_common_osVersion",
+                            "cpa_common_librarySizeRange",
+                            "cpa_common_icpl_enabled",
+                            "cpa_common_icpl_exceedingQuota",
+                            "cpa_common_icpl_lowDiskSpace",
+                            "cpa_common_icpl_hasChangesToProcess",
+                            "cpa_demographic_userGender",
+                            "cpa_demographic_userAgeRange"
+                        ],
+                        "sourceEventMatchCriteria" : {
+                            "key": "com.apple.photos.cpa.active_user_feature"
+                        }
+                    },
+                    {
+                        "destination": "CoreAnalytics",
+                        "includeProperties": [
+                            "taskName",
+                            "taskDuration",
+                            "taskCompletionState",
+                            "taskProgress",
+                            "taskSucceeded",
+                            "taskTimeSinceLastRun",
+                            "cpa_common_librarySizeRange",
+                            "cpa_common_momentCountRange",
+                            "cpa_common_personCount",
+                            "cpa_common_personCountRange",
+                            "cpa_common_sceneAnalysisProgress",
+                            "cpa_common_faceAnalysisProgress",
+                            "cpa_common_fullAnalysisProgress",
+                            "cpa_common_icpl_enabled",
+                            "cpa_common_icpl_exceedingQuota",
+                            "cpa_common_icpl_lowDiskSpace",
+                            "cpa_common_icpl_hasChangesToProcess",
+                            "cpa_common_deviceFreeSpace",
+                            "cpa_common_hourOfDay",
+                            "cpa_common_dayOfWeek",
+							"cpa_music_hasAppleMusicSubscription"
+                        ],
+                        "sourceEventMatchCriteria" : {
+                            "key": "com.apple.photos.photoanalysis.TaskHealth"
+                        }
+                    },
+					{
+						"destination": "CoreAnalytics",
+						"includeProperties": [
+							"memoryCount",
+							"pipelineStage",
+							"fullMemoryType",
+							"cpa_common_librarySizeRange",
+							"cpa_common_momentCountRange",
+							"cpa_common_personCountRange",
+							"cpa_common_dayOfWeek",
+							"cpa_music_hasAppleMusicSubscription"
+						],
+						"sourceEventMatchCriteria" : {
+							"key": "com.apple.Photos.memories.pipeline"
+						}
+					},
+					{
+						"destination": "CoreAnalytics",
+						"includeProperties": [
+							"triggerType",
+							"triggerCount",
+							"fullMemoryType",
+							"cpa_common_librarySizeRange",
+							"cpa_common_momentCountRange",
+							"cpa_common_personCountRange",
+							"cpa_music_hasAppleMusicSubscription"
+						],
+						"sourceEventMatchCriteria" : {
+							"key": "com.apple.Photos.memories.triggers"
+						}
+					},
+					{
+						"destination": "CoreAnalytics",
+						"includeProperties": [
+							"memoryCount",
+							"fullMemoryType",
+							"cpa_common_librarySizeRange",
+							"cpa_common_momentCountRange",
+							"cpa_common_personCountRange"
+						],
+						"sourceEventMatchCriteria" : {
+							"key": "com.apple.Photos.memories.generationByType"
+						}
+					},
+                    {
+                        "destination": "CoreAnalytics",
+                        "includeProperties": [
+                            "numberOfDaysSinceMajorOSUpgrade",
+                            "cpa_common_deviceFreeSpace",
+                            "cpa_common_icpl_enabled",
+                            "cpa_common_librarySizeRange",
+                            "cpa_common_momentCountRange"
+                        ],
+                        "sourceEventMatchCriteria" : {
+                            "key": "com.apple.Photos.Intelligence.graphMajorUpdate"
+                        }
+                    }
+                ]
+            }
+        }, {
+            "name": "appState",
+            "enabled": true,
+            "config": {
+                "appEvents": [
+                    "com.apple.photos.CPAnalytics.mediaSample"
+                ]
+            }
+        }
+    ]
+}

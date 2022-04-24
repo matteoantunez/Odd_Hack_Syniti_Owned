@@ -1,0 +1,14 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "ShaderResources": "shaders"
+            },
+            "LibraryPath": "",
+            "Name": "mtlf",
+            "ResourcePath": "resources",
+            "Root": "..",
+            "Type": "library"
+        }
+    ]
+}

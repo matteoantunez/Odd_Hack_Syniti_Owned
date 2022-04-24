@@ -1,0 +1,258 @@
+<!ELEMENT cat (meta|parameters|conditions|phrases|random|first|switch|all|dialog|fallback|visual)*>
+<!ATTLIST cat
+        xmlns CDATA #REQUIRED
+        locale CDATA #IMPLIED
+        id CDATA #IMPLIED>
+
+
+<!-- *** elements that are normally contained in a _params.cat.xml file *** -->
+
+<!-- Any metadata for this CAT file, e.g., description, category, tags, etc. -->
+<!ELEMENT meta EMPTY>
+<!ATTLIST meta
+        name CDATA #REQUIRED
+        value CDATA #REQUIRED>
+
+<!-- The template parameters that are accepted by this CAT file -->
+<!ELEMENT parameters (parameter)*>
+<!ELEMENT parameter EMPTY>
+<!ATTLIST parameter
+        name CDATA #REQUIRED
+        type CDATA #REQUIRED
+        description CDATA #IMPLIED
+        semanticConcept CDATA #IMPLIED
+        sampleValue CDATA #IMPLIED
+        deprecated CDATA #IMPLIED
+        profanityFilter CDATA #IMPLIED
+        optional CDATA #IMPLIED>
+
+
+<!-- *** elements that are normally contained in a <locale>.cat.xml file *** -->
+
+<!-- conditions are named boolean expressions -->
+<!ENTITY % condition_elements "expression|sub-condition|and|or|not">
+<!ELEMENT conditions (condition)*>
+<!ELEMENT condition (%condition_elements;)?>
+<!ATTLIST condition
+        name CDATA #REQUIRED
+        note CDATA #IMPLIED>
+
+<!-- a single expression within a condition -->
+<!ELEMENT expression EMPTY>
+<!ATTLIST expression
+        name CDATA #REQUIRED
+        op CDATA #IMPLIED
+        value CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!-- a nested sub condition within a condition -->
+<!ELEMENT sub-condition EMPTY>
+<!ATTLIST sub-condition
+        name CDATA #REQUIRED
+        note CDATA #IMPLIED>
+
+<!-- the set of boolean operators we support -->
+<!ELEMENT and (%condition_elements;)*>
+<!ATTLIST and
+        note CDATA #IMPLIED>
+<!ELEMENT or (%condition_elements;)*>
+<!ATTLIST or
+        note CDATA #IMPLIED>
+<!ELEMENT not (%condition_elements;)*>
+<!ATTLIST not
+        note CDATA #IMPLIED>
+
+<!-- phrases are embeddable and reusable pieces of text -->
+<!ELEMENT phrases (random|first|switch)*>
+
+<!-- grouping elements (random, first, switch, all) -->
+<!ENTITY % grouping_elements "random|first|switch|all|dialog|text">
+<!ELEMENT random (%grouping_elements;)*>
+<!ATTLIST random
+        id CDATA #IMPLIED
+        condition CDATA #IMPLIED
+        phrase CDATA #IMPLIED
+        case CDATA #IMPLIED
+        weight CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!ELEMENT first (%grouping_elements;)*>
+<!ATTLIST first
+        id CDATA #IMPLIED
+        condition CDATA #IMPLIED
+        phrase CDATA #IMPLIED
+        case CDATA #IMPLIED
+        weight CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!ELEMENT switch (%grouping_elements;)*>
+<!ATTLIST switch
+        value CDATA #REQUIRED
+        id CDATA #IMPLIED
+        condition CDATA #IMPLIED
+        phrase CDATA #IMPLIED
+        case CDATA #IMPLIED
+        weight CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!ELEMENT all (%grouping_elements;)*>
+<!ATTLIST all
+        id CDATA #IMPLIED
+        condition CDATA #IMPLIED
+        phrase CDATA #IMPLIED
+        case CDATA #IMPLIED
+        weight CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!-- define the common types of child elements for dialog -->
+<!ENTITY % dialog_elements "var|phrase|opt|span">
+<!ENTITY % loc_elements "quantity|transform">
+<!ENTITY % ssml_elements "break|prosody|say-as|w|phoneme|emphasis|sub">
+<!ENTITY % all_elements "%dialog_elements;|%loc_elements;|%ssml_elements;|tts">
+<!ENTITY % quantity_children_elements "%dialog_elements;|transform|%ssml_elements;|tts"> <!-- like all_elements, but excluding quantity -->
+
+<!-- a dialog node defines a single line of dialog -->
+<!ELEMENT dialog (#PCDATA|full|supporting|content|caption|speak|print|%all_elements;)*>
+<!ATTLIST dialog
+        id CDATA #IMPLIED
+        condition CDATA #IMPLIED
+        printOnly CDATA #IMPLIED
+        spokenOnly CDATA #IMPLIED
+        case CDATA #IMPLIED
+        weight CDATA #IMPLIED
+        type CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!-- we can support a long vs short version of the dialog text -->
+<!ELEMENT full (#PCDATA|speak|print|%all_elements;)*>
+<!ELEMENT supporting (#PCDATA|speak|print|%all_elements;)*>
+<!ELEMENT content (#PCDATA|speak|print|%all_elements;)*>
+<!ELEMENT caption (#PCDATA|speak|print|%all_elements;)*>
+
+<!-- you can define a speakable or printable version of the dialog -->
+<!ELEMENT speak (#PCDATA|%all_elements;)*>
+<!ELEMENT print (#PCDATA|%all_elements;)*>
+
+<!-- the var element supports variable substitution -->
+<!ELEMENT var EMPTY>
+<!ATTLIST var
+        name CDATA #REQUIRED
+        inflect CDATA #IMPLIED
+        transform CDATA #IMPLIED
+        number CDATA #IMPLIED
+        list CDATA #IMPLIED
+        separator CDATA #IMPLIED
+        beforefirst CDATA #IMPLIED
+        afterfirst CDATA #IMPLIED
+        beforelast CDATA #IMPLIED
+        afterlast CDATA #IMPLIED
+        itemprefix CDATA #IMPLIED
+        itemsuffix CDATA #IMPLIED
+        itemformat CDATA #IMPLIED
+        ground CDATA #IMPLIED
+        groundvar CDATA #IMPLIED
+        semanticConcept CDATA #IMPLIED
+        id CDATA #IMPLIED>
+
+<!-- the phrase element lets you embed other segments of text -->
+<!ELEMENT phrase EMPTY>
+<!ATTLIST phrase
+        name CDATA #REQUIRED
+        id CDATA #IMPLIED>
+
+<!-- opt defines optional output if variable substitutions were empty -->
+<!ELEMENT opt (#PCDATA|%all_elements;)*>
+
+<!-- spans lets you provide specific whitespace formatting and inflection -->
+<!ELEMENT span (#PCDATA|%all_elements;)*>
+<!ATTLIST span
+        inflect CDATA #IMPLIED>
+
+<!-- the quantity element provides grammatical count functionality -->
+<!ELEMENT quantity (zero|one|two|few|many|other|lessThanOrEqualTo|span)*>
+<!ATTLIST quantity
+        value CDATA #REQUIRED
+        includeValue (true|false) #IMPLIED
+        format CDATA #IMPLIED>
+<!ELEMENT zero (#PCDATA|%quantity_children_elements;)*>
+<!ELEMENT one (#PCDATA|%quantity_children_elements;)*>
+<!ELEMENT two (#PCDATA|%quantity_children_elements;)*>
+<!ELEMENT few (#PCDATA|%quantity_children_elements;)*>
+<!ELEMENT many (#PCDATA|%quantity_children_elements;)*>
+<!ELEMENT other (#PCDATA|%quantity_children_elements;)*>
+<!ELEMENT lessThanOrEqualTo (#PCDATA|%quantity_children_elements;)*>
+<!ATTLIST lessThanOrEqualTo
+        value CDATA #REQUIRED>
+
+<!-- transform the child text in various ways, e.g., uppercase -->
+<!ELEMENT transform (#PCDATA|%all_elements;)*>
+<!ATTLIST transform
+        mode CDATA #REQUIRED>
+
+<!-- the SSML break element -->
+<!ELEMENT break EMPTY>
+<!ATTLIST break
+        time CDATA #IMPLIED
+        strength CDATA #IMPLIED>
+
+<!-- the SSML prosody element -->
+<!ELEMENT prosody (#PCDATA|%all_elements;)*>
+<!ATTLIST prosody
+        volume CDATA #IMPLIED
+        rate CDATA #IMPLIED
+        pitch CDATA #IMPLIED>
+
+<!-- the SSML say-as element -->
+<!ELEMENT say-as (#PCDATA|%all_elements;)*>
+<!ATTLIST say-as
+        interpret-as CDATA #REQUIRED
+        detail CDATA #IMPLIED>
+
+<!-- the SSML sub element -->
+<!ELEMENT sub (#PCDATA|%all_elements;)*>
+<!ATTLIST sub
+        alias CDATA #IMPLIED>
+
+<!-- the SSML w element -->
+<!ELEMENT w (#PCDATA|%all_elements;)*>
+
+<!-- the SSML phoneme element -->
+<!ELEMENT phoneme (#PCDATA|%all_elements;)*>
+<!ATTLIST phoneme
+        alphabet CDATA #REQUIRED
+        ph CDATA #REQUIRED>
+
+<!-- the SSML emphasis element -->
+<!ELEMENT emphasis (#PCDATA|%all_elements;)*>
+<!ATTLIST emphasis
+        level (none|reduced|moderate|strong) #REQUIRED>
+
+<!-- the tts element -->
+<!ELEMENT tts (#PCDATA|%all_elements;)*>
+<!ATTLIST tts
+        sirifamily CDATA #IMPLIED
+        play CDATA #IMPLIED>
+
+<!-- the text element is used within phrase grouping elements -->
+<!ELEMENT text (#PCDATA|speak|print|%all_elements;)*>
+<!ATTLIST text
+        id CDATA #IMPLIED
+        condition CDATA #IMPLIED
+        case CDATA #IMPLIED
+        weight CDATA #IMPLIED
+        note CDATA #IMPLIED>
+
+<!-- the fallback text can always be used if no conditions are met -->
+<!ELEMENT fallback (dialog*)>
+
+<!-- *** elements for visual references *** -->
+
+<!-- the visual child element of a dialog holds one or more param and an "id" attribute -->
+<!ELEMENT visual (#PCDATA|param)*>
+<!ATTLIST visual
+        id CDATA #IMPLIED>
+
+<!-- the param children of visual, for values to be passed to a visual invocation -->
+<!ELEMENT param (#PCDATA|%dialog_elements;|%loc_elements;)*>
+<!ATTLIST param
+        name CDATA #REQUIRED>

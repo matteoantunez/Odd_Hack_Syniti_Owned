@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 200 200" contentsFormat="RGBA8" name="Root Layer" position="100 100" mica_expanded="1" micaID="852A9D44-7919-47F3-9765-CEF16DE9C7F7">
+    <backgroundColor opacity="0" value="0 0 0"/>
+    <sublayers>
+      <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 200 200" contentsFormat="RGBA8" hidden="0" name="circle_grp" opacity="0.65" position="100 100" transform="scale(0.5, 0.5, 1)" micaID="4E452238-3852-4315-9D1C-0F1EBC91D29B">
+	<sublayers>
+	  <CAShapeLayer fillColor="0 0.4784 1" path="200 100 m 200 44.77152502 155.22847498 0 100 0 c 44.77152502 0 0 44.77152502 0 100 c 0 155.22847498 44.77152502 200 100 200 c 155.22847498 200 200 155.22847498 200 100 c h" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0.5 0.5" bounds="0 0 200 200" contentsFormat="RGBA8" name="circle" position="100 100" transform="" micaID="F4FEF13B-5636-41F1-92B1-AF073562CA20">
+	    <strokeColor opacity="0" value="0 0 0"/>
+	  </CAShapeLayer>
+	</sublayers>
+      </CALayer>
+      <CALayer allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 200 200" contentsFormat="RGBA8" name="finger_print" position="100 100" micaID="047BD701-CC7F-40CD-B9C6-7A28E9FFD3AF">
+	<mask allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 200 200" contentsFormat="RGBA8" name="mask_grp" position="100 100" micaID="547F146B-B6CA-435D-A985-356B67D27349">
+	  <sublayers>
+	    <CAShapeLayer id="#37" fillColor="1.056 -0.2124 -0.1441" path="200 100 m 200 44.77152502 155.22847498 0 100 0 c 44.77152502 0 0 44.77152502 0 100 c 0 155.22847498 44.77152502 200 100 200 c 155.22847498 200 200 155.22847498 200 100 c h" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 200 200" contentsFormat="RGBA8" name="circle_mask" position="100 100" transform="scale(0.3, 0.3, 1)" micaID="E79C48EC-CE41-45F5-9820-34B25C49DB2B">
+	      <strokeColor opacity="0" value="0 0 0"/>
+	      <filters>
+		<CAFilter filter="gaussianBlur" name="gaussianBlur" inputHardEdges="0" inputRadius="25" inputQuality="default"/>
+	      </filters>
+	    </CAShapeLayer>
+	  </sublayers>
+	</mask>
+	<sublayers>
+	  <CALayer id="#2" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 200 200" contentsFormat="RGBA8" name="FingerPrint_grp" opacity="1" position="100 97" micaID="3B373E3B-0CF9-40EE-A3AD-0F8A6004266D">
+	    <sublayers>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0.5 0.5" bounds="0 0 164.19 166.841430793434" contentsFormat="RGBA8" name="fingerprint_paths" position="100 100" transform="scale(0.6, 0.6, 1)" micaID="1644B245-45F3-4DBC-9AAC-FA84E5696077">
+		<sublayers>
+		  <CAShapeLayer id="#3" lineCap="round" lineWidth="4" path="0 0 m 1.93 7.3 7.93 20.16 14.81 26.66 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 14.81 26.66" contentsFormat="RGBA8" name="path" position="15.325 124.77" micaID="60884C55-826E-431C-BEC3-B33A26D7C065">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#4" lineCap="round" lineWidth="4" path="5.73 53.17 m 1.49 35.97 5.88 18.5 5.57 11.36 c 5.37 6.89 3.57 3.29 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 5.88 53.17" contentsFormat="RGBA8" name="path" position="2.94 76.825" micaID="D7D5CD3D-76B9-468D-B624-3345C4EE2B52">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#5" lineCap="round" lineWidth="4" path="0 0 m 3.552713678801e-15 0 l 2.623684501171 3.251358771851 4.577900178062 6.989858327642 5.75 11 c 8.75 21.58 3.47 41.49 5.9 55.2 c 5.9 55.2 l 8.01180387106 66.017988162557 12.541313038517 76.218784657419 19.15 85.04 c 24.87 92.48 41.57 111.1 69.78 113.33 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 69.78 113.33" contentsFormat="RGBA8" name="path" position="41.45 100.715" micaID="1BD54372-CB8F-4AE3-8455-FDD525D21917">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#6" lineCap="round" lineWidth="4" path="0 0 m 5.25 6 21.24 17.08 34.95 20.61 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 34.95 20.61" contentsFormat="RGBA8" name="path" position="44.755 153.455" micaID="1FA197C7-0E3E-430B-BA54-B9456DBA1FEE">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#7" lineCap="round" lineWidth="4" path="0 19.42 m 0 19.42 l 10.975236313532 20.761430793433 22.100756708605 20.165722977938 32.87 17.66 c 43.71 14.98 56.2 7.56 64.2 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 64.2 20.761430793433" contentsFormat="RGBA8" name="path" position="101.75 156.460715396717" micaID="50DFF98B-CDB0-4051-B70D-48474D09407F">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#8" lineCap="round" lineWidth="4" path="0 51.08 m 33.46 49.47 55.88 25.22 63.18 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 63.18 51.08" contentsFormat="RGBA8" name="path" position="116.65 132.21" micaID="3776DD49-901C-468C-B116-04477818FB32">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#9" lineCap="round" lineWidth="4" path="0 29.17 m 2.84217094304e-14 29.17 l 7.207314572193 20.513204608765 12.802658571726 10.633290294819 16.52 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 16.52 29.17" contentsFormat="RGBA8" name="path" position="147.33 126.135" micaID="DD198941-ABF0-48F7-B254-70BAE45261B4">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#10" lineCap="round" lineWidth="4" path="0 44.09 m 3.76 33.44 6.43 17.49 6.49 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 6.49 44.09" contentsFormat="RGBA8" name="path" position="160.945 82.825" micaID="2F169EEC-A8E8-4379-B68C-FF3FC5EEBF25">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#11" lineCap="round" lineWidth="4" path="2.18 48.24 m 5.62 30.98 4.7 14.82 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 5.62 48.24" contentsFormat="RGBA8" name="path" position="83.48 63.03" micaID="A95B9D42-8BFF-4BD6-AA21-BD02E35CE06D">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#12" lineCap="round" lineWidth="4" path="21.19 27.76 m 16.56 16.55 8.53 7.47 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 21.19 27.76" contentsFormat="RGBA8" name="path" position="67.365 18.91" micaID="EE6AEFB7-B2E5-4AA4-950E-C645A8603B14">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#13" lineCap="round" lineWidth="4" path="0 0 m 0 0 l 3.323940381618 3.145773958266 6.434187665349 6.509918979444 9.31 10.07 c 9.31 10.07 l 18.557389074141 21.433607503313 24.396169228838 35.184558865266 26.15 49.73 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 26.15 49.73" contentsFormat="RGBA8" name="path" position="78.925 27.015" micaID="C62AFE3E-47E9-4F8E-80BB-63BB4230DF4E">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#14" lineCap="round" lineWidth="4" path="0 0 m 1.42108547152e-14 0 l 5.039941640097 5.297609710271 9.464714866607 11.148105924853 13.19 17.44 c 13.19 17.44 l 16.31117457878 22.824619666174 18.797764013404 28.552835813142 20.6 34.51 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 20.6 34.51" contentsFormat="RGBA8" name="path" position="86.71 18.285" micaID="BBFB85FF-03F1-4B9F-AEA9-3A506FED1DDF">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#15" lineCap="round" lineWidth="4" path="0 0 m 1.42108547152e-14 0 l 5.921543350067 6.891093605622 10.754101589848 14.647467612248 14.33 23 c 16.46 28.39 21.17 46.69 17.33 68.15 c 15.91 75.72 18.8 80 23.05 80.99 c 23.05 80.99 l 26.841378195182 82.026405225948 30.83493465981 80.226787869514 32.57 76.7 c 34.45 73.07 34.91 68.96 35.37 64.84 c 35.37 64.84 l 36.181249334835 58.104807551129 36.358693829606 51.308348600455 35.9 44.54 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 36.358693829606 82.026405225948" contentsFormat="RGBA8" name="path" position="75.229346914803 56.753202612974" micaID="70026EAE-3743-49FF-9BC9-0ED1487D4DBB">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#16" lineCap="round" lineWidth="4" path="0 0 m 4.28 18.45 1.86 31.46 1.23 40.87 c 0.83 46.44 1.1 55.15 8.54 59.11 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 8.54 59.11" contentsFormat="RGBA8" name="path" position="68.89 73.835" micaID="7027A198-7AD5-42A8-8F1A-1074AFA5E0DF">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#17" lineCap="round" lineWidth="4" path="0 61.97 m 8 63.24 13.27 60.15 17 54.43 c 20.73 48.71 21.84 42.43 22.42 35.61 c 23.09 27.8 21.84 4.15 20.25 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 23.09 63.24" contentsFormat="RGBA8" name="path" position="90.705 75.1" micaID="19E695F5-81FE-4F37-9278-5E715B6E51D0">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#18" lineCap="round" lineWidth="4" path="0 0 m 1.85 1.42 3.64 2.83 5.28 4.23 c 11.59 9.61 17.08 15.41 20.7 22.87 c 20.7 22.87 l 22.816614225394 27.199979569498 24.221303588582 31.842883113692 24.86 36.62 c 25.96 45.27 25.59 51.62 24.73 61.97 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 25.96 61.97" contentsFormat="RGBA8" name="path" position="46.23 46.215" micaID="A8EEA0CD-D94B-4509-ADF9-768AF0195875">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#19" lineCap="round" lineWidth="4" path="0.4 84.15 m 0 100.21 4.4 108.15 14.4 112.65 c 21.72 115.95 31.98 114.73 38.58 110.16 c 45.18 105.59 49.05 98.58 51.34 90.88 c 53.63 83.18 54.19 74.67 53.89 66.64 c 53.89 66.64 l 53.702037863788 60.133392523617 53.087384457365 53.646126679734 52.05 47.22 c 52.05 47.22 l 50.949105574838 40.51583425434 49.034985316622 33.970886213525 46.35 27.73 c 46.35 27.73 l 42.461465294232 17.530160305766 36.733158650979 8.13099206805 29.45 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 54.19 115.95" contentsFormat="RGBA8" name="path" position="84.015 57.975" micaID="41AC2DF0-C378-4A0B-B507-EE26E58A1ACE">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#20" lineCap="round" lineWidth="4" path="0 0 m 0.06999999999999 9.49 1.12 17 5.71 23.89 c 5.71 23.89 l 10.156713303025 30.733048448992 17.157269255916 35.511720130827 25.15 37.16 c 38.44 39.99 48.23 35.43 55.48 29.86 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 55.48 39.99" contentsFormat="RGBA8" name="path" position="75.83 104.895" micaID="0B7E2F0C-C8F4-4B20-8011-2F453AF54B45">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#21" lineCap="round" lineWidth="4" path="0 42.52 m 5.42 35.83 8.23 27.78 9.55 17.52 c 10.22 12.31 10.1 1.08 10.08 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 10.22 42.52" contentsFormat="RGBA8" name="path" position="114.46 87.66" micaID="6CD03074-AC36-4599-99C4-DE0156B093D6">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#22" lineCap="round" lineWidth="4" path="21.78 27.05 m 17.19 15.82 9.78 7.7 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 21.78 27.05" contentsFormat="RGBA8" name="path" position="51.33 24.335" micaID="5FB91D61-C9DD-482D-9CF9-FBEBE7EFA5EA">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#23" lineCap="round" lineWidth="4" path="0 0 m 8.1 10.92 17.73 28.46 19.2 53.91 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 19.2 53.91" contentsFormat="RGBA8" name="path" position="109.64 30.535" micaID="F0173448-7767-43F4-89D0-B61F3598EFEC">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#24" lineCap="round" lineWidth="4" path="21.57 56.27 m 23.83 31.98 21.57 20.96 9.49 8.22 c 9.49 8.22 l 6.546887851553 5.235624361786 3.373785523117 2.487162703225 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 23.83 56.27" contentsFormat="RGBA8" name="path" position="39.295 48.405" micaID="ED935238-A7BD-4F85-9EDD-0E78D4A3E241">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#25" lineCap="round" lineWidth="4" path="0 0 m 0 0 l 2.514872933895 3.921397855047 4.718296655706 8.034009657516 6.59 12.3 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 6.59 12.3" contentsFormat="RGBA8" name="path" position="117.835 16.08" micaID="FFE60DB2-FCCD-4952-8626-BEF0A58F390B">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#26" lineCap="round" lineWidth="4" path="0 0 m 3 8.82 4.45 22.39 4.58 33.4 c 4.58 33.400000000001 l 4.695194873258 39.80195074603 4.451479331313 46.205326217962 3.85 52.580000000001 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 4.695194873258 52.580000000001" contentsFormat="RGBA8" name="path" position="125.697597436629 54.82" micaID="BCBA6F30-669F-4265-9904-4781A0C6A46D">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#27" lineCap="round" lineWidth="4" path="0 40.84 m 0 40.84 l 12.696358603305 43.630774401462 25.975660214085 40.605250007954 36.21 32.59 c 46.36 24.74 51.77 12.59 54.05 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 54.05 43.630774401462" contentsFormat="RGBA8" name="path" position="99.345 111.705387200731" micaID="780B384D-53E2-4E63-866F-13F470022B17">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#28" lineCap="round" lineWidth="4" path="44.24 103.35 m 44.24 103.35 l 36.079363663929 100.006098628401 29.181913864301 94.172486849619 24.53 86.68 c 19.88 79.26 18.53 70.37 18.7 61.62 c 19.02 47.41 23.28 31.8 16.46 18 c 13.05 11.09 6.67 5.29 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 44.24 103.35" contentsFormat="RGBA8" name="path" position="42.82 76.575" micaID="6F42AE95-EBA1-47F8-BED8-5F9C7A7B8752">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#29" lineCap="round" lineWidth="4" path="0 0 m 6 5.2 11.74 10.67 14.21 18.13 c 17.47 27.97 15.85 36.85 14.85 47.13 c 14.18 54.13 13.85 61.22 15.32 68.13 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 17.47 68.13" contentsFormat="RGBA8" name="path" position="24.715 65.295" micaID="06730AF2-144E-44D8-BE9F-83027E52EC51">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#30" lineCap="round" lineWidth="4" path="0 0 m 5.57 15.88 23.76 31.75 43.47 32.85 c 60.16 33.79 75.85 28.53 86.21 15.85 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 86.21 33.79" contentsFormat="RGBA8" name="path" position="77.195 124.295" micaID="902DC510-DA62-408F-9AE1-D577076D9A45">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#31" lineCap="round" lineWidth="4" path="0 29.6 m 3.12 25.29 9.22 13.01 10.62 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 10.62 29.6" contentsFormat="RGBA8" name="path" position="130.16 102.02" micaID="3205297D-F5BD-4D4D-8CBE-FFF5CC267A81">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#32" lineCap="round" lineWidth="4" path="8.84 65.18 m 11.02 38.83 8.72 18.58 0 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 11.02 65.18" contentsFormat="RGBA8" name="path" position="132.9 46.67" micaID="375CFFD5-F2CC-4BE0-B820-D2F0FCCCC2B8">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#33" lineCap="round" lineWidth="4" path="0 0 m 2.84217094304e-14 0 l 4.221214383442 13.660350972552 6.054755548646 27.946410641658 5.42 42.23 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 6.054755548646 42.23" contentsFormat="RGBA8" name="path" position="143.707377774323 44.385" micaID="3A7A9A93-A7DC-4699-98CE-46FDBFC7AE9B">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#34" lineCap="round" lineWidth="4" path="3.552713678801e-15 0 m 0 0 l 4.157482796085 3.718541255085 7.413190813914 8.335354095494 9.52 13.5 c 14.75 27.5 10.09 42.77 10.98 57.7 c 12.31 79.97 28.56 100.38 50.22 108.56 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 50.22 108.56" contentsFormat="RGBA8" name="path" position="36.14 90.93" micaID="6A0A4F08-31E5-47A2-AAFD-50CEA7F71533">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#35" lineCap="round" lineWidth="4" path="0 74.07 m 15.79 77.5 34.5 75.07 49.51 64.71 c 58.81 58.29 65.25 47.96 69.69 37.57 c 74.33 26.68 76.69 14.87 77.58 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 77.58 77.5" contentsFormat="RGBA8" name="path" position="107.12 112.03" micaID="3D22A4B2-9031-4CF1-ABFC-1F39EC730707">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		  <CAShapeLayer id="#36" lineCap="round" lineWidth="4" path="0 59.74 m 2.29 49.9 4.75 36.46 4.75 26.35 c 4.75 26.35 l 4.892559374916 17.545453531205 4.431478862719 8.74148867874 3.37 0 c" strokeColor="1 1 1" strokeEnd="0" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 4.892559374916 59.74" contentsFormat="RGBA8" name="path" position="152.676279687458 69.81" micaID="B619C69F-F172-4E9F-B41E-6265D05F440B">
+		    <fillColor opacity="0" value="0 0 0"/>
+		  </CAShapeLayer>
+		</sublayers>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <states>
+      <LKState name="Start" initial="true">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="0.45"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Animate IN" nextDelay="2.5">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="0.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="opacity">
+	    <value type="real" value="0.75"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#7" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#8" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#10" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#11" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#12" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#13" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#14" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#15" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#16" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#17" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#18" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#19" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#20" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#21" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#22" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#23" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#24" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#25" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#26" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#27" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#28" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#29" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#30" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#31" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#32" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#33" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#34" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#35" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#36" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#37" keyPath="transform.scale.xy">
+	    <value type="real" value="0.35"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Animate OUT">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="0.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#7" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#8" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#10" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#11" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#12" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#13" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#14" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#15" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#16" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#17" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#18" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#19" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#20" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#21" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#22" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#23" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#24" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#25" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#26" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#27" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#28" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#29" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#30" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#31" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#32" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#33" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#34" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#35" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#36" keyPath="strokeEnd">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#37" keyPath="transform.scale.xy">
+	    <value type="real" value="0.35"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Start">
+	<elements/>
+      </LKStateTransition>
+      <LKStateTransition fromState="Start" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="opacity" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="opacity" duration="0.5" fillMode="backwards" timingFunction="easeInEaseOut">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Animate OUT">
+	<elements>
+	  <LKStateTransitionElement key="opacity" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="opacity" beginTime="0.25" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation type="CABasicAnimation" keyPath="opacity" beginTime="1e-100" duration="0.5" fillMode="backwards" timingFunction="easeInEaseOut">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Animate OUT" toState="*">
+	<elements/>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Animate IN">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#37">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation type="CABasicAnimation" keyPath="opacity" beginTime="1" duration="1" fillMode="backwards" timingFunction="easeInEaseOut">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#4">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#7">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#8">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#9">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#10">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#11">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#12">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#13">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#14">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#15">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#16">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#17">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#18">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#19">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#20">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#21">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#22">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#23">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#24">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#25">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#26">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#27">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#28">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#29">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#30">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#31">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#32">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#33">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#34">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#35">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="strokeEnd" targetId="#36">
+	    <animation type="CABasicAnimation" keyPath="strokeEnd" beginTime="1" duration="1" fillMode="backwards" timingFunction="default">
+	      <delegate/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Animate IN" toState="*">
+	<elements/>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>

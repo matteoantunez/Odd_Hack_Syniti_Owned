@@ -1,0 +1,4832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sections</key>
+	<array>
+		<dict>
+			<key>Header</key>
+			<string>Behaviors</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Workflow Behaviors</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable deletion of read-only projects</string>
+									<key>Key</key>
+									<string>allowDeleteReadOnlyProjects</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Open Mica Documents</string>
+									<key>Key</key>
+									<string>OpenMicaDocumentsKey</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Open Trailers in Project Editor</string>
+									<key>Key</key>
+									<string>showTrailersAsProjects</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Full screen demo mode (shows device UI, not video only)</string>
+									<key>Key</key>
+									<string>showUIDuringFullscreen</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Grace&apos;s special 360P export setting</string>
+									<key>Key</key>
+									<string>graceExportSetting</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Prototype Behaviors</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Header</key>
+							<string>Behaviors</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Copying Images into Project</string>
+									<key>Key</key>
+									<string>DisableCopyingImageFiles</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Inspector Tab Animation</string>
+									<key>Key</key>
+									<string>EnableInspectorTabAnimation</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Super Fast Speed</string>
+									<key>Key</key>
+									<string>AllowSuperFastSpeed</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t deselect on scroll</string>
+									<key>Key</key>
+									<string>dontDeselectOnScroll</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>projectAspectRatio</string>
+									<key>Title</key>
+									<string>Project aspect ratio</string>
+									<key>Titles</key>
+									<array>
+										<string>16:9</string>
+										<string>9:16</string>
+										<string>4:3</string>
+										<string>3:4</string>
+										<string>Square</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+										<integer>4</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>disable all CA layers (KB, titles, theme transition etc etc)</string>
+									<key>Key</key>
+									<string>disableAllCA</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>16741493</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>freeze edited assets (i.e. copy edited media local)</string>
+									<key>Key</key>
+									<string>EnableAssetFreezing</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>17771794</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Load project video bin thumbnail strips async (performance)</string>
+									<key>Key</key>
+									<string>loadMediaBinCachedStripsAsync</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>21428504</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Turn off Rasterization on Mica Titles when rendering 4K</string>
+									<key>Key</key>
+									<string>turnOffMicaTitleRasterization</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Controls</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show &quot;Easy Edit&quot; button in the Videos Tab</string>
+									<key>Key</key>
+									<string>enableEasyEditButton</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Old Music Picker in Plugin</string>
+									<key>Key</key>
+									<string>useOldPluginMusicPicker</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show On Screen Play Button in Video Tab</string>
+									<key>Key</key>
+									<string>showOnScreenPlayButtonInVideoTab</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Displays</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>9014197</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show anchors in timeline</string>
+									<key>Key</key>
+									<string>showTimelineAnchors</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Debug Behaviors</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Header</key>
+							<string>Behaviors</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Broaden Initial Relink Duration Check</string>
+									<key>Key</key>
+									<string>broadenInitialRelinkDurationCheck</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Skip Relink Date Check</string>
+									<key>Key</key>
+									<string>skipRelinkDateCheck</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Skip Relink Duration Check</string>
+									<key>Key</key>
+									<string>skipRelinkDurationCheck</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable sharing file caching (always re-render)</string>
+									<key>Key</key>
+									<string>disableSharingFileCaching</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Trailer Preview Content</string>
+									<key>Key</key>
+									<string>trailerPreviewContent</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Dump Composition After Rebuild</string>
+									<key>Key</key>
+									<string>dumpCompositionAfterRebuild</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable iOSPMR timers</string>
+									<key>Key</key>
+									<string>iOS_PERFENABLED</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable KTrace Events</string>
+									<key>Key</key>
+									<string>kernelTraceEnabled</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable AVFoundation logs</string>
+									<key>Key</key>
+									<string>enable-avplayer_logperformance</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>18900915</string>
+										<string>17232820</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Log MessageTracer keys</string>
+									<key>Key</key>
+									<string>logUTKeyGeneration</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Logging Sandbox Paths in Console</string>
+									<key>Key</key>
+									<string>disableLogSandboxPathsAtLaunch</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Localizable Keyboard Logging</string>
+									<key>Key</key>
+									<string>debugLocalizableKeyboards</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Controls</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Developer Convenience Gestures</string>
+									<key>Key</key>
+									<string>developerConvenienceGestures</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show left/right step buttons</string>
+									<key>Key</key>
+									<string>showLeftRightStepButton</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Displays</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Blue screen when mediaserverd crashes</string>
+									<key>Key</key>
+									<string>mediaServerCrashGetTheBSoD</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show scrubbing fps (iPad only)</string>
+									<key>Key</key>
+									<string>scrubbingTestMode</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show current time in viewer</string>
+									<key>Key</key>
+									<string>showProjectTime</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Burn In Export Settings (5 frames)</string>
+									<key>Key</key>
+									<string>burnInExportSettings</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Header</key>
+			<string>Workarounds</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Audio Workarounds</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Header</key>
+							<string>Audio Sync</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>ENABLE Gap Workaround</string>
+									<key>Key</key>
+									<string>enableGapSyncWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>ENABLE Startup Workaround</string>
+									<key>Key</key>
+									<string>enableStartupSyncWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>15046789</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>ENABLE Segregate Formats after Speed</string>
+									<key>Key</key>
+									<string>enableSpeedAndFormatSyncWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>14814566</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>ENABLE Play-Pause-Play Workaround</string>
+									<key>Key</key>
+									<string>enablePlayPausePlayWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Other Audio Workarounds</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>9059895</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>acquire audio session for waveforms</string>
+									<key>Key</key>
+									<string>WaveformsAcquireAudioSession</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>9059895</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>AudioSession in Record Only Mode</string>
+									<key>Key</key>
+									<string>useRecordAudioSessionOnlyKey</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>8876131</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>ENABLE Long Silence Workaround Track</string>
+									<key>Key</key>
+									<string>enableSilentWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>9497557</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Extra Volume Points Workaround</string>
+									<key>Key</key>
+									<string>enableExtraVolumePointsWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>General Workarounds</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>15161704</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable &quot;AVCompositions from AVAssets&quot; workaround</string>
+									<key>Key</key>
+									<string>DisableAVCompositionAssetRecovery</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>15161704</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable detached header workaround</string>
+									<key>Key</key>
+									<string>DisableDetachedHeaderWorkaround</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>14582068</string>
+									</array>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Limited thumb update workaround</string>
+									<key>Key</key>
+									<string>limitedThumbUpdateWhilePlaying</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Header</key>
+			<string>Test Controls</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>General</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Always show Startup Screen once on launch</string>
+									<key>Key</key>
+									<string>alwaysShowStartupScreenOnceOnLaunch</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>use multipass for rendering (15754601)</string>
+									<key>Key</key>
+									<string>multipassExport</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>add cache cleanup in delete project popup</string>
+									<key>Key</key>
+									<string>cacheCleanup</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>allows 4K on any 4K capable device</string>
+									<key>Key</key>
+									<string>skip4KFiltering</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Performance/Quality</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>No scrolling during playback</string>
+									<key>Key</key>
+									<string>disableScrollingDuringPlayback</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>No thumbnails tile update during playback</string>
+									<key>Key</key>
+									<string>disableTileUpdateDuringPlayback</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use first fetched image for all thumbs</string>
+									<key>Key</key>
+									<string>useFirstFrameForAllThumbs</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Plays only video in Trailers (and projects using Mica)</string>
+									<key>Key</key>
+									<string>disableCoreAnimation</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>VideoScaling</string>
+									<key>Title</key>
+									<string>Video scale (Quality)</string>
+									<key>Titles</key>
+									<array>
+										<string>Device Default</string>
+										<string>0.50</string>
+										<string>0.75</string>
+										<string>1.0</string>
+										<string>0.35 (Moab/Daytona)</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Title</key>
+									<string>Playback at 60FPS</string>
+									<key>Key</key>
+									<string>playbackAt60FPSMode</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (iMovie=Auto, Miro=30)</string>
+										<string>Auto</string>
+										<string>Force 30 fps</string>
+										<string>Force 60 fps</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Title</key>
+									<string>Export at 60FPS</string>
+									<key>Key</key>
+									<string>exportAt60FPSMode</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (iMovie=Auto, Miro=Auto)</string>
+										<string>Auto</string>
+										<string>Force 30 fps</string>
+										<string>Force 60 fps</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show FPS in export</string>
+									<key>Key</key>
+									<string>exportShowFPS</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Radars</key>
+									<array>
+										<string>13907215</string>
+									</array>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>audioScalingAlgorithm</string>
+									<key>Title</key>
+									<string>Audio scaling algorithm</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (LowQual play, Spectral export)</string>
+										<string>LowQualityZeroLatency (a.k.a. Craptastic)</string>
+										<string>TimeDomain</string>
+										<string>Spectral</string>
+										<string>Varispeed</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Transitions with Speed/Cutaways</string>
+									<key>Key</key>
+									<string>AllowThreeStreamTransitions</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Restrict Transitions Always</string>
+									<key>Key</key>
+									<string>disableFullyOverlappingTransitions</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t use render file in fullScreen</string>
+									<key>Key</key>
+									<string>doNotUseRenderFileInFullScreen</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Theater Rendering</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>iCloud HD rendering bitrate</string>
+									<key>Key</key>
+									<string>bitrateHDCloudRendering</string>
+									<key>DefaultValue</key>
+									<integer>1</integer>
+									<key>Titles</key>
+									<array>
+										<string>3mbits</string>
+										<string>5mbits (default)</string>
+										<string>8mbits</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>iCloud 4G rendering bitrate</string>
+									<key>Key</key>
+									<string>bitrate4GCloudRendering</string>
+									<key>DefaultValue</key>
+									<integer>1</integer>
+									<key>Titles</key>
+									<array>
+										<string>1mbits (default)</string>
+										<string>1.5mbits</string>
+										<string>1.75mbits</string>
+										<string>2mbits</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>iCloud 4G rendering at 480P</string>
+									<key>Key</key>
+									<string>4GCloudRendering480P</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Save temp iCloud files in Documents (iTunes)</string>
+									<key>Key</key>
+									<string>documentsIsMyCloud</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Header</key>
+			<string>Pro Video</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Rendering</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Dynamic Playback (requires recreate composition)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextDynamicPlaybackKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Render Technology</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextDeviceIDKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>GPU</string>
+										<string>CPU</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>GPU Render API (gpu only)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextGPURenderAPIKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>OpenGL</string>
+										<string>Metal</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Concatenation</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextConcatentationKey</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Texture Border</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextTextureBorderKey</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Proxy Mode (requires recreate composition)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextProxyModeKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Throttle CA Content&apos;s framerate (requires recreate composition)</string>
+									<key>Key</key>
+									<string>PVThrottleCAContentFrameRate</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Throttle timeline playback refresh rate</string>
+									<key>Key</key>
+									<string>PVThrottledTimelineRefreshRate</string>
+									<key>DefaultValue</key>
+									<integer>1</integer>
+									<key>Titles</key>
+									<array>
+										<string>No throttling</string>
+										<string>30 fps</string>
+										<string>15 fps</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Export HGXForm Prefilter Value (requires relaunch)</string>
+									<key>Key</key>
+									<string>PVExportPrefilterValue</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Titles</key>
+									<array>
+										<string>0 - disable prefiltering on export. Default.</string>
+										<string>.25</string>
+										<string>.5</string>
+										<string>.75</string>
+										<string>1</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Power Friendly Export</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextPowerFriendlyExport</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Debug Logs</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>ProVideo PMR Reporting</string>
+									<key>Key</key>
+									<string>PVPMR_PERFENABLED</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Off</string>
+										<string>Text PMR</string>
+										<string>JSON PMR</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Console Render Graph Dump Level</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextGraphDumpLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>Light Log</string>
+										<string>Full Log (XForms)</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Dump Dot Graph</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextDotGraphLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Off</string>
+										<string>Light Dot Graph</string>
+										<string>Full (DOD and ROIs)</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Sign Posts</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextSignPostLevelKey</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Trace GL Log Level</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextTraceGLLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>Level 1</string>
+										<string>Level 2</string>
+										<string>Level 3</string>
+										<string>Level 4</string>
+										<string>Level 5</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+										<string>5</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Trace Metal Log Level</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextTraceMetalLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>Level 1</string>
+										<string>Level 2</string>
+										<string>Level 3</string>
+										<string>Level 4</string>
+										<string>Level 5</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+										<string>5</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Console Instruction Graph Dump Level</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextInstructionGraphDumpLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>Level 1</string>
+										<string>Level 2</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Instruction Graph Dot Tree Level</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextInstructionGraphDotTreeLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>Level 1</string>
+										<string>Level 2</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Perf Stats Log Level</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextPerfStatsLogLevelKey</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>Windowed FPS</string>
+										<string>Aggregate Stats</string>
+										<string>All Frame Stats</string>
+										<string>All Frame Stats + logs every 100 frames</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+									</array>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Cutaway / Overlay Debugging</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable CA Border (requires recreate composition)</string>
+									<key>Key</key>
+									<string>PVDisableCutawayCABorder</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable CA Mask (requires recreate composition)</string>
+									<key>Key</key>
+									<string>PVDisableCutawayCAMask</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>UI Elements</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Apply Vertical Blur to Portrait Clips</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMoodVerticalBlurKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Mood Titles (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMoodTitlesKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Mood Filters (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMoodFiltersKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Mood alternate KB Effects (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMoodKenBurnsEffectsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show iMovie Cut Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextiMovieCutTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Miro Cut Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMiroCutTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show iMovie Fade Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextiMovieFadeTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Miro Fade Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMiroFadeTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show iMovie Flip Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextiMovieFlipTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Miro Flip Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMiroFlipTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show iMovie Multi Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextiMovieMultiTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Miro Multi Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMiroMultiTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show iMovie Slide Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextiMovieSlideTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Miro Slide Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMiroSlideTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show iMovie Wipe Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextiMovieWipeTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Miro Wipe Transitions (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMiroWipeTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Parse Document folder for Extra Effects (requires restart)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextUserMotionEffectsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Extra Motion Titles (add them to Document folder above)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextMotionTitlesKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Extra Motion Transitions (add them to Document folder above)</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextAllMotionTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Replace Shipped templates with those in Documents folder (when filenames are equal)</string>
+									<key>Key</key>
+									<string>PVReplaceShippingEffectsWithDocumentsEffects</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable opaque background for Mood Transitions</string>
+									<key>Key</key>
+									<string>PVVideoCompositingContextDisableOpaqueBGForTransitionsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Published Parameters</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Override All Published Parameters</string>
+									<key>Key</key>
+									<string>PVOverridePublishedParameters</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Poster</string>
+									<key>Key</key>
+									<string>PVEnablePoster</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Bar</string>
+									<key>Key</key>
+									<string>PVEnableBar</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Blur</string>
+									<key>Key</key>
+									<string>PVEnableBlur</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Light</string>
+									<key>Key</key>
+									<string>PVEnableLight</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Zoom</string>
+									<key>Key</key>
+									<string>PVEnableZoom</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Enable Intro Build In</string>
+									<key>Key</key>
+									<string>PVEnableIntroBuildIn</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Enable Outro Build Out</string>
+									<key>Key</key>
+									<string>PVEnableOutroBuildOut</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Style</string>
+									<key>Key</key>
+									<string>PVTextStyle</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Style A</string>
+										<string>Style B</string>
+										<string>Style C</string>
+										<string>Style D</string>
+										<string>Style E</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+										<string>4</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Animation</string>
+									<key>Key</key>
+									<string>PVTextAnimation</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Animation A</string>
+										<string>Animation B</string>
+										<string>Animation C</string>
+										<string>Animation D</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Title String</string>
+									<key>Key</key>
+									<string>PVTitleString</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Point Reyes National Seashore</string>
+										<string>Cannes, French Riviera</string>
+										<string>Lake Powell</string>
+										<string></string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Subtitle String</string>
+									<key>Key</key>
+									<string>PVSubtitleString</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>01/01/2015</string>
+										<string>July 1st, 2015</string>
+										<string>December 31st, 2015</string>
+										<string></string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Title Style</string>
+									<key>Key</key>
+									<string>PVTextTitleStyle</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Bold</string>
+										<string>Classic</string>
+										<string>Clean</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Background Color</string>
+									<key>Key</key>
+									<string>PVBackgroundColor</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Red</string>
+										<string>Green</string>
+										<string>Blue</string>
+										<string>Yellow</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Primary Color</string>
+									<key>Key</key>
+									<string>PVPrimaryColor</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Purple</string>
+										<string>Brown</string>
+										<string>Cyan</string>
+										<string>Orange</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Secondary Color</string>
+									<key>Key</key>
+									<string>PVSecondaryColor</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Purple</string>
+										<string>Brown</string>
+										<string>Cyan</string>
+										<string>Orange</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+										<string>3</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Drop Zone</string>
+									<key>Key</key>
+									<string>PVEnableDropZone</string>
+									<key>DefaultValue</key>
+									<string>YES</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Snapshot</string>
+									<key>Key</key>
+									<string>PVTitleSnapshot</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>1920</string>
+										<string>960</string>
+										<string>640</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+										<string>2</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Titles - Background</string>
+									<key>Key</key>
+									<string>PVTitleBackground</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>Color Solid</string>
+										<string>Gradient</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>1</string>
+									</array>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Header</key>
+			<string>Miro</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Miro Settings</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Header</key>
+							<string>User Interface</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0</real>
+									<key>Key</key>
+									<string>MiroForcedAspectFraming</string>
+									<key>Title</key>
+									<string>Forced Aspect for Framing</string>
+									<key>Titles</key>
+									<array>
+										<string>none</string>
+										<string>1:1 (square)</string>
+										<string>4:3</string>
+										<string>16:9</string>
+										<string>16:10</string>
+										<string>2.35:1</string>
+										<string>3:4</string>
+										<string>9:16</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<real>1.333333333</real>
+										<real>1.777777778</real>
+										<real>1.6</real>
+										<real>2.35</real>
+										<real>0.75</real>
+										<real>0.5625</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable iPad Framing</string>
+									<key>Key</key>
+									<string>MiroDisableiPadFraming</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>DEMO MODE</string>
+									<key>Key</key>
+									<string>MiroDemoMode</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0</real>
+									<key>Key</key>
+									<string>MiroCompellingCount</string>
+									<key>Title</key>
+									<string>What Determines isCompelling</string>
+									<key>Titles</key>
+									<array>
+										<string>DEFAULT: 6 items over T=1.25</string>
+										<string>1 item (everything is compelling)</string>
+										<string>3 items over T = 1.25</string>
+										<string>4 items over T = 1.25</string>
+										<string>5 items over T = 1.25</string>
+										<string>6 items over T = 1.25</string>
+										<string>7 items over T = 1.25</string>
+										<string>8 items over T = 1.25</string>
+										<string>10 items over T = 1.25</string>
+										<string>old time approach</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>3</integer>
+										<integer>4</integer>
+										<integer>5</integer>
+										<integer>6</integer>
+										<integer>7</integer>
+										<integer>8</integer>
+										<integer>10</integer>
+										<string>-1</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0</real>
+									<key>Key</key>
+									<string>MiroCuratedBump</string>
+									<key>Title</key>
+									<string>Bump Photos Curated Scores By</string>
+									<key>Titles</key>
+									<array>
+										<string>DEFAULT: 1000 (required)</string>
+										<string>0.00000001</string>
+										<string>0.1</string>
+										<string>0.2</string>
+										<string>0.4</string>
+										<string>0.8</string>
+										<string>1</string>
+										<string>1000</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<string>0.00000001</string>
+										<real>0.1</real>
+										<real>0.2</real>
+										<real>0.4</real>
+										<real>0.8</real>
+										<real>1</real>
+										<real>1000</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0</real>
+									<key>Key</key>
+									<string>MiroNonLocalPenalty</string>
+									<key>Title</key>
+									<string>Penalize Non-Local Assets</string>
+									<key>Titles</key>
+									<array>
+										<string>DEFAULT: 0.05 (5%)</string>
+										<string>Nothing (0)</string>
+										<string>5%</string>
+										<string>10%</string>
+										<string>20%</string>
+										<string>100%</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<string>0.0000000000001</string>
+										<real>0.05</real>
+										<real>0.01</real>
+										<real>0.02</real>
+										<integer>1</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroNonLocalSizePenaltyFactor</string>
+									<key>Title</key>
+									<string>Penalize Non-Local Assets by %/MB</string>
+									<key>Titles</key>
+									<array>
+										<string>DEFAULT: 0.5%</string>
+										<string>0.01% per MB</string>
+										<string>0.1% per MB</string>
+										<string>0.3% per MB</string>
+										<string>0.5% per MB</string>
+										<string>0.10% per MB</string>
+										<string>0.20% per MB</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>0</real>
+										<real>0.0001</real>
+										<real>0.001</real>
+										<real>0.003</real>
+										<real>0.005</real>
+										<real>0.01</real>
+										<real>0.02</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Debug Interfaces</string>
+									<key>Key</key>
+									<string>MiroShowDebugInterfacesKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Other Trim Ranges in Trimmer</string>
+									<key>Key</key>
+									<string>ShowOtherTrimRanges</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Open in iMovie Share</string>
+									<key>Key</key>
+									<string>MiroAllowOpenInIMovieKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Square Export</string>
+									<key>Key</key>
+									<string>MiroAllowSquareExport</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Force Export to Fail</string>
+									<key>Key</key>
+									<string>MiroForceExportFailureKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Bypass Memory Creation</string>
+									<key>Key</key>
+									<string>MiroBypassMemoryCreationKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Hide AGGD for Testing</string>
+									<key>Key</key>
+									<string>MiroDoNotReportAGGDKey</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Log Resource Usage (may crash)</string>
+									<key>Key</key>
+									<string>MiroResourceUsageMonitor</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>DefaultValue</key>
+									<false/>
+									<key>Key</key>
+									<string>MiroShowUnplayableItemsInAssetPickerKey</string>
+									<key>Title</key>
+									<string>Edit: Show Unplayable Assets in Picker</string>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Bypass Not Enough Memories</string>
+									<key>Key</key>
+									<string>MiroBypassNotEnoughMemories</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Short Custom Memories</string>
+									<key>Key</key>
+									<string>MiroAllowShortCustomMemories</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use old content</string>
+									<key>Key</key>
+									<string>MiroUseOldContent</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Edit: Tap POI</string>
+									<key>Key</key>
+									<string>MiroSelectPOIInEdit</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Edit: Reorder clips</string>
+									<key>Key</key>
+									<string>MiroReorderClipsInEdit</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Alternative Poster Cropping</string>
+									<key>Key</key>
+									<string>MiroAltPosterCropEnabled</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Memory Distance Filtering</string>
+									<key>Key</key>
+									<string>MemoryDistanceFiltering</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Export Progress Updates (perf win)</string>
+									<key>Key</key>
+									<string>MiroDebugDisableExportProgressUpdates</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>1080p HEVC Download Strategy</string>
+									<key>Key</key>
+									<string>MiroLargeDownloadStrategy</string>
+									<key>DefaultValue</key>
+									<string></string>
+									<key>Titles</key>
+									<array>
+										<string>Default (4k TV ONLY)</string>
+										<string>Always</string>
+										<string>Never</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+										<integer>5</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Prevent Downloading Derivatives (req&apos;s 14A196+)</string>
+									<key>Key</key>
+									<string>MiroPreventDownloadingDerivatives</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Photos&apos; Curation (req&apos;s 14A196+)</string>
+									<key>Key</key>
+									<string>MiroUsePhotosCuratedList</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Do Not Prioritize Photos&apos; Curation Assets</string>
+									<key>Key</key>
+									<string>MiroDoNotPrioritizeCurated</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Previous Show All Behavior</string>
+									<key>Key</key>
+									<string>MiroUseShowAllList</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Show All for Title</string>
+									<key>Key</key>
+									<string>MiroUseShowAllListForTitle</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Show More for Add</string>
+									<key>Key</key>
+									<string>MiroUseShowMoreListForAdd</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Visual Distance Only</string>
+									<key>Key</key>
+									<string>MiroUseVisualDistanceOnly</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Only Snapshot Player While Stopped</string>
+									<key>Key</key>
+									<string>MiroOnlySnapshotPausedPlayer</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Rotation Blur Style</string>
+									<key>Key</key>
+									<string>MiroRotationBlurStyle</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (BlurRadiusExtraLarge)</string>
+										<string>no blur</string>
+										<string>UIBlurEffectStyleExtraLight</string>
+										<string>UIBlurEffectStyleLight</string>
+										<string>UIBlurEffectStyleDark</string>
+										<string>UIBlurEffectStyleRegular</string>
+										<string>UIBlurEffectStyleProminent</string>
+										<string>BlurRadiusSmall           = 10</string>
+										<string>BlurRadiusMedium          = 20</string>
+										<string>BlurRadiusLarge           = 30</string>
+										<string>BlurRadiusExtraLarge      = 50</string>
+										<string>BlurRadiusExtraExtraLarge = 60</string>
+										<string>BlurRadiusExtraExtraExtraLarge = 90</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>999</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+										<integer>5</integer>
+										<integer>6</integer>
+										<integer>10</integer>
+										<integer>20</integer>
+										<integer>30</integer>
+										<integer>50</integer>
+										<integer>60</integer>
+										<integer>90</integer>
+									</array>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Poster CIFilter</string>
+									<key>Key</key>
+									<string>MiroDisablePosterCIFilter</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use 16x9 Aspect Ratio (Restart)</string>
+									<key>Key</key>
+									<string>MiroUse16x9Aspect</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Auto-Edit Treatments</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Stabilization </string>
+									<key>Key</key>
+									<string>MiroDisableStabilization</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0.5</real>
+									<key>Key</key>
+									<string>MiroCropSafeScoreThreshold</string>
+									<key>Title</key>
+									<string>Suggested Crop Safe Threshold</string>
+									<key>Titles</key>
+									<array>
+										<string>No threshold</string>
+										<string>0.3</string>
+										<string>0.5</string>
+										<string>0.7</string>
+										<string>0.8</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<real>0.3</real>
+										<real>0.5</real>
+										<real>0.7</real>
+										<real>0.8</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0.3</real>
+									<key>Key</key>
+									<string>MiroCropScoreNoSubjectsThreshold</string>
+									<key>Title</key>
+									<string>No Subjects Suggested Crop Threshold</string>
+									<key>Titles</key>
+									<array>
+										<string>No threshold</string>
+										<string>0.2</string>
+										<string>0.3</string>
+										<string>0.4</string>
+										<string>0.5</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>0</real>
+										<real>0.2</real>
+										<real>0.3</real>
+										<real>0.4</real>
+										<real>0.5</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable New MLFraming </string>
+									<key>Key</key>
+									<string>MiroDisableMLFraming</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Pet Rect Instead of Pet Face</string>
+									<key>Key</key>
+									<string>UseFullPetRect</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Force Keyword 1</string>
+									<key>Key</key>
+									<string>MiroForceKeyword1</string>
+									<key>DefaultValue</key>
+									<string></string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>* NO MATCH *</string>
+										<string>Anniversary</string>
+										<string>Family</string>
+										<string>Hawaii</string>
+										<string>Nature</string>
+										<string>Pets</string>
+										<string>Party</string>
+										<string>Sports</string>
+										<string>Wedding</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string></string>
+										<string>WILLNOTMATCH</string>
+										<string>Anniversary</string>
+										<string>Family</string>
+										<string>Hawaii</string>
+										<string>Nature</string>
+										<string>Pets</string>
+										<string>Party</string>
+										<string>Sports</string>
+										<string>Wedding</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Force Keyword 2</string>
+									<key>Key</key>
+									<string>MiroForceKeyword2</string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>* NO MATCH *</string>
+										<string>Anniversary</string>
+										<string>Family</string>
+										<string>Hawaii</string>
+										<string>Nature</string>
+										<string>Pets</string>
+										<string>Party</string>
+										<string>Sports</string>
+										<string>Wedding</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string></string>
+										<string>WILLNOTMATCH</string>
+										<string>Anniversary</string>
+										<string>Family</string>
+										<string>Hawaii</string>
+										<string>Nature</string>
+										<string>Pets</string>
+										<string>Party</string>
+										<string>Sports</string>
+										<string>Wedding</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Force Keyword 3</string>
+									<key>Key</key>
+									<string>MiroForceKeyword3</string>
+									<key>DefaultValue</key>
+									<string></string>
+									<key>Titles</key>
+									<array>
+										<string>None</string>
+										<string>* NO MATCH *</string>
+										<string>Anniversary</string>
+										<string>Family</string>
+										<string>Hawaii</string>
+										<string>Nature</string>
+										<string>Pets</string>
+										<string>Party</string>
+										<string>Sports</string>
+										<string>Wedding</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string></string>
+										<string>WILLNOTMATCH</string>
+										<string>Anniversary</string>
+										<string>Family</string>
+										<string>Hawaii</string>
+										<string>Nature</string>
+										<string>Pets</string>
+										<string>Party</string>
+										<string>Sports</string>
+										<string>Wedding</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Transitions</string>
+									<key>Key</key>
+									<string>MiroDisableAutoTransitions</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Zoom Blur for 1Up</string>
+									<key>Key</key>
+									<string>MiroDisableZoomBlur</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Vertical Inset for 1Up</string>
+									<key>Key</key>
+									<string>MiroEnableVerticalInset</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Minimum Movie Aspect in Vertical</string>
+									<key>Key</key>
+									<string>MiroLandscapeInVerticalAspect</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (4:3)</string>
+										<string>Fit (no minimum)</string>
+										<string>16:9</string>
+										<string>3:2</string>
+										<string>4:3</string>
+										<string>1:1</string>
+										<string>3:4 (not recommended)</string>
+										<string>2:3 (not recommended)</string>
+										<string>9:16 (not recommended)</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>0</real>
+										<real>99</real>
+										<real>1.777777777777778</real>
+										<real>1.5</real>
+										<real>1.333333333333333</real>
+										<real>1</real>
+										<real>0.75</real>
+										<real>0.666666666666666</real>
+										<real>0.5625</real>
+									</array>
+									<key>DefaultValue</key>
+									<real>0</real>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Minimum Movie Aspect in Horizontal</string>
+									<key>Key</key>
+									<string>MiroVerticalInLandscapeAspect</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (3:4)</string>
+										<string>1:1</string>
+										<string>3:4</string>
+										<string>2:3</string>
+										<string>9:16</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>0</real>
+										<real>1</real>
+										<real>0.75</real>
+										<real>0.666666666666666</real>
+										<real>0.5625</real>
+									</array>
+									<key>DefaultValue</key>
+									<real>0</real>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Video Zoom / Move via Metadata</string>
+									<key>Key</key>
+									<string>MiroEnableVideoMDZoom</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Project Filter</string>
+									<key>Key</key>
+									<string>MiroEnableAutoFilters</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>debugLandscapeBurstStyle</string>
+									<key>Title</key>
+									<string>Landscape Burst Style</string>
+									<key>Titles</key>
+									<array>
+										<string>Default</string>
+										<string>BurstStyle_None</string>
+										<string>BurstStyle_Photo_Pop</string>
+										<string>BurstStyle_Photo_Dissolve</string>
+										<string>BurstStyle_Photo_DissolvePop</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+										<integer>4</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>debugPortraitBurstStyle</string>
+									<key>Title</key>
+									<string>Portrait Burst Style</string>
+									<key>Titles</key>
+									<array>
+										<string>Default</string>
+										<string>BurstStyle_None</string>
+										<string>BurstStyle_ThreeUp_Pop</string>
+										<string>BurstStyle_ThreeUp_Dissolve</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Title</key>
+									<string>Iris Settings</string>
+									<key>Sections</key>
+									<array>
+										<dict>
+											<key>Items</key>
+											<array>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Disable Iris</string>
+													<key>Key</key>
+													<string>MiroDisableIrisEffect</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Disable Portrait Iris</string>
+													<key>Key</key>
+													<string>debugDisablePortraitIris</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Allow video at 1.5s </string>
+													<key>Key</key>
+													<string>MiroIrisAllowShorterVidDurations</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Don&apos;t Require Fine Action</string>
+													<key>Key</key>
+													<string>MiroDisableFineActionRequirement</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Don&apos;t Require Faces</string>
+													<key>Key</key>
+													<string>MiroDisableFaceRequirement</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Break video at dropped frames (NOT recommended with Iris Video!)</string>
+													<key>Key</key>
+													<string>debugEnableBreakingVideoAtDroppedFrames</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Force Iris Transition</string>
+													<key>Key</key>
+													<string>debugIrisTransition</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Enable Iris Frame Blending</string>
+													<key>Key</key>
+													<string>debugIrisEnableFrameBlending</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSMultiValueSpecifier</string>
+													<key>DefaultValue</key>
+													<integer>5</integer>
+													<key>Key</key>
+													<string>debugIrisNumberOfDroppedFramesAllowed</string>
+													<key>Title</key>
+													<string>Number of Dropped Frames Allowed</string>
+													<key>Titles</key>
+													<array>
+														<string>0</string>
+														<string>1</string>
+														<string>2</string>
+														<string>3</string>
+														<string>4 (Default)</string>
+														<string>5</string>
+														<string>6</string>
+														<string>7</string>
+														<string>10</string>
+														<string>15</string>
+														<string>∞</string>
+													</array>
+													<key>Values</key>
+													<array>
+														<integer>1</integer>
+														<integer>2</integer>
+														<integer>3</integer>
+														<integer>4</integer>
+														<integer>5</integer>
+														<integer>6</integer>
+														<integer>7</integer>
+														<integer>8</integer>
+														<integer>11</integer>
+														<integer>16</integer>
+														<integer>1000000</integer>
+													</array>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSToggleSwitchSpecifier</string>
+													<key>Title</key>
+													<string>Allow Sequentially Dropped Frames</string>
+													<key>Key</key>
+													<string>debugAllowSequentiallyDroppedFrames</string>
+													<key>DefaultValue</key>
+													<string>NO</string>
+												</dict>
+												<dict>
+													<key>Title</key>
+													<string>Allowed Iris Transitions</string>
+													<key>Sections</key>
+													<array>
+														<dict>
+															<key>Header</key>
+															<string>Allowed Iris Transitions</string>
+															<key>Items</key>
+															<array>
+																<dict>
+																	<key>Type</key>
+																	<string>PSToggleSwitchSpecifier</string>
+																	<key>Title</key>
+																	<string>Cuts</string>
+																	<key>Key</key>
+																	<string>debugIrisTransitionCutsAllowed</string>
+																	<key>DefaultValue</key>
+																	<string>NO</string>
+																</dict>
+																<dict>
+																	<key>Type</key>
+																	<string>PSToggleSwitchSpecifier</string>
+																	<key>Title</key>
+																	<string>Dissolves</string>
+																	<key>Key</key>
+																	<string>debugIrisTransitionDissolvesAllowed</string>
+																	<key>DefaultValue</key>
+																	<string>NO</string>
+																</dict>
+																<dict>
+																	<key>Type</key>
+																	<string>PSToggleSwitchSpecifier</string>
+																	<key>Title</key>
+																	<string>Flips</string>
+																	<key>Key</key>
+																	<string>debugIrisTransitionFlipsAllowed</string>
+																	<key>DefaultValue</key>
+																	<string>NO</string>
+																</dict>
+																<dict>
+																	<key>Type</key>
+																	<string>PSToggleSwitchSpecifier</string>
+																	<key>Title</key>
+																	<string>Slides</string>
+																	<key>Key</key>
+																	<string>debugIrisTransitionSlidesAllowed</string>
+																	<key>DefaultValue</key>
+																	<string>NO</string>
+																</dict>
+																<dict>
+																	<key>Type</key>
+																	<string>PSToggleSwitchSpecifier</string>
+																	<key>Title</key>
+																	<string>Wipes</string>
+																	<key>Key</key>
+																	<string>debugIrisTransitionWipesAllowed</string>
+																	<key>DefaultValue</key>
+																	<string>NO</string>
+																</dict>
+															</array>
+														</dict>
+													</array>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSMultiValueSpecifier</string>
+													<key>DefaultValue</key>
+													<integer>0</integer>
+													<key>Key</key>
+													<string>debugIrisStyle</string>
+													<key>Title</key>
+													<string>Iris Style</string>
+													<key>Titles</key>
+													<array>
+														<string>Default</string>
+														<string>IrisStyle_None</string>
+														<string>IrisStyle_Transition_In</string>
+														<string>IrisStyle_Transition_Out</string>
+														<string>IrisStyle_Transition_InOut</string>
+														<string>IrisStyle_Mixed_VideoIn</string>
+														<string>IrisStyle_Mixed_VideoOut</string>
+														<string>IrisStyle_Mixed_VideoInOut</string>
+													</array>
+													<key>Values</key>
+													<array>
+														<integer>0</integer>
+														<integer>1</integer>
+														<integer>2</integer>
+														<integer>3</integer>
+														<integer>4</integer>
+														<integer>5</integer>
+														<integer>6</integer>
+														<integer>7</integer>
+													</array>
+												</dict>
+												<dict>
+													<key>Type</key>
+													<string>PSMultiValueSpecifier</string>
+													<key>DefaultValue</key>
+													<integer>0</integer>
+													<key>Key</key>
+													<string>debugIrisProbability</string>
+													<key>Title</key>
+													<string>Iris Probability</string>
+													<key>Titles</key>
+													<array>
+														<string>Default</string>
+														<string>5%</string>
+														<string>10%</string>
+														<string>25%</string>
+														<string>50%</string>
+														<string>100%</string>
+													</array>
+													<key>Values</key>
+													<array>
+														<integer>0</integer>
+														<integer>1</integer>
+														<integer>2</integer>
+														<integer>3</integer>
+														<integer>4</integer>
+														<integer>5</integer>
+													</array>
+												</dict>
+											</array>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t extend clips for Voice Ranges</string>
+									<key>Key</key>
+									<string>MiroAutoEditDisableExtendingForVoiceRange</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Zoom to Person on All Clips</string>
+									<key>Key</key>
+									<string>MiroEnableZoomToPerson</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable One-Up under Title</string>
+									<key>Key</key>
+									<string>MiroEnableOneUpUnderTitle</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Force Title Zoom on all clips</string>
+									<key>Key</key>
+									<string>MiroForceTitleZoomOnAllClips</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroPacingMultiplier</string>
+									<key>Title</key>
+									<string>Pacing Multiplier</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (set by song pace)</string>
+										<string>10% faster</string>
+										<string>15% faster</string>
+										<string>20% faster</string>
+										<string>25% faster</string>
+										<string>30% faster</string>
+										<string>40% faster</string>
+										<string>45% faster</string>
+										<string>50% faster</string>
+										<string>10% slower</string>
+										<string>20% slower</string>
+										<string>30% slower</string>
+										<string>50% slower</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<real>0.9</real>
+										<real>0.85</real>
+										<real>0.8</real>
+										<real>0.75</real>
+										<real>0.7</real>
+										<real>0.6</real>
+										<real>0.55</real>
+										<real>0.5</real>
+										<real>1.1</real>
+										<real>1.2</real>
+										<real>1.3</real>
+										<real>1.5</real>
+									</array>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Audio Settings</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0</real>
+									<key>Key</key>
+									<string>MiroMusicLevel</string>
+									<key>Title</key>
+									<string>Music Level (not functional)</string>
+									<key>Titles</key>
+									<array>
+										<string>Default</string>
+										<string>0dB</string>
+										<string>-1dB</string>
+										<string>-3dB</string>
+										<string>-6dB</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>0</real>
+										<real>-0.01</real>
+										<real>-1</real>
+										<real>-3</real>
+										<real>-6</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<real>0</real>
+									<key>Key</key>
+									<string>MiroDuckingAmount</string>
+									<key>Title</key>
+									<string>Ducking Amount</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (-3dB)</string>
+										<string>0dB (no ducking)</string>
+										<string>-3dB</string>
+										<string>-6dB</string>
+										<string>-8dB (38.5%)</string>
+										<string>-12dB</string>
+										<string>-16dB (15%)</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>0</real>
+										<real>1</real>
+										<real>0.7</real>
+										<real>0.5</real>
+										<real>0.385</real>
+										<real>0.25</real>
+										<real>0.15</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<string></string>
+									<key>Key</key>
+									<string>MiroDuckingRule</string>
+									<key>Title</key>
+									<string>Ducking Rule</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (face+voice)</string>
+										<string>Always (when not muted)</string>
+										<string>Only when there&apos;s voice</string>
+										<string>Only when there&apos;s voice and face</string>
+										<string>Never *</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>default</string>
+										<string>always</string>
+										<string>voice</string>
+										<string>face</string>
+										<string>never</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroAudioTargetForeground</string>
+									<key>Title</key>
+									<string>Natural Sound Level (Foreground)</string>
+									<key>Titles</key>
+									<array>
+										<string>Default</string>
+										<string>-8dB LKFS</string>
+										<string>-10dB LKFS</string>
+										<string>-12dB LKFS</string>
+										<string>-14dB LKFS</string>
+										<string>-16dB LKFS</string>
+										<string>-18dB LKFS *</string>
+										<string>-20dB LKFS</string>
+										<string>-22dB LKFS</string>
+										<string>-24dB LKFS</string>
+										<string>-26dB LKFS</string>
+										<string>-28dB LKFS</string>
+										<string>-30dB LKFS</string>
+										<string>-32dB LKFS</string>
+										<string>-34dB LKFS</string>
+										<string>-36db LKFS</string>
+										<string>-38dB LKFS</string>
+										<string>-40dB LKFS</string>
+										<string>-42dB LKFS</string>
+										<string>-44dB LKFS</string>
+										<string>-46dB LKFS</string>
+										<string>-48dB LKFS</string>
+										<string>-56dB LKFS</string>
+										<string>-64dB LKFS</string>
+										<string>Muted</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>-8</integer>
+										<integer>-10</integer>
+										<integer>-12</integer>
+										<integer>-14</integer>
+										<integer>-16</integer>
+										<integer>-18</integer>
+										<integer>-20</integer>
+										<integer>-22</integer>
+										<integer>-24</integer>
+										<integer>-26</integer>
+										<integer>-28</integer>
+										<integer>-30</integer>
+										<integer>-32</integer>
+										<integer>-34</integer>
+										<integer>-36</integer>
+										<integer>-38</integer>
+										<integer>-40</integer>
+										<integer>-42</integer>
+										<integer>-44</integer>
+										<integer>-46</integer>
+										<integer>-48</integer>
+										<integer>-56</integer>
+										<integer>-64</integer>
+										<integer>-96</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroAudioTargetBackground</string>
+									<key>Title</key>
+									<string>Natural Sound Level (Background)</string>
+									<key>Titles</key>
+									<array>
+										<string>Default</string>
+										<string>-8dB LKFS</string>
+										<string>-10dB LKFS</string>
+										<string>-12dB LKFS</string>
+										<string>-14dB LKFS</string>
+										<string>-16dB LKFS</string>
+										<string>-18dB LKFS</string>
+										<string>-20dB LKFS</string>
+										<string>-22dB LKFS</string>
+										<string>-24dB LKFS</string>
+										<string>-26dB LKFS</string>
+										<string>-28dB LKFS</string>
+										<string>-30dB LKFS</string>
+										<string>-32dB LKFS *</string>
+										<string>-34dB LKFS</string>
+										<string>-36db LKFS</string>
+										<string>-38dB LKFS</string>
+										<string>-40dB LKFS</string>
+										<string>-42dB LKFS</string>
+										<string>-44dB LKFS</string>
+										<string>-46dB LKFS</string>
+										<string>-48dB LKFS</string>
+										<string>-56dB LKFS</string>
+										<string>-64dB LKFS</string>
+										<string>Muted</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>-8</integer>
+										<integer>-10</integer>
+										<integer>-12</integer>
+										<integer>-14</integer>
+										<integer>-16</integer>
+										<integer>-18</integer>
+										<integer>-20</integer>
+										<integer>-22</integer>
+										<integer>-24</integer>
+										<integer>-26</integer>
+										<integer>-28</integer>
+										<integer>-30</integer>
+										<integer>-32</integer>
+										<integer>-34</integer>
+										<integer>-36</integer>
+										<integer>-38</integer>
+										<integer>-40</integer>
+										<integer>-42</integer>
+										<integer>-44</integer>
+										<integer>-46</integer>
+										<integer>-48</integer>
+										<integer>-56</integer>
+										<integer>-64</integer>
+										<integer>-96</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<string></string>
+									<key>Key</key>
+									<string>MiroAudioTargetRule</string>
+									<key>Title</key>
+									<string>What Determines Foreground vs Background</string>
+									<key>Titles</key>
+									<array>
+										<string>Default</string>
+										<string>always foreground</string>
+										<string>voice is foreground</string>
+										<string>voice+face=foregnd, others=backgnd</string>
+										<string>voice+face=foregnd, voice=muted, others=back *</string>
+										<string>everything is background</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>default</string>
+										<string>always</string>
+										<string>voice</string>
+										<string>face</string>
+										<string>face+mute</string>
+										<string>never</string>
+									</array>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Auto-Edit N-up &amp; 1-up</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroIgnoreMetadataMode</string>
+									<key>Title</key>
+									<string>Framing Metadata</string>
+									<key>Titles</key>
+									<array>
+										<string>Ignore for Pet Memories (Default)</string>
+										<string>Always use metadata (never ignore)</string>
+										<string>Never use metatdata (debugging)</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable MultiUp (N-up)</string>
+									<key>Key</key>
+									<string>MiroDisableMultiUps</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable MultiUp Ken Burns</string>
+									<key>Key</key>
+									<string>MiroDisableMultiUpKenBurns</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable MultiUp transitions</string>
+									<key>Key</key>
+									<string>MiroDisableMultiUpTransitions</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Video in MultiUp clips</string>
+									<key>Key</key>
+									<string>MiroEnableVideoInMultiUps</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Portrait treatment (1-up)</string>
+									<key>Key</key>
+									<string>MiroDisablePortraitTreatment</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Auto-Edit Titles</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Motion Titles Instead of New UI Titles</string>
+									<key>Key</key>
+									<string>MiroUseMotionTitles</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Always Add Titles (&lt;10s)</string>
+									<key>Key</key>
+									<string>MiroAlwaysAddTitles</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Additional Title Styles</string>
+									<key>Key</key>
+									<string>MiroAllowStyleB</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Poster as Title Clip</string>
+									<key>Key</key>
+									<string>MiroColorTitleUseKeyAsset</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Poster Title Colors in Movie</string>
+									<key>Key</key>
+									<string>MiroColorTitleUseKeyAssetColors</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Prefer Colored Text in Titles</string>
+									<key>Key</key>
+									<string>MiroUseColoredTextWherePossible</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Preset Strap Colors in Titles</string>
+									<key>Key</key>
+									<string>MiroColorTitlePresetStrapColors</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Long Title Ideal Duration (5s)</string>
+									<key>Key</key>
+									<string>MiroLongTitleIdealDuration</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Skip Title Duration / Transition pair logic</string>
+									<key>Key</key>
+									<string>MiroForceSpecialTransitionTitlePair</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Adjust Title Transition to [30f-10f]</string>
+									<key>Key</key>
+									<string>MiroAdjustTitleTransitionDuration</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Title Build-In</string>
+									<key>Key</key>
+									<string>MiroDisableTitleBuildIn</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use PVRenderer for UI Transition</string>
+									<key>Key</key>
+									<string>MiroUsePVRendererTransitionPoster</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Auto-Edit Trimming &amp; Ranges</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Limit Transitions to Scenes/Junk/Usable</string>
+									<key>Key</key>
+									<string>MiroBoundTransitionsBySceneAndJunk</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Splitting by VP Scenes</string>
+									<key>Key</key>
+									<string>MiroDontSplitPickListScenesByVPScenes</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Uninteresting as Junk</string>
+									<key>Key</key>
+									<string>MiroDisableUninterestingAsJunk</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Quality-based Video Scenes</string>
+									<key>Key</key>
+									<string>MiroDisableSceneRanges</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Constraints for Ranges</string>
+									<key>Key</key>
+									<string>MiroDisableRangeConstraints</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable heavy-handed user trims</string>
+									<key>Key</key>
+									<string>MiroDisableEarlyUserTrim</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>Title</key>
+									<string>Force splitting clips into...</string>
+									<key>Key</key>
+									<string>MiroForceSplitClipsIntoParts</string>
+									<key>DefaultValue</key>
+									<string>0</string>
+									<key>Titles</key>
+									<array>
+										<string>No force</string>
+										<string>3 parts</string>
+										<string>5 parts</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<string>0</string>
+										<string>3</string>
+										<string>5</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Keep &quot;faceless&quot; voice ranges intact</string>
+									<key>Key</key>
+									<string>MiroAutoEditVoiceRangesWithoutFaceMatter</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroPickListTValue</string>
+									<key>Title</key>
+									<string>Default PickList T-Value</string>
+									<key>Titles</key>
+									<array>
+										<string>1.25 (Default)</string>
+										<string>0.75</string>
+										<string>0.85</string>
+										<string>0.95</string>
+										<string>1.0</string>
+										<string>1.1</string>
+										<string>1.2</string>
+										<string>1.3</string>
+										<string>1.4</string>
+										<string>1.5</string>
+										<string>1.6</string>
+										<string>1.7</string>
+										<string>1.8</string>
+										<string>1.9</string>
+										<string>2.0</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<real>1.25</real>
+										<real>0.75</real>
+										<real>0.85</real>
+										<real>0.95</real>
+										<real>1</real>
+										<real>1.1</real>
+										<real>1.2</real>
+										<real>1.3</real>
+										<real>1.4</real>
+										<real>1.5</real>
+										<real>1.6</real>
+										<real>1.7</real>
+										<real>1.8</real>
+										<real>1.9</real>
+										<real>2</real>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroTimeCurve</string>
+									<key>Title</key>
+									<string>Default TimeCurve</string>
+									<key>Titles</key>
+									<array>
+										<string>1.5 (Default)</string>
+										<string>1.0</string>
+										<string>2.0</string>
+										<string>3.0</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+										<integer>4</integer>
+									</array>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Auto-Edit Duration &amp; Pacing</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroShortDuration</string>
+									<key>Title</key>
+									<string>Default Short Duration</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (15)</string>
+										<string>10</string>
+										<string>15</string>
+										<string>20</string>
+										<string>25</string>
+										<string>30</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>10</integer>
+										<integer>12</integer>
+										<integer>15</integer>
+										<integer>18</integer>
+										<integer>22</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroMediumDuration</string>
+									<key>Title</key>
+									<string>Default Medium Duration</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (30)</string>
+										<string>25</string>
+										<string>30</string>
+										<string>33</string>
+										<string>40</string>
+										<string>45</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>25</integer>
+										<integer>30</integer>
+										<integer>33</integer>
+										<integer>40</integer>
+										<integer>45</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroLongDuration</string>
+									<key>Title</key>
+									<string>Default Long Duration</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (120)</string>
+										<string>100</string>
+										<string>120</string>
+										<string>150</string>
+										<string>180</string>
+										<string>240</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>100</integer>
+										<integer>120</integer>
+										<integer>150</integer>
+										<integer>180</integer>
+										<integer>240</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Bar-Based Pacing (legacy)</string>
+									<key>Key</key>
+									<string>MiroUseBarBasedPacing</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Albums use their own sorted order</string>
+									<key>Key</key>
+									<string>MiroTestAllowAlbumOrderSort</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable pacing timing changes</string>
+									<key>Key</key>
+									<string>MiroDisablePacingChanges</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Apply Pacing Ramps to Whole Edit</string>
+									<key>Key</key>
+									<string>MiroApplyPacingRampsToEdit</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Duration Bias (15-120secs)</string>
+									<key>Key</key>
+									<string>MiroDontBiasDefaultDurations</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Trim to Song even with User-set Duration</string>
+									<key>Key</key>
+									<string>MiroTrimToSongEvenOnCustom</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Analysis</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Old Behavior on Debug Cell Tap</string>
+									<key>Key</key>
+									<string>MiroShowOldAssetPopup</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Compute real time Saliency</string>
+									<key>Key</key>
+									<string>MiroRealTimeSaliency</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroSceneprintDistanceNormalizationValue</string>
+									<key>Title</key>
+									<string>SCENEPRINT Distance</string>
+									<key>Titles</key>
+									<array>
+										<string>Use Shipping (Image) Distance</string>
+										<string>Use Sceneprint Distance (UNnormalized)</string>
+										<string>Normalized from 0-2</string>
+										<string>Normalized from 0-3</string>
+										<string>Normalized from 0-5</string>
+										<string>Normalized from 0-10</string>
+										<string>Normalized from 0-20</string>
+										<string>Normalized from 0-50</string>
+										<string>Normalized from 0-100</string>
+										<string>Normalized from 0-200</string>
+										<string>Normalized from 0-500</string>
+										<string>Normalized from 0-1000</string>
+										<string>NOTE defaults write com.apple.mediaanalysis.UseSceneprintDistance -bool YES</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<real>1</real>
+										<real>2</real>
+										<real>3</real>
+										<real>5</real>
+										<real>10</real>
+										<real>20</real>
+										<real>50</real>
+										<real>100</real>
+										<real>200</real>
+										<real>500</real>
+										<real>1000</real>
+										<string>10000</string>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Old Asynchronous VP API</string>
+									<key>Key</key>
+									<string>MiroUseOldAsynchronousVPAPI</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Prevent Blacklisted Assets from Use</string>
+									<key>Key</key>
+									<string>MiroDisallowBlacklistedAssets</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Old Clustering (Bartek)</string>
+									<key>Key</key>
+									<string>MiroDontUseVPFrameworkDistances</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow On-Demand Analysis</string>
+									<key>Key</key>
+									<string>MiroAllowOnDemandAnalysis</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Ignore Analysis for Scoring</string>
+									<key>Key</key>
+									<string>MiroIgnoreAnalysisForScoring</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Ignore Absolutely All Ranges</string>
+									<key>Key</key>
+									<string>MiroIgnoreAnalysisForRanges</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Ignore Scene/Qual/Junk/Cam Ranges</string>
+									<key>Key</key>
+									<string>MiroIgnoreNewRangeTypes</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Video Processor</string>
+									<key>Key</key>
+									<string>MiroDisableVPAnalysis</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Blacklist Flag</string>
+									<key>Key</key>
+									<string>MiroDisableBlacklistFlag</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Force Full Analysis</string>
+									<key>Key</key>
+									<string>UseFullAnalysisData</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Use Bursts Scenes instead of Histogram</string>
+									<key>Key</key>
+									<string>MiroTestBurstSceneDetection</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroGaborDistanceMultiplier</string>
+									<key>Title</key>
+									<string>Default Distance Multiplier</string>
+									<key>Titles</key>
+									<array>
+										<string>1 (Default)</string>
+										<string>0.85</string>
+										<string>0.95</string>
+										<string>1.1</string>
+										<string>1.2</string>
+										<string>1.3</string>
+										<string>1.4</string>
+										<string>1.5</string>
+										<string>1.6</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>1</integer>
+										<real>0.85</real>
+										<real>0.95</real>
+										<real>1.1</real>
+										<real>1.2</real>
+										<real>1.3</real>
+										<real>1.4</real>
+										<real>1.5</real>
+										<real>1.6</real>
+									</array>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Local Storage</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Clear Projects Cache</string>
+									<key>Key</key>
+									<string>MiroTrashProjectsCache</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Clear Poster Cache</string>
+									<key>Key</key>
+									<string>MiroTrashPosterCache</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Clear Download Cache</string>
+									<key>Key</key>
+									<string>FMPurgeMobileAssetsFollowingFetch</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>Header</key>
+							<string>Debugging</string>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Export at Device Resolution</string>
+									<key>Key</key>
+									<string>MiroExportAtDeviceResolution</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t Copy Images into Project</string>
+									<key>Key</key>
+									<string>MiroDisableCopyingImageFiles</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t Use Resource Files Directly</string>
+									<key>Key</key>
+									<string>MiroDontUseImageResourceFilesDirectly</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t Use Resource Files in Legacy iMovie Code</string>
+									<key>Key</key>
+									<string>MiroDontUseImageResourceFilesInAssetRepresentationMethods</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Allow Face Detection in Sim</string>
+									<key>Key</key>
+									<string>MiroAllowFaceDetectionInSim</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Mark Detected Faces in Photos</string>
+									<key>Key</key>
+									<string>MiroMarkDetectedFacesInPhotos</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Motion Posters</string>
+									<key>Key</key>
+									<string>MiroDisablePosterMotionTitles</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Show Exhaustive Lists per Mood in Pickers</string>
+									<key>Key</key>
+									<string>MiroAllowDuplicateEntriesInPickers</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Auto Edit Logging</string>
+									<key>Key</key>
+									<string>MiroEnableAutoEditLoggingKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Asset Score Logging</string>
+									<key>Key</key>
+									<string>MiroEnableAssetScoreLogging</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Apply a Title to Every Clip</string>
+									<key>Key</key>
+									<string>MiroApplyTitlesToAllClips</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Edit: Show Color Swatches</string>
+									<key>Key</key>
+									<string>MiroShowDebugColorSwatches</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Force Triple Pano Ken Burns</string>
+									<key>Key</key>
+									<string>MiroForceTriplePanoKenBurnsKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Test Every Content (enable titles/transitions)</string>
+									<key>Key</key>
+									<string>MiroTestEveryContent</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Smart Moments D-Dup</string>
+									<key>Key</key>
+									<string>MiroDisableSmartDDup</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Moments</string>
+									<key>Key</key>
+									<string>MiroDontUseMoments</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t Use Pick List for Scoring</string>
+									<key>Key</key>
+									<string>MiroDontUsePickListForScoring</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Don&apos;t Use Pick List for Cloud Status</string>
+									<key>Key</key>
+									<string>MiroDontUsePickListForCloudStatus</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Output Memories Debug File</string>
+									<key>Key</key>
+									<string>MiroOutputMemoriesDebugFile</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>1</integer>
+									<key>Key</key>
+									<string>MiroExportResolution</string>
+									<key>Title</key>
+									<string>Export Resolution</string>
+									<key>Titles</key>
+									<array>
+										<string>720p HD</string>
+										<string>1080p HD</string>
+										<string>4K UHD</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Append Readable PosterKey to stored images</string>
+									<key>Key</key>
+									<string>MiroAppanedReadblePosterKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Do Not Use Packed Wide Gamut</string>
+									<key>Key</key>
+									<string>MiroDoNotUsePackedWideGamutKey</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Force x420 pixel format</string>
+									<key>Key</key>
+									<string>MiroUse420x</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Test Pregenerate</string>
+									<key>Key</key>
+									<string>MiroFakePregenerate</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Portrait Plays Landscape Clips</string>
+									<key>Key</key>
+									<string>MiroPortraitPlaysNormalClip</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Landscape (B&amp;W), Portrait (Color)</string>
+									<key>Key</key>
+									<string>MiroEnableBWLandscape</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Transitions: Cuts and Cross Dissolves ONLY</string>
+									<key>Key</key>
+									<string>MiroDisableMoodTransitions</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>1-Up: Black instead of Blur </string>
+									<key>Key</key>
+									<string>MiroDisableOneUpBlur</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>(VVS) Disable 1-Up Photos in Vertical (ZoomCrop)</string>
+									<key>Key</key>
+									<string>MiroDisableOneUpByDefaultInPortrait</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Saliency without faces</string>
+									<key>Key</key>
+									<string>MiroDisableSaliencyWithoutFaces</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>(VVS) Disable Workaround for Overzoom (30763494)</string>
+									<key>Key</key>
+									<string>MiroDisableWorkaroundFor30763494</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Peer N-Ups</string>
+									<key>Key</key>
+									<string>MiroEnablePeerNUps</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Base N-Ups on UnionRect not Aspect</string>
+									<key>Key</key>
+									<string>MiroEnableUnionRectOnlyNUpBases</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Enable Video Zoom for Iris</string>
+									<key>Key</key>
+									<string>MiroEnableVideoZoomIris</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Seek To Prime ProVideo</string>
+									<key>Key</key>
+									<string>MiroSeekToPrimeProVideo</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Disable Saliency for Pets</string>
+									<key>Key</key>
+									<string>MiroDisableSaliencyForPets</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Stabilization Use Metadata Based Timing</string>
+									<key>Key</key>
+									<string>MiroStabUseMetadataBasedTiming</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Mark Stabilized</string>
+									<key>Key</key>
+									<string>MiroMarkStabilized</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Watermark Live Photos</string>
+									<key>Key</key>
+									<string>MiroWatermarkLivePhotos</string>
+									<key>DefaultValue</key>
+									<string>NO</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroPrepareDownloadPolicy</string>
+									<key>Title</key>
+									<string>Prepare for Playback Download Policy</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (wifi+add&apos;l caveats)</string>
+										<string>Download as Normal</string>
+										<string>Download only on WiFi</string>
+										<string>WiFi plus Caveats</string>
+										<string>WiFi plus Add&apos;l Caveats</string>
+										<string>Never Download</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>1</integer>
+										<integer>2</integer>
+										<integer>3</integer>
+										<integer>4</integer>
+										<integer>5</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroMaxPrepareDownloadSize</string>
+									<key>Title</key>
+									<string>Prepare Download Caveats</string>
+									<key>Titles</key>
+									<array>
+										<string>Default (100MB)</string>
+										<string>50MB</string>
+										<string>100MB</string>
+										<string>200MB</string>
+										<string>500MB</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>50000000</integer>
+										<integer>100000000</integer>
+										<integer>200000000</integer>
+										<integer>500000000</integer>
+									</array>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSMultiValueSpecifier</string>
+									<key>DefaultValue</key>
+									<integer>0</integer>
+									<key>Key</key>
+									<string>MiroSongTimeoutForDownloadAttempt</string>
+									<key>Title</key>
+									<string>Song Timeout</string>
+									<key>Titles</key>
+									<array>
+										<string>30s (Default)</string>
+										<string>10s</string>
+										<string>20s</string>
+										<string>25s</string>
+										<string>35s</string>
+										<string>45s</string>
+										<string>60s</string>
+										<string>120s</string>
+										<string>240s</string>
+									</array>
+									<key>Values</key>
+									<array>
+										<integer>0</integer>
+										<integer>10</integer>
+										<integer>20</integer>
+										<integer>25</integer>
+										<integer>35</integer>
+										<integer>45</integer>
+										<integer>60</integer>
+										<integer>120</integer>
+										<integer>240</integer>
+									</array>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Header</key>
+			<string>EDU</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>EDU Settings</string>
+					<key>Sections</key>
+					<array>
+						<dict>
+							<key>Items</key>
+							<array>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Force EDU mode (requires relaunch)</string>
+									<key>Key</key>
+									<string>forceLocalStoragePurgeable</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Hide Project Conflicts</string>
+									<key>Key</key>
+									<string>eduHideProjectConflicts</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>PSToggleSwitchSpecifier</string>
+									<key>Title</key>
+									<string>Alternate Documents Folder (requires relaunch)</string>
+									<key>Key</key>
+									<string>eduAlternateDocumentsFolder</string>
+									<key>DefaultValue</key>
+									<false/>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Version</key>
+	<integer>849</integer>
+	<key>Item 0</key>
+	<dict>
+		<key>Title</key>
+		<string>This file is only for use on build 1.4 (496) or later.</string>
+		<key>Comment</key>
+		<string>This item will only appear when this file is used on build 495 or earlier, and serves as a compatibility notice.</string>
+	</dict>
+	<key>Obsoleted</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>regenerate KB when opening project (12340788)</string>
+			<key>Key</key>
+			<string>regenerateKBonOpen</string>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Comment</key>
+			<string>Obsolete as of r10542</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Don&apos;t pulsate the help button</string>
+			<key>Key</key>
+			<string>helpHasBeenShown</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Allow Split Speed thru edits (13750598)</string>
+			<key>Key</key>
+			<string>splitSpeedClipsOnSameTracks</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Validate canDo1080 using mov (15144382)</string>
+			<key>Key</key>
+			<string>validate1080UsingIsPlayable</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

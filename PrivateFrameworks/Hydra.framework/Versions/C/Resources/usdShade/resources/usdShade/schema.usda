@@ -1,0 +1,210 @@
+#usda 1.0
+(
+    "This file describes the USD Shader schemata for code generation."
+    subLayers = [
+        @usd/schema.usda@
+    ]
+)
+
+over "GLOBAL" (
+    customData = {
+        string libraryName      = "usdShade"
+        string libraryPath      = "pxr/usd/usdShade"
+        dictionary libraryTokens = {
+            dictionary materialBind = {
+                string             }
+            dictionary full = {
+                string doc= """Possible value for 'connectability' metadata on
+                a UsdShadeInput. When connectability of an input is set to
+                "full", it implies that it can be connected to any input or
+                output.
+                """
+            }
+            dictionary interfaceOnly = {
+                string doc= """Possible value for 'connectability' metadata on 
+                a UsdShadeInput. It implies that the input can only connect to 
+                a NodeGraph Input (which represents an interface override, not 
+                a render-time dataflow connection), or another Input whose 
+                connectability is also 'interfaceOnly'.
+                """
+            }
+            dictionary outputs = {
+                string value = "outputs:"
+                string             }
+            dictionary inputs = {
+                string value = "inputs:"
+                string             }
+        }
+    }
+)
+{
+}
+
+class NodeGraph "NodeGraph" (
+    inherits = </Typed>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsUsdShadeConnectableAPIBehavior = 1
+        }
+        string extraIncludes = '''
+#include <utility>
+#include "pxr/usd/usd/editTarget.h"
+#include "pxr/usd/usd/relationship.h"
+#include "pxr/usd/usdShade/input.h"
+#include "pxr/usd/usdShade/output.h"
+#include "pxr/usd/usdShade/shader.h"
+#include "pxr/usd/usdShade/connectableAPIBehavior.h"'''
+    }
+) {
+
+}
+
+
+class Material "Material" (
+    inherits = </NodeGraph>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsUsdShadeConnectableAPIBehavior = 1
+        }
+        string extraIncludes = '''
+#include "pxr/usd/usd/variantSets.h"
+#include "pxr/usd/usdGeom/subset.h"
+#include "pxr/usd/usdShade/connectableAPI.h"'''
+        dictionary schemaTokens = {
+            dictionary materialVariant = {
+                string             }
+            dictionary surface = {
+                string             }
+            dictionary displacement = {
+                string             }
+            dictionary volume = {
+                string             }
+            dictionary universalRenderContext = {
+                string value = ""
+                string             }
+        }
+    }
+) 
+{
+    token outputs:surface (
+                displayGroup = "Outputs"
+        customData = {
+            string apiName = "surface"
+        }
+    )
+    token outputs:displacement (
+                displayGroup = "Outputs"
+        customData = {
+            string apiName = "displacement"
+        }
+    )
+    token outputs:volume (
+                displayGroup = "Outputs"
+        customData = {
+            string apiName = "volume"
+        }
+    )
+}
+
+class Shader "Shader" (
+    inherits = </Typed>
+    prepend apiSchemas = ["NodeDefAPI"]
+    #include "pxr/usd/ndr/declare.h"
+#include "pxr/usd/sdr/shaderNode.h"
+    """
+        dictionary schemaTokens = {
+            dictionary universalSourceType = {
+                string value = ""
+                string             }
+            dictionary sdrMetadata = {
+                string             }
+            dictionary subIdentifier = {
+                string             }
+        }
+    }
+)
+{
+    uniform token info:implementationSource = "id" (
+        allowedTokens = ["id", "sourceAsset", "sourceCode"]
+                customData = {
+            string apiName = "implementationSource"
+        }
+    )
+
+    uniform token info:id (
+                customData = {
+            string apiName = "id"
+        }
+    )
+}
+
+class "ConnectableAPI"
+(
+    inherits = </APISchemaBase>
+    #include "pxr/usd/usdShade/shader.h"
+#include "pxr/usd/usdShade/nodeGraph.h"
+    """
+    }
+)
+{
+}
+
+class "MaterialBindingAPI"
+(
+    inherits = </APISchemaBase>
+    #include "pxr/usd/usd/collectionAPI.h"
+#include "pxr/usd/usdGeom/subset.h"
+#include "pxr/usd/usdShade/material.h"
+#include <tbb/concurrent_unordered_map.h>"""
+         dictionary schemaTokens = {
+            dictionary materialBinding = {
+                string value = "material:binding"
+                string             }
+            dictionary materialBindingCollection = {
+                string value = "material:binding:collection"
+                string             }
+            dictionary allPurpose = {
+                string value = ""
+                string             }
+            dictionary preview = {
+                string             }
+
+            dictionary full = {
+                string doc= """Possible value for the 'materialPurpose'
+                parameter in UsdShadeMaterialBindingAPI, to be used when the
+                purpose of the render is entirely about visualizing the truest
+                representation of a scene, considering all lighting and material
+                information, at highest fidelity.
+                """
+            }
+            dictionary bindMaterialAs = {
+                string             }
+            dictionary weakerThanDescendants = {
+                string             }
+            dictionary strongerThanDescendants = {
+                string             }
+            dictionary fallbackStrength = {
+                string             }
+        }
+    }
+)
+{
+    
+}
+
+class "CoordSysAPI"
+(
+    inherits = </APISchemaBase>
+        customData = {
+        token apiSchemaType = "nonApplied"
+        string extraIncludes = '''
+#include "pxr/usd/usdGeom/xformable.h"'''
+        dictionary schemaTokens = {
+            dictionary coordSys = {
+                string value = "coordSys:"
+                string             }
+        }
+    }
+)
+{
+}

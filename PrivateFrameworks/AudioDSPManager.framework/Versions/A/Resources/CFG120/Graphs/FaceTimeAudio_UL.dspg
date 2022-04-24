@@ -1,0 +1,73 @@
+graphName "FaceTimeAudio_UL"
+
+; -------------------------------------------------------------------------
+; Definitions
+; -------------------------------------------------------------------------
+
+[def sampleRateIn 44100]
+[def numChannelsIn 2]
+[def sampleRateRef 44100]
+[def numChannelsRef 2]
+[def sampleRateEpMic 24000]
+[def sampleRateEpRef 24000]
+[def sampleRateOut 24000]
+
+; -------------------------------------------------------------------------
+; Graph Ins and Outs
+; -------------------------------------------------------------------------
+in in
+in inRef
+out out
+
+; -------------------------------------------------------------------------
+; Boxes and AUs
+; -------------------------------------------------------------------------
+box splitBox split 1 2
+box srcBoxInMic src 1 1
+box srcBoxInRef src 1 1
+box AULECV5_Mic1 ( aufx lec5 appl ) 2 6
+box AULECV5_Mic2 ( aufx lec5 appl ) 2 6
+box joinBox join 2 1
+box AUNBandEQ ( aufx nbeq appl ) 1 1
+box AUMeisterStueck ( aufx mstk appl ) 1 1
+box AUControlFreak ( aufx cfrk appl ) 1 1
+box KeyboardTypingDucker dbgn 1 1
+box deadEndBox dead 10 1
+
+; -------------------------------------------------------------------------
+; DSP Graph topology
+; -------------------------------------------------------------------------
+wire (in 0) (srcBoxInMic 0) ([sampleRateIn] [numChannelsIn])
+wire (srcBoxInMic 0) (splitBox 0) ([sampleRateEpMic] [numChannelsIn])
+wire (splitBox 0) (AULECV5_Mic1 0) ([sampleRateEpMic] 1)
+wire (splitBox 1) (AULECV5_Mic2 0) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic1 0) joinBox ([sampleRateEpMic] 1)
+wire (AULECV5_Mic1 1) (deadEndBox 0) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic1 2) (deadEndBox 1) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic1 3) (deadEndBox 2) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic1 4) (deadEndBox 3) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic1 5) (deadEndBox 4) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic2 0) (joinBox 1) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic2 1) (deadEndBox 5) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic2 2) (deadEndBox 6) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic2 3) (deadEndBox 7) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic2 4) (deadEndBox 8) ([sampleRateEpMic] 1)
+wire (AULECV5_Mic2 5) (deadEndBox 9) ([sampleRateEpMic] 1)
+wire joinBox AUNBandEQ ([sampleRateEpMic] [numChannelsIn])
+wire AUNBandEQ AUMeisterStueck ([sampleRateEpMic] [numChannelsIn])
+wire AUMeisterStueck AUControlFreak ([sampleRateEpMic] [numChannelsIn])
+wire AUControlFreak KeyboardTypingDucker ([sampleRateEpMic] [numChannelsIn])
+wire KeyboardTypingDucker (out 0) ([sampleRateOut] [numChannelsIn])
+
+wire (inRef 0) (srcBoxInRef 0) ([sampleRateRef] [numChannelsRef])
+wire (srcBoxInRef 0) (AULECV5_Mic1 1) ([sampleRateEpRef] [numChannelsRef])
+wire (srcBoxInRef 0) (AULECV5_Mic2 1) ([sampleRateEpRef] [numChannelsRef])
+
+
+; -------------------------------------------------------------------------
+; Graph parameters and properties
+; -------------------------------------------------------------------------
+
+; Keyboard Typing (duck the uplink)
+param ktyp 0
+wireGraphParam ktyp (KeyboardTypingDucker 0 0 0)

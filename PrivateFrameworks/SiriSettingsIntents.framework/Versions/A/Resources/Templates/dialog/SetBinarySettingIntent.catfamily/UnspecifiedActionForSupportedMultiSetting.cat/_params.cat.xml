@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#UnspecifiedActionForSupportedMultiSetting">
+
+    <meta name="description" value="The user specified a setting, but didn't say what to set it to."/>
+    <meta name="category" value="Prompt"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="setting" type="settings.MultiSetting" description="The setting that the user asked about."/>
+        <parameter name="deviceState" type="sirikit.DeviceState" description="Contains details about the user’s device."/>
+    </parameters>
+    
+</cat>

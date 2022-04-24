@@ -1,0 +1,603 @@
+#usda 1.0
+(
+    "This file describes the USD Shader (RSL) schemata for code generation."
+    subLayers = [
+        @usd/schema.usda@,
+        @usdShade/schema.usda@,
+        @usdLux/schema.usda@,
+    ]
+)
+
+def "GLOBAL" (
+    customData = {
+        string libraryName      = "usdRi"
+        string libraryPath      = "pxr/usd/usdRi"
+        # string libraryPrefix  = "UsdRi"
+        # string tokensPrefix   = "UsdRi"
+        # dictionary libraryTokens = {}
+        dictionary libraryTokens = {
+            dictionary spline = {
+                string 
+            }
+            dictionary interpolation = {
+                string 
+            }
+            dictionary positions = {
+                string 
+            }
+            dictionary values = {
+                string 
+            }
+            dictionary linear = {
+                string 
+            }
+            dictionary bspline = {
+                string 
+            }
+            dictionary "catmull_rom" = {
+                string value = "catmull-rom"
+                string 
+            }
+            dictionary constant = {
+                string 
+            }
+        }
+    }
+)
+{
+}
+
+class "StatementsAPI" (
+    inherits = </APISchemaBase>
+    #include "pxr/usd/usdGeom/primvarsAPI.h"
+"""
+    }
+) {
+}
+
+##### RSL #####
+
+class RslShader "RslShader" (
+    inherits = [</Shader>]
+    ) {
+    asset info:sloPath (
+        customData = {
+            string apiName = "sloPath"
+        }
+    )
+}
+
+##### RIS #####
+
+class RisObject "RisObject" (
+    inherits = [</Shader>]
+        \\deprecated Specialized RIS shader schemas have been deprecated in 
+    favor of all shader prims being simple UsdShadeShader.
+    This schema will be removed in a future release.
+
+    Represents a ris pattern object. Multiple of these can be assigned.""" 
+) {
+}
+
+class RisOslPattern "RisOslPattern" (
+    inherits = [</RisPattern>]
+        \\deprecated Specialized RIS shader schemas have been deprecated in 
+    favor of all shader prims being simple UsdShadeShader.
+    This schema will be removed in a future release.
+
+    Represents a ris bxdf object. One of these is assigned at one time.
+    """ 
+) {
+}
+
+class RisIntegrator "RisIntegrator" (
+    inherits = </Typed>
+    ) {
+    asset filePath
+    asset argsPath
+}
+
+### Material API common to both RSL and RIS ###
+
+class "RiMaterialAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        # We want the class name to be UsdRiMaterialAPI
+        string className = "MaterialAPI"    
+        string extraIncludes = """
+#include "pxr/usd/usdShade/input.h"
+#include "pxr/usd/usdShade/output.h"
+#include "pxr/usd/usdShade/material.h"
+"""
+    }
+) {
+    token outputs:ri:surface (
+        displayGroup = "Outputs"
+        customData = {
+            string apiName = "surface"
+        }
+    )
+    token outputs:ri:displacement (
+        displayGroup = "Outputs"
+        customData = {
+            string apiName = "displacement"
+        }
+    )
+    token outputs:ri:volume (
+        displayGroup = "Outputs"
+        customData = {
+            string apiName = "volume"
+        }
+    )
+}
+
+
+########################################################################
+# Lighting API
+
+class "RiLightAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        string className = "LightAPI"
+    }
+) {
+    int ri:sampling:fixedSampleCount (
+        displayGroup = "Advanced"
+        displayName = "Light Samples"
+            )
+    float ri:sampling:importanceMultiplier = 1 (
+        displayGroup = "Advanced"
+        displayName = "Importance Multiplier"
+        
+    )
+    float ri:intensityNearDist (
+        displayGroup = "Refine"
+        displayName = "Intensity Near Dist"
+            )
+    string ri:lightGroup (
+        displayGroup = "Advanced"
+        displayName = "Light Group"
+            )
+    bool ri:shadow:thinShadow (
+        displayGroup = "Advanced"
+        displayName = "Thin Shadow"
+            )
+    bool ri:trace:lightPaths (
+        displayGroup = "Advanced"
+        displayName = "Trace Light Paths"
+            )
+}
+
+class "RiLightFilterAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        string className = "LightFilterAPI"
+    }
+)
+{
+    token ri:combineMode = "multiply" (
+        allowedTokens = ["multiply", "max", "min", "screen"]
+            )
+    float ri:density = 1 (
+            )
+    bool ri:invert = False (
+            )
+    float ri:intensity = 0 (
+            )
+    float ri:exposure = 0 (
+            )
+    float ri:diffuse = 1 (
+            )
+    float ri:specular = 1 (
+            )
+}
+
+class "RiLightPortalAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        string className = "LightPortalAPI"
+    }
+)
+{
+    float ri:portal:intensity (
+        displayGroup = "Basic"
+            )
+    color3f ri:portal:tint (
+        displayGroup = "Basic"
+        displayName = "Color Tint"
+        
+    )
+}
+
+class "RiSplineAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        string className = "SplineAPI"
+    }
+) {
+}
+
+class "RiTextureAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        string className = "TextureAPI"
+    }
+) {
+    float ri:texture:gamma (
+            )
+    float ri:texture:saturation (
+            )
+}
+
+#########################################################################
+# Lights
+
+class PxrEnvDayLight "PxrEnvDayLight" (
+    inherits = </Light>
+    )
+{
+    int day = 1 (
+        displayGroup = "MsApprox"
+        displayName = "Day"
+            )
+    float haziness = 2 (
+        displayGroup = "MsApprox"
+        displayName = "Haziness"
+            )
+    float hour = 14.633333 (
+        displayGroup = "MsApprox"
+        displayName = "Hour"
+            )
+    float latitude = 47.602 (
+        displayGroup = "MsApprox"
+        displayName = "Latitude"
+            )
+    float longitude = -122.332 (
+        displayGroup = "MsApprox"
+        displayName = "Longitude"
+            )
+    int month = 0 (
+        displayGroup = "MsApprox"
+        displayName = "Month"
+            )
+    color3f skyTint = (1, 1, 1) (
+        displayGroup = "MsApprox"
+        displayName = "Sky Tint"
+            )
+    vector3f sunDirection = (0, 0, 1) (
+        displayGroup = "MsApprox"
+        displayName = "Direction"
+            )
+    float sunSize = 1 (
+        displayGroup = "MsApprox"
+        displayName = "Sun Size"
+            )
+    color3f sunTint = (1, 1, 1) (
+        displayGroup = "MsApprox"
+        displayName = "Sun Tint"
+            )
+    int year = 2015 (
+        displayGroup = "MsApprox"
+        displayName = "Year"
+        
+    )
+    float zone = -8 (
+        displayGroup = "MsApprox"
+        displayName = "Time Zone"
+            )
+}
+
+class PxrAovLight "PxrAovLight" (
+    inherits = </Light>
+    )
+{
+    string aovName = "" (
+        displayGroup = "Advanced"
+        displayName = "AOV Name"
+        
+    )
+    bool inPrimaryHit = True (
+        displayGroup = "Refine"
+        displayName = "In Primvary Hit"
+            )
+    bool inReflection = False (
+        displayGroup = "Refine"
+        displayName = "In Reflection"
+            )
+    bool inRefraction = False (
+        displayGroup = "Refine"
+        displayName = "In Refraction"
+            )
+    bool invert = False (
+        displayGroup = "Refine"
+        displayName = "Invert"
+        
+    )
+    bool onVolumeBoundaries = True (
+        displayGroup = "Refine"
+        displayName = "On Volume Boundaries"
+            )
+    bool useColor = False (
+        displayGroup = "Refine"
+        displayName = "Use Color"
+            )
+    bool useThroughput = True (
+        displayGroup = "Refine"
+        displayName = "Use Throughput"
+            )
+}
+
+#########################################################################
+# Light filters
+
+class PxrIntMultLightFilter "PxrIntMultLightFilter" (
+    inherits = </LightFilter>
+    ) {
+    # override the class defn in RiLightFilterAPI because the class default is 0.0
+    float ri:intensity = 1 (
+            )
+    float color:saturation = 1 (
+            )
+}
+
+class PxrBarnLightFilter "PxrBarnLightFilter" (
+    inherits = </LightFilter>
+    ) {
+    token barnMode = "physical" (
+        allowedTokens = ["physical", "analytic"]
+            )
+    float width = 1 (
+            )
+    float height = 1 (
+            )
+    float radius = 0.5 (
+            )
+    bool analytic:directional = false (
+            )
+    float analytic:shearX = 0 (
+            )
+    float analytic:shearY = 0 (
+            )
+    float analytic:apex = 25 (
+            )
+    bool analytic:useLightDirection = false (
+            )
+    float analytic:density:nearDistance = 0 (
+            )
+    float analytic:density:farDistance = 0 (
+            )
+    float analytic:density:nearValue = 0 (
+            )
+    float analytic:density:farValue = 1 (
+            )
+    float analytic:density:exponent = 1 (
+            )
+    float edgeThickness = 0 (
+            )
+    token preBarnEffect = "noLight" (
+        allowedTokens = ["noEffect", "cone", "noLight"]
+            )
+    float scale:width = 1 (
+            )
+    float scale:height = 1 (
+            )
+    float refine:top = 0 (
+            )
+    float refine:bottom = 0 (
+            )
+    float refine:left = 0 (
+            )
+    float refine:right = 0 (
+            )
+    float edgeScale:top = 1 (
+            )
+    float edgeScale:bottom = 1 (
+            )
+    float edgeScale:left = 1 (
+            )
+    float edgeScale:right = 1 (
+            )
+}
+
+class PxrCookieLightFilter "PxrCookieLightFilter" (
+    inherits = </LightFilter>
+    ) {
+    token cookieMode = "physical" (
+        allowedTokens = ["physical", "analytic"]
+            )
+    float width = 1 (
+            )
+    float height = 1 (
+            )
+    asset texture:map (
+            )
+    token texture:wrapMode = "off" (
+        allowedTokens = ["off", "repeat", "clamp"]
+            )
+    color3f texture:fillColor = (1, 1, 1) (
+            )
+    bool texture:premultipliedAlpha = true (
+	    )
+    bool texture:invertU = false (
+            )
+    bool texture:invertV = false (
+            )
+    float texture:scaleU = 1 (
+            )
+    float texture:scaleV = 1 (
+            )
+    float texture:offsetU = 0 (
+            )
+    float texture:offsetV = 0 (
+            )
+
+    bool analytic:directional = false (
+            )
+    float analytic:shearX = 0 (
+            )
+    float analytic:shearY = 0 (
+            )
+    float analytic:apex = 25 (
+            )
+    bool analytic:useLightDirection = false (
+            )
+    float analytic:blur:amount = 0 (
+            )
+    float analytic:blur:sMult = 0 (
+            )
+    float analytic:blur:tMult = 0 (
+            )
+    float analytic:blur:nearDistance = 0.0 (
+            )
+    float analytic:blur:midpoint = 0.5 (
+            )
+    float analytic:blur:farDistance = 10.0 (
+            )
+    float analytic:blur:nearValue = 1 (
+            )
+    float analytic:blur:midValue = 1 (
+            )
+    float analytic:blur:farValue = 1 (
+            )
+    float analytic:blur:exponent = 1 (
+            )
+
+
+    float analytic:density:nearDistance = 0.0 (
+            )
+    float analytic:density:midpoint = 0.5 (
+            )
+    float analytic:density:farDistance = 10.0 (
+            )
+    float analytic:density:nearValue = 1 (
+            )
+    float analytic:density:midValue = 1 (
+            )
+    float analytic:density:farValue = 1 (
+            )
+    float analytic:density:exponent = 1 (
+            )
+
+    float color:saturation = 1 (
+            )
+    float color:midpoint = 0.18 (
+            )
+    float color:contrast = 1 (
+            )
+    float color:whitepoint = 1 (
+            )
+    color3f color:tint = (1, 1, 1)  (
+            )
+}
+
+class PxrRampLightFilter "PxrRampLightFilter" (
+    inherits = </LightFilter>
+        customData = {
+        string extraIncludes = """
+#include "pxr/usd/usdRi/splineAPI.h"
+"""
+    }
+) {
+    token rampMode = "distanceToLight" (
+        allowedTokens = ["distanceToLight", "linear", "spherical", "radial"]
+            )
+    # distances apply to both the falloff and color ramps
+    float beginDistance = 0 (
+	    )
+    float endDistance = 10 (
+	    )
+    # this is called ramp in the args file and code
+    int falloff = 4 (
+            )
+    float[] falloff:knots = [0, 0, 1, 1] (
+            )
+    float[] falloff:floats = [0, 0, 1, 1] (
+            )
+    token falloff:interpolation = "linear" (
+        allowedTokens = ["linear", "catmull-rom", "bspline", "constant"]
+            )
+    int colorRamp = 4 (
+            )
+    float[] colorRamp:knots = [0, 0, 1, 1] (
+            )
+    color3f[] colorRamp:colors = [(1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1)] (
+            )
+    token colorRamp:interpolation = "linear" (
+        allowedTokens = ["linear", "catmull-rom", "bspline", "constant"]
+            )
+}
+
+class PxrRodLightFilter "PxrRodLightFilter" (
+    inherits = </LightFilter>
+        customData = {
+        string extraIncludes = """
+#include "pxr/usd/usdRi/splineAPI.h"
+"""
+    }
+) {
+    float width = 0 (
+            )
+    float height = 0 (
+            )
+    float depth = 0 (
+            )
+    float radius = 1 (
+            )
+    float edgeThickness = 0.25 (
+            )
+    float scale:width = 1 (
+            )
+    float scale:height = 1 (
+            )
+    float scale:depth = 1 (
+            )
+
+    float refine:top = 0 (
+            )
+    float refine:bottom = 0 (
+            )
+    float refine:left = 0 (
+            )
+    float refine:right = 0 (
+            )
+    float refine:front = 0 (
+            )
+    float refine:back = 0 (
+            )
+
+    float edgeScale:top = 1 (
+            )
+    float edgeScale:bottom = 1 (
+            )
+    float edgeScale:left = 1 (
+            )
+    float edgeScale:right = 1 (
+            )
+    float edgeScale:front = 1 (
+            )
+    float edgeScale:back = 1 (
+            )
+
+    float color:saturation = 1 (
+            )
+
+    int falloff = 6 (
+            )
+    float[] falloff:knots = [0, 0, 0.3, 0.7, 1, 1] (
+            )
+    float[] falloff:floats = [0, 0, 0.2, 0.8, 1, 1] (
+            )
+    token falloff:interpolation = "bspline" (
+        allowedTokens = ["linear", "catmull-rom", "bspline", "constant"]
+            )
+
+    int colorRamp = 4 (
+            )
+    float[] colorRamp:knots = [0, 0, 1, 1] (
+            )
+    color3f[] colorRamp:colors = [(1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1)] (
+            )
+    token colorRamp:interpolation = "linear" (
+        allowedTokens = ["linear", "catmull-rom", "bspline", "constant"]
+            )
+}

@@ -1,0 +1,1 @@
+(function(){return function(n,e,t){for(var r,a=n.getSpan(),i=0;i<e.streamLink.length&&!r;i++){r=(l=a.innerCapture(e.streamLink[i],1)).exists()?l:null}if(!r)for(i=0;i<e.streamLinkHTML.length&&!r;i++){var l;(l=e.streamLinkHTML[i].exec(t.html))&&2===l.length&&(r=l[1])}return r}}).call();

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ARRANGEMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(venir|vamos|voy|vienes|vendr[aá]s|vas|pasa|pasar|pasar(emos|e|as?)?|ir(emos|e|as?)?) a (recoger|buscar)(me)?</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP::AIRPORT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(venir|pasar|ir) a (recoger|buscar)(me|nos|te|os) al aeropuerto</string>
+			<string>(venir|pasar|ir) por mi al aeropuerto</string>
+			<string>(venir|vamos|voy|ves|pasa|pasar|pasar(emos|e|a)?|ves|ir(emos|e|a)?) a (recoger|buscar)(me)? .{0,60} aeropuerto</string>
+			<string>aeropuerto a (recoger|buscar)(me|nos)?</string>
+			<string>(recoger|buscar|recogida) en el aeropuerto</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Aeropuerto</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(ir|vamos|vayamos|acompañas)( .{0,20})? al (centro comercial|super(mercado)?|mercado|mercadillo)</string>
+			<string>(ir a|(me )?voy (a ir )?a|(nos )?vamos (a ir )?a|me voy a|nos vamos a) comprar</string>
+			<string>(ir|vamos|vayamos) de (compras|tiendas|shopping)</string>
+			<string>hacer (la compra|el super)</string>
+			<string>(ir|vamos|vayamos|acompañas)( .{0,20})? a(l)? (el corte ingl[eé]s|mango|zara|massimo dutti|pull&amp;bear|tommy hilfiger|burberry|aeronautica militare|stradivarius|pimkie|benetton|levi['’]s|guess|palacio de hierro|sears|suburbia|macy['’]s)</string>
+			<string>(ir|vamos|vayamos|acompañas)( .{0,20})? a(l)? (leroy merlin|bauhaus|mir[oó]|worten|decathlon|ikea|d[ií]a|caprabo|eroski|condis|mercadona|carrefour|intermarch[eé]|consum|aldi|schlecker)</string>
+			<string>(shopping marathon|marat[oó]n de compras)</string>
+			<string>comprar (el|un) regalo</string>
+			<string>podemos ir a .{0,25} para comprar</string>
+			<string>acompaña(s|r|mos)?( .{0,15})? de compras</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Compras</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING::SALES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(primeras |segundas |terceras )?rebajas</string>
+			<string>saldo(s)?</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Rebajas</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(reservar?|reservaci[oó]n) .{0,50} (hotel(es)?|hostal(es)?|motel(es)?|pensi([oó]n|ones)|albergues?)</string>
+			<string>viaj(e|ar|[ae]mos) a</string>
+			<string>viaje en carretera</string>
+			<string>(viaj(e|ar|[ae]mos)|(ir|vamos|vayamos)) en (autob[uú]s|autocar|tren|ave|ferrocarril|avi[oó]n|barco|taxi)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Viaje</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL::FIELDTRIP</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>salida escolar</string>
+			<string>excursi[oó]n</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Excursión</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

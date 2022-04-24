@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="GetSettingIntent#DescribeBinarySettingState">
+
+    <meta name="description" value="The user asked what a setting value is."/>
+    <meta name="category" value="Handled"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="setting" type="settings.BinarySetting" description="The setting that the user asked about."/>
+        <parameter name="settingValueToBeConfirmed" type="dialog.Boolean" description="This is true if the user asked whether the setting is on, false if the user asked if the setting is off, and null if the user did not specify."/>
+        <parameter name="verbose" type="dialog.Boolean" description="Whether the dialog should include additional detail or not."/>
+        <parameter name="deviceState" type="sirikit.DeviceState" description="Contains details about the user’s device."/>
+    </parameters>
+    
+</cat>

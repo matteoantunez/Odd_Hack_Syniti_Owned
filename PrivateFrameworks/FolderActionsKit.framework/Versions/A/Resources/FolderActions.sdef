@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Folder Actions">
+    <suite name="Folder Actions Suite" code="????" description="Common classes and commands for Folder Actions.">
+        <command name="enable" code="facoenbl" description="Enable a folder action.">
+            <direct-parameter type="folder action" description="The action to be enabled."/>
+            <parameter name="process new changes" code="prnc" type="save options" optional="yes" description="Whether or not to process any new changes (or to prompt the user).">
+            </parameter>
+        </command>
+        <class-extension extends="application">
+            <element type="folder action" />
+            <property name="folder actions enabled" code="faen" type="boolean" description="Are Folder Actions currently being processed?" />
+        </class-extension>
+        <class name="folder action" code="foac" description="An action attached to a folder in the file system" plural="folder actions">
+            <cocoa class="FAFolderAction" />
+            <element type="script" />
+            <property name="enabled" code="enaB" type="boolean" description="Is the folder action enabled?" />
+            <property name="name" code="pnam" type="text" description="the name of the folder action, which is also the name of the folder" />
+            <property name="path" code="ppth" access="r" description="the path to the folder to which the folder action applies">
+                <type type="text" />
+<!--                <type type="alias" />-->
+<!--                <type type="folder" />-->
+                <type type="any" hidden="yes" />
+            </property>
+            <property name="volume" code="volu" type="text" access="r" description="the volume on which the folder to which the folder action applies resides" />
+            <responds-to command="enable">
+                <cocoa method="enableVerb:" />
+            </responds-to>
+        </class>
+        <class name="script" code="scpt" description="A script invoked by a folder action" plural="scripts">
+            <cocoa class="FAScript" />
+            <property name="enabled" code="enaB" type="boolean" description="Is the script enabled?" />
+            <property name="name" code="pnam" type="text" access="r" description="the name of the script" />
+            <property name="path" code="ppth" type="text" access="r" description="the file system path of the disk">
+                <cocoa key="hfsPath" />
+            </property>
+            <property name="POSIX path" code="posx" type="text" access="r" description="the POSIX file system path of the disk">
+                <cocoa key="posixPath" />
+            </property>
+        </class>
+    </suite>
+</dictionary>

@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("venere-cancellation-it",function(e){return/La tua prenotazione \xe8 stata cancellata/.test(e.subject)},function(e){if(/La tua prenotazione \xe8 stata cancellata/.test(e.subject)){var t=loadHelper("venere-schemaorg-parser.js")(e);if(t)return t}},"SGd984f037")]);

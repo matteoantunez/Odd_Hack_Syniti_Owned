@@ -1,0 +1,69 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "1135",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 4,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "360",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "360",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 360 × 360)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "input_image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0.3",
+      "com.github.apple.coremltools.source" : "torch==1.6.0"
+    },
+    "generatedClassName" : "_8dacdd7mst_avg_30_offset_73_int8",
+    "neuralNetworkLayerTypeHistogram" : {
+      "UnarySqrt" : 1,
+      "DivideBroadcastable" : 1,
+      "ActivationReLU" : 20,
+      "Multiply" : 64,
+      "Add" : 31,
+      "PoolingAverage" : 26,
+      "Clip" : 29,
+      "ExpandDims" : 1,
+      "Convolution" : 65,
+      "Squeeze" : 2,
+      "ReduceSum" : 1
+    },
+    "method" : "predict"
+  }
+]

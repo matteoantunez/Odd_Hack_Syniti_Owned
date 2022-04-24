@@ -1,0 +1,1 @@
+(function(){return function(){return{reservationId:"Your confirmation number:",price:"Rental Car Total",cancelReservationUrl:"Cancel this booking <",pickup:"Pick up",name:"Renter",dropoff:"Drop off",phone:"Phone:",sameLocationAsPickup:"same location as pick-up",provider:"will provide customer service for this booking",cancelled:"has been canceled"}}}).call();

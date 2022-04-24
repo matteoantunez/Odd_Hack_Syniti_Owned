@@ -1,0 +1,1 @@
+(function(){return{getSeatMap:function(t){t=t.toString().split("\n");for(var n={},r=0;r<t.length;r++){var e=t[r].split(":").map(function(t){return t.trim()});2==e.length&&(n[e[0]]="---"===e[1]?"":e[1])}return n}}}).call();

@@ -1,0 +1,1 @@
+(function(){return function(n,r){for(var a,e=loadHelper("clear_if_contains_tags.js"),t=0;t<n.carBrand.length&&(!a||!a.exists());t++)a=r.getSpan().innerCapture(n.carBrand[t],1);return a=e(r,a),a}}).call();

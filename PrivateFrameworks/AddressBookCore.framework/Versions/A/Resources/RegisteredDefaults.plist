@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ABFontBigness</key>
+	<integer>2</integer>
+	<key>ABDatumBaseFontSize</key>
+	<integer>13</integer>
+	<key>ABListBaseFontSize</key>
+	<integer>13</integer>
+	<key>ABDatumColumnWidth</key>
+	<integer>100</integer>
+	<key>EWSPollingFrequency</key>
+	<integer>30</integer>
+	<key>ABShowTableHeaders</key>
+	<true/>
+	<key>URLActionRollMarker</key>
+	<integer>1</integer>
+	<key>ABAddressesVisible</key>
+	<integer>1</integer>
+	<key>ABEmailsVisible</key>
+	<integer>1</integer>
+	<key>ABBirthDayVisible</key>
+	<integer>1</integer>
+	<key>ABInitialLabelsAddress</key>
+	<array>
+		<string>_$!&lt;Home&gt;!$_</string>
+	</array>
+	<key>ABInitialLabelsEmail</key>
+	<array>
+		<string>_$!&lt;Home&gt;!$_</string>
+	</array>
+	<key>ABInitialLabelsPhone</key>
+	<array>
+		<string>_$!&lt;Mobile&gt;!$_</string>
+	</array>
+	<key>ABInitialLabelsURLs</key>
+	<array>
+		<string>_$!&lt;HomePage&gt;!$_</string>
+	</array>
+	<key>ABPhonesVisible</key>
+	<integer>1</integer>
+	<key>ABInstantMessagesVisible</key>
+	<integer>1</integer>
+	<key>ABURLsVisible</key>
+	<integer>1</integer>
+	<key>AB21vCardEncoding</key>
+	<string>Macintosh</string>
+	<key>ABIncludePhotosInVCard</key>
+	<true/>
+	<key>ABIncludeNotesInVCard</key>
+	<true/>
+	<key>ABTextSizeIncrement</key>
+	<integer>2</integer>
+	<key>ABUseGravatarImages</key>
+	<false/>
+	<key>ABShowPointOfInterestSearch</key>
+	<false/>
+</dict>
+</plist>

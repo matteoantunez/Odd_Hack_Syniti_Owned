@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="GetSettingIntent#DescribeNumericSettingState" locale="en">
+    <conditions>
+        <condition name="isDisplayBrightness">
+            <expression name="setting.identifier" op="eq" value="'displayBrightness'"/>
+        </condition>
+        <condition name="isSiriVolume">
+            <expression name="setting.identifier" op="eq" value="'voice'"/>
+        </condition>
+        <condition name="isSiriHomePodVolume">
+            <and>
+                <expression name="deviceState.isHomePod" op="eq" value="true"/>
+                <expression name="setting.identifier" op="eq" value="'voice'"/>
+            </and>
+        </condition>
+    </conditions>
+
+    <first>
+        <dialog condition="isDisplayBrightness">Let me know if you’d like to make the screen brighter or darker.</dialog>
+        <dialog condition="shouldExplainSmartVolume"> I adjust the volume of my voice automatically. This is about <var name="setting.value"/>.</dialog>
+        <dialog condition="isSiriHomePodVolume">Right now I'm speaking at about <var name="setting.value"/>.</dialog>
+        <dialog condition="isSiriVolume">I'm currently speaking at <var name="setting.value"/>.</dialog>
+        <dialog condition="isGetBatteryForAirpods">Your AirPods are at <var name="setting.value"/>.</dialog>
+        <dialog condition="isGetBatteryForGenericHeadphones">It's at <var name="setting.value"/>.</dialog>
+        <dialog><var name="setting.name"/> is at <var name="setting.value"/>.</dialog>
+    </first>
+</cat>

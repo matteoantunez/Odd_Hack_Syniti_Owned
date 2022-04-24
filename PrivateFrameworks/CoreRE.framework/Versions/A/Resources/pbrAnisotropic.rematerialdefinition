@@ -1,0 +1,61 @@
+{
+    "Name": "PbrAnisotropic",
+    "OverrideMaterial": "engine:pbrCommon.rematerialdefinition",
+    "Parameters": {
+        "TextureBlocks": {
+            "textureAnisotropyAngle": {
+                "Texture": "fallback.white",
+                "Sampler": "pointSampler",
+                "SamplerArray": "dynamicSamplers"
+            }
+        },
+        "Samplers": {
+            "pointSampler": {
+                "BaseFilter" : "Nearest"
+            }
+        }
+    },
+    "Techniques": [
+        {
+            "Name": "Opaque",
+            "VertexShader": {
+                "Entry": "vsRealityPbr"
+            },
+            "PixelShader": {
+                "Entry": "fsRealityPbr"
+            },
+            "State" : {
+                "AlphaBlend" : false,
+                "WriteDepth" : true,
+                "DepthCompareFunction" : "GreaterEqual"
+            },
+            "FunctionConstants" : {
+                "EnableBaseColorMap"        : "true",
+                "EnableNormalMap"           : "true",
+                "EnableEmissiveMap"         : "true",
+                "EnableAreaLight"           : "true",
+                "EnableSeparateRMAS"        : "true",
+                "EnableSingleRMAS"          : "false",
+                "EnableRoughnessMap"        : "true",
+                "EnableMetallicMap"         : "true",
+                "EnableAOMap"               : "true",
+                "EnableSpecularMap"         : "true",
+                "EnableClearcoat"           : "false",
+                "VertexColorOption"         : "0",
+                "EnableIBL"                 : "true",
+                "UseBaseColorMapAsTintMask" : "false",
+                "EnableAREnvProbe"          : "false",
+                "EnableDynamicLighting"     : "false",
+                "EnableCloth"               : "false",
+                "EnableSSAO"                : "false",
+                "EnableSSDO"                : "false",
+                "EnableMultiUVs"            : "false",
+                "EnableAnisotropy"          : "true"
+            }
+        }
+    ],
+    "TechniqueMapping": {
+        "Opaque": "Opaque"
+    }
+}
+

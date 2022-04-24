@@ -1,0 +1,34 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.DiscoveryEntityResponses
+extends: homeAutomation.EntityResponses
+
+properties:
+    containsPowerAttribute:
+        type: dialog.Boolean
+        description: The matched entities contains an entity with a power attribute
+    containsBrightnessAttribute:
+        type: dialog.Boolean
+        description: The matched entities contains an entity with a brightness attribute
+    containsColorAttribute:
+        type: dialog.Boolean
+        description: The matched entities contains an entity with a color_value attribute
+    containsHeatingCoolingAttribute:
+        type: dialog.Boolean
+        description: The matched entities contains an entity with a heating_cooling_mode attribute
+    containsLightbulbType:
+        type: dialog.Boolean
+        description: The matched entities contains an entity that is a lightbulb
+    containsDoorLockType:
+        type: dialog.Boolean
+        description: The matched entities contains an entity that is a door lock
+    containsThermostatType:
+        type: dialog.Boolean
+        description: The matched entities contains an entity that is a thermostat
+    containsHeaterType:
+        type: dialog.Boolean
+        description: The matched entities contains an entity that is a heater
+    attributesExceptPower:
+        type: dialog.String[]
+        semantic_concept: homeAutomationNoun
+        description: A collection of attributes of the entity responses that excludes the power attribute

@@ -1,0 +1,1 @@
+(function(){return function(t,n){for(var e,a=0;a<t.shouldTableExtractSeatInfo.length&&!e;a++)e=n.getSpan().next(t.shouldTableExtractSeatInfo[a]).exists();return e}}).call();

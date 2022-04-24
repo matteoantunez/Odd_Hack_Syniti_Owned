@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetNumericSettingIntent#ChangedNumericValueToSpokenOnly">
+
+    <meta name="description" value="Tell the user what setting we changed, and to what."/>
+    <meta name="category" value="Handled"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="setting" type="settings.NumericSetting" description="The setting that the user changed."/>
+        <parameter name="action" type="settings.NumericSettingAction" description="The change the user requested."/>
+        <parameter name="deviceState" type="sirikit.DeviceState" description="Contains details about the user’s device."/>
+    </parameters>
+    
+</cat>

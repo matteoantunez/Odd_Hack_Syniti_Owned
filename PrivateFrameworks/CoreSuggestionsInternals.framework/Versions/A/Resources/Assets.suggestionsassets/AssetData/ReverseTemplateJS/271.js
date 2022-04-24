@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("lastminute.com-flight-canellation-fr",function(e){return/Confirmation de l'annulation/i.test(e.subject)},function(e){var n="fr_FR",t={reservationIdPrefix:/(?:r\xe9f\xe9rence ID r\xe9servation)/i,passenger:/Madame\s\/\sMonsieur/};return loadHelper("lastminute.com-flight-cancellation-en-skeleton.js")(e,n,t)},"SG42740066")]);

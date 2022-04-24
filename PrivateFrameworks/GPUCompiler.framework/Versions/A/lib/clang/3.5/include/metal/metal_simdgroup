@@ -1,0 +1,188 @@
+//===-- metal_simdgroup ---------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_SIMDGROUP
+#define __METAL_SIMDGROUP
+
+namespace metal {
+
+#if defined (__HAVE_SIMDGROUP__)
+  // 5.13 SIMDgroup Functions
+
+  //   simd_broadcast:  returns data from thread having SIMD lane id <broadcast_lane_id>, same across SIMD group
+  METAL_ASM METAL_CONVERGENT char          simd_broadcast(char          data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.i8");
+  METAL_ASM METAL_CONVERGENT short         simd_broadcast(short         data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.i16");
+  METAL_ASM METAL_CONVERGENT int           simd_broadcast(int           data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.i32");
+  METAL_ASM METAL_CONVERGENT vec<char,2>   simd_broadcast(vec<char,2>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<short,2>  simd_broadcast(vec<short,2>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<int,2>    simd_broadcast(vec<int,2>    data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<char,3>   simd_broadcast(vec<char,3>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<short,3>  simd_broadcast(vec<short,3>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<int,3>    simd_broadcast(vec<int,3>    data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<char,4>   simd_broadcast(vec<char,4>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<short,4>  simd_broadcast(vec<short,4>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<int,4>    simd_broadcast(vec<int,4>    data, ushort broadcast_lane_id) __asm("air.simd_broadcast.s.v4i32");
+  METAL_ASM METAL_CONVERGENT uchar         simd_broadcast(uchar         data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.i8");
+  METAL_ASM METAL_CONVERGENT ushort        simd_broadcast(ushort        data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.i16");
+  METAL_ASM METAL_CONVERGENT uint          simd_broadcast(uint          data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,2>  simd_broadcast(vec<uchar,2>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,2> simd_broadcast(vec<ushort,2> data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,2>   simd_broadcast(vec<uint,2>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,3>  simd_broadcast(vec<uchar,3>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,3> simd_broadcast(vec<ushort,3> data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,3>   simd_broadcast(vec<uint,3>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,4>  simd_broadcast(vec<uchar,4>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,4> simd_broadcast(vec<ushort,4> data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,4>   simd_broadcast(vec<uint,4>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.u.v4i32");
+  METAL_ASM METAL_CONVERGENT half          simd_broadcast(half          data, ushort broadcast_lane_id) __asm("air.simd_broadcast.f16");
+  METAL_ASM METAL_CONVERGENT float         simd_broadcast(float         data, ushort broadcast_lane_id) __asm("air.simd_broadcast.f32");
+  METAL_ASM METAL_CONVERGENT vec<half,2>   simd_broadcast(vec<half,2>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.v2f16");
+  METAL_ASM METAL_CONVERGENT vec<float,2>  simd_broadcast(vec<float,2>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.v2f32");
+  METAL_ASM METAL_CONVERGENT vec<half,3>   simd_broadcast(vec<half,3>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.v3f16");
+  METAL_ASM METAL_CONVERGENT vec<float,3>  simd_broadcast(vec<float,3>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.v3f32");
+  METAL_ASM METAL_CONVERGENT vec<half,4>   simd_broadcast(vec<half,4>   data, ushort broadcast_lane_id) __asm("air.simd_broadcast.v4f16");
+  METAL_ASM METAL_CONVERGENT vec<float,4>  simd_broadcast(vec<float,4>  data, ushort broadcast_lane_id) __asm("air.simd_broadcast.v4f32");
+
+  //   simd_shuffle:  returns data from thread having SIMD lane id <simd_lane_id>
+  METAL_ASM METAL_CONVERGENT char          simd_shuffle(char          data, ushort simd_lane_id) __asm("air.simd_shuffle.s.i8");
+  METAL_ASM METAL_CONVERGENT short         simd_shuffle(short         data, ushort simd_lane_id) __asm("air.simd_shuffle.s.i16");
+  METAL_ASM METAL_CONVERGENT int           simd_shuffle(int           data, ushort simd_lane_id) __asm("air.simd_shuffle.s.i32");
+  METAL_ASM METAL_CONVERGENT vec<char,2>   simd_shuffle(vec<char,2>   data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<short,2>  simd_shuffle(vec<short,2>  data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<int,2>    simd_shuffle(vec<int,2>    data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<char,3>   simd_shuffle(vec<char,3>   data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<short,3>  simd_shuffle(vec<short,3>  data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<int,3>    simd_shuffle(vec<int,3>    data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<char,4>   simd_shuffle(vec<char,4>   data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<short,4>  simd_shuffle(vec<short,4>  data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<int,4>    simd_shuffle(vec<int,4>    data, ushort simd_lane_id) __asm("air.simd_shuffle.s.v4i32");
+  METAL_ASM METAL_CONVERGENT uchar         simd_shuffle(uchar         data, ushort simd_lane_id) __asm("air.simd_shuffle.u.i8");
+  METAL_ASM METAL_CONVERGENT ushort        simd_shuffle(ushort        data, ushort simd_lane_id) __asm("air.simd_shuffle.u.i16");
+  METAL_ASM METAL_CONVERGENT uint          simd_shuffle(uint          data, ushort simd_lane_id) __asm("air.simd_shuffle.u.i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,2>  simd_shuffle(vec<uchar,2>  data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,2> simd_shuffle(vec<ushort,2> data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,2>   simd_shuffle(vec<uint,2>   data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,3>  simd_shuffle(vec<uchar,3>  data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,3> simd_shuffle(vec<ushort,3> data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,3>   simd_shuffle(vec<uint,3>   data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,4>  simd_shuffle(vec<uchar,4>  data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,4> simd_shuffle(vec<ushort,4> data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,4>   simd_shuffle(vec<uint,4>   data, ushort simd_lane_id) __asm("air.simd_shuffle.u.v4i32");
+  METAL_ASM METAL_CONVERGENT half          simd_shuffle(half          data, ushort simd_lane_id) __asm("air.simd_shuffle.f16");
+  METAL_ASM METAL_CONVERGENT float         simd_shuffle(float         data, ushort simd_lane_id) __asm("air.simd_shuffle.f32");
+  METAL_ASM METAL_CONVERGENT vec<half,2>   simd_shuffle(vec<half,2>   data, ushort simd_lane_id) __asm("air.simd_shuffle.v2f16");
+  METAL_ASM METAL_CONVERGENT vec<float,2>  simd_shuffle(vec<float,2>  data, ushort simd_lane_id) __asm("air.simd_shuffle.v2f32");
+  METAL_ASM METAL_CONVERGENT vec<half,3>   simd_shuffle(vec<half,3>   data, ushort simd_lane_id) __asm("air.simd_shuffle.v3f16");
+  METAL_ASM METAL_CONVERGENT vec<float,3>  simd_shuffle(vec<float,3>  data, ushort simd_lane_id) __asm("air.simd_shuffle.v3f32");
+  METAL_ASM METAL_CONVERGENT vec<half,4>   simd_shuffle(vec<half,4>   data, ushort simd_lane_id) __asm("air.simd_shuffle.v4f16");
+  METAL_ASM METAL_CONVERGENT vec<float,4>  simd_shuffle(vec<float,4>  data, ushort simd_lane_id) __asm("air.simd_shuffle.v4f32");
+
+  //   simd_shuffle_up:  returns data from thread having SIMD lane id <self>-<delta>
+  //                     (or from <self>, if computed id is < 0)
+  METAL_ASM METAL_CONVERGENT char          simd_shuffle_up(char          data, ushort delta) __asm("air.simd_shuffle_up.s.i8");
+  METAL_ASM METAL_CONVERGENT short         simd_shuffle_up(short         data, ushort delta) __asm("air.simd_shuffle_up.s.i16");
+  METAL_ASM METAL_CONVERGENT int           simd_shuffle_up(int           data, ushort delta) __asm("air.simd_shuffle_up.s.i32");
+  METAL_ASM METAL_CONVERGENT vec<char,2>   simd_shuffle_up(vec<char,2>   data, ushort delta) __asm("air.simd_shuffle_up.s.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<short,2>  simd_shuffle_up(vec<short,2>  data, ushort delta) __asm("air.simd_shuffle_up.s.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<int,2>    simd_shuffle_up(vec<int,2>    data, ushort delta) __asm("air.simd_shuffle_up.s.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<char,3>   simd_shuffle_up(vec<char,3>   data, ushort delta) __asm("air.simd_shuffle_up.s.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<short,3>  simd_shuffle_up(vec<short,3>  data, ushort delta) __asm("air.simd_shuffle_up.s.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<int,3>    simd_shuffle_up(vec<int,3>    data, ushort delta) __asm("air.simd_shuffle_up.s.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<char,4>   simd_shuffle_up(vec<char,4>   data, ushort delta) __asm("air.simd_shuffle_up.s.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<short,4>  simd_shuffle_up(vec<short,4>  data, ushort delta) __asm("air.simd_shuffle_up.s.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<int,4>    simd_shuffle_up(vec<int,4>    data, ushort delta) __asm("air.simd_shuffle_up.s.v4i32");
+  METAL_ASM METAL_CONVERGENT uchar         simd_shuffle_up(uchar         data, ushort delta) __asm("air.simd_shuffle_up.u.i8");
+  METAL_ASM METAL_CONVERGENT ushort        simd_shuffle_up(ushort        data, ushort delta) __asm("air.simd_shuffle_up.u.i16");
+  METAL_ASM METAL_CONVERGENT uint          simd_shuffle_up(uint          data, ushort delta) __asm("air.simd_shuffle_up.u.i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,2>  simd_shuffle_up(vec<uchar,2>  data, ushort delta) __asm("air.simd_shuffle_up.u.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,2> simd_shuffle_up(vec<ushort,2> data, ushort delta) __asm("air.simd_shuffle_up.u.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,2>   simd_shuffle_up(vec<uint,2>   data, ushort delta) __asm("air.simd_shuffle_up.u.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,3>  simd_shuffle_up(vec<uchar,3>  data, ushort delta) __asm("air.simd_shuffle_up.u.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,3> simd_shuffle_up(vec<ushort,3> data, ushort delta) __asm("air.simd_shuffle_up.u.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,3>   simd_shuffle_up(vec<uint,3>   data, ushort delta) __asm("air.simd_shuffle_up.u.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,4>  simd_shuffle_up(vec<uchar,4>  data, ushort delta) __asm("air.simd_shuffle_up.u.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,4> simd_shuffle_up(vec<ushort,4> data, ushort delta) __asm("air.simd_shuffle_up.u.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,4>   simd_shuffle_up(vec<uint,4>   data, ushort delta) __asm("air.simd_shuffle_up.u.v4i32");
+  METAL_ASM METAL_CONVERGENT half          simd_shuffle_up(half          data, ushort delta) __asm("air.simd_shuffle_up.f16");
+  METAL_ASM METAL_CONVERGENT float         simd_shuffle_up(float         data, ushort delta) __asm("air.simd_shuffle_up.f32");
+  METAL_ASM METAL_CONVERGENT vec<half,2>   simd_shuffle_up(vec<half,2>   data, ushort delta) __asm("air.simd_shuffle_up.v2f16");
+  METAL_ASM METAL_CONVERGENT vec<float,2>  simd_shuffle_up(vec<float,2>  data, ushort delta) __asm("air.simd_shuffle_up.v2f32");
+  METAL_ASM METAL_CONVERGENT vec<half,3>   simd_shuffle_up(vec<half,3>   data, ushort delta) __asm("air.simd_shuffle_up.v3f16");
+  METAL_ASM METAL_CONVERGENT vec<float,3>  simd_shuffle_up(vec<float,3>  data, ushort delta) __asm("air.simd_shuffle_up.v3f32");
+  METAL_ASM METAL_CONVERGENT vec<half,4>   simd_shuffle_up(vec<half,4>   data, ushort delta) __asm("air.simd_shuffle_up.v4f16");
+  METAL_ASM METAL_CONVERGENT vec<float,4>  simd_shuffle_up(vec<float,4>  data, ushort delta) __asm("air.simd_shuffle_up.v4f32");
+
+  //   simd_shuffle_down:  returns data from thread having SIMD lane id <self>+<delta>
+  //                       (or from <self> if computed id is >= [[threads_per_simdgroup]] )
+  METAL_ASM METAL_CONVERGENT char          simd_shuffle_down(char          data, ushort delta) __asm("air.simd_shuffle_down.s.i8");
+  METAL_ASM METAL_CONVERGENT short         simd_shuffle_down(short         data, ushort delta) __asm("air.simd_shuffle_down.s.i16");
+  METAL_ASM METAL_CONVERGENT int           simd_shuffle_down(int           data, ushort delta) __asm("air.simd_shuffle_down.s.i32");
+  METAL_ASM METAL_CONVERGENT vec<char,2>   simd_shuffle_down(vec<char,2>   data, ushort delta) __asm("air.simd_shuffle_down.s.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<short,2>  simd_shuffle_down(vec<short,2>  data, ushort delta) __asm("air.simd_shuffle_down.s.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<int,2>    simd_shuffle_down(vec<int,2>    data, ushort delta) __asm("air.simd_shuffle_down.s.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<char,3>   simd_shuffle_down(vec<char,3>   data, ushort delta) __asm("air.simd_shuffle_down.s.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<short,3>  simd_shuffle_down(vec<short,3>  data, ushort delta) __asm("air.simd_shuffle_down.s.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<int,3>    simd_shuffle_down(vec<int,3>    data, ushort delta) __asm("air.simd_shuffle_down.s.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<char,4>   simd_shuffle_down(vec<char,4>   data, ushort delta) __asm("air.simd_shuffle_down.s.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<short,4>  simd_shuffle_down(vec<short,4>  data, ushort delta) __asm("air.simd_shuffle_down.s.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<int,4>    simd_shuffle_down(vec<int,4>    data, ushort delta) __asm("air.simd_shuffle_down.s.v4i32");
+  METAL_ASM METAL_CONVERGENT uchar         simd_shuffle_down(uchar         data, ushort delta) __asm("air.simd_shuffle_down.u.i8");
+  METAL_ASM METAL_CONVERGENT ushort        simd_shuffle_down(ushort        data, ushort delta) __asm("air.simd_shuffle_down.u.i16");
+  METAL_ASM METAL_CONVERGENT uint          simd_shuffle_down(uint          data, ushort delta) __asm("air.simd_shuffle_down.u.i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,2>  simd_shuffle_down(vec<uchar,2>  data, ushort delta) __asm("air.simd_shuffle_down.u.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,2> simd_shuffle_down(vec<ushort,2> data, ushort delta) __asm("air.simd_shuffle_down.u.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,2>   simd_shuffle_down(vec<uint,2>   data, ushort delta) __asm("air.simd_shuffle_down.u.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,3>  simd_shuffle_down(vec<uchar,3>  data, ushort delta) __asm("air.simd_shuffle_down.u.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,3> simd_shuffle_down(vec<ushort,3> data, ushort delta) __asm("air.simd_shuffle_down.u.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,3>   simd_shuffle_down(vec<uint,3>   data, ushort delta) __asm("air.simd_shuffle_down.u.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,4>  simd_shuffle_down(vec<uchar,4>  data, ushort delta) __asm("air.simd_shuffle_down.u.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,4> simd_shuffle_down(vec<ushort,4> data, ushort delta) __asm("air.simd_shuffle_down.u.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,4>   simd_shuffle_down(vec<uint,4>   data, ushort delta) __asm("air.simd_shuffle_down.u.v4i32");
+  METAL_ASM METAL_CONVERGENT half          simd_shuffle_down(half          data, ushort delta) __asm("air.simd_shuffle_down.f16");
+  METAL_ASM METAL_CONVERGENT float         simd_shuffle_down(float         data, ushort delta) __asm("air.simd_shuffle_down.f32");
+  METAL_ASM METAL_CONVERGENT vec<half,2>   simd_shuffle_down(vec<half,2>   data, ushort delta) __asm("air.simd_shuffle_down.v2f16");
+  METAL_ASM METAL_CONVERGENT vec<float,2>  simd_shuffle_down(vec<float,2>  data, ushort delta) __asm("air.simd_shuffle_down.v2f32");
+  METAL_ASM METAL_CONVERGENT vec<half,3>   simd_shuffle_down(vec<half,3>   data, ushort delta) __asm("air.simd_shuffle_down.v3f16");
+  METAL_ASM METAL_CONVERGENT vec<float,3>  simd_shuffle_down(vec<float,3>  data, ushort delta) __asm("air.simd_shuffle_down.v3f32");
+  METAL_ASM METAL_CONVERGENT vec<half,4>   simd_shuffle_down(vec<half,4>   data, ushort delta) __asm("air.simd_shuffle_down.v4f16");
+  METAL_ASM METAL_CONVERGENT vec<float,4>  simd_shuffle_down(vec<float,4>  data, ushort delta) __asm("air.simd_shuffle_down.v4f32");
+
+  //   simd_shuffle_xor:  returns data from thread having SIMD lane id <self>XOR<mask>
+  METAL_ASM METAL_CONVERGENT char          simd_shuffle_xor(char          data, ushort mask) __asm("air.simd_shuffle_xor.s.i8");
+  METAL_ASM METAL_CONVERGENT short         simd_shuffle_xor(short         data, ushort mask) __asm("air.simd_shuffle_xor.s.i16");
+  METAL_ASM METAL_CONVERGENT int           simd_shuffle_xor(int           data, ushort mask) __asm("air.simd_shuffle_xor.s.i32");
+  METAL_ASM METAL_CONVERGENT vec<char,2>   simd_shuffle_xor(vec<char,2>   data, ushort mask) __asm("air.simd_shuffle_xor.s.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<short,2>  simd_shuffle_xor(vec<short,2>  data, ushort mask) __asm("air.simd_shuffle_xor.s.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<int,2>    simd_shuffle_xor(vec<int,2>    data, ushort mask) __asm("air.simd_shuffle_xor.s.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<char,3>   simd_shuffle_xor(vec<char,3>   data, ushort mask) __asm("air.simd_shuffle_xor.s.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<short,3>  simd_shuffle_xor(vec<short,3>  data, ushort mask) __asm("air.simd_shuffle_xor.s.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<int,3>    simd_shuffle_xor(vec<int,3>    data, ushort mask) __asm("air.simd_shuffle_xor.s.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<char,4>   simd_shuffle_xor(vec<char,4>   data, ushort mask) __asm("air.simd_shuffle_xor.s.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<short,4>  simd_shuffle_xor(vec<short,4>  data, ushort mask) __asm("air.simd_shuffle_xor.s.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<int,4>    simd_shuffle_xor(vec<int,4>    data, ushort mask) __asm("air.simd_shuffle_xor.s.v4i32");
+  METAL_ASM METAL_CONVERGENT uchar         simd_shuffle_xor(uchar         data, ushort mask) __asm("air.simd_shuffle_xor.u.i8");
+  METAL_ASM METAL_CONVERGENT ushort        simd_shuffle_xor(ushort        data, ushort mask) __asm("air.simd_shuffle_xor.u.i16");
+  METAL_ASM METAL_CONVERGENT uint          simd_shuffle_xor(uint          data, ushort mask) __asm("air.simd_shuffle_xor.u.i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,2>  simd_shuffle_xor(vec<uchar,2>  data, ushort mask) __asm("air.simd_shuffle_xor.u.v2i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,2> simd_shuffle_xor(vec<ushort,2> data, ushort mask) __asm("air.simd_shuffle_xor.u.v2i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,2>   simd_shuffle_xor(vec<uint,2>   data, ushort mask) __asm("air.simd_shuffle_xor.u.v2i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,3>  simd_shuffle_xor(vec<uchar,3>  data, ushort mask) __asm("air.simd_shuffle_xor.u.v3i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,3> simd_shuffle_xor(vec<ushort,3> data, ushort mask) __asm("air.simd_shuffle_xor.u.v3i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,3>   simd_shuffle_xor(vec<uint,3>   data, ushort mask) __asm("air.simd_shuffle_xor.u.v3i32");
+  METAL_ASM METAL_CONVERGENT vec<uchar,4>  simd_shuffle_xor(vec<uchar,4>  data, ushort mask) __asm("air.simd_shuffle_xor.u.v4i8");
+  METAL_ASM METAL_CONVERGENT vec<ushort,4> simd_shuffle_xor(vec<ushort,4> data, ushort mask) __asm("air.simd_shuffle_xor.u.v4i16");
+  METAL_ASM METAL_CONVERGENT vec<uint,4>   simd_shuffle_xor(vec<uint,4>   data, ushort mask) __asm("air.simd_shuffle_xor.u.v4i32");
+  METAL_ASM METAL_CONVERGENT half          simd_shuffle_xor(half          data, ushort mask) __asm("air.simd_shuffle_xor.f16");
+  METAL_ASM METAL_CONVERGENT float         simd_shuffle_xor(float         data, ushort mask) __asm("air.simd_shuffle_xor.f32");
+  METAL_ASM METAL_CONVERGENT vec<half,2>   simd_shuffle_xor(vec<half,2>   data, ushort mask) __asm("air.simd_shuffle_xor.v2f16");
+  METAL_ASM METAL_CONVERGENT vec<float,2>  simd_shuffle_xor(vec<float,2>  data, ushort mask) __asm("air.simd_shuffle_xor.v2f32");
+  METAL_ASM METAL_CONVERGENT vec<half,3>   simd_shuffle_xor(vec<half,3>   data, ushort mask) __asm("air.simd_shuffle_xor.v3f16");
+  METAL_ASM METAL_CONVERGENT vec<float,3>  simd_shuffle_xor(vec<float,3>  data, ushort mask) __asm("air.simd_shuffle_xor.v3f32");
+  METAL_ASM METAL_CONVERGENT vec<half,4>   simd_shuffle_xor(vec<half,4>   data, ushort mask) __asm("air.simd_shuffle_xor.v4f16");
+  METAL_ASM METAL_CONVERGENT vec<float,4>  simd_shuffle_xor(vec<float,4>  data, ushort mask) __asm("air.simd_shuffle_xor.v4f32");
+#endif // defined (__HAVE_SIMDGROUP__)
+
+} // namespace metal
+
+#endif // __METAL_SIMDGROUP

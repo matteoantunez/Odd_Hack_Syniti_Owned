@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>(antwort|meld|sag|ruf|bestätig)(est|st|en|e)? (.{0,50})(bis|sp(ä|ae)testens|nach|vor)</string>
+	<string>auf eine(r|m) (party|feier|fete|zeremonie|fest)</string>
+	<string>(muss|muessen|müssen|hat|haben|bitte|unbedingt) (.{0,50})bis (sp(ä|ae)testens|maximal)</string>
+	<string>sch(ö|oe)(nen|nes|ne) ((nach|vor)?mittag|tag|abend|woche(nende)?)</string>
+	<string>guten (morgen|(nach|vor)?mittag|abend)</string>
+	<string>meeting[- ]?notizen</string>
+	<string>(bitte|kannst|könntest|koenntest|könnten|koennten) (.{0,50})(bis|noch vor) (.{0,30})(ausfüllen|ausfuellen|ausgefüllt|ausgefuellt) (.{0,50})(zurück|zurueck|antworten)</string>
+	<string>(sitzungs|meeting(s)?)(protokoll(e)?|zusammenfassung)</string>
+	<string>(protokoll(e)?|zusammenfassung) (.{0,50})(treffen|sitzung|tagung|konferenz)</string>
+	<string>(versenden|sendet|gesendet|datum)(\W)?:</string>
+	<string>(guten|sch(ö|oe)nen|außer|ausser|angenehmen) (montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag)(s)?</string>
+	<string>((vor)?letzte|vorherige)(n|s|r)? (woche(nende)?(n)?|monat(es|e|s)?|jahr(es|en|e)?)</string>
+	<string>vor eine(r|m) (woche|monat|jahr)</string>
+	<string>jede(m|n|r) ((wochen)?tag|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag) (.{0,30})?(außer|nur nicht|bis auf)</string>
+	<string>((vor)?letzte|vorherige)(n|r)? (montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag)</string>
+	<string>(evtl.|eventuell|ca.|circa|vielleicht|(möglicher|schätzungs)weise|(höchst)?wahrscheinlich|vo­r­aus­sicht­lich|vermutlich|ungefähr) am (montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|wochenende)</string>
+	<string>(evtl.|eventuell|ca.|circa|vielleicht|(möglicher|schätzungs)weise|(höchst)?wahrscheinlich|vo­r­aus­sicht­lich|vermutlich|ungefähr) im (januar|j(ä|ae)nner|februar|feber|m(ä|ae)rz|april|mai|juni|juli|august|september|oktober|november|dezember)</string>
+	<string>(vor|nach) dem (frühstück|(mittag|abend)?essen)</string>
+	<string>lieferschein</string>
+	<string>(paket|post|brief|ups|dhl|hermes|amazon)?(lieferung|sendung|zustellung|bestellung)</string>
+	<string>(liefer|rechnungs|zustell|bestell)datum</string>
+	<string>(zahl|liefer|zustell)bar (bis|am|vor)</string>
+	<string>(öffnungszeit(en)?|sprechstunde(n)?|arbeitszeit(en)?)</string>
+	<string>(öffne(t|n)|geöffnet|schlie(ß|ss)(t|en)|geschlo(ß|ss)en) (um|am|in|für|über|vo(n|m)|bis)?</string>
+	<string>(um|am|in|für|über|vo(n|m)|bis) (.{0,30})?(nicht)? (offen|geöffnet|geschlo(ß|ss)en)</string>
+	<string>nicht (da|verfügbar|anwesend|geöffnet|offen) (um|am|in|für|über|vo(n|m)|bis)</string>
+	<string>abendblattes</string>
+	<string>(es ist|(ist|haben wir|wir haben) es)( jetzt| gerade| im moment| zur zeit| dann| ca.| circa| ungefähr| fast| kurz vor| kurz nach)? (([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]( uhr)?|([0-9]|0[0-9]|1[0-9]|2[0-3])( uhr)? [0-5][0-9])</string>
+	<string>(es ist|(ist|haben wir|wir haben) es)( jetzt| gerade| im moment| zur zeit| dann| ca.| circa| ungefähr| fast| kurz vor| kurz nach)? (fünf|zehn|fünfzehn|viertel|zwanzig|fünfundzwanzig|drei(ß|ss)ig|fünfunddrei(ß|ss)ig|vierzig|fünfundvierzig|dreiviertel|fünfzig|fünfundfünfzig)( minuten)? (nach|vor)</string>
+	<string>(ich werde|wir werden) (.{0,30})?(schaffen|ankommen|verspäten|zu spät)</string>
+	<string>(ich werde|wir werden) (.{0,30})?(zuhause|zu Hause|zurück|im Büro|da) sein</string>
+	<string>(geschätzte|ungefähre) (ankunfts|abflugs|abfahrts|aufbruchs|reise)zeit</string>
+	<string>(geschätzte|ungefähre) (flug|fahr|reise)dauer</string>
+	<string>(dauert|braucht|benötigt)? (evtl.|eventuell|ca.|circa|vielleicht|(möglicher|schätzungs)weise|(höchst)?wahrscheinlich|vo­r­aus­sicht­lich|vermutlich|ungefähr) bis</string>
+	<string>(evtl.|eventuell|ca.|circa|vielleicht|(möglicher|schätzungs)weise|(höchst)?wahrscheinlich|vo­r­aus­sicht­lich|vermutlich|ungefähr) bis (.{0,30})(dauern|brauchen|benötigen)?</string>
+</array>
+</plist>

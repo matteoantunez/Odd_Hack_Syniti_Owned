@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html class="preview">
+<head>
+<meta charset='utf-8'>
+<style type="text/css">
+* {
+    /* Use with pointer-event to avoid user selection and i beam cursor */
+    -webkit-user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.trackpad {
+    position: relative;
+    width: 301px;
+    height: 119px;
+    background-size: 301px 119px;
+}
+.trackpad[lang$=Hant] {
+    background-image: -webkit-image-set(url('preview-trackpad-TC.png') 1x, url('preview-trackpad-TC-HiDPI.png') 2x);
+}
+.trackpad[lang$=Hans] {
+    background-image: -webkit-image-set(url('preview-trackpad-SC.png') 1x, url('preview-trackpad-SC-HiDPI.png') 2x);
+}
+
+@media (prefers-dark-interface) {
+    .trackpad[lang$=Hant] {
+        background-image: -webkit-image-set(url('preview-trackpad-TC_dark.png') 1x, url('preview-trackpad-TC_dark-HiDPI.png') 2x);
+    }
+    .trackpad[lang$=Hans] {
+        background-image: -webkit-image-set(url('preview-trackpad-SC_dark.png') 1x, url('preview-trackpad-SC_dark-HiDPI.png') 2x);
+    }
+}
+</style>
+</head>
+<body aria-hidden="true">
+<div class="trackpad"></div>
+</body>
+</html>

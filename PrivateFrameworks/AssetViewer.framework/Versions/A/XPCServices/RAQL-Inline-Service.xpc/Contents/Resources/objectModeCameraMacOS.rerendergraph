@@ -1,0 +1,291 @@
+{
+    "Name" : "CameraGraph",
+    "Targets" : [
+        {
+            "Name" : "Color0",
+            "Connections" : [
+                {
+                    "ToMember" : ["sampleCount"],
+                    "FromType" : "CameraData",
+                    "FromMember" : ["msaaSamples"]
+                }
+            ]
+        },
+        {
+            "Name" : "Depth",
+            "Description" : {
+                "Format" : "Depth32Float_Stencil8"
+            },
+            "Connections" : [
+                {
+                    "ToMember" : ["sampleCount"],
+                    "FromType" : "CameraData",
+                    "FromMember" : ["msaaSamples"]
+                }
+            ]
+        },
+        {
+            "Name" : "ShadowMapAtlas"
+        },
+        {
+            "Name" : "ProjectiveShadowMap"
+        }
+    ],
+    "Nodes" : [
+        {
+            "CameraSetup" : {
+                "Name" : "CameraSetup",
+                "UpdateSceneMaterialData" : true,
+                "FrustumCulling" : true
+            }
+        },
+        {
+            "Mesh" : {
+                "Name" : "OcclusionNode",
+                "CullMode" : "CullModeNone",
+                "FillMode" : "Fill",
+                "MaterialPassName" : "Occlusion",
+                "TargetWrites" : [
+                    {
+                        "TargetHandle" : "Color0",
+                        "Settings" : {
+                            "AttachmentIndex" : 0,
+                            "ClearColor" : [0,0,0,0],
+                            "ForceClear" : true
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteDepth"
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteStencil"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Mesh" : {
+                "Name" : "OpaqueNode",
+                "CullMode" : "CullModeBack",
+                "FillMode" : "Fill",
+                "MaterialPassName" : "Opaque",
+                "TargetReads" : [
+                    {
+                        "TargetHandle" : "ShadowMapAtlas",
+                        "Settings" : {
+                            "IsOptional" : true
+                        }
+                    }
+                ],
+                "TargetWrites" : [
+                    {
+                        "TargetHandle" : "Color0",
+                        "Settings" : {
+                            "AttachmentIndex" : 0
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteDepth",
+                            "ForceClear" : false
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteStencil",
+                            "ForceClear" : false
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Mesh" : {
+                "Name" : "ProjectiveShadowReceiverColor",
+                "CullMode" : "CullModeBack",
+                "FillMode" : "Fill",
+                "MaterialPassName" : "ShadowReceiverPlaneTechnique",
+                "TargetReads" : [
+                    {
+                        "TargetHandle" : "ProjectiveShadowMap",
+                        "Settings" : {
+                            "IsOptional" : true
+                        }
+                    }
+                ],
+                "TargetWrites" : [
+                    {
+                        "TargetHandle" : "Color0",
+                        "Settings" : {
+                            "AttachmentIndex" : 0
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteDepth"
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteStencil",
+                            "IsOptional" : true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Mesh" : {
+                "Name" : "TransparentNode",
+                "CullMode" : "CullModeBack",
+                "MaterialPassName" : "Transparent",
+                "SortMode" : "BackToFront",
+                "TargetReads" : [
+                    {
+                        "TargetHandle" : "ShadowMapAtlas",
+                        "Settings" : {
+                            "IsOptional" : true
+                        }
+                    }
+                ],
+                "TargetWrites" : [
+                    {
+                        "TargetHandle" : "Color0",
+                        "Settings" : {
+                            "AttachmentIndex" : 0
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteDepth"
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteStencil"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Text" : {
+                "Name" : "TextNode",
+                "TargetReads" : [
+                    {
+                        "TargetHandle" : "ShadowMapAtlas",
+                        "Settings" : {
+                            "IsOptional" : true
+                        }
+                    }
+                ],
+                "TargetWrites" : [
+                    {
+                        "TargetHandle" : "Color0",
+                        "Settings" : {
+                            "AttachmentIndex" : 0
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteDepth"
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteStencil"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Mesh" : {
+                "Name" : "ProjectiveShadowReceiverDepthNode",
+                "CullMode" : "CullModeBack",
+                "FillMode" : "Fill",
+                "MaterialPassName" : "ShadowReceiverDepthOnly",
+                "TargetWrites" : [
+                    {
+                        "TargetHandle" : "Color0",
+                        "Settings" : {
+                            "AttachmentIndex" : 0
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteDepth"
+                        }
+                    },
+                    {
+                        "TargetHandle" : "Depth",
+                        "Settings" : {
+                            "Type" : "WriteStencil",
+                            "IsOptional" : true
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "Inputs" : [
+        {
+            "Lane" : "Color",
+            "Target": "Color0"
+        },
+        {
+            "Lane" : "Depth",
+            "Target": "Depth"
+        },
+        {
+            "Lane" : "ShadowMapAtlasLane",
+            "Target": "ShadowMapAtlas",
+            "InputOnly" : true,
+            "GraphScopeOverride" : "ShadowMapAtlasScope"
+        },
+        {
+            "Lane" : "projectiveShadowMapLane",
+            "Target": "ProjectiveShadowMap",
+            "InputOnly" : true,
+            "GraphScopeOverride" : "projectiveShadowMapScope"
+        },
+    ],
+    "Outputs" : [
+        {
+            "Lane" : "Color",
+            "Target" : "Color0"
+        },
+        {
+            "Lane" : "Depth",
+            "Target" : "Depth"
+        }
+    ],
+    "Connections" : [
+        {
+            "Name" : "OcclusionNode",
+            "Connections" : [
+                {
+                    "ToMember" : ["TargetWrites", "1", "settings", "forceClear"],
+                    "FromType" : "CameraData",
+                    "FromMember" : ["loadStencil"]
+                }
+            ]
+        }
+    ]
+}
+

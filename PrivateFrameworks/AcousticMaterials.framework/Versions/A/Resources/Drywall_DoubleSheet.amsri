@@ -1,0 +1,13 @@
+{
+    "materialName": "Drywall_DoubleSheet",
+    "materialDescription": "Construction of drywalls, which consist of two sheets with an airgap or an insulation in between. Drywall materials are materials such as gypsum board, plywood and plaster board, insulating materials are for example fiber glass, polyurethane or rockwool.",
+    "frequencyBands": [20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500, 630,800,1000,1250,1600,2000,2500,3150,4000,5000,6300,8000,10000,12500,16000,20000],
+    "soundReductionIndexUserData": [26.9,26.9,26.9,26.9,26.9,26.6,27.8,27.4,27.6,30.2,33.7,37.5,40.1,42.7,45.2,47.1,48.8,50.2,50.1,50.3,49.8,48.6,49.4,50.5,50.9,51.3,50.6,50.6,50.6,50.6,50.6],
+    "soundReductionIndexReferenceData": [26.9,26.9,26.9,26.9,26.9,26.6,27.8,27.4,27.6,30.2,33.7,37.5,40.1,42.7,45.2,47.1,48.8,50.2,50.1,50.3,49.8,48.6,49.4,50.5,50.9,51.3,50.6,50.6,50.6,50.6,50.6],
+    "uncertaintyReferenceData": [7.3,7.3,7.3,7.3,7.3,7.5,6.5,7.0,7.9,7.9,6.1,5.7,5.8,6.1,6.5,6.4,6.8,7.3,7.4,7.4,8.2,8.3,7.3,6.9,6.9,7.1,6.9,6.9,6.9,6.9,6.9],
+    "averageSoundReductionIndex": 41.1,
+    "numDataPointsReferenceData": [0,0,0,0,2,5,2,5,25,5,5,25,5,5,25,5,5,25,5,5,25,5,5,25,2,2,2,0,0,0,0],
+    "totalNumDataSetsReferenceData": 25,
+    "materialDepth": 0.1838,
+    "uncertaintyMaterialDepth": 0.16399
+}

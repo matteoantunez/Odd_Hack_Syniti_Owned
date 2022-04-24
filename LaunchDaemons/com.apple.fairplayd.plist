@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>JetsamProperties</key>                                                                                    
+    <dict>                                                                                                         
+        <key>JetsamMemoryLimit</key>                                                                               
+        <integer>2000</integer>                                                                                    
+        <key>JetsamPriority</key>                                                                                  
+        <integer>-100</integer>                                                                                     
+    </dict>  
+    <key>Label</key>
+    <string>com.apple.fairplayd</string>
+    <key>MachServices</key>
+    <dict>
+        <key>com.apple.unfreed</key>
+        <dict>
+            <key>HostSpecialPort</key>
+            <integer>17</integer>
+        </dict>
+        <key>com.apple.arcade.fpsd</key>
+        <dict>
+            <key>HostSpecialPort</key>
+            <integer>31</integer>
+         </dict>
+        <key>com.apple.fairplayd</key>
+        <true/>
+        <key>com.apple.fpsd</key>
+        <true/>
+    </dict>
+    <key>UserName</key>
+    <string>_fpsd</string>
+    <key>GroupName</key>
+    <string>_fpsd</string>
+    <key>Program</key>
+    <string>/System/Library/PrivateFrameworks/CoreFP.framework/Versions/A/fairplayd</string>
+    <key>KeepAlive</key>
+        <dict>
+        <key>Crashed</key>
+        <true/>
+        </dict>
+    <key>EnablePressuredExit</key>
+    <false/>
+    <key>EnableTransactions</key>
+    <false/>
+    <key>POSIXSpawnType</key><!-- <rdar://problem/9565367> -->
+    <string>Interactive</string>
+
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.fairplayd</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>fairplayd</string>
+
+</dict>
+</plist>

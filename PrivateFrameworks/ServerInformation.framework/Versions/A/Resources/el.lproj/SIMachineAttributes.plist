@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook με επεξεργαστή Intel Core Duo, διαθέσιμο σε μαύρο ή λευκό.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook με επεξεργαστή Intel Core 2 Duo, διαθέσιμο σε μαύρο ή λευκό.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook με επεξεργαστή Intel Core 2 Duo, διαθέσιμο σε μαύρο ή λευκό.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook με επεξεργαστή Intel Core 2 Duo, διαθέσιμο σε μαύρο ή λευκό.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (αλουμινένιο ενιαίο περίβλημα)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook με Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα τέλη του 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (λευκό, αρχές του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Λευκό MacBook με επεξεργαστή Intel Core 2 Duo που κυκλοφόρησε στις αρχές του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (λευκό, τέλη του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Λευκό MacBook με επεξεργαστή Intel Core 2 Duo και οθόνη LED που κυκλοφόρησε στα τέλη του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (λευκό, μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook με επεξεργαστή Intel Core 2 Duo και λευκό ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12 ιντσών (αρχές του 2015)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core M</string>
+			<key>description</key>
+			<string>MacBook 12 ιντσών με οθόνη Retina, που κυκλοφόρησε στις αρχές του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12 ιντσών (αρχές του 2016)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core m3, διπύρηνος επεξεργαστής Intel Core m5, διπύρηνος επεξεργαστής Intel Core m7</string>
+			<key>description</key>
+			<string>MacBook 12 ιντσών με οθόνη Retina, κυκλοφόρησε στις αρχές του 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook 12 ιντσών (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core m3, διπύρηνος επεξεργαστής Intel Core i5, διπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook με οθόνη Retina 12 ιντσών, που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(Αρχικό)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air με Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air με Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 ιντσών</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 11 ιντσών που κυκλοφόρησε στα τέλη του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 ιντσών</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 13 ιντσών που κυκλοφόρησε στα τέλη του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 ιντσών (μέσα του 2011)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 11 ιντσών που κυκλοφόρησε στα μέσα του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 ιντσών (μέσα του 2011)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 13 ιντσών που κυκλοφόρησε στα μέσα του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 ιντσών (μέσα του 2012)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 11 ιντσών που κυκλοφόρησε στα μέσα του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 ιντσών (μέσα του 2012)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 13 ιντσών που κυκλοφόρησε στα μέσα του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 ιντσών (μέσα του 2013)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 11 ιντσών που κυκλοφόρησε στα μέσα του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 ιντσών (μέσα του 2013)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 13 ιντσών που κυκλοφόρησε στα μέσα του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 11 ιντσών (αρχές του 2015)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 11 ιντσών, κυκλοφόρησε στις αρχές του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air 13 ιντσών (αρχές του 2015)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη 13 ιντσών, κυκλοφόρησε στις αρχές του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (τέλη του 2018)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη Retina και Touch ID, κυκλοφόρησε στα τέλη του 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (μέσα του 2019)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air με οθόνη Retina 13 ιντσών και Touch ID, που κυκλοφόρησε στα μέσα του 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core Duo και οθόνη 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core Duo και οθόνη 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core 2 Duo και οθόνη 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core 2 Duo και οθόνη 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core 2 Duo και οθόνη 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core 2 Duo, οθόνη 15 ή 17 ιντσών και επιφάνεια αφής Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (αλουμινένιο ενιαίο περίβλημα) (τέλη του 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα τέλη του 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (αλουμινένιο ενιαίο περίβλημα) (αρχές του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στις αρχές του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (αλουμινένιο ενιαίο περίβλημα) (μέσα του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (αλουμινένιο ενιαίο περίβλημα) (μέσα του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (αλουμινένιο ενιαίο περίβλημα) (μέσα του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro με Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core i5 ή i7, οθόνη 15 ή 17 ιντσών και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro με επεξεργαστή Intel Core i5 ή i7, οθόνη 15 ή 17 ιντσών και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με επεξεργαστή Intel Core 2 Duo και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 ιντσών (αρχές του 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με διπύρηνο επεξεργαστή Intel Core i5 ή i7 και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στις αρχές του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 ιντσών (αρχές του 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με τετραπύρηνο επεξεργαστή Intel Core i7 και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στις αρχές του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17 ιντσών (αρχές του 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 17 ιντσών με τετραπύρηνο επεξεργαστή Intel Core i7 και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στις αρχές του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15 ιντσών (μέσα του 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με διπύρηνο επεξεργαστή Intel Core i7 και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13 ιντσών (μέσα του 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με διπύρηνο επεξεργαστή Intel Core i5 ή i7 και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα μέσα του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro με οθόνη Retina, Intel Core i7, 15 ιντσών (μέσα του 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina, διπύρηνο επεξεργαστή Intel Core i7 και αλουμινένιο ενιαίο περίβλημα, κυκλοφόρησε στα μέσα του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro με οθόνη Retina, Intel Core i5, Intel Core i7, 13 ιντσών (τέλη του 2012)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με οθόνη Retina, διπύρηνο επεξεργαστή Intel Core i5 ή i7 και αλουμινένιο ενιαίο περίβλημα, κυκλοφόρησε στα τέλη του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με οθόνη Retina (τέλη του 2013)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με οθόνη Retina και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina (τέλη του 2013)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina και αλουμινένιο ενιαίο περίβλημα που κυκλοφόρησε στα τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina και αυτόνομη κάρτα γραφικών NVIDIA (τέλη του 2013).</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina και αλουμινένιο ενιαίο περίβλημα, με αυτόνομη κάρτα γραφικών NVIDIA, που κυκλοφόρησε στα τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina (μέσα του 2015)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina και αλουμινένιο ενιαίο περίβλημα, κυκλοφόρησε στα μέσα του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina (μέσα του 2015)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με οθόνη Retina και αλουμινένιο ενιαίο περίβλημα, με αυτόνομη κάρτα γραφικών AMD, που κυκλοφόρησε στα μέσα του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με οθόνη Retina (αρχές του 2015)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με οθόνη Retina και αλουμινένιο ενιαίο περίβλημα, κυκλοφόρησε στις αρχές του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 (τέλη του 2016)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3, που κυκλοφόρησε στα τέλη του 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 και Touch ID (τέλη 2016)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 και Touch ID, που κυκλοφόρησε στα τέλη του 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με Thunderbolt 3 και Touch ID (τέλη 2016)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με Thunderbolt 3 και Touch ID, που κυκλοφόρησε στα τέλη του 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3, που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 και Touch ID (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 και Touch ID, που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με Thunderbolt 3 και Touch ID (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με Thunderbolt 3 και Touch ID, που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 15 ιντσών με Thunderbolt 3 και Touch ID (μέσα του 2018)</string>
+			<key>processor</key>
+			<string>Εξαπύρηνος επεξεργαστής Intel Core i7, εξαπύρηνος επεξεργαστής Intel Core i9</string>
+			<key>description</key>
+			<string>MacBook Pro 15 ιντσών με Thunderbolt 3 και Touch ID, που κυκλοφόρησε στα μέσα του 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 και Touch ID (μέσα του 2018)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro 13 ιντσών με Thunderbolt 3 και Touch ID, που κυκλοφόρησε στα μέσα του 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (μέσα του 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Επιτραπέζιος πύργος (αλουμινένιο περίβλημα).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (μέσα του 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Επιτραπέζιος πύργος (αλουμινένιο περίβλημα).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (αρχές του 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Επιτραπέζιος πύργος (αλουμινένιο περίβλημα).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (αρχές του 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Επιτραπέζιος πύργος (αλουμινένιο περίβλημα).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (αρχές του 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Επιτραπέζιος πύργος (αλουμινένιο περίβλημα) που κυκλοφόρησε στις αρχές του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Επιτραπέζιος πύργος (αλουμινένιο περίβλημα) που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (τέλη του 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Επιτραπέζιο περίβλημα Pro που κυκλοφόρησε τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (αρχές του 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Επιτραπέζιο Mac μικρού αποτυπώματος με επεξεργαστή Intel Core 2 Duo, Intel Core Duo ή Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (μέσα του 2007)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Επιτραπέζιο Mac μικρού αποτυπώματος με επεξεργαστή Intel Core 2 Duo, Intel Core Duo ή Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (αρχές του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini με NVIDIA GeForce 9400M, κυκλοφόρησε στις αρχές του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini με NVIDIA GeForce 320M, κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (μέσα του 2011) με Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini με διπύρηνο επεξεργαστή Intel i5 και Intel HD Graphics 3000, κυκλοφόρησε στα μέσα του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (μέσα του 2011) με AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini με διπύρηνο επεξεργαστή Intel i5 ή i7 και AMD Radeon HD 6630M, κυκλοφόρησε στα μέσα του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini server (μέσα του 2011)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini server με διπύρηνο επεξεργαστή i7 και Intel HD Graphics 3000, κυκλοφόρησε στα μέσα του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (τέλη του 2012)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini με διπύρηνο επεξεργαστή i5 και κάρτα γραφικών Intel HD Graphics 4000, κυκλοφόρησε στα τέλη του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (τέλη του 2012)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini με τετραπύρηνο επεξεργαστή i7 και κάρτα γραφικών Intel HD Graphics 4000, κυκλοφόρησε στα τέλη του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (τέλη του 2014)</string>
+			<key>processor</key>
+			<string>Διπύρηνος Intel Core i5, διπύρηνος Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini με διπύρηνο επεξεργαστή Intel και ενσωματωμένη κάρτα γραφικών, κυκλοφόρησε στα τέλη του 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (τέλη του 2018)</string>
+			<key>processor</key>
+			<string>Επεξεργαστής Intel 8ης γενιάς (τετραπύρηνος Core i3, εξαπύρηνος Core i5, εξαπύρηνος Core i7)</string>
+			<key>description</key>
+			<string>Mac mini με επεξεργαστή Intel 8ης γενιάς και κάρτα γραφικών Intel UHD Graphics 630, κυκλοφόρησε στα τέλη του 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Φορητός υπολογιστής σε μαύρη πλαστική και ελαστική θήκη με λαξευμένες πλευρές.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό, ανοιχτόχρωμο φορητό τύπου «καλύμματος» με ενσωματωμένη λαβή και μεταγενέστερα μοντέλα σε ασημένια και λευκά πλαστικά περιβλήματα και επίπεδη οθόνη 12 ή 14 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Λευκά iBook με επεξεργαστή G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Λευκά iBook με επεξεργαστή G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Λευκά iBook με επεξεργαστή G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Περιλαμβάνει το αρχικό περίβλημα λεπτού προφίλ από τιτάνιο με επίπεδη οθόνη 15 ιντσών και μεταγενέστερα μοντέλα σε περίβλημα αλουμινίου με οθόνη 12, 15 ή 17 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ μπλε και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ μπλε και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιο Mac G4 μικρού αποτυπώματος που συνδέεται σε οποιαδήποτε σχεδόν οθόνη LCD ή VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιο Mac G4 μικρού αποτυπώματος που συνδέεται σε οποιαδήποτε σχεδόν οθόνη LCD ή VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ αλουμινένιου πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ αλουμινένιου πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 με επίπεδη οθόνη</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα», η οποία αρχικά περιλάμβανε πλαστικό μπλε και λευκό περίβλημα και αργότερα αρκετές παραλλαγές για να επιλέξετε.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα», η οποία αρχικά περιλάμβανε πλαστικό μπλε και λευκό περίβλημα και αργότερα αρκετές παραλλαγές για να επιλέξετε.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ γκρίζου και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ γκρίζου και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ γκρίζου και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ γκρίζου και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ γκρίζου και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ γκρίζου και λευκού λαξευμένου πλαστικού πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα», η οποία αρχικά περιλάμβανε πλαστικό μπλε και λευκό περίβλημα και αργότερα αρκετές παραλλαγές για να επιλέξετε.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα» με βάση σε σχήμα αψίδας και επίπεδη οθόνη 15, 17 ή 20 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα» με ενσωματωμένη επίπεδη οθόνη CRT σε στρογγυλεμένο περίβλημα που εξοικονομεί χώρο.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα» με βάση σε σχήμα αψίδας και επίπεδη οθόνη 15, 17 ή 20 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε μορφή κύβου από διαφανές πλαστικό.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε μορφή κύβου από διαφανές πλαστικό.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα» με βάση σε σχήμα αψίδας και επίπεδη οθόνη 15, 17 ή 20 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα» με βάση σε σχήμα αψίδας και επίπεδη οθόνη 15, 17 ή 20 ιντσών.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Σχεδίαση «όλα σε ένα» με ενσωματωμένη επίπεδη οθόνη CRT σε στρογγυλεμένο περίβλημα που εξοικονομεί χώρο.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ αλουμινένιου πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ αλουμινένιου πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac G5 με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Επιτραπέζιος υπολογιστής σε στιλ αλουμινένιου πύργου.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Διακομιστής G4 προσαρτημένος σε ράφι (rack) με μονάδα φόρτωσης οπτικών δίσκων με συρτάρι ή υποδοχή και τέσσερις βάσεις επέκτασης, ή μοντέλο κόμβου συμπλέγματος (cluster-node) G4 με μία βάση επέκτασης.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Διακομιστής G4 προσαρτημένος σε ράφι (rack) με μονάδα φόρτωσης οπτικών δίσκων με συρτάρι ή υποδοχή και τέσσερις βάσεις επέκτασης, ή μοντέλο κόμβου συμπλέγματος (cluster-node) G4 με μία βάση επέκτασης.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Υπολογιστής διακομιστή προσαρτημένος σε ράφι (rack) βασισμένος σε G5 με μονάδα φόρτωσης δίσκων CD ή DVD με συρτάρι ή υποδοχή και τρεις βάσεις επέκτασης, ή το μοντέλο κόμβου συμπλέγματος (cluster-node) χωρίς βάσεις επέκτασης.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (τέλη του 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 Series</string>
+			<key>description</key>
+			<string>Διακομιστής προσαρτημένος σε ράφι (rack) βασισμένος σε Intel Xeon 5100 Series που κυκλοφόρησε στα τέλη του 2006.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (αρχές του 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 Series</string>
+			<key>description</key>
+			<string>Διακομιστής προσαρτημένος σε ράφι (rack) βασισμένος σε Intel Xeon 5400 Series που κυκλοφόρησε στις αρχές του 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (αρχές του 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 Series</string>
+			<key>description</key>
+			<string>Διακομιστής προσαρτημένος σε ράφι (rack) βασισμένος σε Intel Xeon 5500 Series που κυκλοφόρησε στις αρχές του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core Duo με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac Intel Core 2 Duo με επίπεδη οθόνη.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (αλουμινένιο περίβλημα) (μέσα του 2007)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac 20 ή 24 ιντσών με επίπεδη οθόνη (αλουμινένιο περίβλημα) και επεξεργαστή Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (αλουμινένιο περίβλημα) (αρχές του 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac 20 ή 24 ιντσών με επίπεδη οθόνη (αλουμινένιο περίβλημα) και επεξεργαστή Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (αλουμινένιο περίβλημα) (αρχές του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac 20 ή 24 ιντσών με επίπεδη οθόνη (αλουμινένιο περίβλημα) και επεξεργαστή Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (ευρεία οθόνη, τέλη του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac 21,5 ή 27 ιντσών με ευρεία οθόνη LED που κυκλοφόρησε στα τέλη του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (ευρείας οθόνης, τέλη του 2009)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 ιντσών με τετραπύρηνο επεξεργαστή και ευρεία οθόνη LED που κυκλοφόρησε στα τέλη του 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη LED που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (μέσα του 2010)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 ιντσών με ευρεία οθόνη LED που κυκλοφόρησε στα μέσα του 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (αρχές του 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με Thunderbolt που κυκλοφόρησε στις αρχές του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (αρχές του 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 ιντσών με Thunderbolt που κυκλοφόρησε στις αρχές του 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (τέλη του 2012)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη LED οπίσθιου φωτισμού, κυκλοφόρησε στα τέλη του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (τέλη του 2012)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 ιντσών με ευρεία οθόνη LED οπίσθιου φωτισμού, κυκλοφόρησε στα τέλη του 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (αρχές του 2013)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i3</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη LED οπίσθιου φωτισμού, κυκλοφόρησε στις αρχές του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (τέλη του 2013)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη LED οπίσθιου φωτισμού, κυκλοφόρησε στα τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (τέλη του 2013)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac με ευρεία οθόνη LED 27 ιντσών οπίσθιου φωτισμού που κυκλοφόρησε στα τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (τέλη του 2013)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i3</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη LED οπίσθιου φωτισμού, κυκλοφόρησε στα τέλη του 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (μέσα του 2014)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i5</string>
+			<key>description</key>
+			<string>iMac με ευρεία οθόνη LED 21,5 ιντσών οπίσθιου φωτισμού που κυκλοφόρησε στα μέσα του 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 ιντσών iMac (τέλη του 2014)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac με ευρεία οθόνη LED 27 ιντσών οπίσθιου φωτισμού που κυκλοφόρησε στα τέλη του 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (τέλη του 2015)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i5</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη LED οπίσθιου φωτισμού, κυκλοφόρησε στα τέλη του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (τέλη του 2015)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με ευρεία οθόνη ή οθόνη Retina 4K, κυκλοφόρησε στα τέλη του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (τέλη του 2015)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5, τετραπύρηνος επεξεργαστής Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 ιντσών με ευρεία οθόνη ή οθόνη Retina 5K, κυκλοφόρησε στα τέλη του 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Διπύρηνος επεξεργαστής Intel Core i5</string>
+			<key>description</key>
+			<string>iMac με ευρεία οθόνη 21,5 ιντσών, που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με οθόνη Retina 4K που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (μέσα του 2017)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac με οθόνη Retina 5K 27 ιντσών, που κυκλοφόρησε στα μέσα του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 27 ιντσών (αρχές του 2019)</string>
+			<key>processor</key>
+			<string>Εξαπύρηνος επεξεργαστής Intel Core i5, οκταπύρηνος επεξεργαστής Intel Core i9</string>
+			<key>description</key>
+			<string>iMac με οθόνη Retina 5K 27 ιντσών, που κυκλοφόρησε στις αρχές του 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac 21,5 ιντσών (αρχές του 2019)</string>
+			<key>processor</key>
+			<string>Τετραπύρηνος επεξεργαστής Intel Core i3, εξαπύρηνος επεξεργαστής Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac 21,5 ιντσών με οθόνη Retina 4K που κυκλοφόρησε στις αρχές του 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (τέλη του 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro με επεξεργαστή Xeon W και κάρτα γραφικών Radeon Pro Vega, που κυκλοφόρησε στα τέλη του 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

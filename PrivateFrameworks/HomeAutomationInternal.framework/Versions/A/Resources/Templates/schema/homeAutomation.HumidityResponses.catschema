@@ -1,0 +1,20 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.HumidityResponses
+extends: homeAutomation.NumericEntityResponses
+
+properties:
+    lowResponses:
+        type: homeAutomation.HumidityResponses
+        optional: no
+        description: A collection of responses that are in low humidity
+    normalResponses:
+        type: homeAutomation.HumidityResponses
+        optional: no
+        description: A collection of responses that are in normal humidity
+    highResponses:
+        type: homeAutomation.HumidityResponses
+        optional: no
+        description: A collection of responses that are in high humidity
+    
+

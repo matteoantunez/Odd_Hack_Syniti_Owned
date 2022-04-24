@@ -1,0 +1,578 @@
+{
+    "supportedLanguages" : ["swift"],
+    "contexts": {
+        "(Int,Int,Bool)->(Float)" : {
+          "inParameterNames" : [
+            "frameCount",
+            "frameNumber",
+            "random"
+          ],
+          "uid" : "F8C1053E-5537-43D5-A50F-2CBA2D5D7DBE",
+          "metadataDict" : {
+            "name" : { "keyName" : "name", "valueType" : "String", "name" : "SetTextureFrame" },
+            "showInParameterDefaultValues" : { "keyName" : "showInParameterDefaultValues",  "valueType" : "StringArray",  "showInParameterDefaultValues" : ["*"] },
+            "frameCount.defaultValue" : { "defaultValue" : 1, "keyName" : "defaultValue", "valueType" : "Int" },
+            "frameNumber.defaultValue" : { "defaultValue" : 0, "keyName" : "defaultValue", "valueType" : "Int" },
+            "random.defaultValue" : { "defaultValue" : false, "keyName" : "defaultValue", "valueType" : "Bool" }
+          },
+          "contextExitMap" : {
+            "SetTextureFrame" : {
+              "inParameterTypes" : [
+                "Float"
+              ],
+              "inParameterNames" : [
+                "frame"
+              ],
+              "uid" : "SetTextureFrame",
+              "metadataDict" : {
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    205,
+                    95
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "SetTextureFrame (Outputs)"
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "SetTextureFrame"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    100.14221954345703,
+                    962.1285400390625
+                  ]
+                }
+              }
+            }
+          },
+          "contextEntryMap" : {
+            "SetTextureFrame" : {
+              "outParameterNames" : [
+                "frameCount",
+                "frameNumber",
+                "Random"
+              ],
+              "uid" : "SetTextureFrame",
+              "outParameterTypes" : [
+                "Int",
+                "Int",
+                "Bool"
+              ],
+              "metadataDict" : {
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    194,
+                    135
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "SetTextureFrame (Inputs)"
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "SetTextureFrame"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -1194.4520263671875,
+                    779.97222900390625
+                  ]
+                }
+              }
+            }
+          },
+          "snippets" : {
+            "Add_67" : {
+              "snippetName" : "Add",
+              "snippetSignature" : "(Int,Int)->(Int)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Add"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -455.46826171875,
+                    822.082275390625
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    120,
+                    67
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Add (Int)"
+                },
+                "b.defaultValue" : {
+                  "keyName" : "b.defaultValue",
+                  "valueType" : "Int",
+                  "b.defaultValue" : 1
+                },
+                "a.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Int",
+                  "defaultValue" : 0
+                }
+              }
+            },
+            "Div_47" : {
+              "snippetName" : "Div",
+              "snippetSignature" : "(Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    70,
+                    67
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "b.defaultValue" : {
+                  "keyName" : "b.defaultValue",
+                  "valueType" : "Float",
+                  "b.defaultValue" : 1
+                },
+                "a.defaultValue" : {
+                  "keyName" : "a.defaultValue",
+                  "valueType" : "Float",
+                  "a.defaultValue" : 0
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Div"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -278.74111938476562,
+                    981.71881103515625
+                  ]
+                }
+              }
+            },
+            "Sub_49" : {
+              "snippetName" : "Sub",
+              "snippetSignature" : "(Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Sub"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -139.66664123535156,
+                    985.86328125
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    105,
+                    67
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Sub (Float)"
+                },
+                "b.defaultValue" : {
+                  "keyName" : "b.defaultValue",
+                  "valueType" : "Float",
+                  "b.defaultValue" : 0.030999999493360519
+                },
+                "a.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Float",
+                  "defaultValue" : 0
+                }
+              }
+            },
+            "Mul_60" : {
+              "snippetName" : "Mul",
+              "snippetSignature" : "(Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mul"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -459.65606689453125,
+                    1122.872802734375
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    120,
+                    67
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Mult (Float)"
+                },
+                "b.defaultValue" : {
+                  "keyName" : "b.defaultValue",
+                  "valueType" : "Float",
+                  "b.defaultValue" : 2
+                },
+                "a.defaultValue" : {
+                  "keyName" : "a.defaultValue",
+                  "valueType" : "Float",
+                  "a.defaultValue" : 0
+                }
+              }
+            },
+            "Div_50" : {
+              "snippetName" : "Div",
+              "snippetSignature" : "(Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    120,
+                    67
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "b.defaultValue" : {
+                  "keyName" : "b.defaultValue",
+                  "valueType" : "Float",
+                  "b.defaultValue" : 32
+                },
+                "a.defaultValue" : {
+                  "keyName" : "a.defaultValue",
+                  "valueType" : "Float",
+                  "a.defaultValue" : 1
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Div"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -297.30621337890625,
+                    1101.7711181640625
+                  ]
+                }
+              }
+            },
+            "RandomInRange_0" : {
+              "snippetName" : "RandomInRange",
+              "snippetSignature" : "(Int,Int)->(Int)",
+              "libraryName" : "Random",
+              "metadataDict" : {
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    142,
+                    67
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "inMax.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Int",
+                  "defaultValue" : 0
+                },
+                "inMin.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Int",
+                  "defaultValue" : 0
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "RandomInRange"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -823.05682373046875,
+                    755.9248046875
+                  ]
+                }
+              }
+            },
+            "Select_65" : {
+              "snippetName" : "Select",
+              "snippetSignature" : "(Int,Int,Bool)->(Int)",
+              "libraryName" : "Logic",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Select"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -638.94976806640625,
+                    813.158935546875
+                  ]
+                },
+                "showInParameterDefaultValues" : {
+                  "keyName" : "showInParameterDefaultValues",
+                  "valueType" : "StringArray",
+                  "showInParameterDefaultValues" : [
+                    "*"
+                  ]
+                },
+                "size" : {
+                  "keyName" : "size",
+                  "valueType" : "Float2",
+                  "size" : [
+                    148,
+                    87
+                  ]
+                },
+                "cond.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Bool",
+                  "defaultValue" : false
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Select (cond ? a : b)"
+                },
+                "b.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Int",
+                  "defaultValue" : 0
+                },
+                "a.defaultValue" : {
+                  "keyName" : "defaultValue",
+                  "valueType" : "Int",
+                  "defaultValue" : 0
+                }
+              }
+            }
+          },
+          "outParameterNames" : [
+            "frame"
+          ],
+          "idx" : 0,
+          "assignments" : [
+            {
+              "baseUID" : "Add_67",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Select_65",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Div_47",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Add_67",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Div_47",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "SetTextureFrame",
+              "parameterName" : "frameCount",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Div_50",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mul_60",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mul_60",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "SetTextureFrame",
+              "parameterName" : "frameCount",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "SetTextureFrame",
+              "parameterName" : "frame",
+              "baseType" : "ContextExit"
+            },
+            {
+              "baseUID" : "Sub_49",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "RandomInRange_0",
+              "parameterName" : "inMax",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "SetTextureFrame",
+              "parameterName" : "frameCount",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Select_65",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "RandomInRange_0",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Select_65",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "SetTextureFrame",
+              "parameterName" : "frameNumber",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Select_65",
+              "parameterName" : "cond",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "SetTextureFrame",
+              "parameterName" : "Random",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Sub_49",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Div_47",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Sub_49",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Div_50",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            }
+          ],
+          "outParameterTypes" : [
+            "Float"
+          ],
+          "inParameterTypes" : [
+            "Int",
+            "Int",
+            "Bool"
+          ]
+        }
+    }
+}

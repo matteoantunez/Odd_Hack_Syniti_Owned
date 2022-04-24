@@ -1,0 +1,556 @@
+//===-- metal_packed_vector -----------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_PACKED_VECTOR_H
+#define __METAL_PACKED_VECTOR_H
+
+namespace metal {
+
+template <typename T, int N> struct packed_vec {
+  T data[N];
+public:
+
+  // Default constructor.
+  METAL_FUNC packed_vec() thread { } 
+  // Constructor (packed_vec <- vec).
+  METAL_FUNC packed_vec(vec<T,N> v) thread { 
+    for (int i = 0; i < N; ++i)
+      data[i] = v[i];
+  }
+  // Constructor (packed_vec <- T)
+  METAL_FUNC packed_vec(T s) thread : packed_vec(vec<T,N>(s)) {}
+  // Default constructor.
+  METAL_FUNC packed_vec() device { } 
+  // Constructor (packed_vec <- vec).
+  METAL_FUNC packed_vec(vec<T,N> v) device { 
+    for (int i = 0; i < N; ++i)
+      data[i] = v[i];
+  }
+  // Constructor (packed_vec <- T)
+  METAL_FUNC packed_vec(T s) device : packed_vec(vec<T,N>(s)) {}
+  // Default constructor.
+  METAL_FUNC packed_vec() constant { } 
+  // Constructor (packed_vec <- vec).
+  METAL_FUNC packed_vec(vec<T,N> v) constant { 
+    for (int i = 0; i < N; ++i)
+      data[i] = v[i];
+  }
+  // Constructor (packed_vec <- T)
+  METAL_FUNC packed_vec(T s) constant : packed_vec(vec<T,N>(s)) {}
+  // Default constructor.
+  METAL_FUNC packed_vec() threadgroup { } 
+  // Constructor (packed_vec <- vec).
+  METAL_FUNC packed_vec(vec<T,N> v) threadgroup { 
+    for (int i = 0; i < N; ++i)
+      data[i] = v[i];
+  }
+  // Constructor (packed_vec <- T)
+  METAL_FUNC packed_vec(T s) threadgroup : packed_vec(vec<T,N>(s)) {}
+#if defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  // Default constructor.
+  METAL_FUNC packed_vec() threadgroup_imageblock { } 
+  // Constructor (packed_vec <- vec).
+  METAL_FUNC packed_vec(vec<T,N> v) threadgroup_imageblock { 
+    for (int i = 0; i < N; ++i)
+      data[i] = v[i];
+  }
+  // Constructor (packed_vec <- T)
+  METAL_FUNC packed_vec(T s) threadgroup_imageblock : packed_vec(vec<T,N>(s)) {}
+#endif // defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+
+  // Cast operator (vec <- packed_vec).
+  METAL_FUNC operator vec<T,N> () const thread {
+    vec<T,N> tVec;
+    for (int i = 0; i < N; ++i)
+      tVec[i] = data[i];
+    return tVec;
+  }
+  // Cast operator (vec <- packed_vec).
+  METAL_FUNC operator vec<T,N> () const device {
+    vec<T,N> tVec;
+    for (int i = 0; i < N; ++i)
+      tVec[i] = data[i];
+    return tVec;
+  }
+  // Cast operator (vec <- packed_vec).
+  METAL_FUNC operator vec<T,N> () const constant {
+    vec<T,N> tVec;
+    for (int i = 0; i < N; ++i)
+      tVec[i] = data[i];
+    return tVec;
+  }
+  // Cast operator (vec <- packed_vec).
+  METAL_FUNC operator vec<T,N> () const threadgroup {
+    vec<T,N> tVec;
+    for (int i = 0; i < N; ++i)
+      tVec[i] = data[i];
+    return tVec;
+  }
+#if defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  // Cast operator (vec <- packed_vec).
+  METAL_FUNC operator vec<T,N> () const threadgroup_imageblock {
+    vec<T,N> tVec;
+    for (int i = 0; i < N; ++i)
+      tVec[i] = data[i];
+    return tVec;
+  }
+#endif // defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+
+  // Access operators.
+  METAL_FUNC const T operator [] (int index) const thread { return data[index]; }
+  // Access operators.
+  METAL_FUNC const T operator [] (int index) const device { return data[index]; }
+  // Access operators.
+  METAL_FUNC const T operator [] (int index) const constant { return data[index]; }
+  // Access operators.
+  METAL_FUNC const T operator [] (int index) const threadgroup { return data[index]; }
+#if defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  // Access operators.
+  METAL_FUNC const T operator [] (int index) const threadgroup_imageblock { return data[index]; }
+#endif // defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+
+  // Access operators.
+  METAL_FUNC thread T& operator [] (int index) thread { return data[index]; }
+  // Access operators.
+  METAL_FUNC device T& operator [] (int index) device { return data[index]; }
+  // Access operators.
+  METAL_FUNC threadgroup T& operator [] (int index) threadgroup { return data[index]; }
+#if defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  // Access operators.
+  METAL_FUNC threadgroup_imageblock T& operator [] (int index) threadgroup_imageblock { return data[index]; }
+#endif // defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+
+  METAL_FUNC thread packed_vec<T,N>& operator += (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) + v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator += (T s) thread {
+    return *this += vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator += (packed_vec<T,N> pv) thread {
+    return *this += vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator -= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) - v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator -= (T s) thread {
+    return *this -= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator -= (packed_vec<T,N> pv) thread {
+    return *this -= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator *= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) * v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator *= (T s) thread {
+    return *this *= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator *= (packed_vec<T,N> pv) thread {
+    return *this *= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator /= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) / v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator /= (T s) thread {
+    return *this /= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator /= (packed_vec<T,N> pv) thread {
+    return *this /= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator %= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) % v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator %= (T s) thread {
+    return *this %= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator %= (packed_vec<T,N> pv) thread {
+    return *this %= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator >>= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) >> v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator >>= (T s) thread {
+    return *this >>= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator >>= (packed_vec<T,N> pv) thread {
+    return *this >>= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator <<= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) << v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator <<= (T s) thread {
+    return *this <<= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator <<= (packed_vec<T,N> pv) thread {
+    return *this <<= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator &= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) & v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator &= (T s) thread {
+    return *this &= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator &= (packed_vec<T,N> pv) thread {
+    return *this &= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator |= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) | v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator |= (T s) thread {
+    return *this |= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator |= (packed_vec<T,N> pv) thread {
+    return *this |= vec<T,N>(pv);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator ^= (vec<T,N> v) thread {
+    return *this = vec<T,N>(*this) ^ v;
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator ^= (T s) thread {
+    return *this ^= vec<T,N>(s);
+  }
+  METAL_FUNC thread packed_vec<T,N>& operator ^= (packed_vec<T,N> pv) thread {
+    return *this ^= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator += (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) + v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator += (T s) device {
+    return *this += vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator += (packed_vec<T,N> pv) device {
+    return *this += vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator -= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) - v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator -= (T s) device {
+    return *this -= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator -= (packed_vec<T,N> pv) device {
+    return *this -= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator *= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) * v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator *= (T s) device {
+    return *this *= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator *= (packed_vec<T,N> pv) device {
+    return *this *= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator /= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) / v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator /= (T s) device {
+    return *this /= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator /= (packed_vec<T,N> pv) device {
+    return *this /= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator %= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) % v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator %= (T s) device {
+    return *this %= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator %= (packed_vec<T,N> pv) device {
+    return *this %= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator >>= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) >> v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator >>= (T s) device {
+    return *this >>= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator >>= (packed_vec<T,N> pv) device {
+    return *this >>= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator <<= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) << v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator <<= (T s) device {
+    return *this <<= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator <<= (packed_vec<T,N> pv) device {
+    return *this <<= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator &= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) & v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator &= (T s) device {
+    return *this &= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator &= (packed_vec<T,N> pv) device {
+    return *this &= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator |= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) | v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator |= (T s) device {
+    return *this |= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator |= (packed_vec<T,N> pv) device {
+    return *this |= vec<T,N>(pv);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator ^= (vec<T,N> v) device {
+    return *this = vec<T,N>(*this) ^ v;
+  }
+  METAL_FUNC device packed_vec<T,N>& operator ^= (T s) device {
+    return *this ^= vec<T,N>(s);
+  }
+  METAL_FUNC device packed_vec<T,N>& operator ^= (packed_vec<T,N> pv) device {
+    return *this ^= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator += (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) + v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator += (T s) threadgroup {
+    return *this += vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator += (packed_vec<T,N> pv) threadgroup {
+    return *this += vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator -= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) - v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator -= (T s) threadgroup {
+    return *this -= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator -= (packed_vec<T,N> pv) threadgroup {
+    return *this -= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator *= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) * v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator *= (T s) threadgroup {
+    return *this *= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator *= (packed_vec<T,N> pv) threadgroup {
+    return *this *= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator /= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) / v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator /= (T s) threadgroup {
+    return *this /= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator /= (packed_vec<T,N> pv) threadgroup {
+    return *this /= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator %= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) % v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator %= (T s) threadgroup {
+    return *this %= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator %= (packed_vec<T,N> pv) threadgroup {
+    return *this %= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator >>= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) >> v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator >>= (T s) threadgroup {
+    return *this >>= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator >>= (packed_vec<T,N> pv) threadgroup {
+    return *this >>= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator <<= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) << v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator <<= (T s) threadgroup {
+    return *this <<= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator <<= (packed_vec<T,N> pv) threadgroup {
+    return *this <<= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator &= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) & v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator &= (T s) threadgroup {
+    return *this &= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator &= (packed_vec<T,N> pv) threadgroup {
+    return *this &= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator |= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) | v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator |= (T s) threadgroup {
+    return *this |= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator |= (packed_vec<T,N> pv) threadgroup {
+    return *this |= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator ^= (vec<T,N> v) threadgroup {
+    return *this = vec<T,N>(*this) ^ v;
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator ^= (T s) threadgroup {
+    return *this ^= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup packed_vec<T,N>& operator ^= (packed_vec<T,N> pv) threadgroup {
+    return *this ^= vec<T,N>(pv);
+  }
+#if defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator += (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) + v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator += (T s) threadgroup_imageblock {
+    return *this += vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator += (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this += vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator -= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) - v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator -= (T s) threadgroup_imageblock {
+    return *this -= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator -= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this -= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator *= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) * v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator *= (T s) threadgroup_imageblock {
+    return *this *= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator *= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this *= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator /= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) / v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator /= (T s) threadgroup_imageblock {
+    return *this /= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator /= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this /= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator %= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) % v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator %= (T s) threadgroup_imageblock {
+    return *this %= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator %= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this %= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator >>= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) >> v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator >>= (T s) threadgroup_imageblock {
+    return *this >>= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator >>= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this >>= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator <<= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) << v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator <<= (T s) threadgroup_imageblock {
+    return *this <<= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator <<= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this <<= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator &= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) & v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator &= (T s) threadgroup_imageblock {
+    return *this &= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator &= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this &= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator |= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) | v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator |= (T s) threadgroup_imageblock {
+    return *this |= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator |= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this |= vec<T,N>(pv);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator ^= (vec<T,N> v) threadgroup_imageblock {
+    return *this = vec<T,N>(*this) ^ v;
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator ^= (T s) threadgroup_imageblock {
+    return *this ^= vec<T,N>(s);
+  }
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator ^= (packed_vec<T,N> pv) threadgroup_imageblock {
+    return *this ^= vec<T,N>(pv);
+  }
+#endif // defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+
+  METAL_FUNC thread packed_vec<T,N>& operator ++ () thread {
+    return *this += vec<T,N>(T(1));
+  } 
+  METAL_FUNC thread packed_vec<T,N>& operator -- () thread {
+    return *this -= vec<T,N>(T(1));
+  } 
+  METAL_FUNC packed_vec<T,N> operator ++ (int) thread {
+    packed_vec<T,N> result = *this;
+    ++(*this);
+    return result;
+  } 
+  METAL_FUNC packed_vec<T,N> operator -- (int) thread {
+    packed_vec<T,N> result = *this;
+    --(*this);
+    return result;
+  } 
+  METAL_FUNC device packed_vec<T,N>& operator ++ () device {
+    return *this += vec<T,N>(T(1));
+  } 
+  METAL_FUNC device packed_vec<T,N>& operator -- () device {
+    return *this -= vec<T,N>(T(1));
+  } 
+  METAL_FUNC packed_vec<T,N> operator ++ (int) device {
+    packed_vec<T,N> result = *this;
+    ++(*this);
+    return result;
+  } 
+  METAL_FUNC packed_vec<T,N> operator -- (int) device {
+    packed_vec<T,N> result = *this;
+    --(*this);
+    return result;
+  } 
+  METAL_FUNC threadgroup packed_vec<T,N>& operator ++ () threadgroup {
+    return *this += vec<T,N>(T(1));
+  } 
+  METAL_FUNC threadgroup packed_vec<T,N>& operator -- () threadgroup {
+    return *this -= vec<T,N>(T(1));
+  } 
+  METAL_FUNC packed_vec<T,N> operator ++ (int) threadgroup {
+    packed_vec<T,N> result = *this;
+    ++(*this);
+    return result;
+  } 
+  METAL_FUNC packed_vec<T,N> operator -- (int) threadgroup {
+    packed_vec<T,N> result = *this;
+    --(*this);
+    return result;
+  } 
+#if defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator ++ () threadgroup_imageblock {
+    return *this += vec<T,N>(T(1));
+  } 
+  METAL_FUNC threadgroup_imageblock packed_vec<T,N>& operator -- () threadgroup_imageblock {
+    return *this -= vec<T,N>(T(1));
+  } 
+  METAL_FUNC packed_vec<T,N> operator ++ (int) threadgroup_imageblock {
+    packed_vec<T,N> result = *this;
+    ++(*this);
+    return result;
+  } 
+  METAL_FUNC packed_vec<T,N> operator -- (int) threadgroup_imageblock {
+    packed_vec<T,N> result = *this;
+    --(*this);
+    return result;
+  } 
+#endif // defined(__HAVE_THREADGROUP_IMAGEBLOCK__)
+  };
+}
+
+#endif // __METAL_PACKED_VECTOR_H

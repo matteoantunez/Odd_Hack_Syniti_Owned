@@ -1,0 +1,74 @@
+{
+  "layer_shapes" : {
+    "concatOut" : {
+      "k" : 1,
+      "w" : 2,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "appUsageVector" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "concatOutEx" : {
+      "k" : 1,
+      "w" : 2,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "appVectorEx" : {
+      "k" : 100,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 1
+    },
+    "pTTRLogit" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "linearOut" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "appUsageVectorEx" : {
+      "k" : 100,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 1
+    },
+    "usageAdCosineSim" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 1
+    },
+    "pTTR" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "appVector" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    }
+  }
+}

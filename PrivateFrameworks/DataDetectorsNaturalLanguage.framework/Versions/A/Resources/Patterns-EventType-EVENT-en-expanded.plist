@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>come over</string>
+			<string>come by</string>
+			<string>can you come</string>
+			<string>stop by (my|the|for|at)</string>
+			<string>let['’]s meet</string>
+			<string>do you want to meet</string>
+			<string>(can|will) meet you</string>
+			<string>meet me (at|in)</string>
+			<string>see you (there|this afternoon|tonight)</string>
+			<string>come .{0,30} (my|your) (place|home|apartment)</string>
+			<string>invited to</string>
+			<string>invite you</string>
+			<string>(you['’]re|you are) invited</string>
+			<string>save the date</string>
+			<string>let['’]s be all together</string>
+			<string>don['’]t forget to join us for</string>
+			<string>you are registered for</string>
+			<string>come to .{0,25} with (us|me)</string>
+			<string>come with (us|me) (.{0,25} )?to see</string>
+			<string>can you come on</string>
+			<string>please rsvp</string>
+			<string>(can|will) call you</string>
+			<string>doors close at</string>
+			<string>(please|come|feel free to) join (me|us) .{0,15} (on|for|at)</string>
+			<string>join (me|us) for a day</string>
+			<string>(do you|you might) (want to|wanna) join (us|me)</string>
+			<string>(anyone|are you|would you be)( (from|in) this group)? interested in ((going|coming) with (me|us)|joining (me|us))</string>
+			<string>(anyone|are you|would you be)( (from|in) this group)? interested in (exploring|visiting|going to|checking out)</string>
+			<string>the event will be held</string>
+			<string>please open the attachment below to add to your calendar</string>
+			<string>you have been( successfully)? enrolled</string>
+			<string>who['’]s in\?</string>
+			<string>(r u|are you) in\?</string>
+			<string>join us if you are free</string>
+			<string>are you (free|available) (on|at|this|next)</string>
+			<string>can we meet on</string>
+			<string>wondering if anyone was up for</string>
+			<string>(anyone|anybody) up for (this|.{1,10}ing)</string>
+			<string>let['’]s leave at</string>
+			<string>we meet at my place at</string>
+			<string>do you want to go to</string>
+			<string>can we meet</string>
+			<string>are we still on for</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(event confirmation|invitation to|save the date|you(['’]| a)re invited|invitation:|invites you to|you['’]ve been invited to|spotlight on:)</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@ with %2$@</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

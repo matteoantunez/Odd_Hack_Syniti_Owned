@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>annulés?</string>
+	<string>(serais?|sommes|serons) (absent|en congés|en vacances)</string>
+	<string>à consommer de préférence avant le</string>
+	<string>annulee</string>
+	<string>(?&lt;!risque de ne )pas venir</string>
+	<string>annulation(s)</string>
+	<string>expiration</string>
+	<string>périment</string>
+	<string>périme</string>
+	<string>je suis au regret</string>
+	<string>travaille(r)? de la maison</string>
+	<string>(ai|mon) (un )?(rdv|rendez-vous) (.{0,50}) (médecin|dentiste|clinique|hôpital|hopital)</string>
+	<string>péremption</string>
+	<string>merci pour l&apos;invitation mais</string>
+	<string>annul[eé]es?</string>
+	<string>annule(r)?</string>
+	<string>annulation</string>
+	<string>compte[- ]rendu</string>
+	<string>cr réunion</string>
+	<string>newsletter</string>
+	<string>réponse automatique</string>
+	<string>je suis malade</string>
+	<string>je vais rester (.{0,50}) (maison|lit|ma couette)</string>
+	<string>communiqué de presse</string>
+	<string>funéraille(s)?</string>
+	<string>inhumation</string>
+</array>
+</plist>

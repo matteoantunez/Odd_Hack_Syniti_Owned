@@ -1,0 +1,59 @@
+{
+    "Name": "UnlitAlphaCutoutPbr",
+    "OverrideMaterial": "engine:pbrCommon.rematerialdefinition",
+    "Techniques": [
+        {
+            "Name": "OpaqueUnlit",
+            "VertexShader": {
+                "Entry": "vsRealityPbr"
+            },
+            "PixelShader": {
+                "Entry": "fsRealityPbr"
+            },
+            "State" : {
+                "AlphaBlend" : false,
+                "WriteDepth" : true,
+                "DepthCompareFunction" : "Greater",
+                "AlphaToCoverage" : true
+            },
+            "FunctionConstants" : {
+                "EnableIBL"                 : "false",
+                "EnableDynamicLighting"     : "false",
+                "EnableAREnvProbe"          : "false",
+                "EnableLightmap"            : "false",
+                "EnableBaseColorMap"        : "false",
+                "EnableNormalMap"           : "false",
+                "EnableEmissiveMap"         : "true",
+                "EnableAreaLight"           : "false",
+                "EnableRoughnessMap"        : "false",
+                "EnableMetallicMap"         : "false",
+                "EnableAOMap"               : "false",
+                "EnableSpecularMap"         : "false",
+                "EnableTransparency"        : "true",
+                "EnableOpacityMap"          : "true",
+                "EnableOpacityThreshold"    : "true",
+            },
+            "DebugMapping": "PbrDebug"
+        },
+        {
+            "Name": "Shadow",
+            "VertexShader": {
+                "Entry": "vsShadow"
+            },
+            "PixelShader": {
+                "Entry": "fsShadow"
+            },
+            "State" : {
+                "ColorWriteMask" : "None"
+            },
+            "FunctionConstants" : {
+                "EnableAlphaCutoutShadows" : "true",
+                "EnableOpacityMap" : "true"
+            }
+        },
+    ],
+    "TechniqueMapping": {
+        "Opaque": "OpaqueUnlit",
+        "Shadow": "Shadow",
+    }
+}

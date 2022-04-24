@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Services_BluetoothSharing</key>
+	<dict>
+		<key>localizableStrings</key>
+		<array>
+			<dict>
+				<key>comments</key>
+				<string>คำดัชนีที่แปลได้</string>
+				<key>index</key>
+				<string>แชร์, ได้รับ, ตอบรับ, เรียกดู, ไฟล์, แลกเปลี่ยน, บลู, ทูธ</string>
+				<key>title</key>
+				<string>การแชร์บลูทูธ</string>
+			</dict>
+			<dict>
+				<key>comments</key>
+				<string>คำดัชนีที่แปลได้</string>
+				<key>index</key>
+				<string>จับคู่</string>
+				<key>title</key>
+				<string>จำเป็นต้องจับคู่</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("micro-delta-confirmation",function(e){return loadHelper("ShouldDownloadMessageWithClassifier.js")(e,"flight")},function(e){var l=loadHelper("cachedClassifier.js")(e);return loadHelper("delta-micro-skeleton-confirmation.js")(e,l)},"SG86b13c22")]);

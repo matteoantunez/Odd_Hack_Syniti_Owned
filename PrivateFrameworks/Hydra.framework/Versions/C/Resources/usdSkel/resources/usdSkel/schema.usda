@@ -1,0 +1,161 @@
+#usda 1.0
+(
+    """ This file contains a schema for supporting skeletal animations in USD.
+    """
+    subLayers = [
+        @usdGeom/schema.usda@
+    ]
+) 
+
+over "GLOBAL" (
+    customData = {
+        string libraryName       = "usdSkel"
+        string libraryPath       = "pxr/usd/usdSkel"
+
+        dictionary libraryTokens = {
+            dictionary weight = {
+                string     customData = {
+        string className = "Root"
+        
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+}
+
+
+class Skeleton "Skeleton" (
+    inherits = </Boundable>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+
+        string extraIncludes = """
+#include "pxr/usd/usdSkel/topology.h" """
+    }
+) {
+    uniform token[] joints (
+            )
+
+    uniform token[] jointNames (
+            )
+
+    uniform matrix4d[] bindTransforms (
+            )
+    uniform matrix4d[] restTransforms (
+            )
+}
+
+
+class SkelAnimation "SkelAnimation" (
+    inherits = </Typed>
+        customData = {
+        string className = "Animation"
+    }
+) {
+    uniform token[] joints (
+            )
+
+    float3[] translations (
+            )
+    
+    quatf[] rotations (
+            )
+
+    half3[] scales (
+            )
+
+    uniform token[] blendShapes ( 
+             )
+
+    float[] blendShapeWeights (
+            )
+}
+
+
+class PackedJointAnimation "PackedJointAnimation" (
+    inherits = </SkelAnimation>
+    )
+{
+}
+
+class "SkelBindingAPI" (
+    inherits = </APISchemaBase>
+        customData = {
+        string className = "BindingAPI"
+        string extraIncludes = """
+#include "pxr/base/tf/span.h"
+#include "pxr/usd/usdGeom/primvar.h"
+#include "pxr/usd/usdSkel/skeleton.h" """
+    }
+)
+{
+    rel skel:animationSource (
+        customData = {
+            string apiName = "animationSource"
+        }       
+            )
+
+    rel skel:skeleton (
+        customData = {
+            string apiName = "skeleton"
+        }       
+            )
+
+    matrix4d primvars:skel:geomBindTransform (
+        customData = {
+            string apiName = "geomBindTransform"
+        } 
+            )
+
+    uniform token[] skel:joints (
+        customData = {
+            string apiName = "joints"
+        }       
+            )
+
+    int[] primvars:skel:jointIndices (
+        customData = {
+            string apiName = "jointIndices"
+        }       
+            )
+
+    float[] primvars:skel:jointWeights (
+        customData = {
+            string apiName = "jointWeights"
+        }       
+            )
+
+    uniform token[] skel:blendShapes (
+        customData = {
+            string apiName = "blendShapes"
+        }
+            )
+    rel skel:blendShapeTargets (
+        customData = {
+            string apiName= "blendShapeTargets"
+        }
+            )
+}
+
+
+class BlendShape "BlendShape" (
+      inherits = </Typed>
+          customData = {
+        string extraIncludes = """
+#include "pxr/base/tf/span.h"
+#include "pxr/usd/usdSkel/inbetweenShape.h" """
+    }
+)
+{
+    uniform vector3f[] offsets (
+            )
+
+    uniform vector3f[] normalOffsets (
+            )
+
+    uniform int[] pointIndices (
+            )
+}

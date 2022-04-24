@@ -1,0 +1,1 @@
+(function(){return function(t,e){var n,r,a;for(r=0;r<t.price.length&&(!n||!n.exists());r++)if((n=e.getSpan().innerCapture(t.price[r],1)).exists()){var i,s=e.getSpan().isPlain()?t.plainFooter:t.footer;for(a=0;a<s.length;a++)if((i=e.getSpan().next(s[a])).exists()&&i.start_<=n.start_){n=e.getNullSpan();break}}return n}}).call();

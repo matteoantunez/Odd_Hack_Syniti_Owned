@@ -1,0 +1,408 @@
+{
+    "supportedLanguages" : ["swift"],
+    "contexts": {
+        "(Float4,Float4,Float)->(Float4)" : {
+          "inParameterNames" : [
+            "a",
+            "b",
+            "v"
+          ],
+          "uid" : "FF5D409F-C483-4F35-A2A6-E43D5DC1B08E",
+          "metadataDict" : {
+            "name" : {
+              "keyName" : "name",
+              "valueType" : "String",
+              "name" : "MixHLS"
+            },
+            "defaultInParameter" : {  "keyName" : "defaultInParameter",  "valueType" : "String",  "defaultInParameter" : "v"  }
+          },
+          "contextExitMap" : {
+            "MixHLS" : {
+              "inParameterTypes" : [
+                "Float4"
+              ],
+              "inParameterNames" : [
+                "out"
+              ],
+              "uid" : "MixHLS",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "MixHLS (Outputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    1126.563720703125,
+                    -208.17033386230469
+                  ]
+                }
+              }
+            }
+          },
+          "contextEntryMap" : {
+            "MixHLS" : {
+              "outParameterNames" : [
+                "a",
+                "b",
+                "v"
+              ],
+              "uid" : "MixHLS",
+              "outParameterTypes" : [
+                "Float4",
+                "Float4",
+                "Float"
+              ],
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "MixHLS (Inputs)"
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "MixHLS"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -367.41192626953125,
+                    -215.40432739257812
+                  ]
+                }
+              }
+            }
+          },
+          "snippets" : {
+            "Mix_22" : {
+              "snippetName" : "Mix",
+              "snippetSignature" : "(Float4,Float4,Float)->(Float4)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mix"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    323.63504028320312,
+                    -388.34521484375
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Mix (Float4)"
+                }
+              }
+            },
+            "W_25" : {
+              "snippetName" : "W",
+              "snippetSignature" : "(Float4)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "W"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    190.11767578125,
+                    -165.27325439453125
+                  ]
+                }
+              }
+            },
+            "Mix_27" : {
+              "snippetName" : "Mix",
+              "snippetSignature" : "(Float,Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mix"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    408.6649169921875,
+                    21.94196891784668
+                  ]
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Mix (Float)"
+                }
+              }
+            },
+            "Float4_29" : {
+              "snippetName" : "Float4",
+              "snippetSignature" : "(Float3,Float)->(Float4)",
+              "libraryName" : "Constants",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Float4"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    848.825439453125,
+                    -200.71762084960938
+                  ]
+                }
+              }
+            },
+            "RGBtoHSB_20" : {
+              "snippetName" : "RGBtoHSB",
+              "snippetSignature" : "(Float4)->(Float4)",
+              "libraryName" : "Color",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "RGBtoHSB"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -52.144786834716797,
+                    -468.31365966796875
+                  ]
+                }
+              }
+            },
+            "W_26" : {
+              "snippetName" : "W",
+              "snippetSignature" : "(Float4)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "W"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    176.83041381835938,
+                    -89.411827087402344
+                  ]
+                }
+              }
+            },
+            "HSBAtoRGB_0" : {
+              "snippetName" : "HSBAtoRGB",
+              "snippetSignature" : "(Float4)->(Float4)",
+              "libraryName" : "Color",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "HSBAtoRGB"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    550.428466796875,
+                    -289.06201171875
+                  ]
+                }
+              }
+            },
+            "RGBtoHSB_21" : {
+              "snippetName" : "RGBtoHSB",
+              "snippetSignature" : "(Float4)->(Float4)",
+              "libraryName" : "Color",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "RGBtoHSB"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -49.185188293457031,
+                    -381.46435546875
+                  ]
+                }
+              }
+            }
+          },
+          "outParameterNames" : [
+            "out"
+          ],
+          "idx" : 0,
+          "assignments" : [
+            {
+              "baseUID" : "Float4_29",
+              "parameterName" : "w",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_27",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Float4_29",
+              "parameterName" : "xyz",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "HSBAtoRGB_0",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "HSBAtoRGB_0",
+              "parameterName" : "hsba",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_22",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_22",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "RGBtoHSB_20",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_22",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "RGBtoHSB_21",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_22",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "v",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_27",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "W_25",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_27",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "W_26",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Mix_27",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "v",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "out",
+              "baseType" : "ContextExit"
+            },
+            {
+              "baseUID" : "Float4_29",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "RGBtoHSB_20",
+              "parameterName" : "rgb",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "a",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "RGBtoHSB_21",
+              "parameterName" : "rgb",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "b",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "W_25",
+              "parameterName" : "in",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "a",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "W_26",
+              "parameterName" : "in",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "MixHLS",
+              "parameterName" : "b",
+              "baseType" : "ContextEntry"
+            }
+          ],
+          "outParameterTypes" : [
+            "Float4"
+          ],
+          "inParameterTypes" : [
+            "Float4",
+            "Float4",
+            "Float"
+          ]
+        }
+    }
+}

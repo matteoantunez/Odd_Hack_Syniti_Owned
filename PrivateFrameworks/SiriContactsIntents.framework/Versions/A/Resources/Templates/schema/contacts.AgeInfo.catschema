@@ -1,0 +1,28 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.AgeInfo
+
+inputs:
+    age:
+        access_mode: public
+    pastAge:
+        access_mode: public
+    futureAge:
+        access_mode: public
+    requestedYear:
+        access_mode: public
+
+    
+properties:
+    age:
+        type: dialog.Number
+        description: Contact's age. If year was not set in birthday, this remains empty.
+    pastAge:
+        type: dialog.Number
+        description: User's age during a year in the past that the user specified.
+    futureAge:
+        type: dialog.Number
+        description: User's age during a year in the future that the user specified.
+    requestedYear:
+        type: dialog.Number
+        description: Asking for age in this specified year.

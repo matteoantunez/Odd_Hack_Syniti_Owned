@@ -1,0 +1,1 @@
+(function(){function t(t,r,i,e,a,h,n,s){this.airline=t,this.flightNumber=r,this.span=i,this.reference=e,this.departureDate=a,this.arrivalDate=h,this.departureAirport=n,this.arrivalAirport=s}return t.prototype.equals=function(t){return this.flightNumber===t.flightNumber&&this.airline.IATA===t.airline.IATA&&this.departureDate===t.departureDate},t}).call();

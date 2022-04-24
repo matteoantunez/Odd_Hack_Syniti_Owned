@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING</key>
+	<array>
+		<string>celebration</string>
+		<string>gathering</string>
+	</array>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>wedding anniversary</string>
+	</array>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<array>
+		<string>(surprise )?birthday party</string>
+	</array>
+	<key>GATHERING::CEREMONY</key>
+	<array>
+		<string>quinceañera</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>oktoberfest</string>
+		<string>(pub|bar) crawl</string>
+		<string>wine tasting</string>
+		<string>grab (a bite and) some (beer|drinks)</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>birthday brunch</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>(christmas|xmas|x-mas|easter|thanksgiving) dinner</string>
+		<string>team dinner</string>
+		<string>family dinner</string>
+		<string>taco tuesday</string>
+		<string>dinner party</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>(christmas|xmas|x-mas|easter|thanksgiving|holidays?) (lunch|luncheon)</string>
+		<string>family lunch</string>
+		<string>team lunch</string>
+		<string>(goodbye|farewell) lunch</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>(?&lt;!happy )halloween party</string>
+		<string>garden party</string>
+		<string>(chinese )?new year</string>
+		<string>(diwali|divali|deepavali)</string>
+		<string>cinco de mayo</string>
+		<string>(saint|st\.?) patrick(['’]s)? day</string>
+		<string>(christmas|xmas|x-mas) (holiday )?party</string>
+		<string>holiday party</string>
+		<string>masquerade ball</string>
+		<string>(baby|bridal) shower</string>
+		<string>new year(['’]s)? (day|eve)</string>
+		<string>(bachelor|bachelorette)[- ]party</string>
+		<string>night out</string>
+		<string>byob party</string>
+		<string>bring your own (beer|ottleb|bottle|booze)</string>
+		<string>(dinner|pool|boat) party</string>
+		<string>birthday party</string>
+		<string>silent disco</string>
+		<string>wine party</string>
+		<string>beer bash</string>
+		<string>farewell party</string>
+	</array>
+</dict>
+</plist>

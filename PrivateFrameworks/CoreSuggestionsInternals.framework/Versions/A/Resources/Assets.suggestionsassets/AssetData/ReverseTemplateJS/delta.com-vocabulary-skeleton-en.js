@@ -1,0 +1,1 @@
+(function(){return function(){var e={reservationId:/Your\s+Trip\s+Confirmation\s+#:/,departure:/DEPART/,passengerInfo:"Passenger Info",name:/NAME\n/,ticketNr:"Ticket #:",price:"TICKET AMOUNT",seat:"Select Seat"};return e}}).call();

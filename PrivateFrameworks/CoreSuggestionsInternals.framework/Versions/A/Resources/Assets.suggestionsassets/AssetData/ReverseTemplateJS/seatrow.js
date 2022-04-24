@@ -1,0 +1,1 @@
+(function(){return function(e,r,t){var a,n;if(t){var i=loadHelper("tableextractor.js");for(n=0;n<e.seatRowTablePrefix.length&&(!a||!a.exists());n++){var o=e.seatRowTablePrefix[n];a=i(o.prefix,r,o.innerCapture)}return a}for(n=0;n<e.seatRow.length&&(!a||!a.exists());n++)a=r.getSpan().innerCapture(e.seatRow[n],1);return a}}).call();

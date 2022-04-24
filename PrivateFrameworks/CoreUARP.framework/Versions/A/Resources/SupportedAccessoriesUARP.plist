@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A2140</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2140</string>
+		<key>ModelName</key>
+		<string>MagSafe Charger</string>
+		<key>ProductID</key>
+		<integer>1280</integer>
+		<key>SupportsPowerlog</key>
+		<true/>
+		<key>Transport</key>
+		<string>HID</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2166</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2166</string>
+		<key>AutoAppliesStagedFirmware</key>
+		<true/>
+		<key>ModelName</key>
+		<string>Power Adapter</string>
+		<key>ProductID</key>
+		<integer>28674</integer>
+		<key>ServiceBSDNotifications</key>
+		<array>
+			<string>com.apple.system.powermanagement.poweradapter</string>
+		</array>
+		<key>Transport</key>
+		<string>USB-PD</string>
+		<key>USB-PD Device Class</key>
+		<string>Power Adapter</string>
+		<key>USB-PD Location</key>
+		<string>SOP</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2363</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2363</string>
+		<key>ModelName</key>
+		<string>MagSafe Cable</string>
+		<key>ProductID</key>
+		<integer>30720</integer>
+		<key>SupportsAccMode7</key>
+		<true/>
+		<key>SupportsAnalytics</key>
+		<true/>
+		<key>SupportsLogs</key>
+		<true/>
+		<key>Transport</key>
+		<string>USB-PD</string>
+		<key>USB-PD Device Class</key>
+		<string>MagSafe Cable</string>
+		<key>USB-PD Location</key>
+		<string>SOP Prime</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+	</dict>
+	<key>A2384</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2384</string>
+		<key>ModelName</key>
+		<string>MagSafe Battery Pack</string>
+		<key>ProductID</key>
+		<integer>5017</integer>
+		<key>SupportsPowerlog</key>
+		<true/>
+		<key>Transport</key>
+		<string>HID</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2452</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2452</string>
+		<key>AutoAppliesStagedFirmware</key>
+		<true/>
+		<key>ModelName</key>
+		<string>Power Adapter</string>
+		<key>ProductID</key>
+		<integer>28697</integer>
+		<key>ServiceBSDNotifications</key>
+		<array>
+			<string>com.apple.system.powermanagement.poweradapter</string>
+		</array>
+		<key>Transport</key>
+		<string>USB-PD</string>
+		<key>USB-PD Device Class</key>
+		<string>Power Adapter</string>
+		<key>USB-PD Location</key>
+		<string>SOP</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2458</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2458</string>
+		<key>ModelName</key>
+		<string>MagSafe Duo Charger</string>
+		<key>ProductID</key>
+		<integer>1282</integer>
+		<key>SupportsPowerlog</key>
+		<true/>
+		<key>Transport</key>
+		<string>HID</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2463</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2463</string>
+		<key>ModelName</key>
+		<string>MagSafe Charger (MFi Module)</string>
+		<key>ProductID</key>
+		<integer>1281</integer>
+		<key>SupportsPowerlog</key>
+		<true/>
+		<key>Transport</key>
+		<string>HID</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2513</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2513</string>
+		<key>BSDNotifications</key>
+		<array>
+			<string>com.apple.corespeech.voicetriggerassetchange</string>
+		</array>
+		<key>BluetoothProductVersion</key>
+		<integer>1</integer>
+		<key>BluetoothVendorIDSource</key>
+		<integer>1</integer>
+		<key>ModelName</key>
+		<string>Beats Headset</string>
+		<key>ProductID</key>
+		<integer>8209</integer>
+		<key>SupplementalAssets</key>
+		<array>
+			<string>VoiceAssist</string>
+		</array>
+		<key>SupportsVoiceAssist</key>
+		<true/>
+		<key>Transport</key>
+		<string>Bluetooth</string>
+		<key>VendorID</key>
+		<integer>76</integer>
+		<key>VendorName</key>
+		<string>Beats by Dre</string>
+	</dict>
+	<key>A2518</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2518</string>
+		<key>AutoAppliesStagedFirmware</key>
+		<true/>
+		<key>ModelName</key>
+		<string>Power Adapter</string>
+		<key>ProductID</key>
+		<integer>28694</integer>
+		<key>ServiceBSDNotifications</key>
+		<array>
+			<string>com.apple.system.powermanagement.poweradapter</string>
+		</array>
+		<key>Transport</key>
+		<string>USB-PD</string>
+		<key>USB-PD Device Class</key>
+		<string>Power Adapter</string>
+		<key>USB-PD Location</key>
+		<string>SOP</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>A2728</key>
+	<dict>
+		<key>AppleModelNumber</key>
+		<string>A2728</string>
+		<key>ModelName</key>
+		<string>MagSafe Charger (MFi Module)</string>
+		<key>ProductID</key>
+		<integer>5019</integer>
+		<key>SupportsPowerlog</key>
+		<true/>
+		<key>Transport</key>
+		<string>HID</string>
+		<key>VendorID</key>
+		<integer>1452</integer>
+		<key>VendorName</key>
+		<string>Apple Inc.</string>
+		<key>isPowerSource</key>
+		<true/>
+	</dict>
+	<key>d5b67c73d2e5e518</key>
+	<dict>
+		<key>ModelName</key>
+		<string>Unity Remote</string>
+		<key>ProductGroup</key>
+		<string>d5b67c73</string>
+		<key>ProductID</key>
+		<integer>40960</integer>
+		<key>ProductNumber</key>
+		<string>d2e5e518</string>
+		<key>Transport</key>
+		<string>HID</string>
+		<key>VendorID</key>
+		<integer>147</integer>
+		<key>VendorName</key>
+		<string>Universal Electronics Inc.</string>
+	</dict>
+</dict>
+</plist>

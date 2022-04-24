@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 200 200" contentsFormat="RGBA8" name="Root Layer" position="100 100">
+    <backgroundColor opacity="0" value="0 0 0"/>
+    <sublayers>
+      <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 200 200" contentsFormat="RGBA8" hidden="0" name="circle_grp" opacity="0.75" position="100 100" transform="scale(0.55, 0.55, 1)">
+	<sublayers>
+	  <CAShapeLayer fillColor="0 0.4784 1" path="200 100 m 200 44.77152502 155.22847498 0 100 0 c 44.77152502 0 0 44.77152502 0 100 c 0 155.22847498 44.77152502 200 100 200 c 155.22847498 200 200 155.22847498 200 100 c h" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 200 200" contentsFormat="RGBA8" name="circle" position="100 100">
+	    <strokeColor opacity="0" value="0 0 0"/>
+	  </CAShapeLayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <states>
+      <LKState name="Start" initial="true">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="0.55"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Animate IN" nextDelay="1.75">
+	<elements/>
+      </LKState>
+      <LKState name="Animate OUT">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Start">
+	<elements/>
+      </LKStateTransition>
+      <LKStateTransition fromState="Start" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CAKeyframeAnimation" keyPath="transform.scale.xy" beginTime="1" duration="0.75" fillMode="backwards">
+	      <keyTimes>
+		<integer value="0"/>
+		<real value="0.2"/>
+		<real value="0.4"/>
+		<real value="0.6667"/>
+		<integer value="1"/>
+	      </keyTimes>
+	      <timingFunctions>
+		<CAMediaTimingFunction value="easeInEaseOut"/>
+		<CAMediaTimingFunction value="easeInEaseOut"/>
+		<CAMediaTimingFunction value="easeInEaseOut"/>
+		<CAMediaTimingFunction value="easeInEaseOut"/>
+	      </timingFunctions>
+	      <values>
+		<real value="0.55"/>
+		<real value="0.45"/>
+		<real value="0.55"/>
+		<real value="0.45"/>
+		<real value="0.55"/>
+	      </values>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#1">
+	    <animation type="CAKeyframeAnimation" keyPath="opacity" duration="1.75" fillMode="backwards">
+	      <keyTimes>
+		<integer value="0"/>
+		<real value="0.2857"/>
+		<real value="0.5714"/>
+		<real value="0.6571"/>
+		<integer value="1"/>
+	      </keyTimes>
+	      <timingFunctions>
+		<CAMediaTimingFunction value="easeInEaseOut"/>
+		<CAMediaTimingFunction value="linear"/>
+		<CAMediaTimingFunction value="easeInEaseOut"/>
+		<CAMediaTimingFunction value="linear"/>
+	      </timingFunctions>
+	      <values>
+		<integer value="0"/>
+		<real value="0.5"/>
+		<real value="0.5"/>
+		<real value="0.75"/>
+		<real value="0.75"/>
+	      </values>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Animate OUT">
+	<elements>
+	  <LKStateTransitionElement key="opacity" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="opacity" duration="0.2" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Animate OUT" toState="*">
+	<elements/>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Animate IN">
+	<elements/>
+      </LKStateTransition>
+      <LKStateTransition fromState="Animate IN" toState="*">
+	<elements/>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>

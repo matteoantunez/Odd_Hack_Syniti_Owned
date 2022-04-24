@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>aniversario de boda</string>
+	</array>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<array>
+		<string>fiesta de cumpleaños</string>
+	</array>
+	<key>GATHERING::CEREMONY</key>
+	<array>
+		<string>quinceañera</string>
+	</array>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<array>
+		<string>communi[oó]n</string>
+		<string>bautizo</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>botell[oó]n</string>
+		<string>(oktoberfest|fiesta de la cerveza)</string>
+		<string>ronda de bares</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>cena con (los)? amigos</string>
+		<string>cena de (noche buena|noche vieja|(la verbena de )?san juan)</string>
+		<string>cena de (cumpleaños|aniversario)</string>
+		<string>cena de (empresa|negocios)</string>
+		<string>cena familiar</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>banquete de (boda|bautizo|comuni[oó]n)</string>
+		<string>comida con (los )?amigos</string>
+		<string>comida de (cumpleaños|aniversario)</string>
+		<string>comida de (navidad|san esteban|año nuevo|reyes)</string>
+		<string>comida de (empresa|negocios)</string>
+		<string>comida familiar</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>halloween</string>
+		<string>carnaval (de tenerife|de c[aá]diz)?</string>
+		<string>fallas de valencia</string>
+		<string>feria de abril</string>
+		<string>fiesta de disfraces</string>
+		<string>despedida de solter[oa]</string>
+		<string>fiesta de carnaval</string>
+		<string>fiesta del cine</string>
+		<string>fiesta de inauguraci[oó]n</string>
+		<string>fiesta de jubilaci[oó]n</string>
+		<string>fiesta de fin de carrera</string>
+		<string>fiesta de noche vieja</string>
+		<string>fiesta de moros y cristianos</string>
+		<string>fiesta del (descenso del sella|pilar de zaragoza)</string>
+		<string>fiestas populares</string>
+		<string>la tamborrada de san sebasti[aá]n</string>
+		<string>la tomatina (de buñol)?</string>
+		<string>sanfermines</string>
+		<string>verbena de san juan</string>
+		<string>las hogueras de san juan</string>
+		<string>san ferm[ií]n</string>
+		<string>fiesta de cumpleaños</string>
+		<string>(beer bash|bierfest)</string>
+	</array>
+</dict>
+</plist>

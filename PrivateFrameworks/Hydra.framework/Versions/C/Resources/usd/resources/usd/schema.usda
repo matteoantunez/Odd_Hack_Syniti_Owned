@@ -1,0 +1,93 @@
+#usda 1.0
+(
+    "This file describes the USD primitive schemata and drives code generation."
+)
+
+def "GLOBAL" (
+    customData = {
+        string libraryName      = "usd"
+        string libraryPath      = "pxr/usd/usd"
+        # string libraryPrefix  = "Usd"
+        # string tokensPrefix   = "Usd"
+        dictionary libraryTokens = {
+            dictionary apiSchemas = {
+                string             }
+            dictionary fallbackPrimTypes = {
+                string             }
+        }
+    }
+)
+{
+}
+
+class "Typed" 
+(
+    )
+{
+}
+
+class "APISchemaBase"
+(
+        customData = {
+        string fileName = "apiSchemaBase"
+    }
+)
+{
+}
+
+class "ModelAPI" 
+(
+    inherits = </APISchemaBase>
+        customData = {
+        string apiSchemaType = "nonApplied"
+    }
+)
+{
+}
+
+class "CollectionAPI"
+(
+    inherits = </APISchemaBase>
+    
+    customData = {
+        string extraIncludes = """
+#include "pxr/usd/usd/collectionMembershipQuery.h"
+#include "pxr/usd/usd/primFlags.h"
+#include "pxr/usd/usd/tokens.h"
+"""
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "collection"
+        dictionary schemaTokens = {
+            dictionary exclude = {
+                string             }
+        }
+    }
+)
+{
+    uniform token expansionRule = "expandPrims" (
+        allowedTokens = ["explicitOnly", "expandPrims", "expandPrimsAndProperties"]
+            )
+    uniform bool includeRoot (
+            )
+    rel includes (
+            )
+    rel excludes (
+            )
+}
+
+class "ClipsAPI"
+(
+    inherits = </APISchemaBase>
+        customData = {
+        token apiSchemaType = "nonApplied"
+        dictionary schemaTokens = {
+            dictionary clips = {
+              string             }
+
+            dictionary clipSets = {
+              string             }
+        }
+    }
+)
+{
+}

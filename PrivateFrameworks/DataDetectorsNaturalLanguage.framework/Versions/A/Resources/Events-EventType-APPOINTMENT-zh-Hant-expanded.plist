@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT::INTERVIEW</key>
+	<array>
+		<string>接見|採訪|面試|會談|面談</string>
+	</array>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<array>
+		<string>婦女健康檢查</string>
+		<string>婦科檢查</string>
+		<string>身體檢查</string>
+		<string>定期(身體)?檢查</string>
+		<string>(預約)?看診</string>
+		<string>掛號</string>
+		<string>就診</string>
+		<string>(預約)?體檢</string>
+		<string>驗身</string>
+	</array>
+</dict>
+</plist>

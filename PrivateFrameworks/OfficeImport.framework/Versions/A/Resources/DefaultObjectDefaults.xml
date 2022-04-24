@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:objectDefaults xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+	<a:spDef>
+		<a:spPr/>
+		<a:bodyPr rtlCol="0" anchor="ctr"/>
+		<a:lstStyle>
+			<a:defPPr algn="ctr">
+				<a:defRPr dirty="0" smtClean="0"/>
+			</a:defPPr>
+		</a:lstStyle>
+		<a:style>
+			<a:lnRef idx="1">
+				<a:schemeClr val="accent1"/>
+			</a:lnRef>
+			<a:fillRef idx="3">
+				<a:schemeClr val="accent1"/>
+			</a:fillRef>
+			<a:effectRef idx="2">
+				<a:schemeClr val="accent1"/>
+			</a:effectRef>
+			<a:fontRef idx="minor">
+				<a:schemeClr val="lt1"/>
+			</a:fontRef>
+		</a:style>
+	</a:spDef>
+	<a:lnDef>
+		<a:spPr/>
+		<a:bodyPr/>
+		<a:lstStyle/>
+		<a:style>
+			<a:lnRef idx="2">
+				<a:schemeClr val="accent1"/>
+			</a:lnRef>
+			<a:fillRef idx="0">
+				<a:schemeClr val="accent1"/>
+			</a:fillRef>
+			<a:effectRef idx="1">
+				<a:schemeClr val="accent1"/>
+			</a:effectRef>
+			<a:fontRef idx="minor">
+				<a:schemeClr val="tx1"/>
+			</a:fontRef>
+		</a:style>
+	</a:lnDef>
+	<a:txDef>
+		<a:spPr>
+			<a:noFill/>
+		</a:spPr>
+		<a:bodyPr wrap="none" rtlCol="0">
+			<a:spAutoFit/>
+		</a:bodyPr>
+		<a:lstStyle>
+			<a:defPPr>
+				<a:defRPr dirty="0" smtClean="0"/>
+			</a:defPPr>
+		</a:lstStyle>
+	</a:txDef>
+</a:objectDefaults>

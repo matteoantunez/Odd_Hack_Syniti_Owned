@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#NoNeedToChangeMultiSettingValueTo" locale="en">
+    <conditions>
+        <condition name="appNamePresent">
+            <expression name="appName" op="defined"/>
+        </condition>
+    </conditions>
+    <first>
+    <first condition="appNamePresent">
+        <dialog condition="setting.value">
+            <transform mode="capitalizeFirst"><var name="setting.name"/></transform> for <var name="appName"/> is already turned on.
+        </dialog>
+        <dialog>
+            <transform mode="capitalizeFirst"><var name="setting.name"/></transform> for <var name="appName"/> is already turned off.
+        </dialog>
+    </first>
+    <dialog condition="setting.value"><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is already turned on.</dialog>
+    <dialog><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is already turned off.</dialog>
+    </first>
+</cat>

@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>흰색과 검은색 모델의 Intel Core Duo 프로세서가 장착된 MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>흰색과 검은색 모델의 Intel Core 2 Duo 프로세서가 장착된 MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>흰색과 검은색 모델의 Intel Core 2 Duo 프로세서가 장착된 MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>흰색과 검은색 모델의 Intel Core 2 Duo 프로세서가 장착된 MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo(알루미늄 Unibody)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 및 알루미늄 Unibody가 장착된 MacBook(2008년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo(흰색, 2009년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서가 장착된 흰색 MacBook(2009년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo(흰색, 2009년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서 및 LED 디스플레이가 장착된 흰색 MacBook(2009년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo(흰색, 2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서 및 흰색 Unibody 외장이 장착된 MacBook(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12형 MacBook(2015년 초반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core M</string>
+			<key>description</key>
+			<string>12형 MacBook Retina 디스플레이(2015년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12형 MacBook(2016년 초반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core m3, 듀얼 코어 Intel Core m5, 듀얼 코어 Intel Core m7</string>
+			<key>description</key>
+			<string>12형 MacBook Retina 디스플레이(2016년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12형 MacBook(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core m3, 듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>12형 MacBook Retina 디스플레이(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(원본)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air(Intel Core 2 Duo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air(Intel Core 2 Duo).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11형 MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>11형 디스플레이가 장착된 MacBook Air(2010년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13형 디스플레이가 장착된 MacBook Air(2010년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11형 MacBook Air(2011년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>11형 디스플레이가 장착된 MacBook Air(2011년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Air(2011년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13형 디스플레이가 장착된 MacBook Air(2011년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11형 MacBook Air(2012년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>11형 디스플레이가 장착된 MacBook Air(2012년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Air(2012년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13형 디스플레이가 장착된 MacBook Air(2012년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11형 MacBook Air(2013년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>11형 디스플레이가 장착된 MacBook Air(2013년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Air(2013년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13형 디스플레이가 장착된 MacBook Air(2013년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11형 MacBook Air(2015년 초반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>11형 디스플레이가 장착된 MacBook Air(2015년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Air(2015년 초반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>13형 디스플레이가 장착된 MacBook Air(2015년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air(2018년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air(Retina 디스플레이 및 Touch ID, 2018년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air(2019년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5</string>
+			<key>description</key>
+			<string>13형 MacBook Air(Retina 디스플레이 및 Touch ID, 2019년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Intel Core Duo 프로세서 및 15 또는 17형 디스플레이가 장착된 MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Intel Core Duo 프로세서 및 15 또는 17형 디스플레이가 장착된 MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서 및 15 또는 17형 디스플레이가 장착된 MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서 및 15 또는 17형 디스플레이가 장착된 MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서 및 15 또는 17형 디스플레이가 장착된 MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서, 15 또는 17형 디스플레이 및 Multi-Touch 트랙패드가 장착된 MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo(알루미늄 Unibody)(2008년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 및 알루미늄 Unibody가 장착된 MacBook Pro(2008년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo(알루미늄 Unibody)(2009년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 및 알루미늄 Unibody가 장착된 MacBook Pro(2009년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo(알루미늄 Unibody)(2009년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 및 알루미늄 Unibody가 장착된 MacBook Pro(2009년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo(알루미늄 Unibody)(2009년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 및 알루미늄 Unibody가 장착된 MacBook Pro(2009년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo(알루미늄 Unibody)(2009년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 및 알루미늄 Unibody가 장착된 MacBook Pro(2009년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Intel Core i5 또는 Intel Core i7 프로세서, 15 또는 17형 디스플레이 및 알루미늄 Unibody가 장착된 MacBook Pro(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Intel Core i5 또는 Intel Core i7 프로세서, 15 또는 17형 디스플레이 및 알루미늄 Unibody가 장착된 MacBook Pro(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서 및 알루미늄 Unibody가 장착된 13형 MacBook Pro(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Pro Intel Core i5, Intel Core i7(2011년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>듀얼 코어 Intel Core i5 또는 Intel Core i7 프로세서 및 알루미늄 Unibody가 장착된 13형 MacBook Pro(2011년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15형 MacBook Pro Intel Core i7(2011년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>쿼드 코어 Intel Core i7 프로세서 및 알루미늄 Unibody가 장착된 15형 MacBook Pro(2011년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>17형 MacBook Pro Intel Core i7(2011년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>쿼드 코어 Intel Core i7 프로세서 및 알루미늄 Unibody가 장착된 17형 MacBook Pro(2011년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15형 MacBook Pro Intel Core i7(2012년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>듀얼 코어 Intel Core i7 프로세서 및 알루미늄 Unibody가 장착된 15형 MacBook Pro(2012년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Pro Intel Core i5, Intel Core i7(2012년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>듀얼 코어 Intel Core i5 또는 Intel Core i7 프로세서 및 알루미늄 Unibody가 장착된 13형 MacBook Pro(2012년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Intel Core i7이 장착된 15형 MacBook Pro Retina 디스플레이(2012년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>듀얼 코어 Intel Core i7 프로세서 및 알루미늄 Unibody가 장착된 15형 MacBook Pro Retina 디스플레이(2012년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Intel Core i5 및 Intel Core i7이 장착된 13형 MacBook Pro Retina 디스플레이(2012년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>듀얼 코어 Intel Core i5 또는 i7 프로세서 및 알루미늄 Unibody가 장착된 13형 MacBook Pro Retina 디스플레이(2012년 후반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Pro Retina 디스플레이(2013년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>알루미늄 Unibody가 장착된 13형 MacBook Pro Retina 디스플레이(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15형 MacBook Pro Retina 디스플레이(2013년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>알루미늄 Unibody가 장착된 15형 MacBook Pro Retina 디스플레이(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>분리형 NVIDIA 그래픽이 장착된 15형 MacBook Pro Retina 디스플레이(2013년 후반 모델).</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>알루미늄 Unibody 및 분리형 NVIDIA 그래픽이 장착된 15형 MacBook Pro Retina 디스플레이(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15형 MacBook Pro Retina 디스플레이(2015년 중반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>알루미늄 Unibody가 장착된 15형 MacBook Pro Retina 디스플레이(2015년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15형 MacBook Pro Retina 디스플레이(2015년 중반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>알루미늄 Unibody 및 분리형 AMD 그래픽이 장착된 15형 MacBook Pro Retina 디스플레이(2015년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Pro Retina 디스플레이(2015년 초반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>알루미늄 Unibody가 장착된 13형 MacBook Pro Retina 디스플레이(2015년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3가 장착된 13형 MacBook Pro(2016년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3가 장착된 13형 MacBook Pro(2016년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 13형 MacBook Pro(2016년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 13형 MacBook Pro(2016년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 15형 MacBook Pro(2016년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 15형 MacBook Pro(2016년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3가 장착된 13형 MacBook Pro(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3가 장착된 13형 MacBook Pro(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 13형 MacBook Pro(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 13형 MacBook Pro(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 15형 MacBook Pro(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 15형 MacBook Pro(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15형 MacBook Pro(Thunderbolt 3 및 Touch ID, 2018년 중반 모델)</string>
+			<key>processor</key>
+			<string>6코어 Intel Core i7, 6코어 Intel Core i9</string>
+			<key>description</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 15형 MacBook Pro(2018년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13형 MacBook Pro(Thunderbolt 3 및 Touch ID, 2018년 중반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt 3 및 Touch ID가 장착된 13형 MacBook Pro(2018년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2006년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>알루미늄 외장의 데스크탑 타워.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2006년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>알루미늄 외장의 데스크탑 타워.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2007년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>알루미늄 외장의 데스크탑 타워.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2008년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>알루미늄 외장의 데스크탑 타워.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2009년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>알루미늄 외장의 데스크탑 타워(2009년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>알루미늄 외장의 데스크탑 타워(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro(2013년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Pro 데스크탑 외장(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core(2006년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Core 2 Duo, Intel Core Duo 또는 Intel Core Solo 프로세서가 장착된 공간절약형 데스크탑 Mac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini(2007년 중반 모델)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Core 2 Duo, Intel Core Duo 또는 Intel Core Solo 프로세서가 장착된 공간절약형 데스크탑 Mac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core(2009년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>NVIDIA GeForce 9400M이 장착된 Mac mini(2009년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>NVIDIA GeForce 320M이 장착된 Mac mini(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Intel HD Graphics 3000이 장착된 Mac mini(2011년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5</string>
+			<key>description</key>
+			<string>Intel 듀얼 코어 i5 및 Intel HD Graphics 3000이 장착된 Mac mini(2011년 중반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>AMD Radeon HD 6630M이 장착된 Mac mini(2011년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Intel 듀얼 코어 i5 또는 i7 및 AMD Radeon HD 6630M이 장착된 Mac mini(2011년 중반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini 서버(2011년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>듀얼 코어 i7 및 Intel HD Graphics 3000이 장착된 Mac mini 서버(2011년 중반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini(2012년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5</string>
+			<key>description</key>
+			<string>듀얼 코어 i5 및 Intel HD Graphics 4000이 장착된 Mac mini(2012년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini(2012년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>쿼드 코어 i7 및 Intel HD Graphics 4000이 장착된 Mac mini(2012년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini(2014년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5, 듀얼 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>Intel 듀얼 코어 프로세서 및 통합 그래픽이 장착된 Mac mini(2014년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini(2018년 후반 모델)</string>
+			<key>processor</key>
+			<string>8세대 Intel 프로세서(쿼드코어 Core i3, 6코어 Core i5, 6코어 Core i7)</string>
+			<key>description</key>
+			<string>8세대 Intel 프로세서 및 Intel UHD Graphics 630이 장착된 Mac mini(2018년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>양옆을 조각한 검은색 플라스틱 고무 케이스의 휴대용 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>내장 핸들이 장착된 특유의 밝은 색상을 가진 'LCD 패널' 노트북과 은색 및 흰색 플라스틱 사각형 외장에 12 또는 14형 평면 패널 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 프로세서가 장착된 흰색 iBooks.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 프로세서가 장착된 흰색 iBooks.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 프로세서가 장착된 흰색 iBooks.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>특유의 얇은 티타늄 외장에 15형 평면 패널 디스플레이가 장착된 모델과 알루미늄 케이스에 12, 15 또는 17형 디스플레이가 장착된 이후 모델이 포함됩니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>파란색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>파란색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>거의 모든 LCD 또는 VGA 디스플레이에 연결할 수 있는 공간절약형 데스크탑 Mac G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>거의 모든 LCD 또는 VGA 디스플레이에 연결할 수 있는 공간절약형 데스크탑 Mac G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>타워 스타일의 알루미늄 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>타워 스타일의 알루미늄 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>평면 패널 G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>본래의 파란색과 흰색 플라스틱 외장, 그리고 추후 다양한 '색상'을 선택할 수 있는 일체형 디자인입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>본래의 파란색과 흰색 플라스틱 외장, 그리고 추후 다양한 '색상'을 선택할 수 있는 일체형 디자인입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>회색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>회색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>회색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>회색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>회색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>회색과 흰색으로 조각된 플라스틱 타워 스타일의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>본래의 파란색과 흰색 플라스틱 외장, 그리고 추후 다양한 '색상'을 선택할 수 있는 일체형 디자인입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>돔 모양의 본체를 가진 일체형 디자인에 15, 17 또는 20형 평면 패널 디스플레이가 장착되어 있습니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>공간 절약형 원형 외장에 내장 평면 스크린 CRT가 장착된 일체형 디자인입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>돔 모양의 본체를 가진 일체형 디자인에 15, 17 또는 20형 평면 패널 디스플레이가 장착되어 있습니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>깨끗한 플라스틱 큐브 형태의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>깨끗한 플라스틱 큐브 형태의 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>돔 모양의 본체를 가진 일체형 디자인에 15, 17 또는 20형 평면 패널 디스플레이가 장착되어 있습니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>돔 모양의 본체를 가진 일체형 디자인에 15, 17 또는 20형 평면 패널 디스플레이가 장착되어 있습니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>공간 절약형 원형 외장에 내장 평면 스크린 CRT가 장착된 일체형 디자인입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>타워 스타일의 알루미늄 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>타워 스타일의 알루미늄 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>평면 패널 G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>평면 패널 G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>타워 스타일의 알루미늄 데스크탑 컴퓨터입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>트레이 로딩 또는 슬롯 로딩 방식의 광학 드라이브와 4개의 확장 베이가 장착된 랙 마운트 G4 서버 또는 1개의 확장 베이가 장착된 G4 클러스터 노드 모델입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>트레이 로딩 또는 슬롯 로딩 방식의 광학 드라이브와 4개의 확장 베이가 장착된 랙 마운트 G4 서버 또는 1개의 확장 베이가 장착된 G4 클러스터 노드 모델입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>슬롯 로딩 방식의 CD- 또는 DVD-ROM 드라이브와 3개의 확장 베이가 장착된 랙 마운트 기반 G5 서버 컴퓨터 또는 확장 베이가 없는 클러스터 노드 모델입니다.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve(2006년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 시리즈</string>
+			<key>description</key>
+			<string>랙 마운트 서버 기반 Intel Xeon 5100 시리즈(2006년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve(2008년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 시리즈</string>
+			<key>description</key>
+			<string>랙 마운트 서버 기반 Intel Xeon 5400 시리즈(2008년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve(2009년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 시리즈</string>
+			<key>description</key>
+			<string>랙 마운트 서버 기반 Intel Xeon 5500 시리즈(2009년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>평면 패널 iMac Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>평면 패널 iMac Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>평면 패널 iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>평면 패널 iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>평면 패널 iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo(알루미늄 외장)(2007년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서가 장착된 20 또는 24형 평면 패널 iMac(알루미늄 외장).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo(알루미늄 외장)(2008년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서가 장착된 20 또는 24형 평면 패널 iMac(알루미늄 외장).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo(알루미늄 외장)(2009년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo 프로세서가 장착된 20 또는 24형 평면 패널 iMac(알루미늄 외장).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo(와이드스크린, 2009년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>와이드스크린 LED 디스플레이가 장착된 21.5형 또는 27형 iMac(2009년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7(와이드스크린, 2009년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>쿼드 코어 프로세서 및 와이드스크린 LED 디스플레이가 장착된 27형 iMac(2009년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>와이드스크린 LED 디스플레이가 장착된 21.5형 iMac(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2010년 중반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>와이드스크린 LED 디스플레이가 장착된 27형 iMac(2010년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2011년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt가 장착된 21.5형 iMac(2011년 초반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2011년 초반 모델)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt가 장착된 27형 iMac(2011년 초반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2012년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2012년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2012년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>27형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2012년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2013년 초반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i3</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2013년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2013년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2013년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>27형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2013년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i3</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2013년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2014년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2014년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2014년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>27형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2014년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2015년 후반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 LED 백라이트 디스플레이가 장착된 iMac(2015년 후반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2015년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 또는 Retina 4K 디스플레이가 장착된 iMac(2015년 후반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2015년 후반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5, 쿼드 코어 Intel Core i7</string>
+			<key>description</key>
+			<string>27형 와이드스크린 또는 Retina 5K 디스플레이가 장착된 iMac(2015년 후반 모델)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>듀얼 코어 Intel Core i5</string>
+			<key>description</key>
+			<string>21.5형 와이드스크린 iMac(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21.5형 iMac Retina 4K 디스플레이(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2017년 중반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i5/i7</string>
+			<key>description</key>
+			<string>27형 iMac Retina 5K 디스플레이(2017년 중반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27형 iMac(2019년 초반 모델)</string>
+			<key>processor</key>
+			<string>6코어 Intel Core i5, 8코어 Intel Core i9</string>
+			<key>description</key>
+			<string>27형 iMac Retina 5K 디스플레이(2019년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5형 iMac(2019년 초반 모델)</string>
+			<key>processor</key>
+			<string>쿼드 코어 Intel Core i3, 6코어 Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21.5형 iMac Retina 4K 디스플레이(2019년 초반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro(2017년 후반 모델)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>Xeon W 프로세서 및 Radeon Pro Vega 그래픽이 장착된 iMac Pro(2017년 후반 모델).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

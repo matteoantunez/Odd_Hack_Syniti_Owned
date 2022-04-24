@@ -1,0 +1,41 @@
+{
+    "color": [0.535, 0.98, 0.307],
+    "snippets":[
+        {
+            "name" : "Time",
+            "timeDependent" : true,
+            "inParameterNames" : [],
+            "inParameterTypes" : [],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float(vfx_script_clock_time(scriptContext))",
+                "c"     : "float(vfx_script_clock_time(scriptContext))",
+                "metal" : "scriptContext.time"
+            }
+        },
+        {
+            "name" : "DeltaTime",
+            "timeDependent" : true,
+            "inParameterNames" : [],
+            "inParameterTypes" : [],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift" : "vfx_script_clock_delta_time(scriptContext)",
+                "metal"   : "scriptContext.dt"
+            }
+        },
+        {
+            "name" : "IsFirstFrame",
+            "inParameterNames" : [],
+            "inParameterTypes" : [],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "c|swift" : "vfx_script_clock_is_first_frame(scriptContext)",
+                "metal"   : "scriptContext.isFirstFrame"
+            }
+        }
+    ]
+}

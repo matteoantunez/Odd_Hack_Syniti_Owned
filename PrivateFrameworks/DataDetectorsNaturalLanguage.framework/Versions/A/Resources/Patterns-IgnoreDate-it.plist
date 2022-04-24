@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>scadenza</string>
+	<string>solo dalle</string>
+	<string>appunti di riunioni</string>
+	<string>disponibile fino</string>
+	<string>agenda</string>
+	<string>(buon|tranne|ogni) (lunedi|marted(ì|i)|mercoled(ì|i)|giovedi|venerd(ì|i)|sabato|domenica)</string>
+	<string>dal (lunedi|marted(ì|i)|mercoled(ì|i)|giovedi|venerd(ì|i)|sabato|domenica) al (lunedi|marted(ì|i)|mercoled(ì|i)|giovedi|venerd(ì|i)|sabato|domenica)</string>
+	<string>scors(.)</string>
+	<string>(dato|data|inviato)(\W)?:</string>
+	<string>resoconto</string>
+	<string>soltanto dalle</string>
+	<string>solamente dalle</string>
+	<string>esclusivamente dalle</string>
+	<string>consegna</string>
+	<string>spedizione</string>
+</array>
+</plist>

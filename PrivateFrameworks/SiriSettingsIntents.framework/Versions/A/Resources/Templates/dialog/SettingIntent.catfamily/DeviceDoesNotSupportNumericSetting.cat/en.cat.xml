@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#DeviceDoesNotSupportNumericSetting" locale="en">
+    <first>
+        <dialog condition="deviceState.isPhone">That setting isn't available on this iPhone.</dialog>
+        <dialog condition="deviceState.isPad">That setting isn't available on this iPad.</dialog>
+        <dialog condition="deviceState.isWatch">That setting isn't available on this Apple Watch.</dialog>
+        <dialog condition="deviceState.isAppleTV">That setting isn't available on this Apple TV.</dialog>
+        <dialog condition="deviceState.isMac">That setting isn't available on this Mac.</dialog>
+        <dialog condition="deviceState.isHomePod">That setting isn't available on this HomePod.</dialog>
+        <dialog>That setting isn't available on this device.</dialog>
+    </first>
+</cat>

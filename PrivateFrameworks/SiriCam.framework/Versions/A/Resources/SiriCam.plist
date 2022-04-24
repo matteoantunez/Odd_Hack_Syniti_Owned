@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>intent_disambiguation</key>
+	<dict>
+		<key>Description</key>
+		<string>Flag to enable disambiguation amongst alternative UserParses</string>
+		<key>DisplayName</key>
+		<string>Siri Cam Disambiguation</string>
+		<key>Enabled</key>
+		<false/>
+	</dict>
+	<key>verbose_logging</key>
+	<dict>
+		<key>Enabled</key>
+		<false/>
+		<key>DisplayName</key>
+		<string>Siri CAM Verbose Logging</string>
+		<key>Description</key>
+		<string>Flag to enable detailed logging like model features</string>
+	</dict>
+	<key>word_embeddings</key>
+	<dict>
+		<key>Description</key>
+		<string>Flag to enable extraction of word embeddings</string>
+		<key>DisplayName</key>
+		<string>Siri Cam Word Embeddings</string>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

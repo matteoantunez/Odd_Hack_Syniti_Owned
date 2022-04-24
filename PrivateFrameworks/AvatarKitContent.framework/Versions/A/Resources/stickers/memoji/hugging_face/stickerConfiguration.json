@@ -1,0 +1,109 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/cam.scnz"
+  },
+  "emoji" : "🤗",
+  "identifier" : "hugging_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "memoji" : {
+      "lowerBack_DYN" : {
+        "offset" : [
+          -0.01581573486328125,
+          0.83350372314453125,
+          2.9319295435925596e-07
+        ]
+      },
+      "lowerBackLeft_DYN" : {
+        "offset" : [
+          -0.035119056701660156,
+          0.61716318130493164,
+          -0.80184733867645264
+        ]
+      },
+      "lowerBackRight_DYN" : {
+        "offset" : [
+          -0.035120964050292969,
+          0.61716079711914062,
+          0.80184781551361084
+        ]
+      },
+      "lowerFront_DYN" : {
+        "offset" : [
+          -0.057836532592773438,
+          0.87228202819824219,
+          2.9270685786286776e-07
+        ]
+      },
+      "lowerFrontLeft_DYN" : {
+        "offset" : [
+          -0.074533462524414062,
+          -0.58201360702514648,
+          -0.9028545618057251
+        ]
+      },
+      "lowerFrontRight_DYN" : {
+        "offset" : [
+          -0.074535369873046875,
+          -0.5820155143737793,
+          0.90285736322402954
+        ]
+      },
+      "lowerLeft_DYN" : {
+        "offset" : [
+          -0.0718231201171875,
+          0.052165508270263672,
+          -1.199061393737793
+        ]
+      },
+      "lowerRight_DYN" : {
+        "offset" : [
+          -0.071825027465820312,
+          -0.052166461944580078,
+          -1.1990611553192139
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browInnerUp" : 0.44887781143188477,
+    "browOuterUp_L" : 0.38902744650840759,
+    "browOuterUp_R" : 0.40399006009101868,
+    "cheekSquint_L" : 1,
+    "cheekSquint_R" : 1,
+    "eyeBlink_L" : 1,
+    "eyeBlink_R" : 1,
+    "eyeSquint_L" : 1,
+    "eyeSquint_R" : 1,
+    "mouthDimple_L" : 0.3865337073802948,
+    "mouthDimple_R" : 0.41147139668464661,
+    "mouthSmile_L" : 1,
+    "mouthSmile_R" : 1,
+    "neckOrientation" : [
+      -0.061412673443555832,
+      0,
+      0,
+      0.99811244010925293
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "palettes" : [
+        {
+          "material" : "skin_MAT",
+          "palette" : "skin"
+        }
+      ],
+      "scene" : "hugging_face.scnz"
+    }
+  ]
+}

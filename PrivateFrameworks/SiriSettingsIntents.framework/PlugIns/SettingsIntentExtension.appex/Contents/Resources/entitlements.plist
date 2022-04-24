@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- macOS requirement for the extension to be invoked. -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    <!-- display brightness -->
+	<key>com.apple.backboard.displaybrightness</key>
+	<true/>
+	<key>com.apple.avfoundation.allow-system-wide-context</key>
+	<true/>
+	<key>com.apple.security.exception.shared-preference.read-write</key>
+	<array>
+		<!-- voiceOver, assistiveTouch, invertColor -->
+		<string>com.apple.Accessibility</string>
+		<!-- more invertColor -->
+		<string>com.apple.mediaaccessibility</string>
+		<!-- flashlight -->
+		<string>com.apple.springboard</string>
+		<!-- appearance -->
+		<string>com.apple.uikitservices.userInterfaceStyleMode</string>
+		<!-- auto-brightness -->
+		<string>com.apple.backboardd</string>
+                <!-- Smart Siri Volume V2 -->
+                <string>com.apple.voicetrigger</string>
+		<!-- Reduce Bass Mode on HomePod -->
+		<string>com.apple.audio.puffin</string>
+	</array>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.assistant.settings</string>
+		<!-- low power mode -->
+		<string>com.apple.coreduetd.batterysaver</string>
+        <!-- nightShift -->
+		<string>com.apple.backlightd</string>
+		<!-- flashlight -->
+		<string>com.apple.coremedia.flashlight</string>
+        <!-- User Notifications -->
+        <string>com.apple.usernotifications.usernotificationsettingsservice</string>
+	</array>
+	<!-- low power mode -->
+	<key>com.apple.coreduetd.allow</key>
+	<true/>
+	<!-- low power mode -->
+	<key>com.apple.coreduetd.batterysaver.allow</key>
+	<true/>
+    <!-- wifi -->
+	<key>com.apple.wifi.manager-access</key>
+	<true/>
+	<!-- bluetooth -->
+	<key>com.apple.bluetooth.system</key>
+	<true/>
+    <!-- locationServices -->
+    <key>com.apple.locationd.authorizeapplications</key>
+    <true/>
+    <!-- cellularData -->
+	<key>com.apple.CommCenter.fine-grained</key>
+	<array>
+		<string>spi</string>
+		<string>phone</string>
+	</array>
+    <!-- airplaneMode -->
+    <key>com.apple.SystemConfiguration.SCPreferences-write-access</key>
+    <array>
+            <string>com.apple.radios.plist</string>
+    </array>
+    <key>com.apple.assistant.settings</key>
+    <true/>
+    <!-- global announce notifications -->
+    <key>com.apple.private.usernotifications.settings</key>
+    <array>
+        <string>read</string>
+        <string>write</string>
+    </array>
+    <!-- Smart Siri Volume V2 -->
+    <key>com.apple.voicetrigger</key>
+    <true/>
+</dict>
+</plist>

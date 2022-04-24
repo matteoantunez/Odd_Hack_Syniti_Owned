@@ -1,0 +1,60 @@
+; =========================================================================
+; standard client DSPgraph
+; =========================================================================
+
+graphName "WiredHeadphone"
+
+; -------------------------------------------------------------------------
+; Definitions
+; -------------------------------------------------------------------------
+[def sampleRateIn 44100]
+[def numChannels 2]
+
+; -------------------------------------------------------------------------
+; Graph Ins and Outs
+; -------------------------------------------------------------------------
+
+in in
+out out
+
+; -------------------------------------------------------------------------
+; Boxes and AUs
+; -------------------------------------------------------------------------
+
+box AUNBandEQ (aufx nbeq appl) 1 1
+box volume dbgn 1 1
+box split split 1 2
+box leftBalance dbgn 1 1
+box rightBalance dbgn 1 1
+box join join 2 1
+
+; -------------------------------------------------------------------------
+; DSP Graph topology
+; -------------------------------------------------------------------------
+
+wire in AUNBandEQ ([sampleRateIn] [numChannels])
+wire AUNBandEQ volume ([sampleRateIn] [numChannels])
+wire volume split ([sampleRateIn] [numChannels])
+wire (split 0) leftBalance ([sampleRateIn] 1)
+wire leftBalance (join 0) ([sampleRateIn] 1)
+wire (split 1) rightBalance ([sampleRateIn] 1)
+wire rightBalance (join 1) ([sampleRateIn] 1)
+
+; -------------------------------------------------------------------------
+; Graph outputs
+; -------------------------------------------------------------------------
+
+wire join out ([sampleRateIn] [numChannels])
+
+; -------------------------------------------------------------------------
+; Graph params
+; -------------------------------------------------------------------------
+param vol0 0
+param mut0 0
+param lbal 0
+param rbal 0
+
+wireGraphParam vol0 (volume 0 0 0)
+wireGraphParam mut0 (volume 1 0 0)
+wireGraphParam lbal (leftBalance 0)
+wireGraphParam rbal (rightBalance 0)

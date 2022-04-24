@@ -1,0 +1,54 @@
+{
+  "layer_shapes" : {
+    "outputLabels" : {
+      "k" : 30,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "inputSequence" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "seq" : 50,
+      "h" : 1
+    },
+    "embedding_1_permute_global_average_pooling1d_1_output" : {
+      "k" : 20,
+      "w" : 50,
+      "n" : 1,
+      "h" : 1
+    },
+    "global_average_pooling1d_1_permute_dense_1_output" : {
+      "k" : 20,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "embedding_1_output" : {
+      "k" : 20,
+      "w" : 1,
+      "n" : 1,
+      "seq" : 50,
+      "h" : 1
+    },
+    "dense_2_output" : {
+      "k" : 30,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense_1__activation___output" : {
+      "k" : 80,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "global_average_pooling1d_1_output" : {
+      "k" : 20,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    }
+  }
+}

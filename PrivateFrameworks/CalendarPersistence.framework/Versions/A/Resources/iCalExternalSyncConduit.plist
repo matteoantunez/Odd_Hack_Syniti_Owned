@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DisplayName</key>
+	<string>Calendar</string>
+	<key>Entities</key>
+	<dict>
+		<key>com.apple.calendars.Attendee</key>
+		<array>
+			<string>email</string>
+			<string>user type</string>
+			<string>role</string>
+			<string>status</string>
+			<string>rsvp</string>
+			<string>common name</string>
+			<string>directory entry</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.AudioAlarm</key>
+		<array>
+			<string>triggerdate</string>
+			<string>triggerduration</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>sound</string>
+			<string>com.apple.ical.sound</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.Calendar</key>
+		<array>
+			<string>url</string>
+			<string>subscription_url</string>
+			<string>title</string>
+			<string>notes</string>
+			<string>read only</string>
+			<string>com.apple.ical.type</string>
+			<string>com.apple.ical.urlsubscribe.uid</string>
+			<string>com.apple.ical.urlsubscribe.url</string>
+			<string>com.apple.ical.urlsubscribe.filtertasks</string>
+			<string>com.apple.ical.urlsubscribe.filteralarms</string>
+			<string>com.apple.ical.urlsubscribe.autorefresh</string>
+			<string>com.apple.ical.urlsubscribe.refreshinterval</string>
+			<string>com.apple.ical.node</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>color</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+			<string>com.apple.ical.uid</string>
+		</array>
+		<key>com.apple.calendars.CalendarOrder</key>
+		<array>
+			<string>identity</string>
+			<string>calendars</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+		</array>
+		<key>com.apple.calendars.DisplayAlarm</key>
+		<array>
+			<string>triggerdate</string>
+			<string>triggerduration</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>description</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.Event</key>
+		<array>
+			<string>com.apple.ical.creationdate</string>
+			<string>com.apple.ical.datestamp</string>
+			<string>description</string>
+			<string>start date</string>
+			<string>original date</string>
+			<string>com.apple.ical.sequence</string>
+			<string>summary</string>
+			<string>com.apple.ical.uid</string>
+			<string>url</string>
+			<string>exception dates</string>
+			<string>organizer</string>
+			<string>recurrences</string>
+			<string>calendar</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>location</string>
+			<string>end date</string>
+			<string>all day</string>
+			<string>com.apple.ical.itip.sent</string>
+			<string>com.apple.ical.itip.mystatus</string>
+			<string>com.apple.ical.itip.needsupdate</string>
+			<string>main event</string>
+			<string>com.apple.ical.attachmenturls</string>
+			<string>floatingGMTDate</string>
+			<string>floatingOffset</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.MailAlarm</key>
+		<array>
+			<string>triggerdate</string>
+			<string>triggerduration</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>recipients</string>
+			<string>description</string>
+			<string>summary</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.Organizer</key>
+		<array>
+			<string>email</string>
+			<string>common name</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.Recurrence</key>
+		<array>
+			<string>frequency</string>
+			<string>until</string>
+			<string>count</string>
+			<string>interval</string>
+			<string>bydayfreq</string>
+			<string>bydaydays</string>
+			<string>bymonthday</string>
+			<string>byyearday</string>
+			<string>byweeknumber</string>
+			<string>bymonth</string>
+			<string>bysetpos</string>
+			<string>weekstartday</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.calendars.Task</key>
+		<array>
+			<string>com.apple.ical.creationdate</string>
+			<string>com.apple.ical.datestamp</string>
+			<string>description</string>
+			<string>com.apple.ical.sequence</string>
+			<string>status</string>
+			<string>summary</string>
+			<string>com.apple.ical.uid</string>
+			<string>url</string>
+			<string>calendar</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>completion date</string>
+			<string>priority</string>
+			<string>due date</string>
+			<string>com.apple.ical.attachmenturls</string>
+			<string>due date is date only</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.ical.calendars.DotMacPublisher</key>
+		<array>
+			<string>name</string>
+			<string>publisher id</string>
+			<string>autoupdate</string>
+			<string>filtertexts</string>
+			<string>filteralarms</string>
+			<string>filtertasks</string>
+			<string>node</string>
+			<string>filename</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+		</array>
+		<key>com.apple.ical.calendars.Node</key>
+		<array>
+			<string>type</string>
+			<string>groupType</string>
+			<string>theme</string>
+			<string>title</string>
+			<string>notes</string>
+			<string>nodes</string>
+			<string>parent node</string>
+			<string>calendar</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.ical.calendars.ProcAlarm</key>
+		<array>
+			<string>triggerdate</string>
+			<string>triggerduration</string>
+			<string>owner</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+			<string>path</string>
+			<string>description</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+		</array>
+		<key>com.apple.ical.calendars.RootNode</key>
+		<array>
+			<string>identity</string>
+			<string>nodes</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+		</array>
+		<key>com.apple.ical.calendars.TaskOrder</key>
+		<array>
+			<string>identity</string>
+			<string>tasks</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+		</array>
+		<key>com.apple.ical.calendars.URLPublisher</key>
+		<array>
+			<string>name</string>
+			<string>publisher id</string>
+			<string>autoupdate</string>
+			<string>filtertexts</string>
+			<string>filteralarms</string>
+			<string>filtertasks</string>
+			<string>node</string>
+			<string>com.apple.syncservices.KeepAwayFromServers</string>
+			<string>url</string>
+			<string>com.apple.syncservices.RecordEntityName</string>
+		</array>
+	</dict>
+	<key>ImagePath</key>
+	<string>/System/Library/PrivateFrameworks/CalendarPersistence.framework/Resources/App.icns</string>
+	<key>NeverFormatsRelationships</key>
+	<true/>
+	<key>SyncsWith</key>
+	<dict>
+		<key>SyncAlertToolPath</key>
+		<string>/System/Library/PrivateFrameworks/CalendarPersistence.framework/Resources/iCalExternalSync</string>
+		<key>SyncAlertTypes</key>
+		<array>
+			<string>app</string>
+			<string>device</string>
+			<string>server</string>
+		</array>
+	</dict>
+	<key>Type</key>
+	<string>app</string>
+</dict>
+</plist>

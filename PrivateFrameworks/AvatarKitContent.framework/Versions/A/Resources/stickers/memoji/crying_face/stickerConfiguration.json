@@ -1,0 +1,122 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/cam.scnz"
+  },
+  "emoji" : "😢",
+  "identifier" : "crying_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "memoji" : {
+      "lowerBack_DYN" : {
+        "offset" : [
+          -0.070977210998535156,
+          0.051548957824707031,
+          -1.1920058727264404
+        ]
+      },
+      "lowerBackLeft_DYN" : {
+        "offset" : [
+          -0.073628425598144531,
+          -0.57883548736572266,
+          -0.89599645137786865
+        ]
+      },
+      "lowerBackRight_DYN" : {
+        "offset" : [
+          -0.034708976745605469,
+          0.61351394653320312,
+          -0.79836809635162354
+        ]
+      },
+      "lowerFront_DYN" : {
+        "offset" : [
+          -0.07097625732421875,
+          -0.051548480987548828,
+          -1.1920057535171509
+        ]
+      },
+      "lowerFrontLeft_DYN" : {
+        "offset" : [
+          -0.073628425598144531,
+          -0.57883548736572266,
+          0.89599645137786865
+        ]
+      },
+      "lowerFrontRight_DYN" : {
+        "offset" : [
+          -0.034708976745605469,
+          0.61351394653320312,
+          0.79836809635162354
+        ]
+      },
+      "lowerLeft_DYN" : {
+        "offset" : [
+          -0.057034492492675781,
+          -0.86455583572387695,
+          2.0960317323752333e-16
+        ]
+      },
+      "lowerRight_DYN" : {
+        "offset" : [
+          -0.015676498413085938,
+          -0.83040761947631836,
+          -1.6942840054925187e-16
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browDown_L" : 0.91743135452270508,
+    "browDown_R" : 0.90519881248474121,
+    "browInnerUp" : 1,
+    "cheekPuff" : 0.12121210247278214,
+    "cheekSquint_L" : 0.2837468683719635,
+    "cheekSquint_R" : 0.22865039110183716,
+    "eyeLookDown_L" : 0.085399441421031952,
+    "eyeLookDown_R" : 0.074380174279212952,
+    "eyeSquint_L" : 0.6048046350479126,
+    "eyeSquint_R" : 0.56779086589813232,
+    "jawOpen" : 0.059594649821519852,
+    "mouthFrown_L" : 0.4250946044921875,
+    "mouthFrown_R" : 0.3725435733795166,
+    "mouthLeft" : 0.082568816840648651,
+    "mouthPress_L" : 0.18457300961017609,
+    "mouthPress_R" : 0.27823710441589355,
+    "mouthShrugLower" : 0.49311277270317078,
+    "mouthShrugUpper" : 0.49035823345184326,
+    "mouthStretch_L" : 0.80991733074188232,
+    "mouthStretch_R" : 0.68595039844512939,
+    "neckOrientation" : [
+      0,
+      0,
+      0.061048541218042374,
+      0.9981347918510437
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "image" : "../../shared/crying_face/crying_tear.heic",
+      "position" : 12,
+      "renderLast" : false
+    }
+  ],
+  "shaders" : [
+    {
+      "file" : "fragment_eyes.metal",
+      "modifier" : "fragment",
+      "node" : [
+        "L_eye",
+        "R_eye"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+    "Name": "UnlitPbr",
+    "OverrideMaterial": "engine:pbrCommon.rematerialdefinition",
+    "Techniques": [
+    {
+        "Name": "OpaqueUnlit",
+        "VertexShader": {
+            "Entry": "vsRealityPbr"
+        },
+        "PixelShader": {
+            "Entry": "fsRealityPbr"
+        },
+        "State" : {
+            "AlphaBlend" : false,
+            "WriteDepth" : true,
+            "DepthCompareFunction" : "Greater",
+        },
+        "FunctionConstants" : {
+            "EnableIBL"             : "false",
+            "EnableDynamicLighting" : "false",
+            "EnableAREnvProbe"      : "false",
+            "EnableLightmap"        : "false",
+            "EnableBaseColorMap"    : "false",
+            "EnableNormalMap"       : "false",
+            "EnableEmissiveMap"     : "true",
+            "EnableAreaLight"       : "false",
+            "EnableRoughnessMap"    : "false",
+            "EnableMetallicMap"     : "false",
+            "EnableAOMap"           : "false",
+            "EnableSpecularMap"     : "false",
+            "EnableOpacityMap"      : "false",
+        },
+        "DebugMapping": "PbrDebug"
+    }],
+    "TechniqueMapping": {
+        "Opaque": "OpaqueUnlit",
+        "Shadow": "Shadow",
+    }
+}

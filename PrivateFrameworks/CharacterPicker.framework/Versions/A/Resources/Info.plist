@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>20A241128</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CharacterPicker</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.CharacterPicker</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CharacterPicker</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>191</string>
+	<key>CPKOverrideFlagNames</key>
+	<dict>
+		<key>🇦🇬</key>
+		<string>FLAG OF ANTIGUA AND BARBUDA</string>
+		<key>🇧🇦</key>
+		<string>FLAG OF BOSNIA AND HERZEGOVINA</string>
+		<key>🇧🇱</key>
+		<string>FLAG OF SAINT BARTHÉLEMY</string>
+		<key>🇧🇳</key>
+		<string>FLAG OF BRUNEI DARUSSALAM</string>
+		<key>🇧🇴</key>
+		<string>FLAG OF BOLIVIA (PLURINATIONAL STATE OF)</string>
+		<key>🇧🇶</key>
+		<string>FLAG OF BONAIRE, SINT EUSTATIUS AND SABA</string>
+		<key>🇨🇩</key>
+		<string>FLAG OF CONGO (DEMOCRATIC REPUBLIC OF THE)</string>
+		<key>🇨🇬</key>
+		<string>FLAG OF CONGO</string>
+		<key>🇨🇮</key>
+		<string>FLAG OF IVORY COAST (CÔTE D’IVOIRE)</string>
+		<key>🇨🇻</key>
+		<string>FLAG OF CABO VERDE</string>
+		<key>🇫🇰</key>
+		<string>FLAG OF FALKLAND ISLANDS (MALVINAS)</string>
+		<key>🇫🇲</key>
+		<string>FLAG OF MICRONESIA (FEDERATED STATES OF)</string>
+		<key>🇬🇧</key>
+		<string>FLAG OF UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND</string>
+		<key>🇬🇸</key>
+		<string>FLAG OF SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</string>
+		<key>🇮🇷</key>
+		<string>FLAG OF IRAN (ISLAMIC REPUBLIC OF)</string>
+		<key>🇰🇳</key>
+		<string>FLAG OF SAINT KITTS AND NEVIS</string>
+		<key>🇱🇦</key>
+		<string>FLAG OF LAO PEOPLE’S DEMOCRATIC REPUBLIC</string>
+		<key>🇱🇨</key>
+		<string>FLAG OF SAINT LUCIA</string>
+		<key>🇲🇩</key>
+		<string>FLAG OF MOLDOVA (REPUBLIC OF)</string>
+		<key>🇲🇰</key>
+		<string>FLAG OF MACEDONIA (THE FORMER YUGOSLAV REPUBLIC OF)</string>
+		<key>🇲🇲</key>
+		<string>FLAG OF MYANMAR</string>
+		<key>🇵🇲</key>
+		<string>FLAG OF SAINT PIERRE AND MIQUELON</string>
+		<key>🇵🇳</key>
+		<string>FLAG OF PITCAIRN</string>
+		<key>🇷🇺</key>
+		<string>FLAG OF RUSSIAN FEDERATION</string>
+		<key>🇸🇭</key>
+		<string>FLAG OF SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</string>
+		<key>🇸🇹</key>
+		<string>FLAG OF SAO TOME AND PRINCIPE</string>
+		<key>🇸🇽</key>
+		<string>FLAG OF SINT MAARTEN (DUTCH PART)</string>
+		<key>🇸🇾</key>
+		<string>FLAG OF SYRIAN ARAB REPUBLIC</string>
+		<key>🇹🇨</key>
+		<string>FLAG OF TURKS AND CAICOS ISLANDS</string>
+		<key>🇹🇹</key>
+		<string>FLAG OF TRINIDAD AND TOBAGO</string>
+		<key>🇹🇿</key>
+		<string>FLAG OF TANZANIA, UNITED REPUBLIC OF</string>
+		<key>🇺🇸</key>
+		<string>FLAG OF UNITED STATES OF AMERICA</string>
+		<key>🇻🇨</key>
+		<string>FLAG OF SAINT VINCENT AND THE GRENADINES</string>
+		<key>🇻🇪</key>
+		<string>FLAG OF VENEZUELA (BOLIVARIAN REPUBLIC OF)</string>
+		<key>🇻🇳</key>
+		<string>FLAG OF VIET NAM</string>
+		<key>🇼🇫</key>
+		<string>FLAG OF WALLIS AND FUTUNA</string>
+	</dict>
+	<key>CPKReplaceUnicodeNames</key>
+	<dict>
+		<key>WHITE DOWN POINTING BACKHAND INDEX</key>
+		<string>DOWN POINTING BACKHAND INDEX</string>
+		<key>WHITE LEFT POINTING BACKHAND INDEX</key>
+		<string>LEFT POINTING BACKHAND INDEX</string>
+		<key>WHITE RIGHT POINTING BACKHAND INDEX</key>
+		<string>RIGHT POINTING BACKHAND INDEX</string>
+		<key>WHITE SMILING FACE</key>
+		<string>SMILING FACE</string>
+		<key>WHITE UP POINTING BACKHAND INDEX</key>
+		<string>UP POINTING BACKHAND INDEX</string>
+		<key>WHITE UP POINTING INDEX</key>
+		<string>UP POINTING INDEX</string>
+	</dict>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>13E6049a</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>12.3</string>
+	<key>DTSDKBuild</key>
+	<string>21E216a</string>
+	<key>DTSDKName</key>
+	<string>macosx12.3.internal</string>
+	<key>DTXcode</key>
+	<string>1330</string>
+	<key>DTXcodeBuild</key>
+	<string>13E6049a</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.3</string>
+</dict>
+</plist>

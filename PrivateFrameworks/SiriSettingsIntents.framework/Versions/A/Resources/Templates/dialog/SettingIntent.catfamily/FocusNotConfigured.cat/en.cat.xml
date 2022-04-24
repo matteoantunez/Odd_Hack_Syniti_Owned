@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#FocusNotConfigured" locale="en">
+  <first>
+      <dialog><var name="setting.name"/> is not yet configured, but you can do it in Settings.</dialog>
+  </first>
+</cat>

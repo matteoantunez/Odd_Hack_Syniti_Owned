@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#NotPermittedToDo">
+    <meta name="description" value="User requested something that Siri is not permitted to do."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters></parameters>
+</cat>

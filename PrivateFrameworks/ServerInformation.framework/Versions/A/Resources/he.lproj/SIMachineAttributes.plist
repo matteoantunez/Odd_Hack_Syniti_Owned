@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>‏MacBook עם מעבד Intel Core Duo, זמין בשחור או בלבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo, זמין בשחור או בלבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo, זמין בשחור או בלבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo, זמין בשחור או בלבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo (גוף אלומיניום אחיד [unibody])</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק בסוף 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo (לבן, תחילת 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook לבן עם מעבד Intel Core 2 Duo, הושק בתחילת 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo (לבן, סוף 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook לבן עם מעבד Intel Core 2 Duo וצג LED, הושק בסוף 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo (לבן, אמצע 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook עם מעבד Intel Core 2 Duo ומארז לבן אחיד (unibody). הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook בגודל 12 אינץ׳ (תחילת 2015)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core M בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook בגודל 12 אינץ׳ עם צג Retina, הושק בתחילת 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook בגודל 12 אינץ׳ (תחילת 2016)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core m3 בעל ליבה כפולה, מעבד Intel Core m5 בעל ליבה כפולה, מעבד Intel Core m7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook בגודל 12 אינץ׳ עם צג Retina, הושק בתחילת 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>‏MacBook בגודל 12 אינץ׳ (אמצע 2017)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core m3 בעל ליבה כפולה, מעבד Intel Core i5 בעל ליבה כפולה, מעבד Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook בגודל 12 אינץ׳ עם צג Retina. הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(מקור)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Air עם מעבד Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Air עם מעבד Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 11 אינץ׳</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 11 אינץ׳, הושק בסוף 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 13 אינץ׳</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 13 אינץ׳, הושק בסוף 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 11 אינץ׳ (אמצע 2011)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 11 אינץ׳, הושק באמצע 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 13 אינץ׳ (אמצע 2011)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 13 אינץ׳, הושק באמצע 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 11 אינץ׳ (אמצע 2012)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 11 אינץ׳, הושק באמצע 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 13 אינץ׳ (אמצע 2012)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 13 אינץ׳, הושק באמצע 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 11 אינץ׳ (אמצע 2013)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 11 אינץ׳, הושק באמצע 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 13 אינץ׳ (אמצע 2013)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 13 אינץ׳, הושק באמצע 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 11 אינץ׳ (תחילת 2015)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 11 אינץ׳, הושק בתחילת 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air בגודל 13 אינץ׳ (תחילת 2015)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג בגודל 13 אינץ׳, הושק בתחילת 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air (סוף 2018)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air עם צג Retina וחיישן Touch ID. הושק בסוף 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Air (אמצע 2019)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Air בגודל 13 אינץ׳ עם צג Retina וחיישן Touch ID. הושק באמצע 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core Duo וצג בגודל 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core Duo וצג בגודל 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וצג בגודל 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וצג בגודל 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וצג בגודל 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo, צג בגודל 15 אינץ׳ או 17 אינץ׳ ומשטח מגע Multi-Touch.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo (גוף אלומיניום אחיד [unibody]) (סוף 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק בסוף 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo (גוף אלומיניום אחיד [unibody]) (תחילת 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק בתחילת 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo (גוף אלומיניום אחיד [unibody]) (אמצע 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק באמצע 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo (גוף אלומיניום אחיד [unibody]) (אמצע 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק באמצע 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo (גוף אלומיניום אחיד [unibody]) (אמצע 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק באמצע 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i5‏, Intel Core i7 (אמצע 2010)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i5 או Intel Core i7, צג בגודל 15 אינץ׳ או 17 אינץ׳ וגוף אלומיניום אחיד (unibody). הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i5‏, Intel Core i7 (אמצע 2010)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i5 או Intel Core i7, צג בגודל 15 אינץ׳ או 17 אינץ׳ וגוף אלומיניום אחיד (unibody). הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core 2 Duo (אמצע 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם מעבד Intel Core 2 Duo וגוף אלומיניום אחיד (unibody). הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i5‏, Intel Core i7‏, 13 אינץ׳ (תחילת 2011)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם מעבד בעל ליבה כפולה מסוג Intel Core i5 או Intel Core i7 וגוף אלומיניום אחיד (unibody). הושק בתחילת 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i7‏, 15 אינץ׳ (תחילת 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם מעבד ארבע ליבות מסוג Intel Core i7 וגוף אלומיניום אחיד (unibody). הושק בתחילת 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i7‏, 17 אינץ׳ (תחילת 2011)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 17 אינץ׳ עם מעבד ארבע ליבות מסוג Intel Core i7 וגוף אלומיניום אחיד (unibody). הושק בתחילת 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i7,‏ 15 אינץ׳ (אמצע 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם מעבד בעל ליבה כפולה מסוג Intel Core i7 וגוף אלומיניום אחיד (unibody). הושק באמצע 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם מעבד Intel Core i5‏, Intel Core i7,‏ 13 אינץ׳ (אמצע 2012)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם מעבד בעל ליבה כפולה מסוג Intel Core i5 או Intel Core i7 וגוף אלומיניום אחיד (unibody). הושק באמצע 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina, מעבד Intel Core i7 (אמצע 2012)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ צג Retina, מעבד בעל ליבה כפולה מסוג Intel Core i7 וגוף אלומיניום אחיד (unibody). הושק באמצע 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם צג Retina, מעבד Intel Core i5, ‏Intel Core i7 (סוף 2012)</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם צג Retina, מעבד בעל ליבה כפולה מסוג Intel Core i7 או Intel Core i5 וגוף אלומיניום אחיד (unibody). הושק בסוף 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם צג Retina (סוף 2013)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם צג Retina וגוף אלומיניום אחיד. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina (סוף 2013)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina וגוף אלומיניום אחיד. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina וכרטיס גרפיקה בדידה של NVIDIA (סוף 2013).</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina, גוף אלומיניום אחיד וכרטיס גרפיקה בדידה של NVIDIA. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina (אמצע 2015)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina וגוף אלומיניום אחיד. הושק באמצע 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina (אמצע 2015)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם צג Retina, גוף אלומיניום אחיד וכרטיס גרפיקה בדידה של AMD. הושק באמצע 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם צג Retina (תחילת 2015)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם צג Retina וגוף אלומיניום אחיד. הושק בתחילת 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro עם Thunderbolt 3 בגודל 13 אינץ׳ (לקראת סוף 2016)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro עם Thunderbolt 3 בגודל 13 אינץ׳, הושק לקראת סוף 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Touch ID (סוף 2016)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Thunderbolt 3 ו-Touch ID, הושק בסוף 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם Touch ID (סוף 2016)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם Thunderbolt 3 ו-Touch ID, הושק בסוף 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Thunderbolt 3 (אמצע 2017)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Thunderbolt 3, הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Touch ID (אמצע 2017)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Thunderbolt 3 ו-Touch ID, הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם Touch ID (אמצע 2017)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם Thunderbolt 3 ו-Touch ID, הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם Thunderbolt 3 ו-Touch ID (אמצע 2018)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל שש ליבות, Intel Core i9 בעל שש ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 15 אינץ׳ עם Thunderbolt 3 ו-Touch ID, הושק באמצע 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Thunderbolt 3 ו-Touch ID (אמצע 2018)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏MacBook Pro בגודל 13 אינץ׳ עם Thunderbolt 3 ו-Touch ID, הושק באמצע 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (אמצע 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>מגדל נייח (מארז אלומיניום).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (אמצע 2006)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>מגדל נייח (מארז אלומיניום).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (תחילת 2007)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>מגדל נייח (מארז אלומיניום).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (תחילת 2008)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>מגדל נייח (מארז אלומיניום).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (תחילת 2009)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>מגדל נייח (מארז אלומיניום), הושק בתחילת 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (אמצע 2010)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>מגדל נייח (מארז אלומיניום), הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>‏Mac Pro (סוף 2013)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>מארז למחשב נייח מדגם Pro. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini‏ עם מעבד Intel Core (תחילת 2006)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>מחשב Mac נייח בעל טביעת רגל פחמנית נמוכה עם מעבד Intel Core 2 Duo‏, Intel Core Duo או Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini (אמצע 2007)</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini עם מעבד Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>מחשב Mac נייח בעל טביעת רגל פחמנית נמוכה עם מעבד Intel Core 2 Duo‏, Intel Core Duo או Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini‏ עם מעבד Intel Core (תחילת 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏Mac mini‏ עם NVIDIA GeForce 9400M, הושק בתחילת 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini‏ עם מעבד Intel Core (אמצע 2010)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏Mac mini‏ עם NVIDIA GeForce 320M, הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini (אמצע 2011) עם Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏Mac mini‏ עם מעבד Intel i5 בעל ליבה כפולה וכרטיס Intel HD Graphics 3000, הושק באמצע 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini (אמצע 2011) עם AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>מעבד ‏Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏Mac mini‏ עם מעבד Intel i5 או i7 בעל ליבה כפולה ו-AMD Radeon HD 6630M, הושק באמצע 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>שרת Mac mini‏ (אמצע 2011)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>שרת Mac mini‏ עם מעבד בעל ליבה כפולה i7 וכרטיס Intel HD Graphics 3000, הושק באמצע 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini (סוף 2012)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏Mac mini עם מעבד i5 בעל ליבה כפולה וכרטיס Intel HD Graphics 4000, הושק בסוף 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini (סוף 2012)</string>
+			<key>processor</key>
+			<string>‏Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏Mac mini עם מעבד i7 בעל ארבע ליבות וכרטיס Intel HD Graphics 4000, הושק בסוף 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini (סוף 2014)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 או Intel Core i7 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏Mac mini עם מעבד Intel בעל ליבה כפולה וגרפיקה משולבת. הושק בסוף 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini (סוף 2018)</string>
+			<key>processor</key>
+			<string>מעבד Intel מדור שמיני (מעבד Core i3 בעל ארבע ליבות, מעבד Core i5 בעל שש ליבות, מעבד Core i7 בעל שש ליבות)</string>
+			<key>description</key>
+			<string>‏Mac mini עם מעבד מדור שמיני וכרטיס Intel UHD graphics 630. הושק בסוף 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>מחשב נייד במארז שחור עשוי פלסטיק וגומי עם צדדים ״מפוסלים״.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>כולל מחשב נייד מקורי במעטפת דמויית צדפה (״clamshell״) ובצבעים בוהקים עם ידית מובנית ודגמים חדשים יותר במארז פלסטיק מלבני בכסף ובלבן עם צג שטוח בגודל 12 אינץ׳ או 14 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מכשירי iBook לבנים עם מעבד G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מכשירי iBook לבנים עם מעבד G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מכשירי iBook לבנים עם מעבד G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>כולל מארז טיטניום דקיק מקורי עם צג שטוח בגודל 15 אינץ׳ ודגמים חדשים יותר מצופים אלומיניום עם צג בגודל 12 אינץ׳, 15 אינץ׳ או 17 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ בכחול ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ בכחול ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב Mac G4 נייח בעל טביעת רגל פחמנית נמוכה המתחבר כמעט לכל צג LCD או VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>‏Mac mini</string>
+			<key>marketingModel</key>
+			<string>‏Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב Mac G4 נייח בעל טביעת רגל פחמנית נמוכה המתחבר כמעט לכל צג LCD או VGA.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי אלומיניום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי אלומיניום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>‏G5 iMac עם צג שטוח</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, עם מארז פלסטי כחול ולבן במקור, ומאוחר יותר ״טעמים״ רבים שניתן לבחור מביניהם.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, עם מארז פלסטי כחול ולבן במקור, ומאוחר יותר ״טעמים״ רבים שניתן לבחור מביניהם.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ באפור ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ באפור ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ באפור ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ באפור ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ באפור ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי פלסטיק ״מפוסל״ באפור ולבן.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, עם מארז פלסטי כחול ולבן במקור, ומאוחר יותר ״טעמים״ רבים שניתן לבחור מביניהם.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, הכולל בסיס בצורת כיפה וצג שטוח בגודל 15 אינץ׳, 17 אינץ׳ או 20 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, הכולל צג CRT שטוח מובנה במארז מעוגל החוסך מקום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, הכולל בסיס בצורת כיפה וצג שטוח בגודל 15 אינץ׳, 17 אינץ׳ או 20 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח בצורת קובייה עשוי פלסטיק שקוף.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>מחשב נייח בצורת קובייה עשוי פלסטיק שקוף.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, הכולל בסיס בצורת כיפה וצג שטוח בגודל 15 אינץ׳, 17 אינץ׳ או 20 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, הכולל בסיס בצורת כיפה וצג שטוח בגודל 15 אינץ׳, 17 אינץ׳ או 20 אינץ׳.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>עיצוב בסגנון ״הכל כלול״, הכולל צג CRT שטוח מובנה במארז מעוגל החוסך מקום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי אלומיניום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי אלומיניום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>‏G5 iMac עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>‏G5 iMac עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>מחשב נייח ניצב עשוי אלומיניום.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>שרת G4 המותקן בארון תקשורת עם כונן אופטי הנטען במגש או בחריץ וארבעה חריצי הרחבה, או דגם צומת האשכולות של G4 עם חריץ הרחבה אחד.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>שרת G4 המותקן בארון תקשורת עם כונן אופטי הנטען במגש או בחריץ וארבעה חריצי הרחבה, או דגם צומת האשכולות של G4 עם חריץ הרחבה אחד.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>מחשב שרת G5 המותקן בארון תקשורת עם כונן תקליטורים או כונן DVD הנטען בחריץ ועם שלושה חריצי הרחבה, או דגם צומת האשכולות ללא חריצי הרחבה.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>‏Xserve (סוף 2006)</string>
+			<key>processor</key>
+			<string>סדרת Intel Xeon 5100</string>
+			<key>description</key>
+			<string>שרת המבוסס על Intel Xeon 5100 Series ומותקן בארון תקשורת, הושק בסוף 2006.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>‏Xserve (תחילת 2008)</string>
+			<key>processor</key>
+			<string>סדרת Intel Xeon 5400</string>
+			<key>description</key>
+			<string>שרת המבוסס על Intel Xeon 5400 Series ומותקן בארון תקשורת, הושק בתחילת 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>‏Xserve (תחילת 2009)</string>
+			<key>processor</key>
+			<string>סדרת Intel Xeon 5500</string>
+			<key>description</key>
+			<string>שרת המבוסס על Intel Xeon 5500 Series ומותקן בארון תקשורת, הושק בתחילת 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>‏iMac Intel Core Duo עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>‏iMac Intel Core Duo עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏iMac Intel Core 2 Duo עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏iMac Intel Core 2 Duo עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏iMac Intel Core 2 Duo עם צג שטוח.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac Intel Core 2 Duo (מארז אלומיניום) (אמצע 2007)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>מחשב iMac עם צג שטוח בגודל 20 אינץ׳ או 24 אינץ׳ (מארז אלומיניום) עם מעבד Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac Intel Core 2 Duo (מארז אלומיניום) (תחילת 2008)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>מחשב iMac עם צג שטוח בגודל 20 אינץ׳ או 24 אינץ׳ (מארז אלומיניום) עם מעבד Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac Intel Core 2 Duo (מארז אלומיניום) (תחילת 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>מחשב iMac עם צג שטוח בגודל 20 אינץ׳ או 24 אינץ׳ (מארז אלומיניום) עם מעבד Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac Intel Core 2 Duo (צג רחב, סוף 2009)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ או 27 אינץ׳ עם צג LED רחב, הושק בסוף 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac עם מעבד Intel Core i5‏, Intel Core i7 (צג רחב, סוף 2009)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם מעבד ארבע ליבות וצג LED רחב. הושק בסוף 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (אמצע 2010)</string>
+			<key>processor</key>
+			<string>‏Intel Core i3‏, Intel Core i5</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג LED רחב, הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 27 אינץ׳ (אמצע 2010)</string>
+			<key>processor</key>
+			<string>‏Intel Core i3‏, Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג LED רחב, הושק באמצע 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (תחילת 2011)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם Thunderbolt, הושק בתחילת 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 27 אינץ׳ (תחילת 2011)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5‏, Intel Core i7</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם Thunderbolt, הושק בתחילת 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (סוף 2012)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב בעל תאורת LED אחורית, הושק בסוף 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 27 אינץ׳ (סוף 2012)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג רחב בעל תאורת LED אחורית, הושק בסוף 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (תחילת 2013)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i3 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב בעל תאורת LED אחורית, הושק בתחילת 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac עם מסך 21.5 אינץ׳ (סוף 2013)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב בעל תאורת LED אחורית. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac עם מסך 27 אינץ׳ (סוף 2013)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג רחב בעל תאורת LED אחורית. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac עם מסך 21.5 אינץ׳ (סוף 2013)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i3 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב בעל תאורת LED אחורית. הושק בסוף 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (אמצע 2014)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב בעל תאורת LED אחורית. הושק באמצע 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac עם מסך 27 אינץ׳ (סוף 2014)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג רחב בעל תאורת LED אחורית. הושק בסוף 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (סוף 2015)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב בעל תאורת LED אחורית. הושק בסוף 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (סוף 2015)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב או צג Retina 4K. הושק בסוף 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 27 אינץ׳ (סוף 2015)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל ארבע ליבות, Intel Core i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג רחב או צג Retina 5K. הושק בסוף 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (אמצע 2017)</string>
+			<key>processor</key>
+			<string>מעבד Intel Core i5 בעל ליבה כפולה</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג רחב. הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (אמצע 2017)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5/i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג Retina 4K. הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 27 אינץ׳ (אמצע 2017)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5/i7 בעל ארבע ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג Retina 5K. הושק באמצע 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 27 אינץ׳ (תחילת 2019)</string>
+			<key>processor</key>
+			<string>‏Intel Core i5 בעל שש ליבות, Intel Core i9 בעל שמונה ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 27 אינץ׳ עם צג Retina 5K. הושק בתחילת 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ (תחילת 2019)</string>
+			<key>processor</key>
+			<string>‏Intel Core i3 בעל ארבע ליבות, Intel Core i5/i7 בעל שש ליבות</string>
+			<key>description</key>
+			<string>‏iMac בגודל 21.5 אינץ׳ עם צג Retina 4K. הושק בתחילת 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>‏iMac Pro (סוף 2017)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>‏iMac Pro עם מעבד Xeon W וכרטיס מסך Radeon Pro Vega. הושק בסוף 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

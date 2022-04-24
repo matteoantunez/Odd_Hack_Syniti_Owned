@@ -1,0 +1,276 @@
+{
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "metadata_in_weights" : [
+
+  ],
+  "layers" : [
+    {
+      "bottom" : "transit_count_cycling,transit_count_walking,transit_count_driving",
+      "weights" : {
+
+      },
+      "nd_mode" : true,
+      "axis" : 0,
+      "debug_info" : "concat_0",
+      "top" : "concat_0",
+      "type" : "general_concat",
+      "name" : "concat_0"
+    },
+    {
+      "bottom" : "transit_duration_cycling,transit_duration_driving,transit_duration_walking",
+      "weights" : {
+
+      },
+      "nd_mode" : true,
+      "axis" : 0,
+      "debug_info" : "concat_1",
+      "top" : "concat_1",
+      "type" : "general_concat",
+      "name" : "concat_1"
+    },
+    {
+      "axis_mode" : 31,
+      "bottom" : "concat_0",
+      "weights" : {
+
+      },
+      "mode" : 9,
+      "debug_info" : "reduce_max_0",
+      "use_version" : 1,
+      "top" : "reduce_max_0_presqueeze",
+      "type" : "reduce",
+      "name" : "reduce_max_0"
+    },
+    {
+      "size_of_axes" : 0,
+      "bottom" : "reduce_max_0_presqueeze",
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "reduce_max_0",
+      "version" : 1,
+      "top" : "reduce_max_0",
+      "type" : "squeeze",
+      "name" : "reduce_max_0",
+      "squeeze_all" : true
+    },
+    {
+      "axis_mode" : 31,
+      "bottom" : "concat_1",
+      "weights" : {
+
+      },
+      "mode" : 9,
+      "debug_info" : "reduce_max_1",
+      "use_version" : 1,
+      "top" : "reduce_max_1_presqueeze",
+      "type" : "reduce",
+      "name" : "reduce_max_1"
+    },
+    {
+      "size_of_axes" : 0,
+      "bottom" : "reduce_max_1_presqueeze",
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "reduce_max_1",
+      "version" : 1,
+      "top" : "reduce_max_1",
+      "type" : "squeeze",
+      "name" : "reduce_max_1",
+      "squeeze_all" : true
+    },
+    {
+      "bottom" : "transit_duration_walking,reduce_max_1",
+      "alpha" : 1,
+      "operation" : 102,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "real_div_0",
+      "nd_mode" : true,
+      "top" : "real_div_0",
+      "type" : "elementwise",
+      "name" : "real_div_0",
+      "beta" : 0
+    },
+    {
+      "bottom" : "transit_count_walking,reduce_max_0",
+      "alpha" : 1,
+      "operation" : 102,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "real_div_1",
+      "nd_mode" : true,
+      "top" : "real_div_1",
+      "type" : "elementwise",
+      "name" : "real_div_1",
+      "beta" : 0
+    },
+    {
+      "bottom" : "real_div_1,real_div_0",
+      "alpha" : 1,
+      "operation" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "add_0",
+      "top" : "add_0",
+      "type" : "elementwise",
+      "name" : "add_0",
+      "beta" : 0
+    },
+    {
+      "bottom" : "add_0",
+      "alpha" : 0.5,
+      "operation" : 1,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "walking_score",
+      "top" : "walking_score",
+      "type" : "elementwise",
+      "name" : "walking_score",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "bottom" : "transit_duration_cycling,reduce_max_1",
+      "alpha" : 1,
+      "operation" : 102,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "real_div_2",
+      "nd_mode" : true,
+      "top" : "real_div_2",
+      "type" : "elementwise",
+      "name" : "real_div_2",
+      "beta" : 0
+    },
+    {
+      "bottom" : "transit_count_cycling,reduce_max_0",
+      "alpha" : 1,
+      "operation" : 102,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "real_div_3",
+      "nd_mode" : true,
+      "top" : "real_div_3",
+      "type" : "elementwise",
+      "name" : "real_div_3",
+      "beta" : 0
+    },
+    {
+      "bottom" : "real_div_3,real_div_2",
+      "alpha" : 1,
+      "operation" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "add_1",
+      "top" : "add_1",
+      "type" : "elementwise",
+      "name" : "add_1",
+      "beta" : 0
+    },
+    {
+      "bottom" : "add_1",
+      "alpha" : 0.5,
+      "operation" : 1,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "cycling_score",
+      "top" : "cycling_score",
+      "type" : "elementwise",
+      "name" : "cycling_score",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "bottom" : "transit_duration_driving,reduce_max_1",
+      "alpha" : 1,
+      "operation" : 102,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "real_div_4",
+      "nd_mode" : true,
+      "top" : "real_div_4",
+      "type" : "elementwise",
+      "name" : "real_div_4",
+      "beta" : 0
+    },
+    {
+      "bottom" : "transit_duration_driving,reduce_max_0",
+      "alpha" : 1,
+      "operation" : 102,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "real_div_5",
+      "nd_mode" : true,
+      "top" : "real_div_5",
+      "type" : "elementwise",
+      "name" : "real_div_5",
+      "beta" : 0
+    },
+    {
+      "bottom" : "real_div_5,real_div_4",
+      "alpha" : 1,
+      "operation" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "add_2",
+      "top" : "add_2",
+      "type" : "elementwise",
+      "name" : "add_2",
+      "beta" : 0
+    },
+    {
+      "bottom" : "add_2",
+      "alpha" : 0.5,
+      "operation" : 1,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "driving_score",
+      "top" : "driving_score",
+      "type" : "elementwise",
+      "name" : "driving_score",
+      "attributes" : {
+        "is_output" : 1
+      }
+    }
+  ]
+}

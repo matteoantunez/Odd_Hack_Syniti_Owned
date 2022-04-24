@@ -1,0 +1,111 @@
+{
+    "Name": "PbrCommonTiledForward",
+    "OverrideMaterial": "engine:pbrCommon.rematerialdefinition",
+    "Techniques": [
+        {
+            "Name": "TransparentTiledForward",
+            "VertexShader": {
+                "Entry": "vsRealityPbr"
+            },
+            "PixelShader": {
+                "Entry": "fsRealityPbr"
+            },
+            "State" : {
+                "AlphaBlend"                : true,
+                "WriteDepth"                : true,
+                "DepthCompareFunction"      : "GreaterEqual",
+                "AlphaBlendOperation"       : "Add",
+                "AlphaSourceFactor"         : "One",
+                "AlphaDestinationFactor"    : "OneMinusSourceAlpha",
+                "RgbBlendOperation"         : "Add",
+                "RgbSourceFactor"           : "One",
+                "RgbDestinationFactor"      : "OneMinusSourceAlpha"
+            },
+            "FunctionConstants" : {
+                "EnableBaseColorMap"    : "true",
+                "EnableNormalMap"       : "true",
+                "EnableEmissiveMap"     : "true",
+                "EnableAreaLight"       : "true",
+                "EnableSeparateRMAS"    : "true",
+                "EnableSingleRMAS"      : "false",
+                "EnableRoughnessMap"    : "true",
+                "EnableMetallicMap"     : "true",
+                "EnableAOMap"           : "true",
+                "EnableSpecularMap"     : "true",
+                "EnableTransparency"    : "true",
+                "EnableOpacityMap"      : "false",
+                "EnableClearcoat"       : "false",
+                "VertexColorOption"     : "0",
+                "EnableIBL"             : "true",
+                "EnableDynamicLighting" : "true",
+                "EnablePerTileLightCulling" : "true",
+                "EnableSSAO"            : "false",
+                "EnableSSDO"            : "false",
+                "EnableMultiUVs"        : "false"
+            },
+            "DebugMapping": "PbrDebug"
+        },
+        {
+            "Name": "OpaqueTiledForward",
+            "VertexShader": {
+                "Entry": "vsRealityPbr"
+            },
+            "PixelShader": {
+                "Entry": "fsRealityPbr"
+            },
+            "State" : {
+                "AlphaBlend" : false,
+                "WriteDepth" : true,
+                "DepthCompareFunction" : "GreaterEqual"
+            },
+            "FunctionConstants" : {
+                "EnableBaseColorMap"    : "true",
+                "EnableNormalMap"       : "true",
+                "EnableEmissiveMap"     : "true",
+                "EnableAreaLight"       : "true",
+                "EnableSeparateRMAS"    : "true",
+                "EnableSingleRMAS"      : "false",
+                "EnableRoughnessMap"    : "true",
+                "EnableMetallicMap"     : "true",
+                "EnableAOMap"           : "true",
+                "EnableSpecularMap"     : "true",
+                "EnableClearcoat"       : "false",
+                "VertexColorOption"     : "0",
+                "EnableIBL"             : "true",
+                "UseBaseColorMapAsTintMask" : "false",
+                "EnableDynamicLighting" : "true",
+                "EnablePerTileLightCulling" : "true",
+                "EnableMultiUVs"        : "false"
+            },
+            "DebugMapping": "PbrDebug"
+        },
+        {
+            "Name": "StandardDepthPrepass",
+            "VertexShader": {
+                "Entry": "vsDepthPrepass"
+            },
+            "PixelShader": {
+                "Entry": "fsDepthPrepass"
+            },
+            "State" : {
+                "AlphaBlend" : false,
+                "WriteDepth" : true,
+                "DepthCompareFunction" : "Greater"
+            }
+        },
+        {
+            "Name": "TransparentDepthPrepass",
+            "VertexShader": {
+                "Entry": "vsDepthPrepass"
+            },
+            "PixelShader": {
+                "Entry": "fsTransparentDepthPrepass"
+            },
+            "State" : {
+                "AlphaBlend" : false,
+                "WriteDepth" : false,
+                "DepthCompareFunction" : "Greater"
+            }
+        }
+    ]
+}

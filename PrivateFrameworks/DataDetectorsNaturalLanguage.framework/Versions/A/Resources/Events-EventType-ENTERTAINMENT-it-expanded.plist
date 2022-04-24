@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL</key>
+	<array>
+		<string>festival di sanremo</string>
+		<string>festival di venezia</string>
+		<string>la biennale di venezia</string>
+		<string>carnevale di venezia</string>
+		<string>carnevale di acireale</string>
+		<string>concerto del (1.|primo) maggio</string>
+		<string>miss italia</string>
+		<string>fiera del libro</string>
+		<string>fiera del libro per ragazzi</string>
+		<string>settimana della moda di milano</string>
+		<string>premio david di donatello</string>
+		<string>estate romana</string>
+		<string>salone nautico di genova</string>
+		<string>fiera del mediterraneo</string>
+		<string>vinitaly</string>
+		<string>fiera del levante</string>
+		<string>zecchino d['’]oro</string>
+		<string>salone dell['’]automobile</string>
+		<string>fiera di san giuseppe</string>
+		<string>la triennale di milano</string>
+		<string>settimana della moda di milano</string>
+		<string>milan fashion week</string>
+		<string>carnevale di putignano</string>
+		<string>carnevale d['’]ivrea</string>
+		<string>festival cinematografico</string>
+	</array>
+	<key>ENTERTAINMENT::FAIR</key>
+	<array>
+		<string>fiera del libro</string>
+		<string>fiera del libro per ragazzi</string>
+		<string>fiera del mediterraneo</string>
+		<string>fiera del levante</string>
+		<string>fiera di san giuseppe</string>
+		<string>la triennale di milano</string>
+		<string>salone internazionale del mobile</string>
+		<string>turin international book fair</string>
+		<string>borsa internazionale del turismo</string>
+		<string>salone internazionale del libro</string>
+		<string>salone internazionale del gusto</string>
+		<string>milan furniture fair</string>
+		<string>eurochocolate</string>
+		<string>fiera degli oh bej oh bej</string>
+		<string>oh bej oh bej fair</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::AMUSEMENT</key>
+	<array>
+		<string>disneyland( (paris|parigi))?</string>
+		<string>europa[- ]?park</string>
+		<string>walibi</string>
+		<string>walt disney studios?</string>
+		<string>disney world</string>
+		<string>mirabilandia</string>
+		<string>italia in miniatura</string>
+		<string>acquario di genova</string>
+		<string>gardaland</string>
+		<string>edenlandia</string>
+		<string>eurodisney</string>
+	</array>
+	<key>ENTERTAINMENT::PARK::WATERPARK</key>
+	<array>
+		<string>a(c)?qualand</string>
+		<string>a(c)?quasplash</string>
+		<string>a(c)?quapar(c|k)</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT</key>
+	<array>
+		<string>palio di siena</string>
+		<string>giro d['’]italia</string>
+		<string>motor show</string>
+		<string>giro di spagna</string>
+		<string>olimpiadi</string>
+		<string>olimpiadi invernali</string>
+		<string>olimpiadi estive</string>
+		<string>giochi paralimpici</string>
+		<string>partita del cuore</string>
+		<string>moto gp - gran premio d['’]italia</string>
+		<string>giochi del mediterraneo</string>
+		<string>superbike</string>
+		<string>tour de france</string>
+		<string>coppa del mondo</string>
+		<string>mondiali di calcio</string>
+		<string>scudetto</string>
+		<string>champions league</string>
+		<string>coppa dei campioni</string>
+		<string>coppa italia</string>
+		<string>europei di calcio</string>
+		<string>campionato europeo di calcio</string>
+		<string>mondiali di formula 1</string>
+		<string>gran premio di formula 1</string>
+		<string>circuito di (san marino|monza)</string>
+		<string>mugello</string>
+		<string>moto gp</string>
+		<string>atletismo</string>
+		<string>badminton</string>
+		<string>pugilato</string>
+		<string>judo</string>
+		<string>karate</string>
+		<string>taekwondo</string>
+		<string>squash</string>
+		<string>gran premio</string>
+		<string>vuelta a españa</string>
+		<string>giro di spagna</string>
+		<string>internazionali d['’]italia</string>
+		<string>playoff</string>
+		<string>aerobica d['’]acqua</string>
+		<string>karting</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::AMERICAN_FOOTBALL</key>
+	<array>
+		<string>super bowl</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BASKETBALL</key>
+	<array>
+		<string>finali nba</string>
+		<string>final four</string>
+		<string>all star game</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::BIKE</key>
+	<array>
+		<string>campionati del mondo di ciclismo</string>
+		<string>tour de france</string>
+		<string>giro d['’]italia</string>
+		<string>vuelta a españa</string>
+		<string>giro di spagna</string>
+		<string>milano-sanremo</string>
+		<string>parigi-roubaix</string>
+		<string>liegi-bastogne-liegi</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::GOLF</key>
+	<array>
+		<string>the masters( torneo)?</string>
+		<string>us open</string>
+		<string>british open</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::HOCKEY</key>
+	<array>
+		<string>stanley cup</string>
+		<string>campionato del mondo di hockey sul ghiaccio</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::RUNNING::MARATHON</key>
+	<array>
+		<string>(mezza )maratona di (boston|new york|barcellona|roma|parigi)</string>
+		<string>30 ore per la vita</string>
+		<string>maratona telethon</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::SOCCER</key>
+	<array>
+		<string>coppa del mondo</string>
+		<string>mondiali di calcio</string>
+		<string>fa cup final</string>
+		<string>champions league</string>
+		<string>euro 20[0-9][0-9]</string>
+		<string>campionato europeo di calcio 20[0-9][0-9]</string>
+		<string>coppa italia</string>
+	</array>
+	<key>ENTERTAINMENT::SPORT::TENNIS</key>
+	<array>
+		<string>u.s. open</string>
+		<string>open di francia</string>
+		<string>torneo roland garros</string>
+		<string>torneo di wimbledon</string>
+		<string>us open</string>
+	</array>
+</dict>
+</plist>

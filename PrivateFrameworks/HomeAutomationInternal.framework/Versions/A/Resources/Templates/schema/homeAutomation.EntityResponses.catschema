@@ -1,0 +1,101 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.EntityResponses
+
+inputs:
+  entityResponses:
+    access_mode: public
+    type: homeAutomation.EntityResponse[]
+    
+properties:
+    entityResponses:
+        type: homeAutomation.EntityResponse[]
+    count:
+        type: dialog.Number
+        optional: no
+        description: The length of the response list
+    entityNames:
+        type: dialog.String[]
+        description: A collection of the entity names without de-duplication. Said names can be personalized by the user.
+    rooms:
+        type: dialog.String[]
+        description: A collection of room names where the entities are in. Said names can be personalized by the user.
+    zones:
+        type: dialog.String[]
+        description: A collection of zone names where the entities are in. Said names can be personalized by the user.
+    homes:
+        type: dialog.String[]
+        description: A collection of home names where the entities are in. Said names can be personalized by the user.
+    types:
+        type: dialog.String[]
+        semantic_concept: homeAutomationService
+        description: A collection of all entity types in the entity responses without de-duplication. These types are a semantic that is determined by the kind of accessory.
+    states:
+        type: homeAutomation.EntityState[]
+        description: A collection of states for the entities
+    stateValues:
+        type: homeAutomation.EntityStateValue[]
+        description: A collection of state values for the entities
+    stateAttributes:
+        type: dialog.String[]
+        description: A collection of state attributes for the entities
+
+    isEmpty:
+        type: dialog.Boolean
+        description: True if the response list is empty.
+    isNotEmpty:
+        type: dialog.Boolean
+        description: True if the response list is not empty.
+    hasOneEntity:
+        type: dialog.Boolean
+        description: True if there is only one entity, False otherwise
+    hasMoreThanOneEntity:
+        type: dialog.Boolean
+        description: True if there are has more than one entity, False otherwise
+
+  
+    hasUniqueType:
+        type: dialog.Boolean
+        description: True if all entities in the response list have the same type.
+    uniqueType:
+        type: dialog.String
+        semantic_concept: homeAutomationService
+        description: The single unique entity type of all responses if any, nil otherwise. This type is a semantic that is determined by the kind of accessory.
+
+    hasUniqueRoom:
+        type: dialog.Boolean
+        description: True if all entities in the response list have the same room.
+    uniqueRoom:
+        type: dialog.String
+        description: The name of the room that contains all entities in the response, if all are within the same room, empty otherwise. Said name can be personalized by the user.
+    numRooms:
+        type: dialog.Number
+        description: The number of unique rooms that contain the entities in the response.
+
+    hasTargetedLocations:
+        type: dialog.Boolean
+        description: True if the targetedLocations list is not empty.
+    targetedLocations:
+        type: dialog.String[]
+        description: The name of the targeted containers where the entity is located. For example, if the user says "Turn on the lights in the Main Area", the target location list will be [Main Area], but if they say "Turn on the lights in the bedroom and bathroom", the targeted location list will be [bedroom, bathroom]. Said names can be personalized by the user.
+
+    hasUniqueZone:
+        type: dialog.Boolean
+        description: True if all the entities in the response share a single common zone.
+    uniqueZone:
+        type: dialog.String
+        description: The name of the zone that contains all entities in the response, if all are within the same zone, empty otherwise. Said name can be personalized by the user.
+        
+    hasUniqueState:
+        type: dialog.Boolean
+        description: True if all entityResponses share the same EntityState
+    uniqueState:
+        type: homeAutomation.EntityState
+        description: The value of the single unique state across all responses, if any.
+    uniqueStates:
+        type: homeAutomation.EntityState[]
+        description: A collection of states shared by all entities in the collection of responses, if any.
+    mostCommonStringValue:
+        type: dialog.String
+        semantic_concept: homeAutomationState
+        description: The value of the most common string-valued state value across all responses, if any.

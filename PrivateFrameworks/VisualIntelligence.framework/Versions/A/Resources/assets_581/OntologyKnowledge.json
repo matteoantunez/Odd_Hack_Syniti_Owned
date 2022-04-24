@@ -1,0 +1,490 @@
+[
+    { "name": "Home", "kg_id": "Q14745", "children": [
+        { "name": "Door", "kg_id": "Q36794", "children": [
+            { "name": "Door Frame", "kg_id": "Q15461768", "children": []}]
+        },
+        { "name": "Stairs", "kg_id": "Q12511", "children": []},
+        { "name": "Window", "kg_id": "Q35473", "children": []},
+        { "name": "Tables", "kg_id": "Q14748", "children": [
+            { "name": "Desk", "kg_id": "Q1064858", "children":[]},
+            { "name": "Dinning Table", "kg_id": "Q10578291", "children":[] },
+            { "name": "Coffe Table", "kg_id": "Q2407432", "children":[] }]
+        },
+        { "name": "Seating", "kg_id": "Q2207370", "children": [
+            { "name": "Chair", "kg_id": "Q15026", "children":[] },
+            { "name": "Bench", "kg_id": "Q204776", "children":[] },
+            { "name": "Sofa", "kg_id": "Q131514", "children":[] }]
+        },
+        { "name": "Bed", "kg_id": "Q42177", "children":[] },
+        { "name": "Light", "kg_id": "Q1138737", "children": [
+            { "name": "Floor Lamps", "kg_id": "Q78322686", "children":[] },
+            { "name": "Desk and Table Lamps", "kg_id": "Q1145146", "children":[] },
+            { "name": "Celing Lamps", "kg_id": "Q1164514", "children":[] }]
+        },
+        { "name": "Cabinet", "kg_id": "Q2741056", "children":[
+            { "name": "Wardrobes & Closets", "kg_id": "Q106106", "children":[] },
+            { "name": "Cupboards", "kg_id": "Q5662058", "children":[] },
+            { "name": "Shelf", "kg_id": "Q2637814", "children":[] },
+            { "name": "Buffet & Sideboards", "kg_id": "Q1762308", "children":[] }]
+        },
+        { "name": "Textile", "kg_id": "Q28823", "children": [
+            { "name": "Pillows", "kg_id": "Q99895", "children":[] },
+            { "name": "Rugs", "kg_id": "Q163446", "children":[] },
+            { "name": "Curtains", "kg_id": "Q945148", "children":[] }]
+        },
+        { "name": "Decor", "kg_id": "Q6222094", "children": [
+            { "name": "Candle", "kg_id": "Q12888135", "children":[] },
+            { "name": "Vase", "kg_id": "Q191851", "children":[] },
+            { "name": "Clock", "kg_id": "Q376", "children":[] }]
+        },
+        { "name": "Trash Cans", "kg_id": "Q216530", "children":[] },
+        { "name": "Plumbing Fixtures", "kg_id": "Q2024731", "children": [
+            { "name": "Sink", "kg_id": "Q140565", "children":[] },
+            { "name": "Bathtubs", "kg_id": "Q152095", "children":[] },
+            { "name": "Toilets", "kg_id": "Q7857", "children":[] }]
+        },
+        { "name": "Appliance", "kg_id": "Q12269769", "children": [
+            { "name": "Portable Kitchen Appliance", "kg_id": "Q3558289", "children":[] },
+            { "name": "Refrigerator", "kg_id": "Q37828", "children":[] },
+            { "name": "Exhaust Hood", "kg_id": "Q1164342", "children":[] },
+            { "name": "Dishwasher", "kg_id": "Q186263", "children":[] },
+            { "name": "Fireplace", "kg_id": "Q188669", "children":[] },
+            { "name": "Washingmachine", "kg_id": "Q124441", "children":[] },
+            { "name": "Oven", "kg_id": "Q36539", "children":[] },
+            { "name": "Stove", "kg_id": "Q182995", "children":[] }]
+        },
+        { "name": "Linens", "kg_id": "Q796635", "children":[
+            { "name": "Towels", "kg_id": "Q131696", "children":[] }]
+        }]
+    },
+    { "name": "Art" , "kg_id": "Q838948", "children": [
+        { "name": "Sculptures", "kg_id": "Q860861", "children":[] },
+        { "name": "Fountain", "kg_id": "Q483453", "children":[] },
+        { "name": "Graffiti", "kg_id": "Q17514", "children":[] },
+        { "name": "Poster", "kg_id": "Q429785", "children":[] },
+        { "name": "Planar art", "kg_id": "Q12321255", "children":[
+            { "name": "Painting", "kg_id": "Q3305213", "children":[] },
+            { "name": "Photograph", "kg_id": "Q125191", "children":[] },
+            { "name": "Drawing", "kg_id": "Q2921001", "children":[] },
+            { "name": "Print / Artistic poster", "kg_id": "Q11034", "children":[] }
+        ]},
+        { "name": "Planar art other", "kg_id": "Q4502142", "children":[
+            { "name": "Parody", "kg_id": "Q170539", "children":[] },
+            { "name": "Collage", "kg_id": "Q22669857", "children":[] },
+            { "name": "Fresco", "kg_id": "Q22669139", "children":[] },
+            { "name": "Textile artwork", "kg_id": "Q22075301", "children":[] },
+            { "name": "Illuminated manuscript", "kg_id": "Q48498", "children":[] } ]}
+        ]
+    },
+    { "name": "Plant" , "kg_id": "Q756", "children": [
+        { "name": "Potted Plants", "kg_id": "Q203834", "children":[] },
+        { "name": "Bouquet", "kg_id": "Q1187930", "children":[] },
+        { "name": "Tree", "kg_id": "Q10884", "children":[] },
+        { "name": "Leaf", "kg_id": "Q33971", "children":[] },
+        { "name": "Fern", "kg_id": "Q80005", "children":[] },
+        { "name": "Cactus", "kg_id": "Q14560", "children":[] },
+        { "name": "Flower", "kg_id": "Q506", "children":[] },
+        { "name": "Flowers (multiple)", "kg_id": "Q506,Q146786", "children": []},
+        { "name": "Bark", "kg_id": "Q184453", "children":[] },
+        { "name": "Stem", "kg_id": "Q134267", "children":[] },
+        { "name": "Bush", "kg_id": "Q42295", "children":[] },
+        { "name": "Plant Fruit/Vegetable", "kg_id": "Q21925565", "children": [] },
+        { "name": "Plant Fruits/Vegetables (multiple)", "kg_id": "Q21925565,Q146786", "children": [] }]
+    },
+    { "name": "Underwater Plant" , "kg_id": "Q756,Q3246517", "children": []},
+    { "name": "Mushroom", "kg_id":  "Q83093", "children":  []},
+    { "name": "Kitchen" , "kg_id": "Q43164", "children": [
+        { "name": "Dinnerware", "kg_id": "Q851782", "children": [
+            { "name": "Glassware", "kg_id": "Q55353423", "children":[] },
+            { "name": "Mugs", "kg_id": "Q386215", "children":[] },
+            { "name": "Plates", "kg_id": "Q57216", "children":[] },
+            { "name": "Bowls", "kg_id": "Q2100893", "children":[] }]
+        },
+        { "name": "Cutlery", "kg_id": "Q81944", "children":[] },
+        { "name": "Cookware", "kg_id": "Q154038", "children": [
+            { "name": "Pans", "kg_id": "Q127666", "children":[] },
+            { "name": "Pots", "kg_id": "Q15711817", "children":[] }]
+        }]
+    },
+    { "name": "Packaged Products" , "kg_id": "Q65117596", "children": [
+        { "name": "bottled", "kg_id": "Q80228", "children":[] },
+        { "name": "caned", "kg_id": "Q1121690", "children":[] },
+        { "name": "tubed", "kg_id": "Q2093072", "children":[] },
+        { "name": "boxed", "kg_id": "Q57412245", "children":[] },
+        { "name": "tray", "kg_id": "Q613972", "children":[] },
+        { "name": "jar", "kg_id": "Q1207302", "children":[] },
+        { "name": "baged", "kg_id": "Q1323314", "children":[] }]
+    },
+    { "name": "Drink", "kg_id": "Q40050", "children": []},
+    { "name": "Plated Food", "kg_id": "Q746549", "children": [
+        { "name": "Salad", "kg_id": "Q9266", "children":[] },
+        { "name": "Wraps", "kg_id": "Q1599125", "children":[] },
+        { "name": "Sandwiches", "kg_id": "Q28803", "children":[] },
+        { "name": "Pasta", "kg_id": "Q178", "children":[] },
+        { "name": "Soup", "kg_id": "Q41415", "children":[] },
+        { "name": "Pizza", "kg_id": "Q177", "children":[] },
+        { "name": "Curry and Rice Dishes", "kg_id": "Q21976260", "children":[] },
+        { "name": "French Fries", "kg_id": "Q152088", "children":[] }]
+    },
+    { "name": "Produce" , "kg_id": "Q1913301", "children": [
+        { "name": "Vegetable", "kg_id": "Q11004", "children":[
+            { "name": "Cucumber", "kg_id": "Q2735883", "children":[] },
+            { "name": "Radish", "kg_id": "Q7224565", "children":[] },
+            { "name": "Artichoke", "kg_id": "Q23041430", "children":[] },
+            { "name": "Potato", "kg_id": "Q16587531", "children":[] },
+            { "name": "Tomato", "kg_id": "Q20638126", "children":[] },
+            { "name": "Garden Asparagus", "kg_id": "Q23041045", "children":[] },
+            { "name": "Pumpkin", "kg_id": "Q165308", "children":[] },
+            { "name": "Zucchini", "kg_id": "Q7533", "children":[] },
+            { "name": "Cabbage", "kg_id": "Q14328596", "children":[] },
+            { "name": "Carrot", "kg_id": "Q81", "children":[] },
+            { "name": "Broccoli", "kg_id": "Q47722", "children":[] },
+            { "name": "Bell pepper", "kg_id": "Q1548030", "children":[] },
+            { "name": "Winter melon", "kg_id": "Q652206", "children":[] }]
+        },
+        { "name": "Fruits", "kg_id": "Q1364", "children":[
+            { "name": "Apple", "kg_id": "Q89", "children":[]},
+            { "name": "Grape", "kg_id": "Q10978", "children":[]},
+            { "name": "Common fig", "kg_id": "Q2746643", "children":[]},
+            { "name": "Pear", "kg_id": "Q13099586", "children":[]},
+            { "name": "Strawberry", "kg_id": "Q1412166", "children":[]},
+            { "name": "Lemon", "kg_id": "Q1093742", "children":[]},
+            { "name": "Banana", "kg_id": "Q503", "children":[]},
+            { "name": "Orange", "kg_id": "Q13191", "children":[]},
+            { "name": "Peach", "kg_id": "Q13202263", "children":[]},
+            { "name": "Mango", "kg_id": "Q169", "children":[]},
+            { "name": "Pineapple", "kg_id": "Q10817602", "children":[]},
+            { "name": "Grapefruit", "kg_id": "Q21552830", "children":[]},
+            { "name": "Pomegranate", "kg_id": "Q13222088", "children":[]},
+            { "name": "Watermelon", "kg_id": "Q38645", "children":[]}
+        ] },
+        { "name": "Eggs", "kg_id": "Q93189", "children":[] }]
+    },
+    { "name": "Vehicle" , "kg_id": "Q42889", "children": [
+        { "name": "Airplane", "kg_id": "Q197", "children":[] },
+        { "name":  "Road Vehicle", "kg_id": "Q1515493", "children": [
+            { "name": "Car", "kg_id": "Q1420", "children":[] },
+            { "name": "Bus", "kg_id": "Q5638", "children":[] },
+            { "name": "Truck", "kg_id": "Q43193", "children":[] },
+            { "name": "Motorcycle", "kg_id": "Q34493", "children":[] }
+        ]},
+        { "name": "Bicycle", "kg_id": "Q11442", "children":[] },
+        { "name": "Train", "kg_id": "Q870", "children":[] },
+        { "name": "Boat", "kg_id": "Q35872", "children":[] }]
+    },
+    { "name": "Office and Work", "kg_id": "Q12823105", "children": [
+         { "name": "Pens", "kg_id": "Q160137", "children":[] },
+         { "name": "Folder & Filing", "kg_id": "Q421904", "children":[] },
+         { "name": "Scissors", "kg_id": "Q40847", "children":[] },
+         { "name": "Staplers", "kg_id": "Q489157", "children":[] },
+         { "name": "Whiteboard", "kg_id": "Q16354", "children":[] }]
+    },
+    { "name": "Sign", "kg_id": "Q3695082", "children":[] },
+    { "name": "Media and Documents" , "kg_id": "Q340169", "children": [
+        { "name": "Book", "kg_id": "Q571", "children":[
+            {"name": "Book Cover", "kg_id": "Q1125338" , "children":[]}]
+        },
+        { "name": "Magazin and Newspaper", "kg_id": "Q41298", "children":[] },
+        { "name": "CD and DVD", "kg_id": "Q5294", "children":[
+            { "name": "Apple Music Screenshot", "kg_id": "Q208594,Q5294", "children":[] }
+        ]},
+        { "name": "Map", "kg_id": "Q4006", "children":[] },
+        { "name": "Identity Document", "kg_id": "Q47988", "children":[
+            { "name": "Passport", "kg_id": "Q43812", "children":[] },
+            { "name": "Social Security Number", "kg_id": "Q5612679", "children":[] },
+            { "name": "Credit Card", "kg_id": "Q161380", "children":[] },
+            { "name": "Driving License", "kg_id": "Q205647", "children":[] },
+            { "name": "Badge", "kg_id": "Q799000", "children":[] }]
+        },
+        { "name": "Document", "kg_id": "Q11472", "children": [
+            { "name": "Printed Page", "kg_id": "Q1069725", "children":[] },
+            { "name": "Receipt", "kg_id": "Q330190", "children":[] },
+            { "name": "Ticket", "kg_id": "Q1140537", "children":[] },
+            { "name": "Parking Ticket", "kg_id": "Q2052767", "children":[] },
+            { "name": "Boarding Pass", "kg_id": "Q1152798", "children":[] },
+            { "name": "Banknote", "kg_id": "Q47433", "children":[] },
+            { "name": "Sticky Note", "kg_id": "Q181331", "children":[] },
+            { "name": "Business Card", "kg_id": "Q13426746", "children":[] },
+            { "name": "Calendar", "kg_id": "Q12027715", "children":[] },
+            { "name": "Checkbook", "kg_id": "Q80042", "children":[] },
+            { "name": "Coupon", "kg_id": "Q11034548", "children":[] },
+            { "name": "Gift Card", "kg_id": "Q554910", "children":[] },
+            { "name": "Greeting Card", "kg_id": "Q915196", "children":[] },
+            { "name": "Scrapbook", "kg_id": "Q1173065", "children":[] },
+            { "name": "Notebook", "kg_id": "Q43013", "children":[] },
+            { "name": "Nutrition Facts Label", "kg_id": "Q1531970", "children":[] }]
+        },
+        { "name": "Envelope", "kg_id": "Q170124", "children":[] },
+        { "name": "Screenshots", "kg_id": "Q208594", "children":[
+            { "name": "UI element", "kg_id": "Q605117,Q208594", "children":[] }
+        ] },
+        { "name": "Document Parts" , "kg_id": "Q49848", "children": [
+            { "name": "Text", "kg_id": "Q234460", "children": [
+                { "name": "printed", "kg_id": "Q11060274", "children":[] },
+                { "name": "handwritten", "kg_id": "Q2393642", "children":[] }]
+            },
+            { "name": "Drawings", "kg_id": "Q93184", "children":[] },
+            { "name": "Tables", "kg_id": "Q496946", "children":[] },
+            { "name": "Chart", "kg_id": "Q28923", "children":[] },
+            { "name": "Depiction", "kg_id": "Q1166770", "children":[] },
+            { "name": "Logo", "kg_id": "Q1886349", "children":[] },
+            { "name": "Image", "kg_id": "Q478798", "children":[] },
+            { "name": "Schematic Illustration", "kg_id": "Q861181", "children":[] }]
+        }]
+    },
+    { "name": "Tech", "kg_id": "Q2858615", "children": [
+        { "name": "Audio", "kg_id": "Q1718024", "children": [
+            { "name": "headphones", "kg_id": "Q186819", "children":[] },
+            { "name": "speakers", "kg_id": "Q570", "children":[] }]
+        },
+        { "name": "Camera & Video", "kg_id": "Q313614", "children":[] },
+        { "name": "Phones", "kg_id": "Q11035", "children":[] },
+        { "name": "Remotes", "kg_id": "Q185091", "children":[] },
+        { "name": "Computer Keyboard", "kg_id": "Q250", "children":[] },
+        { "name": "Computer Mouse", "kg_id": "Q7987", "children":[] },
+        { "name": "Computer Tower", "kg_id": "Q3975", "children":[] },
+        { "name": "Laptop", "kg_id": "Q3962", "children":[] },
+        { "name": "Projector", "kg_id": "Q311666", "children":[] },
+        { "name": "Tablet", "kg_id": "Q155972", "children":[] },
+        { "name": "Television and Monitors", "kg_id": "Q5290", "children":[] }]
+    },
+    { "name": "Apparel", "kg_id": "Q12684", "children": [
+        { "name": "Clothing", "kg_id": "Q11460", "children": [
+            { "name": "Swimwear", "kg_id": "Q7223116", "children":[] },
+            { "name": "Tops & Blouses", "kg_id": "Q1435365", "children":[] },
+            { "name": "Jeans & Trousers", "kg_id": "Q39908", "children":[] },
+            { "name": "Shorts", "kg_id": "Q223269", "children":[] },
+            { "name": "Jumpsuits & Playsuits", "kg_id": "Q16472452", "children":[] },
+            { "name": "Jackets & Coats", "kg_id": "Q4388799", "children":[] },
+            { "name": "Suits & Costumes", "kg_id": "Q614806", "children":[] },
+            { "name": "Jumpers & Cardigans", "kg_id": "Q232191", "children":[] },
+            { "name": "Skirts", "kg_id": "Q2160801", "children":[] },
+            { "name": "Dresses", "kg_id": "Q200539", "children":[] },
+            { "name": "Intimates", "kg_id": "Q198763", "children": [
+                { "name": "Bras", "kg_id": "Q13716", "children":[] },
+                { "name": "Panties", "kg_id": "Q49223", "children":[] },
+                { "name": "Socks", "kg_id": "Q43663", "children":[] }]
+            }]
+        },
+        { "name": "Shoes", "kg_id": "Q22676", "children":[] },
+        { "name": "Accessories", "kg_id": "Q8898985", "children": [
+            { "name": "Wristwatch", "kg_id": "Q26965868", "children":[] },
+            { "name": "Bags", "kg_id": "Q467505", "children":[] },
+            { "name": "Jewelry", "kg_id": "Q161439", "children": [
+                { "name": "Necklaces", "kg_id": "Q189299", "children":[] },
+                { "name": "Rings", "kg_id": "Q46847", "children":[] },
+                { "name": "Brooches & Pins", "kg_id": "Q499916", "children":[] },
+                { "name": "Bracelets", "kg_id": "Q201664", "children":[] },
+                { "name": "Earrings", "kg_id": "Q168456", "children":[] }]
+            },
+            { "name": "Suspenders", "kg_id": "Q109742", "children":[] },
+            { "name": "Belts", "kg_id": "Q134560", "children":[] },
+            { "name": "Eyewear", "kg_id": "Q5422874", "children":[] },
+            { "name": "Umbreallas", "kg_id": "Q41607", "children":[] },
+            { "name": "Gloves", "kg_id": "Q169031", "children":[] },
+            { "name": "Scarves & Wraps", "kg_id": "Q191022", "children":[] },
+            { "name": "Hats & Beanies", "kg_id": "Q80151", "children":[] },
+            { "name": "Ties", "kg_id": "Q44416", "children":[] }]
+        }]
+    },
+    { "name": "Human", "kg_id": "Q5", "children": [
+        { "name": "Face", "kg_id": "Q37017", "children":[] },
+        { "name": "Head", "kg_id": "Q3409626", "children":[
+            { "name": "Hair", "kg_id": "Q28472", "children":[] }]
+        },
+        { "name": "Troso", "kg_id": "Q160695", "children":[] },
+        { "name": "Human head-torso", "kg_id": "Q5,Q3409626,Q160695", "children": []},
+        { "name": "Hand", "kg_id": "Q33767", "children": []}
+    ]
+    },
+    { "name": "Animals", "kg_id": "Q729", "children": [
+        { "name": "Animal head-torso", "kg_id": "Q729,Q23640,Q160695", "children": []},
+        { "name": "Animal head", "kg_id": "Q729,Q23640", "children": []},
+        { "name": "Bird", "kg_id": "Q5113", "children": [
+            { "name": "Passerine (small sing birds)", "kg_id": "Q25341", "children":[
+                { "name": "Woodpecker", "kg_id": "Q11774312", "children":[] },
+                { "name": "Blue jay", "kg_id": "Q199758", "children":[] },
+                { "name": "Sparrow", "kg_id": "Q28922", "children":[] },
+                { "name": "Canary", "kg_id": "Q253941", "children":[] },
+                { "name": "Parrot", "kg_id": "Q15548309", "children":[] }]
+            },
+            { "name": "Phasianidae (heavy ground living birds)", "kg_id":"Q26375", "children": [
+                { "name": "Chicken", "kg_id": "Q780", "children":[] },
+                { "name": "Turkey", "kg_id": "Q43794", "children":[] },
+                { "name": "Ostrich", "kg_id": "Q17592", "children":[] }]
+            },
+            { "name": "Shorebird", "kg_id": "Q26226431", "children":[] },
+            { "name": "Penguin", "kg_id": "Q31862308", "children":[] },
+            { "name": "Pelican", "kg_id": "Q19413", "children":[] },
+            { "name": "Raven", "kg_id": "Q25357", "children":[] },
+            { "name": "Eagle", "kg_id": "Q2092297", "children":[] },
+            { "name": "Owl", "kg_id": "Q8021345", "children":[] },
+            { "name": "Duck", "kg_id": "Q3736439", "children":[] },
+            { "name": "Goose", "kg_id": "Q16529344", "children":[] },
+            { "name": "Swan", "kg_id": "Q34384", "children":[] },
+            { "name": "Falcon", "kg_id": "Q43489", "children":[] },
+            { "name": "Dove", "kg_id": "Q10856", "children":[] }
+            ]
+        },
+        { "name": "Fish", "kg_id": "Q152", "children":[
+            { "name": "Goldfish", "kg_id": "Q123141", "children":[] },
+            { "name": "Shark", "kg_id": "Q7372", "children":[] },
+            { "name": "Seahorse", "kg_id": "Q74363", "children":[] }]
+        },
+        { "name": "Marine invertebrate", "kg_id": "Q3737872", "children":[
+            { "name": "Marine invertebrate without limbs", "kg_id": "Q3737872,Q19829125,Q190780", "children":[
+                { "name": "Coral", "kg_id": "Q171446", "children":[]},
+                { "name": "Sea anemone", "kg_id": "Q147256", "children":[]}
+            ]},
+            { "name": "Jellyfish", "kg_id": "Q30178", "children":[]},
+            { "name": "Shellfish", "kg_id": "Q6501235", "children":[
+                { "name": "Starfish", "kg_id": "Q25349", "children":[] },
+                { "name": "Oyster", "kg_id": "Q107411", "children":[] },
+                { "name": "Lobster", "kg_id": "Q61864890", "children":[] },
+                { "name": "Shrimp", "kg_id": "Q7504001", "children":[] },
+                { "name": "Crab", "kg_id": "Q25364", "children":[] }]
+            }]
+        },
+        { "name": "Invertebrate", "kg_id": "Q43806", "children":[
+            { "name": "Tick", "kg_id": "Q10304508", "children":[] },
+            { "name": "Centipede", "kg_id": "Q43447", "children":[] },
+            { "name": "Insect", "kg_id": "Q1390", "children":[
+                { "name": "Bee", "kg_id": "Q7391", "children":[] },
+                { "name": "Beetle", "kg_id": "Q22671", "children":[
+                    { "name": "Ladybug", "kg_id": "Q25327", "children":[] }]
+                },
+                { "name": "Ant", "kg_id": "Q7386", "children":[] },
+                { "name": "Caterpillar", "kg_id": "Q81825", "children":[] },
+                { "name": "Butterfly", "kg_id": "Q11946202", "children":[] },
+                { "name": "Grasshopper", "kg_id": "Q10409638", "children":[] },
+                { "name": "Dragonfly", "kg_id": "Q25312", "children":[] }]
+            },
+            { "name": "Spider", "kg_id": "Q1357", "children":[] },
+            { "name": "Snail", "kg_id": "Q308841", "children":[] }]
+        },
+        { "name": "Mammal", "kg_id": "Q57814795", "children":[
+            { "name": "Bat", "kg_id": "Q28425", "children":[] },
+            { "name": "Carnivore", "kg_id": "Q81875", "children":[
+                { "name": "Bear", "kg_id": "Q11788", "children":[
+                    { "name": "Brown bear", "kg_id": "Q36341", "children":[] },
+                    { "name": "Polar bear", "kg_id": "Q33609", "children":[] }]
+                },
+                { "name": "Cat", "kg_id": "Q25265", "children":[
+                    { "name": "Domestic Cat", "kg_id": "Q146", "children":[
+                        { "name": "Domestic Cat's Head", "kg_id": "Q146,Q23640", "children":[] },
+                        { "name": "Domestic Cat's Head+Torso", "kg_id": "Q146,Q23640,Q160695", "children":[] }
+                    ] },
+                    { "name": "Jaguar", "kg_id": "Q35694", "children":[] },
+                    { "name": "Lynx", "kg_id": "Q677014", "children":[] },
+                    { "name": "Tiger", "kg_id": "Q19939", "children":[] },
+                    { "name": "Lion", "kg_id": "Q140", "children":[] },
+                    { "name": "Leopard", "kg_id": "Q34706", "children":[] },
+                    { "name": "Cheetah", "kg_id": "Q23907", "children":[] }]
+                },
+                { "name": "Canidae (Dogs)", "kg_id": "Q25324", "children":[
+                    { "name": "Fox", "kg_id": "Q8331", "children":[] },
+                    { "name": "Domestic Dog", "kg_id": "Q144", "children":[
+                        { "name": "Domestic Dog's Head", "kg_id": "Q144,Q23640", "children":[] },
+                        { "name": "Domestic Dog's Head+Torso", "kg_id": "Q144,Q23640,Q160695", "children":[] }
+                    ] },
+                    { "name": "Raccoon", "kg_id": "Q121439", "children":[] }]
+                },
+                { "name": "Otter", "kg_id": "Q200184", "children":[] }]
+            },
+            { "name": "Bovidae (cloven hoofed)", "kg_id": "Q25497", "children":[
+                { "name": "Goat", "kg_id": "Q2934", "children":[] },
+                { "name": "Sheep", "kg_id": "Q7368", "children":[] },
+                { "name": "Deer", "kg_id": "Q23390", "children":[] },
+                { "name": "Antelope", "kg_id": "Q25894", "children":[] },
+                { "name": "Mule", "kg_id": "Q41692", "children":[] },
+                { "name": "Bull", "kg_id": "Q693690", "children":[] } ]
+            },
+            { "name": "Camelidae", "kg_id": "Q135022", "children":[
+                { "name": "Alpaca", "kg_id": "Q81564", "children":[] },
+                { "name": "Camel", "kg_id": "Q7375", "children":[] } ]
+            },
+            { "name": "Cow", "kg_id": "Q830", "children":[] },
+            { "name": "Panda", "kg_id": "Q33602", "children":[] },
+            { "name": "Red Panda", "kg_id": "Q41960", "children":[] },
+            { "name": "Koala", "kg_id": "Q36101", "children":[] },
+            { "name": "Hippopotamus", "kg_id": "Q34505", "children":[] },
+            { "name": "Giraffe", "kg_id": "Q862089", "children":[] },
+            { "name": "Rhinoceros", "kg_id": "Q134657", "children":[] },
+            { "name": "Horse", "kg_id": "Q726", "children":[] },
+            { "name": "Hamster", "kg_id": "Q6573", "children":[] },
+            { "name": "Kangaroo", "kg_id": "Q23193", "children":[] },
+            { "name": "Mouse", "kg_id": "Q83310", "children":[] },
+            { "name": "Pig", "kg_id": "Q787", "children":[] },
+            { "name": "Rabbit", "kg_id": "Q9394", "children":[] },
+            { "name": "Squirrel", "kg_id": "Q9482", "children":[] },
+            { "name": "Zebra", "kg_id": "Q32789", "children":[] },
+            { "name": "Monkey", "kg_id": "Q1367", "children":[] },
+            { "name": "Elephant", "kg_id": "Q7378", "children":[] },
+            { "name": "Porcupine", "kg_id": "Q1223829", "children":[] },
+            { "name": "Marine mammal", "kg_id": "Q382441", "children":[
+                { "name": "Dolphin", "kg_id": "Q7369", "children":[] },
+                { "name": "Whale", "kg_id": "Q1865281", "children":[] },
+                { "name": "Sea lion", "kg_id": "Q3887135", "children":[] },
+                { "name": "Harbor seal", "kg_id": "Q26913", "children":[] }]
+            }
+        ]},
+        { "name": "Reptile", "kg_id": "Q10811", "children":[
+            { "name": "Dinosaur", "kg_id": "Q430", "children":[] },
+            { "name": "Lizard", "kg_id": "Q15629245", "children":[] },
+            { "name": "Salamandridae", "kg_id": "Q319469", "children":[] },
+            { "name": "Snake", "kg_id": "Q25537662", "children":[] },
+            { "name": "Turtle", "kg_id": "Q223044", "children":[
+                { "name": "Tortoise", "kg_id": "Q46360", "children":[] },
+                { "name": "Sea turtle", "kg_id": "Q219329", "children":[] }]
+            },
+            { "name": "Crocodile", "kg_id": "Q2535664", "children":[] },
+            { "name": "Frog", "kg_id": "Q3116510", "children":[] }]
+        }]
+    },
+    { "name": "Tools", "kg_id": "Q39546", "children":[] },
+    { "name": "Toys", "kg_id": "Q11422", "children":[] },
+    { "name": "Sport Equipment", "kg_id": "Q768186", "children":[] },
+    { "name": "Musical Instruments", "kg_id": "Q34379", "children":[] },
+    { "name": "Weapon", "kg_id": "Q728", "children":[] },
+    { "name": "Container", "kg_id": "Q987767", "children":[] },
+    { "name": "Personal Care", "kg_id": "Q3246832", "children":[] },
+    { "name": "Medical Equipment", "kg_id": "Q6554101", "children":[] },
+    { "name": "Rock", "kg_id": "Q8063", "children":[
+        { "name": "Mineral", "kg_id": "Q7946", "children":[
+            { "name": "Gemstone", "kg_id": "Q83437", "children":[] }
+        ] }
+    ] },
+    { "name": "Landmark", "kg_id": "Q2319498", "children":[
+        {"name": "Natual Landmark", "kg_id": "Q386426", "children":[
+            { "name": "Rock formation", "kg_id": "Q631305", "children":[
+                { "name": "Mountain", "kg_id": "Q8502", "children":[] },
+                { "name": "Canyon or valley", "kg_id": "Q39816", "children":[] }
+            ] },
+            { "name": "Body of water", "kg_id": "Q15324", "children":[
+                { "name": "River", "kg_id": "Q4022", "children":[] }
+            ] },
+            { "name": "Beach", "kg_id": "Q40080", "children":[] },
+            { "name": "Waterfall", "kg_id": "Q34038", "children":[] }
+        ] },
+        {"name": "Human-made Landmark", "kg_id": "Q811979", "children":[
+            { "name": "Building", "kg_id": "Q41176", "children":[
+                { "name": "Unsure whether Building or Landmark", "kg_id": "Q811979,Q41176", "children":[]}
+            ]},
+            { "name": "Skyscraper", "kg_id": "Q11303", "children":[]},
+            { "name": "Tower", "kg_id": "Q12518", "children":[]},
+            { "name": "Place of worship", "kg_id": "Q1370598", "children":[
+                { "name": "Church", "kg_id": "Q16970", "children":[]},
+                { "name": "Mosque", "kg_id": "Q32815", "children":[]}
+            ]},
+            { "name": "Skyline", "kg_id": "Q465837", "children":[]},
+            { "name": "Bridge", "kg_id": "Q12280", "children":[]},
+            { "name": "Castle", "kg_id": "Q23413", "children":[]},
+            { "name": "Ruin", "kg_id": "Q109607", "children":[]},
+            { "name": "Nonbuilding structure", "kg_id": "Q1322402", "children":[]},
+            { "name": "Lighthouse", "kg_id": "Q39715", "children":[]}
+        ]}
+    ]},
+    { "name": "Machine-readable Data", "kg_id": "Q6723621", "children":[
+        { "name": "Barcode", "kg_id": "Q856", "children":[] }
+    ]},
+]

@@ -1,0 +1,24 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.NumericEntityResponses
+extends: homeAutomation.EntityResponses
+    
+properties:
+  lowestValue:
+    type: homeAutomation.EntityStateValue
+    description: The EntityStateValue containing the lowest numeric value of all the entity responses.
+  highestValue:
+    type: homeAutomation.EntityStateValue
+    description: The EntityStateValue containing the highest numeric value of all the entity responses.
+  averageValue:
+    type: homeAutomation.EntityStateValue
+    description: The average value of all the numeric responses
+  hasEqualValue:
+    type: dialog.Boolean
+    description: True if the difference between the lowest and the highest is less than 1.
+  isPercentageMeasurement:
+    type: dialog.Boolean
+    description: True if the numeric value represents a percentage, False otherwise.
+  isTemperatureMeasurement:
+    type: dialog.Boolean
+    description: True if the numeric value represents a temperature, False otherwise.

@@ -1,0 +1,12 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.AmbientLightLevelResponses
+extends: homeAutomation.NumericEntityResponses
+    
+properties:
+  hasUniformRange:
+    type: dialog.Boolean
+    description: True if all light level results are within the same qualifier.
+  uniformRangeQualifier:
+    type: dialog.String
+    description: Returned the uniform range qualifier, value options - pitchBlack, veryDark, dark, dim, bright, veryBright.

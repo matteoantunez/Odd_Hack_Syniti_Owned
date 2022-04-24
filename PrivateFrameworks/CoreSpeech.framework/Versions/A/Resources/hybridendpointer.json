@@ -1,0 +1,65 @@
+{
+    "version-major": 51,
+    "version-minor": 0,
+    "model-info": {
+        "version":  "AM-5.0.0.0-20161007",
+        "language": "*",
+        "sampling-rates": [
+                           8000,
+                           16000
+                           ],
+        "tasks": [
+                  "*"
+                  ],
+        "phoneset-version": "n/a",
+        "acoustic-profile-version": "n/a"
+    },
+    "sample-frequency": 16000,
+    "spg": {
+        "frontend": {
+            "fbank" : {
+                "sample-frequency": 16000,
+                "use-energy" : false,
+                "num-mel-bins": 40,
+                "high-freq": 8000,
+                "low-freq": 64,
+                "htk-compat": true,
+                "window-type" : "hamming",
+                "frame-length" : 25.0,
+                "frame-shift" : 10.0
+            },
+            "splice" : {
+                "left-context": 20,
+                "right-context": 0
+            },
+            "nnet-forward" : {
+                "enable-memory-map" : false,
+                "model-file" : "sil_pos_gen.nnet",
+                "transform-file" : "sil_pos_gen.feature_transform"
+            }
+        },
+        "nfhat" : {
+            "same-state-transition-probability" : 0.9,
+            "acoustic-evidence-deweighting-power" : 0.02
+        }
+    },
+    "hybrid-endpoint": {
+       "16000": {
+            "model-file":"endpoint_v3.nnet",
+            "model-feature-list": "num-trailing-sil,silence-posterior-nf,end-of-sentence,num-of-words,server-features-latency",
+            "endpoint-threshold": 0.95,
+            "enable-memory-map": true
+       }
+    },
+    "eager-result-acceptance": {
+        "model-file": "RCAccept.nnet",
+        "model-feature-list": "num-trailing-sil,silence-posterior-nf,end-of-sentence,num-of-words,server-features-latency,eager-result-end-time",
+        "enable-memory-map": false
+    },
+    "default-server-ep-features": {
+        "num-of-words": 0,
+        "num-trailing-sil": 0,
+        "end-of-sentence": 8.99,
+        "silence-posterior": 0.997685
+    }
+}

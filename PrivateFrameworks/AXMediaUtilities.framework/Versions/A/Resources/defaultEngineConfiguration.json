@@ -1,0 +1,40 @@
+{
+    "engineIdentifier": "ax-vision-id",
+    "maximumQueueSize": 5,
+    "sourceNodes": [{
+        "nodeType": "image",
+        "nodeID": "image"
+    }, {
+        "nodeType": "screencapture",
+        "nodeID": "screencapture"
+    }, {
+        "nodeType": "assetMetadata",
+        "nodeID": "assetMetadata",
+    }],
+    "evaluationNodes": [{
+        "nodeType": "imageCharacteristics",
+        "nodeID": "imageCharacteristics",
+    }, {
+        "nodeType": "vision",
+        "nodeID": "vision",
+        "recognitionOptions": [{
+            "name": "faceRectangles",
+            "minimumConfidence": 0.5
+        }, {
+            "name": "classifications",
+            "minimumConfidence": 0.5
+        }, {
+            "name": "blur"
+        }, {
+            "name": "brightness"
+        }]
+    }, {
+        "nodeType": "ocr",
+        "nodeID": "ocr",
+        "language": "ascii",
+        "minCharHeight": 10.0,
+        "detectDiacritics": true,
+        "returnSubFeatures": true,
+        "correctSpelling": true
+    }]
+}

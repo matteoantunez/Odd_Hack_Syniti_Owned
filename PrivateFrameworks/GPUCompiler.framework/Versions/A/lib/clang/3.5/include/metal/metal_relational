@@ -1,0 +1,122 @@
+//===-- metal_relational --------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_RELATIONAL
+#define __METAL_RELATIONAL
+
+namespace metal {
+  // 5.4 Relational Functions
+  METAL_FUNC bool all(bool x) { return x; }
+  METAL_ASM bool all(vec<bool,2> x) __asm("air.all.v2i1");
+  METAL_ASM bool all(vec<bool,3> x) __asm("air.all.v3i1");
+  METAL_ASM bool all(vec<bool,4> x) __asm("air.all.v4i1");
+
+  METAL_FUNC bool any(bool x) { return x; }
+  METAL_ASM bool any(vec<bool,2> x) __asm("air.any.v2i1");
+  METAL_ASM bool any(vec<bool,3> x) __asm("air.any.v3i1");
+  METAL_ASM bool any(vec<bool,4> x) __asm("air.any.v4i1");
+
+  METAL_FUNC bool  isinf      (half x)   { return (as_type<ushort>(x) & ~0x8000) == 0x7c00; };
+  METAL_FUNC bool  isinf      (float x)  { return (as_type<uint>(x) & ~0x80000000) == 0x7f800000; }
+
+  METAL_FUNC bool  isfinite   (half x)   { return (as_type<ushort>(x) & ~0x8000) < 0x7c00; };
+  METAL_FUNC bool  isfinite   (float x)  { return (as_type<uint>(x) & ~0x80000000) < 0x7f800000; }
+
+  METAL_FUNC bool  isnan      (half x)   { return (as_type<ushort>(x) & ~0x8000) > 0x7c00; }
+  METAL_FUNC bool  isnan      (float x)  { return (as_type<uint>(x) & ~0x80000000) > 0x7f800000; }
+
+  METAL_FUNC bool  isnormal   (half x)   { return (ushort)((as_type<short>(x) & ~0x8000) - 0x0400) < 0x7800;}
+  METAL_FUNC bool  isnormal   (float x)  { return ((as_type<uint>(x) & ~0x80000000) - 0x00800000) < 0x7f000000; }
+
+  METAL_FUNC bool  isunordered(half x, half y) { return isnan(x) || isnan(y); }
+  METAL_FUNC bool  isunordered(float x, float y) { return isnan(x) || isnan(y); }
+
+  METAL_FUNC bool  isordered  (half x, half y) { return not(isunordered(x,y)); }
+  METAL_FUNC bool  isordered  (float x, float y) { return not(isunordered(x,y)); }
+
+  METAL_FUNC char   select    (char a, char b, bool c) { return c ? b : a; };
+  METAL_FUNC uchar  select    (uchar a, uchar b, bool c) { return c ? b : a; };
+  METAL_FUNC short  select    (short a, short b, bool c) { return c ? b : a; };
+  METAL_FUNC ushort select    (ushort a, ushort b, bool c) { return c ? b : a; };
+  METAL_FUNC int    select    (int a, int b, bool c) { return c ? b : a; };
+  METAL_FUNC uint   select    (uint a, uint b, bool c) { return c ? b : a; };
+  METAL_FUNC half   select    (half a, half b, bool c) { return c ? b : a; };
+  METAL_FUNC float  select    (float a, float b, bool c) { return c ? b : a; };
+
+  METAL_FUNC bool  signbit    (half x)   { return (as_type<ushort>(x) >> 15) == 1; };
+  METAL_FUNC bool  signbit    (float x)  { return (as_type<uint>(x)   >> 31) == 1; };
+
+  METAL_FUNC vec<bool,2> isfinite   (vec<half,2> x) { return vec<bool,2>(isfinite(x[0]),isfinite(x[1]));}
+  METAL_FUNC vec<bool,2> isinf      (vec<half,2> x) { return vec<bool,2>(isinf(x[0]),isinf(x[1]));}
+  METAL_FUNC vec<bool,2> isnan      (vec<half,2> x) { return vec<bool,2>(isnan(x[0]),isnan(x[1]));}
+  METAL_FUNC vec<bool,2> isnormal   (vec<half,2> x) { return vec<bool,2>(isnormal(x[0]),isnormal(x[1]));}
+  METAL_FUNC vec<bool,2> signbit    (vec<half,2> x) { return vec<bool,2>(signbit(x[0]),signbit(x[1]));}
+  METAL_FUNC vec<bool,2> isfinite   (vec<float,2> x) { return vec<bool,2>(isfinite(x[0]),isfinite(x[1]));}
+  METAL_FUNC vec<bool,2> isinf      (vec<float,2> x) { return vec<bool,2>(isinf(x[0]),isinf(x[1]));}
+  METAL_FUNC vec<bool,2> isnan      (vec<float,2> x) { return vec<bool,2>(isnan(x[0]),isnan(x[1]));}
+  METAL_FUNC vec<bool,2> isnormal   (vec<float,2> x) { return vec<bool,2>(isnormal(x[0]),isnormal(x[1]));}
+  METAL_FUNC vec<bool,2> signbit    (vec<float,2> x) { return vec<bool,2>(signbit(x[0]),signbit(x[1]));}
+  METAL_FUNC vec<bool,3> isfinite   (vec<half,3> x) { return vec<bool,3>(isfinite(x[0]),isfinite(x[1]),isfinite(x[2]));}
+  METAL_FUNC vec<bool,3> isinf      (vec<half,3> x) { return vec<bool,3>(isinf(x[0]),isinf(x[1]),isinf(x[2]));}
+  METAL_FUNC vec<bool,3> isnan      (vec<half,3> x) { return vec<bool,3>(isnan(x[0]),isnan(x[1]),isnan(x[2]));}
+  METAL_FUNC vec<bool,3> isnormal   (vec<half,3> x) { return vec<bool,3>(isnormal(x[0]),isnormal(x[1]),isnormal(x[2]));}
+  METAL_FUNC vec<bool,3> signbit    (vec<half,3> x) { return vec<bool,3>(signbit(x[0]),signbit(x[1]),signbit(x[2]));}
+  METAL_FUNC vec<bool,3> isfinite   (vec<float,3> x) { return vec<bool,3>(isfinite(x[0]),isfinite(x[1]),isfinite(x[2]));}
+  METAL_FUNC vec<bool,3> isinf      (vec<float,3> x) { return vec<bool,3>(isinf(x[0]),isinf(x[1]),isinf(x[2]));}
+  METAL_FUNC vec<bool,3> isnan      (vec<float,3> x) { return vec<bool,3>(isnan(x[0]),isnan(x[1]),isnan(x[2]));}
+  METAL_FUNC vec<bool,3> isnormal   (vec<float,3> x) { return vec<bool,3>(isnormal(x[0]),isnormal(x[1]),isnormal(x[2]));}
+  METAL_FUNC vec<bool,3> signbit    (vec<float,3> x) { return vec<bool,3>(signbit(x[0]),signbit(x[1]),signbit(x[2]));}
+  METAL_FUNC vec<bool,4> isfinite   (vec<half,4> x) { return vec<bool,4>(isfinite(x[0]),isfinite(x[1]),isfinite(x[2]),isfinite(x[3]));}
+  METAL_FUNC vec<bool,4> isinf      (vec<half,4> x) { return vec<bool,4>(isinf(x[0]),isinf(x[1]),isinf(x[2]),isinf(x[3]));}
+  METAL_FUNC vec<bool,4> isnan      (vec<half,4> x) { return vec<bool,4>(isnan(x[0]),isnan(x[1]),isnan(x[2]),isnan(x[3]));}
+  METAL_FUNC vec<bool,4> isnormal   (vec<half,4> x) { return vec<bool,4>(isnormal(x[0]),isnormal(x[1]),isnormal(x[2]),isnormal(x[3]));}
+  METAL_FUNC vec<bool,4> signbit    (vec<half,4> x) { return vec<bool,4>(signbit(x[0]),signbit(x[1]),signbit(x[2]),signbit(x[3]));}
+  METAL_FUNC vec<bool,4> isfinite   (vec<float,4> x) { return vec<bool,4>(isfinite(x[0]),isfinite(x[1]),isfinite(x[2]),isfinite(x[3]));}
+  METAL_FUNC vec<bool,4> isinf      (vec<float,4> x) { return vec<bool,4>(isinf(x[0]),isinf(x[1]),isinf(x[2]),isinf(x[3]));}
+  METAL_FUNC vec<bool,4> isnan      (vec<float,4> x) { return vec<bool,4>(isnan(x[0]),isnan(x[1]),isnan(x[2]),isnan(x[3]));}
+  METAL_FUNC vec<bool,4> isnormal   (vec<float,4> x) { return vec<bool,4>(isnormal(x[0]),isnormal(x[1]),isnormal(x[2]),isnormal(x[3]));}
+  METAL_FUNC vec<bool,4> signbit    (vec<float,4> x) { return vec<bool,4>(signbit(x[0]),signbit(x[1]),signbit(x[2]),signbit(x[3]));}
+
+  METAL_FUNC vec<bool,2> isordered  (vec<half,2> x, vec<half,2> y) { return vec<bool,2>(isordered(x[0],y[0]),isordered(x[1],y[1]));}
+  METAL_FUNC vec<bool,2> isunordered(vec<half,2> x, vec<half,2> y) { return vec<bool,2>(isunordered(x[0],y[0]),isunordered(x[1],y[1]));}
+  METAL_FUNC vec<bool,2> isordered  (vec<float,2> x, vec<float,2> y) { return vec<bool,2>(isordered(x[0],y[0]),isordered(x[1],y[1]));}
+  METAL_FUNC vec<bool,2> isunordered(vec<float,2> x, vec<float,2> y) { return vec<bool,2>(isunordered(x[0],y[0]),isunordered(x[1],y[1]));}
+  METAL_FUNC vec<bool,3> isordered  (vec<half,3> x, vec<half,3> y) { return vec<bool,3>(isordered(x[0],y[0]),isordered(x[1],y[1]),isordered(x[2],y[2]));}
+  METAL_FUNC vec<bool,3> isunordered(vec<half,3> x, vec<half,3> y) { return vec<bool,3>(isunordered(x[0],y[0]),isunordered(x[1],y[1]),isunordered(x[2],y[2]));}
+  METAL_FUNC vec<bool,3> isordered  (vec<float,3> x, vec<float,3> y) { return vec<bool,3>(isordered(x[0],y[0]),isordered(x[1],y[1]),isordered(x[2],y[2]));}
+  METAL_FUNC vec<bool,3> isunordered(vec<float,3> x, vec<float,3> y) { return vec<bool,3>(isunordered(x[0],y[0]),isunordered(x[1],y[1]),isunordered(x[2],y[2]));}
+  METAL_FUNC vec<bool,4> isordered  (vec<half,4> x, vec<half,4> y) { return vec<bool,4>(isordered(x[0],y[0]),isordered(x[1],y[1]),isordered(x[2],y[2]),isordered(x[3],y[3]));}
+  METAL_FUNC vec<bool,4> isunordered(vec<half,4> x, vec<half,4> y) { return vec<bool,4>(isunordered(x[0],y[0]),isunordered(x[1],y[1]),isunordered(x[2],y[2]),isunordered(x[3],y[3]));}
+  METAL_FUNC vec<bool,4> isordered  (vec<float,4> x, vec<float,4> y) { return vec<bool,4>(isordered(x[0],y[0]),isordered(x[1],y[1]),isordered(x[2],y[2]),isordered(x[3],y[3]));}
+  METAL_FUNC vec<bool,4> isunordered(vec<float,4> x, vec<float,4> y) { return vec<bool,4>(isunordered(x[0],y[0]),isunordered(x[1],y[1]),isunordered(x[2],y[2]),isunordered(x[3],y[3]));}
+
+  METAL_FUNC vec<half,2>    select(vec<half,2> a, vec<half,2> b, vec<bool,2> c) { return vec<half,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<float,2>   select(vec<float,2> a, vec<float,2> b, vec<bool,2> c) { return vec<float,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<half,3>    select(vec<half,3> a, vec<half,3> b, vec<bool,3> c) { return vec<half,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<float,3>   select(vec<float,3> a, vec<float,3> b, vec<bool,3> c) { return vec<float,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<half,4>    select(vec<half,4> a, vec<half,4> b, vec<bool,4> c) { return vec<half,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+  METAL_FUNC vec<float,4>   select(vec<float,4> a, vec<float,4> b, vec<bool,4> c) { return vec<float,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+
+  METAL_FUNC vec<char,2>    select(vec<char,2> a, vec<char,2> b, vec<bool,2> c) { return vec<char,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<uchar,2>   select(vec<uchar,2> a, vec<uchar,2> b, vec<bool,2> c) { return vec<uchar,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<short,2>   select(vec<short,2> a, vec<short,2> b, vec<bool,2> c) { return vec<short,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<ushort,2>  select(vec<ushort,2> a, vec<ushort,2> b, vec<bool,2> c) { return vec<ushort,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<int,2>     select(vec<int,2> a, vec<int,2> b, vec<bool,2> c) { return vec<int,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<uint,2>    select(vec<uint,2> a, vec<uint,2> b, vec<bool,2> c) { return vec<uint,2>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]));}
+  METAL_FUNC vec<char,3>    select(vec<char,3> a, vec<char,3> b, vec<bool,3> c) { return vec<char,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<uchar,3>   select(vec<uchar,3> a, vec<uchar,3> b, vec<bool,3> c) { return vec<uchar,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<short,3>   select(vec<short,3> a, vec<short,3> b, vec<bool,3> c) { return vec<short,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<ushort,3>  select(vec<ushort,3> a, vec<ushort,3> b, vec<bool,3> c) { return vec<ushort,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<int,3>     select(vec<int,3> a, vec<int,3> b, vec<bool,3> c) { return vec<int,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<uint,3>    select(vec<uint,3> a, vec<uint,3> b, vec<bool,3> c) { return vec<uint,3>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]));}
+  METAL_FUNC vec<char,4>    select(vec<char,4> a, vec<char,4> b, vec<bool,4> c) { return vec<char,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+  METAL_FUNC vec<uchar,4>   select(vec<uchar,4> a, vec<uchar,4> b, vec<bool,4> c) { return vec<uchar,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+  METAL_FUNC vec<short,4>   select(vec<short,4> a, vec<short,4> b, vec<bool,4> c) { return vec<short,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+  METAL_FUNC vec<ushort,4>  select(vec<ushort,4> a, vec<ushort,4> b, vec<bool,4> c) { return vec<ushort,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+  METAL_FUNC vec<int,4>     select(vec<int,4> a, vec<int,4> b, vec<bool,4> c) { return vec<int,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+  METAL_FUNC vec<uint,4>    select(vec<uint,4> a, vec<uint,4> b, vec<bool,4> c) { return vec<uint,4>(select(a[0],b[0],c[0]),select(a[1],b[1],c[1]),select(a[2],b[2],c[2]),select(a[3],b[3],c[3]));}
+
+} // namespace metal
+
+#endif // __METAL_RELATIONAL

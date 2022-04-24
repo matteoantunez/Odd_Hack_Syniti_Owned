@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#UnspecifiedActionForSupportedMultiSetting" locale="en">
+    <first>
+        <all condition="setting.value">
+            <dialog><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is on.</dialog>
+            <dialog>Let me know if you want to turn it off.</dialog>
+        </all>
+        <all>
+            <dialog><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is off.</dialog>
+            <dialog>Let me know if you want to turn it on.</dialog>
+        </all>
+    </first>
+</cat>

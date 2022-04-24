@@ -1,0 +1,2078 @@
+//===-- metal_math --------------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_MATH
+#define __METAL_MATH
+
+#include <metal_relational>
+
+#define _AIR_PREFIX_half ""
+#if defined(__FAST_MATH__)
+#define _AIR_PREFIX_float "fast_"
+#else
+#define _AIR_PREFIX_float ""
+#endif
+#define _AIR_PREFIX_double ""
+
+namespace metal {
+  // 5.5 Math Functions
+  
+  // Forward declaration of some functions implemented in metal
+  // namespace and called directly by corresponding functions in
+  // fast and precise namespaces directly i.e. copysign in fast
+  // and precise namespaces call metal::copysign. 
+  METAL_FUNC half copysign(half, half);
+  METAL_FUNC half fdim(half, half);
+  METAL_FUNC half frexp(half, thread int&);
+  METAL_FUNC int ilogb(half);
+  METAL_FUNC half ldexp(half, int);
+  METAL_FUNC half modf(half, thread half&);
+  METAL_FUNC float copysign(float, float);
+  METAL_FUNC float fdim(float, float);
+  METAL_FUNC float frexp(float, thread int&);
+  METAL_FUNC int ilogb(float);
+  METAL_FUNC float ldexp(float, int);
+  METAL_FUNC float modf(float, thread float&);
+  METAL_FUNC vec<half,2> copysign(vec<half,2>, vec<half,2>);
+  METAL_FUNC vec<half,2> fdim(vec<half,2>, vec<half,2>);
+  METAL_FUNC vec<half,2> frexp(vec<half,2>, thread int&);
+  METAL_FUNC vec<int,2> ilogb(vec<half,2>);
+  METAL_FUNC vec<half,2> ldexp(vec<half,2>, int);
+  METAL_FUNC vec<half,2> modf(vec<half,2>, thread vec<half,2>&);
+  METAL_FUNC vec<float,2> copysign(vec<float,2>, vec<float,2>);
+  METAL_FUNC vec<float,2> fdim(vec<float,2>, vec<float,2>);
+  METAL_FUNC vec<float,2> frexp(vec<float,2>, thread int&);
+  METAL_FUNC vec<int,2> ilogb(vec<float,2>);
+  METAL_FUNC vec<float,2> ldexp(vec<float,2>, int);
+  METAL_FUNC vec<float,2> modf(vec<float,2>, thread vec<float,2>&);
+  METAL_FUNC vec<half,3> copysign(vec<half,3>, vec<half,3>);
+  METAL_FUNC vec<half,3> fdim(vec<half,3>, vec<half,3>);
+  METAL_FUNC vec<half,3> frexp(vec<half,3>, thread int&);
+  METAL_FUNC vec<int,3> ilogb(vec<half,3>);
+  METAL_FUNC vec<half,3> ldexp(vec<half,3>, int);
+  METAL_FUNC vec<half,3> modf(vec<half,3>, thread vec<half,3>&);
+  METAL_FUNC vec<float,3> copysign(vec<float,3>, vec<float,3>);
+  METAL_FUNC vec<float,3> fdim(vec<float,3>, vec<float,3>);
+  METAL_FUNC vec<float,3> frexp(vec<float,3>, thread int&);
+  METAL_FUNC vec<int,3> ilogb(vec<float,3>);
+  METAL_FUNC vec<float,3> ldexp(vec<float,3>, int);
+  METAL_FUNC vec<float,3> modf(vec<float,3>, thread vec<float,3>&);
+  METAL_FUNC vec<half,4> copysign(vec<half,4>, vec<half,4>);
+  METAL_FUNC vec<half,4> fdim(vec<half,4>, vec<half,4>);
+  METAL_FUNC vec<half,4> frexp(vec<half,4>, thread int&);
+  METAL_FUNC vec<int,4> ilogb(vec<half,4>);
+  METAL_FUNC vec<half,4> ldexp(vec<half,4>, int);
+  METAL_FUNC vec<half,4> modf(vec<half,4>, thread vec<half,4>&);
+  METAL_FUNC vec<float,4> copysign(vec<float,4>, vec<float,4>);
+  METAL_FUNC vec<float,4> fdim(vec<float,4>, vec<float,4>);
+  METAL_FUNC vec<float,4> frexp(vec<float,4>, thread int&);
+  METAL_FUNC vec<int,4> ilogb(vec<float,4>);
+  METAL_FUNC vec<float,4> ldexp(vec<float,4>, int);
+  METAL_FUNC vec<float,4> modf(vec<float,4>, thread vec<float,4>&);
+      
+namespace fast {
+  // Forward declarations
+  METAL_ASM float trunc(float x) __asm("air.fast_trunc.f32");
+
+  METAL_ASM float acos(float x) __asm("air.fast_acos.f32");
+  METAL_ASM float acosh(float x) __asm("air.fast_acosh.f32");
+  METAL_ASM float asin(float x) __asm("air.fast_asin.f32");
+  METAL_ASM float asinh(float x) __asm("air.fast_asinh.f32");
+  METAL_ASM float atan(float y_over_x) __asm("air.fast_atan.f32");
+  METAL_ASM float atan2(float y, float x) __asm("air.fast_atan2.f32");
+  METAL_ASM float atanh(float x) __asm("air.fast_atanh.f32");
+  METAL_ASM float ceil(float x) __asm("air.fast_ceil.f32");
+  METAL_FUNC float copysign(float x, float y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM float cos(float x) __asm("air.fast_cos.f32");
+  METAL_ASM float cosh(float x) __asm("air.fast_cosh.f32");
+  METAL_ASM float exp(float x) __asm("air.fast_exp.f32");
+  METAL_ASM float exp2(float x) __asm("air.fast_exp2.f32");
+  METAL_ASM float exp10(float x) __asm("air.fast_exp10.f32");     
+  METAL_ASM float fabs(float x) __asm("air.fast_fabs.f32");
+  METAL_ASM float abs(float x) __asm("air.fabs.f32");
+  METAL_ASM float floor(float x) __asm("air.fast_floor.f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM float fma(float a, float b, float c) __asm("air.fma.f32");
+#endif
+  
+  METAL_ASM float fmax(float x, float y) __asm("air.fast_fmax.f32");
+  METAL_FUNC float max(float x, float y) {
+    return fmax(x, y);
+  }
+  METAL_ASM float fmin(float x, float y) __asm("air.fast_fmin.f32");
+  METAL_FUNC float min(float x, float y) {
+    return fmin(x, y);
+  }
+  METAL_ASM float fmod(float x, float y) __asm("air.fast_fmod.f32");
+  METAL_ASM float fract(float x) __asm("air.fast_fract.f32");
+
+  METAL_FUNC float frexp(float x, thread int &exp)
+  {
+    return metal::frexp(x, exp);   
+  }
+  METAL_FUNC int ilogb(float x) {
+    return metal::ilogb(x);
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM float ldexp(float x, int k) __asm("air.fast_ldexp.f32");
+#else
+  //TODO: <rdar://problem/20022019> fract and ldexp should call air function/builtins
+  METAL_FUNC float ldexp(float x, int k) {  
+    return metal::ldexp(x, k);
+  }
+#endif
+  METAL_FUNC float fdim(float x, float y) {
+    return metal::fdim(x, y);
+  }
+  METAL_ASM float log(float x) __asm("air.fast_log.f32");
+  METAL_ASM float log2(float x) __asm("air.fast_log2.f32");
+  METAL_ASM float log10(float x) __asm("air.fast_log10.f32"); 
+
+  METAL_FUNC float modf(float x, thread float &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM float pow(float x, float y) __asm("air.fast_pow.f32");
+  METAL_ASM float powr(float x, float y) __asm("air.fast_powr.f32");
+  METAL_ASM float rint(float x) __asm("air.fast_rint.f32");
+  METAL_ASM float round(float x) __asm("air.fast_round.f32");
+  METAL_ASM float rsqrt(float x) __asm("air.fast_rsqrt.f32");
+  METAL_ASM float sin(float x) __asm("air.fast_sin.f32");
+  METAL_ASM float sincos(float x, thread float &cosval) __asm("air.fast_sincos.f32");
+  METAL_ASM float sinh(float x) __asm("air.fast_sinh.f32");
+  METAL_ASM float sqrt(float x) __asm("air.fast_sqrt.f32");
+  METAL_ASM float tan(float x) __asm("air.fast_tan.f32");
+  METAL_ASM float tanh(float x) __asm("air.fast_tanh.f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM float cospi(float x) __asm("air.fast_cospi.f32");
+  METAL_ASM float sinpi(float x) __asm("air.fast_sinpi.f32");
+  METAL_ASM float tanpi(float x) __asm("air.fast_tanpi.f32");
+#endif
+
+  //METAL_ASM float trunc(float x) __asm("air.fast_trunc.f32");
+  // Forward declarations
+  METAL_ASM vec<float,2> trunc(vec<float,2> x) __asm("air.fast_trunc.v2f32");
+
+  METAL_ASM vec<float,2> acos(vec<float,2> x) __asm("air.fast_acos.v2f32");
+  METAL_ASM vec<float,2> acosh(vec<float,2> x) __asm("air.fast_acosh.v2f32");
+  METAL_ASM vec<float,2> asin(vec<float,2> x) __asm("air.fast_asin.v2f32");
+  METAL_ASM vec<float,2> asinh(vec<float,2> x) __asm("air.fast_asinh.v2f32");
+  METAL_ASM vec<float,2> atan(vec<float,2> y_over_x) __asm("air.fast_atan.v2f32");
+  METAL_ASM vec<float,2> atan2(vec<float,2> y, vec<float,2> x) __asm("air.fast_atan2.v2f32");
+  METAL_ASM vec<float,2> atanh(vec<float,2> x) __asm("air.fast_atanh.v2f32");
+  METAL_ASM vec<float,2> ceil(vec<float,2> x) __asm("air.fast_ceil.v2f32");
+  METAL_FUNC vec<float,2> copysign(vec<float,2> x, vec<float,2> y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM vec<float,2> cos(vec<float,2> x) __asm("air.fast_cos.v2f32");
+  METAL_ASM vec<float,2> cosh(vec<float,2> x) __asm("air.fast_cosh.v2f32");
+  METAL_ASM vec<float,2> exp(vec<float,2> x) __asm("air.fast_exp.v2f32");
+  METAL_ASM vec<float,2> exp2(vec<float,2> x) __asm("air.fast_exp2.v2f32");
+  METAL_ASM vec<float,2> exp10(vec<float,2> x) __asm("air.fast_exp10.v2f32");     
+  METAL_ASM vec<float,2> fabs(vec<float,2> x) __asm("air.fast_fabs.v2f32");
+  METAL_ASM vec<float,2> abs(vec<float,2> x) __asm("air.fabs.v2f32");
+  METAL_ASM vec<float,2> floor(vec<float,2> x) __asm("air.fast_floor.v2f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,2> fma(vec<float,2> a, vec<float,2> b, vec<float,2> c) __asm("air.fma.v2f32");
+#endif
+  
+  METAL_ASM vec<float,2> fmax(vec<float,2> x, vec<float,2> y) __asm("air.fast_fmax.v2f32");
+  METAL_FUNC vec<float,2> fmax(vec<float,2> x, float y) {
+    return fmax(x, vec<float,2>(y));
+  }
+  METAL_FUNC vec<float,2> max(vec<float,2> x, vec<float,2> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,2> fmin(vec<float,2> x, vec<float,2> y) __asm("air.fast_fmin.v2f32");
+  METAL_FUNC vec<float,2> fmin(vec<float,2> x, float y) {
+    return fmin(x, vec<float,2>(y));
+  }
+  METAL_FUNC vec<float,2> min(vec<float,2> x, vec<float,2> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,2> fmod(vec<float,2> x, vec<float,2> y) __asm("air.fast_fmod.v2f32");
+  METAL_FUNC vec<float,2> frexp(vec<float,2> x, thread vec<int,2> &exponent) {
+    int temp_exponent;
+    vec<float,2> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,2> ilogb(vec<float,2> x) {
+    vec<int,2> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,2> ldexp(vec<float,2> x, vec<int,2> k) __asm("air.fast_ldexp.v2f32");
+#else
+  METAL_FUNC vec<float,2> ldexp(vec<float,2> x, vec<int,2> k) {
+    vec<float,2> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,2> fdim(vec<float,2> x, vec<float,2> y) {
+    vec<float,2> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,2> fract(vec<float,2> x) __asm("air.fast_fract.v2f32");
+#else
+  METAL_FUNC vec<float,2> fract(vec<float,2> x) {
+    vec<float,2> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,2> log(vec<float,2> x) __asm("air.fast_log.v2f32");
+  METAL_ASM vec<float,2> log2(vec<float,2> x) __asm("air.fast_log2.v2f32");
+  METAL_ASM vec<float,2> log10(vec<float,2> x) __asm("air.fast_log10.v2f32"); 
+
+  METAL_FUNC vec<float,2> modf(vec<float,2> x, thread vec<float,2> &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM vec<float,2> pow(vec<float,2> x, vec<float,2> y) __asm("air.fast_pow.v2f32");
+  METAL_ASM vec<float,2> powr(vec<float,2> x, vec<float,2> y) __asm("air.fast_powr.v2f32");
+  METAL_ASM vec<float,2> rint(vec<float,2> x) __asm("air.fast_rint.v2f32");
+  METAL_ASM vec<float,2> round(vec<float,2> x) __asm("air.fast_round.v2f32");
+  METAL_ASM vec<float,2> rsqrt(vec<float,2> x) __asm("air.fast_rsqrt.v2f32");
+  METAL_ASM vec<float,2> sin(vec<float,2> x) __asm("air.fast_sin.v2f32");
+  METAL_ASM vec<float,2> sincos(vec<float,2> x, thread vec<float,2> &cosval) __asm("air.fast_sincos.v2f32");
+  METAL_ASM vec<float,2> sinh(vec<float,2> x) __asm("air.fast_sinh.v2f32");
+  METAL_ASM vec<float,2> sqrt(vec<float,2> x) __asm("air.fast_sqrt.v2f32");
+  METAL_ASM vec<float,2> tan(vec<float,2> x) __asm("air.fast_tan.v2f32");
+  METAL_ASM vec<float,2> tanh(vec<float,2> x) __asm("air.fast_tanh.v2f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,2> cospi(vec<float,2> x) __asm("air.fast_cospi.v2f32");
+  METAL_ASM vec<float,2> sinpi(vec<float,2> x) __asm("air.fast_sinpi.v2f32");
+  METAL_ASM vec<float,2> tanpi(vec<float,2> x) __asm("air.fast_tanpi.v2f32");
+#endif
+
+  //METAL_ASM vec<float,2> trunc(vec<float,2> x) __asm("air.fast_trunc.v2f32");
+  // Forward declarations
+  METAL_ASM vec<float,3> trunc(vec<float,3> x) __asm("air.fast_trunc.v3f32");
+
+  METAL_ASM vec<float,3> acos(vec<float,3> x) __asm("air.fast_acos.v3f32");
+  METAL_ASM vec<float,3> acosh(vec<float,3> x) __asm("air.fast_acosh.v3f32");
+  METAL_ASM vec<float,3> asin(vec<float,3> x) __asm("air.fast_asin.v3f32");
+  METAL_ASM vec<float,3> asinh(vec<float,3> x) __asm("air.fast_asinh.v3f32");
+  METAL_ASM vec<float,3> atan(vec<float,3> y_over_x) __asm("air.fast_atan.v3f32");
+  METAL_ASM vec<float,3> atan2(vec<float,3> y, vec<float,3> x) __asm("air.fast_atan2.v3f32");
+  METAL_ASM vec<float,3> atanh(vec<float,3> x) __asm("air.fast_atanh.v3f32");
+  METAL_ASM vec<float,3> ceil(vec<float,3> x) __asm("air.fast_ceil.v3f32");
+  METAL_FUNC vec<float,3> copysign(vec<float,3> x, vec<float,3> y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM vec<float,3> cos(vec<float,3> x) __asm("air.fast_cos.v3f32");
+  METAL_ASM vec<float,3> cosh(vec<float,3> x) __asm("air.fast_cosh.v3f32");
+  METAL_ASM vec<float,3> exp(vec<float,3> x) __asm("air.fast_exp.v3f32");
+  METAL_ASM vec<float,3> exp2(vec<float,3> x) __asm("air.fast_exp2.v3f32");
+  METAL_ASM vec<float,3> exp10(vec<float,3> x) __asm("air.fast_exp10.v3f32");     
+  METAL_ASM vec<float,3> fabs(vec<float,3> x) __asm("air.fast_fabs.v3f32");
+  METAL_ASM vec<float,3> abs(vec<float,3> x) __asm("air.fabs.v3f32");
+  METAL_ASM vec<float,3> floor(vec<float,3> x) __asm("air.fast_floor.v3f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,3> fma(vec<float,3> a, vec<float,3> b, vec<float,3> c) __asm("air.fma.v3f32");
+#endif
+  
+  METAL_ASM vec<float,3> fmax(vec<float,3> x, vec<float,3> y) __asm("air.fast_fmax.v3f32");
+  METAL_FUNC vec<float,3> fmax(vec<float,3> x, float y) {
+    return fmax(x, vec<float,3>(y));
+  }
+  METAL_FUNC vec<float,3> max(vec<float,3> x, vec<float,3> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,3> fmin(vec<float,3> x, vec<float,3> y) __asm("air.fast_fmin.v3f32");
+  METAL_FUNC vec<float,3> fmin(vec<float,3> x, float y) {
+    return fmin(x, vec<float,3>(y));
+  }
+  METAL_FUNC vec<float,3> min(vec<float,3> x, vec<float,3> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,3> fmod(vec<float,3> x, vec<float,3> y) __asm("air.fast_fmod.v3f32");
+  METAL_FUNC vec<float,3> frexp(vec<float,3> x, thread vec<int,3> &exponent) {
+    int temp_exponent;
+    vec<float,3> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,3> ilogb(vec<float,3> x) {
+    vec<int,3> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,3> ldexp(vec<float,3> x, vec<int,3> k) __asm("air.fast_ldexp.v3f32");
+#else
+  METAL_FUNC vec<float,3> ldexp(vec<float,3> x, vec<int,3> k) {
+    vec<float,3> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,3> fdim(vec<float,3> x, vec<float,3> y) {
+    vec<float,3> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,3> fract(vec<float,3> x) __asm("air.fast_fract.v3f32");
+#else
+  METAL_FUNC vec<float,3> fract(vec<float,3> x) {
+    vec<float,3> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,3> log(vec<float,3> x) __asm("air.fast_log.v3f32");
+  METAL_ASM vec<float,3> log2(vec<float,3> x) __asm("air.fast_log2.v3f32");
+  METAL_ASM vec<float,3> log10(vec<float,3> x) __asm("air.fast_log10.v3f32"); 
+
+  METAL_FUNC vec<float,3> modf(vec<float,3> x, thread vec<float,3> &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM vec<float,3> pow(vec<float,3> x, vec<float,3> y) __asm("air.fast_pow.v3f32");
+  METAL_ASM vec<float,3> powr(vec<float,3> x, vec<float,3> y) __asm("air.fast_powr.v3f32");
+  METAL_ASM vec<float,3> rint(vec<float,3> x) __asm("air.fast_rint.v3f32");
+  METAL_ASM vec<float,3> round(vec<float,3> x) __asm("air.fast_round.v3f32");
+  METAL_ASM vec<float,3> rsqrt(vec<float,3> x) __asm("air.fast_rsqrt.v3f32");
+  METAL_ASM vec<float,3> sin(vec<float,3> x) __asm("air.fast_sin.v3f32");
+  METAL_ASM vec<float,3> sincos(vec<float,3> x, thread vec<float,3> &cosval) __asm("air.fast_sincos.v3f32");
+  METAL_ASM vec<float,3> sinh(vec<float,3> x) __asm("air.fast_sinh.v3f32");
+  METAL_ASM vec<float,3> sqrt(vec<float,3> x) __asm("air.fast_sqrt.v3f32");
+  METAL_ASM vec<float,3> tan(vec<float,3> x) __asm("air.fast_tan.v3f32");
+  METAL_ASM vec<float,3> tanh(vec<float,3> x) __asm("air.fast_tanh.v3f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,3> cospi(vec<float,3> x) __asm("air.fast_cospi.v3f32");
+  METAL_ASM vec<float,3> sinpi(vec<float,3> x) __asm("air.fast_sinpi.v3f32");
+  METAL_ASM vec<float,3> tanpi(vec<float,3> x) __asm("air.fast_tanpi.v3f32");
+#endif
+
+  //METAL_ASM vec<float,3> trunc(vec<float,3> x) __asm("air.fast_trunc.v3f32");
+  // Forward declarations
+  METAL_ASM vec<float,4> trunc(vec<float,4> x) __asm("air.fast_trunc.v4f32");
+
+  METAL_ASM vec<float,4> acos(vec<float,4> x) __asm("air.fast_acos.v4f32");
+  METAL_ASM vec<float,4> acosh(vec<float,4> x) __asm("air.fast_acosh.v4f32");
+  METAL_ASM vec<float,4> asin(vec<float,4> x) __asm("air.fast_asin.v4f32");
+  METAL_ASM vec<float,4> asinh(vec<float,4> x) __asm("air.fast_asinh.v4f32");
+  METAL_ASM vec<float,4> atan(vec<float,4> y_over_x) __asm("air.fast_atan.v4f32");
+  METAL_ASM vec<float,4> atan2(vec<float,4> y, vec<float,4> x) __asm("air.fast_atan2.v4f32");
+  METAL_ASM vec<float,4> atanh(vec<float,4> x) __asm("air.fast_atanh.v4f32");
+  METAL_ASM vec<float,4> ceil(vec<float,4> x) __asm("air.fast_ceil.v4f32");
+  METAL_FUNC vec<float,4> copysign(vec<float,4> x, vec<float,4> y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM vec<float,4> cos(vec<float,4> x) __asm("air.fast_cos.v4f32");
+  METAL_ASM vec<float,4> cosh(vec<float,4> x) __asm("air.fast_cosh.v4f32");
+  METAL_ASM vec<float,4> exp(vec<float,4> x) __asm("air.fast_exp.v4f32");
+  METAL_ASM vec<float,4> exp2(vec<float,4> x) __asm("air.fast_exp2.v4f32");
+  METAL_ASM vec<float,4> exp10(vec<float,4> x) __asm("air.fast_exp10.v4f32");     
+  METAL_ASM vec<float,4> fabs(vec<float,4> x) __asm("air.fast_fabs.v4f32");
+  METAL_ASM vec<float,4> abs(vec<float,4> x) __asm("air.fabs.v4f32");
+  METAL_ASM vec<float,4> floor(vec<float,4> x) __asm("air.fast_floor.v4f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,4> fma(vec<float,4> a, vec<float,4> b, vec<float,4> c) __asm("air.fma.v4f32");
+#endif
+  
+  METAL_ASM vec<float,4> fmax(vec<float,4> x, vec<float,4> y) __asm("air.fast_fmax.v4f32");
+  METAL_FUNC vec<float,4> fmax(vec<float,4> x, float y) {
+    return fmax(x, vec<float,4>(y));
+  }
+  METAL_FUNC vec<float,4> max(vec<float,4> x, vec<float,4> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,4> fmin(vec<float,4> x, vec<float,4> y) __asm("air.fast_fmin.v4f32");
+  METAL_FUNC vec<float,4> fmin(vec<float,4> x, float y) {
+    return fmin(x, vec<float,4>(y));
+  }
+  METAL_FUNC vec<float,4> min(vec<float,4> x, vec<float,4> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,4> fmod(vec<float,4> x, vec<float,4> y) __asm("air.fast_fmod.v4f32");
+  METAL_FUNC vec<float,4> frexp(vec<float,4> x, thread vec<int,4> &exponent) {
+    int temp_exponent;
+    vec<float,4> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    ret_val[3] = frexp(x[3], temp_exponent);
+    exponent[3] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,4> ilogb(vec<float,4> x) {
+    vec<int,4> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    ret_val[3] = ilogb(x[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,4> ldexp(vec<float,4> x, vec<int,4> k) __asm("air.fast_ldexp.v4f32");
+#else
+  METAL_FUNC vec<float,4> ldexp(vec<float,4> x, vec<int,4> k) {
+    vec<float,4> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    ret_val[3] = ldexp(x[3], k[3]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,4> fdim(vec<float,4> x, vec<float,4> y) {
+    vec<float,4> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    ret_val[3] = fdim(x[3], y[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,4> fract(vec<float,4> x) __asm("air.fast_fract.v4f32");
+#else
+  METAL_FUNC vec<float,4> fract(vec<float,4> x) {
+    vec<float,4> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    ret_val[3] = fract(x[3]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,4> log(vec<float,4> x) __asm("air.fast_log.v4f32");
+  METAL_ASM vec<float,4> log2(vec<float,4> x) __asm("air.fast_log2.v4f32");
+  METAL_ASM vec<float,4> log10(vec<float,4> x) __asm("air.fast_log10.v4f32"); 
+
+  METAL_FUNC vec<float,4> modf(vec<float,4> x, thread vec<float,4> &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM vec<float,4> pow(vec<float,4> x, vec<float,4> y) __asm("air.fast_pow.v4f32");
+  METAL_ASM vec<float,4> powr(vec<float,4> x, vec<float,4> y) __asm("air.fast_powr.v4f32");
+  METAL_ASM vec<float,4> rint(vec<float,4> x) __asm("air.fast_rint.v4f32");
+  METAL_ASM vec<float,4> round(vec<float,4> x) __asm("air.fast_round.v4f32");
+  METAL_ASM vec<float,4> rsqrt(vec<float,4> x) __asm("air.fast_rsqrt.v4f32");
+  METAL_ASM vec<float,4> sin(vec<float,4> x) __asm("air.fast_sin.v4f32");
+  METAL_ASM vec<float,4> sincos(vec<float,4> x, thread vec<float,4> &cosval) __asm("air.fast_sincos.v4f32");
+  METAL_ASM vec<float,4> sinh(vec<float,4> x) __asm("air.fast_sinh.v4f32");
+  METAL_ASM vec<float,4> sqrt(vec<float,4> x) __asm("air.fast_sqrt.v4f32");
+  METAL_ASM vec<float,4> tan(vec<float,4> x) __asm("air.fast_tan.v4f32");
+  METAL_ASM vec<float,4> tanh(vec<float,4> x) __asm("air.fast_tanh.v4f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,4> cospi(vec<float,4> x) __asm("air.fast_cospi.v4f32");
+  METAL_ASM vec<float,4> sinpi(vec<float,4> x) __asm("air.fast_sinpi.v4f32");
+  METAL_ASM vec<float,4> tanpi(vec<float,4> x) __asm("air.fast_tanpi.v4f32");
+#endif
+
+  //METAL_ASM vec<float,4> trunc(vec<float,4> x) __asm("air.fast_trunc.v4f32");
+} // namespace fast
+
+namespace precise {
+  // Forward declarations
+  METAL_ASM float trunc(float x) __asm("air.trunc.f32");
+
+  METAL_ASM float acos(float x) __asm("air.acos.f32");
+  METAL_ASM float acosh(float x) __asm("air.acosh.f32");
+  METAL_ASM float asin(float x) __asm("air.asin.f32");
+  METAL_ASM float asinh(float x) __asm("air.asinh.f32");
+  METAL_ASM float atan(float y_over_x) __asm("air.atan.f32");
+  METAL_ASM float atan2(float y, float x) __asm("air.atan2.f32");
+  METAL_ASM float atanh(float x) __asm("air.atanh.f32");
+  METAL_ASM float ceil(float x) __asm("air.ceil.f32");
+  METAL_FUNC float copysign(float x, float y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM float cos(float x) __asm("air.cos.f32");
+  METAL_ASM float cosh(float x) __asm("air.cosh.f32");
+  METAL_ASM float exp(float x) __asm("air.exp.f32");
+  METAL_ASM float exp2(float x) __asm("air.exp2.f32");
+  METAL_ASM float exp10(float x) __asm("air.exp10.f32");
+  METAL_ASM float fabs(float x) __asm("air.fabs.f32");
+  METAL_ASM float abs(float x) __asm("air.fabs.f32");
+  METAL_ASM float floor(float x) __asm("air.floor.f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM float fma(float a, float b, float c) __asm("air.fma.f32");
+#endif
+  
+  METAL_ASM float fmax(float x, float y) __asm("air.fmax.f32");
+  METAL_FUNC float max(float x, float y) {
+    return fmax(x, y);
+  }
+  METAL_ASM float fmin(float x, float y) __asm("air.fmin.f32");
+  METAL_FUNC float min(float x, float y) {
+    return fmin(x, y);
+  }
+  METAL_ASM float fmod(float x, float y) __asm("air.fmod.f32");
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM float fract(float x) __asm("air.fract.f32");
+#else
+  //TODO: <rdar://problem/20022019> fract and ldexp should call air function/builtins
+  METAL_FUNC float fract(float x) {
+    if (metal::isinf(x))
+      return float(0);
+    if (metal::isnan(x))
+      return x;
+    return fmin(x - floor(x), 0x1.fffffep-1);
+  }
+#endif
+
+  METAL_FUNC float frexp(float x, thread int &exp)
+  {
+    return metal::frexp(x, exp);   
+  }
+  METAL_FUNC int ilogb(float x) {
+    return metal::ilogb(x);
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM float ldexp(float x, int k) __asm("air.ldexp.f32");
+#else
+  //TODO: <rdar://problem/20022019> fract and ldexp should call air function/builtins
+  METAL_FUNC float ldexp(float x, int k) {  
+    return metal::ldexp(x, k);
+  }
+#endif
+  METAL_FUNC float fdim(float x, float y) {
+    return metal::fdim(x, y);
+  }
+  METAL_ASM float log(float x) __asm("air.log.f32");
+  METAL_ASM float log2(float x) __asm("air.log2.f32");
+  METAL_ASM float log10(float x) __asm("air.log10.f32");
+
+  METAL_FUNC float modf(float x, thread float &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM float pow(float x, float y) __asm("air.pow.f32");
+  METAL_ASM float powr(float x, float y) __asm("air.powr.f32");
+  METAL_ASM float rint(float x) __asm("air.rint.f32");
+  METAL_ASM float round(float x) __asm("air.round.f32");
+  METAL_ASM float rsqrt(float x) __asm("air.rsqrt.f32");
+  METAL_ASM float sin(float x) __asm("air.sin.f32");
+  METAL_ASM float sincos(float x, thread float &cosval) __asm("air.sincos.f32");
+  METAL_ASM float sinh(float x) __asm("air.sinh.f32");
+  METAL_ASM float sqrt(float x) __asm("air.sqrt.f32");
+  METAL_ASM float tan(float x) __asm("air.tan.f32");
+  METAL_ASM float tanh(float x) __asm("air.tanh.f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM float cospi(float x) __asm("air.cospi.f32");
+  METAL_ASM float sinpi(float x) __asm("air.sinpi.f32");
+  METAL_ASM float tanpi(float x) __asm("air.tanpi.f32");
+#endif
+
+  //METAL_ASM float trunc(float x) __asm("air.trunc.f32");
+  // Forward declarations
+  METAL_ASM vec<float,2> trunc(vec<float,2> x) __asm("air.trunc.v2f32");
+
+  METAL_ASM vec<float,2> acos(vec<float,2> x) __asm("air.acos.v2f32");
+  METAL_ASM vec<float,2> acosh(vec<float,2> x) __asm("air.acosh.v2f32");
+  METAL_ASM vec<float,2> asin(vec<float,2> x) __asm("air.asin.v2f32");
+  METAL_ASM vec<float,2> asinh(vec<float,2> x) __asm("air.asinh.v2f32");
+  METAL_ASM vec<float,2> atan(vec<float,2> y_over_x) __asm("air.atan.v2f32");
+  METAL_ASM vec<float,2> atan2(vec<float,2> y, vec<float,2> x) __asm("air.atan2.v2f32");
+  METAL_ASM vec<float,2> atanh(vec<float,2> x) __asm("air.atanh.v2f32");
+  METAL_ASM vec<float,2> ceil(vec<float,2> x) __asm("air.ceil.v2f32");
+  METAL_FUNC vec<float,2> copysign(vec<float,2> x, vec<float,2> y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM vec<float,2> cos(vec<float,2> x) __asm("air.cos.v2f32");
+  METAL_ASM vec<float,2> cosh(vec<float,2> x) __asm("air.cosh.v2f32");
+  METAL_ASM vec<float,2> exp(vec<float,2> x) __asm("air.exp.v2f32");
+  METAL_ASM vec<float,2> exp2(vec<float,2> x) __asm("air.exp2.v2f32");
+  METAL_ASM vec<float,2> exp10(vec<float,2> x) __asm("air.exp10.v2f32");
+  METAL_ASM vec<float,2> fabs(vec<float,2> x) __asm("air.fabs.v2f32");
+  METAL_ASM vec<float,2> abs(vec<float,2> x) __asm("air.fabs.v2f32");
+  METAL_ASM vec<float,2> floor(vec<float,2> x) __asm("air.floor.v2f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,2> fma(vec<float,2> a, vec<float,2> b, vec<float,2> c) __asm("air.fma.v2f32");
+#endif
+  
+  METAL_ASM vec<float,2> fmax(vec<float,2> x, vec<float,2> y) __asm("air.fmax.v2f32");
+  METAL_FUNC vec<float,2> fmax(vec<float,2> x, float y) {
+    return fmax(x, vec<float,2>(y));
+  }
+  METAL_FUNC vec<float,2> max(vec<float,2> x, vec<float,2> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,2> fmin(vec<float,2> x, vec<float,2> y) __asm("air.fmin.v2f32");
+  METAL_FUNC vec<float,2> fmin(vec<float,2> x, float y) {
+    return fmin(x, vec<float,2>(y));
+  }
+  METAL_FUNC vec<float,2> min(vec<float,2> x, vec<float,2> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,2> fmod(vec<float,2> x, vec<float,2> y) __asm("air.fmod.v2f32");
+  METAL_FUNC vec<float,2> frexp(vec<float,2> x, thread vec<int,2> &exponent) {
+    int temp_exponent;
+    vec<float,2> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,2> ilogb(vec<float,2> x) {
+    vec<int,2> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,2> ldexp(vec<float,2> x, vec<int,2> k) __asm("air.ldexp.v2f32");
+#else
+  METAL_FUNC vec<float,2> ldexp(vec<float,2> x, vec<int,2> k) {
+    vec<float,2> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,2> fdim(vec<float,2> x, vec<float,2> y) {
+    vec<float,2> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,2> fract(vec<float,2> x) __asm("air.fract.v2f32");
+#else
+  METAL_FUNC vec<float,2> fract(vec<float,2> x) {
+    vec<float,2> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,2> log(vec<float,2> x) __asm("air.log.v2f32");
+  METAL_ASM vec<float,2> log2(vec<float,2> x) __asm("air.log2.v2f32");
+  METAL_ASM vec<float,2> log10(vec<float,2> x) __asm("air.log10.v2f32");
+
+  METAL_FUNC vec<float,2> modf(vec<float,2> x, thread vec<float,2> &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM vec<float,2> pow(vec<float,2> x, vec<float,2> y) __asm("air.pow.v2f32");
+  METAL_ASM vec<float,2> powr(vec<float,2> x, vec<float,2> y) __asm("air.powr.v2f32");
+  METAL_ASM vec<float,2> rint(vec<float,2> x) __asm("air.rint.v2f32");
+  METAL_ASM vec<float,2> round(vec<float,2> x) __asm("air.round.v2f32");
+  METAL_ASM vec<float,2> rsqrt(vec<float,2> x) __asm("air.rsqrt.v2f32");
+  METAL_ASM vec<float,2> sin(vec<float,2> x) __asm("air.sin.v2f32");
+  METAL_ASM vec<float,2> sincos(vec<float,2> x, thread vec<float,2> &cosval) __asm("air.sincos.v2f32");
+  METAL_ASM vec<float,2> sinh(vec<float,2> x) __asm("air.sinh.v2f32");
+  METAL_ASM vec<float,2> sqrt(vec<float,2> x) __asm("air.sqrt.v2f32");
+  METAL_ASM vec<float,2> tan(vec<float,2> x) __asm("air.tan.v2f32");
+  METAL_ASM vec<float,2> tanh(vec<float,2> x) __asm("air.tanh.v2f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,2> cospi(vec<float,2> x) __asm("air.cospi.v2f32");
+  METAL_ASM vec<float,2> sinpi(vec<float,2> x) __asm("air.sinpi.v2f32");
+  METAL_ASM vec<float,2> tanpi(vec<float,2> x) __asm("air.tanpi.v2f32");
+#endif
+
+  //METAL_ASM vec<float,2> trunc(vec<float,2> x) __asm("air.trunc.v2f32");
+  // Forward declarations
+  METAL_ASM vec<float,3> trunc(vec<float,3> x) __asm("air.trunc.v3f32");
+
+  METAL_ASM vec<float,3> acos(vec<float,3> x) __asm("air.acos.v3f32");
+  METAL_ASM vec<float,3> acosh(vec<float,3> x) __asm("air.acosh.v3f32");
+  METAL_ASM vec<float,3> asin(vec<float,3> x) __asm("air.asin.v3f32");
+  METAL_ASM vec<float,3> asinh(vec<float,3> x) __asm("air.asinh.v3f32");
+  METAL_ASM vec<float,3> atan(vec<float,3> y_over_x) __asm("air.atan.v3f32");
+  METAL_ASM vec<float,3> atan2(vec<float,3> y, vec<float,3> x) __asm("air.atan2.v3f32");
+  METAL_ASM vec<float,3> atanh(vec<float,3> x) __asm("air.atanh.v3f32");
+  METAL_ASM vec<float,3> ceil(vec<float,3> x) __asm("air.ceil.v3f32");
+  METAL_FUNC vec<float,3> copysign(vec<float,3> x, vec<float,3> y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM vec<float,3> cos(vec<float,3> x) __asm("air.cos.v3f32");
+  METAL_ASM vec<float,3> cosh(vec<float,3> x) __asm("air.cosh.v3f32");
+  METAL_ASM vec<float,3> exp(vec<float,3> x) __asm("air.exp.v3f32");
+  METAL_ASM vec<float,3> exp2(vec<float,3> x) __asm("air.exp2.v3f32");
+  METAL_ASM vec<float,3> exp10(vec<float,3> x) __asm("air.exp10.v3f32");
+  METAL_ASM vec<float,3> fabs(vec<float,3> x) __asm("air.fabs.v3f32");
+  METAL_ASM vec<float,3> abs(vec<float,3> x) __asm("air.fabs.v3f32");
+  METAL_ASM vec<float,3> floor(vec<float,3> x) __asm("air.floor.v3f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,3> fma(vec<float,3> a, vec<float,3> b, vec<float,3> c) __asm("air.fma.v3f32");
+#endif
+  
+  METAL_ASM vec<float,3> fmax(vec<float,3> x, vec<float,3> y) __asm("air.fmax.v3f32");
+  METAL_FUNC vec<float,3> fmax(vec<float,3> x, float y) {
+    return fmax(x, vec<float,3>(y));
+  }
+  METAL_FUNC vec<float,3> max(vec<float,3> x, vec<float,3> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,3> fmin(vec<float,3> x, vec<float,3> y) __asm("air.fmin.v3f32");
+  METAL_FUNC vec<float,3> fmin(vec<float,3> x, float y) {
+    return fmin(x, vec<float,3>(y));
+  }
+  METAL_FUNC vec<float,3> min(vec<float,3> x, vec<float,3> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,3> fmod(vec<float,3> x, vec<float,3> y) __asm("air.fmod.v3f32");
+  METAL_FUNC vec<float,3> frexp(vec<float,3> x, thread vec<int,3> &exponent) {
+    int temp_exponent;
+    vec<float,3> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,3> ilogb(vec<float,3> x) {
+    vec<int,3> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,3> ldexp(vec<float,3> x, vec<int,3> k) __asm("air.ldexp.v3f32");
+#else
+  METAL_FUNC vec<float,3> ldexp(vec<float,3> x, vec<int,3> k) {
+    vec<float,3> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,3> fdim(vec<float,3> x, vec<float,3> y) {
+    vec<float,3> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,3> fract(vec<float,3> x) __asm("air.fract.v3f32");
+#else
+  METAL_FUNC vec<float,3> fract(vec<float,3> x) {
+    vec<float,3> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,3> log(vec<float,3> x) __asm("air.log.v3f32");
+  METAL_ASM vec<float,3> log2(vec<float,3> x) __asm("air.log2.v3f32");
+  METAL_ASM vec<float,3> log10(vec<float,3> x) __asm("air.log10.v3f32");
+
+  METAL_FUNC vec<float,3> modf(vec<float,3> x, thread vec<float,3> &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM vec<float,3> pow(vec<float,3> x, vec<float,3> y) __asm("air.pow.v3f32");
+  METAL_ASM vec<float,3> powr(vec<float,3> x, vec<float,3> y) __asm("air.powr.v3f32");
+  METAL_ASM vec<float,3> rint(vec<float,3> x) __asm("air.rint.v3f32");
+  METAL_ASM vec<float,3> round(vec<float,3> x) __asm("air.round.v3f32");
+  METAL_ASM vec<float,3> rsqrt(vec<float,3> x) __asm("air.rsqrt.v3f32");
+  METAL_ASM vec<float,3> sin(vec<float,3> x) __asm("air.sin.v3f32");
+  METAL_ASM vec<float,3> sincos(vec<float,3> x, thread vec<float,3> &cosval) __asm("air.sincos.v3f32");
+  METAL_ASM vec<float,3> sinh(vec<float,3> x) __asm("air.sinh.v3f32");
+  METAL_ASM vec<float,3> sqrt(vec<float,3> x) __asm("air.sqrt.v3f32");
+  METAL_ASM vec<float,3> tan(vec<float,3> x) __asm("air.tan.v3f32");
+  METAL_ASM vec<float,3> tanh(vec<float,3> x) __asm("air.tanh.v3f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,3> cospi(vec<float,3> x) __asm("air.cospi.v3f32");
+  METAL_ASM vec<float,3> sinpi(vec<float,3> x) __asm("air.sinpi.v3f32");
+  METAL_ASM vec<float,3> tanpi(vec<float,3> x) __asm("air.tanpi.v3f32");
+#endif
+
+  //METAL_ASM vec<float,3> trunc(vec<float,3> x) __asm("air.trunc.v3f32");
+  // Forward declarations
+  METAL_ASM vec<float,4> trunc(vec<float,4> x) __asm("air.trunc.v4f32");
+
+  METAL_ASM vec<float,4> acos(vec<float,4> x) __asm("air.acos.v4f32");
+  METAL_ASM vec<float,4> acosh(vec<float,4> x) __asm("air.acosh.v4f32");
+  METAL_ASM vec<float,4> asin(vec<float,4> x) __asm("air.asin.v4f32");
+  METAL_ASM vec<float,4> asinh(vec<float,4> x) __asm("air.asinh.v4f32");
+  METAL_ASM vec<float,4> atan(vec<float,4> y_over_x) __asm("air.atan.v4f32");
+  METAL_ASM vec<float,4> atan2(vec<float,4> y, vec<float,4> x) __asm("air.atan2.v4f32");
+  METAL_ASM vec<float,4> atanh(vec<float,4> x) __asm("air.atanh.v4f32");
+  METAL_ASM vec<float,4> ceil(vec<float,4> x) __asm("air.ceil.v4f32");
+  METAL_FUNC vec<float,4> copysign(vec<float,4> x, vec<float,4> y) {
+    return metal::copysign(x, y);
+  }
+  METAL_ASM vec<float,4> cos(vec<float,4> x) __asm("air.cos.v4f32");
+  METAL_ASM vec<float,4> cosh(vec<float,4> x) __asm("air.cosh.v4f32");
+  METAL_ASM vec<float,4> exp(vec<float,4> x) __asm("air.exp.v4f32");
+  METAL_ASM vec<float,4> exp2(vec<float,4> x) __asm("air.exp2.v4f32");
+  METAL_ASM vec<float,4> exp10(vec<float,4> x) __asm("air.exp10.v4f32");
+  METAL_ASM vec<float,4> fabs(vec<float,4> x) __asm("air.fabs.v4f32");
+  METAL_ASM vec<float,4> abs(vec<float,4> x) __asm("air.fabs.v4f32");
+  METAL_ASM vec<float,4> floor(vec<float,4> x) __asm("air.floor.v4f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,4> fma(vec<float,4> a, vec<float,4> b, vec<float,4> c) __asm("air.fma.v4f32");
+#endif
+  
+  METAL_ASM vec<float,4> fmax(vec<float,4> x, vec<float,4> y) __asm("air.fmax.v4f32");
+  METAL_FUNC vec<float,4> fmax(vec<float,4> x, float y) {
+    return fmax(x, vec<float,4>(y));
+  }
+  METAL_FUNC vec<float,4> max(vec<float,4> x, vec<float,4> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,4> fmin(vec<float,4> x, vec<float,4> y) __asm("air.fmin.v4f32");
+  METAL_FUNC vec<float,4> fmin(vec<float,4> x, float y) {
+    return fmin(x, vec<float,4>(y));
+  }
+  METAL_FUNC vec<float,4> min(vec<float,4> x, vec<float,4> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,4> fmod(vec<float,4> x, vec<float,4> y) __asm("air.fmod.v4f32");
+  METAL_FUNC vec<float,4> frexp(vec<float,4> x, thread vec<int,4> &exponent) {
+    int temp_exponent;
+    vec<float,4> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    ret_val[3] = frexp(x[3], temp_exponent);
+    exponent[3] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,4> ilogb(vec<float,4> x) {
+    vec<int,4> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    ret_val[3] = ilogb(x[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,4> ldexp(vec<float,4> x, vec<int,4> k) __asm("air.ldexp.v4f32");
+#else
+  METAL_FUNC vec<float,4> ldexp(vec<float,4> x, vec<int,4> k) {
+    vec<float,4> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    ret_val[3] = ldexp(x[3], k[3]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,4> fdim(vec<float,4> x, vec<float,4> y) {
+    vec<float,4> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    ret_val[3] = fdim(x[3], y[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,4> fract(vec<float,4> x) __asm("air.fract.v4f32");
+#else
+  METAL_FUNC vec<float,4> fract(vec<float,4> x) {
+    vec<float,4> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    ret_val[3] = fract(x[3]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,4> log(vec<float,4> x) __asm("air.log.v4f32");
+  METAL_ASM vec<float,4> log2(vec<float,4> x) __asm("air.log2.v4f32");
+  METAL_ASM vec<float,4> log10(vec<float,4> x) __asm("air.log10.v4f32");
+
+  METAL_FUNC vec<float,4> modf(vec<float,4> x, thread vec<float,4> &intval) {
+    return metal::modf(x, intval);
+  }
+  METAL_ASM vec<float,4> pow(vec<float,4> x, vec<float,4> y) __asm("air.pow.v4f32");
+  METAL_ASM vec<float,4> powr(vec<float,4> x, vec<float,4> y) __asm("air.powr.v4f32");
+  METAL_ASM vec<float,4> rint(vec<float,4> x) __asm("air.rint.v4f32");
+  METAL_ASM vec<float,4> round(vec<float,4> x) __asm("air.round.v4f32");
+  METAL_ASM vec<float,4> rsqrt(vec<float,4> x) __asm("air.rsqrt.v4f32");
+  METAL_ASM vec<float,4> sin(vec<float,4> x) __asm("air.sin.v4f32");
+  METAL_ASM vec<float,4> sincos(vec<float,4> x, thread vec<float,4> &cosval) __asm("air.sincos.v4f32");
+  METAL_ASM vec<float,4> sinh(vec<float,4> x) __asm("air.sinh.v4f32");
+  METAL_ASM vec<float,4> sqrt(vec<float,4> x) __asm("air.sqrt.v4f32");
+  METAL_ASM vec<float,4> tan(vec<float,4> x) __asm("air.tan.v4f32");
+  METAL_ASM vec<float,4> tanh(vec<float,4> x) __asm("air.tanh.v4f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,4> cospi(vec<float,4> x) __asm("air.cospi.v4f32");
+  METAL_ASM vec<float,4> sinpi(vec<float,4> x) __asm("air.sinpi.v4f32");
+  METAL_ASM vec<float,4> tanpi(vec<float,4> x) __asm("air.tanpi.v4f32");
+#endif
+
+  //METAL_ASM vec<float,4> trunc(vec<float,4> x) __asm("air.trunc.v4f32");
+} // namespace precise
+
+  // Forward declarations
+  METAL_ASM half trunc(half x) __asm("air." _AIR_PREFIX_half "trunc.f16");
+
+  METAL_ASM half acos(half x) __asm("air." _AIR_PREFIX_half "acos.f16");
+  METAL_ASM half acosh(half x) __asm("air." _AIR_PREFIX_half "acosh.f16");
+  METAL_ASM half asin(half x) __asm("air." _AIR_PREFIX_half "asin.f16");
+  METAL_ASM half asinh(half x) __asm("air." _AIR_PREFIX_half "asinh.f16");
+  METAL_ASM half atan(half y_over_x) __asm("air." _AIR_PREFIX_half "atan.f16");
+  METAL_ASM half atan2(half y, half x) __asm("air." _AIR_PREFIX_half "atan2.f16");
+  METAL_ASM half atanh(half x) __asm("air." _AIR_PREFIX_half "atanh.f16");
+  METAL_ASM half ceil(half x) __asm("air." _AIR_PREFIX_half "ceil.f16");
+  METAL_FUNC half copysign(half x, half y) {
+    ushort iy = as_type<ushort>(y) & ushort(0x8000);
+    ushort ret = (as_type<ushort>(x) & ushort(0x8000 - 1ULL)) | iy;
+    return as_type<half>(ret);
+  }
+  METAL_ASM half cos(half x) __asm("air." _AIR_PREFIX_half "cos.f16");
+  METAL_ASM half cosh(half x) __asm("air." _AIR_PREFIX_half "cosh.f16");
+  METAL_ASM half exp(half x) __asm("air." _AIR_PREFIX_half "exp.f16");
+  METAL_ASM half exp2(half x) __asm("air." _AIR_PREFIX_half "exp2.f16");
+  METAL_ASM half exp10(half x) __asm("air.exp10.f16");
+  METAL_ASM half fabs(half x) __asm("air." _AIR_PREFIX_half "fabs.f16");
+  METAL_ASM half abs(half x) __asm("air.fabs.f16");
+  METAL_ASM half floor(half x) __asm("air." _AIR_PREFIX_half "floor.f16");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM half fma(half a, half b, half c) __asm("air.fma.f16");
+#endif
+  
+  METAL_ASM half fmax(half x, half y) __asm("air." _AIR_PREFIX_half "fmax.f16");
+  METAL_FUNC half max(half x, half y) {
+    return fmax(x, y);
+  }
+  METAL_ASM half fmin(half x, half y) __asm("air." _AIR_PREFIX_half "fmin.f16");
+  METAL_FUNC half min(half x, half y) {
+    return fmin(x, y);
+  }
+  METAL_ASM half fmod(half x, half y) __asm("air." _AIR_PREFIX_half "fmod.f16");
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM half fract(half x) __asm("air.fract.f16");
+#else
+  //TODO: <rdar://problem/20022019> fract and ldexp should call air function/builtins
+  METAL_FUNC half fract(half x) {
+    if (metal::isinf(x))
+      return half(0);
+    if (metal::isnan(x))
+      return x;
+    return fmin(x - floor(x), 0x1.fffffep-1);
+  }
+#endif
+
+  METAL_FUNC half frexp(half x, thread int &exp)
+  {
+	if ((as_type<ushort>(x) & ushort(0x7c00)) == ushort(0x7c00))
+
+	{
+		exp = 0;
+		return x;
+	}
+	
+	// This will evaluate to true on G3 for denorms
+	if ( x == 0.0f )
+	{
+		exp = 0;
+		return 0.0f;
+	}
+	
+	ushort xi = as_type<ushort>(x);
+	int e = (xi & 0x7c00) >> 10;
+	// subnormal
+	if (e == 0)
+	{
+		// subnormal mantissa + 1.0f
+		half t = as_type<half>((ushort)((xi & (ushort)0x03ff) | (ushort)0x3c00));
+		t = t - 1.0f;
+		xi = as_type<ushort>(copysign(t, x));
+		e = -14 + ((xi & 0x7c00) >> 10);	
+	}
+	
+	e -= 14;
+	exp = e;
+	return as_type<half>((ushort)( (xi & (0x8000 | 0x03ff)) | 0x3800 ));
+  }
+  METAL_FUNC int ilogb(half x) {
+    ushort ux = as_type<ushort>(x) & ushort(0x7fff);
+    short exp = ux >> ushort(10);
+
+    if((uint(exp) - uint(1)) >= uint(30)) {
+      // +-0, +-denormal, +-inf, NaN
+      if(x == half(0))
+        return FP_ILOGB0;
+
+      if(metal::isnan(x))
+        return FP_ILOGBNAN;
+
+      if(ux == ushort(0x7c00))
+        return INT_MAX;
+
+      ux |= ushort(0x3c00);
+      half f = as_type<half>(ux) - half(1);
+      exp = as_type<ushort>(f) >> ushort(10);
+
+      return exp - short(15 + 14);
+    }
+
+    return exp - short(15);
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM half ldexp(half x, int k) __asm("air." _AIR_PREFIX_half "ldexp.f16");
+#else
+  //TODO: <rdar://problem/20022019> fract and ldexp should call air function/builtins
+  METAL_FUNC half ldexp(half x, int k) {  
+    if (x==0.0f) return 0.0f;
+    
+  	ushort ux = as_type<ushort>(x);
+  	int exp = (ux & ushort(0x7c00)) >> 10;
+  	ushort sign = ux & ushort(0x8000);
+  	ushort m = ux & (~ushort(0x7c00));
+  	
+  	// If inf or nan or zero
+  	if (exp == (ushort(0x7c00) >> 10)) 
+		return x;
+	
+	// if k > (power of minimum subnotmal + max exponent), simply return inf of same sign
+	if (k > (30 + 10 + 14))
+		return as_type<half>((ushort)(0x7c00 | sign));
+	
+	// subnormal
+	if (exp == 0)
+	{
+		half t = as_type<half>(ushort(m | 0x3c00));
+		x = t - copysign(half(1), x);
+		ux = as_type<ushort>(x);
+		exp = ((ux & ushort(0x7c00)) >> 10) - (14);
+		m = ux & (~ushort(0x7c00));
+	}
+
+	int e = (int)(exp) + k;
+	if (e >= (30+1)) // return inf of same sign as x
+		return as_type<half>(ushort(ushort(0x7c00) | sign)); 
+		
+	if (e <= 0) // return 0.0f of same sign as x
+		return as_type<half>(ushort(ushort(0) | sign));
+	
+	return as_type<half>(ushort(m | (ushort(e) << 10)));
+  }
+#endif
+  METAL_FUNC half fdim(half x, half y) {
+    bool xNan = x != x; 
+    bool yNan = y != y; 
+    if (xNan || yNan)
+      return as_type<half>((ushort)0x7e00);
+    
+    half t = x - y;
+      
+    // When either x or y are nan, t is nan and t < 0 evaluate to false
+    // When x == y == +/-INFINITY, t is nan but x == y evaluate to true.
+    return select(t, half(0), bool(t < half(0)) || bool(x == y));
+  }
+  METAL_ASM half log(half x) __asm("air." _AIR_PREFIX_half "log.f16");
+  METAL_ASM half log2(half x) __asm("air." _AIR_PREFIX_half "log2.f16");
+  METAL_ASM half log10(half x) __asm("air.log10.f16");
+
+  METAL_FUNC half modf(half x, thread half &intval) {
+    intval = trunc(x);
+    bool isinf_x = isinf(x);
+    return copysign(select(x - intval, half(0), isinf_x), x);
+  }
+  METAL_ASM half pow(half x, half y) __asm("air." _AIR_PREFIX_half "pow.f16");
+  METAL_ASM half powr(half x, half y) __asm("air." _AIR_PREFIX_half "powr.f16");
+  METAL_ASM half rint(half x) __asm("air." _AIR_PREFIX_half "rint.f16");
+  METAL_ASM half round(half x) __asm("air." _AIR_PREFIX_half "round.f16");
+  METAL_ASM half rsqrt(half x) __asm("air." _AIR_PREFIX_half "rsqrt.f16");
+  METAL_ASM half sin(half x) __asm("air." _AIR_PREFIX_half "sin.f16");
+  METAL_ASM half sincos(half x, thread half &cosval) __asm("air." _AIR_PREFIX_half "sincos.f16");
+  METAL_ASM half sinh(half x) __asm("air." _AIR_PREFIX_half "sinh.f16");
+  METAL_ASM half sqrt(half x) __asm("air." _AIR_PREFIX_half "sqrt.f16");
+  METAL_ASM half tan(half x) __asm("air." _AIR_PREFIX_half "tan.f16");
+  METAL_ASM half tanh(half x) __asm("air." _AIR_PREFIX_half "tanh.f16");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM half cospi(half x) __asm("air." _AIR_PREFIX_half "cospi.f16");
+  METAL_ASM half sinpi(half x) __asm("air." _AIR_PREFIX_half "sinpi.f16");
+  METAL_ASM half tanpi(half x) __asm("air." _AIR_PREFIX_half "tanpi.f16");
+#endif
+
+  //METAL_ASM half trunc(half x) __asm("air." _AIR_PREFIX_half "trunc.f16");
+  // Forward declarations
+  METAL_ASM float trunc(float x) __asm("air." _AIR_PREFIX_float "trunc.f32");
+
+  METAL_ASM float acos(float x) __asm("air." _AIR_PREFIX_float "acos.f32");
+  METAL_ASM float acosh(float x) __asm("air." _AIR_PREFIX_float "acosh.f32");
+  METAL_ASM float asin(float x) __asm("air." _AIR_PREFIX_float "asin.f32");
+  METAL_ASM float asinh(float x) __asm("air." _AIR_PREFIX_float "asinh.f32");
+  METAL_ASM float atan(float y_over_x) __asm("air." _AIR_PREFIX_float "atan.f32");
+  METAL_ASM float atan2(float y, float x) __asm("air." _AIR_PREFIX_float "atan2.f32");
+  METAL_ASM float atanh(float x) __asm("air." _AIR_PREFIX_float "atanh.f32");
+  METAL_ASM float ceil(float x) __asm("air." _AIR_PREFIX_float "ceil.f32");
+  METAL_FUNC float copysign(float x, float y) {
+    uint iy = as_type<uint>(y) & uint(0x80000000);
+    uint ret = (as_type<uint>(x) & uint(0x80000000 - 1ULL)) | iy;
+    return as_type<float>(ret);
+  }
+  METAL_ASM float cos(float x) __asm("air." _AIR_PREFIX_float "cos.f32");
+  METAL_ASM float cosh(float x) __asm("air." _AIR_PREFIX_float "cosh.f32");
+  METAL_ASM float exp(float x) __asm("air." _AIR_PREFIX_float "exp.f32");
+  METAL_ASM float exp2(float x) __asm("air." _AIR_PREFIX_float "exp2.f32");
+  METAL_FUNC float exp10(float x) { 
+#if defined(__FAST_MATH__)
+   return fast::exp10(x);
+#else
+   return precise::exp10(x);
+#endif 
+  }
+  METAL_ASM float fabs(float x) __asm("air." _AIR_PREFIX_float "fabs.f32");
+  METAL_ASM float abs(float x) __asm("air.fabs.f32");
+  METAL_ASM float floor(float x) __asm("air." _AIR_PREFIX_float "floor.f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM float fma(float a, float b, float c) __asm("air.fma.f32");
+#endif
+  
+  METAL_ASM float fmax(float x, float y) __asm("air." _AIR_PREFIX_float "fmax.f32");
+  METAL_FUNC float max(float x, float y) {
+    return fmax(x, y);
+  }
+  METAL_ASM float fmin(float x, float y) __asm("air." _AIR_PREFIX_float "fmin.f32");
+  METAL_FUNC float min(float x, float y) {
+    return fmin(x, y);
+  }
+  METAL_ASM float fmod(float x, float y) __asm("air." _AIR_PREFIX_float "fmod.f32");
+  METAL_FUNC float fract(float x) {
+#if defined(__FAST_MATH__)
+    return fast::fract(x);
+#else
+    return precise::fract(x);
+#endif
+  }
+
+  METAL_FUNC float frexp(float x, thread int &exp)
+  {
+	if ((as_type<uint>(x) & uint(0x7f800000)) == uint(0x7f800000))
+
+	{
+		exp = 0;
+		return x;
+	}
+	
+	// This will evaluate to true on G3 for denorms
+	if ( x == 0.0f )
+	{
+		exp = 0;
+		return 0.0f;
+	}
+	
+	uint xi = as_type<uint>(x);
+	int e = (xi & 0x7f800000) >> 23;
+	// subnormal
+	if (e == 0)
+	{
+		// subnormal mantissa + 1.0f
+		float t = as_type<float>((uint)((xi & (uint)0x007fffff) | (uint)0x3f800000));
+		t = t - 1.0f;
+		xi = as_type<uint>(copysign(t, x));
+		e = -126 + ((xi & 0x7f800000) >> 23);	
+	}
+	
+	e -= 126;
+	exp = e;
+	return as_type<float>((uint)( (xi & (0x80000000 | 0x007fffff)) | 0x3f000000 ));
+  }
+  METAL_FUNC int ilogb(float x) {
+    uint ux = as_type<uint>(x) & uint(0x7fffffff);
+    int exp = ux >> uint(23);
+
+    if((uint(exp) - uint(1)) >= uint(254)) {
+      // +-0, +-denormal, +-inf, NaN
+      if(x == float(0))
+        return FP_ILOGB0;
+
+      if(metal::isnan(x))
+        return FP_ILOGBNAN;
+
+      if(ux == uint(0x7f800000))
+        return INT_MAX;
+
+      ux |= uint(0x3f800000);
+      float f = as_type<float>(ux) - float(1);
+      exp = as_type<uint>(f) >> uint(23);
+
+      return exp - int(127 + 126);
+    }
+
+    return exp - int(127);
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM float ldexp(float x, int k) __asm("air." _AIR_PREFIX_float "ldexp.f32");
+#else
+  //TODO: <rdar://problem/20022019> fract and ldexp should call air function/builtins
+  METAL_FUNC float ldexp(float x, int k) {  
+    if (x==0.0f) return 0.0f;
+    
+  	uint ux = as_type<uint>(x);
+  	int exp = (ux & uint(0x7f800000)) >> 23;
+  	uint sign = ux & uint(0x80000000);
+  	uint m = ux & (~uint(0x7f800000));
+  	
+  	// If inf or nan or zero
+  	if (exp == (uint(0x7f800000) >> 23)) 
+		return x;
+	
+	// if k > (power of minimum subnotmal + max exponent), simply return inf of same sign
+	if (k > (254 + 23 + 126))
+		return as_type<float>((uint)(0x7f800000 | sign));
+	
+	// subnormal
+	if (exp == 0)
+	{
+		float t = as_type<float>(uint(m | 0x3f800000));
+		x = t - copysign(float(1), x);
+		ux = as_type<uint>(x);
+		exp = ((ux & uint(0x7f800000)) >> 23) - (126);
+		m = ux & (~uint(0x7f800000));
+	}
+
+	int e = (int)(exp) + k;
+	if (e >= (254+1)) // return inf of same sign as x
+		return as_type<float>(uint(uint(0x7f800000) | sign)); 
+		
+	if (e <= 0) // return 0.0f of same sign as x
+		return as_type<float>(uint(uint(0) | sign));
+	
+	return as_type<float>(uint(m | (uint(e) << 23)));
+  }
+#endif
+  METAL_FUNC float fdim(float x, float y) {
+    bool xNan = x != x; 
+    bool yNan = y != y; 
+    if (xNan || yNan)
+      return as_type<float>(0x7fc00000);
+    
+    float t = x - y;
+      
+    // When either x or y are nan, t is nan and t < 0 evaluate to false
+    // When x == y == +/-INFINITY, t is nan but x == y evaluate to true.
+    return select(t, float(0), bool(t < float(0)) || bool(x == y));
+  }
+  METAL_ASM float log(float x) __asm("air." _AIR_PREFIX_float "log.f32");
+  METAL_ASM float log2(float x) __asm("air." _AIR_PREFIX_float "log2.f32");
+  METAL_FUNC float log10(float x) {
+#if defined(__FAST_MATH__)
+    return fast::log10(x);
+#else
+    return precise::log10(x);
+#endif
+  }
+
+  METAL_FUNC float modf(float x, thread float &intval) {
+    intval = trunc(x);
+    bool isinf_x = isinf(x);
+    return copysign(select(x - intval, float(0), isinf_x), x);
+  }
+  METAL_ASM float pow(float x, float y) __asm("air." _AIR_PREFIX_float "pow.f32");
+  METAL_ASM float powr(float x, float y) __asm("air." _AIR_PREFIX_float "powr.f32");
+  METAL_ASM float rint(float x) __asm("air." _AIR_PREFIX_float "rint.f32");
+  METAL_ASM float round(float x) __asm("air." _AIR_PREFIX_float "round.f32");
+  METAL_ASM float rsqrt(float x) __asm("air." _AIR_PREFIX_float "rsqrt.f32");
+  METAL_ASM float sin(float x) __asm("air." _AIR_PREFIX_float "sin.f32");
+  METAL_ASM float sincos(float x, thread float &cosval) __asm("air." _AIR_PREFIX_float "sincos.f32");
+  METAL_ASM float sinh(float x) __asm("air." _AIR_PREFIX_float "sinh.f32");
+  METAL_ASM float sqrt(float x) __asm("air." _AIR_PREFIX_float "sqrt.f32");
+  METAL_ASM float tan(float x) __asm("air." _AIR_PREFIX_float "tan.f32");
+  METAL_ASM float tanh(float x) __asm("air." _AIR_PREFIX_float "tanh.f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM float cospi(float x) __asm("air." _AIR_PREFIX_float "cospi.f32");
+  METAL_ASM float sinpi(float x) __asm("air." _AIR_PREFIX_float "sinpi.f32");
+  METAL_ASM float tanpi(float x) __asm("air." _AIR_PREFIX_float "tanpi.f32");
+#endif
+
+  //METAL_ASM float trunc(float x) __asm("air." _AIR_PREFIX_float "trunc.f32");
+  // Forward declarations
+  METAL_ASM vec<half,2> trunc(vec<half,2> x) __asm("air." _AIR_PREFIX_half "trunc.v2f16");
+
+  METAL_ASM vec<half,2> acos(vec<half,2> x) __asm("air." _AIR_PREFIX_half "acos.v2f16");
+  METAL_ASM vec<half,2> acosh(vec<half,2> x) __asm("air." _AIR_PREFIX_half "acosh.v2f16");
+  METAL_ASM vec<half,2> asin(vec<half,2> x) __asm("air." _AIR_PREFIX_half "asin.v2f16");
+  METAL_ASM vec<half,2> asinh(vec<half,2> x) __asm("air." _AIR_PREFIX_half "asinh.v2f16");
+  METAL_ASM vec<half,2> atan(vec<half,2> y_over_x) __asm("air." _AIR_PREFIX_half "atan.v2f16");
+  METAL_ASM vec<half,2> atan2(vec<half,2> y, vec<half,2> x) __asm("air." _AIR_PREFIX_half "atan2.v2f16");
+  METAL_ASM vec<half,2> atanh(vec<half,2> x) __asm("air." _AIR_PREFIX_half "atanh.v2f16");
+  METAL_ASM vec<half,2> ceil(vec<half,2> x) __asm("air." _AIR_PREFIX_half "ceil.v2f16");
+  METAL_FUNC vec<half,2> copysign(vec<half,2> x, vec<half,2> y) {
+    vec<ushort,2> iy = as_type<vec<ushort,2>>(y) & vec<ushort,2>(0x8000);
+    vec<ushort,2> ret = (as_type<vec<ushort,2>>(x) & vec<ushort,2>(0x8000 - 1ULL)) | iy;
+    return as_type<vec<half,2>>(ret);
+  }
+  METAL_ASM vec<half,2> cos(vec<half,2> x) __asm("air." _AIR_PREFIX_half "cos.v2f16");
+  METAL_ASM vec<half,2> cosh(vec<half,2> x) __asm("air." _AIR_PREFIX_half "cosh.v2f16");
+  METAL_ASM vec<half,2> exp(vec<half,2> x) __asm("air." _AIR_PREFIX_half "exp.v2f16");
+  METAL_ASM vec<half,2> exp2(vec<half,2> x) __asm("air." _AIR_PREFIX_half "exp2.v2f16");
+  METAL_ASM vec<half,2> exp10(vec<half,2> x) __asm("air.exp10.v2f16");
+  METAL_ASM vec<half,2> fabs(vec<half,2> x) __asm("air." _AIR_PREFIX_half "fabs.v2f16");
+  METAL_ASM vec<half,2> abs(vec<half,2> x) __asm("air.fabs.v2f16");
+  METAL_ASM vec<half,2> floor(vec<half,2> x) __asm("air." _AIR_PREFIX_half "floor.v2f16");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<half,2> fma(vec<half,2> a, vec<half,2> b, vec<half,2> c) __asm("air.fma.v2f16");
+#endif
+  
+  METAL_ASM vec<half,2> fmax(vec<half,2> x, vec<half,2> y) __asm("air." _AIR_PREFIX_half "fmax.v2f16");
+  METAL_FUNC vec<half,2> fmax(vec<half,2> x, half y) {
+    return fmax(x, vec<half,2>(y));
+  }
+  METAL_FUNC vec<half,2> max(vec<half,2> x, vec<half,2> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<half,2> fmin(vec<half,2> x, vec<half,2> y) __asm("air." _AIR_PREFIX_half "fmin.v2f16");
+  METAL_FUNC vec<half,2> fmin(vec<half,2> x, half y) {
+    return fmin(x, vec<half,2>(y));
+  }
+  METAL_FUNC vec<half,2> min(vec<half,2> x, vec<half,2> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<half,2> fmod(vec<half,2> x, vec<half,2> y) __asm("air." _AIR_PREFIX_half "fmod.v2f16");
+  METAL_FUNC vec<half,2> frexp(vec<half,2> x, thread vec<int,2> &exponent) {
+    int temp_exponent;
+    vec<half,2> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,2> ilogb(vec<half,2> x) {
+    vec<int,2> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<half,2> ldexp(vec<half,2> x, vec<int,2> k) __asm("air.ldexp.v2f16");
+#else
+  METAL_FUNC vec<half,2> ldexp(vec<half,2> x, vec<int,2> k) {
+    vec<half,2> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<half,2> fdim(vec<half,2> x, vec<half,2> y) {
+    vec<half,2> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<half,2> fract(vec<half,2> x) __asm("air.fract.v2f16");
+#else
+  METAL_FUNC vec<half,2> fract(vec<half,2> x) {
+    vec<half,2> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<half,2> log(vec<half,2> x) __asm("air." _AIR_PREFIX_half "log.v2f16");
+  METAL_ASM vec<half,2> log2(vec<half,2> x) __asm("air." _AIR_PREFIX_half "log2.v2f16");
+  METAL_ASM vec<half,2> log10(vec<half,2> x) __asm("air.log10.v2f16");
+
+  METAL_FUNC vec<half,2> modf(vec<half,2> x, thread vec<half,2> &intval) {
+    intval = trunc(x);
+    vec<bool,2> isinf_x = isinf(x);
+    return copysign(select(x - intval, vec<half,2>(0), isinf_x), x);
+  }
+  METAL_ASM vec<half,2> pow(vec<half,2> x, vec<half,2> y) __asm("air." _AIR_PREFIX_half "pow.v2f16");
+  METAL_ASM vec<half,2> powr(vec<half,2> x, vec<half,2> y) __asm("air." _AIR_PREFIX_half "powr.v2f16");
+  METAL_ASM vec<half,2> rint(vec<half,2> x) __asm("air." _AIR_PREFIX_half "rint.v2f16");
+  METAL_ASM vec<half,2> round(vec<half,2> x) __asm("air." _AIR_PREFIX_half "round.v2f16");
+  METAL_ASM vec<half,2> rsqrt(vec<half,2> x) __asm("air." _AIR_PREFIX_half "rsqrt.v2f16");
+  METAL_ASM vec<half,2> sin(vec<half,2> x) __asm("air." _AIR_PREFIX_half "sin.v2f16");
+  METAL_ASM vec<half,2> sincos(vec<half,2> x, thread vec<half,2> &cosval) __asm("air." _AIR_PREFIX_half "sincos.v2f16");
+  METAL_ASM vec<half,2> sinh(vec<half,2> x) __asm("air." _AIR_PREFIX_half "sinh.v2f16");
+  METAL_ASM vec<half,2> sqrt(vec<half,2> x) __asm("air." _AIR_PREFIX_half "sqrt.v2f16");
+  METAL_ASM vec<half,2> tan(vec<half,2> x) __asm("air." _AIR_PREFIX_half "tan.v2f16");
+  METAL_ASM vec<half,2> tanh(vec<half,2> x) __asm("air." _AIR_PREFIX_half "tanh.v2f16");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<half,2> cospi(vec<half,2> x) __asm("air." _AIR_PREFIX_half "cospi.v2f16");
+  METAL_ASM vec<half,2> sinpi(vec<half,2> x) __asm("air." _AIR_PREFIX_half "sinpi.v2f16");
+  METAL_ASM vec<half,2> tanpi(vec<half,2> x) __asm("air." _AIR_PREFIX_half "tanpi.v2f16");
+#endif
+
+  //METAL_ASM vec<half,2> trunc(vec<half,2> x) __asm("air." _AIR_PREFIX_half "trunc.v2f16");
+  // Forward declarations
+  METAL_ASM vec<float,2> trunc(vec<float,2> x) __asm("air." _AIR_PREFIX_float "trunc.v2f32");
+
+  METAL_ASM vec<float,2> acos(vec<float,2> x) __asm("air." _AIR_PREFIX_float "acos.v2f32");
+  METAL_ASM vec<float,2> acosh(vec<float,2> x) __asm("air." _AIR_PREFIX_float "acosh.v2f32");
+  METAL_ASM vec<float,2> asin(vec<float,2> x) __asm("air." _AIR_PREFIX_float "asin.v2f32");
+  METAL_ASM vec<float,2> asinh(vec<float,2> x) __asm("air." _AIR_PREFIX_float "asinh.v2f32");
+  METAL_ASM vec<float,2> atan(vec<float,2> y_over_x) __asm("air." _AIR_PREFIX_float "atan.v2f32");
+  METAL_ASM vec<float,2> atan2(vec<float,2> y, vec<float,2> x) __asm("air." _AIR_PREFIX_float "atan2.v2f32");
+  METAL_ASM vec<float,2> atanh(vec<float,2> x) __asm("air." _AIR_PREFIX_float "atanh.v2f32");
+  METAL_ASM vec<float,2> ceil(vec<float,2> x) __asm("air." _AIR_PREFIX_float "ceil.v2f32");
+  METAL_FUNC vec<float,2> copysign(vec<float,2> x, vec<float,2> y) {
+    vec<uint,2> iy = as_type<vec<uint,2>>(y) & vec<uint,2>(0x80000000);
+    vec<uint,2> ret = (as_type<vec<uint,2>>(x) & vec<uint,2>(0x80000000 - 1ULL)) | iy;
+    return as_type<vec<float,2>>(ret);
+  }
+  METAL_ASM vec<float,2> cos(vec<float,2> x) __asm("air." _AIR_PREFIX_float "cos.v2f32");
+  METAL_ASM vec<float,2> cosh(vec<float,2> x) __asm("air." _AIR_PREFIX_float "cosh.v2f32");
+  METAL_ASM vec<float,2> exp(vec<float,2> x) __asm("air." _AIR_PREFIX_float "exp.v2f32");
+  METAL_ASM vec<float,2> exp2(vec<float,2> x) __asm("air." _AIR_PREFIX_float "exp2.v2f32");
+  METAL_FUNC vec<float,2> exp10(vec<float,2> x) { 
+#if defined(__FAST_MATH__)
+   return fast::exp10(x);
+#else
+   return precise::exp10(x);
+#endif 
+  }
+  METAL_ASM vec<float,2> fabs(vec<float,2> x) __asm("air." _AIR_PREFIX_float "fabs.v2f32");
+  METAL_ASM vec<float,2> abs(vec<float,2> x) __asm("air.fabs.v2f32");
+  METAL_ASM vec<float,2> floor(vec<float,2> x) __asm("air." _AIR_PREFIX_float "floor.v2f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,2> fma(vec<float,2> a, vec<float,2> b, vec<float,2> c) __asm("air.fma.v2f32");
+#endif
+  
+  METAL_ASM vec<float,2> fmax(vec<float,2> x, vec<float,2> y) __asm("air." _AIR_PREFIX_float "fmax.v2f32");
+  METAL_FUNC vec<float,2> fmax(vec<float,2> x, float y) {
+    return fmax(x, vec<float,2>(y));
+  }
+  METAL_FUNC vec<float,2> max(vec<float,2> x, vec<float,2> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,2> fmin(vec<float,2> x, vec<float,2> y) __asm("air." _AIR_PREFIX_float "fmin.v2f32");
+  METAL_FUNC vec<float,2> fmin(vec<float,2> x, float y) {
+    return fmin(x, vec<float,2>(y));
+  }
+  METAL_FUNC vec<float,2> min(vec<float,2> x, vec<float,2> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,2> fmod(vec<float,2> x, vec<float,2> y) __asm("air." _AIR_PREFIX_float "fmod.v2f32");
+  METAL_FUNC vec<float,2> frexp(vec<float,2> x, thread vec<int,2> &exponent) {
+    int temp_exponent;
+    vec<float,2> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,2> ilogb(vec<float,2> x) {
+    vec<int,2> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,2> ldexp(vec<float,2> x, vec<int,2> k) __asm("air." _AIR_PREFIX_float "ldexp.v2f32");
+#else
+  METAL_FUNC vec<float,2> ldexp(vec<float,2> x, vec<int,2> k) {
+    vec<float,2> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,2> fdim(vec<float,2> x, vec<float,2> y) {
+    vec<float,2> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,2> fract(vec<float,2> x) __asm("air." _AIR_PREFIX_float "fract.v2f32");
+#else
+  METAL_FUNC vec<float,2> fract(vec<float,2> x) {
+    vec<float,2> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,2> log(vec<float,2> x) __asm("air." _AIR_PREFIX_float "log.v2f32");
+  METAL_ASM vec<float,2> log2(vec<float,2> x) __asm("air." _AIR_PREFIX_float "log2.v2f32");
+  METAL_FUNC vec<float,2> log10(vec<float,2> x) {
+#if defined(__FAST_MATH__)
+    return fast::log10(x);
+#else
+    return precise::log10(x);
+#endif
+  }
+
+  METAL_FUNC vec<float,2> modf(vec<float,2> x, thread vec<float,2> &intval) {
+    intval = trunc(x);
+    vec<bool,2> isinf_x = isinf(x);
+    return copysign(select(x - intval, vec<float,2>(0), isinf_x), x);
+  }
+  METAL_ASM vec<float,2> pow(vec<float,2> x, vec<float,2> y) __asm("air." _AIR_PREFIX_float "pow.v2f32");
+  METAL_ASM vec<float,2> powr(vec<float,2> x, vec<float,2> y) __asm("air." _AIR_PREFIX_float "powr.v2f32");
+  METAL_ASM vec<float,2> rint(vec<float,2> x) __asm("air." _AIR_PREFIX_float "rint.v2f32");
+  METAL_ASM vec<float,2> round(vec<float,2> x) __asm("air." _AIR_PREFIX_float "round.v2f32");
+  METAL_ASM vec<float,2> rsqrt(vec<float,2> x) __asm("air." _AIR_PREFIX_float "rsqrt.v2f32");
+  METAL_ASM vec<float,2> sin(vec<float,2> x) __asm("air." _AIR_PREFIX_float "sin.v2f32");
+  METAL_ASM vec<float,2> sincos(vec<float,2> x, thread vec<float,2> &cosval) __asm("air." _AIR_PREFIX_float "sincos.v2f32");
+  METAL_ASM vec<float,2> sinh(vec<float,2> x) __asm("air." _AIR_PREFIX_float "sinh.v2f32");
+  METAL_ASM vec<float,2> sqrt(vec<float,2> x) __asm("air." _AIR_PREFIX_float "sqrt.v2f32");
+  METAL_ASM vec<float,2> tan(vec<float,2> x) __asm("air." _AIR_PREFIX_float "tan.v2f32");
+  METAL_ASM vec<float,2> tanh(vec<float,2> x) __asm("air." _AIR_PREFIX_float "tanh.v2f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,2> cospi(vec<float,2> x) __asm("air." _AIR_PREFIX_float "cospi.v2f32");
+  METAL_ASM vec<float,2> sinpi(vec<float,2> x) __asm("air." _AIR_PREFIX_float "sinpi.v2f32");
+  METAL_ASM vec<float,2> tanpi(vec<float,2> x) __asm("air." _AIR_PREFIX_float "tanpi.v2f32");
+#endif
+
+  //METAL_ASM vec<float,2> trunc(vec<float,2> x) __asm("air." _AIR_PREFIX_float "trunc.v2f32");
+  // Forward declarations
+  METAL_ASM vec<half,3> trunc(vec<half,3> x) __asm("air." _AIR_PREFIX_half "trunc.v3f16");
+
+  METAL_ASM vec<half,3> acos(vec<half,3> x) __asm("air." _AIR_PREFIX_half "acos.v3f16");
+  METAL_ASM vec<half,3> acosh(vec<half,3> x) __asm("air." _AIR_PREFIX_half "acosh.v3f16");
+  METAL_ASM vec<half,3> asin(vec<half,3> x) __asm("air." _AIR_PREFIX_half "asin.v3f16");
+  METAL_ASM vec<half,3> asinh(vec<half,3> x) __asm("air." _AIR_PREFIX_half "asinh.v3f16");
+  METAL_ASM vec<half,3> atan(vec<half,3> y_over_x) __asm("air." _AIR_PREFIX_half "atan.v3f16");
+  METAL_ASM vec<half,3> atan2(vec<half,3> y, vec<half,3> x) __asm("air." _AIR_PREFIX_half "atan2.v3f16");
+  METAL_ASM vec<half,3> atanh(vec<half,3> x) __asm("air." _AIR_PREFIX_half "atanh.v3f16");
+  METAL_ASM vec<half,3> ceil(vec<half,3> x) __asm("air." _AIR_PREFIX_half "ceil.v3f16");
+  METAL_FUNC vec<half,3> copysign(vec<half,3> x, vec<half,3> y) {
+    vec<ushort,3> iy = as_type<vec<ushort,3>>(y) & vec<ushort,3>(0x8000);
+    vec<ushort,3> ret = (as_type<vec<ushort,3>>(x) & vec<ushort,3>(0x8000 - 1ULL)) | iy;
+    return as_type<vec<half,3>>(ret);
+  }
+  METAL_ASM vec<half,3> cos(vec<half,3> x) __asm("air." _AIR_PREFIX_half "cos.v3f16");
+  METAL_ASM vec<half,3> cosh(vec<half,3> x) __asm("air." _AIR_PREFIX_half "cosh.v3f16");
+  METAL_ASM vec<half,3> exp(vec<half,3> x) __asm("air." _AIR_PREFIX_half "exp.v3f16");
+  METAL_ASM vec<half,3> exp2(vec<half,3> x) __asm("air." _AIR_PREFIX_half "exp2.v3f16");
+  METAL_ASM vec<half,3> exp10(vec<half,3> x) __asm("air.exp10.v3f16");
+  METAL_ASM vec<half,3> fabs(vec<half,3> x) __asm("air." _AIR_PREFIX_half "fabs.v3f16");
+  METAL_ASM vec<half,3> abs(vec<half,3> x) __asm("air.fabs.v3f16");
+  METAL_ASM vec<half,3> floor(vec<half,3> x) __asm("air." _AIR_PREFIX_half "floor.v3f16");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<half,3> fma(vec<half,3> a, vec<half,3> b, vec<half,3> c) __asm("air.fma.v3f16");
+#endif
+  
+  METAL_ASM vec<half,3> fmax(vec<half,3> x, vec<half,3> y) __asm("air." _AIR_PREFIX_half "fmax.v3f16");
+  METAL_FUNC vec<half,3> fmax(vec<half,3> x, half y) {
+    return fmax(x, vec<half,3>(y));
+  }
+  METAL_FUNC vec<half,3> max(vec<half,3> x, vec<half,3> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<half,3> fmin(vec<half,3> x, vec<half,3> y) __asm("air." _AIR_PREFIX_half "fmin.v3f16");
+  METAL_FUNC vec<half,3> fmin(vec<half,3> x, half y) {
+    return fmin(x, vec<half,3>(y));
+  }
+  METAL_FUNC vec<half,3> min(vec<half,3> x, vec<half,3> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<half,3> fmod(vec<half,3> x, vec<half,3> y) __asm("air." _AIR_PREFIX_half "fmod.v3f16");
+  METAL_FUNC vec<half,3> frexp(vec<half,3> x, thread vec<int,3> &exponent) {
+    int temp_exponent;
+    vec<half,3> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,3> ilogb(vec<half,3> x) {
+    vec<int,3> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<half,3> ldexp(vec<half,3> x, vec<int,3> k) __asm("air.ldexp.v3f16");
+#else
+  METAL_FUNC vec<half,3> ldexp(vec<half,3> x, vec<int,3> k) {
+    vec<half,3> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<half,3> fdim(vec<half,3> x, vec<half,3> y) {
+    vec<half,3> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<half,3> fract(vec<half,3> x) __asm("air.fract.v3f16");
+#else
+  METAL_FUNC vec<half,3> fract(vec<half,3> x) {
+    vec<half,3> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<half,3> log(vec<half,3> x) __asm("air." _AIR_PREFIX_half "log.v3f16");
+  METAL_ASM vec<half,3> log2(vec<half,3> x) __asm("air." _AIR_PREFIX_half "log2.v3f16");
+  METAL_ASM vec<half,3> log10(vec<half,3> x) __asm("air.log10.v3f16");
+
+  METAL_FUNC vec<half,3> modf(vec<half,3> x, thread vec<half,3> &intval) {
+    intval = trunc(x);
+    vec<bool,3> isinf_x = isinf(x);
+    return copysign(select(x - intval, vec<half,3>(0), isinf_x), x);
+  }
+  METAL_ASM vec<half,3> pow(vec<half,3> x, vec<half,3> y) __asm("air." _AIR_PREFIX_half "pow.v3f16");
+  METAL_ASM vec<half,3> powr(vec<half,3> x, vec<half,3> y) __asm("air." _AIR_PREFIX_half "powr.v3f16");
+  METAL_ASM vec<half,3> rint(vec<half,3> x) __asm("air." _AIR_PREFIX_half "rint.v3f16");
+  METAL_ASM vec<half,3> round(vec<half,3> x) __asm("air." _AIR_PREFIX_half "round.v3f16");
+  METAL_ASM vec<half,3> rsqrt(vec<half,3> x) __asm("air." _AIR_PREFIX_half "rsqrt.v3f16");
+  METAL_ASM vec<half,3> sin(vec<half,3> x) __asm("air." _AIR_PREFIX_half "sin.v3f16");
+  METAL_ASM vec<half,3> sincos(vec<half,3> x, thread vec<half,3> &cosval) __asm("air." _AIR_PREFIX_half "sincos.v3f16");
+  METAL_ASM vec<half,3> sinh(vec<half,3> x) __asm("air." _AIR_PREFIX_half "sinh.v3f16");
+  METAL_ASM vec<half,3> sqrt(vec<half,3> x) __asm("air." _AIR_PREFIX_half "sqrt.v3f16");
+  METAL_ASM vec<half,3> tan(vec<half,3> x) __asm("air." _AIR_PREFIX_half "tan.v3f16");
+  METAL_ASM vec<half,3> tanh(vec<half,3> x) __asm("air." _AIR_PREFIX_half "tanh.v3f16");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<half,3> cospi(vec<half,3> x) __asm("air." _AIR_PREFIX_half "cospi.v3f16");
+  METAL_ASM vec<half,3> sinpi(vec<half,3> x) __asm("air." _AIR_PREFIX_half "sinpi.v3f16");
+  METAL_ASM vec<half,3> tanpi(vec<half,3> x) __asm("air." _AIR_PREFIX_half "tanpi.v3f16");
+#endif
+
+  //METAL_ASM vec<half,3> trunc(vec<half,3> x) __asm("air." _AIR_PREFIX_half "trunc.v3f16");
+  // Forward declarations
+  METAL_ASM vec<float,3> trunc(vec<float,3> x) __asm("air." _AIR_PREFIX_float "trunc.v3f32");
+
+  METAL_ASM vec<float,3> acos(vec<float,3> x) __asm("air." _AIR_PREFIX_float "acos.v3f32");
+  METAL_ASM vec<float,3> acosh(vec<float,3> x) __asm("air." _AIR_PREFIX_float "acosh.v3f32");
+  METAL_ASM vec<float,3> asin(vec<float,3> x) __asm("air." _AIR_PREFIX_float "asin.v3f32");
+  METAL_ASM vec<float,3> asinh(vec<float,3> x) __asm("air." _AIR_PREFIX_float "asinh.v3f32");
+  METAL_ASM vec<float,3> atan(vec<float,3> y_over_x) __asm("air." _AIR_PREFIX_float "atan.v3f32");
+  METAL_ASM vec<float,3> atan2(vec<float,3> y, vec<float,3> x) __asm("air." _AIR_PREFIX_float "atan2.v3f32");
+  METAL_ASM vec<float,3> atanh(vec<float,3> x) __asm("air." _AIR_PREFIX_float "atanh.v3f32");
+  METAL_ASM vec<float,3> ceil(vec<float,3> x) __asm("air." _AIR_PREFIX_float "ceil.v3f32");
+  METAL_FUNC vec<float,3> copysign(vec<float,3> x, vec<float,3> y) {
+    vec<uint,3> iy = as_type<vec<uint,3>>(y) & vec<uint,3>(0x80000000);
+    vec<uint,3> ret = (as_type<vec<uint,3>>(x) & vec<uint,3>(0x80000000 - 1ULL)) | iy;
+    return as_type<vec<float,3>>(ret);
+  }
+  METAL_ASM vec<float,3> cos(vec<float,3> x) __asm("air." _AIR_PREFIX_float "cos.v3f32");
+  METAL_ASM vec<float,3> cosh(vec<float,3> x) __asm("air." _AIR_PREFIX_float "cosh.v3f32");
+  METAL_ASM vec<float,3> exp(vec<float,3> x) __asm("air." _AIR_PREFIX_float "exp.v3f32");
+  METAL_ASM vec<float,3> exp2(vec<float,3> x) __asm("air." _AIR_PREFIX_float "exp2.v3f32");
+  METAL_FUNC vec<float,3> exp10(vec<float,3> x) { 
+#if defined(__FAST_MATH__)
+   return fast::exp10(x);
+#else
+   return precise::exp10(x);
+#endif 
+  }
+  METAL_ASM vec<float,3> fabs(vec<float,3> x) __asm("air." _AIR_PREFIX_float "fabs.v3f32");
+  METAL_ASM vec<float,3> abs(vec<float,3> x) __asm("air.fabs.v3f32");
+  METAL_ASM vec<float,3> floor(vec<float,3> x) __asm("air." _AIR_PREFIX_float "floor.v3f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,3> fma(vec<float,3> a, vec<float,3> b, vec<float,3> c) __asm("air.fma.v3f32");
+#endif
+  
+  METAL_ASM vec<float,3> fmax(vec<float,3> x, vec<float,3> y) __asm("air." _AIR_PREFIX_float "fmax.v3f32");
+  METAL_FUNC vec<float,3> fmax(vec<float,3> x, float y) {
+    return fmax(x, vec<float,3>(y));
+  }
+  METAL_FUNC vec<float,3> max(vec<float,3> x, vec<float,3> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,3> fmin(vec<float,3> x, vec<float,3> y) __asm("air." _AIR_PREFIX_float "fmin.v3f32");
+  METAL_FUNC vec<float,3> fmin(vec<float,3> x, float y) {
+    return fmin(x, vec<float,3>(y));
+  }
+  METAL_FUNC vec<float,3> min(vec<float,3> x, vec<float,3> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,3> fmod(vec<float,3> x, vec<float,3> y) __asm("air." _AIR_PREFIX_float "fmod.v3f32");
+  METAL_FUNC vec<float,3> frexp(vec<float,3> x, thread vec<int,3> &exponent) {
+    int temp_exponent;
+    vec<float,3> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,3> ilogb(vec<float,3> x) {
+    vec<int,3> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,3> ldexp(vec<float,3> x, vec<int,3> k) __asm("air." _AIR_PREFIX_float "ldexp.v3f32");
+#else
+  METAL_FUNC vec<float,3> ldexp(vec<float,3> x, vec<int,3> k) {
+    vec<float,3> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,3> fdim(vec<float,3> x, vec<float,3> y) {
+    vec<float,3> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,3> fract(vec<float,3> x) __asm("air." _AIR_PREFIX_float "fract.v3f32");
+#else
+  METAL_FUNC vec<float,3> fract(vec<float,3> x) {
+    vec<float,3> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,3> log(vec<float,3> x) __asm("air." _AIR_PREFIX_float "log.v3f32");
+  METAL_ASM vec<float,3> log2(vec<float,3> x) __asm("air." _AIR_PREFIX_float "log2.v3f32");
+  METAL_FUNC vec<float,3> log10(vec<float,3> x) {
+#if defined(__FAST_MATH__)
+    return fast::log10(x);
+#else
+    return precise::log10(x);
+#endif
+  }
+
+  METAL_FUNC vec<float,3> modf(vec<float,3> x, thread vec<float,3> &intval) {
+    intval = trunc(x);
+    vec<bool,3> isinf_x = isinf(x);
+    return copysign(select(x - intval, vec<float,3>(0), isinf_x), x);
+  }
+  METAL_ASM vec<float,3> pow(vec<float,3> x, vec<float,3> y) __asm("air." _AIR_PREFIX_float "pow.v3f32");
+  METAL_ASM vec<float,3> powr(vec<float,3> x, vec<float,3> y) __asm("air." _AIR_PREFIX_float "powr.v3f32");
+  METAL_ASM vec<float,3> rint(vec<float,3> x) __asm("air." _AIR_PREFIX_float "rint.v3f32");
+  METAL_ASM vec<float,3> round(vec<float,3> x) __asm("air." _AIR_PREFIX_float "round.v3f32");
+  METAL_ASM vec<float,3> rsqrt(vec<float,3> x) __asm("air." _AIR_PREFIX_float "rsqrt.v3f32");
+  METAL_ASM vec<float,3> sin(vec<float,3> x) __asm("air." _AIR_PREFIX_float "sin.v3f32");
+  METAL_ASM vec<float,3> sincos(vec<float,3> x, thread vec<float,3> &cosval) __asm("air." _AIR_PREFIX_float "sincos.v3f32");
+  METAL_ASM vec<float,3> sinh(vec<float,3> x) __asm("air." _AIR_PREFIX_float "sinh.v3f32");
+  METAL_ASM vec<float,3> sqrt(vec<float,3> x) __asm("air." _AIR_PREFIX_float "sqrt.v3f32");
+  METAL_ASM vec<float,3> tan(vec<float,3> x) __asm("air." _AIR_PREFIX_float "tan.v3f32");
+  METAL_ASM vec<float,3> tanh(vec<float,3> x) __asm("air." _AIR_PREFIX_float "tanh.v3f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,3> cospi(vec<float,3> x) __asm("air." _AIR_PREFIX_float "cospi.v3f32");
+  METAL_ASM vec<float,3> sinpi(vec<float,3> x) __asm("air." _AIR_PREFIX_float "sinpi.v3f32");
+  METAL_ASM vec<float,3> tanpi(vec<float,3> x) __asm("air." _AIR_PREFIX_float "tanpi.v3f32");
+#endif
+
+  //METAL_ASM vec<float,3> trunc(vec<float,3> x) __asm("air." _AIR_PREFIX_float "trunc.v3f32");
+  // Forward declarations
+  METAL_ASM vec<half,4> trunc(vec<half,4> x) __asm("air." _AIR_PREFIX_half "trunc.v4f16");
+
+  METAL_ASM vec<half,4> acos(vec<half,4> x) __asm("air." _AIR_PREFIX_half "acos.v4f16");
+  METAL_ASM vec<half,4> acosh(vec<half,4> x) __asm("air." _AIR_PREFIX_half "acosh.v4f16");
+  METAL_ASM vec<half,4> asin(vec<half,4> x) __asm("air." _AIR_PREFIX_half "asin.v4f16");
+  METAL_ASM vec<half,4> asinh(vec<half,4> x) __asm("air." _AIR_PREFIX_half "asinh.v4f16");
+  METAL_ASM vec<half,4> atan(vec<half,4> y_over_x) __asm("air." _AIR_PREFIX_half "atan.v4f16");
+  METAL_ASM vec<half,4> atan2(vec<half,4> y, vec<half,4> x) __asm("air." _AIR_PREFIX_half "atan2.v4f16");
+  METAL_ASM vec<half,4> atanh(vec<half,4> x) __asm("air." _AIR_PREFIX_half "atanh.v4f16");
+  METAL_ASM vec<half,4> ceil(vec<half,4> x) __asm("air." _AIR_PREFIX_half "ceil.v4f16");
+  METAL_FUNC vec<half,4> copysign(vec<half,4> x, vec<half,4> y) {
+    vec<ushort,4> iy = as_type<vec<ushort,4>>(y) & vec<ushort,4>(0x8000);
+    vec<ushort,4> ret = (as_type<vec<ushort,4>>(x) & vec<ushort,4>(0x8000 - 1ULL)) | iy;
+    return as_type<vec<half,4>>(ret);
+  }
+  METAL_ASM vec<half,4> cos(vec<half,4> x) __asm("air." _AIR_PREFIX_half "cos.v4f16");
+  METAL_ASM vec<half,4> cosh(vec<half,4> x) __asm("air." _AIR_PREFIX_half "cosh.v4f16");
+  METAL_ASM vec<half,4> exp(vec<half,4> x) __asm("air." _AIR_PREFIX_half "exp.v4f16");
+  METAL_ASM vec<half,4> exp2(vec<half,4> x) __asm("air." _AIR_PREFIX_half "exp2.v4f16");
+  METAL_ASM vec<half,4> exp10(vec<half,4> x) __asm("air.exp10.v4f16");
+  METAL_ASM vec<half,4> fabs(vec<half,4> x) __asm("air." _AIR_PREFIX_half "fabs.v4f16");
+  METAL_ASM vec<half,4> abs(vec<half,4> x) __asm("air.fabs.v4f16");
+  METAL_ASM vec<half,4> floor(vec<half,4> x) __asm("air." _AIR_PREFIX_half "floor.v4f16");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<half,4> fma(vec<half,4> a, vec<half,4> b, vec<half,4> c) __asm("air.fma.v4f16");
+#endif
+  
+  METAL_ASM vec<half,4> fmax(vec<half,4> x, vec<half,4> y) __asm("air." _AIR_PREFIX_half "fmax.v4f16");
+  METAL_FUNC vec<half,4> fmax(vec<half,4> x, half y) {
+    return fmax(x, vec<half,4>(y));
+  }
+  METAL_FUNC vec<half,4> max(vec<half,4> x, vec<half,4> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<half,4> fmin(vec<half,4> x, vec<half,4> y) __asm("air." _AIR_PREFIX_half "fmin.v4f16");
+  METAL_FUNC vec<half,4> fmin(vec<half,4> x, half y) {
+    return fmin(x, vec<half,4>(y));
+  }
+  METAL_FUNC vec<half,4> min(vec<half,4> x, vec<half,4> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<half,4> fmod(vec<half,4> x, vec<half,4> y) __asm("air." _AIR_PREFIX_half "fmod.v4f16");
+  METAL_FUNC vec<half,4> frexp(vec<half,4> x, thread vec<int,4> &exponent) {
+    int temp_exponent;
+    vec<half,4> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    ret_val[3] = frexp(x[3], temp_exponent);
+    exponent[3] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,4> ilogb(vec<half,4> x) {
+    vec<int,4> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    ret_val[3] = ilogb(x[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<half,4> ldexp(vec<half,4> x, vec<int,4> k) __asm("air.ldexp.v4f16");
+#else
+  METAL_FUNC vec<half,4> ldexp(vec<half,4> x, vec<int,4> k) {
+    vec<half,4> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    ret_val[3] = ldexp(x[3], k[3]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<half,4> fdim(vec<half,4> x, vec<half,4> y) {
+    vec<half,4> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    ret_val[3] = fdim(x[3], y[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<half,4> fract(vec<half,4> x) __asm("air.fract.v4f16");
+#else
+  METAL_FUNC vec<half,4> fract(vec<half,4> x) {
+    vec<half,4> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    ret_val[3] = fract(x[3]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<half,4> log(vec<half,4> x) __asm("air." _AIR_PREFIX_half "log.v4f16");
+  METAL_ASM vec<half,4> log2(vec<half,4> x) __asm("air." _AIR_PREFIX_half "log2.v4f16");
+  METAL_ASM vec<half,4> log10(vec<half,4> x) __asm("air.log10.v4f16");
+
+  METAL_FUNC vec<half,4> modf(vec<half,4> x, thread vec<half,4> &intval) {
+    intval = trunc(x);
+    vec<bool,4> isinf_x = isinf(x);
+    return copysign(select(x - intval, vec<half,4>(0), isinf_x), x);
+  }
+  METAL_ASM vec<half,4> pow(vec<half,4> x, vec<half,4> y) __asm("air." _AIR_PREFIX_half "pow.v4f16");
+  METAL_ASM vec<half,4> powr(vec<half,4> x, vec<half,4> y) __asm("air." _AIR_PREFIX_half "powr.v4f16");
+  METAL_ASM vec<half,4> rint(vec<half,4> x) __asm("air." _AIR_PREFIX_half "rint.v4f16");
+  METAL_ASM vec<half,4> round(vec<half,4> x) __asm("air." _AIR_PREFIX_half "round.v4f16");
+  METAL_ASM vec<half,4> rsqrt(vec<half,4> x) __asm("air." _AIR_PREFIX_half "rsqrt.v4f16");
+  METAL_ASM vec<half,4> sin(vec<half,4> x) __asm("air." _AIR_PREFIX_half "sin.v4f16");
+  METAL_ASM vec<half,4> sincos(vec<half,4> x, thread vec<half,4> &cosval) __asm("air." _AIR_PREFIX_half "sincos.v4f16");
+  METAL_ASM vec<half,4> sinh(vec<half,4> x) __asm("air." _AIR_PREFIX_half "sinh.v4f16");
+  METAL_ASM vec<half,4> sqrt(vec<half,4> x) __asm("air." _AIR_PREFIX_half "sqrt.v4f16");
+  METAL_ASM vec<half,4> tan(vec<half,4> x) __asm("air." _AIR_PREFIX_half "tan.v4f16");
+  METAL_ASM vec<half,4> tanh(vec<half,4> x) __asm("air." _AIR_PREFIX_half "tanh.v4f16");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<half,4> cospi(vec<half,4> x) __asm("air." _AIR_PREFIX_half "cospi.v4f16");
+  METAL_ASM vec<half,4> sinpi(vec<half,4> x) __asm("air." _AIR_PREFIX_half "sinpi.v4f16");
+  METAL_ASM vec<half,4> tanpi(vec<half,4> x) __asm("air." _AIR_PREFIX_half "tanpi.v4f16");
+#endif
+
+  //METAL_ASM vec<half,4> trunc(vec<half,4> x) __asm("air." _AIR_PREFIX_half "trunc.v4f16");
+  // Forward declarations
+  METAL_ASM vec<float,4> trunc(vec<float,4> x) __asm("air." _AIR_PREFIX_float "trunc.v4f32");
+
+  METAL_ASM vec<float,4> acos(vec<float,4> x) __asm("air." _AIR_PREFIX_float "acos.v4f32");
+  METAL_ASM vec<float,4> acosh(vec<float,4> x) __asm("air." _AIR_PREFIX_float "acosh.v4f32");
+  METAL_ASM vec<float,4> asin(vec<float,4> x) __asm("air." _AIR_PREFIX_float "asin.v4f32");
+  METAL_ASM vec<float,4> asinh(vec<float,4> x) __asm("air." _AIR_PREFIX_float "asinh.v4f32");
+  METAL_ASM vec<float,4> atan(vec<float,4> y_over_x) __asm("air." _AIR_PREFIX_float "atan.v4f32");
+  METAL_ASM vec<float,4> atan2(vec<float,4> y, vec<float,4> x) __asm("air." _AIR_PREFIX_float "atan2.v4f32");
+  METAL_ASM vec<float,4> atanh(vec<float,4> x) __asm("air." _AIR_PREFIX_float "atanh.v4f32");
+  METAL_ASM vec<float,4> ceil(vec<float,4> x) __asm("air." _AIR_PREFIX_float "ceil.v4f32");
+  METAL_FUNC vec<float,4> copysign(vec<float,4> x, vec<float,4> y) {
+    vec<uint,4> iy = as_type<vec<uint,4>>(y) & vec<uint,4>(0x80000000);
+    vec<uint,4> ret = (as_type<vec<uint,4>>(x) & vec<uint,4>(0x80000000 - 1ULL)) | iy;
+    return as_type<vec<float,4>>(ret);
+  }
+  METAL_ASM vec<float,4> cos(vec<float,4> x) __asm("air." _AIR_PREFIX_float "cos.v4f32");
+  METAL_ASM vec<float,4> cosh(vec<float,4> x) __asm("air." _AIR_PREFIX_float "cosh.v4f32");
+  METAL_ASM vec<float,4> exp(vec<float,4> x) __asm("air." _AIR_PREFIX_float "exp.v4f32");
+  METAL_ASM vec<float,4> exp2(vec<float,4> x) __asm("air." _AIR_PREFIX_float "exp2.v4f32");
+  METAL_FUNC vec<float,4> exp10(vec<float,4> x) { 
+#if defined(__FAST_MATH__)
+   return fast::exp10(x);
+#else
+   return precise::exp10(x);
+#endif 
+  }
+  METAL_ASM vec<float,4> fabs(vec<float,4> x) __asm("air." _AIR_PREFIX_float "fabs.v4f32");
+  METAL_ASM vec<float,4> abs(vec<float,4> x) __asm("air.fabs.v4f32");
+  METAL_ASM vec<float,4> floor(vec<float,4> x) __asm("air." _AIR_PREFIX_float "floor.v4f32");
+
+#if defined(__HAVE_FMA__)
+  METAL_ASM vec<float,4> fma(vec<float,4> a, vec<float,4> b, vec<float,4> c) __asm("air.fma.v4f32");
+#endif
+  
+  METAL_ASM vec<float,4> fmax(vec<float,4> x, vec<float,4> y) __asm("air." _AIR_PREFIX_float "fmax.v4f32");
+  METAL_FUNC vec<float,4> fmax(vec<float,4> x, float y) {
+    return fmax(x, vec<float,4>(y));
+  }
+  METAL_FUNC vec<float,4> max(vec<float,4> x, vec<float,4> y) {
+    return fmax(x, y);
+  }
+  METAL_ASM vec<float,4> fmin(vec<float,4> x, vec<float,4> y) __asm("air." _AIR_PREFIX_float "fmin.v4f32");
+  METAL_FUNC vec<float,4> fmin(vec<float,4> x, float y) {
+    return fmin(x, vec<float,4>(y));
+  }
+  METAL_FUNC vec<float,4> min(vec<float,4> x, vec<float,4> y) {
+    return fmin(x, y);
+  }
+  METAL_ASM vec<float,4> fmod(vec<float,4> x, vec<float,4> y) __asm("air." _AIR_PREFIX_float "fmod.v4f32");
+  METAL_FUNC vec<float,4> frexp(vec<float,4> x, thread vec<int,4> &exponent) {
+    int temp_exponent;
+    vec<float,4> ret_val;
+    ret_val[0] = frexp(x[0], temp_exponent);
+    exponent[0] = temp_exponent;
+    ret_val[1] = frexp(x[1], temp_exponent);
+    exponent[1] = temp_exponent;
+    ret_val[2] = frexp(x[2], temp_exponent);
+    exponent[2] = temp_exponent;
+    ret_val[3] = frexp(x[3], temp_exponent);
+    exponent[3] = temp_exponent;
+    return ret_val;
+  }
+  METAL_FUNC vec<int,4> ilogb(vec<float,4> x) {
+    vec<int,4> ret_val;
+    ret_val[0] = ilogb(x[0]);
+    ret_val[1] = ilogb(x[1]);
+    ret_val[2] = ilogb(x[2]);
+    ret_val[3] = ilogb(x[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_LDEXP__)
+  METAL_ASM vec<float,4> ldexp(vec<float,4> x, vec<int,4> k) __asm("air." _AIR_PREFIX_float "ldexp.v4f32");
+#else
+  METAL_FUNC vec<float,4> ldexp(vec<float,4> x, vec<int,4> k) {
+    vec<float,4> ret_val;
+    ret_val[0] = ldexp(x[0], k[0]);
+    ret_val[1] = ldexp(x[1], k[1]);
+    ret_val[2] = ldexp(x[2], k[2]);
+    ret_val[3] = ldexp(x[3], k[3]);
+    return ret_val;
+  }
+#endif
+  METAL_FUNC vec<float,4> fdim(vec<float,4> x, vec<float,4> y) {
+    vec<float,4> ret_val;
+    ret_val[0] = fdim(x[0], y[0]);
+    ret_val[1] = fdim(x[1], y[1]);
+    ret_val[2] = fdim(x[2], y[2]);
+    ret_val[3] = fdim(x[3], y[3]);
+    return ret_val;
+  }
+#if defined(__HAVE_AIR_FRACT__)
+  METAL_ASM vec<float,4> fract(vec<float,4> x) __asm("air." _AIR_PREFIX_float "fract.v4f32");
+#else
+  METAL_FUNC vec<float,4> fract(vec<float,4> x) {
+    vec<float,4> ret_val;
+    ret_val[0] = fract(x[0]);
+    ret_val[1] = fract(x[1]);
+    ret_val[2] = fract(x[2]);
+    ret_val[3] = fract(x[3]);
+    return ret_val;
+  }
+#endif
+  METAL_ASM vec<float,4> log(vec<float,4> x) __asm("air." _AIR_PREFIX_float "log.v4f32");
+  METAL_ASM vec<float,4> log2(vec<float,4> x) __asm("air." _AIR_PREFIX_float "log2.v4f32");
+  METAL_FUNC vec<float,4> log10(vec<float,4> x) {
+#if defined(__FAST_MATH__)
+    return fast::log10(x);
+#else
+    return precise::log10(x);
+#endif
+  }
+
+  METAL_FUNC vec<float,4> modf(vec<float,4> x, thread vec<float,4> &intval) {
+    intval = trunc(x);
+    vec<bool,4> isinf_x = isinf(x);
+    return copysign(select(x - intval, vec<float,4>(0), isinf_x), x);
+  }
+  METAL_ASM vec<float,4> pow(vec<float,4> x, vec<float,4> y) __asm("air." _AIR_PREFIX_float "pow.v4f32");
+  METAL_ASM vec<float,4> powr(vec<float,4> x, vec<float,4> y) __asm("air." _AIR_PREFIX_float "powr.v4f32");
+  METAL_ASM vec<float,4> rint(vec<float,4> x) __asm("air." _AIR_PREFIX_float "rint.v4f32");
+  METAL_ASM vec<float,4> round(vec<float,4> x) __asm("air." _AIR_PREFIX_float "round.v4f32");
+  METAL_ASM vec<float,4> rsqrt(vec<float,4> x) __asm("air." _AIR_PREFIX_float "rsqrt.v4f32");
+  METAL_ASM vec<float,4> sin(vec<float,4> x) __asm("air." _AIR_PREFIX_float "sin.v4f32");
+  METAL_ASM vec<float,4> sincos(vec<float,4> x, thread vec<float,4> &cosval) __asm("air." _AIR_PREFIX_float "sincos.v4f32");
+  METAL_ASM vec<float,4> sinh(vec<float,4> x) __asm("air." _AIR_PREFIX_float "sinh.v4f32");
+  METAL_ASM vec<float,4> sqrt(vec<float,4> x) __asm("air." _AIR_PREFIX_float "sqrt.v4f32");
+  METAL_ASM vec<float,4> tan(vec<float,4> x) __asm("air." _AIR_PREFIX_float "tan.v4f32");
+  METAL_ASM vec<float,4> tanh(vec<float,4> x) __asm("air." _AIR_PREFIX_float "tanh.v4f32");
+  
+#if defined(__HAVE_TRIG_PI__)
+  METAL_ASM vec<float,4> cospi(vec<float,4> x) __asm("air." _AIR_PREFIX_float "cospi.v4f32");
+  METAL_ASM vec<float,4> sinpi(vec<float,4> x) __asm("air." _AIR_PREFIX_float "sinpi.v4f32");
+  METAL_ASM vec<float,4> tanpi(vec<float,4> x) __asm("air." _AIR_PREFIX_float "tanpi.v4f32");
+#endif
+
+  //METAL_ASM vec<float,4> trunc(vec<float,4> x) __asm("air." _AIR_PREFIX_float "trunc.v4f32");
+} // namespace metal
+
+#endif // __METAL_MATH

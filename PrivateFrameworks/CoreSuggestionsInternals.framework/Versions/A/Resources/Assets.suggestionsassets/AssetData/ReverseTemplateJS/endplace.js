@@ -1,0 +1,1 @@
+(function(){return function(e,n){var a,r,t=loadHelper("clear_if_contains_tags.js");for(r=0;r<e.endPlace.length&&(!a||!a.exists());r++)a=n.getSpan().innerCapture(e.endPlace[r],1);return a=t(n,a)}}).call();

@@ -1,0 +1,2539 @@
+{
+    "color": [1.0, 0.551, 0.776],
+    "snippets":[
+        {
+            "name" : "Add",
+            "label" : "Add (%TYPE%)",
+            "genericTypes" : ["Double", "Float", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "$a + $b"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_add($a, $b)",
+                "metal" : "$a + $b",
+                "c"     : "$a + $b"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (IntRange)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["IntRange", "IntRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: ($a.lowerBound + $b.lowerBound, $a.upperBound + $b.upperBound))",
+                "c|metal" : "vfx_make_int_range($a.lower_bound + $b.lower_bound, $a.upper_bound + $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (IntRange)",
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["IntRange", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: ($a.lowerBound + $b, $a.upperBound + $b))",
+                "c|metal" : "vfx_make_int_range($a.lower_bound + $b, $a.upper_bound + $b)"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (FloatRange)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["FloatRange", "FloatRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: ($a.lowerBound + $b.lowerBound, $a.upperBound + $b.upperBound))",
+                "c|metal" : "vfx_make_float_range($a.lower_bound + $b.lower_bound, $a.upper_bound + $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (FloatRange)",
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["FloatRange", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: ($a.lowerBound + $b, $a.upperBound + $b))",
+                "c|metal" : "vfx_make_float_range($a.lower_bound + $b, $a.upper_bound + $b)"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (%TYPE%)",
+            "deprecated" : true,
+            "genericTypes" : ["Double", "Float", "ALL_INT_TYPES"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "$a + @value"
+            }
+        },
+        {
+            "name" : "Add",
+            "label" : "Add (%TYPE%)",
+            "deprecated" : true,
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_add($a, @value)",
+                "metal" : "$a + @value",
+                "c"     : "$a + @value"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (%TYPE%)",
+            "genericTypes" : ["Double", "Float", "ALL_SIGNED_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "$a - $b",
+                "metal" : "$a - $b",
+                "c"     : "$a - $b"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (%TYPE%)",
+            "genericTypes" : ["ALL_UNSIGNED_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "($a > $b) ? ($a &- $b) : 0",
+                "metal" : "($a > $b) ? ($a - $b) : 0",
+                "c"     : "($a > $b) ? ($a - $b) : 0"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_sub($a, $b)",
+                "metal" : "$a - $b",
+                "c"     : "$a - $b"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (IntRange)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["IntRange", "IntRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: ($a.lowerBound - $b.lowerBound, $a.upperBound - $b.upperBound))",
+                "c|metal" : "vfx_make_int_range($a.lower_bound - $b.lower_bound, $a.upper_bound - $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (IntRange)",
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["IntRange", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: ($a.lowerBound - $b, $a.upperBound - $b))",
+                "c|metal" : "vfx_make_int_range($a.lower_bound - $b, $a.upper_bound - $b)"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (FloatRange)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["FloatRange", "FloatRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: ($a.lowerBound - $b.lowerBound, $a.upperBound - $b.upperBound))",
+                "c|metal" : "vfx_make_float_range($a.lower_bound - $b.lower_bound, $a.upper_bound - $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (FloatRange)",
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["FloatRange", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: ($a.lowerBound - $b, $a.upperBound - $b))",
+                "c|metal" : "vfx_make_float_range($a.lower_bound - $b, $a.upper_bound - $b)"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (%TYPE%)",
+            "deprecated" : true,
+            "genericTypes" : ["Double", "Float", "ALL_INT_TYPES"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "$a - @value"
+            }
+        },
+        {
+            "name" : "Sub",
+            "label" : "Sub (%TYPE%)",
+            "deprecated" : true,
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_sub($a, @value)",
+                "metal" : "$a - @value",
+                "c"     : "$a - @value"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (%TYPE%)",
+            "genericTypes" : ["Double", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "$a * $b"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (Float)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float", "Float"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0.0, "valueType": "Float"},
+                {"keyName": "b", "b": 1.0, "valueType": "Float"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "$a * $b"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (Float2)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float2", "Float2"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0], "valueType": "Float2"},
+                {"keyName": "b", "b": [1.0, 1.0], "valueType": "Float2"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_mul($a, $b)",
+                "metal" : "$a * $b",
+                "c"     : "$a * $b"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (Float3)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0], "valueType": "Float3"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0], "valueType": "Float3"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_mul($a, $b)",
+                "metal" : "$a * $b",
+                "c"     : "$a * $b"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (Float4)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float4", "Float4"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0, 0.0], "valueType": "Float4"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0, 1.0], "valueType": "Float4"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_mul($a, $b)",
+                "metal" : "$a * $b",
+                "c"     : "$a * $b"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (QuaternionF)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["QuaternionF", "QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "c|swift|metal" : "vfx_quat_mul($a, $b)"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (IntRange)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["IntRange", "IntRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: ($a.lowerBound * $b.lowerBound, $a.upperBound * $b.upperBound))",
+                "c|metal" : "vfx_make_int_range($a.lower_bound * $b.lower_bound, $a.upper_bound * $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (IntRange)",
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["IntRange", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: ($a.lowerBound * $b, $a.upperBound * $b))",
+                "c|metal" : "vfx_make_int_range($a.lower_bound * $b, $a.upper_bound * $b)"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (FloatRange)",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["FloatRange", "FloatRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: ($a.lowerBound * $b.lowerBound, $a.upperBound * $b.upperBound))",
+                "c|metal" : "vfx_make_float_range($a.lower_bound * $b.lower_bound, $a.upper_bound * $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (FloatRange)",
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["FloatRange", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: ($a.lowerBound * $b, $a.upperBound * $b))",
+                "c|metal" : "vfx_make_float_range($a.lower_bound * $b, $a.upper_bound * $b)"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (%TYPE%)",
+            "deprecated" : true,
+            "genericTypes" : ["Double", "Float", "ALL_INT_TYPES"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "$a * @value"
+            }
+        },
+        {
+            "name" : "Mul",
+            "label" : "Mult (%TYPE%)",
+            "deprecated" : true,
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_mul($a, @value)",
+                "metal" : "$a * @value",
+                "c"     : "$a * @value"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (Float2)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float2", "Float2"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0], "valueType": "Float2"},
+                {"keyName": "b", "b": [1.0, 1.0], "valueType": "Float2"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float2_one() : ($a / $b))",
+                "metal" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float2_one() : divide($a, $b))",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float2_one() : ($a / $b))"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (Float3)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0], "valueType": "Float3"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0], "valueType": "Float3"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float3_one() : ($a / $b))",
+                "metal" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float3_one() : divide($a, $b))",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float3_one() : ($a / $b))"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (Float4)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float4", "Float4"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0, 0.0], "valueType": "Float4"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0, 1.0], "valueType": "Float4"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float4_one() : ($a / $b))",
+                "metal" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float4_one() : divide($a, $b))",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b) ? vfx_float4_one() : ($a / $b))"
+            }
+        },
+        {
+            "name" : "Div",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float", "Float"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0.0, "valueType": "Float"},
+                {"keyName": "b", "b": 1.0, "valueType": "Float"}
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "(vfx_is_nan($b) || vfx_is_almost_zero($b) ? 0.0 : ($a / $b))",
+                "metal" : "(vfx_is_nan($b) || vfx_is_almost_zero($b) ? 0.0 : divide($a, $b))",
+                "c"     : "(vfx_is_nan($b) || vfx_is_almost_zero($b) ? 0.0 : ($a / $b))"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (%TYPE%Range)",
+            "genericTypes" : ["Float"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%Range", "%TYPE%Range"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Range"],
+            "code" : {
+                "swift" : "Range<%TYPE%>(uncheckedBounds: ($a.lowerBound / $b.lowerBound, $a.upperBound / $b.upperBound))",
+                "c|metal" : "vfx_make_%TYPE%_range($a.lower_bound / $b.lower_bound, $a.upper_bound / $b.upper_bound)"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (%TYPE%Range)",
+            "genericTypes" : ["Float"],
+            "showInParameterDefaultValues" : ["b"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%Range", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Range"],
+            "code" : {
+                "swift" : "Range<%TYPE%>(uncheckedBounds: ($a.lowerBound / $b, $a.upperBound / $b))",
+                "c|metal" : "vfx_make_%TYPE%_range($a.lower_bound / $b, $a.upper_bound / $b)"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (%TYPE%Range)",
+            "genericTypes" : ["Int"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%Range", "%TYPE%Range"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Range"],
+            "code" : {
+                "swift" : "Range<%TYPE%>(uncheckedBounds: (($b.lowerBound == 0) ? (0) : ($a.lowerBound / $b.lowerBound), ($b.upperBound == 0) ? (0) : ($a.upperBound / $b.upperBound)))",
+                "c|metal" : "vfx_make_int_range(($b.lower_bound == 0) ? (0) : ($a.lower_bound / $b.lower_bound), ($b.upper_bound == 0) ? (0) : ($a.upper_bound / $b.upper_bound))"
+            }
+        },
+        {
+            "name" : "Div",
+            "label" : "Div (%TYPE%Range)",
+            "genericTypes" : ["Int"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%Range", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Range"],
+            "code" : {
+                "swift" : "Range<%TYPE%>(uncheckedBounds: (($b == 0) ? (0) : ($a.lowerBound / $b), ($b == 0) ? (0) : ($a.upperBound / $b)))",
+                "c|metal" : "vfx_make_int_range(($b == 0) ? (0) : ($a.lower_bound / $b), ($b == 0) ? (0) : ($a.upper_bound / $b))"
+            }
+        },
+        {
+            "name" : "Div",
+            "deprecated" : true,
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "let b#TEMP# = Float(@value); $out = (b#TEMP#.isNaN || b#TEMP#.isZero ? 0.0 : $a / b#TEMP#)",
+                "metal" : "float b#TEMP# = (@value); $out = (vfx_is_nan(b#TEMP#) || vfx_is_almost_zero(b#TEMP#) ? 0.0 : divide($a, b#TEMP#))",
+                "c"     : "float b#TEMP# = (@value); $out = (vfx_is_nan(b#TEMP#) || vfx_is_almost_zero(b#TEMP#) ? 0.0 : divide($a, b#TEMP#))"
+            }
+        },
+        {
+            "name" : "ToRadians",
+            "label" : "Degrees To Radians",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["degrees"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "($degrees * Float.pi) / Float(180.0)",
+                "metal" : "($degrees * M_PI_F) / 180.0",
+                "c"     : "($degrees * M_PI) / 180.0"
+            }
+        },
+        {
+            "name" : "ToDegrees",
+            "label" : "Radians To Degrees",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["radians"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "($radians / Float.pi) * Float(180.0)",
+                "metal" : "($radians / M_PI_F) * 180.0",
+                "c"     : "($radians / M_PI) * 180.0"
+            }
+        },
+        {
+            "name" : "Sqrt",
+            "label" : "Square Root (Double)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Double"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Double"],
+            "code" : {
+                "swift" : "sqrt($in)"
+            }
+        },
+        {
+            "name" : "Sqrt",
+            "label" : "Square Root (Float)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_sqrt($in)"
+            }
+        },
+        {
+            "name" : "Sqrt",
+            "label" : "Square Root (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_sqrt($in)"
+            }
+        },
+        {
+            "name" : "Fract",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_fract($in)"
+            }
+        },
+        {
+            "name" : "Fract",
+            "label" : "Fract (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_fract($in)"
+            }
+        },
+        {
+            "name" : "OneMinus",
+            "label" : "OneMinus (%TYPE%)",
+            "genericTypes" : ["Double", "Float"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "%TYPE%(1.0) - $in"
+            }
+        },
+        {
+            "name" : "OneMinus",
+            "label" : "OneMinus (%TYPE%)",
+            "genericTypes" : ["ALL_SIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "%TYPE%(1) - $in"
+            }
+        },
+        {
+            "name" : "OneMinus",
+            "label" : "OneMinus (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "%TYPE%(repeating: 1.0) - $in",
+                "metal" : "%TYPE%(1.0) - $in",
+                "c"     : "%TYPE%(1.0) - $in"
+            }
+        },
+        {
+            "name" : "Remainder",
+            "label" : "Remainder (Int32)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0, "valueType": "Int32"},
+                {"keyName": "b", "b": 1, "valueType": "Int32"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Int32", "Int32"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int32"],
+            "code" : {
+                "swift" : "$b == 0 ? 0 : $a.quotientAndRemainder(dividingBy: $b).remainder",
+                "metal" : "$b == 0 ? 0 : ($a % $b)",
+                "c"     : "$b == 0 ? 0 : ($a % $b)"
+            }
+        },
+        {
+            "name" : "Quotient",
+            "label" : "Quotient (Int32)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0, "valueType": "Int32"},
+                {"keyName": "b", "b": 1, "valueType": "Int32"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Int32", "Int32"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int32"],
+            "code" : {
+                "swift" : "$b == 0 ? 0 : $a.quotientAndRemainder(dividingBy: $b).quotient",
+                "metal" : "$b == 0 ? 0 : ($a / $b)",
+                "c"     : "$b == 0 ? 0 : ($a / $b)"
+            }
+        },
+        {
+            "name" : "Remainder",
+            "label" : "Remainder (UInt32)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0, "valueType": "UInt32"},
+                {"keyName": "b", "b": 1, "valueType": "UInt32"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["UInt32", "UInt32"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt32"],
+            "code" : {
+                "swift" : "$b == 0 ? 0 : $a.quotientAndRemainder(dividingBy: $b).remainder",
+                "metal" : "$b == 0 ? 0 : ($a % $b)",
+                "c"     : "$b == 0 ? 0 : ($a % $b)"
+            }
+        },
+        {
+            "name" : "Quotient",
+            "label" : "Quotient (UInt32)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0, "valueType": "UInt32"},
+                {"keyName": "b", "b": 1, "valueType": "UInt32"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["UInt32", "UInt32"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt32"],
+            "code" : {
+                "swift" : "$b == 0 ? 0 : $a.quotientAndRemainder(dividingBy: $b).quotient",
+                "metal" : "$b == 0 ? 0 : ($a / $b)",
+                "c"     : "$b == 0 ? 0 : ($a / $b)"
+            }
+        },
+        {
+            "name" : "Remainder",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0.0, "valueType": "Float"},
+                {"keyName": "b", "b": 1.0, "valueType": "Float"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "(vfx_is_nan($b) || vfx_is_almost_zero($b)) ? 0.0 : __tg_remainder($a, $b)",
+                "metal" : "(vfx_is_nan($b) || vfx_is_almost_zero($b)) ? 0.0 : __metal_remainder($a, $b)",
+                "c"     : "(vfx_is_nan($b) || vfx_is_almost_zero($b)) ? 0.0 : __tg_remainder($a, $b)"
+            }
+        },
+        {
+            "name" : "Remainder",
+            "label" : "Remainder (Float2)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0], "valueType": "Float2"},
+                {"keyName": "b", "b": [1.0, 1.0], "valueType": "Float2"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float2", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float2_zero() : __tg_remainder($a, $b)",
+                "metal" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float2_zero() : __metal_remainder($a, $b)",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float2_zero() : __tg_remainder($a, $b)"
+            }
+        },
+        {
+            "name" : "Remainder",
+            "label" : "Remainder (Float3)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0], "valueType": "Float3"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0], "valueType": "Float3"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float3_zero() : __tg_remainder($a, $b)",
+                "metal" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float3_zero() : __metal_remainder($a, $b)",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float3_zero() : __tg_remainder($a, $b)"
+            }
+        },
+        {
+            "name" : "Remainder",
+            "label" : "Remainder (Float4)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0, 0.0], "valueType": "Float4"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0, 1.0], "valueType": "Float4"}
+            ],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float4", "Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float4_zero() : __tg_remainder($a, $b)",
+                "metal" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float4_zero() : __metal_remainder($a, $b)",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float4_zero() : __tg_remainder($a, $b)"
+            }
+        },
+        {
+            "name" : "FMod",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": 0.0, "valueType": "Float"},
+                {"keyName": "b", "b": 1.0, "valueType": "Float"}
+            ],
+            "previousinParameterNames" : ["x", "y"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "(vfx_is_nan($b) || vfx_is_almost_zero($b)) ? Float.zero : __tg_fmod($a, $b)",
+                "metal" : "fmod($a, $b)",
+                "c"     : "(vfx_is_nan($b) || vfx_is_almost_zero($b)) ? 0.0f : __tg_fmod($a, $b)"
+            }
+        },
+        {
+            "name" : "FMod",
+            "label" : "FMod (Float2)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0], "valueType": "Float2"},
+                {"keyName": "b", "b": [1.0, 1.0], "valueType": "Float2"}
+            ],
+            "previousinParameterNames" : ["x", "y"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float2", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float2_zero() : __tg_fmod($a, $b)",
+                "metal" : "fmod($a, $b)",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float2_zero() : __tg_fmod($a, $b)"
+            }
+        },
+        {
+            "name" : "FMod",
+            "label" : "FMod (Float3)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0], "valueType": "Float3"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0], "valueType": "Float3"}
+            ],
+            "previousinParameterNames" : ["x", "y"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float3_zero() : __tg_fmod($a, $b)",
+                "metal" : "fmod($a, $b)",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float3_zero() : __tg_fmod($a, $b)"
+            }
+        },
+        {
+            "name" : "FMod",
+            "label" : "FMod (Float4)",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                {"keyName": "a", "a": [0.0, 0.0, 0.0, 0.0], "valueType": "Float4"},
+                {"keyName": "b", "b": [1.0, 1.0, 1.0, 1.0], "valueType": "Float4"}
+            ],
+            "previousinParameterNames" : ["x", "y"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float4", "Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float4_zero() : __tg_fmod($a, $b)",
+                "metal" : "fmod($a, $b)",
+                "c"     : "(vfx_contains_nan($b) || vfx_is_almost_zero($b)) ? vfx_float4_zero() : __tg_fmod($a, $b)"
+            }
+        },
+        {
+            "name" : "Min",
+            "label" : "Min (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["x", "y"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_min($x, $y)"
+            }
+        },     
+        {
+            "name" : "Min",
+            "label" : "Min (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["x", "y", "z"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_min($x, vfx_min($y, $z))",
+                "metal" : "min3($x, $y, $z)",
+                "c"     : "vfx_min($x, vfx_min($y, $z))"
+            }
+        },     
+        {
+            "name" : "Max",
+            "label" : "Max (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["x", "y"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_max($x, $y)"
+            }
+        },     
+        {
+            "name" : "Max",
+            "label" : "Max (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["x", "y", "z"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_max($x, vfx_max($y, $z))",
+                "metal" : "max3($x, $y, $z)",
+                "c"     : "vfx_max($x, vfx_max($y, $z))"
+            }
+        },     
+        {
+            "name" : "Pow2",
+            "label" : "Pow2 (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_pow2($a)"
+            }
+        },
+        {
+            "name" : "Pow3",
+            "label" : "Pow3 (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_pow3($a)"
+            }
+        },
+        {
+            "name" : "Pow",
+            "label" : "Pow (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_pow($a, $b)"
+            }
+        },
+        {
+            "name" : "Round",
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "roundf($a)",
+                "metal" : "round($a)",
+                "c"     : "roundf($a)"
+            }
+        },
+        {
+            "name" : "Round",
+            "inParameterNames" : ["a"],
+            "inParameterTypes" : ["Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "simd_float2(roundf($a.x), roundf($a.y))",
+                "metal" : "round($a)",
+                "c"     : "vfx_make_float2(roundf($a.x), roundf($a.y))"
+            }
+        },
+        {
+            "name" : "Sign",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_sign($in)"
+            }
+        },
+        {
+            "name" : "Abs",
+            "label" : "Abs (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_abs($in)"
+            }
+        },
+        {
+            "name" : "Floor",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_floor($in)"
+            }
+        },
+        {
+            "name" : "Floor",
+            "label" : "Floor (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_floor($in)"
+            }
+        },
+        {
+            "name" : "Smoothstep",
+            "label" : "Smoothstep (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["x", "edge0", "edge1"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_smoothstep($edge0, $edge1, $x)"
+            }
+        },
+        {
+            "name" : "Log",
+            "label" : "Log (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_log($in)"
+            }
+        },
+        {
+            "name" : "Exp",
+            "label" : "Exp (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_exp($in)"
+            }
+        },
+        {
+            "name" : "Exp2",
+            "label" : "Exp2 (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_exp2($in)"
+            }
+        },
+        {
+            "name" : "Exp10",
+            "label" : "Exp10 (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_exp10($in)"
+            }
+        },
+        {
+            "name" : "Cos",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_cos($in)"
+            }
+        },
+        {
+            "name" : "AbsCos",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_abs(vfx_cos($in))"
+            }
+        },
+        {
+            "name" : "Cos",
+            "label" : "Cos (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_cos($in)"
+            }
+        },
+        {
+            "name" : "AbsCos",
+            "label" : "AbsCos (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_abs(vfx_cos($in))"
+            }
+        },
+        {
+            "name" : "ACos",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_acos($in)"
+            }
+        },
+        {
+            "name" : "ACos",
+            "label" : "ACos (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_acos($in)"
+            }
+        },
+        {
+            "name" : "ACosH",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_acosh($in)"
+            }
+        },
+        {
+            "name" : "ACosH",
+            "label" : "ACosH (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_acosh($in)"
+            }
+        },
+        {
+            "name" : "Sin",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_sin($in)"
+            }
+        },
+        {
+            "name" : "AbsSin",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_abs(vfx_sin($in))"
+            }
+        },
+        {
+            "name" : "Sin",
+            "label" : "Sin (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_sin($in)"
+            }
+        },
+        {
+            "name" : "AbsSin",
+            "label" : "AbsSin (%TYPE%)",
+            "genericTypes" : ["Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_abs(vfx_sin($in))"
+            }
+        },
+        {
+            "name" : "ASin",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_asin($in)"
+            }
+        },
+        {
+            "name" : "ASin",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_asin($in)"
+            }
+        },
+        {
+            "name" : "Ceil",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_ceil($in)"
+            }
+        },
+        {
+            "name" : "Ceil",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_ceil($in)"
+            }
+        },
+        {
+            "name" : "Tan",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_tan($in)"
+            }
+        },
+        {
+            "name" : "Tan",
+            "label" : "Tan (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "vfx_tan($in)"
+            }
+        },
+        {
+            "name" : "ATan",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_atan($in)"
+            }
+        },
+        {
+            "name" : "ATan2",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["x", "y"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_atan2($x, $y)"
+            }
+        },
+        {
+            "name" : "ATanH",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "vfx_atanh($in)"
+            }
+        },
+        {
+            "name" : "Distance",
+            "label" : "Distance (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "simd_distance($a, $b)",
+                "metal" : "distance($a, $b)",
+                "c"     : "simd_distance($a, $b)"
+            }
+        },
+        {
+            "name" : "DistanceSquared",
+            "label" : "DistanceSquared (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$out = simd_distance_squared($a, $b)",
+                "metal" : "distance_squared($a, $b)",
+                "c"     : "simd_distance_squared($a, $b)"
+            }
+        },
+        {
+            "name" : "Step",
+            "inParameterNames" : ["x", "edge"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float(($x >= $edge) ? 1.0 : 0.0)",
+                "metal" : "float(($x >= $edge) ? 1.0 : 0.0)",
+                "c"     : "float(($x >= $edge) ? 1.0 : 0.0)"
+            }
+        },
+        {
+            "name" : "Length",
+            "label" : "Length (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "simd_length($in)",
+                "metal" : "length($in)",
+                "c"     : "simd_length($in)"
+            }
+        },
+        {
+            "name" : "Length",
+            "label" : "Length (QuaternionF)",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_quat_length($in)",
+                "metal" : "vfx_quat_length($in)",
+                "c"     : "vfx_quat_length($in)"
+            }
+        },
+        {
+            "name" : "LengthSquared",
+            "label" : "LengthSquared (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "simd_dot($in, $in)",
+                "metal" : "dot($in, $in)",
+                "c"     : "simd_dot($in, $in)"
+            }
+        },
+        {
+            "name" : "IsAlmostZero",
+            "label" : "IsAlmostZero (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "vfx_is_almost_zero($in)",
+                "metal" : "vfx_is_almost_zero($in)",
+                "c"     : "vfx_is_almost_zero($in)"
+            }
+        },
+        {
+            "name" : "IsAlmostEqual",
+            "label" : "IsAlmostEqual (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in1", "in2"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "vfx_is_almost_equal($in1, $in2)",
+                "metal" : "vfx_is_almost_equal($in1, $in2)",
+                "c"     : "vfx_is_almost_equal($in1, $in2)"
+            }
+        },
+        {
+            "name" : "IsUniform",
+            "label" : "IsUniform (%TYPE%)",
+            "genericTypes" : ["Float3"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "($in.x == $in.y) && ($in.y == $in.z)",
+                "metal" : "($in.x == $in.y) && ($in.y == $in.z)",
+                "c"     : "($in.x == $in.y) && ($in.y == $in.z)"
+            }
+        },
+        {
+            "name" : "MAdd",
+            "label" : "MAdd (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b", "c"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_muladd($a, $b, $c)",
+                "metal" : "vfx_muladd($a, $b, $c)",
+                "c"     : "vfx_muladd($a, $b, $c)"
+            }
+        },
+        {
+            "name" : "Clamp",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in", "min", "max"],
+            "inParameterTypes" : ["Float", "Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_clamp($in, $min, $max)",
+                "metal" : "vfx_clamp($in, $min, $max)",
+                "c"     : "vfx_clamp($in, $min, $max)"
+            }
+        },
+        {
+            "name" : "Clamp",
+            "label" : "Clamp (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in", "min", "max"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_clamp($in, $min, $max)",
+                "metal" : "vfx_clamp($in, $min, $max)",
+                "c"     : "vfx_clamp($in, $min, $max)"
+            }
+        },
+        {
+            "name" : "Saturate",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_saturate($in)",
+                "metal" : "vfx_saturate($in)",
+                "c"     : "vfx_saturate($in)"
+            }
+        },
+        {
+            "name" : "Saturate",
+            "label" : "Saturate (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_saturate($in)",
+                "metal" : "vfx_saturate($in)",
+                "c"     : "vfx_saturate($in)"
+            }
+        },
+        {
+            "name" : "SignedSaturate",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_clamp($in, -1, 1)",
+                "metal" : "vfx_clamp($in, -1.0, 1.0)",
+                "c"     : "vfx_clamp($in, -1.0, 1.0)"
+            }
+        },
+        {
+            "name" : "SignedSaturate",
+            "label" : "SignedSaturate (%TYPE%)",
+            "genericTypes" : ["Float2"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_clamp($in, %TYPE%(repeating: -1), %TYPE%(repeating: 1))",
+                "metal" : "vfx_clamp($in, float2(-1.0, -1.0), float2(1.0, 1.0))",
+                "c"     : "vfx_clamp($in, vfx_make_float2(-1.0, -1.0), vfx_make_float2(1.0, 1.0))"
+            }
+        },
+        {
+            "name" : "SignedSaturate",
+            "label" : "SignedSaturate (%TYPE%)",
+            "genericTypes" : ["Float3"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_clamp($in, %TYPE%(repeating: -1), %TYPE%(repeating: 1))",
+                "metal" : "vfx_clamp($in, float3(-1.0, -1.0, -1.0), float3(1.0, 1.0, 1.0))",
+                "c"     : "vfx_clamp($in, vfx_make_float3(-1.0, -1.0, -1.0), vfx_make_float3(1.0, 1.0, 1.0))"
+            }
+        },
+        {
+            "name" : "SignedSaturate",
+            "label" : "SignedSaturate (%TYPE%)",
+            "genericTypes" : ["Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_clamp($in, %TYPE%(repeating: -1), %TYPE%(repeating: 1))",
+                "metal" : "vfx_clamp($in, float4(-1.0, -1.0, -1.0, -1.0), float4(1.0, 1.0, 1.0, 1.0))",
+                "c"     : "vfx_clamp($in, vfx_make_float4(-1.0, -1.0, -1.0, -1.0), vfx_make_float4(1.0, 1.0, 1.0, 1.0))"
+            }
+        },
+        {
+            "name" : "ReduceSum",
+            "label" : "ReduceSum (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_reduce_add($in)",
+                "metal" : "vfx_reduce_add($in)",
+                "c"     : "vfx_reduce_add($in)"
+            }
+        },
+        {
+            "name" : "ReduceMul",
+            "label" : "ReduceMult (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_reduce_mul($in)",
+                "metal" : "vfx_reduce_mul($in)",
+                "c"     : "vfx_reduce_mul($in)"
+            }
+        },
+        {
+            "name" : "Angle",
+            "inParameterNames" : ["in", "with"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_angle($in, $with)",
+                "metal" : "vfx_angle($in, $with)",
+                "c"     : "vfx_angle($in, $with)"
+            }
+        },
+        {
+            "name" : "Projected",
+            "inParameterNames" : ["in", "on"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "simd.project($in, $on)"
+            }
+        },
+        {
+            "name" : "XYZ",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_make_float3($in.x, $in.y, $in.z)",
+                "metal" : "vfx_make_float3($in.x, $in.y, $in.z)",
+                "c"     : "vfx_make_float3($in.x, $in.y, $in.z)"
+            }
+        },
+        {
+            "name" : "XZY",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_make_float3($in.x, $in.z, $in.y)",
+                "metal" : "vfx_make_float3($in.x, $in.z, $in.y)",
+                "c"     : "vfx_make_float3($in.x, $in.z, $in.y)"
+            }
+        },
+        {
+            "name" : "XY",
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_make_float2($in.x, $in.y)",
+                "metal" : "vfx_make_float2($in.x, $in.y)",
+                "c"     : "vfx_make_float2($in.x, $in.y)"
+            }
+        },
+        {
+            "name" : "XZ",
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_make_float2($in.x, $in.z)",
+                "metal" : "vfx_make_float2($in.x, $in.z)",
+                "c"     : "vfx_make_float2($in.x, $in.z)"
+            }
+        },
+        {
+            "name" : "YZ",
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_make_float2($in.y, $in.z)",
+                "metal" : "vfx_make_float2($in.y, $in.z)",
+                "c"     : "vfx_make_float2($in.y, $in.z)"
+            }
+        },
+        {
+            "name" : "X",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$in.x",
+                "metal" : "$in.x",
+                "c"     : "$in.x"
+            }
+        },
+        {
+            "name" : "Y",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$in.y",
+                "metal" : "$in.y",
+                "c"     : "$in.y"
+            }
+        },
+        {
+            "name" : "Z",
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$in.z",
+                "metal" : "$in.z",
+                "c"     : "$in.z"
+            }
+        },
+        {
+            "name" : "W",
+            "genericTypes" : ["Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$in.w",
+                "metal" : "$in.w",
+                "c"     : "$in.w"
+            }
+        },
+        {
+            "name" : "SmallestComponent",
+            "label" : "SmallestComponent (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_reduce_min($in)",
+                "metal" : "vfx_reduce_min($in)",
+                "c"     : "vfx_reduce_min($in)"
+            }
+        },
+        {
+            "name" : "LargestComponent",
+            "label" : "LargestComponent (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                
+                "swift" : "vfx_reduce_max($in)",
+                "metal" : "vfx_reduce_max($in)",
+                "c"     : "vfx_reduce_max($in)"
+            }
+        },
+        {
+            "name" : "Normalized",
+            "label" : "Normalized (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_robust_normalize($in)",
+                "metal" : "vfx_robust_normalize($in)",
+                "c"     : "vfx_robust_normalize($in)"
+            }
+        },
+        {
+            "name" : "Normalized",
+            "label" : "Normalized (QuaternionF)",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_normalize($in)",
+                "metal" : "vfx_quat_normalize($in)",
+                "c"     : "vfx_quat_normalize($in)"
+            }
+        },
+        {
+            "name" : "OrthonormalBasis",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["outTgt", "outBtg"],
+            "outParameterTypes" : ["Float3", "Float3"],
+            "code" : {
+                "swift" : "var outTgt#TEMP# = vfx_float3_zero(); var outBtg#TEMP# = vfx_float3_zero(); vfx_orthonormal_basis($in, &outTgt#TEMP#, &outBtg#TEMP#); $outTgt = outTgt#TEMP#; $outBtg = outBtg#TEMP#",
+                "metal" : "simd_float3 outTgt#TEMP# = vfx_float3_zero(); simd_float3 outBtg#TEMP# = vfx_float3_zero(); vfx_orthonormal_basis($in, &outTgt#TEMP#, &outBtg#TEMP#); $outTgt = outTgt#TEMP#; $outBtg = outBtg#TEMP#",
+                "c"     : "simd_float3 outTgt#TEMP# = vfx_float3_zero(); simd_float3 outBtg#TEMP# = vfx_float3_zero(); vfx_orthonormal_basis($in, &outTgt#TEMP#, &outBtg#TEMP#); $outTgt = outTgt#TEMP#; $outBtg = outBtg#TEMP#"
+            }
+        },
+        {
+            "name" : "EulerAngles",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_quat_to_euler($in)",
+                "metal" : "vfx_quat_to_euler($in)",
+                "c"     : "vfx_quat_to_euler($in)"
+            }
+        },
+        {
+            "name" : "AxisAngle",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_quat_to_axisangle($in)",
+                "metal" : "vfx_quat_to_axisangle($in)",
+                "c"     : "vfx_quat_to_axisangle($in)"
+            }
+        },
+        {
+            "name" : "Axis",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_quat_axis($in)",
+                "metal" : "vfx_quat_axis($in)",
+                "c"     : "vfx_quat_axis($in)"
+            }
+        },
+        {
+            "name" : "Angle",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_quat_angle($in)",
+                "metal" : "vfx_quat_angle($in)",
+                "c"     : "vfx_quat_angle($in)"
+            }
+        },
+        {
+            "name" : "NormalAxis",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "simd_matrix3x3($in).columns.2",
+                "metal" : "vfx_quat_to_matrix3x3($in).columns[2]",
+                "c"     : "vfx_quat_to_matrix3x3($in).columns[2]"
+            }
+        },
+        {
+            "name" : "MulAdd",
+            "label" : "MultAdd (%TYPE%) (a * b + c)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b", "c"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_muladd($a, $b, $c)",
+                "metal" : "vfx_muladd($a, $b, $c)",
+                "c"     : "vfx_muladd($a, $b, $c)"
+            }
+        },
+        {
+            "name" : "Mix",
+            "label" : "Mix (%TYPE%)",
+            "genericTypes" : ["Float", "Float2", "Float3", "Float4"],
+            "previousinParameterNames" : ["a", "b", "t"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b", "v"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_mix($a, $b, $v)",
+                "metal" : "vfx_mix($a, $b, $v)",
+                "c"     : "vfx_mix($a, $b, $v)"
+            }
+        },
+        {
+            "name" : "Mix",
+            "label" : "Mix (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "previousinParameterNames" : ["a", "b", "t"],
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["a", "b", "v"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_mix($a, $b, $v)",
+                "metal" : "vfx_mix($a, $b, $v)",
+                "c"     : "vfx_mix($a, $b, $v)"
+            }
+        },
+        {
+            "name" : "Remap01",
+            "label" : "Remap01 (Float)",
+            "defaultInParameter": "v",
+            "showInParameterDefaultValues" : ["startRange", "endRange"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "startRange", "startRange" : -1.0, "valueType" : "Float" },
+                { "keyName" : "endRange", "endRange" : 1.0, "valueType" : "Float" },
+                { "keyName" : "v", "v" : 0.5, "valueType" : "Float" }
+            ],
+            "inParameterNames" : ["startRange", "endRange", "v"],
+            "inParameterTypes" : ["Float", "Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "vfx_remap_01($v, $startRange, $endRange)",
+                "metal" : "vfx_remap_01($v, $startRange, $endRange)",
+                "c"     : "vfx_remap_01($v, $startRange, $endRange)"
+            }
+        },
+        {
+            "name" : "Remap01",
+            "label" : "Remap01 (Float2)",
+            "defaultInParameter": "v",
+            "showInParameterDefaultValues" : ["startRange", "endRange"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "startRange", "startRange" : [-1.0, -1.0], "valueType" : "Float2" },
+                { "keyName" : "endRange", "endRange" : [1.0, 1.0], "valueType" : "Float2" },
+                { "keyName" : "v", "v" : [0.5, 0.5], "valueType" : "Float2" }
+            ],
+            "inParameterNames" : ["startRange", "endRange", "v"],
+            "inParameterTypes" : ["Float2", "Float2", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_remap_01($v, $startRange, $endRange)",
+                "metal" : "vfx_remap_01($v, $startRange, $endRange)",
+                "c"     : "vfx_remap_01($v, $startRange, $endRange)"
+            }
+        },
+        {
+            "name" : "Remap01",
+            "label" : "Remap01 (Float3)",
+            "defaultInParameter": "v",
+            "showInParameterDefaultValues" : ["startRange", "endRange"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "startRange", "startRange" : [-1.0, -1.0, -1.0], "valueType" : "Float3" },
+                { "keyName" : "endRange", "endRange" : [1.0, 1.0, 1.0], "valueType" : "Float3" },
+                { "keyName" : "v", "v" : [0.5, 0.5, 0.5], "valueType" : "Float3" }
+            ],
+            "inParameterNames" : ["startRange", "endRange", "v"],
+            "inParameterTypes" : ["Float3", "Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_remap_01($v, $startRange, $endRange)",
+                "metal" : "vfx_remap_01($v, $startRange, $endRange)",
+                "c"     : "vfx_remap_01($v, $startRange, $endRange)"
+            }
+        },
+        {
+            "name" : "Remap01",
+            "label" : "Remap01 (Float4)",
+            "defaultInParameter": "v",
+            "showInParameterDefaultValues" : ["startRange", "endRange"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "startRange", "startRange" : [-1.0, -1.0, -1.0, -1.0], "valueType" : "Float4" },
+                { "keyName" : "endRange", "endRange" : [1.0, 1.0, 1.0, 1.0], "valueType" : "Float4" },
+                { "keyName" : "v", "v" : [0.5, 0.5, 0.5, 0.5], "valueType" : "Float4" }
+            ],
+            "inParameterNames" : ["startRange", "endRange", "v"],
+            "inParameterTypes" : ["Float4", "Float4", "Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_remap_01($v, $startRange, $endRange)",
+                "metal" : "vfx_remap_01($v, $startRange, $endRange)",
+                "c"     : "vfx_remap_01($v, $startRange, $endRange)"
+            }
+        },
+        {
+            "name" : "CrossProduct",
+            "label" : "Cross Product (%TYPE%)",
+            "genericTypes" : ["Float3"],
+            "inParameterNames" : ["vec1", "vec2"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "simd_cross($vec1, $vec2)",
+                "metal" : "cross($vec1, $vec2)",
+                "c"     : "simd_cross($vec1, $vec2)"
+            }
+        },
+        {
+            "name" : "DotProduct",
+            "label" : "Dot Product (%TYPE%)",
+            "genericTypes" : ["Float2", "Float3"],
+            "inParameterNames" : ["vec1", "vec2"],
+            "inParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "simd_dot($vec1, $vec2)",
+                "metal" : "dot($vec1, $vec2)",
+                "c"     : "simd_dot($vec1, $vec2)"
+            }
+        },
+        {
+            "name" : "Transform",
+            "inParameterNames" : ["quat", "vec"],
+            "inParameterTypes" : ["QuaternionF", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_quat_rotate_vector($quat, $vec)",
+                "metal" : "vfx_quat_rotate_vector($quat, $vec)",
+                "c"     : "vfx_quat_rotate_vector($quat, $vec)"
+            }
+        },
+        {
+            "name" : "Inverse",
+            "label" : "Inverse (%TYPE%)",
+            "genericTypes" : ["Float3x3", "Float4x4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_inverse($in)",
+                "c"     : "vfx_inverse($in)"
+            }
+        },
+        {
+            "name" : "Inverse (QuaternionF)",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_invert($in)",
+                "metal" : "vfx_quat_invert($in)",
+                "c"     : "vfx_quat_invert($in)"
+            }
+        },
+        {
+            "name" : "Transpose",
+            "label" : "Transpose (%TYPE%)",
+            "genericTypes" : ["Float3x3", "Float4x4"],
+            "inParameterNames" : ["mat"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "vfx_transpose($mat)",
+                "metal" : "vfx_transpose($mat)",
+                "c"     : "vfx_transpose($mat)"
+            }
+        },
+        {
+            "name" : "TransformNormal",
+            "label" : "Transform Normal",
+            "inParameterNames" : ["mat", "nor"],
+            "inParameterTypes" : ["Float4x4", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_transform_normal($mat, $nor)",
+                "metal" : "vfx_transform_normal($mat, $nor)",
+                "c"     : "vfx_transform_normal($mat, $nor)"
+            }
+        },
+        {
+            "name" : "TransformPosition",
+            "label" : "Transform Position",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float4x4", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_transform_position($mat, $pos)",
+                "metal" : "vfx_transform_position($mat, $pos)",
+                "c"     : "vfx_transform_position($mat, $pos)"
+            }
+        },
+        {
+            "name" : "Transform",
+            "label" : "Transform Position",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float3x3", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_transform($mat, $pos)",
+                "metal" : "vfx_transform($mat, $pos)",
+                "c"     : "vfx_transform($mat, $pos)"
+            }
+        },
+        {
+            "name" : "TranslateMatrix",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float3x3", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_translate($mat, $pos)",
+                "metal" : "vfx_translate($mat, $pos)",
+                "c"     : "vfx_translate($mat, $pos)"
+            }
+        },
+        {
+            "name" : "ScaleMatrix",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float3x3", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_scale($mat, $pos)",
+                "metal" : "vfx_scale($mat, $pos)",
+                "c"     : "vfx_scale($mat, $pos)"
+            }
+        },
+        {
+            "name" : "TranslateMatrix",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float4x4", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_translate($mat, vfx_make_float4($pos, 1.0))",
+                "metal" : "vfx_translate($mat, vfx_make_float4($pos, 1.0))",
+                "c"     : "vfx_translate($mat, vfx_make_float4($pos, 1.0))"
+            }
+        },
+        {
+            "name" : "ScaleMatrix",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float4x4", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_scale($mat, $pos)",
+                "metal" : "vfx_scale($mat, $pos)",
+                "c"     : "vfx_scale($mat, $pos)"
+            }
+        },
+        {
+            "name" : "ProjectPosition",
+            "label" : "Project Position",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float4x4", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_project_position($mat, $pos)",
+                "metal" : "vfx_project_position($mat, $pos)",
+                "c"     : "vfx_project_position($mat, $pos)"
+            }
+        },
+        {
+            "name" : "TransformDirection",
+            "label" : "Transform Direction",
+            "inParameterNames" : ["mat", "pos"],
+            "inParameterTypes" : ["Float4x4", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_transform_direction($mat, $pos)",
+                "metal" : "vfx_transform_direction($mat, $pos)",
+                "c"     : "vfx_transform_direction($mat, $pos)"
+            }
+        },
+        {
+            "name" : "TRS",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["outTrn", "outRot", "outScl"],
+            "outParameterTypes" : ["Float3", "QuaternionF", "Float3"],
+            "code" : {
+                "swift" : "$outTrn = vfx_get_translation($in); $outRot = vfx_quat(vfx_get_rotation($in)); $outScl = vfx_get_scale($in)",
+                "metal" : "$outTrn = vfx_get_translation($in); $outRot = vfx_quat(vfx_get_rotation($in)); $outScl = vfx_get_scale($in)",
+                "c"     : "$outTrn = vfx_get_translation($in); $outRot = vfx_quat(vfx_get_rotation($in)); $outScl = vfx_get_scale($in)"
+            }
+        },
+        {
+            "name" : "GetTranslation",
+            "label" : "GetTranslation From Float3x3",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float3x3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_get_translation_2D($mtx)",
+                "metal" : "vfx_get_translation_2D($mtx)",
+                "c"     : "vfx_get_translation_2D($mtx)"
+            }
+        },
+        {
+            "name" : "GetTranslation",
+            "label" : "GetTranslation From Float4x4",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_get_translation($mtx)",
+                "metal" : "vfx_get_translation($mtx)",
+                "c"     : "vfx_get_translation($mtx)"
+            }
+        },
+        {
+            "name" : "GetRotation",
+            "label" : "GetRotation From Float4x4",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_get_rotation($mtx)",
+                "metal" : "vfx_get_rotation($mtx)",
+                "c"     : "vfx_get_rotation($mtx)"
+            }
+        },
+        {
+            "name" : "Rotation",
+            "label" : "Quaternion From Float4x4",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat(vfx_get_rotation($mtx))",
+                "metal" : "vfx_quat(vfx_get_rotation($mtx))",
+                "c"     : "vfx_quat(vfx_get_rotation($mtx))"
+            }
+        },
+        {
+            "name" : "Rotation",
+            "label" : "Quaternion From Float3x3",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float3x3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_matrix3x3($mtx)",
+                "metal" : "vfx_quat_from_matrix3x3($mtx)",
+                "c"     : "vfx_quat_from_matrix3x3($mtx)"
+            }
+        },
+        {
+            "name" : "GetScale",
+            "label" : "GetScale From Float3x3",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float3x3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_get_scale_2D($mtx)",
+                "metal" : "vfx_get_scale_2D($mtx)",
+                "c"     : "vfx_get_scale_2D($mtx)"
+            }
+        },
+        {
+            "name" : "GetScale",
+            "label" : "GetScale From Float4x4",
+            "inParameterNames" : ["mtx"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_get_scale($mtx)",
+                "metal" : "vfx_get_scale($mtx)",
+                "c"     : "vfx_get_scale($mtx)"
+            }
+        },
+        {
+            "name" : "RotateVector",
+            "inParameterNames" : ["in", "vec"],
+            "inParameterTypes" : ["QuaternionF", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_quat_rotate_vector($in, $vec)",
+                "metal" : "vfx_quat_rotate_vector($in, $vec)",
+                "c"     : "vfx_quat_rotate_vector($in, $vec)"
+            }
+        },
+        {
+            "name" : "Conjugate",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_conjugate($in)",
+                "metal" : "vfx_quat_conjugate($in)",
+                "c"     : "vfx_quat_conjugate($in)"
+            }
+        },
+        {
+            "name" : "Ln",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_ln($in)",
+                "metal" : "vfx_quat_ln($in)",
+                "c"     : "vfx_quat_ln($in)"
+            }
+        },
+        {
+            "name" : "Exp",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_exp($in)",
+                "metal" : "vfx_quat_exp($in)",
+                "c"     : "vfx_quat_exp($in)"
+            }
+        },
+        {
+            "name" : "Pow",
+            "inParameterNames" : ["in", "p"],
+            "inParameterTypes" : ["QuaternionF", "Float"],
+            "showInParameterDefaultValues" : ["p"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_pow($in, $p)",
+                "metal" : "vfx_quat_pow($in, $p)",
+                "c"     : "vfx_quat_pow($in, $p)"
+            }
+        },
+        {
+            "name" : "LookAt",
+            "inParameterNames" : ["fwd", "up"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_look_at($fwd, $up)",
+                "metal" : "vfx_quat_look_at($fwd, $up)",
+                "c"     : "vfx_quat_look_at($fwd, $up)"
+            }
+        },
+        {
+            "name" : "Slerp",
+            "inParameterNames" : ["from", "to", "val"],
+            "inParameterTypes" : ["QuaternionF", "QuaternionF", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_slerp($from, $to, $val)",
+                "metal" : "vfx_quat_slerp($from, $to, $val)",
+                "c"     : "vfx_quat_slerp($from, $to, $val)"
+            }
+        },
+        {
+            "name" : "SlerpLongest",
+            "inParameterNames" : ["from", "to", "val"],
+            "inParameterTypes" : ["QuaternionF", "QuaternionF", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_slerp_longest($from, $to, $val)",
+                "metal" : "vfx_quat_slerp_longest($from, $to, $val)",
+                "c"     : "vfx_quat_slerp_longest($from, $to, $val)"
+            }
+        },
+        {
+            "name" : "Squad",
+            "inParameterNames" : ["q0", "q1", "q2", "q3", "t"],
+            "inParameterTypes" : ["QuaternionF", "QuaternionF", "QuaternionF", "QuaternionF", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_squad($q0, $q1, $q2, $q3, $t)",
+                "metal" : "vfx_quat_squad($q0, $q1, $q2, $q3, $t)",
+                "c"     : "vfx_quat_squad($q0, $q1, $q2, $q3, $t)"
+            }
+        },
+        {
+            "name" : "Bezier",
+            "inParameterNames" : ["q0", "q1", "q2", "q3", "t"],
+            "inParameterTypes" : ["QuaternionF", "QuaternionF", "QuaternionF", "QuaternionF", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_bezier($q0, $q1, $q2, $q3, $t)",
+                "metal" : "vfx_quat_bezier($q0, $q1, $q2, $q3, $t)",
+                "c"     : "vfx_quat_bezier($q0, $q1, $q2, $q3, $t)"
+            }
+        },
+        {
+            "name" : "RotationBetween",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["QuaternionF", "QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_rotation_between($a, $b)",
+                "metal" : "vfx_quat_rotation_between($a, $b)",
+                "c"     : "vfx_quat_rotation_between($a, $b)"
+            }
+        },
+        {
+            "name" : "RotationBetween",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_rotation_between($a, $b)"
+            }
+        },
+        {
+            "name" : "RotationBetweenFast",
+            "inParameterNames" : ["a", "b"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_rotation_between_fast($a, $b)",
+                "metal" : "vfx_quat_rotation_between_fast($a, $b)",
+                "c"     : "vfx_quat_rotation_between_fast($a, $b)"
+            }
+        },
+        {
+            "name" : "IsIdentity",
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "vfx_quat_is_identity($in)",
+                "metal" : "vfx_quat_is_identity($in)",
+                "c"     : "vfx_quat_is_identity($in)"
+            }
+        },
+        {
+            "name" : "Evaluate",
+            "label" : "Evaluate Curve",
+            "disableable" : false,
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["curve", "t"],
+            "inParameterTypes" : ["CurveF", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift" : "vfx_script_curve_evaluate($curve, $t)"
+            }
+        },
+        {
+            "name" : "Evaluate",
+            "label" : "Evaluate Curve",
+            "disableable" : false,
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["curve", "t"],
+            "inParameterTypes" : ["CurveTexture", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_sample1d($curve, $t).x",
+                "metal"   : "$curve.texture.sample($curve.sampler, $t).r"
+            }
+        },
+        {
+            "name" : "SetValue",
+            "disableable" : false,
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["curve", "val", "index"],
+            "inParameterTypes" : ["CurveF", "Float", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["CurveF"],
+            "code" : {
+                "c|swift" : "vfx_script_curve_create_setting_value(scriptContext, $curve, $val, $index)"
+            },
+            "cleanupCode":{
+                "c|swift" : "vfx_script_curve_destroy(scriptContext, $out)"
+            }
+        },
+        {
+            "name" : "Scale",
+            "disableable" : false,
+            "label" : "Scale Curve",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["curve", "val"],
+            "inParameterTypes" : ["CurveF", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["CurveF"],
+            "code" : {
+                "c|swift" : "vfx_script_curve_create_scaled(scriptContext, $curve, $val)"
+            },
+            "cleanupCode":{
+                "c|swift" : "vfx_script_curve_destroy(scriptContext, $out)"
+            }
+        }
+    ]
+}

@@ -1,0 +1,364 @@
+{
+  "layer_shapes" : {
+    "g_0" : {
+      "k" : 256,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu11_fwd" : {
+      "k" : 256,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "g_1before_pad" : {
+      "k" : 128,
+      "w" : 62,
+      "n" : 1,
+      "h" : 62
+    },
+    "h_3_relu" : {
+      "k" : 32,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "g_1" : {
+      "k" : 128,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "mobilenet0_relu0_fwd" : {
+      "k" : 32,
+      "w" : 240,
+      "n" : 1,
+      "h" : 240
+    },
+    "mobilenet0_relu21_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "geo_map_act_conv" : {
+      "k" : 4,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu15_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "f_reduced_0_relu" : {
+      "k" : 256,
+      "w" : 15,
+      "n" : 1,
+      "h" : 15
+    },
+    "g_2" : {
+      "k" : 64,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "geo_map_act_sigmoid" : {
+      "k" : 4,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu4_fwd" : {
+      "k" : 128,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "f_reduced_3_relu" : {
+      "k" : 32,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "f_score_act_sigmoid_output" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu25_fwd" : {
+      "k" : 1024,
+      "w" : 15,
+      "n" : 1,
+      "h" : 15
+    },
+    "f_score_act_conv" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu8_fwd" : {
+      "k" : 256,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "mobilenet0_relu19_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "convs_1_relu" : {
+      "k" : 128,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "angle_map_act_conv" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "concats_1" : {
+      "k" : 384,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu12_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "concats_2" : {
+      "k" : 192,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "mobilenet0_relu1_fwd" : {
+      "k" : 32,
+      "w" : 240,
+      "n" : 1,
+      "h" : 240
+    },
+    "concats_3" : {
+      "k" : 96,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu22_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu16_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu5_fwd" : {
+      "k" : 128,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "_mulscalar0" : {
+      "k" : 4,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "h_2_relu" : {
+      "k" : 64,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "g_0before_pad" : {
+      "k" : 256,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "mobilenet0_relu26_fwd" : {
+      "k" : 1024,
+      "w" : 15,
+      "n" : 1,
+      "h" : 15
+    },
+    "f_reduced_2_relu" : {
+      "k" : 64,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "_minusscalar0" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu9_fwd" : {
+      "k" : 256,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "angle_map_act_sigmoid" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "_divscalar0" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu13_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "g_2before_pad" : {
+      "k" : 64,
+      "w" : 122,
+      "n" : 1,
+      "h" : 122
+    },
+    "convs_3_relu" : {
+      "k" : 32,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "g_3_relu" : {
+      "k" : 32,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "_mulscalar1" : {
+      "k" : 1,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu2_fwd" : {
+      "k" : 64,
+      "w" : 240,
+      "n" : 1,
+      "h" : 240
+    },
+    "data" : {
+      "k" : 3,
+      "w" : 480,
+      "n" : 1,
+      "h" : 480
+    },
+    "mobilenet0_relu23_fwd" : {
+      "k" : 512,
+      "w" : 15,
+      "n" : 1,
+      "h" : 15
+    },
+    "geometry_output" : {
+      "k" : 5,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "mobilenet0_relu17_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu6_fwd" : {
+      "k" : 128,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "data__fix__underflow_____mobilenet0_conv0_fwd" : {
+      "k" : 3,
+      "w" : 480,
+      "n" : 1,
+      "h" : 480
+    },
+    "mobilenet0_relu10_fwd" : {
+      "k" : 256,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "f_reduced_1_relu" : {
+      "k" : 128,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu20_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "h_1_relu" : {
+      "k" : 128,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu14_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu3_fwd" : {
+      "k" : 64,
+      "w" : 120,
+      "n" : 1,
+      "h" : 120
+    },
+    "convs_2_relu" : {
+      "k" : 64,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    },
+    "mobilenet0_relu24_fwd" : {
+      "k" : 1024,
+      "w" : 15,
+      "n" : 1,
+      "h" : 15
+    },
+    "mobilenet0_relu18_fwd" : {
+      "k" : 512,
+      "w" : 30,
+      "n" : 1,
+      "h" : 30
+    },
+    "mobilenet0_relu7_fwd" : {
+      "k" : 128,
+      "w" : 60,
+      "n" : 1,
+      "h" : 60
+    }
+  }
+}

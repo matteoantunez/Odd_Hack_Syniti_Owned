@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING::CEREMONY</key>
+	<array>
+		<string>comunione</string>
+		<string>cresima</string>
+		<string>battesimo</string>
+		<string>matrimonio</string>
+		<string>bar mitzvah</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>oktoberfest</string>
+		<string>giro dei (pub|bar)</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>brunch di compleanno</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>cena ((della vigilia )?di natale|di pasqua|del( giorno del)? ringraziamento|di pasquetta|di ferragosto|(della vigilia )?di capodanno)</string>
+		<string>cena di gruppo</string>
+		<string>cena di famiglia</string>
+		<string>cena (con gli|tra) amici</string>
+		<string>cena sociale</string>
+		<string>cena aziendale</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>pranzo (di natale|di pasqua|del( giorno del)? ringraziamento|di pasquetta|di ferragosto|di capodanno)</string>
+		<string>pranzo di famiglia</string>
+		<string>pranzo di compleanno</string>
+		<string>pranzo di anniversario</string>
+		<string>pranzo di gruppo</string>
+		<string>pranzo con gli amici</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>halloween</string>
+		<string>anno nuovo( cinese)?</string>
+		<string>(capodanno|notte di san silvestro)</string>
+		<string>(diwali|divali|deepavali)</string>
+		<string>cinco de mayo</string>
+		<string>festa di san patrizio</string>
+		<string>festa di natale</string>
+		<string>ballo in maschera</string>
+		<string>addio al (celibato|nubilato)</string>
+		<string>festa di (fine anno|maturit[aàá]|laurea)</string>
+		<string>pranzo dei (100|cento) giorni</string>
+		<string>festa della birra</string>
+		<string>festa di (addio|benvenuto|nascita|battesimo|prima comunione|cresima|matrimonio)</string>
+		<string>festa a sorpresa</string>
+		<string>festa (di maturit[aàá]|(di|dei) (18|diciotto) anni)</string>
+		<string>festa di laurea</string>
+		<string>(beer bash|bierfest)</string>
+	</array>
+</dict>
+</plist>

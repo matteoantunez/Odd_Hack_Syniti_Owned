@@ -1,0 +1,519 @@
+{
+    "color": [1.0, 0.758, 0.338],
+    "snippets":[
+        {
+            "name" : "Float2",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_make_float2($in, $in)",
+                "metal" : "vfx_make_float2($in, $in)",
+                "c"     : "vfx_make_float2($in, $in)"
+            }
+        },
+        {
+            "name" : "Float3",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_make_float3($in, $in, $in)",
+                "metal" : "vfx_make_float3($in, $in, $in)",
+                "c"     : "vfx_make_float3($in, $in, $in)"
+            }
+        },
+        {
+            "name" : "Float4",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($in, $in, $in, $in)",
+                "metal" : "vfx_make_float4($in, $in, $in, $in)",
+                "c"     : "vfx_make_float4($in, $in, $in, $in)"
+            }
+        },
+        {
+            "name" : "Float",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float($in ? 1.0 : 0.0)",
+                "metal" : "float($in ? 1.0 : 0.0)",
+                "c"     : "float($in ? 1.0 : 0.0)"
+            }
+        },
+        {
+            "name" : "Bool",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "Bool($in == Float(0.0) ? false : true)",
+                "metal" : "bool($in == 0.0 ? false : true)",
+                "c"     : "bool($in == 0.0 ? false : true)"
+            }
+        },
+        {
+            "name" : "Float",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES", "Double"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float($in)",
+                "metal" : "float($in)",
+                "c"     : "float($in)"
+            }
+        },
+        {
+            "name" : "Int8",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int8"],
+            "code" : {
+                "swift" : "Int8($in)",
+                "metal" : "int8_t($in)",
+                "c"     : "int8_t($in)"
+            }
+        },
+        {
+            "name" : "Int16",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int16"],
+            "code" : {
+                "swift" : "Int16($in)",
+                "metal" : "int16_t($in)",
+                "c"     : "int16_t($in)"
+            }
+        },
+        {
+            "name" : "Int32",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int32"],
+            "code" : {
+                "swift" : "Int32($in)",
+                "metal" : "int32_t($in)",
+                "c"     : "int32_t($in)"
+            }
+        },
+        {
+            "name" : "Int64",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int64"],
+            "code" : {
+                "swift" : "Int64($in)",
+                "metal" : "int64_t($in)",
+                "c"     : "int64_t($in)"
+            }
+        },
+        {
+            "name" : "UInt8",
+            "hidden" : true,
+            "genericTypes" : ["ALL_UNSIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt8"],
+            "code" : {
+                "swift" : "UInt8($in)",
+                "metal" : "uint8_t($in)",
+                "c"     : "uint8_t($in)"
+            }
+        },
+        {
+            "name" : "UInt16",
+            "hidden" : true,
+            "genericTypes" : ["ALL_UNSIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt16"],
+            "code" : {
+                "swift" : "UInt16($in)",
+                "metal" : "uint16_t($in)",
+                "c"     : "uint16_t($in)"
+            }
+        },
+        {
+            "name" : "UInt32",
+            "hidden" : true,
+            "genericTypes" : ["ALL_UNSIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt32"],
+            "code" : {
+                "swift" : "UInt32($in)",
+                "metal" : "uint32_t($in)",
+                "c"     : "uint32_t($in)"
+            }
+        },
+        {
+            "name" : "UInt64",
+            "hidden" : true,
+            "genericTypes" : ["ALL_UNSIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt64"],
+            "code" : {
+                "swift" : "UInt64($in)",
+                "metal" : "uint64_t($in)",
+                "c"     : "uint64_t($in)"
+            }
+        },
+        {
+            "name" : "UInt8",
+            "hidden" : true,
+            "genericTypes" : ["ALL_SIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt8"],
+            "code" : {
+                "swift" : "UInt8($in > 0 ? $in : 0)",
+                "metal" : "uint8_t($in > 0 ? $in : 0)",
+                "c"     : "uint8_t($in > 0 ? $in : 0)"
+            }
+        },
+        {
+            "name" : "UInt16",
+            "hidden" : true,
+            "genericTypes" : ["ALL_SIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt16"],
+            "code" : {
+                "swift" : "UInt16($in > 0 ? $in : 0)",
+                "metal" : "uint16_t($in > 0 ? $in : 0)",
+                "c"     : "uint16_t($in > 0 ? $in : 0)"
+            }
+        },
+        {
+            "name" : "UInt32",
+            "hidden" : true,
+            "genericTypes" : ["ALL_SIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt32"],
+            "code" : {
+                "swift" : "UInt32($in > 0 ? $in : 0)",
+                "metal" : "uint32_t($in > 0 ? $in : 0)",
+                "c"     : "uint32_t($in > 0 ? $in : 0)"
+            }
+        },
+        {
+            "name" : "UInt64",
+            "hidden" : true,
+            "genericTypes" : ["ALL_SIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt64"],
+            "code" : {
+                "swift" : "UInt64($in > 0 ? $in : 0)",
+                "metal" : "uint64_t($in > 0 ? $in : 0)",
+                "c"     : "uint64_t($in > 0 ? $in : 0)"
+            }
+        },
+        {
+            "name" : "Int",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int"],
+            "code" : {
+                "swift" : "Int($in)",
+                "metal" : "int($in)",
+                "c"     : "int($in)"
+            }
+        },
+        {
+            "name" : "%TYPE%",
+            "hidden" : true,
+            "genericTypes" : ["ALL_SIGNED_INT_TYPES", "Double"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "%TYPE%(vfx_is_nan($in) ? 0 : $in)"
+            }
+        },
+        {
+            "name" : "%TYPE%",
+            "hidden" : true,
+            "genericTypes" : ["ALL_UNSIGNED_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c|swift|metal" : "%TYPE%(vfx_is_nan($in) ? 0 : ($in > 0 ? $in : 0))"
+            }
+        },
+        {
+            "name" : "Float",
+            "hidden" : true,
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float($in)",
+                "metal" : "float($in)",
+                "c"     : "float($in)"
+            }
+        },
+        {
+            "name" : "Float",
+            "hidden" : true,
+            "genericTypes" : ["Float2", "Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float($in.x)",
+                "metal" : "$in.x",
+                "c"     : "$in.x"
+            }
+        },
+        {
+            "name" : "Float2",
+            "hidden" : true,
+            "genericTypes" : ["Float3", "Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_get_xy($in)",
+                "metal" : "vfx_get_xy($in)",
+                "c"     : "vfx_get_xy($in)"
+            }
+        },
+        {
+            "name" : "Float3",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_make_float3($in, 0.0)",
+                "metal" : "vfx_make_float3($in.x, $in.y, 0.0)",
+                "metal" : "vfx_make_float3($in.x, $in.y, 0.0)"
+            }
+        },
+        {
+            "name" : "Float3",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_get_xyz($in)",
+                "metal" : "vfx_get_xyz($in)",
+                "c"     : "vfx_get_xyz($in)"
+            }
+        },
+        {
+            "name" : "Float4",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($in.x, $in.y, 0.0, 1.0)",
+                "metal" : "vfx_make_float4($in.x, $in.y, 0.0, 1.0)",
+                "c"     : "vfx_make_float4($in.x, $in.y, 0.0, 1.0)"
+            }
+        },
+        {
+            "name" : "Float4",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($in, 1.0)",
+                "metal" : "vfx_make_float4($in.x, $in.y, $in.z, 1.0)",
+                "c"     : "vfx_make_float4($in.x, $in.y, $in.z, 1.0)"
+            }
+        },
+        {
+            "name" : "Float4",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($in.vector.x, $in.vector.y, $in.vector.z, $in.vector.w)",
+                "metal" : "vfx_make_float4($in.vector.x, $in.vector.y, $in.vector.z, $in.vector.w)",
+                "c"     : "vfx_make_float4($in.vector.x, $in.vector.y, $in.vector.z, $in.vector.w)"
+            }
+        },
+        {
+            "name" : "QuaternionF",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat($in)",
+                "metal" : "vfx_quat($in)",
+                "c"     : "vfx_quat($in)"
+            }
+        },
+        {
+            "name" : "Float3x3",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_quat_to_matrix3x3($in)",
+                "metal" : "vfx_quat_to_matrix3x3($in)",
+                "c"     : "vfx_quat_to_matrix3x3($in)"
+            }
+        },    
+        {
+            "name" : "Float3x3",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_float3x3(vfx_get_xyz($in.columns.0), vfx_get_xyz($in.columns.1), vfx_get_xyz($in.columns.2))",
+                "metal" : "vfx_float3x3(vfx_get_xyz($in.columns[0]), vfx_get_xyz($in.columns[1]), vfx_get_xyz($in.columns[2]))",
+                "c" : "vfx_float3x3(vfx_get_xyz($in.columns[0]), vfx_get_xyz($in.columns[1]), vfx_get_xyz($in.columns[2]))"
+            }
+        },
+        {
+            "name" : "FloatRange",
+            "hidden" : true,
+            "genericTypes" : ["Float", "ALL_INT_TYPES", "Double"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift"   : "Range<Float>(uncheckedBounds: (Float($in), Float($in)))",
+                "c|metal" : "vfx_make_float_range(float($in), float($in))"
+            }
+        },
+        {
+            "name" : "FloatRange",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["IntRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift" : "Range<Float>(uncheckedBounds: (Float($in.lowerBound), Float($in.upperBound)))",
+                "c|metal" : "vfx_make_float_range(float($in.lower_bound), float($in.upper_bound))"
+            }
+        },
+        {
+            "name" : "IntRange",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift"   : "Range<Int>(uncheckedBounds: ($in, $in))",
+                "c|metal" : "(vfx_int_range) {$in, $in}"
+            }
+        },
+        {
+            "name" : "IntRange",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift"   : "Range<Int>(uncheckedBounds: (Int($in), Int($in)))",
+                "c|metal" : "(vfx_int_range) {size_t($in), size_t($in)}"
+            }
+        },
+        {
+            "name" : "IntRange",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["FloatRange"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: (Int($in.lowerBound), Int($in.upperBound)))",
+                "c|metal" : "(vfx_int_range) {size_t($in.lower_bound), size_t($in.upper_bound)}"
+            }
+        },
+        {
+            "name" : "URL",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["String"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["URL"],
+            "code" : {
+                "swift" : "$in"
+            }
+        },
+        {
+            "name" : "String",
+            "hidden" : true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["URL"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["String"],
+            "code" : {
+                "swift" : "$in"
+            }
+        }
+    ]
+}

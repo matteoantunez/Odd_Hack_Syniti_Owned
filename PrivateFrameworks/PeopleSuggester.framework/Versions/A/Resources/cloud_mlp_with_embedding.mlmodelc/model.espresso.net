@@ -1,0 +1,124 @@
+{
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "metadata_in_weights" : [
+
+  ],
+  "layers" : [
+    {
+      "nB" : 62,
+      "top" : "dense_1__activation___output",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 256,
+      "blob_weights" : 3,
+      "type" : "inner_product",
+      "has_relu" : 1,
+      "bottom" : "input1",
+      "blob_biases" : 1,
+      "has_tanh" : 0,
+      "debug_info" : "dense_1",
+      "name" : "dense_1",
+      "has_prelu" : 0
+    },
+    {
+      "nB" : 256,
+      "top" : "last_layer_output",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 128,
+      "blob_weights" : 7,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "dense_1__activation___output",
+      "blob_biases" : 5,
+      "has_tanh" : 0,
+      "debug_info" : "last_layer",
+      "name" : "last_layer",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "last_layer_output",
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "debug_info" : "last_layer__activation__",
+      "top" : "last_layer__activation___output",
+      "type" : "activation",
+      "name" : "last_layer__activation__"
+    },
+    {
+      "nB" : 128,
+      "top" : "dense_2_output",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 1,
+      "blob_weights" : 11,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "last_layer__activation___output",
+      "blob_biases" : 9,
+      "has_tanh" : 0,
+      "debug_info" : "dense_2",
+      "name" : "dense_2",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "dense_2_output",
+      "weights" : {
+
+      },
+      "mode" : 3,
+      "debug_info" : "dense_2__activation__",
+      "top" : "output1",
+      "type" : "activation",
+      "name" : "dense_2__activation__",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "bottom" : "last_layer_output",
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "mode" : 6,
+      "debug_info" : "identity_for_last_layer_before_activation",
+      "top" : "last_layer_before_activation",
+      "type" : "activation",
+      "name" : "identity_for_last_layer_before_activation",
+      "attributes" : {
+        "is_output" : 1
+      }
+    },
+    {
+      "bottom" : "last_layer__activation___output",
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "mode" : 6,
+      "debug_info" : "identity_for_last_layer_after_activation",
+      "top" : "last_layer_after_activation",
+      "type" : "activation",
+      "name" : "identity_for_last_layer_after_activation",
+      "attributes" : {
+        "is_output" : 1
+      }
+    }
+  ]
+}

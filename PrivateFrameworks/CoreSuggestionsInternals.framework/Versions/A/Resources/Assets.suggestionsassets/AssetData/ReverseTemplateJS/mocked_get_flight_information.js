@@ -1,0 +1,1 @@
+(function(){return function(r,e,i){return[{flightNumber:e,carrierCode:r,legs:[{departurePublishedTime:i+"T09:42:00-07:00",departureAirport:{code:"AAA",location:{}},arrivalPublishedTime:i+"T12:42:00-07:00",arrivalAirport:{code:"ZZZ",location:{}}}]}]}}).call();

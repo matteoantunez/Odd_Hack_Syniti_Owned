@@ -1,0 +1,66 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "leaf\/leaf\/predictions\/probabilities",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 1,
+      "UnaryThreshold" : 28,
+      "Convolution" : 54,
+      "ActivationSigmoid" : 1,
+      "Transpose" : 1,
+      "LoadConstantND" : 1,
+      "Squeeze" : 1,
+      "Add" : 27,
+      "Multiply" : 57,
+      "ActivationLinear" : 57,
+      "ActivationReLU" : 43,
+      "PoolingAverage" : 10
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1.5",
+      "com.github.apple.coremltools.source" : "tensorflow==1.15.4"
+    },
+    "generatedClassName" : "jrx6r4yvjf_180001",
+    "inputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 256 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image\/Placeholder"
+      }
+    ],
+    "method" : "predict"
+  }
+]

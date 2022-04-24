@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>criteria</key>
+	<array>
+		<dict>
+			<key>Action</key>
+			<dict>
+				<key>actionName</key>
+				<string>swimming</string>
+				<key>actionValue</key>
+				<integer>19</integer>
+				<key>confidenceF1</key>
+				<real>0.36</real>
+				<key>confidenceHighPrecisionThreshold</key>
+				<real>0.45</real>
+				<key>confidenceHighRecallThreshold</key>
+				<real>0.2</real>
+			</dict>
+			<key>People</key>
+			<dict>
+				<key>minimumNumberOfPeople</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

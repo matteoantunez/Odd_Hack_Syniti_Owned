@@ -1,0 +1,217 @@
+#usda 1.0
+(
+    "This file describes the USD Lux light schemata for code generation."
+    subLayers = [
+        @usdGeom/schema.usda@
+    ]
+)
+
+over "GLOBAL" (
+    customData = {
+        string libraryName      = "usdLux"
+        string libraryPath      = "pxr/usd/usdLux"
+        dictionary libraryTokens = {
+            dictionary lightLink = {
+                string             }
+            dictionary shadowLink = {
+                string             }
+            dictionary filterLink = {
+                string             }
+            dictionary orientToStageUpAxis = {
+                string             }
+        }
+    }
+)
+{
+}
+
+class "Light" (
+    inherits = </Xformable>
+        customData = {
+        string extraIncludes = """
+#include "pxr/usd/usd/collectionAPI.h" """
+    }
+    prepend apiSchemas = ["CollectionAPI:lightLink", "CollectionAPI:shadowLink"]
+) {
+    uniform bool collection:lightLink:includeRoot = 1 (
+        customData = {
+            token apiName = ""
+        }
+    )
+    uniform bool collection:shadowLink:includeRoot = 1 (
+        customData = {
+            token apiName = ""
+        }
+    )
+    float intensity = 1 (
+            )
+    float exposure = 0 (
+            )
+    float diffuse = 1.0 (
+        displayName = "Diffuse Multiplier"
+            )
+    float specular = 1.0 (
+        displayName = "Specular Multiplier"
+            )
+    bool normalize = false (
+        displayName = "Normalize Power"
+            )
+    color3f color = (1, 1, 1) (
+           )
+    bool enableColorTemperature = false (
+        displayName = "Enable Color Temperature"
+            )
+    float colorTemperature = 6500 (
+        displayName = "Color Temperature"
+            )
+    rel filters (
+            )
+}
+
+class "ListAPI" (
+    inherits = </APISchemaBase>
+    ) {
+    rel lightList (
+            )
+    token lightList:cacheBehavior (
+                allowedTokens = ["consumeAndHalt", "consumeAndContinue", "ignore"]
+    )
+}
+
+class "ShapingAPI" (
+    inherits = </APISchemaBase>
+    ) {
+    float shaping:focus = 0 (
+        displayGroup = "Shaping"
+            )
+    color3f shaping:focusTint = (0, 0, 0) (
+        displayGroup = "Shaping"
+            )
+    float shaping:cone:angle = 90 (
+        displayGroup = "Shaping"
+            )
+    float shaping:cone:softness = 0 (
+        displayGroup = "Shaping"
+            )
+    asset shaping:ies:file (
+        displayGroup = "Shaping"
+            )
+    float shaping:ies:angleScale = 0 (
+        displayGroup = "Shaping"
+            )
+    bool shaping:ies:normalize = false (
+        displayGroup = "Shaping"
+            )
+}
+
+class "ShadowAPI" (
+    inherits = </APISchemaBase>
+    ) {
+    bool shadow:enable = true (
+        displayGroup = "Shadows"
+            )
+    color3f shadow:color = (0, 0, 0) (
+        displayGroup = "Shadows"
+            )
+    float shadow:distance = -1.0 (
+        displayGroup = "Shadows"
+            )
+    float shadow:falloff = -1.0 (
+        displayGroup = "Shadows"
+            )
+    float shadow:falloffGamma = 1.0 (
+        displayGroup = "Shadows"
+            )
+}
+
+class LightFilter "LightFilter" (
+    inherits = </Xformable>
+        customData = {
+        string extraIncludes = """
+#include "pxr/usd/usd/collectionAPI.h" """
+    }
+    prepend apiSchemas = ["CollectionAPI:filterLink"]
+) {
+    uniform bool collection:filterLink:includeRoot = 1 (
+        customData = {
+            token apiName = ""
+        }
+    )
+}
+
+class DistantLight "DistantLight" (
+    inherits = </Light>
+    ) {
+    float angle = 0.53 (
+            )
+    float intensity = 50000 (
+            )
+}
+
+class DiskLight "DiskLight" (
+    inherits = </Light>
+    ) {
+    float radius = 0.5 (
+        
+    )
+}
+
+class RectLight "RectLight" (
+    inherits = </Light>
+    ) {
+    float width = 1 (
+        
+    )
+    float height = 1 (
+        
+    )
+    asset texture:file (
+            )
+}
+
+class SphereLight "SphereLight" (
+    inherits = </Light>
+    ) {
+    float radius = 0.5 (
+        
+    )
+    bool treatAsPoint = false (
+            )
+}
+
+class CylinderLight "CylinderLight" (
+    inherits = </Light>
+    ) {
+    float length = 1 (
+        
+    )
+    float radius = 0.5 (
+        
+    )
+    bool treatAsLine = false (
+            )
+}
+
+class GeometryLight "GeometryLight" (
+    inherits = </Light>
+    ) {
+    rel geometry (
+            )
+}
+
+class DomeLight "DomeLight" (
+    inherits = </Light>
+    ) {
+    asset texture:file (
+            )
+    token texture:format = "automatic" (
+        allowedTokens = ["automatic", "latlong", "mirroredBall", "angular", "cubeMapVerticalCross"]
+            )
+    rel portals (
+            )
+}
+
+class LightPortal "LightPortal" (
+    inherits = </Xformable>
+    ) {
+}

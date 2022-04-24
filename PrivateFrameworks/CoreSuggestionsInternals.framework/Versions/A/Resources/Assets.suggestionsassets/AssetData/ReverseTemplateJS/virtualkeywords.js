@@ -1,0 +1,1 @@
+(function(){return["virtu.l(?!\\sreality)","online","webinar","stream","web","asynchronous","Evento en l\xednea","\xc9v\xe9nement en ligne"]}).call();

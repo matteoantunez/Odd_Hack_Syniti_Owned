@@ -1,0 +1,4 @@
+;; If the process has com.apple.private.accounts.allaccounts then sandboxed application should be able to look up items needed for correctly setting up accounts.
+
+(if (entitlement "com.apple.private.accounts.allaccounts")
+    (allow user-preference* (preference-domain "MobileMeAccounts")))

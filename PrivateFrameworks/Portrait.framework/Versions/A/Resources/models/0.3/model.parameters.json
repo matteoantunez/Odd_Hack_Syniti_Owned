@@ -1,0 +1,20 @@
+{
+    "comments": {
+        "description": "6 fps network with Human Keypoints, Face pose, and rotational invariant",
+        "training_signature": "wnrx683x8z_32000_logits_instead_of_probs"
+    },
+    "version": "0.3.6",
+    "expected_fps": 6,
+    "sync_with_detector": 1,
+    "supported_detection_types": [ 1, 2, 3, 4, 5, 9, 10, 11 ],
+    "input_schemas": [
+        { "name": "__rect", "count": 3, "params": { "width_height": "geomean" } },
+        { "name": "__uncertainty", "count": 1, "params": { "timer_seconds_divisor": 30.0 } },
+        { "name": "__label_onehot", "count": 7, "params": { "remap": [ 1, 2, 3, [4, 5], [9, 10], 11, 0 ] } },
+        { "name": "anod_pose", "count": 3 },
+        { "name": "human_pose", "count" : 51, "flatten": 1 }
+    ],
+    "detections": {
+        "forget_after_seconds": 1.0
+    }
+}

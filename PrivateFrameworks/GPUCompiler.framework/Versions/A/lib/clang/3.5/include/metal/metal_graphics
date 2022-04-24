@@ -1,0 +1,76 @@
+//===-- metal_graphics ----------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_GRAPHICS
+#define __METAL_GRAPHICS
+
+namespace metal {
+  // 5.9 Graphics Functions
+
+  // 5.9.1 Fragment Functions
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM float dfdx(float p) __asm("air.dfdx.f32");
+  METAL_ASM float dfdy(float p) __asm("air.dfdy.f32");
+  METAL_ASM float fwidth(float p) __asm("air.fwidth.f32");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM float2 dfdx(float2 p) __asm("air.dfdx.v2f32");
+  METAL_ASM float2 dfdy(float2 p) __asm("air.dfdy.v2f32");
+  METAL_ASM float2 fwidth(float2 p) __asm("air.fwidth.v2f32");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM float3 dfdx(float3 p) __asm("air.dfdx.v3f32");
+  METAL_ASM float3 dfdy(float3 p) __asm("air.dfdy.v3f32");
+  METAL_ASM float3 fwidth(float3 p) __asm("air.fwidth.v3f32");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM float4 dfdx(float4 p) __asm("air.dfdx.v4f32");
+  METAL_ASM float4 dfdy(float4 p) __asm("air.dfdy.v4f32");
+  METAL_ASM float4 fwidth(float4 p) __asm("air.fwidth.v4f32");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM half dfdx(half p) __asm("air.dfdx.f16");
+  METAL_ASM half dfdy(half p) __asm("air.dfdy.f16");
+  METAL_ASM half fwidth(half p) __asm("air.fwidth.f16");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM half2 dfdx(half2 p) __asm("air.dfdx.v2f16");
+  METAL_ASM half2 dfdy(half2 p) __asm("air.dfdy.v2f16");
+  METAL_ASM half2 fwidth(half2 p) __asm("air.fwidth.v2f16");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM half3 dfdx(half3 p) __asm("air.dfdx.v3f16");
+  METAL_ASM half3 dfdy(half3 p) __asm("air.dfdy.v3f16");
+  METAL_ASM half3 fwidth(half3 p) __asm("air.fwidth.v3f16");
+  // 5.9.1.1 Fragment Functions – Derivatives
+  METAL_ASM half4 dfdx(half4 p) __asm("air.dfdx.v4f16");
+  METAL_ASM half4 dfdy(half4 p) __asm("air.dfdy.v4f16");
+  METAL_ASM half4 fwidth(half4 p) __asm("air.fwidth.v4f16");
+
+  // 5.9.1.2 Fragment Functions – Samples
+  METAL_ASM uint get_num_samples() __asm("air.get_num_samples.i32");
+  METAL_ASM float2 get_sample_position(uint indx) __asm("air.get_sample_position.v2f32");
+
+  // 5.9.1.3 Fragment Functions – Flow Control
+#if defined(__HAVE_DISCARD_FRAGMENT_NORETURN__)
+  METAL_ASM METAL_NORETURN void discard_fragment(void) __asm("air.discard_fragment");
+#else
+  METAL_ASM void discard_fragment(void) __asm("air.discard_fragment");
+#endif
+
+#if defined(__HAVE_DRAW_INDIRECT__)
+  // Draw indirect structures.
+  typedef struct {
+    uint vertexCount;
+    uint instanceCount;
+    uint vertexStart;
+    uint baseInstance;
+  } MTLDrawPrimitivesIndirectArguments;
+
+  typedef struct {
+    uint indexCount;
+    uint instanceCount;
+    uint indexStart;
+    uint baseVertex;
+    uint baseInstance;
+  } MTLDrawIndexedPrimitivesIndirectArguments;
+#endif
+
+}  // namespace metal
+
+#endif // __METAL_GRAPHICS

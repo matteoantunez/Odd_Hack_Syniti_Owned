@@ -1,0 +1,18 @@
+{
+  "layer_shapes" : {
+    "leaf\/probabilities" : {
+      "k" : 14,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "image" : {
+      "k" : 3,
+      "w" : 299,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 299
+    }
+  }
+}

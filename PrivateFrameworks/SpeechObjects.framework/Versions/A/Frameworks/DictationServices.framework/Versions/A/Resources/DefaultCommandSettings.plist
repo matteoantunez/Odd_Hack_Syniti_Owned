@@ -1,0 +1,74 @@
+{
+	"System.Find" = {
+		Enabled = 0;
+	};
+	"System.PressItemWithoutPrefix" = {
+		Enabled = 0;
+	};
+    "Accessibility.DisableCommandAndControl" = {
+        Enabled = 0;
+    };
+    "System.CursorMoveLeftPixelsWithCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.CursorMoveRightPixelsWithCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.CursorMoveUpPixelsWithCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.CursorMoveDownPixelsWithCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.CursorTriplePress" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.OverlayMoveCursor" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.OverlayTriplePress" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.PressKeyWithOptionalModifierAndCount" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.PressAndHoldAtItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.SetValueByPercentAtItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.StartDragAtItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.EndDragAtItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.DragFromItemToItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.DecrementItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.DecrementItemUsingCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.IncrementItem" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.IncrementItemUsingCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.OverlayDecrementLabel" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.OverlayDecrementLabelUsingCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.OverlayIncrementLabel" = {
+        NashvilleOnlyDisable = 1;
+    };
+    "System.OverlayIncrementLabelUsingCardinalNumber" = {
+        NashvilleOnlyDisable = 1;
+    };
+}

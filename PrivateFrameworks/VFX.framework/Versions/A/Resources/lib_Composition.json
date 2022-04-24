@@ -1,0 +1,185 @@
+{
+    "color": [0.353, 0.98, 0.73],
+    "snippets":[
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["x", "y"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "vfx_make_float2($x, $y)",
+                "metal" : "vfx_make_float2($x, $y)",
+                "c"     : "vfx_make_float2($x, $y)"
+            }
+        },
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["x", "y", "z"],
+            "inParameterTypes" : ["Float", "Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_make_float3($x, $y, $z)",
+                "metal" : "vfx_make_float3($x, $y, $z)",
+                "c"     : "vfx_make_float3($x, $y, $z)"
+            }
+        },
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["x", "y", "z", "w"],
+            "inParameterTypes" : ["Float", "Float", "Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($x, $y, $z, $w)",
+                "metal" : "vfx_make_float4($x, $y, $z, $w)",
+                "c"     : "vfx_make_float4($x, $y, $z, $w)"
+            }
+        },
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["c0", "c1", "c2", "c3"],
+            "inParameterTypes" : ["Float4", "Float4", "Float4", "Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_float4x4($c0, $c1, $c2, $c3)",
+                "metal" : "vfx_float4x4($c0, $c1, $c2, $c3)",
+                "c"     : "vfx_float4x4($c0, $c1, $c2, $c3)"
+            }
+        },
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["c0", "c1", "c2"],
+            "inParameterTypes" : ["Float3", "Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_float3x3($c0, $c1, $c2)",
+                "metal" : "vfx_float3x3($c0, $c1, $c2)",
+                "c"     : "vfx_float3x3($c0, $c1, $c2)"
+            }
+        },
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["lowerBound", "upperBound"],
+            "inParameterTypes" : ["Int", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: (min($lowerBound, $upperBound), max($lowerBound, $upperBound)))",
+                "c|metal" :"vfx_make_int_range($lowerBound < $upperBound ? $lowerBound : $upperBound, $lowerBound > $upperBound ? $lowerBound : $upperBound)"
+            }
+        },
+        {
+            "name" : "Compose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["lowerBound", "upperBound"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift"   : "Range<Float>(uncheckedBounds: (vfx_min($lowerBound, $upperBound), vfx_max($lowerBound, $upperBound)))",
+                "c|metal" : "vfx_make_float_range(vfx_min($lowerBound, $upperBound), vfx_max($lowerBound, $upperBound))"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float2"],
+            "outParameterNames" : ["outX", "outY"],
+            "outParameterTypes" : ["Float", "Float"],
+            "code" : {
+                "swift" : "$outX = $in.x; $outY = $in.y;",
+                "metal" : "$outX = $in.x; $outY = $in.y;",
+                "c"     : "$outX = $in.x; $outY = $in.y;"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["outX", "outY", "outZ"],
+            "outParameterTypes" : ["Float", "Float", "Float"],
+            "code" : {
+                "swift" : "$outX = $in.x;$outY = $in.y;$outZ = $in.z;",
+                "metal" : "$outX = $in.x;$outY = $in.y;$outZ = $in.z;",
+                "c"     : "$outX = $in.x;$outY = $in.y;$outZ = $in.z;"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["outX", "outY", "outZ", "outW"],
+            "outParameterTypes" : ["Float", "Float", "Float", "Float"],
+            "code" : {
+                "swift" : "$outX = $in.x;$outY = $in.y;$outZ = $in.z;$outW = $in.w;",
+                "metal" : "$outX = $in.x;$outY = $in.y;$outZ = $in.z;$outW = $in.w;",
+                "c"     : "$outX = $in.x;$outY = $in.y;$outZ = $in.z;$outW = $in.w;"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["col0", "col1", "col2", "col3"],
+            "outParameterTypes" : ["Float4", "Float4", "Float4", "Float4"],
+            "code" : {
+                "swift" : "$col0 = $in.columns.0; $col1 = $in.columns.1; $col2 = $in.columns.2; $col3 = $in.columns.3",
+                "metal" : "$col0 = $in.columns[0]; $col1 = $in.columns[1]; $col2 = $in.columns[2]; $col3 = $in.columns[3]",
+                "c"     : "$col0 = $in.columns[0]; $col1 = $in.columns[1]; $col2 = $in.columns[2]; $col3 = $in.columns[3]"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["Float3x3"],
+            "outParameterNames" : ["col0", "col1", "col2"],
+            "outParameterTypes" : ["Float3", "Float3", "Float3"],
+            "code" : {
+                "swift" : "$col0 = $in.columns.0; $col1 = $in.columns.1; $col2 = $in.columns.2",
+                "metal" : "$col0 = $in.columns[0]; $col1 = $in.columns[1]; $col2 = $in.columns[2]",
+                "c"     : "$col0 = $in.columns[0]; $col1 = $in.columns[1]; $col2 = $in.columns[2]"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "genericTypes" : ["Int"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%Range"],
+            "outParameterNames" : ["lowerBound", "upperBound"],
+            "outParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "code" : {
+                "swift" : "$lowerBound = $in.lowerBound; $upperBound = $in.upperBound",
+                "c|metal" : "$lowerBound = $in.lower_bound; $upperBound = $in.upper_bound"
+            }
+        },
+        {
+            "name" : "Decompose",
+            "showInParameterDefaultValues" : ["*"],
+            "genericTypes" : ["Float"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%Range"],
+            "outParameterNames" : ["lowerBound", "upperBound"],
+            "outParameterTypes" : ["%TYPE%", "%TYPE%"],
+            "code" : {
+                "swift"   : "$lowerBound = $in.lowerBound; $upperBound = $in.upperBound",
+                "c|metal" : "$lowerBound = $in.lower_bound; $upperBound = $in.upper_bound"
+            }
+        }
+    ]
+}

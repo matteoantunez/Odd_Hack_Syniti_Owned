@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Services_BluetoothSharing</key>
+	<dict>
+		<key>localizableStrings</key>
+		<array>
+			<dict>
+				<key>comments</key>
+				<string>ローカライズ可能な索引の用語</string>
+				<key>index</key>
+				<string>share シェア 共有, receive 受信 受け取る 受ける 受領, accept 受け付ける 受け入れる 承認 了解 受諾, browse ブラウズ 参照 検索 探索 探す 調べる, file ファイル, exchange 交換 送受信 やり取り, blue ブルー, tooth トゥース</string>
+				<key>title</key>
+				<string>Bluetooth共有</string>
+			</dict>
+			<dict>
+				<key>comments</key>
+				<string>ローカライズ可能な索引の用語</string>
+				<key>index</key>
+				<string>pair 登録 ペア ペアリング</string>
+				<key>title</key>
+				<string>ペアリングが必要</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+(function(){return function(r,e){var t=loadHelper("max_duration_for_category.js");return!!(r.reservationFor&&r.reservationFor.startDate&&r.reservationFor.endDate&&e&&eventLengthInHours(r.reservationFor.startDate,r.reservationFor.endDate)>t(e))}}).call();

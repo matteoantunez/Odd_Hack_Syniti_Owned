@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Intel Core Duo işlemciye sahip siyah veya beyaz renklerde MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip siyah veya beyaz renklerde MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip siyah veya beyaz renklerde MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip siyah veya beyaz renklerde MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (alüminyum yekpare tasarım)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2008 sonlarında tanıtılan MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (beyaz, 2009 başları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip, 2009 başlarında tanıtılan beyaz MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (beyaz, 2009 sonları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve LED ekrana sahip, 2009 sonlarında tanıtılan beyaz MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (beyaz, 2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve beyaz yekpare kasaya sahip, 2010 ortalarında tanıtılan MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12" MacBook (2015 başları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core M</string>
+			<key>description</key>
+			<string>2015 başlarında tanıtılan Retina ekranlı 12“ MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12" MacBook (2016 başları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core m3, Çift Çekirdekli Intel Core m5, Çift Çekirdekli Intel Core m7</string>
+			<key>description</key>
+			<string>2016 başlarında tanıtılan Retina ekranlı 12“ MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12" MacBook (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core m3, Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan 12“ Retina ekranlı MacBook.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(İlk Çıkan)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>11" ekrana sahip, 2010 sonlarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13" ekrana sahip, 2010 sonlarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2011 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>11" ekrana sahip, 2011 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2011 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13" ekrana sahip, 2011 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2012 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>11" ekrana sahip, 2012 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2012 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13" ekrana sahip, 2012 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2013 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>11" ekrana sahip, 2013 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2013 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13" ekrana sahip, 2013 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2015 başları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>11" ekrana sahip, 2015 başlarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2015 başları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>13" ekrana sahip, 2015 başlarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (2018 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana ve Touch ID’ye sahip 2018 sonlarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (2019 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5</string>
+			<key>description</key>
+			<string>13" Retina ekrana ve Touch ID’ye sahip 2019 ortalarında tanıtılan MacBook Air.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Intel Core Duo işlemciye ve 15" veya 17" ekrana sahip MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Intel Core Duo işlemciye ve 15" veya 17" ekrana sahip MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve 15" veya 17" ekrana sahip MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve 15" veya 17" ekrana sahip MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve 15" veya 17" ekrana sahip MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye, 15" veya 17" ekrana ve çoklu dokunmatik (Multi-Touch) izleme dörtgenine sahip MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (alüminyum yekpare tasarım) (2008 sonları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2008 sonlarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (alüminyum yekpare tasarım) (2009 başları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2009 başlarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (alüminyum yekpare tasarım) (2009 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2009 ortalarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (alüminyum yekpare tasarım) (2009 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2009 ortalarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (alüminyum yekpare tasarım) (2009 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2009 ortalarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Intel Core i5 veya Intel Core i7 işlemciye, 15" veya 17" ekrana ve alüminyum yekpare tasarıma sahip, 2010 ortalarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Intel Core i5 veya Intel Core i7 işlemciye, 15" veya 17" ekrana ve alüminyum yekpare tasarıma sahip, 2010 ortalarında tanıtılan MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye ve alüminyum yekpare tasarıma sahip, 2010 ortalarında tanıtılan 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13" (2011 başları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Çift çekirdekli Intel Core i5 veya Intel Core i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2011 başlarında tanıtılan 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15" (2011 başları)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>Dört çekirdekli Intel Core i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2011 başlarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17" (2011 başları)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>Dört çekirdekli Intel Core i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2011 başlarında tanıtılan 17" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15" (2012 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>Çift çekirdekli Intel Core i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2012 ortalarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13" (2012 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Çift çekirdekli Intel Core i5 veya Intel Core i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2012 ortalarında tanıtılan 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekrana sahip MacBook Pro, Intel Core i7, 15" (2012 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana, çift çekirdekli Intel Core i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2012 ortalarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekrana sahip MacBook Pro, Intel Core i5, Intel Core i7, 13" (2012 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana, çift çekirdekli Intel Core i5 veya i7 işlemciye ve alüminyum yekpare tasarıma sahip, 2012 sonlarında tanıtılan 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekranlı 13" MacBook Pro (2013 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana ve alüminyum yekpare tasarıma sahip, 2013 sonlarında tanıtılan 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekranlı 15" MacBook Pro (2013 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana ve alüminyum yekpare tasarıma sahip, 2013 sonlarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekrana ve ayrık NVIDIA grafik kartına sahip 15" MacBook Pro (2013 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana, alüminyum yekpare tasarıma ve ayrık NVIDIA grafik kartına sahip, 2013 sonlarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekranlı 15" MacBook Pro (2015 ortaları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana ve alüminyum yekpare tasarıma sahip, 2015 ortalarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekranlı 15" MacBook Pro (2015 ortaları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana, alüminyum yekpare tasarıma ve ayrık AMD grafik kartına sahip, 2015 ortalarında tanıtılan 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Retina ekranlı 13" MacBook Pro (2015 başları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Retina ekrana ve alüminyum yekpare tasarıma sahip, 2015 başlarında tanıtılan 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 özellikli 13" MacBook Pro (2016 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2016 sonlarında tanıtılan Thunderbolt 3 özellikli 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 ve Touch ID özellikli 13" MacBook Pro (2016 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2016 sonlarında tanıtılan Thunderbolt 3 ve Touch ID özellikli 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 ve Touch ID özellikli 15" MacBook Pro (2016 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2016 sonlarında tanıtılan Thunderbolt 3 ve Touch ID özellikli 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 özellikli 13" MacBook Pro (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan Thunderbolt 3 özellikli 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 ve Touch ID özellikli 13" MacBook Pro (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan Thunderbolt 3 ve Touch ID özellikli 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 ve Touch ID özellikli 15" MacBook Pro (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan Thunderbolt 3 ve Touch ID özellikli 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 ve Touch ID özellikli 15" MacBook Pro (2018 ortaları)</string>
+			<key>processor</key>
+			<string>Altı Çekirdekli Intel Core i7, Altı Çekirdekli Intel Core i9</string>
+			<key>description</key>
+			<string>2018 ortalarında tanıtılan Thunderbolt 3 ve Touch ID özellikli 15" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>Thunderbolt 3 ve Touch ID özellikli 13" MacBook Pro (2018 ortaları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>2018 ortalarında tanıtılan Thunderbolt 3 ve Touch ID özellikli 13" MacBook Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2006 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Büyük kasa masaüstü (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2006 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Büyük kasa masaüstü (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2007 başları)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Büyük kasa masaüstü (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2008 başları)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Büyük kasa masaüstü (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2009 başları)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>2009 başlarında tanıtılan büyük kasa masaüstü (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>2010 ortalarında tanıtılan büyük kasa masaüstü (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2013 sonları)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>2013 sonlarında tanıtılan masaüstü kasa formunda Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (2006 başları)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo, Intel Core Duo veya Intel Core Solo işlemciye sahip az yer kaplayan masaüstü Mac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (2007 ortaları)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo, Intel Core Duo veya Intel Core Solo işlemciye sahip az yer kaplayan masaüstü Mac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (2009 başları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>NVIDIA GeForce 9400M grafik işlemciye sahip 2009 başlarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>NVIDIA GeForce 320M grafik işlemciye sahip 2010 ortalarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Intel HD Graphics 3000 grafik işlemciye sahip Mac mini (2011 ortaları).</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5</string>
+			<key>description</key>
+			<string>Çift çekirdekli Intel i5 işlemciye ve Intel HD Graphics 3000 grafik işlemciye sahip 2011 ortalarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>AMD Radeon HD 6630M grafik işlemciye sahip Mac mini (2011 ortaları).</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Çift çekirdekli Intel i5 veya i7 işlemciye ve AMD Radeon HD 6630M grafik işlemciye sahip 2011 ortalarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini sunucu (2011 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Çift çekirdekli i7 işlemciye ve Intel HD Graphics 3000 grafik işlemciye sahip 2011 ortalarında tanıtılan Mac mini sunucu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2012 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5</string>
+			<key>description</key>
+			<string>Çift çekirdekli i5 işlemciye ve Intel HD Graphics 4000 grafik işlemciye sahip 2012 sonlarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2012 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Dört çekirdekli i7 işlemciye ve Intel HD Graphics 4000 grafik işlemciye sahip 2012 sonlarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2014 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5, Çift Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>Çift çekirdekli Intel işlemciye ve tümleşik grafik kartına sahip 2014 sonlarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2018 sonları)</string>
+			<key>processor</key>
+			<string>8. nesil Intel işlemci (Dört çekirdekli Core i3, Altı çekirdekli Core i5, Altı çekirdekli Core i7)</string>
+			<key>description</key>
+			<string>8. nesil Intel işlemciye ve Intel UHD graphics 630’a sahip 2018 sonlarında tanıtılan Mac mini.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Yanları oyulmuş siyah plastik ve kauçuk kasaya sahip taşınabilir bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>İlk çıkan yerleşik kulpa sahip canlı renklerdeki “istiridye kabuğu” şeklindeki taşınabilir bilgisayarları ve daha sonraki açık gri-beyaz dikdörtgen plastik kasalı 12" veya 14" düz ekrana sahip modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 işlemciye sahip beyaz renkli iBook’lar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 işlemciye sahip beyaz renkli iBook’lar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 işlemciye sahip beyaz renkli iBook’lar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>İlk çıkan 15" düz ekrana sahip ince titanyum kasa modeli ve daha sonraki 12", 15" veya 17" ekrana sahip alüminyum kasa modelleri de içerir.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Mavi-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Mavi-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Hemen hemen tüm LCD veya VGA ekranlara bağlanabilen ve az yer kaplayan masaüstü Mac G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Hemen hemen tüm LCD veya VGA ekranlara bağlanabilen ve az yer kaplayan masaüstü Mac G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alüminyum büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alüminyum büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Düz Ekran G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Özgün mavi-beyaz kasa da dahil olmak üzere, daha sonra çıkan ve aralarından seçim yapabileceğiniz birçok “çeşite” sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Özgün mavi-beyaz kasa da dahil olmak üzere, daha sonra çıkan ve aralarından seçim yapabileceğiniz birçok “çeşite” sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gri-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gri-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gri-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gri-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gri-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Gri-beyaz plastikten yapılmış büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Özgün mavi-beyaz kasa da dahil olmak üzere, daha sonra çıkan ve aralarından seçim yapabileceğiniz birçok “çeşite” sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kubbe şeklinde taban ve 15", 17" veya 20" düz ekrana sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Yerden kazandıran, köşeleri yuvarlatılmış kasada yerleşik CRT düz ekrana sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kubbe şeklinde taban ve 15", 17" veya 20" düz ekrana sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Saydam plastikten küp şeklinde masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Saydam plastikten küp şeklinde masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kubbe şeklinde taban ve 15", 17" veya 20" düz ekrana sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kubbe şeklinde taban ve 15", 17" veya 20" düz ekrana sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Yerden kazandıran, köşeleri yuvarlatılmış kasada yerleşik CRT düz ekrana sahip hepsi bir arada tasarım.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alüminyum büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alüminyum büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Düz Ekran G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Düz Ekran G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alüminyum büyük kasa masaüstü bilgisayar.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Tepsili veya kızaksız optik sürücüye ve dört genişleme yuvasına sahip raf yapısında G4 sunucu veya tek bir genişleme yuvasına sahip G4 bilgisayar kümesi bileşeni modeli.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Tepsili veya kızaksız optik sürücüye ve dört genişleme yuvasına sahip raf yapısında G4 sunucu veya tek bir genişleme yuvasına sahip G4 bilgisayar kümesi bileşeni modeli.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Kızaksız CD- veya DVD-ROM sürücüye ve üç genişleme yuvasına sahip raf yapısında G5 tabanlı sunucu bilgisayar veya genişleme yuvasına sahip olmayan bilgisayar kümesi bileşeni modeli.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2006 sonları)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 Serisi</string>
+			<key>description</key>
+			<string>Intel Xeon 5100 serisi tabanlı, 2006 sonlarında tanıtılan raf yapısında sunucu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2008 başları)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 Serisi</string>
+			<key>description</key>
+			<string>Intel Xeon 5400 serisi tabanlı, 2008 başlarında tanıtılan raf yapısında sunucu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2009 başları)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 Serisi</string>
+			<key>description</key>
+			<string>Intel Xeon 5500 serisi tabanlı, 2009 başlarında tanıtılan raf yapısında sunucu.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Düz Ekran iMac Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>Düz Ekran iMac Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Düz Ekran iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Düz Ekran iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Düz Ekran iMac Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alüminyum kasa) (2007 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip 20" veya 24" düz ekran iMac (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alüminyum kasa) (2008 başları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip 20" veya 24" düz ekran iMac (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alüminyum kasa) (2009 başları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Intel Core 2 Duo işlemciye sahip 20" veya 24" düz ekran iMac (alüminyum kasa).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (geniş ekran, 2009 sonları)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>LED geniş ekrana sahip, 2009 sonlarında tanıtılan 21,5" veya 27" iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (geniş ekran, 2009 sonları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Dört çekirdekli işlemciye ve LED geniş ekrana sahip, 2009 sonlarında tanıtılan 27" iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>LED geniş ekrana sahip, 2010 ortalarında tanıtılan 21,5" iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2010 ortaları)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>LED geniş ekrana sahip, 2010 ortalarında tanıtılan 27" iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2011 başları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt özelliğine sahip, 2011 başlarında tanıtılan 21,5" iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2011 başları)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Thunderbolt özelliğine sahip, 2011 başlarında tanıtılan 27" iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2012 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>21,5" arkadan aydınlatmalı LED geniş ekrana sahip, 2012 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2012 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>27" arkadan aydınlatmalı LED geniş ekrana sahip, 2012 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2013 başları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i3</string>
+			<key>description</key>
+			<string>21,5" arkadan aydınlatmalı LED geniş ekrana sahip, 2013 başlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2013 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>21,5" arkadan aydınlatmalı LED geniş ekrana sahip, 2013 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2013 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>27" arkadan aydınlatmalı LED geniş ekrana sahip, 2013 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2013 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i3</string>
+			<key>description</key>
+			<string>21,5" arkadan aydınlatmalı LED geniş ekrana sahip, 2013 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2014 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5</string>
+			<key>description</key>
+			<string>21,5" arkadan aydınlatmalı LED geniş ekrana sahip, 2014 ortalarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2014 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>27" arkadan aydınlatmalı LED geniş ekrana sahip, 2014 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2015 sonları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5</string>
+			<key>description</key>
+			<string>21,5" arkadan aydınlatmalı LED geniş ekrana sahip, 2015 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2015 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>21,5" geniş ekrana veya Retina 4K ekrana sahip, 2015 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2015 sonları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5, Dört Çekirdekli Intel Core i7</string>
+			<key>description</key>
+			<string>27" geniş ekrana veya Retina 5K ekrana sahip, 2015 sonlarında tanıtılan iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Çift Çekirdekli Intel Core i5</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan 21,5“ geniş ekranlı iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5/i7</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan 21,5“ Retina 4K ekranlı iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2017 ortaları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i5/i7</string>
+			<key>description</key>
+			<string>2017 ortalarında tanıtılan 27“ Retina 5K ekranlı iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2019 başları)</string>
+			<key>processor</key>
+			<string>Altı Çekirdekli Intel Core i5, Sekiz Çekirdekli Intel Core i9</string>
+			<key>description</key>
+			<string>2019 başlarında tanıtılan 27“ Retina 5K ekranlı iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5" iMac (2019 başları)</string>
+			<key>processor</key>
+			<string>Dört Çekirdekli Intel Core i3, Altı Çekirdekli Intel Core i5/i7</string>
+			<key>description</key>
+			<string>2019 başlarında tanıtılan 21,5“ Retina 4K ekranlı iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (2017 sonları)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>Xeon W işlemcisine ve Radeon Pro Vega grafik kartına sahip, 2017 sonlarında tanıtılan iMac Pro.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

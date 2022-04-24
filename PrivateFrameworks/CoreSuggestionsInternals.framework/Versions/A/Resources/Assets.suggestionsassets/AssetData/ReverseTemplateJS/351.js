@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("invitation-generic",function(e){return loadHelper("shouldDownloadMessageWithClassifier.js")(e,"invitation")},function(e){var i=loadHelper("override_to_category.js")(e);return i&&"function"==typeof i?i(e):loadHelper("invitation_generic.js")(e)},"SG21d1e073")]);

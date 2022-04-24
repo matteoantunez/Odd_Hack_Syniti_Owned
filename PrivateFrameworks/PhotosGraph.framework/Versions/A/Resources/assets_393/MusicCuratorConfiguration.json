@@ -1,0 +1,116 @@
+{
+    "version": 1,
+    "displayConfiguration": {
+        "bestMusicSuggestionsTargetSongCount": 9,
+        "bestMusicSuggestionsTargetTopicBasedSuggestionCount": 6,
+        
+        "bestMusicSuggestionsTargetShareableSongCount": 1,
+        "bestMusicSuggestionsTargetTopicBasedSuggestionShareableCount": 1,
+        
+        "considerSharableTopicBasedSongsOnly": true,
+        
+        "musicForPerformerTargetSongCount": 15,
+        "musicForYouTargetSongCount": 15,
+        "musicForLocationTargetSongCount": 15,
+        "musicForTimeTargetSongCount": 15,
+    },
+    "prefetchConfiguration": {
+        "metadataPrefetchThresholdInDays": 60,
+        "audioFilePrefetchThresholdInDays": 15,
+    },
+	"defaultScores": {
+        "personalPreferenceRanker": 0.0,
+        "topicRanker": 0.0,
+		"localeRanker": 0.0,
+        "sentimentRanker": 0.0,
+        "memoryAppropriatenessRanker": 0.5,
+        "recentlyUsedRanker": 0.0,
+	},
+    "scoreThresholds": {
+        "highArousalThreshold": 0.59,
+        "memoryAppropriateHighThreshold": 0.9,
+        "memoryNotAppropriateHighThreshold": 0.9,
+    },
+    "musicForPerformer": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.6,
+        "topicWeight": 0.0,
+        "localeWeight": 0.09,
+        "randomWeight": 0.0,
+        "sentimentWeight": 0.0,
+        "memoryAppropriatenessWeight": 0.26,
+        "recentlyUsedWeight": 0.05,
+    },
+    "musicForTopic": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.28,
+        "topicWeight": 0.32,
+        "localeWeight": 0.05,
+        "randomWeight": 0.00,
+        "sentimentWeight": 0.09,
+        "memoryAppropriatenessWeight": 0.0,
+        "recentlyUsedWeight": 0.26,
+
+        "exponentiationRadix": 1000000000.0,
+        "memoryKeywordWeightMultiplier": 10.0,
+        
+        "maximumNumberOfSuggestionsToElect": 100,
+    },
+    "musicForYouFavorites": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.3,
+        "topicWeight": 0.0,
+        "localeWeight": 0.2,
+        "randomWeight": 0.0,
+        "sentimentWeight": 0.25,
+        "memoryAppropriatenessWeight": 0.15,
+        "recentlyUsedWeight": 0.1,
+    },
+    "musicForYouChill": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.3,
+        "topicWeight": 0.0,
+        "localeWeight": 0.2,
+        "randomWeight": 0.0,
+        "sentimentWeight": 0.15,
+        "memoryAppropriatenessWeight": 0.3,
+        "recentlyUsedWeight": 0.05,
+    },
+    "musicForYouGetUp": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.2,
+        "topicWeight": 0.0,
+        "localeWeight": 0.19,
+        "randomWeight": 0.0,
+        "sentimentWeight": 0.16,
+        "memoryAppropriatenessWeight": 0.3,
+        "recentlyUsedWeight": 0.15,
+    },
+    "musicForLocation": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.31,
+        "topicWeight": 0.0,
+        "localeWeight": 0.19,
+        "randomWeight": 0.0,
+        "sentimentWeight": 0.15,
+        "memoryAppropriatenessWeight": 0.25,
+        "recentlyUsedWeight": 0.1,
+    },
+    "musicForTime": {
+        "bestSuggestionScoreThreshold": 0.0,
+        
+        "personalPreferenceWeight": 0.35,
+        "topicWeight": 0.0,
+        "localeWeight": 0.2,
+        "randomWeight": 0.0,
+        "sentimentWeight": 0.15,
+        "memoryAppropriatenessWeight": 0.15,
+        "recentlyUsedWeight": 0.15,
+    }
+}

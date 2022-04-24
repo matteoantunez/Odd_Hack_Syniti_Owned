@@ -1,0 +1,12 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.BooleanResponses
+extends: homeAutomation.EntityResponses
+    
+properties:
+  trueResponses:
+    type: homeAutomation.BooleanResponses
+    description: Returns the sublist of BooleanResponses filtered to include only those with a true state value.
+  falseResponses:
+    type: homeAutomation.BooleanResponses
+    description: Returns the sublist of BooleanResponses filtered to include only those with a false state value.

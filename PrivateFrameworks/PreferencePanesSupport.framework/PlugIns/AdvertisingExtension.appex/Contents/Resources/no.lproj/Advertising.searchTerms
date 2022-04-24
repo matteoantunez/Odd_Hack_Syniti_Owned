@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Advertising.searchTerms.plist
+   SearchAds
+
+   Created by Sunny Patel on 8/6/19.
+   Copyright (c) 2019 Apple Inc.. All rights reserved.
+
+   A searchTerms extension is a reference to all UI elements that we'd like to reveal to the system.
+   The title is a localizable string which can be indexed and searched, which should be short and meaningful. This will be user facing.
+   The index strings will be indexed for search, but will never be shown to the user. Think of this as keyword matching so it
+   is completely acceptable to include common mis-spellings or alternate meanings.
+
+   In our case, we only need this anchor (Apple lingo for UI sections) functional with the openURL API in order to
+   invoke this macOS-only view from an iOSMac framework.
+-->
+<plist version="1.0">
+<dict>
+    <key>Privacy_Advertising</key>
+    <dict>
+        <key>localizableStrings</key>
+        <array>
+            <dict>
+                <key>index</key>
+                <string>Personlig tilpassede annonser, vis annonseinformasjon, vis informasjon om målrettede annonser, om annonser og personvern, annonser levert av Apple</string>
+                <key>title</key>
+                <string>Innstillinger for annonser levert av Apple</string>
+            </dict>
+        </array>
+    </dict>
+</dict>
+</plist>

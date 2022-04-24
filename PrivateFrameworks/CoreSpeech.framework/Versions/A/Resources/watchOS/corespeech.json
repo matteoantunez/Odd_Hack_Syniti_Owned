@@ -1,0 +1,15 @@
+{
+    "voiceTriggerSecondPass": {
+        "threshold": 2.2, 
+        "2ndChanceThreshold": 1.91, 
+        "loggingThreshold": 1.91, 
+        "configFileNDAPI": "config.txt"
+    }, 
+    "version": "1", 
+    "continuousVoiceTrigger": {
+        "threshold": 2.2,
+        "twoShotDecisionWaitTime": 0.65,
+        "twoShotThreshold": 0.259,
+        "configFileNDAPI": "config_cs.txt"
+    }
+}

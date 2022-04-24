@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>((ven a|venid a|venir(te)? a)(?! (buscarl|recogerl)(a|o))|(pasa(te|ros)) por|(p[aá]sate|pasaos) por)</string>
+			<string>((vamos a|te apetece|quieres) quedar|(?&lt;!aunque )quedemos (a|por|el)|por qu[eé] no quedamos)</string>
+			<string>quedar (contigo|con vosotros)</string>
+			<string>nos vemos all[ií]</string>
+			<string>(ven|venid|veng[aá]is|vengas|vengan?) (.{0,50}) (mi|tu|su|nuestr[ao]|vuestr[ao]) (casa|piso|apartamento)</string>
+			<string>invitad(os?|as?) a</string>
+			<string>((te|os) invit(o|amos)|invitar(te|os))</string>
+			<string>(est[aá]s invitado|est[aá]is invitados)</string>
+			<string>invitaci([oó]n|nes)</string>
+			<string>quedada</string>
+			<string>ap[uú]ntate la fecha</string>
+			<string>vente conmigo a</string>
+			<string>vamos al? .{0,15} el proximo</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@ con %2$@</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

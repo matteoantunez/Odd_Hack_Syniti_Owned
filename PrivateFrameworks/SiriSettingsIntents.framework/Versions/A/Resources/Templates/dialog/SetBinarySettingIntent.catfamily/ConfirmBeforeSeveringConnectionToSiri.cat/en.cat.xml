@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ConfirmBeforeSeveringConnectionToSiri" locale="en">
+    <first>
+    	<all condition="deviceState.isHomePod">
+			<dialog>If I do that, you'll need to press the top of this HomePod to get my attention.</dialog>
+			<dialog>Should I go ahead and turn off 'Hey Siri'?</dialog>
+		</all>
+		<first>
+			<all condition="requestedValue">
+                <dialog>I may stop working if you turn <var name="setting.name"/> on.</dialog>
+                <dialog>Should I go ahead and turn on <var name="setting.name"/>?</dialog>
+            </all>
+            <all>
+                <dialog>I may stop working if you turn <var name="setting.name"/> off.</dialog>
+                <dialog>Should I go ahead and turn off <var name="setting.name"/>?</dialog>
+            </all>
+		</first>
+    </first>
+</cat>

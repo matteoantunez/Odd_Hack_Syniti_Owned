@@ -1,0 +1,1031 @@
+{
+  "layers" : [
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block1_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "cnn_block1_conv1__activation___output",
+      "blob_weights" : 3,
+      "K" : 1,
+      "blob_biases" : 1,
+      "name" : "cnn_block1_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 16,
+      "bottom" : "img_input",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 1,
+      "debug_info" : "cnn_block1_pool",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "cnn_block1_pool_output",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "cnn_block1_pool",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "cnn_block1_conv1__activation___output",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block2_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "cnn_block2_conv1__activation___output",
+      "K" : 16,
+      "blob_biases" : 5,
+      "quantization_lut_weights_blob" : 7,
+      "name" : "cnn_block2_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "cnn_block1_pool_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 9
+    },
+    {
+      "pad_r" : 1,
+      "debug_info" : "cnn_block2_pool",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "cnn_block2_pool_output",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "cnn_block2_pool",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "cnn_block2_conv1__activation___output",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block3_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "cnn_block3_act1_output",
+      "K" : 32,
+      "blob_biases" : 11,
+      "quantization_lut_weights_blob" : 13,
+      "name" : "cnn_block3_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "cnn_block2_pool_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 15
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block3_conv2",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "cnn_block3_conv2__activation___output",
+      "K" : 64,
+      "blob_biases" : 17,
+      "quantization_lut_weights_blob" : 19,
+      "name" : "cnn_block3_conv2",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "cnn_block3_act1_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 21
+    },
+    {
+      "pad_r" : 1,
+      "debug_info" : "cnn_block3_pool",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "cnn_block3_pool_output",
+      "top_shape_style" : 0,
+      "stride_x" : 1,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "cnn_block3_pool",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "cnn_block3_conv2__activation___output",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block4_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "cnn_block4_act1_output",
+      "K" : 64,
+      "blob_biases" : 23,
+      "quantization_lut_weights_blob" : 25,
+      "name" : "cnn_block4_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "cnn_block3_pool_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 27
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block4_conv2",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "cnn_block4_conv2__activation___output",
+      "K" : 128,
+      "blob_biases" : 29,
+      "quantization_lut_weights_blob" : 31,
+      "name" : "cnn_block4_conv2",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "cnn_block4_act1_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 33
+    },
+    {
+      "pad_r" : 1,
+      "debug_info" : "cnn_block4_pool",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "cnn_block4_pool_output",
+      "top_shape_style" : 0,
+      "stride_x" : 1,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "cnn_block4_pool",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "cnn_block4_conv2__activation___output",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "cnn_block5_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "cnn_feature_map_output",
+      "K" : 128,
+      "blob_biases" : 35,
+      "quantization_lut_weights_blob" : 37,
+      "name" : "cnn_block5_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "cnn_block4_pool_output",
+      "weights" : {
+
+      },
+      "Nx" : 2,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 2,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 39
+    },
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "rnn_block1_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 1,
+      "top" : "rnn_block1_act1_output",
+      "K" : 128,
+      "blob_biases" : 41,
+      "quantization_lut_weights_blob" : 43,
+      "name" : "rnn_block1_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "cnn_feature_map_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 45
+    },
+    {
+      "pad_r" : 2,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "rnn_block2_conv1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 2,
+      "top" : "rnn_block2_act1_output",
+      "K" : 128,
+      "blob_biases" : 47,
+      "quantization_lut_weights_blob" : 49,
+      "name" : "rnn_block2_conv1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "rnn_block1_act1_output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "dilation_x" : 2,
+      "pad_value" : 0,
+      "Ny" : 1,
+      "n_parallel" : 1,
+      "quantization_ranges_blob" : 51
+    },
+    {
+      "axis_seq" : 0,
+      "top" : "top_act_prepare_output",
+      "name" : "top_act_prepare",
+      "axis_n" : 3,
+      "axis_h" : 1,
+      "type" : "transpose",
+      "axis_w" : 4,
+      "bottom" : "rnn_block2_act1_output",
+      "axis_k" : 2,
+      "debug_info" : "top_act_prepare",
+      "weights" : {
+
+      },
+      "hint_fallback_from_ane" : 1
+    },
+    {
+      "nB" : 128,
+      "top" : "logits_output",
+      "has_biases" : 1,
+      "weights" : {
+        "w_f32_t" : 55
+      },
+      "nC" : 3,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "top_act_prepare_output",
+      "blob_biases" : 53,
+      "has_tanh" : 0,
+      "debug_info" : "logits",
+      "name" : "logits",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "logits_output",
+      "attributes" : {
+        "is_output" : 1
+      },
+      "weights" : {
+
+      },
+      "debug_info" : "output_label_prob_map",
+      "top" : "output_label_prob_map",
+      "C" : 2,
+      "type" : "softmax",
+      "name" : "output_label_prob_map"
+    }
+  ],
+  "storage" : "model.espresso.weights",
+  "metadata_in_weights" : [
+
+  ],
+  "properties" : {
+    "ane_compiler_batch" : "1",
+    "espresso.dispatch.v3_enable" : "0"
+  },
+  "analyses" : {
+
+  },
+  "format_version" : 200,
+  "configurations" : {
+    "img_input_1_4_1_32_1700_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1700,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_400_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 400,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1950_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1950,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_850_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 850,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2200_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2200,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2450_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2450,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_500_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 500,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1600_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1600,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_950_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 950,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1850_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1850,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2100_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2100,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_600_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 600,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2350_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2350,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1500_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1500,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1750_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1750,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_700_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 700,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2000_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2000,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2250_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2250,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1400_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1400,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_800_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 800,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1650_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1650,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2150_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2150,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_900_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 900,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1300_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1300,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1550_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1550,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2050_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2050,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1200_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1200,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2900_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2900,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1450_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1450,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2800_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2800,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1100_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1100,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1350_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1350,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_9_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 9,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_150_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 150,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2700_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2700,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1000_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1000,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1250_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1250,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2950_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2950,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_250_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 250,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2600_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2600,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2850_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2850,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_350_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 350,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1150_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1150,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_450_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 450,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2500_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2500,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2750_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2750,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1050_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1050,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_100_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 100,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1900_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1900,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_3000_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 3000,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_550_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 550,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2400_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2400,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2650_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2650,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_200_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 200,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_650_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 650,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_1800_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 1800,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_300_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 300,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2300_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2300,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_2550_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 2550,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    },
+    "img_input_1_4_1_32_750_" : {
+      "input_shapes" : {
+        "img_input" : {
+          "k" : 1,
+          "w" : 750,
+          "n" : 4,
+          "h" : 32
+        }
+      }
+    }
+  }
+}

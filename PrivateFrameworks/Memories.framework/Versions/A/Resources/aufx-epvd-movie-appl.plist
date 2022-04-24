@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ViterbiModelData</key>
+	<dict>
+		<key>MeanNonspeechRegionSec</key>
+		<real>0.80</real>
+		<key>MeanSpeechRegionSec</key>
+		<real>1.30</real>
+		<key>ObservationModelParams</key>
+		<data>
+		AAAAAgAAAAg/GE2VPXNIXT12bdc8ue9MPTnyZz18+wo9wQ1fPXtwqz5nBbc9RFJiPQGytTzAh1A9hbzRPZCCKj5VLgg+p41KP3DAuzxLhw48vZH2O2jgGDwvyPQ7nqxYOvBskTtHBdI+c0p3PyAuqzwpIpQ9UR+UO0+RKj0+JvQ7AzCAPMJgTT57wyg87AEvPxa3hz1D8Go7cewwO8IzGj2FvrI8Yp2IPTqpLT5wQzg+Asz3Puj9MjcpZ/88hjyoPHQm2T3YfPQ9sPJcO9C7eDvEpz46kvtZPy22sT3URF09zLarPJLr9TuSKWw9z9h6OZHRdzwC4xg9RluBPzeP+TwQn9495FU3PDH9qjtU5P49jNOaPAUkJz1AOyk77Pk8P02bvz1Tq8M6klslPF7tCzxRVnM9RS35PBKgLj3AhXY+A6llPzFdXD9i9ZU8n6tSPLpnRzv7SL49EE6qPGsj1DuPd388HLbyPnkffj8Uf0Q8HrrGPUoeSTwC6f09amIiOp6X5z1Rr2c+U09kPQsCBD8RcUI9ao9OPBvkkjtvIME9s1SQPQmIrjy1HWw+jpBQPabd+z7bK506AcF4PGGrMzyNBDg+Ijh/PZBcwzuoxYQ7kaiYOjo0JD8mPdo9vNrzPgYYoD0/GeY8XKUOPYwDfjoBXpA7rHiLPYQsOT8XcHU8MeORPntYpjuK2/Q6is0XPNbPxzumQGQ9Kg82O6KuKz9YHW89lPEeOfHGATwRRWg6rDuxPJr/FDtDdHg9QCr4PW3NhD9cy58+5GtHPev3ZD4PGKc9E9MNPiLfBD0oQK89TBDZPFLO9z2SR889gVO4PdMFqD26kLU+FV4jPgQOdD5Xecc+PoCxP2Fo4T0aBJ09O5U/OwAr+jz+88U6rjQwOtQq/DiQ+F0+FKx/P0XeCzv3cuU9JKmiO6goxDzfzNc5i/CfOro+Wz4VWs07zBouP0fLgj0IhBY7qO3qOWbaKzzh+vo6mmhwPMUFLD4DGvk+A8dxPy9h5zpe14w7lEnKO5UM3DzGXko9sHSrO3EjMjuS2Bs5SKvlP1NR6j0QZAs9L9uUOvBR/TxoxTY9muUeOkG1XTuA5s4+C2FyPzl/zjvn+0M9Gl67PGnWHDofxps9nGdpO1W8Sj4MBNo7v1gsPztObDz/9ys7GjtYPE1DsDxOUbY9iUsVPLi0fj310hg99xV4PyRrdz8+2Y49hP2nPcBtnzwGFzg9kj6+O8vRPzwTdF46TYDEPZW5pj88wg88FvalPb5RsjvldsE9kKRlOmdckjwR1qI9hPSSO7lLvj9GSLA9iivSO8vDUzoN/To9l/EUO9PBsDvQnJ89g3+DPZuOsD9EHFQ6H9sVO8mHlzvuZvE9lkbAPQ92LTtH8Co7kKXpOcmXeD9IKgM9i3s6PcnRzDwMook7YRi2PQ3jpDni9Ug7jxAMPZ0ITD9F+GE8HlTEPcebhTtH4oI5i0lmPRUMwjtPuew9i3GzO8JWzz9P9gc9kOoeOZzQMztFsag7ad1ZPRNqizvayv49iepwPaMmND9NroQ=
+		</data>
+	</dict>
+	<key>AUOneChannelNS</key>
+	<dict>
+		<key>NoiseSuppress</key>
+		<real>-18.00</real>
+		<key>V1Mode</key>
+		<integer>0</integer>
+		<key>ThresholdMultiplier</key>
+		<real>1.00</real>
+		<key>ThresholdPower</key>
+		<real>0.00</real>
+		<key>ThresholdMultiplierLUT</key>
+		<data>
+		AAAAAgAAAAA/gAAARXoAAD+AAAA=
+		</data>
+	</dict>
+</dict>
+</plist>

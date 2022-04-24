@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>GroupName</key>
+	<string>_rmd</string>
+	<key>Label</key>
+	<string>com.apple.remotemanagementd</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.distnoted.matching</key>
+		<dict>
+			<key>com.apple.remotemanagement.cloudConfigAvailable</key>
+			<dict>
+				<key>Name</key>
+				<string>CPCloudConfigIsMDMv2Notification</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.aps.remotemanagementd.http.apns-dev</key>
+		<true/>
+		<key>com.apple.aps.remotemanagementd.http.apns-prod</key>
+		<true/>
+		<key>com.apple.remotemanagementd</key>
+		<true/>
+		<key>com.apple.remotemanagementd.store</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/RemoteManagement.framework/remotemanagementd</string>
+	<key>PublishesEvents</key>
+	<string>com.apple.remotemanagement.configs.daemon</string>
+	<key>UserName</key>
+	<string>_rmd</string>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+(function(){return function(n,t){for(var e,i=0;i<n.ticketToken.length&&(!e||!e.exists());i++)e=t.getSpan().next(n.ticketToken[i]).nextLink();return e}}).call();

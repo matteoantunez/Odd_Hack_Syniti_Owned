@@ -1,0 +1,85 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../../shared/cam.scnz"
+  },
+  "emoji" : "😅",
+  "identifier" : "grinning_face_with_sweat",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "dragon" : {
+      "L_mustache_DYN" : {
+        "offset" : [
+          -0.35239601135253906,
+          9.1552734375e-05,
+          2.86102294921875e-05
+        ]
+      },
+      "L_upperTendrils_DYN" : {
+        "offset" : [
+          -0.49322700500488281,
+          -0.000156402587890625,
+          0.00025606155395507812
+        ]
+      },
+      "R_mustache_DYN" : {
+        "offset" : [
+          0.35239744186401367,
+          -8.869171142578125e-05,
+          -2.765655517578125e-05
+        ]
+      },
+      "R_upperTendrils_DYN" : {
+        "offset" : [
+          0.49322128295898438,
+          0.0001544952392578125,
+          -0.00025606155395507812
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browDown_L" : 0.68045121431350708,
+    "browInnerUp" : 0.46013689041137695,
+    "browOuterUp_R" : 0.72180473804473877,
+    "cheekSquint_L" : 0.94896173477172852,
+    "cheekSquint_R" : 0.7841566801071167,
+    "eyeBlink_L" : 0.029587259516119957,
+    "eyeBlink_R" : 0.070509724318981171,
+    "eyeSquint_L" : 0.97040998935699463,
+    "eyeSquint_R" : 0.88519221544265747,
+    "jawOpen" : 0.307973712682724,
+    "mouthDimple_L" : 0.95867753028869629,
+    "mouthDimple_R" : 0.79614299535751343,
+    "mouthSmile_L" : 0.99881953001022339,
+    "mouthSmile_R" : 0.5977470874786377,
+    "mouthStretch_L" : 0.15426994860172272,
+    "mouthStretch_R" : 0.10468319803476334,
+    "mouthUpperUp_L" : 0.29201102256774902,
+    "mouthUpperUp_R" : 0.24517898261547089,
+    "neckOrientation" : [
+      0,
+      0,
+      0,
+      1
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "image" : "../../../shared/grinning_face_with_sweat/tear.heic",
+      "position" : {
+        "x" : 0.68999999999999995,
+        "y" : 0.55000000000000004,
+        "z" : 30
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#AppNotInstalledForAnnounceNotifications">
+    <meta name="description" value="Siri cannot modify Announce Notifications settings for an app that isn't installed on the device."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters>
+        <parameter name="appName" type="sirikit.App" description="The name of the app that user requested to mutate notification settings for."/>
+    </parameters>
+
+</cat>

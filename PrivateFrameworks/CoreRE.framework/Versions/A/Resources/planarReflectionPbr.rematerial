@@ -1,0 +1,13 @@
+{
+    "Name": "PlanarReflectionPbr",
+    "MaterialDefinition": "planarReflectionPbr.rematerialdefinition",
+    "Parameters": {
+        "Constants": {
+            "baseColorTint"     : "[1,1,1,1]",
+            "metallicScale"     : "1",
+            "roughnessScale"    : "0",
+            "specularScale"     : "0.5",
+        },
+    }
+}
+

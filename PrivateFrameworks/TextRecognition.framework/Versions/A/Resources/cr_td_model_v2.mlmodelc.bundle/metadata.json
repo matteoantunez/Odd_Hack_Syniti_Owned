@@ -1,0 +1,81 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "shortDescription" : "",
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1 x 120 x 120 | 1 x 120 x 120",
+        "formattedType" : "MultiArray (Float32 1 x 120 x 120)",
+        "type" : "MultiArray",
+        "shape" : "[1, 120, 120]",
+        "name" : "f_score_act_sigmoid_output",
+        "enumeratedShapes" : "[[1, 120, 120], [1, 120, 120]]"
+      },
+      {
+        "shortDescription" : "",
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "5 x 120 x 120 | 5 x 120 x 120",
+        "formattedType" : "MultiArray (Float32 5 x 120 x 120)",
+        "type" : "MultiArray",
+        "shape" : "[5, 120, 120]",
+        "name" : "geometry_output",
+        "enumeratedShapes" : "[[5, 120, 120], [5, 120, 120]]"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 3,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.14",
+      "tvOS" : "12.0",
+      "iOS" : "12.0",
+      "watchOS" : "5.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "formattedType" : "Image (Color 480 x 480)",
+        "hasSizeFlexibility" : "1",
+        "shortDescription" : "",
+        "enumeratedSizes" : "[[480, 480], [480, 480]]",
+        "width" : "480",
+        "type" : "Image",
+        "isColor" : "1",
+        "height" : "480",
+        "sizeFlexibility" : "480 x 480 | 480 x 480",
+        "colorspace" : "RGB",
+        "name" : "data",
+        "isOptional" : "0"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.3"
+    },
+    "generatedClassName" : "mqyqtytih6_flexible_0105",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 4,
+      "Multiply" : 3,
+      "ActivationReLU" : 38,
+      "Padding" : 18,
+      "Add" : 1,
+      "Crop" : 3,
+      "Convolution" : 44,
+      "ActivationSigmoid" : 3,
+      "Batchnorm" : 38
+    },
+    "method" : "predict"
+  }
+]

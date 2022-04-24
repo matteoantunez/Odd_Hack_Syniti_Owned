@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<integer>1</integer>
+	<key>criteria</key>
+	<array>
+		<dict>
+			<key>POI</key>
+			<dict>
+				<key>positivePOIs</key>
+				<array>
+					<string>Nightlife</string>
+					<string>Culture</string>
+					<string>Entertainment</string>
+					<string>Performance</string>
+				</array>
+				<key>minimumNumberOfPOIs</key>
+				<integer>1</integer>
+			</dict>
+			<key>Scene</key>
+			<dict>
+				<key>negativeScenes</key>
+				<array>
+					<string>toy</string>
+				</array>
+				<key>positiveScenes</key>
+				<array>
+					<string>performance</string>
+					<string>clown</string>
+					<string>ballet_dancer</string>
+					<string>acrobat</string>
+					<string>ballet</string>
+					<string>breakdancing</string>
+					<string>bellydance</string>
+					<string>magic</string>
+					<string>circus</string>
+					<string>orchestra</string>
+				</array>
+				<key>minimumNumberOfPositiveScenes</key>
+				<integer>1</integer>
+				<key>minimumNumberOfAssetsWithPositiveScenes</key>
+				<integer>4</integer>
+			</dict>
+			<key>Location</key>
+			<dict>
+				<key>excludeHomeWorkLocations</key>
+				<true/>
+			</dict>
+			<key>PartsOfDay</key>
+			<dict>
+				<key>positiveSignificantPartsOfDay</key>
+				<array>
+					<string>Evening</string>
+					<string>Night</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

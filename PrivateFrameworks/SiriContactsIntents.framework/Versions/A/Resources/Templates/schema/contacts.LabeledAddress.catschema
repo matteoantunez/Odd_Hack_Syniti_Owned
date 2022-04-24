@@ -1,0 +1,17 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.LabeledAddress
+
+inputs:
+    label:
+        access_mode: public
+    addressString:
+        access_mode: public
+    
+properties:
+    label:
+        type: dialog.String
+        description: Label of this address, if it has one -- "work"
+    addressString:
+        type: dialog.String
+        description: A formatted SpeakableString of the address -- "1 Infinite Loop"

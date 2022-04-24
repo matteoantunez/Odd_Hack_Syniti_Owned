@@ -1,0 +1,893 @@
+{
+    "supportedLanguages" : ["swift"],
+    "contexts": {
+        "(Float,Float,Float,Float,Float)->(Float)" : {
+          "inParameterNames" : [
+            "fromStartRange",
+            "fromEndRange",
+            "toStartRange",
+            "toEndRange",
+            "v"
+          ],
+          "uid" : "E2B5AE7C-0BF1-41B0-BE83-33349C631DCA",
+          "metadataDict" : {
+            "name" : {
+              "keyName" : "name",
+              "valueType" : "String",
+              "name" : "Remap"
+            },
+            "showInParameterDefaultValues" : { "keyName" : "showInParameterDefaultValues",  "valueType" : "StringArray",  "showInParameterDefaultValues" : ["fromStartRange", "fromEndRange", "toStartRange", "toEndRange"] },
+            "fromStartRange.defaultValue" : { "defaultValue" : -1.0, "keyName" : "defaultValue", "valueType" : "Float" },
+            "fromEndRange.defaultValue" : { "defaultValue" : 1.0, "keyName" : "defaultValue", "valueType" : "Float" },
+            "toStartRange.defaultValue" : { "defaultValue" : 0.0, "keyName" : "defaultValue", "valueType" : "Float" },
+            "toEndRange.defaultValue" : { "defaultValue" : 1.0, "keyName" : "defaultValue", "valueType" : "Float" },
+            "v.defaultValue" : { "defaultValue" : 0.5, "keyName" : "defaultValue", "valueType" : "Float" },
+            "defaultInParameter" : {  "keyName" : "defaultInParameter",  "valueType" : "String",  "defaultInParameter" : "v"  }
+          },
+          "contextExitMap" : {
+            "Remap" : {
+              "inParameterTypes" : [
+                "Float"
+              ],
+              "inParameterNames" : [
+                "out"
+              ],
+              "uid" : "Remap",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Outputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    261.7327880859375,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "contextEntryMap" : {
+            "Remap" : {
+              "outParameterNames" : [
+                "fromStartRange",
+                "fromEndRange",
+                "toStartRange",
+                "toEndRange",
+                "v"
+              ],
+              "uid" : "Remap",
+              "outParameterTypes" : [
+                "Float",
+                "Float",
+                "Float",
+                "Float",
+                "Float"
+              ],
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap"
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Inputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -476.74240112304688,
+                    -12.712786674499512
+                  ]
+                }
+              }
+            }
+          },
+          "snippets" : {
+            "Remap01_52" : {
+              "snippetName" : "Remap01",
+              "snippetSignature" : "(Float,Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap01 (Float)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -226.74240112304688,
+                    -12.712786674499512
+                  ]
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap01"
+                }
+              }
+            },
+            "Mix_53" : {
+              "snippetName" : "Mix",
+              "snippetSignature" : "(Float,Float,Float)->(Float)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mix"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    11.732799530029297,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "outParameterNames" : [
+            "out"
+          ],
+          "idx" : 0,
+          "assignments" : [
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "out",
+              "baseType" : "ContextExit"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "endRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "startRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "v",
+              "baseType" : "ContextEntry"
+            }
+          ],
+          "outParameterTypes" : [
+            "Float"
+          ],
+          "inParameterTypes" : [
+            "Float",
+            "Float",
+            "Float",
+            "Float",
+            "Float"
+          ]
+        },
+        "(Float2,Float2,Float2,Float2,Float2)->(Float2)" : {
+          "inParameterNames" : [
+            "fromStartRange",
+            "fromEndRange",
+            "toStartRange",
+            "toEndRange",
+            "v"
+          ],
+          "uid" : "1d4709b7-8729-40e6-aad9-ed65eea4911b",
+          "metadataDict" : {
+            "name" : {
+              "keyName" : "name",
+              "valueType" : "String",
+              "name" : "Remap"
+            },
+            "showInParameterDefaultValues" : { "keyName" : "showInParameterDefaultValues",  "valueType" : "StringArray",  "showInParameterDefaultValues" : ["fromStartRange", "fromEndRange", "toStartRange", "toEndRange"] },
+            "fromStartRange.defaultValue" : { "defaultValue" : [-1.0, -1.0], "keyName" : "defaultValue", "valueType" : "Float2" },
+            "fromEndRange.defaultValue" : { "defaultValue" : [1.0, 1.0], "keyName" : "defaultValue", "valueType" : "Float2" },
+            "toStartRange.defaultValue" : { "defaultValue" : [0.0, 0.0], "keyName" : "defaultValue", "valueType" : "Float2" },
+            "toEndRange.defaultValue" : { "defaultValue" : [1.0, 1.0], "keyName" : "defaultValue", "valueType" : "Float2" },
+            "v.defaultValue" : { "defaultValue" : [0.5, 0.5], "keyName" : "defaultValue", "valueType" : "Float2" },
+            "defaultInParameter" : {  "keyName" : "defaultInParameter",  "valueType" : "String",  "defaultInParameter" : "v"  }
+          },
+          "contextExitMap" : {
+            "Remap" : {
+              "inParameterTypes" : [
+                "Float2"
+              ],
+              "inParameterNames" : [
+                "out"
+              ],
+              "uid" : "Remap",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Outputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    261.7327880859375,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "contextEntryMap" : {
+            "Remap" : {
+              "outParameterNames" : [
+                "fromStartRange",
+                "fromEndRange",
+                "toStartRange",
+                "toEndRange",
+                "v"
+              ],
+              "uid" : "Remap",
+              "outParameterTypes" : [
+                "Float2",
+                "Float2",
+                "Float2",
+                "Float2",
+                "Float2"
+              ],
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap"
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Inputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -476.74240112304688,
+                    -12.712786674499512
+                  ]
+                }
+              }
+            }
+          },
+          "snippets" : {
+            "Remap01_52" : {
+              "snippetName" : "Remap01",
+              "snippetSignature" : "(Float2,Float2,Float2)->(Float2)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap01 (Float2)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -226.74240112304688,
+                    -12.712786674499512
+                  ]
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap01"
+                }
+              }
+            },
+            "Mix_53" : {
+              "snippetName" : "Mix",
+              "snippetSignature" : "(Float2,Float2,Float2)->(Float2)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mix"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    11.732799530029297,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "outParameterNames" : [
+            "out"
+          ],
+          "idx" : 0,
+          "assignments" : [
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "out",
+              "baseType" : "ContextExit"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "endRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "startRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "v",
+              "baseType" : "ContextEntry"
+            }
+          ],
+          "outParameterTypes" : [
+            "Float2"
+          ],
+          "inParameterTypes" : [
+            "Float2",
+            "Float2",
+            "Float2",
+            "Float2",
+            "Float2"
+          ]
+        },
+        "(Float3,Float3,Float3,Float3,Float3)->(Float3)" : {
+          "inParameterNames" : [
+            "fromStartRange",
+            "fromEndRange",
+            "toStartRange",
+            "toEndRange",
+            "v"
+          ],
+          "uid" : "2d93e3c4-bf83-4c93-a2ca-b7b24efdc821",
+          "metadataDict" : {
+            "name" : {
+              "keyName" : "name",
+              "valueType" : "String",
+              "name" : "Remap"
+            },
+            "showInParameterDefaultValues" : { "keyName" : "showInParameterDefaultValues",  "valueType" : "StringArray",  "showInParameterDefaultValues" : ["fromStartRange", "fromEndRange", "toStartRange", "toEndRange"] },
+            "fromStartRange.defaultValue" : { "defaultValue" : [-1.0, -1.0, -1.0], "keyName" : "defaultValue", "valueType" : "Float3" },
+            "fromEndRange.defaultValue" : { "defaultValue" : [1.0, 1.0, 1.0], "keyName" : "defaultValue", "valueType" : "Float3" },
+            "toStartRange.defaultValue" : { "defaultValue" : [0.0, 0.0, 0.0], "keyName" : "defaultValue", "valueType" : "Float3" },
+            "toEndRange.defaultValue" : { "defaultValue" : [1.0, 1.0, 1.0], "keyName" : "defaultValue", "valueType" : "Float3" },
+            "v.defaultValue" : { "defaultValue" : [0.5, 0.5, 0.5], "keyName" : "defaultValue", "valueType" : "Float3" },
+            "defaultInParameter" : {  "keyName" : "defaultInParameter",  "valueType" : "String",  "defaultInParameter" : "v"  }
+          },
+          "contextExitMap" : {
+            "Remap" : {
+              "inParameterTypes" : [
+                "Float3"
+              ],
+              "inParameterNames" : [
+                "out"
+              ],
+              "uid" : "Remap",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Outputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    261.7327880859375,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "contextEntryMap" : {
+            "Remap" : {
+              "outParameterNames" : [
+                "fromStartRange",
+                "fromEndRange",
+                "toStartRange",
+                "toEndRange",
+                "v"
+              ],
+              "uid" : "Remap",
+              "outParameterTypes" : [
+                "Float3",
+                "Float3",
+                "Float3",
+                "Float3",
+                "Float3"
+              ],
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap"
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Inputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -476.74240112304688,
+                    -12.712786674499512
+                  ]
+                }
+              }
+            }
+          },
+          "snippets" : {
+            "Remap01_52" : {
+              "snippetName" : "Remap01",
+              "snippetSignature" : "(Float3,Float3,Float3)->(Float3)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap01 (Float3)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -226.74240112304688,
+                    -12.712786674499512
+                  ]
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap01"
+                }
+              }
+            },
+            "Mix_53" : {
+              "snippetName" : "Mix",
+              "snippetSignature" : "(Float3,Float3,Float3)->(Float3)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mix"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    11.732799530029297,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "outParameterNames" : [
+            "out"
+          ],
+          "idx" : 0,
+          "assignments" : [
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "out",
+              "baseType" : "ContextExit"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "endRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "startRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "v",
+              "baseType" : "ContextEntry"
+            }
+          ],
+          "outParameterTypes" : [
+            "Float3"
+          ],
+          "inParameterTypes" : [
+            "Float3",
+            "Float3",
+            "Float3",
+            "Float3",
+            "Float3"
+          ]
+        },
+        "(Float4,Float4,Float4,Float4,Float4)->(Float4)" : {
+          "inParameterNames" : [
+            "fromStartRange",
+            "fromEndRange",
+            "toStartRange",
+            "toEndRange",
+            "v"
+          ],
+          "uid" : "8043fd04-cdd4-4b02-aab0-75034501106e",
+          "metadataDict" : {
+            "name" : {
+              "keyName" : "name",
+              "valueType" : "String",
+              "name" : "Remap"
+            },
+            "showInParameterDefaultValues" : { "keyName" : "showInParameterDefaultValues",  "valueType" : "StringArray",  "showInParameterDefaultValues" : ["fromStartRange", "fromEndRange", "toStartRange", "toEndRange"] },
+            "fromStartRange.defaultValue" : { "defaultValue" : [-1.0, -1.0, -1.0, -1.0], "keyName" : "defaultValue", "valueType" : "Float4" },
+            "fromEndRange.defaultValue" : { "defaultValue" : [1.0, 1.0, 1.0, 1.0], "keyName" : "defaultValue", "valueType" : "Float4" },
+            "toStartRange.defaultValue" : { "defaultValue" : [0.0, 0.0, 0.0, 0.0], "keyName" : "defaultValue", "valueType" : "Float4" },
+            "toEndRange.defaultValue" : { "defaultValue" : [1.0, 1.0, 1.0, 1.0], "keyName" : "defaultValue", "valueType" : "Float4" },
+            "v.defaultValue" : { "defaultValue" : [0.5, 0.5, 0.5, 0.5], "keyName" : "defaultValue", "valueType" : "Float4" },
+            "defaultInParameter" : {  "keyName" : "defaultInParameter",  "valueType" : "String",  "defaultInParameter" : "v"  }
+          },
+          "contextExitMap" : {
+            "Remap" : {
+              "inParameterTypes" : [
+                "Float4"
+              ],
+              "inParameterNames" : [
+                "out"
+              ],
+              "uid" : "Remap",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Outputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    261.7327880859375,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "contextEntryMap" : {
+            "Remap" : {
+              "outParameterNames" : [
+                "fromStartRange",
+                "fromEndRange",
+                "toStartRange",
+                "toEndRange",
+                "v"
+              ],
+              "uid" : "Remap",
+              "outParameterTypes" : [
+                "Float4",
+                "Float4",
+                "Float4",
+                "Float4",
+                "Float4"
+              ],
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap"
+                },
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap (Inputs)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -476.74240112304688,
+                    -12.712786674499512
+                  ]
+                }
+              }
+            }
+          },
+          "snippets" : {
+            "Remap01_52" : {
+              "snippetName" : "Remap01",
+              "snippetSignature" : "(Float4,Float4,Float4)->(Float4)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "label" : {
+                  "keyName" : "label",
+                  "valueType" : "String",
+                  "label" : "Remap01 (Float4)"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    -226.74240112304688,
+                    -12.712786674499512
+                  ]
+                },
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Remap01"
+                }
+              }
+            },
+            "Mix_53" : {
+              "snippetName" : "Mix",
+              "snippetSignature" : "(Float4,Float4,Float4)->(Float4)",
+              "libraryName" : "Math",
+              "metadataDict" : {
+                "name" : {
+                  "keyName" : "name",
+                  "valueType" : "String",
+                  "name" : "Mix"
+                },
+                "position" : {
+                  "keyName" : "position",
+                  "valueType" : "Float2",
+                  "position" : [
+                    11.732799530029297,
+                    85.763435363769531
+                  ]
+                }
+              }
+            }
+          },
+          "outParameterNames" : [
+            "out"
+          ],
+          "idx" : 0,
+          "assignments" : [
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "a",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "b",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "toEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "out",
+              "baseType" : "ContextExit"
+            },
+            {
+              "baseUID" : "Mix_53",
+              "parameterName" : "out",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "endRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromEndRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "startRange",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "fromStartRange",
+              "baseType" : "ContextEntry"
+            },
+            {
+              "baseUID" : "Remap01_52",
+              "parameterName" : "v",
+              "baseType" : "CodeSnippet"
+            },
+            {
+              "baseUID" : "Remap",
+              "parameterName" : "v",
+              "baseType" : "ContextEntry"
+            }
+          ],
+          "outParameterTypes" : [
+            "Float4"
+          ],
+          "inParameterTypes" : [
+            "Float4",
+            "Float4",
+            "Float4",
+            "Float4",
+            "Float4"
+          ]
+        }
+    }
+}

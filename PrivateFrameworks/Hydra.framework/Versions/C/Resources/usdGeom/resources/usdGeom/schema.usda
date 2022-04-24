@@ -1,0 +1,604 @@
+#usda 1.0
+(
+    "This file describes the USD Geometric schemata for code generation."
+    subLayers = [
+        @usd/schema.usda@
+    ]
+)
+
+over "GLOBAL" (
+    customData = {
+        string libraryName           = "usdGeom"
+        string libraryPath           = "pxr/usd/usdGeom"
+        # string libraryPrefix       = "UsdGeom"
+        # string tokensPrefix        = "UsdGeom"
+        dictionary libraryTokens = {
+            dictionary interpolation = {
+                string             }
+            dictionary elementSize = {
+                string             }
+            dictionary unauthoredValuesIndex = {
+                string             }
+            dictionary constant ={
+                string             }
+            dictionary uniform = {
+                string             }
+            dictionary varying = {
+                string             }
+            dictionary vertex = {
+                string             }
+            dictionary faceVarying = {
+                string             }
+            dictionary upAxis = {
+                string             }
+            dictionary metersPerUnit = {
+                string             }
+            dictionary partition = {
+                string             }
+            dictionary nonOverlapping = {
+                string             }
+            dictionary unrestricted = {
+                string             }
+            dictionary hermite = {
+                string             }
+            dictionary power = {
+                string             }
+        }
+    }
+)
+{
+}
+
+class "Imageable" (
+    inherits = </Typed>
+        customData = {
+        string extraIncludes = """
+#include "pxr/base/gf/bbox3d.h"
+#include "pxr/usd/usdGeom/primvar.h" """
+    }
+) {
+    token visibility = "inherited" (
+        allowedTokens = ["inherited", "invisible"]
+            )
+    
+    uniform token purpose = "default" (
+        allowedTokens = ["default", "render", "proxy", "guide"]
+            )
+}
+
+class "PrimvarsAPI" (
+    inherits = </APISchemaBase>
+    #include "pxr/usd/usdGeom/primvar.h" """
+    }
+) {
+}
+
+class "Xformable" (
+    inherits = </Imageable>
+    customData = {
+        string extraIncludes = """
+#include "pxr/usd/usdGeom/xformOp.h" 
+#include <vector> """
+    }
+    ) {
+
+    uniform token[] xformOpOrder (
+            )
+}
+
+class Scope "Scope" (
+    inherits = </Imageable>
+    ) {
+}
+
+class Xform "Xform" (
+    inherits = </Xformable>
+    ) {
+}
+
+class "Boundable" (
+    inherits = </Xformable>
+        )
+}
+
+class "Gprim" ( 
+    inherits = </Boundable> 
+    
+) {
+    color3f[] primvars:displayColor (
+        customData = {
+            string apiName = "displayColor"
+        }
+            )
+    
+    float[] primvars:displayOpacity (
+        customData = {
+            string apiName = "displayOpacity"
+        }
+            )
+    
+    uniform bool doubleSided = false (
+            )
+    
+    uniform token orientation = "rightHanded" (
+        allowedTokens = ["rightHanded", "leftHanded"]
+                )
+}
+
+class Cube "Cube" (
+    inherits = </Gprim>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+    double size = 2.0 (
+            )
+
+    float3[] extent = [(-1.0, -1.0, -1.0), (1.0, 1.0, 1.0)] (
+            )
+
+}
+
+class Sphere "Sphere" (
+    inherits = </Gprim>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+    double radius = 1.0 (
+            )
+
+    float3[] extent = [(-1.0, -1.0, -1.0), (1.0, 1.0, 1.0)] (
+            )
+}
+
+class Cylinder "Cylinder" (
+    inherits = </Gprim>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+    double height = 2 (
+            )
+    double radius = 1.0 (
+            )
+    uniform token axis = "Z" (
+        allowedTokens = ["X", "Y", "Z"]
+            )
+
+    float3[] extent = [(-1.0, -1.0, -1.0), (1.0, 1.0, 1.0)] (
+            )
+}
+
+class Capsule "Capsule" (
+    inherits = </Gprim>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+    double height = 1.0 (
+            )
+    double radius = 0.5 (
+            )
+    uniform token axis = "Z" (
+        allowedTokens = ["X", "Y", "Z"]
+            )
+
+    float3[] extent = [(-0.5, -0.5, -1.0), (0.5, 0.5, 1.0)] (
+            )
+}
+
+class Cone "Cone" (
+    inherits = </Gprim>
+        customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+    double height = 2.0 (
+            )
+    double radius = 1.0 (
+            )
+    uniform token axis = "Z" (
+        allowedTokens = ["X", "Y", "Z"]
+            )
+
+    float3[] extent = [(-1.0, -1.0, -1.0), (1.0, 1.0, 1.0)] (
+            )
+}
+
+class "PointBased" (
+        
+    inherits = </Gprim>
+    customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+) {
+    # positional
+    point3f[] points (
+            )
+    
+    vector3f[] velocities (
+            )
+
+    # shaping
+    normal3f[] normals (
+            )
+}
+
+class Mesh "Mesh" (
+    inherits = </PointBased>
+    customData = {
+        string extraIncludes = """
+#include "pxr/usd/usd/timeCode.h" """
+    }
+    doc="""Encodes a mesh with optional subdivision properties and features.
+
+    As a point-based primitive, meshes are defined in terms of points that 
+    are connected into edges and faces. Many references to meshes use the
+    term 'vertex' in place of or interchangeably with 'points', while some
+    use 'vertex' to refer to the 'face-vertices' that define a face.  To
+    avoid confusion, the term 'vertex' is intentionally avoided in favor of
+    'points' or 'face-vertices'.
+
+    The connectivity between points, edges and faces is encoded using a
+    common minimal topological description of the faces of the mesh.  Each
+    face is defined by a set of face-vertices using indices into the Mesh's
+    _points_ array (inherited from UsdGeomPointBased) and laid out in a
+    single linear _faceVertexIndices_ array for efficiency.  A companion
+    _faceVertexCounts_ array provides, for each face, the number of
+    consecutive face-vertices in _faceVertexIndices_ that define the face.
+    No additional connectivity information is required or constructed, so
+    no adjacency or neighborhood queries are available.
+
+    A key property of this mesh schema is that it encodes both subdivision
+    surfaces and simpler polygonal meshes. This is achieved by varying the
+    _subdivisionScheme_ attribute, which is set to specify Catmull-Clark
+    subdivision by default, so polygonal meshes must always be explicitly
+    declared. The available subdivision schemes and additional subdivision
+    features encoded in optional attributes conform to the feature set of
+    OpenSubdiv
+    (https://graphics.pixar.com/opensubdiv/docs/subdivision_surfaces.html).
+
+    \\anchor UsdGeom_Mesh_Primvars
+    __A Note About Primvars__
+
+    The following list clarifies the number of elements for and the
+    interpolation behavior of the different primvar interpolation types
+    for meshes:
+
+    - __constant__: One element for the entire mesh; no interpolation.
+    - __uniform__: One element for each face of the mesh; elements are
+      typically not interpolated but are inherited by other faces derived
+      from a given face (via subdivision, tessellation, etc.).
+    - __varying__: One element for each point of the mesh;
+      interpolation of point data is always linear.
+    - __vertex__: One element for each point of the mesh;
+      interpolation of point data is applied according to the
+      _subdivisionScheme_ attribute.
+    - __faceVarying__: One element for each of the face-vertices that
+      define the mesh topology; interpolation of face-vertex data may
+      be smooth or linear, according to the _subdivisionScheme_ and
+      _faceVaryingLinearInterpolation_ attributes.
+
+    Primvar interpolation types and related utilities are described more
+    generally in \\ref Usd_InterpolationVals.
+
+    \\anchor UsdGeom_Mesh_Normals
+    __A Note About Normals__
+
+    Normals should not be authored on a subdivision mesh, since subdivision
+    algorithms define their own normals. They should only be authored for
+    polygonal meshes (_subdivisionScheme_ = "none").
+
+    The _normals_ attribute inherited from UsdGeomPointBased is not a generic
+    primvar, but the number of elements in this attribute will be determined by
+    its _interpolation_.  See \\ref UsdGeomPointBased::GetNormalsInterpolation() .
+    If _normals_ and _primvars:normals_ are both specified, the latter has
+    precedence.  If a polygonal mesh specifies __neither__ _normals_ nor
+    _primvars:normals_, then it should be treated and rendered as faceted,
+    with no attempt to compute smooth normals.
+
+    The normals generated for smooth subdivision schemes, e.g. Catmull-Clark
+    and Loop, will likewise be smooth, but others, e.g. Bilinear, may be
+    discontinuous between faces and/or within non-planar irregular faces."""
+) {
+    #
+    # Common Properties
+    #
+    int[] faceVertexIndices (
+            )
+    
+    int[] faceVertexCounts (
+            )
+
+    #
+    # Subdiv Properties
+    #
+    
+    uniform token subdivisionScheme = "catmullClark" (
+        allowedTokens = ["catmullClark", "loop", "bilinear", "none"]
+            customData = {
+        string className = "Subset"
+        string extraIncludes = """
+#include "pxr/base/tf/token.h"
+#include "pxr/usd/usdGeom/imageable.h"
+"""
+    }
+)
+{
+    uniform token elementType = "face" (
+        allowedTokens = ["face"]
+            )
+    int[] indices = [] (
+            )
+    uniform token familyName = "" (
+            )
+}
+
+class NurbsPatch "NurbsPatch" (
+    inherits = </PointBased>
+    ) {
+    int uVertexCount (
+            )
+
+    int vVertexCount (
+            )
+
+    int uOrder (
+            )
+
+    int vOrder (
+            )
+
+    double[] uKnots (
+            )
+        
+    uniform token vForm = "open" (
+        allowedTokens = ["open", "closed", "periodic"]
+            )
+        
+    # Alembic's NuPatch does not encode these... wonder how they 
+    # get away with that?  Just assume it's the full range, presumably.
+    double2 uRange (
+            )
+
+    double2 vRange (
+            )
+
+    double[] pointWeights (
+            )
+
+    int[] trimCurve:counts (
+            )
+    
+    int[] trimCurve:orders (
+            )
+    
+    int[] trimCurve:vertexCounts (
+            )
+
+    double[] trimCurve:knots (
+            )
+
+    double2[] trimCurve:ranges (
+            )
+
+    double3[] trimCurve:points (
+            )
+
+}
+
+class "Curves" (
+    customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+    }
+    inherits = </PointBased>
+    ) {
+    # topology attributes
+    int[] curveVertexCounts (
+            )
+    
+    # shaping attributes
+    float[] widths (
+            )
+}
+
+class BasisCurves "BasisCurves" (
+    inherits = </Curves>
+    ) {
+    # interpolation attributes
+    uniform token type  = "cubic" (
+        allowedTokens = ["linear", "cubic"]
+        ) {
+    # topology attributes
+    int[] order = [] (
+        
+) {
+    # shaping attributes
+    float[] widths (
+            )
+    
+    int64[] ids (
+            )
+}
+
+class PointInstancer "PointInstancer" (
+    
+    inherits = </Boundable>
+    customData = {
+        dictionary extraPlugInfo = {
+            bool implementsComputeExtent = true
+        }
+        dictionary schemaTokens = {
+            dictionary inactiveIds = {
+                string             }
+        }
+    }
+) {
+  rel prototypes (
+        ) 
+
+  int[] protoIndices (
+        )
+
+  int64[] ids (
+        )
+
+  point3f[] positions (
+        )
+
+  quath[] orientations (
+      doc="""If authored, per-instance orientation of each instance about its 
+      prototype's origin, represented as a unit length quaternion, which
+      allows us to encode it with sufficient precision in a compact GfQuath.
+      
+      It is client's responsibility to ensure that authored quaternions are
+      unit length; the convenience API below for authoring orientations from
+      rotation matrices will ensure that quaternions are unit length, though
+      it will not make any attempt to select the "better (for interpolation
+      with respect to neighboring samples)" of the two possible quaternions
+      that encode the rotation. 
+      
+      See also \\ref UsdGeomPointInstancer_transform ."""  )
+
+  float3[] scales (
+      doc="""If authored, per-instance scale to be applied to 
+      each instance, before any rotation is applied.
+      
+      See also \\ref UsdGeomPointInstancer_transform ."""
+  )
+
+  vector3f[] velocities (
+         )
+
+  vector3f[] accelerations (
+          )
+
+  vector3f[] angularVelocities (
+      doc="""If authored, per-instance angular velocity vector to be used for
+      interoplating orientations.  Angular velocities should be considered
+      mandatory if both \\em protoIndices and \\em orientations are animated.
+      Angular velocity is measured in <b>degrees</b> per second. To convert
+      to degrees per UsdTimeCode, divide by
+      UsdStage::GetTimeCodesPerSecond().
+      
+      See also \\ref UsdGeomPointInstancer_transform ."""
+  )
+  
+  int64[] invisibleIds = [] (
+      doc="""A list of id's to make invisible at the evaluation time.
+      See \\ref UsdGeomPointInstancer_invisibleIds ."""
+  )
+}
+
+
+class Camera "Camera" (
+        inherits = </Xformable>
+    customData = {
+        string extraIncludes = """
+#include "pxr/base/gf/camera.h" """
+    }
+) {
+    # viewing frustum
+    token projection = "perspective" (
+        allowedTokens = ["perspective", "orthographic"])
+    float horizontalAperture  = 20.9550 (
+            )
+    double shutter:close = 0.0 (
+            )
+    
+    # exposure adjustment
+    float exposure = 0.0 (
+            )
+}
+
+class "GeomModelAPI"
+(
+    inherits = </APISchemaBase>
+    customData = {
+        string className = "ModelAPI"
+        string extraIncludes = """
+#include "pxr/usd/usdGeom/bboxCache.h"
+#include "pxr/usd/usdGeom/constraintTarget.h"
+#include "pxr/usd/usdGeom/imageable.h" """
+        dictionary schemaTokens = {
+            dictionary extentsHint = {
+                string             }
+        }
+    }
+    )
+{
+    uniform token model:drawMode = "inherited" (
+        allowedTokens = ["origin", "bounds", "cards", "default", "inherited"]
+            )
+    uniform bool model:applyDrawMode = false (
+            )
+    uniform float3 model:drawModeColor = (0.18, 0.18, 0.18) (
+            )
+    uniform token model:cardGeometry = "cross" (
+        allowedTokens = ["cross", "box", "fromTexture"]
+            )
+    asset model:cardTextureXPos (
+            )
+    asset model:cardTextureYPos (
+            )
+    asset model:cardTextureZPos (
+            )
+    asset model:cardTextureXNeg (
+            )
+    asset model:cardTextureYNeg (
+            )
+    asset model:cardTextureZNeg (
+            )
+}
+
+class "MotionAPI"
+(
+    inherits = </APISchemaBase>
+    )
+{
+    float motion:velocityScale = 1.0 (
+        customData = {
+            string apiName = "velocityScale"
+        }
+            )
+}
+
+class "XformCommonAPI"
+(
+    inherits = </APISchemaBase>
+        customData = {
+        string apiSchemaType = "nonApplied"
+        string extraIncludes = """
+#include "pxr/usd/usdGeom/xformable.h"
+#include "pxr/usd/usdGeom/xformOp.h" """
+        dictionary schemaTokens = {
+            dictionary pivot = {
+                string             }
+        }
+    }
+)
+{
+}
+
+class HermiteCurves "HermiteCurves" (
+    inherits = </Curves>
+    ) {
+    vector3f[] tangents = [] (
+        "Defines the outgoing trajectory tangent for each point. 
+                 Tangents should be the same size as the points attribute.""")
+}

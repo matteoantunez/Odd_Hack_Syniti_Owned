@@ -1,0 +1,27 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.VisualPerson
+extends: dialog.Person
+description: Adds additional properties to a DialogPerson to allow visual rendering
+
+inputs:
+    imageData:
+        access_mode: public
+        optional: yes
+
+    selectAction:
+        access_mode: public
+        optional: yes
+
+properties:
+    toString:
+        type: dialog.String
+        description: Return conversationalName if useConversationalName is true, otherwise simpleName
+
+    imageData:
+        type: dialog.String
+        description: A Base64 encoded representation of the ContactImage for this person.
+
+    selectAction:
+        type: dialog.String
+        description: A Base64 encoded action to take when the visual representation is selected.

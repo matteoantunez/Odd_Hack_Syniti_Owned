@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ancestorRecipe</key>
+	<string>modules</string>
+	<key>descendantDescription</key>
+	<dict>
+		<key>baseMaterial</key>
+		<dict>
+			<key>materialFiltering</key>
+			<dict>
+				<key>blurRadius</key>
+				<real>15</real>
+				<key>backdropScale</key>
+				<real>0.05</real>
+				<key>blurInputQuality</key>
+				<string>low</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

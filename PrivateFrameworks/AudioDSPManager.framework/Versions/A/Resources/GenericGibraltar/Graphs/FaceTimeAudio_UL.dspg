@@ -1,0 +1,62 @@
+graphName "FaceTimeAudio_UL"
+; The graph here assumes single mic channel
+; Needs update to multi channel graph once AuRA configures Driver for VP mode
+
+; -------------------------------------------------------------------------
+; Definitions
+; -------------------------------------------------------------------------
+
+[def sampleRateIn 44100]
+[def numChannelsIn 1]
+[def sampleRateRef 44100]
+[def numChannelsRef 2]
+[def sampleRateEpMic 24000]
+[def sampleRateEpRef 24000]
+[def sampleRateOut 24000]
+
+; -------------------------------------------------------------------------
+; Graph Ins and Outs
+; -------------------------------------------------------------------------
+in in
+in inRef
+out out
+
+; -------------------------------------------------------------------------
+; Boxes and AUs
+; -------------------------------------------------------------------------
+box srcBoxInMic src 1 1
+box srcBoxInRef src 1 1
+box AULECV5_Mic1 ( aufx lec5 appl ) 2 6
+box AUNBandEQ ( aufx nbeq appl ) 1 1
+box AUMeisterStueck ( aufx mstk appl ) 1 1
+box AUControlFreak ( aufx cfrk appl ) 1 1
+box KeyboardTypingDucker dbgn 1 1
+box deadEndBox dead 5 1
+
+; -------------------------------------------------------------------------
+; DSP Graph topology
+; -------------------------------------------------------------------------
+wire (in 0) srcBoxInMic ([sampleRateIn] [numChannelsIn])
+wire srcBoxInMic  (AULECV5_Mic1 0) ([sampleRateEpMic] [numChannelsIn])
+wire (AULECV5_Mic1 0) (AUNBandEQ 0) ([sampleRateEpMic] [numChannelsIn])
+wire (AULECV5_Mic1 1) (deadEndBox 0) ([sampleRateEpMic] [numChannelsIn])
+wire (AULECV5_Mic1 2) (deadEndBox 1) ([sampleRateEpMic] [numChannelsIn])
+wire (AULECV5_Mic1 3) (deadEndBox 2) ([sampleRateEpMic] [numChannelsIn])
+wire (AULECV5_Mic1 4) (deadEndBox 3) ([sampleRateEpMic] [numChannelsIn])
+wire (AULECV5_Mic1 5) (deadEndBox 4) ([sampleRateEpMic] [numChannelsIn])
+
+wire AUNBandEQ AUMeisterStueck ([sampleRateEpMic] [numChannelsIn])
+wire AUMeisterStueck (AUControlFreak 0) ([sampleRateEpMic] [numChannelsIn])
+wire AUControlFreak KeyboardTypingDucker ([sampleRateEpMic] [numChannelsIn])
+wire KeyboardTypingDucker (out 0) ([sampleRateOut] [numChannelsIn])
+
+wire (inRef 0) srcBoxInRef ([sampleRateRef] [numChannelsRef])
+wire srcBoxInRef (AULECV5_Mic1 1) ([sampleRateEpRef] [numChannelsRef])
+
+; -------------------------------------------------------------------------
+; Graph parameters and properties
+; -------------------------------------------------------------------------
+
+; Keyboard Typing (duck the uplink)
+param ktyp 0
+wireGraphParam ktyp (KeyboardTypingDucker 0 0 0)

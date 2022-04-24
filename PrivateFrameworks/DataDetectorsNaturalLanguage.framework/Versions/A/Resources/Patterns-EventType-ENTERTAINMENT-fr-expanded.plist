@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ENTERTAINMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::BALLET</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>ballet de danse</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Ballet de danse</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::CIRCUS</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>au cirque</string>
+			<string>spectacle .{0,50} cirque</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Cirque</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::CONCERT</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(caf[eé] )?concert</string>
+			<string>r[eé]cital</string>
+		</array>
+		<key>START_TIME</key>
+		<string>07:30 PM</string>
+		<key>TITLE</key>
+		<string>Concert</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::CONCERT::DJSET</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>dj (sets?|mix)</string>
+		</array>
+		<key>START_TIME</key>
+		<string>10:00 PM</string>
+		<key>TITLE</key>
+		<string>DJ Set</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::EXHIBITION</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>expo(sition)?</string>
+			<string>galerie d['’]art</string>
+			<string>vernissage</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>expo(sition)?|vernissage</string>
+		<key>TITLE</key>
+		<string>Exposition</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::FESTIVAL</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<string>YES</string>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>festival</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Festival</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::MUSEUM</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>mus[eé]e</string>
+			<string>museum</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Musée</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::OPERA</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>[aà] l['’]op[eé]ra</string>
+			<string>(voir|[aà]) un op[eé]ra</string>
+			<string>l['’]op[eé]rette</string>
+			<string>(voir|[aà]) une op[eé]rette</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Opéra</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::SHOW</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>spectacle</string>
+			<string>(le|un) show</string>
+		</array>
+		<key>MOVIE_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Spectacle</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::THEATER</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>th[eé][aâ]tre</string>
+			<string>voir (la|une) pi[eè]ce</string>
+			<string>com[eé]die fran[cç]aise</string>
+			<string>où (je|on) r[eé]p[eè]te</string>
+			<string>où (je vais |on va )?r[eé]p[eé]ter</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Théâtre</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::CULTURE::VISITE</key>
+	<dict>
+		<key>CULTURE_RELATED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(on va|nous allons|aller) visiter</string>
+			<string>visite (guid[eé]e|priv[eé]e)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Visite</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::FAIR</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>[aà] la foire</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Foire</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::FAIR::OPENHOUSE</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(journ[eé]es?( des)?|aux) portes? ouvertes?</string>
+			<string>(universit[eé]|coll[eè]ge|lyc[eé]e|[eé]cole)( .{0,50})? ouvre ses portes</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Journée portes ouvertes</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::FAIR::OPENHOUSE::AFTERNOON</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>apr[eè]s[- ]midi portes ouvertes</string>
+		</array>
+		<key>START_TIME</key>
+		<string>02:00 PM</string>
+		<key>TITLE</key>
+		<string>Après-midi portes ouvertes</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::FAIR::OPENHOUSE::EVENING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>soir[eé]es? portes ouvertes</string>
+		</array>
+		<key>START_TIME</key>
+		<string>06:00 PM</string>
+		<key>TITLE</key>
+		<string>Soirée portes ouvertes</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::FAIR::OPENHOUSE::MORNING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>matin[eé]e portes ouvertes</string>
+		</array>
+		<key>START_TIME</key>
+		<string>09:00 AM</string>
+		<key>TITLE</key>
+		<string>Matinée portes ouvertes</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::GAME</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>jou(ez|er|e) aux cartes</string>
+			<string>jou(ez|er|e) (au tarot|[aà] la belotte|au solitaire|[aà] la bataille)</string>
+			<string>partie(s)? de (cartes?|tarot|belotte|solitaire|bataille)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Jeux</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::BOARDGAME</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>jeux? de soci[eé]t[eé]</string>
+			<string>(joue|partie d|jeux?).+ ([eé]checs?|dames?|monopoly|scrabble|pictionary)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Jeux de société</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::BOWLING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>bowling</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Bowling</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>soir[eé]e (jeux|scrabble|puzzle|monopoly|pictionary)</string>
+			<string>(puzzle|game) night</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>TITLE</key>
+		<string>Soirée jeux</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT::CASINO</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>soir[eé]e casino</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>TITLE</key>
+		<string>Soirée casino</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT::POKER</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>soir[eé]e poker</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>TITLE</key>
+		<string>Soirée poker</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::GAMENIGHT::ROLEPLAYING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>soir[eé]e jeu(x)? de rôle(s)?</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>TITLE</key>
+		<string>Soirée jeux de rôle</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::POKER</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(joue(r|z)?|jouons).{0,10} (au|de) poker</string>
+			<string>(partie|jeu) de poker</string>
+			<string>(faire|fait|faisons) un poker</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Poker</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::GAME::VIDEOGAMES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(joue(r|z)?|jouons).{0,50} (jeux? vid[eé]os?|console|nintendo|play(station)?(2|3|4)?|ps( )?(2|3|4)?|gameboy|wii|xbox)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Jeux vidéos</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::HIKE</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>rando(nn[eé]e)?</string>
+			<string>hike</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Randonnée</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::KARAOKE</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>karaok[eé]</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Karaoké</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::KARAOKE::KARAOKENIGHT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>soir[eé]e karaok[eé]</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>TITLE</key>
+		<string>Soirée karaoké</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>ENTERTAINMENT::MOVIES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(regard|mat).{0,50}(film|dvd)</string>
+			<string>avant[- ]premi[eè]re du film</string>
+			<string>le film (commence|est) [aà]</string>
+			<string>(cin[eé](ma)?|cinoche)</string>
+			<string>ugc</string>
+			<string>gaumont</string>
+			<string>path[eé]</string>
+			<string>m[eé]garama</string>
+			<string>projections?( (de son|du) reportage)?( dans un (caf[eé]|bar))?</string>
+			<string>(va [eê]tre|est|sera) projet[eé]</string>
+			<string>web( |-)documentaires?</string>
+			<string>petit film</string>
+		</array>
+		<key>MOVIE_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_TITLE</key>
+		<string>(avant première)</string>
+		<key>TITLE</key>
+		<string>Film</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::MOVIES::CINEMA</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(cin[eé](ma)?|cinoche)</string>
+			<string>ugc</string>
+			<string>gaumont</string>
+			<string>path[eé]</string>
+			<string>m[eé]garama</string>
+			<string>le film (commence|est) [aà]</string>
+		</array>
+		<key>MOVIE_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Cinéma</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::PARK</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>((aller|va|vais) au|balad.{0,50}|promen.{0,50}|tour (au|du)).{0,50}parc</string>
+		</array>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::PARK::AMUSEMENT</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(parc (d['’]attraction(s)?|[aà] th[eè]me|de loisir)|montagnes russes|man[eè]ges?)</string>
+		</array>
+		<key>TITLE</key>
+		<string>Parc d’attraction</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::PARK::WATERPARK</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>parc aquatique</string>
+		</array>
+		<key>TITLE</key>
+		<string>Parc aquatique</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>du sports?</string>
+			<string>fitness(?! model)</string>
+			<string>gym(nastique)</string>
+			<string>(la|en) (demi-)?finale</string>
+			<string>comp[eé]tition sportive</string>
+			<string>entra[iî]nement sportif</string>
+			<string>cricket</string>
+			<string>cano(e|[eë])-kayak</string>
+			<string>[aà] la piscine</string>
+			<string>natation</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::AMERICAN_FOOTBALL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>210</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(matt?er|voir|regarder|matt?e(z|s)?|regarde(z|s)?) (la finale|(un|le) match) de foot(ball)? (u.?s.?|(am[eé])?ricain)</string>
+			<string>(finale|match) de foot(ball)? (u.?s.?|(am[eé])?ricain).{0,30}(?=(matt?er|voir|regarder|matt?e(z|s)?|regarde(z|s)?))</string>
+			<string>^((la )?finale|(un( petit)?|petit|le)? match) de foot(ball)? (u.?s.?|(am[eé])?ricain)</string>
+			<string>(se faire|fais|fait|pour|aller faire) un (petit )?(match de )?foot(ball)? (u.?s.?|(am[eé])?ricain)</string>
+			<string>joue(s|r)? au foot(ball)? (u.?s.?|(am[eé])?ricain)</string>
+			<string>entra[iî]nement de foot(ball)? (u.?s.?|(am[eé])?ricain)</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Football américain</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::BASEBALL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>210</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>baseball</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Baseball</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::BASKETBALL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>basket(-?ball)?</string>
+			<string>nba</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Basketball</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::BIKE</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>balader? (de|en|[aà]) (v[eé]lo|vtt|vtc|bicyclette)</string>
+			<string>cyclisme</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>v[eé]lo</string>
+		<key>TITLE</key>
+		<string>Cyclisme</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::GOLF</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>golf(er)?</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Golf</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::GYMWORKOUT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>90</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(aller|vais|va|vas|allons) [aà] la (gym|salle de sport|(salle de )?muscu)</string>
+			<string>(exercices?|entra[iî]nements?) (physique|sportif)</string>
+			<string>(faire du sport|faire de la muscu(lation)?)</string>
+			<string>soulever de la fonte</string>
+			<string>fitness</string>
+			<string>body sculpting</string>
+			<string>(cardio-)?kickboxing</string>
+			<string>faire ((du|de la) cardio|des abdos|des pompes)</string>
+			<string>cours de sport</string>
+			<string>(espin|cours de spin)</string>
+			<string>tapis de course</string>
+			<string>a[eé]robic</string>
+			<string>(s[eé]ance|session) de sport</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(gym|sport|pilates|body ?pump|zumba|kickboxing|fitness)</string>
+		<key>TITLE</key>
+		<string>Séance de sport</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::HOCKEY</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>150</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(matt?er|voir|regarder|matt?e(z|s)?|regarde(z|s)?) (la finale|(un|le) match) de hockey</string>
+			<string>(finale|match) de hockey.{0,50}(?=(matt?er|voir|regarder|matt?e(z|s)?|regarde(z|s)?))</string>
+			<string>^((la )?finale|(un( petit)?|petit|le)? match) de hockey</string>
+			<string>joue(s|r)? au hockey</string>
+			<string>entra[iî]nement de hockey</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Hockey</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::MATCH</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(regarder?|voir|matter) le match</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Match</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::MEDITATION</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>m[eé]ditation</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Méditation</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::RUGBY</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>rugby</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Rugby</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::RUNNING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>90</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>running</string>
+			<string>jogging</string>
+			<string>course [aà] pied(s)?</string>
+			<string>aller courir</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Course à pied</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::RUNNING::HALFMARATHON</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(semi|demi)[- ]marathon</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(semi|demi|marathon)</string>
+		<key>TITLE</key>
+		<string>Semi-marathon</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::RUNNING::MARATHON</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>300</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!(semi|demi|shopping)[- ])marathon</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Marathon</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::SKATEBOARDING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>faire du skate(board)?</string>
+			<string>skate[- ]?park</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Skateboard</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::SKIING</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>faire du ski</string>
+			<string>skier</string>
+			<string>activit[eé] ski</string>
+			<string>(faire du|en) (monoski|snowblade|skwal)</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Ski</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::SNOWBOARDING</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(faire du|en) snow(board)?</string>
+			<string>snowboard</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Snowboard</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::SOCCER</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(matt?er|voir|regarder|matt?e(z|s)?|regarde(z|s)?) (la finale|(un|le) match) de foot(ball)?</string>
+			<string>(finale|match) de foot(ball)? (?!(u.?s.?|(am[eé])?ricain)).{0,30}(?=(matt?er|voir|regarder|matt?e(z|s)?|regarde(z|s)?))</string>
+			<string>^((la )?finale|(un( petit)?|petit|le)? match) de foot(ball)?</string>
+			<string>(se faire|fais|fait|pour|aller faire) un (petit )?(match de )?foot(ball)?</string>
+			<string>joue(s|r)? au foot(ball)?</string>
+			<string>tape(r|nt|s)? (un|le) (foot(ball)?|ballon)</string>
+			<string>entra[iî]nement de foot(ball)?</string>
+			<string>(champions? league|ligue 1|uefa)( (qui )?(passe )?(dans un|au) bar)?</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Football</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::TABLE_TENNIS</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>tennis de table</string>
+			<string>ping[ -]pong</string>
+			<string>ponger</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Tennis de table</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::TENNIS</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>tennis</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Tennis</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::TRIATHLON</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>triathlon</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Triathlon</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::VOLLEYBALL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>volley(-?ball)?</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Volleyball</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ENTERTAINMENT::SPORT::YOGA</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>yoga</string>
+			<string>ashtanga</string>
+			<string>hatha</string>
+		</array>
+		<key>SPORT_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Yoga</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

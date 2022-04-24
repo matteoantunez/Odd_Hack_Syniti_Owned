@@ -1,0 +1,33 @@
+* {
+    /* Use with pointer-event to avoid user selection and i beam cursor */
+    -webkit-user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.keyboardLayout {
+    position:relative;
+}
+.keyLabel {
+    position:absolute;
+    width: 15px;
+    height: 16px;
+    text-align: center;
+    
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 9pt;
+
+    color: #566ea4;
+    
+    cursor: default;
+}
+.one {
+    width: 23px;
+}
+
+@media (prefers-dark-interface) {
+    .keyLabel {
+        color: -apple-system-label;
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "materialName": "Window_DoublePane_BigGap",
+    "materialDescription": "Window with double glazing, where the gap between both glazings is big.",
+    "frequencyBands": [20,25,31.5,40,50,63,80,100,125,160,200,250,315,400,500, 630,800,1000,1250,1600,2000,2500,3150,4000,5000,6300,8000,10000,12500,16000,20000],
+    "soundReductionIndexUserData": [26.5,26.5,26.5,26.5,26.5,26.5,27.1,27.8,28.9,30.7,33.3,35.0,37.4,39.6,41.9,44.2,46.5,48.8,49.1,49.1,48.7,49.3,50.2,51.9,51.8,51.7,51.6,51.6,51.6,51.6,51.6],
+    "soundReductionIndexReferenceData": [26.5,26.5,26.5,26.5,26.5,26.5,27.1,27.8,28.9,30.7,33.3,35.0,37.4,39.6,41.9,44.2,46.5,48.8,49.1,49.1,48.7,49.3,50.2,51.9,51.8,51.7,51.6,51.6,51.6,51.6,51.6],
+    "uncertaintyReferenceData": [7.1,7.1,7.1,7.1,7.1,7.1,6.7,6.4,6.5,6.0,5.9,5.7,5.5,5.5,5.7,5.6,5.9,6.1,5.7,5.2,4.7,4.4,5.8,6.9,6.9,7.0,7.1,7.1,7.1,7.1,7.1],
+    "averageSoundReductionIndex": 40.6,
+    "numDataPointsReferenceData": [0,0,0,0,0,5,0,3,18,3,3,18,3,3,18,3,3,18,3,3,18,3,3,18,0,0,5,0,0,0,0],
+    "totalNumDataSetsReferenceData": 18,
+    "materialDepth": 0.1356,
+    "uncertaintyMaterialDepth": 0.0607
+}

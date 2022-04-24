@@ -1,0 +1,21 @@
+//===-- metal_stdlib ------------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_STDLIB
+#define __METAL_STDLIB
+
+#include <metal_atomic>
+#include <metal_common>
+#include <metal_compute>
+#include <metal_geometric>
+#include <metal_graphics>
+#include <metal_integer>
+#include <metal_math>
+#include <metal_matrix>
+#include <metal_pack>
+#include <metal_relational>
+#include <metal_simdgroup>
+#include <metal_texture>
+
+#endif // __METAL_STDLIB

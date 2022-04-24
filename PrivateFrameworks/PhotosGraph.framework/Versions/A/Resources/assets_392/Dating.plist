@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<integer>1</integer>
+	<key>criteria</key>
+	<array>
+		<dict>
+			<key>POI</key>
+			<dict>
+				<key>positivePOIs</key>
+				<array>
+					<string>Nightlife</string>
+					<string>Restaurant</string>
+					<string>Performance</string>
+				</array>
+				<key>minimumNumberOfPOIs</key>
+				<integer>1</integer>
+			</dict>
+
+			<key>People</key>
+			<dict>
+				<key>requiresPartnerPresence</key>
+				<true/>
+			</dict>
+			
+		</dict>
+	</array>
+</dict>
+</plist>

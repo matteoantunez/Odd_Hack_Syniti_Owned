@@ -1,0 +1,998 @@
+domain_configs {
+    key: "album"
+    value {
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "album"
+                    threshold: 0.26169345
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q5294" # cd dvd
+                    threshold: 0.34
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "album"
+                    threshold: 0.5
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q605117,Q208594" # ui element
+                    threshold: 0.65
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "screenshot"
+                    threshold: 0.8
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q5294" # cd dvd
+                    threshold: 0.47094017
+                }
+            }
+        }
+        minimum_object_size: 128
+        box_score_threshold: 0.04
+    }
+}
+domain_configs {
+    key: "art"
+    value {
+        domain_assignment_rules {
+            object_detection_domain_assignment_rule {
+                thresholds {
+                    ontology_kg_id: "Q3305213" # painting
+                    threshold: 0.49
+                }
+            }
+        }
+        domain_assignment_rules {
+            object_detection_domain_assignment_rule {
+                thresholds {
+                    ontology_kg_id: "Q11034" # print / artistic poster
+                    threshold: 0.55
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "art"
+                    threshold: 0.19
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q3305213" # painting
+                    threshold: 0.355
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "art"
+                    threshold: 0.6
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q3305213" # painting
+                    threshold: 0.27
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "art"
+                    threshold: 0.88
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q125191" # photograph
+                    threshold: 0.298
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "screenshot"
+                    threshold: 0.76
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q3305213" # painting
+                    threshold: 0.371
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "art"
+                    threshold: 0.403
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q11034" # print / artistic poster
+                    threshold: 0.25
+                }
+            }
+        }
+        domain_assignment_rules {
+            coarse_classification_domain_assignment_rule {
+                thresholds {
+                    label: "art"
+                    threshold: 0.98
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q729" # animals
+                    threshold: 0.35
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q729,Q23640" # animal's head
+                    threshold: 0.35
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q28823" # textile
+                    threshold: 0.2
+                }
+            }
+        }
+        minimum_object_size: 128
+    }
+}
+domain_configs {
+    key: "book"
+    value {
+        domain_assignment_rules{
+            object_detection_domain_assignment_rule {
+                thresholds {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.55
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.01
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.41
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.176
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.38
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "screenshot"
+                    threshold: 0.77
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.452
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.5
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.35
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.74
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.3
+                }
+            }
+        }
+        minimum_object_size: 128
+    }
+}
+domain_configs {
+    key: "cats"
+    value {
+        domain_assignment_rules {
+            object_detection_domain_assignment_rule {
+                thresholds {
+                    ontology_kg_id: "Q146" # cats
+                    threshold: 0.7
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "cats"
+                    threshold: 0.14
+                }
+                coarse_thresholds {
+                    label: "dogs"
+                    threshold: 0.2
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q146" # cat
+                    threshold: 0.5
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "screenshot"
+                    threshold: 0.9
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q146" # cat
+                    threshold: 0.5
+                }
+            }
+        }
+        domain_assignment_rules {
+            pets_head_torso_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "cats"
+                    threshold: 0.1
+                }
+                coarse_thresholds {
+                    label: "dogs"
+                    threshold: 0.2
+                }
+                torso_threshold {
+                    ontology_kg_id: "Q146,Q23640,Q160695" # cat's head + torso
+                    threshold: 0.38
+                }
+                head_threshold {
+                    ontology_kg_id: "Q146,Q23640" # cat's head
+                    threshold: 0.38
+                }
+                ioa_threshold: 0.7
+            }
+        }
+        domain_assignment_rules {
+            overlap_region_domain_assignment_rule {
+                detector_thresholds {
+                    ontology_kg_id: "Q729" # animals
+                    threshold: 0.35
+                    exclude_descendants: true
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q729,Q23640" # animal's head
+                    threshold: 0.35
+                    exclude_descendants: true
+                }
+                iou_threshold: 0.3
+                reject_domain: true
+            }
+        }
+        domain_assignment_rules {
+            overlap_region_domain_assignment_rule {
+                detector_thresholds {
+                    ontology_kg_id: "Q5" # human
+                    threshold: 0.3
+                    exclude_descendants: true
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q5,Q3409626,Q160695" # Human head-torso
+                    threshold: 0.3
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q37017" # Face
+                    threshold: 0.34
+                }
+                iou_threshold: 0.5
+                reject_domain: true
+            }
+        }
+        box_score_threshold: 0.07
+        minimum_object_size: 73
+        overlap_ratio_threshold: 0.5
+    }
+}
+domain_configs {
+    key: "dogs"
+    value {
+        domain_assignment_rules {
+            object_detection_domain_assignment_rule {
+                thresholds {
+                    ontology_kg_id: "Q144" # dogs
+                    threshold: 0.69
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "cats"
+                    threshold: 0.1
+                }
+                coarse_thresholds {
+                    label: "dogs"
+                    threshold: 0.1
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q144" # dog
+                    threshold: 0.5
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "screenshot"
+                    threshold: 0.9
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q144" # dog
+                    threshold: 0.5
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "dogs"
+                    threshold: 0.98
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q144,Q23640" # domestic dog's head
+                    threshold: 0.6
+                }
+            }
+        }
+        domain_assignment_rules {
+            pets_head_torso_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "cats"
+                    threshold: 0.1
+                }
+                coarse_thresholds {
+                    label: "dogs"
+                    threshold: 0.05
+                }
+                torso_threshold {
+                    ontology_kg_id: "Q144,Q23640,Q160695" # dog's head + torso
+                    threshold: 0.35
+                }
+                head_threshold {
+                    ontology_kg_id: "Q144,Q23640" # dog's head
+                    threshold: 0.38
+                }
+                ioa_threshold: 0.7
+            }
+        }
+        domain_assignment_rules {
+            overlap_region_domain_assignment_rule {
+                detector_thresholds {
+                    ontology_kg_id: "Q729" # animals
+                    threshold: 0.372
+                    exclude_descendants: true
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q729,Q23640" # animal's head
+                    threshold: 0.35
+                    exclude_descendants: true
+                }
+                iou_threshold: 0.3
+                reject_domain: true
+            }
+        }
+        domain_assignment_rules {
+            overlap_region_domain_assignment_rule {
+                detector_thresholds {
+                    ontology_kg_id: "Q5" # human
+                    threshold: 0.3
+                    exclude_descendants: true
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q5,Q3409626,Q160695" # Human head-torso
+                    threshold: 0.3
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q37017" # Face
+                    threshold: 0.34
+                }
+                iou_threshold: 0.5
+                reject_domain: true
+            }
+        }
+        box_score_threshold: 0.056
+        minimum_object_size: 73
+        overlap_ratio_threshold: 0.5
+    }
+}
+domain_configs {
+    key: "landmark"
+    value {
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "landmark"
+                    threshold: 0.11
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q2319498" # landmark
+                    threshold: 0.34
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "event_destruction"
+                    threshold: 0.78
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q2319498" # landmark
+                    threshold: 0.35
+                }
+                reject_domain: true
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "art"
+                    threshold: 0.5
+                }
+                coarse_thresholds {
+                    label: "natural_landmark"
+                    threshold: 0.4
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q2319498" # landmark
+                    threshold: 0.37
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "landmark"
+                    threshold: 0.65
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q2319498" # landmark
+                    threshold: 0.3
+                }
+            }
+        }
+        domain_assignment_rules {
+            coarse_classification_domain_assignment_rule {
+                thresholds {
+                    label: "landmark"
+                    threshold: 0.8
+                }
+            }
+        }
+        domain_assignment_rules {
+            natural_landmark_domain_assignment_rule {
+                thresholds {
+                    label: "natural_landmark"
+                    threshold: 0.96
+                }
+            }
+        }
+        box_score_threshold: 0.04
+        max_num_of_regions: 1
+        minimum_object_size: 192
+        use_refined_region_as_object_region: true
+    }
+}
+domain_configs {
+    key: "media"
+    value {
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.9
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q5294" # cd dvd
+                    threshold: 0.49
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.86
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q429785" # poster
+                    threshold: 0.6
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.85
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q125191" # photograph
+                    threshold: 0.2
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "media"
+                    threshold: 0.764
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q11472" # document
+                    threshold: 0.38
+                }
+            }
+        }
+        domain_assignment_rules {
+            coarse_classification_domain_assignment_rule {
+                thresholds {
+                    label: "media"
+                    threshold: 0.969
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q65117596" # packaged products
+                    threshold: 0.3
+                }
+            }
+        }
+        minimum_object_size: 128
+    }
+}
+domain_configs {
+    key: "nature"
+    value {
+        domain_assignment_rules {
+            object_detection_domain_assignment_rule {
+                thresholds {
+                    ontology_kg_id: "Q756" # plant
+                    threshold: 0.65
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.01
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q756" # plant
+                    threshold: 0.5
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.1
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q756" # plant
+                    threshold: 0.35
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.83
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q756" # plant
+                    threshold: 0.31
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.12
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q203834" # Potted plants
+                    threshold: 0.3
+                }
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.78
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q11004" # Vegetable
+                    threshold: 0.32
+                }
+            }
+        }
+        domain_assignment_rules {
+            coarse_classification_domain_assignment_rule {
+                thresholds {
+                    label: "nature"
+                    threshold: 0.90
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q83093" # mushroom
+                    threshold: 0.2
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q729" # animals
+                    threshold: 0.2
+                    exclude_descendants: true
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q729,Q23640" # animal's head
+                    threshold: 0.2
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q28823" # textile
+                    threshold: 0.2
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q11422" # toys
+                    threshold: 0.2
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q571" # book
+                    threshold: 0.24
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q2319498" # landmark
+                    threshold: 0.3
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q8063" # rock
+                    threshold: 0.2
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q3737872,Q19829125,Q190780" # Marine invertebrate without limbs
+                    threshold: 0.2
+                }
+                denylist_detector_thresholds {
+                    ontology_kg_id: "Q65117596" # packaged products
+                    threshold: 0.2
+                }
+            }
+        }
+        domain_assignment_rules {
+            nested_nature_region_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.12
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q756" # plant
+                    threshold: 0.29
+                }
+                inner_detector_threshold {
+                    ontology_kg_id: "Q506" # flower
+                    threshold: 0.243
+                    exclude_descendants: true
+                }
+                min_num_inner_objects: 2
+                ioa_threshold: 0.5
+            }
+        }
+        domain_assignment_rules {
+            nested_nature_region_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.12
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q506" # flower
+                    threshold: 0.21
+                }
+                inner_detector_threshold {
+                    ontology_kg_id: "Q506" # flower
+                    threshold: 0.243
+                    exclude_descendants: true
+                }
+                min_num_inner_objects: 2
+                ioa_threshold: 0.5
+            }
+        }
+        domain_assignment_rules {
+            nested_nature_region_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.12
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q203834" # potted plants
+                    threshold: 0.22
+                }
+                inner_detector_threshold {
+                    ontology_kg_id: "Q506" # flower
+                    threshold: 0.243
+                    exclude_descendants: true
+                }
+                min_num_inner_objects: 2
+                ioa_threshold: 0.5
+            }
+        }
+        domain_assignment_rules {
+            fusion_domain_assignment_rule {
+                coarse_thresholds {
+                    label: "nature"
+                    threshold: 0.7
+                    is_less_than: true
+                }
+                detector_threshold {
+                    ontology_kg_id: "Q10884" # tree
+                    threshold: 0.62
+                    is_less_than: true
+                }
+                reject_domain: true
+            }
+        }
+        domain_assignment_rules {
+            overlap_region_domain_assignment_rule {
+                detector_thresholds {
+                    ontology_kg_id: "Q83093" # mushroom
+                    threshold: 0.3
+                }
+                detector_thresholds {
+                    ontology_kg_id: "Q729" # animals
+                    threshold: 0.24
+                    exclude_descendants: true
+                }
+                iou_threshold: 0.3
+                reject_domain: true
+            }
+        }
+        ontology_box_score_thresholds {
+            key: "Q10884"
+            value: 0.1
+        }
+        box_score_threshold: 0.04
+        minimum_object_size: 120
+        large_region_threshold: 1.0
+        overlap_ratio_threshold: 0.5
+    }
+}
+safety_config {
+    enable_pets_human_filter: true
+    pets_human_face_overlap_threshold: 0.8
+    pets_human_body_overlap_threshold: 1.0
+    enable_nsfw_filter: true
+    cc_pets_threshold {
+        key: "cats"
+        value: 0.5
+    }
+    cc_pets_threshold {
+        key: "dogs"
+        value: 0.5
+    }
+    nsfw_threshold {
+        key: "otgx_fyqmjdju"
+        value: 0.78
+    }
+    # Set the threhold for "otgx_hfojubmt" as 1.0. Because this label is not being used for now.
+    nsfw_threshold {
+        key: "otgx_hfojubmt"
+        value: 1.0
+    }
+    # Face related kg ids. Q37017:face, Q3409626:head
+    face_kg_ids: ["Q37017", "Q3409626"]
+    # Human body related kg ids. Q5:human, Q160695:Troso
+    human_kg_ids: ["Q5", "Q160695"]
+}
+
+default_box_score_threshold: 0.07
+default_minimum_object_size: 0
+merge_region_iou_threshold: 0.75
+merge_whole_image_iou_threshold: 1.0
+max_num_of_selected_domains_per_region: 1
+refine_config {
+    enable_refine_region: true
+    coarse_threshold {
+        label: "screenshot"
+        threshold: 0.9
+    }
+    detector_low_threshold: 0.35
+    detector_high_threshold: 0.438
+    minimum_area: 0.2
+}
+coarse_score_weight: 1.0
+detector_score_weight: 1.0
+box_score_weight: 1.1
+leaf_domain_boost_score: 1.0
+prefer_subregion_over_wholeImage: true
+incompatible_domains {
+    domain_sets {
+        domains: ["art", "media", "object2D", "book", "album"]
+    }
+}
+image_resize_config {
+    shorter_side_length: 512
+}
+parse_caching_config {
+  object_detector_thresholds {
+    key: "Q11004"
+    value: 0.27
+  }
+  object_detector_thresholds {
+    key: "Q11034"
+    value: 0.2
+  }
+  object_detector_thresholds {
+    key: "Q125191"
+    value: 0.15
+  }
+  object_detector_thresholds {
+    key: "Q144"
+    value: 0.45
+  }
+  object_detector_thresholds {
+    key: "Q144,Q23640"
+    value: 0.33
+  }
+  object_detector_thresholds {
+    key: "Q144,Q23640,Q160695"
+    value: 0.3
+  }
+  object_detector_thresholds {
+    key: "Q146"
+    value: 0.45
+  }
+  object_detector_thresholds {
+    key: "Q146,Q23640"
+    value: 0.33
+  }
+  object_detector_thresholds {
+    key: "Q146,Q23640,Q160695"
+    value: 0.33
+  }
+  object_detector_thresholds {
+    key: "Q160695"
+    value: 0.0
+  }
+  object_detector_thresholds {
+    key: "Q203834"
+    value: 0.17
+  }
+  object_detector_thresholds {
+    key: "Q22676"
+    value: 0.3
+  }
+  object_detector_thresholds {
+    key: "Q2319498"
+    value: 0.25
+  }
+  object_detector_thresholds {
+    key: "Q3305213"
+    value: 0.22
+  }
+  object_detector_thresholds {
+    key: "Q3409626"
+    value: 0.0
+  }
+  object_detector_thresholds {
+    key: "Q37017"
+    value: 0.0
+  }
+  object_detector_thresholds {
+    key: "Q429785"
+    value: 0.55
+  }
+  object_detector_thresholds {
+    key: "Q5"
+    value: 0.0
+  }
+  object_detector_thresholds {
+    key: "Q5294"
+    value: 0.29
+  }
+  object_detector_thresholds {
+    key: "Q571"
+    value: 0.25
+  }
+  object_detector_thresholds {
+    key: "Q729"
+    value: 0.19
+  }
+  object_detector_thresholds {
+    key: "Q729,Q23640"
+    value: 0.3
+  }
+  object_detector_thresholds {
+    key: "Q756"
+    value: 0.15
+  }
+  object_detector_thresholds {
+    key: "Q83093"
+    value: 0.25
+  }
+  object_detector_thresholds {
+    key: "Q11472"
+    value: 0.33
+  }
+  object_detector_thresholds {
+    key: "Q506"
+    value: 0.16
+  }
+  object_detector_thresholds {
+    key: "Q605117,Q208594"
+    value: 0.59
+  }
+  object_detector_thresholds {
+    key: "Q5,Q3409626,Q160695"
+    value: 0
+  }
+  coarse_classifier_thresholds {
+    key: "album"
+    value: 0.21
+  }
+  coarse_classifier_thresholds {
+    key: "art"
+    value: 0.14
+  }
+  coarse_classifier_thresholds {
+    key: "cats"
+    value: 0.05
+  }
+  coarse_classifier_thresholds {
+    key: "dogs"
+    value: 0.05
+  }
+  coarse_classifier_thresholds {
+    key: "landmark"
+    value: 0.06
+  }
+  coarse_classifier_thresholds {
+    key: "media"
+    value: 0.0
+  }
+  coarse_classifier_thresholds {
+    key: "natural_landmark"
+    value: 0.05
+  }
+  coarse_classifier_thresholds {
+    key: "nature"
+    value: 0.0
+  }
+  coarse_classifier_thresholds {
+    key: "screenshot"
+    value: 0.7
+  }
+}

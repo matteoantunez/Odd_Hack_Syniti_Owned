@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>materialSettingsVersion</key>
+	<integer>2</integer>
+	<key>styles</key>
+	<dict>
+		<key>stroke</key>
+		<string>platformStrokeDark</string>
+		<key>fill</key>
+		<string>platformChromeFillDark</string>
+	</dict>
+	<key>baseMaterial</key>
+	<dict>
+		<key>materialFiltering</key>
+		<dict>
+			<key>luminanceAmount</key>
+			<real>0.85</real>
+			<key>luminanceValues</key>
+			<array>
+				<real>0.225</real>
+				<real>0.31</real>
+				<real>0.25</real>
+				<real>0.2</real>
+			</array>
+			<key>backdropScale</key>
+			<real>0.25</real>
+			<key>brightness</key>
+			<real>-0.1</real>
+			<key>averageColorEnabled</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

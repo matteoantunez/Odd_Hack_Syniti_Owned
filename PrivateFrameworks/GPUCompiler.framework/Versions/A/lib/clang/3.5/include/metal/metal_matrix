@@ -1,0 +1,3194 @@
+//===-- metal_matrix ------------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_MATRIX_H
+#define __METAL_MATRIX_H
+
+#include <metal_geometric>
+
+namespace metal {
+  // 2.2 Matrices
+  template <typename T, int numCols, int numRows = numCols> class matrix {
+    matrix() { }
+  };
+
+
+#pragma mark matrix2 half
+  template <int numRows> class matrix<half,2,numRows> {
+    typedef half T;
+    enum { numCols = 2 };
+    vec<T,numRows> cols[numCols];
+  public:
+    // 2.2.2 Accessing Matrix Components
+    METAL_FUNC thread vec<T,numRows>& operator[] (int r) thread { return cols[r]; }
+    METAL_FUNC const thread vec<T,numRows>& operator[] (int r)  thread const { return cols[r]; }
+    METAL_FUNC device vec<T,numRows>& operator[] (int r) device { return cols[r]; }
+    METAL_FUNC const device vec<T,numRows>& operator[] (int r)  device const { return cols[r]; }
+    METAL_FUNC threadgroup vec<T,numRows>& operator[] (int r) threadgroup { return cols[r]; }
+    METAL_FUNC const threadgroup vec<T,numRows>& operator[] (int r)  threadgroup const { return cols[r]; }
+    METAL_FUNC const constant vec<T,numRows>& operator[] (int r)  constant const { return cols[r]; }
+
+    // 2.2.4 Matrix Constructors
+    METAL_FUNC matrix() thread = default;
+    METAL_FUNC matrix() constant = default;
+
+    METAL_FUNC explicit matrix(const T val) thread {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+    METAL_FUNC explicit matrix(const T val) constant {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+
+    // TODO: We cannot rely on the implicit copy constructor as backends does
+    // not properly support memcpy. This is a temporary workaround to avoid
+    // performance regressions -- see <rdar://problem/28794928>,
+    // <rdar://problem/27110538>.
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1]}
+    { }
+#if 0
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant = default;
+#endif
+
+    METAL_FUNC explicit matrix(const thread matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const device matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const threadgroup matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const thread matrix<float,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<float,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1) thread
+    :cols{c0,c1}
+    { }
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1) constant
+    :cols{c0,c1}
+    { }
+
+    // 3.2 Matrix Operators
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator*= (const T v) thread
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator*= (const T v) device
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator*= (const T v) threadgroup
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  matrix(half v00, half v01,
+         half v10, half v11) thread
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  matrix(half v00, half v01, half v02,
+         half v10, half v11, half v12) thread
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  matrix(half v00, half v01, half v02, half v03,
+         half v10, half v11, half v12, half v13) thread
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+  matrix(half v00, half v01,
+         half v10, half v11) constant
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  matrix(half v00, half v01, half v02,
+         half v10, half v11, half v12) constant
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  matrix(half v00, half v01, half v02, half v03,
+         half v10, half v11, half v12, half v13) constant
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+#endif
+  };
+
+// specialize value constructors
+  template<> METAL_FUNC metal::matrix<half,2,2>::
+  matrix(const half val) thread
+  :cols{vec<half,2>(val,0),
+        vec<half,2>(0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,3>::
+  matrix(const half val) thread
+  :cols{vec<half,3>(val,0,0),
+        vec<half,3>(0,val,0)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,4>::
+  matrix(const half val) thread
+  :cols{vec<half,4>(val,0,0,0),
+        vec<half,4>(0,val,0,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<half,2,2>::
+  matrix(half v00, half v01,
+         half v10, half v11) thread
+  :cols{vec<half,2>(v00,v01),
+        vec<half,2>(v10,v11)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,3>::
+  matrix(half v00, half v01, half v02,
+         half v10, half v11, half v12) thread
+  :cols{vec<half,3>(v00,v01,v02),
+        vec<half,3>(v10,v11,v12)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,4>::
+  matrix(half v00, half v01, half v02, half v03,
+         half v10, half v11, half v12, half v13) thread
+  :cols{vec<half,4>(v00,v01,v02,v03),
+        vec<half,4>(v10,v11,v12,v13)}
+  { }
+#endif
+  template<> METAL_FUNC metal::matrix<half,2,2>::
+  matrix(const half val) constant
+  :cols{vec<half,2>(val,0),
+        vec<half,2>(0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,3>::
+  matrix(const half val) constant
+  :cols{vec<half,3>(val,0,0),
+        vec<half,3>(0,val,0)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,4>::
+  matrix(const half val) constant
+  :cols{vec<half,4>(val,0,0,0),
+        vec<half,4>(0,val,0,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<half,2,2>::
+  matrix(half v00, half v01,
+         half v10, half v11) constant
+  :cols{vec<half,2>(v00,v01),
+        vec<half,2>(v10,v11)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,3>::
+  matrix(half v00, half v01, half v02,
+         half v10, half v11, half v12) constant
+  :cols{vec<half,3>(v00,v01,v02),
+        vec<half,3>(v10,v11,v12)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,2,4>::
+  matrix(half v00, half v01, half v02, half v03,
+         half v10, half v11, half v12, half v13) constant
+  :cols{vec<half,4>(v00,v01,v02,v03),
+        vec<half,4>(v10,v11,v12,v13)}
+  { }
+#endif
+
+#pragma mark matrix3 half
+  template <int numRows> class matrix<half,3,numRows> {
+    typedef half T;
+    enum { numCols = 3 };
+    vec<T,numRows> cols[numCols];
+  public:
+    // 2.2.2 Accessing Matrix Components
+    METAL_FUNC thread vec<T,numRows>& operator[] (int r) thread { return cols[r]; }
+    METAL_FUNC const thread vec<T,numRows>& operator[] (int r) thread const { return cols[r]; }
+    METAL_FUNC device vec<T,numRows>& operator[] (int r) device { return cols[r]; }
+    METAL_FUNC const device vec<T,numRows>& operator[] (int r) device const { return cols[r]; }
+    METAL_FUNC threadgroup vec<T,numRows>& operator[] (int r) threadgroup { return cols[r]; }
+    METAL_FUNC const threadgroup vec<T,numRows>& operator[] (int r) threadgroup const { return cols[r]; }
+    METAL_FUNC const constant vec<T,numRows>& operator[] (int r) constant const { return cols[r]; }
+
+    // 2.2.4 Matrix Constructors
+    METAL_FUNC matrix() thread = default;
+    METAL_FUNC matrix() constant = default;
+
+    METAL_FUNC explicit matrix(const T val) thread {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+    METAL_FUNC explicit matrix(const T val) constant {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+
+    // TODO: We cannot rely on the implicit copy constructor as backends does
+    // not properly support memcpy. This is a temporary workaround to avoid
+    // performance regressions -- see <rdar://problem/28794928>,
+    // <rdar://problem/27110538>.
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2]}
+    { }
+#if 0
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant = default;
+#endif
+
+    METAL_FUNC explicit matrix(const thread matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const device matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const threadgroup matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const thread matrix<float,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<float,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2) thread
+    :cols{c0,c1,c2}
+    { }
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2) constant
+    :cols{c0,c1,c2}
+    { }
+
+    // 3.2 Matrix Operators
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator*= (const T v) thread
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator*= (const T v) device
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator*= (const T v) threadgroup
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  METAL_FUNC matrix(half v00, half v01,
+                    half v10, half v11,
+                    half v20, half v21) thread
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02,
+                    half v10, half v11, half v12,
+                    half v20, half v21, half v22) thread
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02, half v03,
+                    half v10, half v11, half v12, half v13,
+                    half v20, half v21, half v22, half v23) thread
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01,
+                    half v10, half v11,
+                    half v20, half v21) constant
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02,
+                    half v10, half v11, half v12,
+                    half v20, half v21, half v22) constant
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02, half v03,
+                    half v10, half v11, half v12, half v13,
+                    half v20, half v21, half v22, half v23) constant
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+#endif
+  };
+
+// specialize value constructors
+  template<> METAL_FUNC metal::matrix<half,3,2>::
+  matrix(const half val) thread
+  :cols{vec<half,2>(val,0),
+        vec<half,2>(0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,3,3>::
+  matrix(const half val) thread
+  :cols{vec<half,3>(val,0,0),
+        vec<half,3>(0,val,0),
+        vec<half,3>(0,0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,3,4>::
+  matrix(const half val) thread
+  :cols{vec<half,4>(val,0,0,0),
+        vec<half,4>(0,val,0,0),
+        vec<half,4>(0,0,val,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<half,3,2>::
+    matrix(half v00, half v01,
+           half v10, half v11,
+           half v20, half v21) thread
+    :cols{vec<half,2>(v00,v01),
+          vec<half,2>(v10,v11),
+          vec<half,2>(v20,v21)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<half,3,3>::
+    matrix(half v00, half v01, half v02,
+           half v10, half v11, half v12,
+           half v20, half v21, half v22) thread
+    :cols{vec<half,3>(v00,v01,v02),
+          vec<half,3>(v10,v11,v12),
+          vec<half,3>(v20,v21,v22)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<half,3,4>::
+    matrix(half v00, half v01, half v02, half v03,
+           half v10, half v11, half v12, half v13,
+           half v20, half v21, half v22, half v23) thread
+    :cols{vec<half,4>(v00,v01,v02,v03),
+          vec<half,4>(v10,v11,v12,v13),
+          vec<half,4>(v20,v21,v22,v23)}
+    { }
+#endif
+  template<> METAL_FUNC metal::matrix<half,3,2>::
+  matrix(const half val) constant
+  :cols{vec<half,2>(val,0),
+        vec<half,2>(0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,3,3>::
+  matrix(const half val) constant
+  :cols{vec<half,3>(val,0,0),
+        vec<half,3>(0,val,0),
+        vec<half,3>(0,0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,3,4>::
+  matrix(const half val) constant
+  :cols{vec<half,4>(val,0,0,0),
+        vec<half,4>(0,val,0,0),
+        vec<half,4>(0,0,val,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<half,3,2>::
+    matrix(half v00, half v01,
+           half v10, half v11,
+           half v20, half v21) constant
+    :cols{vec<half,2>(v00,v01),
+          vec<half,2>(v10,v11),
+          vec<half,2>(v20,v21)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<half,3,3>::
+    matrix(half v00, half v01, half v02,
+           half v10, half v11, half v12,
+           half v20, half v21, half v22) constant
+    :cols{vec<half,3>(v00,v01,v02),
+          vec<half,3>(v10,v11,v12),
+          vec<half,3>(v20,v21,v22)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<half,3,4>::
+    matrix(half v00, half v01, half v02, half v03,
+           half v10, half v11, half v12, half v13,
+           half v20, half v21, half v22, half v23) constant
+    :cols{vec<half,4>(v00,v01,v02,v03),
+          vec<half,4>(v10,v11,v12,v13),
+          vec<half,4>(v20,v21,v22,v23)}
+    { }
+#endif
+
+#pragma mark matrix4 half
+  template <int numRows> class matrix<half,4,numRows> {
+    typedef half T;
+    enum { numCols = 4 };
+    vec<T,numRows> cols[numCols];
+  public:
+    // 2.2.2 Accessing Matrix Components
+    METAL_FUNC thread vec<T,numRows>& operator[] (int r) thread { return cols[r]; }
+    METAL_FUNC const thread vec<T,numRows>& operator[] (int r) thread const { return cols[r]; }
+    METAL_FUNC device vec<T,numRows>& operator[] (int r) device { return cols[r]; }
+    METAL_FUNC const device vec<T,numRows>& operator[] (int r) device const { return cols[r]; }
+    METAL_FUNC threadgroup vec<T,numRows>& operator[] (int r) threadgroup { return cols[r]; }
+    METAL_FUNC const threadgroup vec<T,numRows>& operator[] (int r) threadgroup const { return cols[r]; }
+    METAL_FUNC const constant vec<T,numRows>& operator[] (int r) constant const { return cols[r]; }
+
+    // 2.2.4 Matrix Constructors
+    METAL_FUNC matrix() thread = default;
+    METAL_FUNC matrix() constant = default;
+
+    METAL_FUNC explicit matrix(const T val) thread {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+    METAL_FUNC explicit matrix(const T val) constant {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+
+    // TODO: We cannot rely on the implicit copy constructor as backends does
+    // not properly support memcpy. This is a temporary workaround to avoid
+    // performance regressions -- see <rdar://problem/28794928>,
+    // <rdar://problem/27110538>.
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+#if 0
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant = default;
+#endif
+
+    METAL_FUNC explicit matrix(const thread matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const device matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const threadgroup matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<float,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const thread matrix<float,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<float,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2, const vec<T,numRows> c3) thread
+    :cols{c0,c1,c2,c3}
+    { }
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2, const vec<T,numRows> c3) constant
+    :cols{c0,c1,c2,c3}
+    { }
+
+    // 3.2 Matrix Operators
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator*= (const T v) thread
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator*= (const T v) device
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator*= (const T v) threadgroup
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  METAL_FUNC matrix(half v00, half v01,
+                    half v10, half v11,
+                    half v20, half v21,
+                    half v30, half v31) thread
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02,
+                    half v10, half v11, half v12,
+                    half v20, half v21, half v22,
+                    half v30, half v31, half v32) thread
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02, half v03,
+                    half v10, half v11, half v12, half v13,
+                    half v20, half v21, half v22, half v23,
+                    half v30, half v31, half v32, half v33) thread
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01,
+                    half v10, half v11,
+                    half v20, half v21,
+                    half v30, half v31) constant
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02,
+                    half v10, half v11, half v12,
+                    half v20, half v21, half v22,
+                    half v30, half v31, half v32) constant
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(half v00, half v01, half v02, half v03,
+                    half v10, half v11, half v12, half v13,
+                    half v20, half v21, half v22, half v23,
+                    half v30, half v31, half v32, half v33) constant
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+#endif
+  };
+
+// specialize value constructors
+  template<> METAL_FUNC metal::matrix<half,4,2>::
+  matrix(const half val) thread
+  :cols{vec<half,2>(val,0),
+        vec<half,2>(0,val),
+        0,
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,3>::
+  matrix(const half val) thread
+  :cols{vec<half,3>(val,0,0),
+        vec<half,3>(0,val,0),
+        vec<half,3>(0,0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,4>::
+  matrix(const half val) thread
+  :cols{vec<half,4>(val,0,0,0),
+        vec<half,4>(0,val,0,0),
+        vec<half,4>(0,0,val,0),
+        vec<half,4>(0,0,0,val)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<half,4,2>::
+  matrix(half v00, half v01,
+         half v10, half v11,
+         half v20, half v21,
+         half v30, half v31) thread
+  :cols{vec<half,2>(v00,v01),
+        vec<half,2>(v10,v11),
+        vec<half,2>(v20,v21),
+        vec<half,2>(v30,v31)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,3>::
+  matrix(half v00, half v01, half v02,
+         half v10, half v11, half v12,
+         half v20, half v21, half v22,
+         half v30, half v31, half v32) thread
+  :cols{vec<half,3>(v00,v01,v02),
+        vec<half,3>(v10,v11,v12),
+        vec<half,3>(v20,v21,v22),
+        vec<half,3>(v30,v31,v32)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,4>::
+  matrix(half v00, half v01, half v02, half v03,
+         half v10, half v11, half v12, half v13,
+         half v20, half v21, half v22, half v23,
+         half v30, half v31, half v32, half v33) thread
+  :cols{vec<half,4>(v00,v01,v02,v03),
+        vec<half,4>(v10,v11,v12,v13),
+        vec<half,4>(v20,v21,v22,v23),
+        vec<half,4>(v30,v31,v32,v33)}
+  { }
+#endif
+  template<> METAL_FUNC metal::matrix<half,4,2>::
+  matrix(const half val) constant
+  :cols{vec<half,2>(val,0),
+        vec<half,2>(0,val),
+        0,
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,3>::
+  matrix(const half val) constant
+  :cols{vec<half,3>(val,0,0),
+        vec<half,3>(0,val,0),
+        vec<half,3>(0,0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,4>::
+  matrix(const half val) constant
+  :cols{vec<half,4>(val,0,0,0),
+        vec<half,4>(0,val,0,0),
+        vec<half,4>(0,0,val,0),
+        vec<half,4>(0,0,0,val)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<half,4,2>::
+  matrix(half v00, half v01,
+         half v10, half v11,
+         half v20, half v21,
+         half v30, half v31) constant
+  :cols{vec<half,2>(v00,v01),
+        vec<half,2>(v10,v11),
+        vec<half,2>(v20,v21),
+        vec<half,2>(v30,v31)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,3>::
+  matrix(half v00, half v01, half v02,
+         half v10, half v11, half v12,
+         half v20, half v21, half v22,
+         half v30, half v31, half v32) constant
+  :cols{vec<half,3>(v00,v01,v02),
+        vec<half,3>(v10,v11,v12),
+        vec<half,3>(v20,v21,v22),
+        vec<half,3>(v30,v31,v32)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<half,4,4>::
+  matrix(half v00, half v01, half v02, half v03,
+         half v10, half v11, half v12, half v13,
+         half v20, half v21, half v22, half v23,
+         half v30, half v31, half v32, half v33) constant
+  :cols{vec<half,4>(v00,v01,v02,v03),
+        vec<half,4>(v10,v11,v12,v13),
+        vec<half,4>(v20,v21,v22,v23),
+        vec<half,4>(v30,v31,v32,v33)}
+  { }
+#endif
+
+
+#pragma mark matrix2 float
+  template <int numRows> class matrix<float,2,numRows> {
+    typedef float T;
+    enum { numCols = 2 };
+    vec<T,numRows> cols[numCols];
+  public:
+    // 2.2.2 Accessing Matrix Components
+    METAL_FUNC thread vec<T,numRows>& operator[] (int r) thread { return cols[r]; }
+    METAL_FUNC const thread vec<T,numRows>& operator[] (int r)  thread const { return cols[r]; }
+    METAL_FUNC device vec<T,numRows>& operator[] (int r) device { return cols[r]; }
+    METAL_FUNC const device vec<T,numRows>& operator[] (int r)  device const { return cols[r]; }
+    METAL_FUNC threadgroup vec<T,numRows>& operator[] (int r) threadgroup { return cols[r]; }
+    METAL_FUNC const threadgroup vec<T,numRows>& operator[] (int r)  threadgroup const { return cols[r]; }
+    METAL_FUNC const constant vec<T,numRows>& operator[] (int r)  constant const { return cols[r]; }
+
+    // 2.2.4 Matrix Constructors
+    METAL_FUNC matrix() thread = default;
+    METAL_FUNC matrix() constant = default;
+
+    METAL_FUNC explicit matrix(const T val) thread {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+    METAL_FUNC explicit matrix(const T val) constant {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+
+    // TODO: We cannot rely on the implicit copy constructor as backends does
+    // not properly support memcpy. This is a temporary workaround to avoid
+    // performance regressions -- see <rdar://problem/28794928>,
+    // <rdar://problem/27110538>.
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1]}
+    { }
+#if 0
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant = default;
+#endif
+
+    METAL_FUNC explicit matrix(const thread matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const device matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const threadgroup matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const thread matrix<half,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<half,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1])}
+    { }
+
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1) thread
+    :cols{c0,c1}
+    { }
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1) constant
+    :cols{c0,c1}
+    { }
+
+    // 3.2 Matrix Operators
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator*= (const T v) thread
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator*= (const T v) device
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator*= (const T v) threadgroup
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  matrix(float v00, float v01,
+         float v10, float v11) thread
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  matrix(float v00, float v01, float v02,
+         float v10, float v11, float v12) thread
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  matrix(float v00, float v01, float v02, float v03,
+         float v10, float v11, float v12, float v13) thread
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+  matrix(float v00, float v01,
+         float v10, float v11) constant
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  matrix(float v00, float v01, float v02,
+         float v10, float v11, float v12) constant
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  matrix(float v00, float v01, float v02, float v03,
+         float v10, float v11, float v12, float v13) constant
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+#endif
+  };
+
+// specialize value constructors
+  template<> METAL_FUNC metal::matrix<float,2,2>::
+  matrix(const float val) thread
+  :cols{vec<float,2>(val,0),
+        vec<float,2>(0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,3>::
+  matrix(const float val) thread
+  :cols{vec<float,3>(val,0,0),
+        vec<float,3>(0,val,0)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,4>::
+  matrix(const float val) thread
+  :cols{vec<float,4>(val,0,0,0),
+        vec<float,4>(0,val,0,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<float,2,2>::
+  matrix(float v00, float v01,
+         float v10, float v11) thread
+  :cols{vec<float,2>(v00,v01),
+        vec<float,2>(v10,v11)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,3>::
+  matrix(float v00, float v01, float v02,
+         float v10, float v11, float v12) thread
+  :cols{vec<float,3>(v00,v01,v02),
+        vec<float,3>(v10,v11,v12)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,4>::
+  matrix(float v00, float v01, float v02, float v03,
+         float v10, float v11, float v12, float v13) thread
+  :cols{vec<float,4>(v00,v01,v02,v03),
+        vec<float,4>(v10,v11,v12,v13)}
+  { }
+#endif
+  template<> METAL_FUNC metal::matrix<float,2,2>::
+  matrix(const float val) constant
+  :cols{vec<float,2>(val,0),
+        vec<float,2>(0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,3>::
+  matrix(const float val) constant
+  :cols{vec<float,3>(val,0,0),
+        vec<float,3>(0,val,0)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,4>::
+  matrix(const float val) constant
+  :cols{vec<float,4>(val,0,0,0),
+        vec<float,4>(0,val,0,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<float,2,2>::
+  matrix(float v00, float v01,
+         float v10, float v11) constant
+  :cols{vec<float,2>(v00,v01),
+        vec<float,2>(v10,v11)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,3>::
+  matrix(float v00, float v01, float v02,
+         float v10, float v11, float v12) constant
+  :cols{vec<float,3>(v00,v01,v02),
+        vec<float,3>(v10,v11,v12)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,2,4>::
+  matrix(float v00, float v01, float v02, float v03,
+         float v10, float v11, float v12, float v13) constant
+  :cols{vec<float,4>(v00,v01,v02,v03),
+        vec<float,4>(v10,v11,v12,v13)}
+  { }
+#endif
+
+#pragma mark matrix3 float
+  template <int numRows> class matrix<float,3,numRows> {
+    typedef float T;
+    enum { numCols = 3 };
+    vec<T,numRows> cols[numCols];
+  public:
+    // 2.2.2 Accessing Matrix Components
+    METAL_FUNC thread vec<T,numRows>& operator[] (int r) thread { return cols[r]; }
+    METAL_FUNC const thread vec<T,numRows>& operator[] (int r) thread const { return cols[r]; }
+    METAL_FUNC device vec<T,numRows>& operator[] (int r) device { return cols[r]; }
+    METAL_FUNC const device vec<T,numRows>& operator[] (int r) device const { return cols[r]; }
+    METAL_FUNC threadgroup vec<T,numRows>& operator[] (int r) threadgroup { return cols[r]; }
+    METAL_FUNC const threadgroup vec<T,numRows>& operator[] (int r) threadgroup const { return cols[r]; }
+    METAL_FUNC const constant vec<T,numRows>& operator[] (int r) constant const { return cols[r]; }
+
+    // 2.2.4 Matrix Constructors
+    METAL_FUNC matrix() thread = default;
+    METAL_FUNC matrix() constant = default;
+
+    METAL_FUNC explicit matrix(const T val) thread {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+    METAL_FUNC explicit matrix(const T val) constant {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+
+    // TODO: We cannot rely on the implicit copy constructor as backends does
+    // not properly support memcpy. This is a temporary workaround to avoid
+    // performance regressions -- see <rdar://problem/28794928>,
+    // <rdar://problem/27110538>.
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2]}
+    { }
+#if 0
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant = default;
+#endif
+
+    METAL_FUNC explicit matrix(const thread matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const device matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const threadgroup matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const thread matrix<half,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<half,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2])}
+    { }
+
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2) thread
+    :cols{c0,c1,c2}
+    { }
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2) constant
+    :cols{c0,c1,c2}
+    { }
+
+    // 3.2 Matrix Operators
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator*= (const T v) thread
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator*= (const T v) device
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator*= (const T v) threadgroup
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  METAL_FUNC matrix(float v00, float v01,
+                    float v10, float v11,
+                    float v20, float v21) thread
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02,
+                    float v10, float v11, float v12,
+                    float v20, float v21, float v22) thread
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02, float v03,
+                    float v10, float v11, float v12, float v13,
+                    float v20, float v21, float v22, float v23) thread
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01,
+                    float v10, float v11,
+                    float v20, float v21) constant
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02,
+                    float v10, float v11, float v12,
+                    float v20, float v21, float v22) constant
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02, float v03,
+                    float v10, float v11, float v12, float v13,
+                    float v20, float v21, float v22, float v23) constant
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+#endif
+  };
+
+// specialize value constructors
+  template<> METAL_FUNC metal::matrix<float,3,2>::
+  matrix(const float val) thread
+  :cols{vec<float,2>(val,0),
+        vec<float,2>(0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,3,3>::
+  matrix(const float val) thread
+  :cols{vec<float,3>(val,0,0),
+        vec<float,3>(0,val,0),
+        vec<float,3>(0,0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,3,4>::
+  matrix(const float val) thread
+  :cols{vec<float,4>(val,0,0,0),
+        vec<float,4>(0,val,0,0),
+        vec<float,4>(0,0,val,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<float,3,2>::
+    matrix(float v00, float v01,
+           float v10, float v11,
+           float v20, float v21) thread
+    :cols{vec<float,2>(v00,v01),
+          vec<float,2>(v10,v11),
+          vec<float,2>(v20,v21)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<float,3,3>::
+    matrix(float v00, float v01, float v02,
+           float v10, float v11, float v12,
+           float v20, float v21, float v22) thread
+    :cols{vec<float,3>(v00,v01,v02),
+          vec<float,3>(v10,v11,v12),
+          vec<float,3>(v20,v21,v22)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<float,3,4>::
+    matrix(float v00, float v01, float v02, float v03,
+           float v10, float v11, float v12, float v13,
+           float v20, float v21, float v22, float v23) thread
+    :cols{vec<float,4>(v00,v01,v02,v03),
+          vec<float,4>(v10,v11,v12,v13),
+          vec<float,4>(v20,v21,v22,v23)}
+    { }
+#endif
+  template<> METAL_FUNC metal::matrix<float,3,2>::
+  matrix(const float val) constant
+  :cols{vec<float,2>(val,0),
+        vec<float,2>(0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,3,3>::
+  matrix(const float val) constant
+  :cols{vec<float,3>(val,0,0),
+        vec<float,3>(0,val,0),
+        vec<float,3>(0,0,val)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,3,4>::
+  matrix(const float val) constant
+  :cols{vec<float,4>(val,0,0,0),
+        vec<float,4>(0,val,0,0),
+        vec<float,4>(0,0,val,0)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<float,3,2>::
+    matrix(float v00, float v01,
+           float v10, float v11,
+           float v20, float v21) constant
+    :cols{vec<float,2>(v00,v01),
+          vec<float,2>(v10,v11),
+          vec<float,2>(v20,v21)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<float,3,3>::
+    matrix(float v00, float v01, float v02,
+           float v10, float v11, float v12,
+           float v20, float v21, float v22) constant
+    :cols{vec<float,3>(v00,v01,v02),
+          vec<float,3>(v10,v11,v12),
+          vec<float,3>(v20,v21,v22)}
+    { }
+
+  template<> METAL_FUNC metal::matrix<float,3,4>::
+    matrix(float v00, float v01, float v02, float v03,
+           float v10, float v11, float v12, float v13,
+           float v20, float v21, float v22, float v23) constant
+    :cols{vec<float,4>(v00,v01,v02,v03),
+          vec<float,4>(v10,v11,v12,v13),
+          vec<float,4>(v20,v21,v22,v23)}
+    { }
+#endif
+
+#pragma mark matrix4 float
+  template <int numRows> class matrix<float,4,numRows> {
+    typedef float T;
+    enum { numCols = 4 };
+    vec<T,numRows> cols[numCols];
+  public:
+    // 2.2.2 Accessing Matrix Components
+    METAL_FUNC thread vec<T,numRows>& operator[] (int r) thread { return cols[r]; }
+    METAL_FUNC const thread vec<T,numRows>& operator[] (int r) thread const { return cols[r]; }
+    METAL_FUNC device vec<T,numRows>& operator[] (int r) device { return cols[r]; }
+    METAL_FUNC const device vec<T,numRows>& operator[] (int r) device const { return cols[r]; }
+    METAL_FUNC threadgroup vec<T,numRows>& operator[] (int r) threadgroup { return cols[r]; }
+    METAL_FUNC const threadgroup vec<T,numRows>& operator[] (int r) threadgroup const { return cols[r]; }
+    METAL_FUNC const constant vec<T,numRows>& operator[] (int r) constant const { return cols[r]; }
+
+    // 2.2.4 Matrix Constructors
+    METAL_FUNC matrix() thread = default;
+    METAL_FUNC matrix() constant = default;
+
+    METAL_FUNC explicit matrix(const T val) thread {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+    METAL_FUNC explicit matrix(const T val) constant {
+      for (int r=0;r!=numCols;++r) {
+        cols[r] = vec<T,numRows>(T(0));
+        if (r < numRows)
+          cols[r][r] = val;
+      }
+    }
+
+    // TODO: We cannot rely on the implicit copy constructor as backends does
+    // not properly support memcpy. This is a temporary workaround to avoid
+    // performance regressions -- see <rdar://problem/28794928>,
+    // <rdar://problem/27110538>.
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+    METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant
+    :cols{m[0],m[1],m[2],m[3]}
+    { }
+#if 0
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const device matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const threadgroup matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) thread = default;
+   METAL_FUNC matrix(const thread matrix<T,numCols,numRows>& m) constant = default;
+   METAL_FUNC matrix(const constant matrix<T,numCols,numRows>& m) constant = default;
+#endif
+
+    METAL_FUNC explicit matrix(const thread matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const device matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const threadgroup matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<half,numCols,numRows>& m) thread
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const thread matrix<half,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+    METAL_FUNC explicit matrix(const constant matrix<half,numCols,numRows>& m) constant
+    :cols{static_cast< vec<T,numRows> >(m[0]),
+          static_cast< vec<T,numRows> >(m[1]),
+          static_cast< vec<T,numRows> >(m[2]),
+          static_cast< vec<T,numRows> >(m[3])}
+    { }
+
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2, const vec<T,numRows> c3) thread
+    :cols{c0,c1,c2,c3}
+    { }
+    METAL_FUNC matrix(const vec<T,numRows> c0, const vec<T,numRows> c1, const vec<T,numRows> c2, const vec<T,numRows> c3) constant
+    :cols{c0,c1,c2,c3}
+    { }
+
+    // 3.2 Matrix Operators
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator*= (const T v) thread
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator*= (const T v) device
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator*= (const T v) threadgroup
+  {
+    for (int r=0;r!=numCols;++r)
+      cols[r] *= v;
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator+= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] += m[i];
+    return *this;
+  }
+
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (thread const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (device const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (threadgroup const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC thread matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) thread
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC device matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) device
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+  METAL_FUNC threadgroup matrix<T,numCols,numRows>& operator-= (constant const matrix<T,numCols,numRows>& m) threadgroup
+  {
+    for (int i=0;i!=numCols;++i)
+      cols[i] -= m[i];
+    return *this;
+  }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  METAL_FUNC matrix(float v00, float v01,
+                    float v10, float v11,
+                    float v20, float v21,
+                    float v30, float v31) thread
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02,
+                    float v10, float v11, float v12,
+                    float v20, float v21, float v22,
+                    float v30, float v31, float v32) thread
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02, float v03,
+                    float v10, float v11, float v12, float v13,
+                    float v20, float v21, float v22, float v23,
+                    float v30, float v31, float v32, float v33) thread
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01,
+                    float v10, float v11,
+                    float v20, float v21,
+                    float v30, float v31) constant
+  { static_assert(numRows == 2, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02,
+                    float v10, float v11, float v12,
+                    float v20, float v21, float v22,
+                    float v30, float v31, float v32) constant
+  { static_assert(numRows == 3, "incorrect number of arguments in constructor"); }
+  METAL_FUNC matrix(float v00, float v01, float v02, float v03,
+                    float v10, float v11, float v12, float v13,
+                    float v20, float v21, float v22, float v23,
+                    float v30, float v31, float v32, float v33) constant
+  { static_assert(numRows == 4, "incorrect number of arguments in constructor"); }
+#endif
+  };
+
+// specialize value constructors
+  template<> METAL_FUNC metal::matrix<float,4,2>::
+  matrix(const float val) thread
+  :cols{vec<float,2>(val,0),
+        vec<float,2>(0,val),
+        0,
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,3>::
+  matrix(const float val) thread
+  :cols{vec<float,3>(val,0,0),
+        vec<float,3>(0,val,0),
+        vec<float,3>(0,0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,4>::
+  matrix(const float val) thread
+  :cols{vec<float,4>(val,0,0,0),
+        vec<float,4>(0,val,0,0),
+        vec<float,4>(0,0,val,0),
+        vec<float,4>(0,0,0,val)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<float,4,2>::
+  matrix(float v00, float v01,
+         float v10, float v11,
+         float v20, float v21,
+         float v30, float v31) thread
+  :cols{vec<float,2>(v00,v01),
+        vec<float,2>(v10,v11),
+        vec<float,2>(v20,v21),
+        vec<float,2>(v30,v31)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,3>::
+  matrix(float v00, float v01, float v02,
+         float v10, float v11, float v12,
+         float v20, float v21, float v22,
+         float v30, float v31, float v32) thread
+  :cols{vec<float,3>(v00,v01,v02),
+        vec<float,3>(v10,v11,v12),
+        vec<float,3>(v20,v21,v22),
+        vec<float,3>(v30,v31,v32)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,4>::
+  matrix(float v00, float v01, float v02, float v03,
+         float v10, float v11, float v12, float v13,
+         float v20, float v21, float v22, float v23,
+         float v30, float v31, float v32, float v33) thread
+  :cols{vec<float,4>(v00,v01,v02,v03),
+        vec<float,4>(v10,v11,v12,v13),
+        vec<float,4>(v20,v21,v22,v23),
+        vec<float,4>(v30,v31,v32,v33)}
+  { }
+#endif
+  template<> METAL_FUNC metal::matrix<float,4,2>::
+  matrix(const float val) constant
+  :cols{vec<float,2>(val,0),
+        vec<float,2>(0,val),
+        0,
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,3>::
+  matrix(const float val) constant
+  :cols{vec<float,3>(val,0,0),
+        vec<float,3>(0,val,0),
+        vec<float,3>(0,0,val),
+        0}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,4>::
+  matrix(const float val) constant
+  :cols{vec<float,4>(val,0,0,0),
+        vec<float,4>(0,val,0,0),
+        vec<float,4>(0,0,val,0),
+        vec<float,4>(0,0,0,val)}
+  { }
+
+#if defined(__HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__)
+  template<> METAL_FUNC metal::matrix<float,4,2>::
+  matrix(float v00, float v01,
+         float v10, float v11,
+         float v20, float v21,
+         float v30, float v31) constant
+  :cols{vec<float,2>(v00,v01),
+        vec<float,2>(v10,v11),
+        vec<float,2>(v20,v21),
+        vec<float,2>(v30,v31)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,3>::
+  matrix(float v00, float v01, float v02,
+         float v10, float v11, float v12,
+         float v20, float v21, float v22,
+         float v30, float v31, float v32) constant
+  :cols{vec<float,3>(v00,v01,v02),
+        vec<float,3>(v10,v11,v12),
+        vec<float,3>(v20,v21,v22),
+        vec<float,3>(v30,v31,v32)}
+  { }
+
+  template<> METAL_FUNC metal::matrix<float,4,4>::
+  matrix(float v00, float v01, float v02, float v03,
+         float v10, float v11, float v12, float v13,
+         float v20, float v21, float v22, float v23,
+         float v30, float v31, float v32, float v33) constant
+  :cols{vec<float,4>(v00,v01,v02,v03),
+        vec<float,4>(v10,v11,v12,v13),
+        vec<float,4>(v20,v21,v22,v23),
+        vec<float,4>(v30,v31,v32,v33)}
+  { }
+#endif
+
+
+  // 3.2 Matrix Operators (non-member)
+#pragma mark operator* vector matrix
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numCols> operator* (const vec<T,numRows> v, thread const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> r((T)0);
+    for (int i=0;i!=numCols;++i)
+      r[i] = dot(m[i],v);
+     return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numCols> operator* (const vec<T,numRows> v, device const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> r((T)0);
+    for (int i=0;i!=numCols;++i)
+      r[i] = dot(m[i],v);
+     return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numCols> operator* (const vec<T,numRows> v, threadgroup const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> r((T)0);
+    for (int i=0;i!=numCols;++i)
+      r[i] = dot(m[i],v);
+     return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numCols> operator* (const vec<T,numRows> v, constant const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> r((T)0);
+    for (int i=0;i!=numCols;++i)
+      r[i] = dot(m[i],v);
+     return r;
+  }
+
+#pragma mark operator* matrix vector
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numRows> operator* (thread const matrix<T,numCols,numRows>& m, const vec<T,numCols> v)
+  {
+    vec<T,numRows> r = v[0] * m[0];
+    for (int i=1;i!=numCols;++i)
+      r += v[i] * m[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numRows> operator* (device const matrix<T,numCols,numRows>& m, const vec<T,numCols> v)
+  {
+    vec<T,numRows> r = v[0] * m[0];
+    for (int i=1;i!=numCols;++i)
+      r += v[i] * m[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numRows> operator* (threadgroup const matrix<T,numCols,numRows>& m, const vec<T,numCols> v)
+  {
+    vec<T,numRows> r = v[0] * m[0];
+    for (int i=1;i!=numCols;++i)
+      r += v[i] * m[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC vec<T,numRows> operator* (constant const matrix<T,numCols,numRows>& m, const vec<T,numCols> v)
+  {
+    vec<T,numRows> r = v[0] * m[0];
+    for (int i=1;i!=numCols;++i)
+      r += v[i] * m[i];
+    return r;
+  }
+
+#pragma mark operator* matrix matrix
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (thread const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (thread const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (thread const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (thread const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (device const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (device const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (device const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (device const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (threadgroup const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (threadgroup const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (threadgroup const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (threadgroup const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (constant const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (constant const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (constant const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows, int numCols_>
+  METAL_FUNC matrix<T,numCols_,numRows> operator* (constant const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols_,numCols>& m1)
+  {
+    matrix<T,numCols_,numRows> r;
+    for (int i=0;i!=numCols_;++i)
+      r[i] = m0 * m1[i];
+    return r;
+  }
+
+#pragma mark operator* scalar matrix
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (const T v, thread const matrix<T,numCols,numRows>& m)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = v * m[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (const T v, device const matrix<T,numCols,numRows>& m)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = v * m[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (const T v, threadgroup const matrix<T,numCols,numRows>& m)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = v * m[i];
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (const T v, constant const matrix<T,numCols,numRows>& m)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = v * m[i];
+    return r;
+  }
+
+#pragma mark operator* matrix scalar
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (thread const matrix<T,numCols,numRows>& m, const T v)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = m[i] * v;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (device const matrix<T,numCols,numRows>& m, const T v)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = m[i] * v;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (threadgroup const matrix<T,numCols,numRows>& m, const T v)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = m[i] * v;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator* (constant const matrix<T,numCols,numRows>& m, const T v)
+  {
+    matrix<T,numCols,numRows> r;
+    for (int i=0;i!=numCols;++i)
+      r[i] = m[i] * v;
+    return r;
+  }
+
+#pragma mark operator*= vector matrix
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC thread vec<T,numCols>& operator*= (thread vec<T,numCols>& v, thread const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC device vec<T,numCols>& operator*= (device vec<T,numCols>& v, thread const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC threadgroup vec<T,numCols>& operator*= (threadgroup vec<T,numCols>& v, thread const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC thread vec<T,numCols>& operator*= (thread vec<T,numCols>& v, device const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC device vec<T,numCols>& operator*= (device vec<T,numCols>& v, device const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC threadgroup vec<T,numCols>& operator*= (threadgroup vec<T,numCols>& v, device const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC thread vec<T,numCols>& operator*= (thread vec<T,numCols>& v, threadgroup const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC device vec<T,numCols>& operator*= (device vec<T,numCols>& v, threadgroup const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC threadgroup vec<T,numCols>& operator*= (threadgroup vec<T,numCols>& v, threadgroup const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC thread vec<T,numCols>& operator*= (thread vec<T,numCols>& v, constant const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC device vec<T,numCols>& operator*= (device vec<T,numCols>& v, constant const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC threadgroup vec<T,numCols>& operator*= (threadgroup vec<T,numCols>& v, constant const matrix<T,numCols,numRows>& m)
+  {
+    vec<T,numCols> vv = v;
+    for (int i=0;i!=numCols;++i)
+      v[i] = dot(m[i],vv);
+    return v;
+  }
+
+#pragma mark operator+
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (thread const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (thread const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (thread const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (thread const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (device const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (device const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (device const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (device const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (threadgroup const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (threadgroup const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (threadgroup const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (threadgroup const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (constant const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (constant const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (constant const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator+ (constant const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r += m1;
+    return r;
+  }
+
+#pragma mark operator-
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (thread const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (thread const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (thread const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (thread const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (device const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (device const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (device const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (device const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (threadgroup const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (threadgroup const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (threadgroup const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (threadgroup const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (constant const matrix<T,numCols,numRows>& m0, thread const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (constant const matrix<T,numCols,numRows>& m0, device const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (constant const matrix<T,numCols,numRows>& m0, threadgroup const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+  template <typename T, int numCols, int numRows>
+  METAL_FUNC matrix<T,numCols,numRows> operator- (constant const matrix<T,numCols,numRows>& m0, constant const matrix<T,numCols,numRows>& m1)
+  {
+    matrix<T,numCols,numRows> r= m0;
+    r -= m1;
+    return r;
+  }
+
+  // 5.7 Matrix Functions (non-member)
+
+#pragma mark transpose
+  template <typename T, int numCols, int numRows = numCols>
+  METAL_FUNC matrix<T,numRows,numCols> transpose(thread const matrix<T,numCols,numRows>& m) {
+    matrix<T,numRows,numCols> r;
+    for (int i=0;i!=numCols;++i)
+      for (int j=0;j!=numRows;++j)
+        r[j][i] = m[i][j];
+    return r;
+  }
+  template <typename T, int numCols, int numRows = numCols>
+  METAL_FUNC matrix<T,numRows,numCols> transpose(device const matrix<T,numCols,numRows>& m) {
+    matrix<T,numRows,numCols> r;
+    for (int i=0;i!=numCols;++i)
+      for (int j=0;j!=numRows;++j)
+        r[j][i] = m[i][j];
+    return r;
+  }
+  template <typename T, int numCols, int numRows = numCols>
+  METAL_FUNC matrix<T,numRows,numCols> transpose(threadgroup const matrix<T,numCols,numRows>& m) {
+    matrix<T,numRows,numCols> r;
+    for (int i=0;i!=numCols;++i)
+      for (int j=0;j!=numRows;++j)
+        r[j][i] = m[i][j];
+    return r;
+  }
+  template <typename T, int numCols, int numRows = numCols>
+  METAL_FUNC matrix<T,numRows,numCols> transpose(constant const matrix<T,numCols,numRows>& m) {
+    matrix<T,numRows,numCols> r;
+    for (int i=0;i!=numCols;++i)
+      for (int j=0;j!=numRows;++j)
+        r[j][i] = m[i][j];
+    return r;
+  }
+
+#pragma mark determinant
+  template<typename T>
+  METAL_FUNC T determinant(thread const matrix<T,2,2>& m) {
+    return m[0][0]*m[1][1] - m[0][1]*m[1][0];
+  }
+  template<typename T>
+  METAL_FUNC T determinant(device const matrix<T,2,2>& m) {
+    return m[0][0]*m[1][1] - m[0][1]*m[1][0];
+  }
+  template<typename T>
+  METAL_FUNC T determinant(threadgroup const matrix<T,2,2>& m) {
+    return m[0][0]*m[1][1] - m[0][1]*m[1][0];
+  }
+  template<typename T>
+  METAL_FUNC T determinant(constant const matrix<T,2,2>& m) {
+    return m[0][0]*m[1][1] - m[0][1]*m[1][0];
+  }
+
+  template<typename T>
+  METAL_FUNC T determinant(thread const matrix<T,3,3>& m) {
+    return m[0][0]*(m[1][1]*m[2][2] - m[1][2]*m[2][1]) -
+    m[0][1]*(m[1][0]*m[2][2] - m[1][2]*m[2][0]) +
+    m[0][2]*(m[1][0]*m[2][1] - m[1][1]*m[2][0]);
+  }
+  template<typename T>
+  METAL_FUNC T determinant(device const matrix<T,3,3>& m) {
+    return m[0][0]*(m[1][1]*m[2][2] - m[1][2]*m[2][1]) -
+    m[0][1]*(m[1][0]*m[2][2] - m[1][2]*m[2][0]) +
+    m[0][2]*(m[1][0]*m[2][1] - m[1][1]*m[2][0]);
+  }
+  template<typename T>
+  METAL_FUNC T determinant(threadgroup const matrix<T,3,3>& m) {
+    return m[0][0]*(m[1][1]*m[2][2] - m[1][2]*m[2][1]) -
+    m[0][1]*(m[1][0]*m[2][2] - m[1][2]*m[2][0]) +
+    m[0][2]*(m[1][0]*m[2][1] - m[1][1]*m[2][0]);
+  }
+  template<typename T>
+  METAL_FUNC T determinant(constant const matrix<T,3,3>& m) {
+    return m[0][0]*(m[1][1]*m[2][2] - m[1][2]*m[2][1]) -
+    m[0][1]*(m[1][0]*m[2][2] - m[1][2]*m[2][0]) +
+    m[0][2]*(m[1][0]*m[2][1] - m[1][1]*m[2][0]);
+  }
+
+  template<typename T>
+  METAL_FUNC T determinant(thread const matrix<T,4,4>& m) {
+    return
+    m[0][0]*(
+                m[1][1]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) +
+                m[1][3]*(m[2][1]*m[3][2] - m[2][2]*m[3][1])
+                ) -
+    m[0][1]*(
+                m[1][0]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][2] - m[2][2]*m[3][0])
+                ) +
+    m[0][2]*(
+                m[1][0]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                ) -
+    m[0][3]*(
+                m[1][0]*(m[2][1]*m[3][2] - m[2][2]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][2] - m[2][2]*m[3][0]) +
+                m[1][2]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                );
+  }
+  template<typename T>
+  METAL_FUNC T determinant(device const matrix<T,4,4>& m) {
+    return
+    m[0][0]*(
+                m[1][1]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) +
+                m[1][3]*(m[2][1]*m[3][2] - m[2][2]*m[3][1])
+                ) -
+    m[0][1]*(
+                m[1][0]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][2] - m[2][2]*m[3][0])
+                ) +
+    m[0][2]*(
+                m[1][0]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                ) -
+    m[0][3]*(
+                m[1][0]*(m[2][1]*m[3][2] - m[2][2]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][2] - m[2][2]*m[3][0]) +
+                m[1][2]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                );
+  }
+  template<typename T>
+  METAL_FUNC T determinant(threadgroup const matrix<T,4,4>& m) {
+    return
+    m[0][0]*(
+                m[1][1]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) +
+                m[1][3]*(m[2][1]*m[3][2] - m[2][2]*m[3][1])
+                ) -
+    m[0][1]*(
+                m[1][0]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][2] - m[2][2]*m[3][0])
+                ) +
+    m[0][2]*(
+                m[1][0]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                ) -
+    m[0][3]*(
+                m[1][0]*(m[2][1]*m[3][2] - m[2][2]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][2] - m[2][2]*m[3][0]) +
+                m[1][2]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                );
+  }
+  template<typename T>
+  METAL_FUNC T determinant(constant const matrix<T,4,4>& m) {
+    return
+    m[0][0]*(
+                m[1][1]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) +
+                m[1][3]*(m[2][1]*m[3][2] - m[2][2]*m[3][1])
+                ) -
+    m[0][1]*(
+                m[1][0]*(m[2][2]*m[3][3] - m[2][3]*m[3][2]) -
+                m[1][2]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][2] - m[2][2]*m[3][0])
+                ) +
+    m[0][2]*(
+                m[1][0]*(m[2][1]*m[3][3] - m[2][3]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][3] - m[2][3]*m[3][0]) +
+                m[1][3]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                ) -
+    m[0][3]*(
+                m[1][0]*(m[2][1]*m[3][2] - m[2][2]*m[3][1]) -
+                m[1][1]*(m[2][0]*m[3][2] - m[2][2]*m[3][0]) +
+                m[1][2]*(m[2][0]*m[3][1] - m[2][1]*m[3][0])
+                );
+  }
+
+
+  using half2x2 = matrix<half,2,2>;
+  using half2x3 = matrix<half,2,3>;
+  using half2x4 = matrix<half,2,4>;
+  using half3x2 = matrix<half,3,2>;
+  using half3x3 = matrix<half,3,3>;
+  using half3x4 = matrix<half,3,4>;
+  using half4x2 = matrix<half,4,2>;
+  using half4x3 = matrix<half,4,3>;
+  using half4x4 = matrix<half,4,4>;
+
+
+  using float2x2 = matrix<float,2,2>;
+  using float2x3 = matrix<float,2,3>;
+  using float2x4 = matrix<float,2,4>;
+  using float3x2 = matrix<float,3,2>;
+  using float3x3 = matrix<float,3,3>;
+  using float3x4 = matrix<float,3,4>;
+  using float4x2 = matrix<float,4,2>;
+  using float4x3 = matrix<float,4,3>;
+  using float4x4 = matrix<float,4,4>;
+
+};  // namespace metal
+
+#endif // __METAL_MATRIX_H

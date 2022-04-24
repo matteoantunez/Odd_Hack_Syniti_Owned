@@ -1,0 +1,257 @@
+#usda 1.0 
+
+def Shader "HwPtexTexture_1" (
+    sdrMetadata = {
+        token role = "texture"
+        token isPtex = "1"
+    }
+)
+{
+    uniform token info:id = "HwPtexTexture_1"
+    uniform token info:implementationSource = "sourceAsset"
+
+    # Add a dummy sourceAsset attribute with sourceType="glslfx", so that 
+    # an entry gets created for this deprecated shader in the registry.
+    uniform asset info:glslfx:sourceAsset = @./empty.glslfx@
+
+    token inputs:faceIndexPrimvar = "ptexFaceIndex" (
+        sdrMetadata = {
+            token primvarProperty = "1"
+        }
+    )
+
+    token inputs:faceOffsetPrimvar = "ptexFaceOffset" (
+        sdrMetadata = {
+            token primvarProperty = "1"
+        }
+    )
+
+    asset inputs:file = @@ (
+        
+    )
+
+    float inputs:frame (
+        
+    )
+
+    float inputs:textureMemory (
+            )
+
+    int inputs:faceIndex (
+            )
+
+    int inputs:faceOffset (
+            )
+
+    float outputs:r ( 
+        
+        sdrMetadata = {
+            token swizzle = "x"
+        }
+    )
+
+    float outputs:g (
+        
+        sdrMetadata = {
+            token swizzle = "y"
+        }
+    )
+
+    float outputs:b (
+        
+        sdrMetadata = {
+            token swizzle = "z"
+        }
+    )
+
+    float outputs:a (
+        
+        sdrMetadata = {
+            token swizzle = "w"
+        }
+    )
+
+    float3 outputs:rgb (
+        
+        sdrMetadata = {
+            token swizzle = "xyz"
+        }
+    )
+
+    float4 outputs:rgba (
+        
+        sdrMetadata = {
+            token swizzle = "xyzw"
+        }
+    )
+}
+
+def Shader "HwUvTexture_1" (
+    sdrMetadata = {
+        token role = "texture"
+        token primvars = "uv"
+    }
+)
+{
+    uniform token info:id = "HwUvTexture_1"
+    uniform token info:implementationSource = "sourceAsset"
+
+    # Add a dummy sourceAsset attribute with sourceType="glslfx", so that 
+    # an entry gets created for this deprecated shader in the registry.
+    uniform asset info:glslfx:sourceAsset = @./empty.glslfx@
+
+    asset inputs:file = @@ (
+        
+    )
+
+    float inputs:frame (
+        
+    )
+
+    float inputs:textureMemory (
+            )
+
+    float2 inputs:uv (
+        
+    )
+
+    token inputs:wrapS (
+        allowedTokens = ["clamp", "repeat", "mirror", "black"]
+        
+    )
+
+    token inputs:wrapT (
+        allowedTokens = ["clamp", "repeat", "mirror", "black"]
+        
+    )
+
+    token inputs:minFilter (
+        allowedTokens = ["nearest", "linear",
+                         "linearMipmapLinear", "linearMipmapNearest",
+                         "nearestMipmapLinear", "nearestMipmapNearest" ]
+        
+    )
+    
+    token inputs:magFilter (
+        allowedTokens = ["nearest", "linear"]
+        
+    )
+
+    float4 inputs:fallback = (0.0, 0.0, 0.0, 1.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+}
+
+def Shader "HwFieldReader" (
+    sdrMetadata = {
+        token role = "field"
+    }
+    )
+{
+    uniform asset info:glslfx:sourceAsset = @./empty.glslfx@
+    uniform token info:implementationSource = "sourceAsset"
+    token inputs:fieldname = "" (
+        connectability = "interfaceOnly"
+                sdrMetadata = {
+            token fieldProperty = "1"
+        }
+    )
+
+    float3 inputs:fallback = (0.0, 0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+}
+
+def Shader "HwFieldReader_1" (
+    sdrMetadata = {
+        token role = "field"
+    }
+    )
+{
+    uniform asset info:glslfx:sourceAsset = @./empty.glslfx@
+    uniform token info:implementationSource = "sourceAsset"
+    token inputs:fieldname = "" (
+        connectability = "interfaceOnly"
+                sdrMetadata = {
+            token fieldProperty = "1"
+        }
+    )
+}
+
+def Shader "HwFieldReader_float" ( 
+    inherits = </HwFieldReader_1>
+)
+{
+    uniform token info:id = "HwFieldReader_float"
+    float inputs:fallback = 0 (
+        
+        sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+    float outputs:result (
+        sdrMetadata = {
+            token swizzle = "x"
+        }
+    )
+}
+
+def Shader "HwFieldReader_float2" (
+    inherits = </HwFieldReader_1>
+)
+{
+    uniform token info:id = "HwFieldReader_float2"
+    float2 inputs:fallback = (0, 0) (
+        
+        sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+    float2 outputs:result (
+        sdrMetadata = {
+            token swizzle = "xy"
+        }
+    )
+}
+
+def Shader "HwFieldReader_float3" (
+    inherits = </HwFieldReader_1>
+)
+{
+    uniform token info:id = "HwFieldReader_float3"
+    float3 inputs:fallback = (0, 0, 0) (
+        
+        sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+    float3 outputs:result (
+        sdrMetadata = {
+            token swizzle = "xyz"
+        }
+    )
+}
+
+def Shader "HwPrimvar_1" (
+    sdrMetadata = {
+        token role = "primvar"
+    }
+)
+{
+    uniform token info:id = "HwPrimvar_1"
+    uniform token info:implementationSource = "sourceAsset"
+
+    # Add a dummy sourceAsset attribute with sourceType="glslfx", so that 
+    # an entry gets created for this deprecated shader in the registry.
+    uniform asset info:glslfx:sourceAsset = @./empty.glslfx@
+
+    token inputs:varname = "" (
+        sdrMetadata = {
+            bool primvarProperty = 1
+        }
+            )
+}

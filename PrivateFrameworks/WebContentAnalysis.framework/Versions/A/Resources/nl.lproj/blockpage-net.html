@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>Geen toegang</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- Localization notes: see blockpage.html  -->
+	
+	<body onload="javascript:LoadNetworkPage(	'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 
+												32, 51)" >
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						Helaas! Je kunt de pagina's van deze website niet bekijken.
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						Je kunt de pagina
+						'<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>'
+						niet bekijken, omdat hij niet in de lijst met goedgekeurde websites van Schermtijd staat.
+					</p>
+					
+					<p class="text"		id="HowToAddText">
+						Neem contact op met de netwerkbeheerder als je deze website aan je lijst met goedgekeurde websites wilt toevoegen.
+					</p>
+
+					<p class="text"		id="GoBackText">
+						Klik op 'Ga terug' om terug te gaan naar de pagina die je als laatste hebt bekeken. 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  Ga terug  " onclick="GoBack()" />
+					</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Services_BluetoothSharing</key>
+	<dict>
+		<key>localizableStrings</key>
+		<array>
+			<dict>
+				<key>comments</key>
+				<string>Lokaliserbara indexord</string>
+				<key>index</key>
+				<string>dela, ta emot, acceptera, bläddra, fil, filöverföring, bluetooth </string>
+				<key>title</key>
+				<string>Bluetooth-delning</string>
+			</dict>
+			<dict>
+				<key>comments</key>
+				<string>Lokaliserbara indexord</string>
+				<key>index</key>
+				<string>Parkoppla</string>
+				<key>title</key>
+				<string>Kräv parkoppling</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

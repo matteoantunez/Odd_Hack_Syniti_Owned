@@ -1,0 +1,1 @@
+(function(){return function(e,n,r,t){Object.keys(n).forEach(function(a){var c=new RegExp(regExpFormatted(r,a)),i=t.replace(/\$MAPPING\$/g,n[a.toString()]);e.plain=e.plain.replace(c,i)})}}).call();

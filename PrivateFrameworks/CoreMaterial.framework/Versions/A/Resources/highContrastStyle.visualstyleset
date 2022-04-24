@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>visualStyleSetVersion</key>
+	<integer>1</integer>
+	<key>primary</key>
+	<string>highContrast</string>
+	<key>secondary</key>
+	<string>highContrast</string>
+	<key>tertiary</key>
+	<string>highContrast</string>
+	<key>quaternary</key>
+	<string>highContrast</string>
+	<key>styles</key>
+	<dict>
+		<key>highContrastPrimary</key>
+		<dict>
+			<key>tinting</key>
+			<dict>
+				<key>tintColor</key>
+				<dict>
+					<key>white</key>
+					<integer>0</integer>
+					<key>alpha</key>
+					<real>1</real>
+				</dict>
+			</dict>
+		</dict>
+		<key>highContrastSecondary</key>
+		<dict>
+			<key>tinting</key>
+			<dict>
+				<key>tintColor</key>
+				<dict>
+					<key>red</key>
+					<real>0.64</real>
+					<key>green</key>
+					<real>0.64</real>
+					<key>blue</key>
+					<real>0.64</real>
+					<key>alpha</key>
+					<real>1</real>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>に(登録されました|ご登録ありがとうございました)</string>
+			<string>(お宅|自宅|うち|(わが|我が)?家)で(のんびり|うだうだ)しよう</string>
+			<string>((遊び|会い)に((来|き)て|行く)|おいでよ|おいで(くだ|下)さい|お越し(くだ|下)さい|いらし(っしゃっ)?て((くだ|下)さい)?|いらっしゃ(らない|いませんか))</string>
+			<string>((会お|会いま|お会いしましょ|集まろ|集まりましょ)う|会え(る|ない|えますか|ませんか)|お目にかか(れませんか|りませんか)|落ち合(おう|いましょう|わない|いませんか))</string>
+			<string>出てきて((くだ|下)さい)?|(来|こ)((られ)?(ない|ませんか))|(持って)?(行|い)く(ね)?</string>
+			<string>お(宅|うち|ウチ|(わが|我が)?家)(へ|に)(行く|行きます|(伺|うかが)う|(伺|うかが)います|(来|く)る|(来|き)ます|(来|き)て((くだ|下)さい)?|おいでよ|おいで(くだ|下)さい|お越し(くだ|下)さい|いらし(っしゃっ)?て((くだ|下)さい)?|いらっしゃ(らない|いませんか))</string>
+			<string>(招待され(まし?)た|招待済(み)?)</string>
+			<string>(((ご)?招待(します|する)?|のお誘い))</string>
+			<string>一緒に((行こ|やろ|(見|み)よ)(う)?|((行|や)っ|(見|み))てみない)</string>
+			<string>ウチに来て</string>
+			<string>きませんか</string>
+			<string>一緒に来てくれない</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@(%2$@)</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

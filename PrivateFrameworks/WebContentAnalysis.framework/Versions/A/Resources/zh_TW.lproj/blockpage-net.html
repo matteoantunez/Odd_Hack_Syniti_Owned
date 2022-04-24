@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>限制連線</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- Localization notes: see blockpage.html  -->
+	
+	<body onload="javascript:LoadNetworkPage(	'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 
+												32, 51)" >
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						抱歉。您無法觀看這個網站上的網頁。
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						您無法觀看「<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>」
+						網頁，因為它不在「螢幕使用時間」所允許的列表內。
+					</p>
+					
+					<p class="text"		id="HowToAddText">
+						若要將此網站加入您的允許列表，請聯絡您的網路管理者。
+					</p>
+
+					<p class="text"		id="GoBackText">
+						若要回到您之前觀看的網頁，請按一下「返回」。 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  返回  " onclick="GoBack()" />
+					</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>

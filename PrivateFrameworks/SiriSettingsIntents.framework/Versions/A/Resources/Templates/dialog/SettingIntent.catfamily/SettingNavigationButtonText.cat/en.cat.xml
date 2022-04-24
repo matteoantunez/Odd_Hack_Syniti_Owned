@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#SettingNavigationButtonText" locale="en">
+    <first>
+        <dialog condition="isFocus">Focus Settings</dialog>
+        <dialog><transform mode="capitalize"><var name="setting.name"/></transform> Settings</dialog>
+    </first>
+</cat>
+

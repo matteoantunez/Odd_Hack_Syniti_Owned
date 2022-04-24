@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>not available (on|at)</string>
+	<string>from (monday|tuesday|wednesday|thursday|friday|saturday|sunday)</string>
+	<string>the following (monday|tuesday|wednesday|thursday|friday|saturday|sunday)</string>
+	<string>will be available online</string>
+	<string>any day (except|but)</string>
+	<string>happy (\w* )?(monday|tuesday|wednesday|thursday|friday|saturday|sunday|weekend|week-end)</string>
+	<string>reply (to this email )?(by|before)</string>
+	<string>email me (by|before)</string>
+	<string>(order|book) (by|before)</string>
+	<string>(every|any|on a|which) (monday|tuesday|wednesday|thursday|friday|saturday|sunday|weekend|week-end)</string>
+	<string>(see you|see ya) (monday|tuesday|wednesday|thursday|friday|saturday|sunday)</string>
+	<string>except</string>
+	<string>was sent to (.{0,50}) at</string>
+	<string>per my last (.{0,50}) (monday|tuesday|wednesday|thursday|friday|saturday|sunday|weekend|week-end)</string>
+	<string>(i am out|i&apos;m out)</string>
+	<string>(turn|hand) it in (by|before)</string>
+	<string>(can&apos;t|cannot|won&apos;t|won&apos;t be able to) make it</string>
+	<string>no later than</string>
+	<string>(to edit|to modify|to change)</string>
+	<string>taking a day off</string>
+	<string>meeting notes</string>
+	<string>(please|thanks|thank you|thanks in advance|thanks a lot|could you)(.{0,50})(fill(ed|ing)? out|complet(e|ed|ing)?|repl(y|ied|ying)|return(ed|ing)?).{0,50}(by|before|until)</string>
+	<string>digest</string>
+	<string>shipped</string>
+	<string>shipment</string>
+	<string>delivery</string>
+	<string>apart from</string>
+	<string>doors (will )?close at ((.{0,50})(pm|am)|noon|midnight)</string>
+	<string>close(s)? at ((.{0,50})(pm|am)|noon|midnight)</string>
+	<string>24/7</string>
+	<string>busy</string>
+	<string>sent:</string>
+	<string>it was (supposed to be )?(monday|tuesday|wednesday|thursday|friday|saturday|sunday|weekend|this week-end)</string>
+	<string>rsvp</string>
+	<string>as of</string>
+	<string>newsletter</string>
+	<string>(between now and|except) (monday|tuesday|wednesday|thursday|friday|saturday|sunday|this weekend|this week-end)</string>
+	<string>from (monday|tuesday|wednesday|thursday|friday|saturday|sunday) to (monday|tuesday|wednesday|thursday|friday|saturday|sunday)</string>
+	<string>will be (delivered|shipped|addressed|fixed|handled)</string>
+	<string>will (be|arrive) at the office by</string>
+	<string>closed on</string>
+	<string>will be closed</string>
+	<string>let me know (asap )?(on )?(monday|tuesday|wednesday|thursday|friday|saturday|sunday)</string>
+	<string>register (.{0,30})by</string>
+	<string>act by</string>
+	<string>business hours</string>
+	<string>office hours</string>
+	<string>i will be off</string>
+	<string>no go for</string>
+	<string>have a (\w*) (monday|tuesday|wednesday|thursday|friday|saturday|sunday|weekend|week-end)</string>
+	<string>(was|were)(.{0,50})(credited|charged|executed|seen|edited|modified|sent|expedited|transferred)(.{0,50})(on|at)</string>
+	<string>be back( .{0,50})? (by|before)</string>
+	<string>(?&lt;!my )last (week|month|year)</string>
+	<string>everyday</string>
+	<string>let (us|me) know (by|before)</string>
+	<string>(expire|exp\.)</string>
+	<string>sorry i have</string>
+	<string>i would like to thank</string>
+	<string>menu for</string>
+	<string>notes</string>
+	<string>sunday social</string>
+	<string>payment date</string>
+	<string>eta</string>
+	<string>a night at the</string>
+	<string>in the office (before|by)</string>
+	<string>morning!</string>
+	<string>good (morning|afternoon|evening|night)</string>
+	<string>saturday night live</string>
+	<string>(?&lt;!drive |driving |come |coming )(by|before|starting on) ([0-9][0-9]?[\/-][0-9][0-9]?|monday|tuesday|wednesday|thursday|friday|saturday|sunday|noon|today|tomorrow|[0-9][0-9]?(am?|pm?))</string>
+	<string>arrive at the office</string>
+	<string>weekly</string>
+	<string>will (be closing|close) (.{1,15} )?at</string>
+	<string>[0-9]{1,2} (h|hours?) duration</string>
+	<string>(cannot|can[&apos;’]t) do (next )?([0-9][0-9]?|monday|tuesday|wednesday|thursday|friday|saturday|sunday|january|february|march|april|may|june|july|august|september|october|november|december)</string>
+	<string>call us (.{0,30} )?at</string>
+	<string>sign[- ]off</string>
+	<string>end date</string>
+	<string>(before|after) (lunch|dinner)</string>
+	<string>it([&apos;’]s|is) (about )?([0-9][0-9]?[:h][0-9][0-9]|a quarter|ten to)</string>
+	<string>(today is|leaving a message on) (monday|tuesday|wednesday|thursday|friday|saturday|sunday|january|february|march|april|may|june|july|august|september|october|november|december)</string>
+	<string>i will be attending</string>
+	<string>due to a private event</string>
+	<string>closing early </string>
+	<string>scheduled to (depart|arrive)</string>
+	<string>(monday|tuesday|wednesday|thursday|friday|saturday|sunday) through (monday|tuesday|wednesday|thursday|friday|saturday|sunday)</string>
+	<string>before (i|we) leave</string>
+	<string>mardi gras</string>
+	<string>(i am|i will be|i&apos;ll be) chaperoning</string>
+	<string>available until</string>
+</array>
+</plist>

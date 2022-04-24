@@ -1,0 +1,31 @@
+domain_configs {
+    key: "album"
+    value {
+        should_perform_ocr: true
+    }
+}
+
+domain_configs {
+    key: "media"
+    value {
+        should_perform_ocr: true
+    }
+}
+
+domain_configs {
+    key: "book"
+    value {
+        should_perform_ocr: true
+    }
+}
+
+domain_configs {
+    key: "object2D"
+    value {
+        should_perform_ocr: true
+    }
+}
+
+allow_ocr: true
+
+enable_visual_fingerprint: true

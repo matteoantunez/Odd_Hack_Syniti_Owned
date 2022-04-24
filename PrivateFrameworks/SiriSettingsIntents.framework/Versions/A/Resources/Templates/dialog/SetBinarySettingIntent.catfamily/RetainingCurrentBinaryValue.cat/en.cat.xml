@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#RetainingCurrentBinaryValue" locale="en">
+    <conditions>
+        <condition name="isAnnounceMessages">
+            <expression name="setting.identifier" op="eq" value="'spokenMessages'"/>
+        </condition>
+        <condition name="isSmartVolume">
+            <expression name="setting.identifier" op="eq" value="'smartVolume'"/>
+        </condition>
+    </conditions>
+	<first>
+        <dialog condition="isAnnounceMessages">
+            OK, I won’t. You can update where you hear announcements if you go to Notifications Settings and tap Announce Notifications with Siri.
+        </dialog>
+        <dialog condition="isSmartVolume">OK. I'll keep 'Automatic Siri Volume' turned on.</dialog>
+    	<dialog condition="setting.value">OK, I'll leave <var name="setting.name"/> turned on.</dialog>
+    	<dialog>OK, I'll leave <var name="setting.name"/> turned off.</dialog>
+	</first>
+</cat>

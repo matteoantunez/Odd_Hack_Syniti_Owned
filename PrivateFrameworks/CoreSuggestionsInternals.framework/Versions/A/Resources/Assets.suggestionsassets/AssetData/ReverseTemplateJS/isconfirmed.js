@@ -1,0 +1,1 @@
+(function(){return function(n,t,e){var r=t.getSpan();return n.isConfirmed.some(function(n){return r.next(n).exists()||n.test(e)})}}).call();

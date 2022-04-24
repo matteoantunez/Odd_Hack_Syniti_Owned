@@ -1,0 +1,97 @@
+{
+    "Name": "PbrRMASTiledForward",
+    "OverrideMaterial": "engine:pbrCommonTiledForward.rematerialdefinition",
+    "Parameters": {
+        "Constants": {
+            "metallicScale"  : "1",
+            "specularScale"  : "1",
+            "roughnessScale" : "1"
+        },
+        "Textures": {
+            "textureRMAS" : "fallback.white"
+        }
+    },
+    "Techniques": [
+    {
+        "Name": "Opaque",
+        "VertexShader": {
+            "Entry": "vsRealityPbr"
+        },
+        "PixelShader": {
+            "Entry": "fsRealityPbr"
+        },
+        "State" : {
+            "AlphaBlend" : false,
+            "WriteDepth" : true,
+            "DepthCompareFunction" : "Greater"
+        },
+        "FunctionConstants" : {
+            "EnableBaseColorMap"    : "true",
+            "EnableNormalMap"       : "true",
+            "EnableEmissiveMap"     : "true",
+            "EnableAreaLight"       : "true",
+            "EnableSeparateRMAS"    : "false",
+            "EnableSingleRMAS"      : "true",
+            "EnableRoughnessMap"    : "true",
+            "EnableMetallicMap"     : "true",
+            "EnableAOMap"           : "true",
+            "EnableSpecularMap"     : "true",
+            "EnableClearcoat"       : "false",
+            "VertexColorOption"     : "0",
+            "EnableIBL"             : "true",
+            "EnableAREnvProbe"      : "false"
+        },
+        "DefaultVariations" : [ "OpaqueCommon" ],
+        "DebugMapping": "PbrDebug"
+    },
+    {
+        "Name": "Shadow",
+        "VertexShader": {
+            "Entry": "vsShadow"
+        },
+        "PixelShader": {
+            "Entry": "fsShadow"
+        },
+        "State" : {
+            "ColorWriteMask" : "None"
+        }
+    },
+    {
+        "Name": "StandardTiledForward",
+        "VertexShader": {
+            "Entry": "vsRealityPbr"
+        },
+        "PixelShader": {
+            "Entry": "fsRealityPbr"
+        },
+        "State" : {
+            "AlphaBlend" : false,
+            "WriteDepth" : true,
+            "DepthCompareFunction" : "GreaterEqual"
+        },
+        "FunctionConstants" : {
+            "EnableBaseColorMap"    : "true",
+            "EnableNormalMap"       : "true",
+            "EnableEmissiveMap"     : "true",
+            "EnableAreaLight"       : "true",
+            "EnableSeparateRMAS"    : "false",
+            "EnableSingleRMAS"      : "true",
+            "EnableRoughnessMap"    : "true",
+            "EnableMetallicMap"     : "true",
+            "EnableAOMap"           : "true",
+            "EnableSpecularMap"     : "true",
+            "EnableClearcoat"       : "false",
+            "VertexColorOption"     : "0",
+            "EnableIBL"             : "true",
+            "EnablePerTileLightCulling" : "true"
+        },
+        "DebugMapping": "PbrDebug"
+    }
+    ],
+    "TechniqueMapping": {
+        "Opaque"   : "Opaque",
+        "OpaqueTiledForward"   : "StandardTiledForward",
+        "DepthPrepass"   : "StandardDepthPrepass",
+        "Shadow"   : "Shadow"
+    }
+}

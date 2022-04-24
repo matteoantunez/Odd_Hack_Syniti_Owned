@@ -1,0 +1,2 @@
+(if (entitlement "com.apple.private.familynotification")
+   (allow mach-lookup (global-name "com.apple.familynotification.agent")))

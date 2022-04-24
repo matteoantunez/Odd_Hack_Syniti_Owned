@@ -1,0 +1,186 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "cam.scnz"
+  },
+  "emoji" : "🤯",
+  "identifier" : "exploding_head",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "octopus" : {
+      "L_tentacleA_DYN" : {
+        "offset" : [
+          -1.6385354995727539,
+          -0.0010170936584472656,
+          -0.0034670829772949219
+        ]
+      },
+      "L_tentacleB_DYN" : {
+        "offset" : [
+          -1.6503829956054688,
+          7.82012939453125e-05,
+          -0.00020360946655273438
+        ]
+      },
+      "L_tentacleC_DYN" : {
+        "offset" : [
+          -1.6428031921386719,
+          5.7220458984375e-06,
+          0.00098276138305664062
+        ]
+      },
+      "L_tentacleD_DYN" : {
+        "offset" : [
+          -1.6465902328491211,
+          -0.0014986991882324219,
+          0.0027196407318115234
+        ]
+      },
+      "R_tentacleA_DYN" : {
+        "offset" : [
+          1.6385345458984375,
+          0.0010156631469726562,
+          0.0034656524658203125
+        ]
+      },
+      "R_tentacleB_DYN" : {
+        "offset" : [
+          1.6503772735595703,
+          -8.1539154052734375e-05,
+          0.00020623207092285156
+        ]
+      },
+      "R_tentacleC_DYN" : {
+        "offset" : [
+          1.6427984237670898,
+          -8.106231689453125e-06,
+          -0.0009860992431640625
+        ]
+      },
+      "R_tentacleD_DYN" : {
+        "offset" : [
+          1.6465845108032227,
+          0.0014958381652832031,
+          -0.0027179718017578125
+        ]
+      },
+      "tongue_DYN" : {
+        "offset" : [
+          -2.2204460492503131e-16,
+          0.496551513671875,
+          -4.76837158203125e-07
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browInnerUp" : 0.92912369966506958,
+    "browOuterUp_L" : 1,
+    "browOuterUp_R" : 1,
+    "eyeWide_L" : 0.61605215072631836,
+    "eyeWide_R" : 0.68419069051742554,
+    "jawOpen" : 0.97780042886734009,
+    "mouthFrown_L" : 0.20895731449127197,
+    "mouthFrown_R" : 0.22007296979427338,
+    "mouthUpperUp_L" : 0.19008266925811768,
+    "mouthUpperUp_R" : 0.15426996350288391,
+    "neckOrientation" : [
+      0,
+      0,
+      0,
+      1
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "image" : "../../../shared/exploding_head/cloud.heic",
+      "position" : 0,
+      "shaders" : [
+        {
+          "file" : "cloud_tint_surface.metal",
+          "modifier" : "surface"
+        }
+      ]
+    },
+    {
+      "image" : "../../../shared/exploding_head/shockwave.heic",
+      "position" : {
+        "x" : 0,
+        "y" : 0.050000000000000003,
+        "z" : 1
+      },
+      "scale" : 0.75,
+      "shaders" : [
+        {
+          "file" : "cloud_tint_surface.metal",
+          "modifier" : "surface"
+        }
+      ]
+    },
+    {
+      "position" : {
+        "x" : 0,
+        "y" : 4,
+        "z" : 0
+      },
+      "scene" : "../../shared/exploding_head/shards.scnz",
+      "shaders" : [
+        {
+          "file" : "color1_surface.metal",
+          "modifier" : "surface",
+          "node" : "mindBlownShard_02"
+        },
+        {
+          "file" : "color2_surface.metal",
+          "modifier" : "surface",
+          "node" : "mindBlownShard_01"
+        }
+      ]
+    }
+  ],
+  "shaders" : [
+    {
+      "file" : "../../../shared/exploding_head/vertex_fracture.metal",
+      "modifier" : "vertex",
+      "node" : "head",
+      "properties" : [
+        {
+          "name" : "vertical_offsetv",
+          "type" : "float",
+          "value" : 0.90000000000000002
+        }
+      ]
+    },
+    {
+      "file" : "../../../shared/exploding_head/fragment_fracture.metal",
+      "forceDoubleSided" : true,
+      "modifier" : "fragment",
+      "node" : "head",
+      "properties" : [
+        {
+          "name" : "mask_texture",
+          "type" : "texture",
+          "value" : "../../../shared/exploding_head/mask.heic"
+        },
+        {
+          "name" : "maskshadow_texture",
+          "type" : "texture",
+          "value" : "../../../shared/exploding_head/maskshadow.heic"
+        },
+        {
+          "name" : "vertical_offsetf",
+          "type" : "float",
+          "value" : 0.90000000000000002
+        }
+      ]
+    }
+  ]
+}

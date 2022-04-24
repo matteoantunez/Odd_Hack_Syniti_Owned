@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NonPFLPlugins</key>
+	<array>
+		<string>com.apple.fides.borealis</string>
+		<string>com.apple.AppPredictionDESPlugin</string>
+		<string>com.apple.fides.asr</string>
+		<string>com.apple.stocks.des</string>
+		<string>com.apple.acg.autoloops</string>
+		<string>com.apple.ap.SearchAdsDESPlugin</string>
+		<string>com.apple.TextInput.TypingDESPlugin</string>
+		<string>com.apple.news.des</string>
+		<string>com.apple.AutocorrectionTesterDESPlugin</string>
+	</array>
+</dict>
+</plist>

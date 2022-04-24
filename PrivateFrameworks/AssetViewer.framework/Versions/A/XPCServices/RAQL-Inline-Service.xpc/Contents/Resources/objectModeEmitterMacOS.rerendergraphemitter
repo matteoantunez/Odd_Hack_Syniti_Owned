@@ -1,0 +1,8 @@
+{
+    "SimpleForwardEmitter" : {
+        "ShadowGraph" : "engine:BuiltinRenderGraphResources/Common/shadow.rerendergraph",
+        "CameraGraph" : "objectModeCameraMacOS.rerendergraph",
+        "PostProcessGraph" : "engine:BuiltinRenderGraphResources/Common/postprocessCombined.rerendergraph",
+        "DebugMaterial" : "debugMaterials.rematerial"
+    }
+}

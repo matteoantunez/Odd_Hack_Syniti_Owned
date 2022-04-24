@@ -1,0 +1,137 @@
+{
+    "supportedLanguages" : ["swift"],
+    "contexts": {
+        "()->(Float)": {
+            "assignments": [
+                {
+                    "baseType": "CodeSnippet",
+                    "baseUID": "Cos_34",
+                    "parameterName": "in"
+                },
+                {
+                    "baseType": "CodeSnippet",
+                    "baseUID": "Time_33",
+                    "parameterName": "out"
+                },
+                {
+                    "baseType": "ContextExit",
+                    "baseUID": "TimedCos",
+                    "parameterName": "out"
+                },
+                {
+                    "baseType": "CodeSnippet",
+                    "baseUID": "Cos_34",
+                    "parameterName": "out"
+                }
+            ],
+            "contextEntryMap": {
+                "TimedCos": {
+                    "metadataDict": {
+                        "label": {
+                            "keyName": "label",
+                            "label": "TimedCos (Inputs)",
+                            "valueType": "String"
+                        },
+                        "name": {
+                            "keyName": "name",
+                            "name": "TimedCos",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -870.1318359375,
+                                209.30467224121094
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "uid": "TimedCos"
+                }
+            },
+            "contextExitMap": {
+                "TimedCos": {
+                    "inParameterNames": [
+                        "out"
+                    ],
+                    "inParameterTypes": [
+                        "Float"
+                    ],
+                    "metadataDict": {
+                        "label": {
+                            "keyName": "label",
+                            "label": "TimedCos (Outputs)",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -201.45993041992188,
+                                262.10543823242188
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "uid": "TimedCos"
+                }
+            },
+            "idx": 0,
+            "metadataDict": {
+                "name": {
+                    "keyName": "name",
+                    "name": "TimedCos",
+                    "valueType": "String"
+                }
+            },
+            "outParameterNames": [
+                "Cos:out"
+            ],
+            "outParameterTypes": [
+                "Float"
+            ],
+            "snippets": {
+                "Cos_34": {
+                    "libraryName": "Math",
+                    "metadataDict": {
+                        "name": {
+                            "keyName": "name",
+                            "name": "Cos",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -451.45993041992188,
+                                262.10543823242188
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "snippetName": "Cos",
+                    "snippetSignature": "(Float)->(Float)"
+                },
+                "Time_33": {
+                    "libraryName": "ECS",
+                    "metadataDict": {
+                        "name": {
+                            "keyName": "name",
+                            "name": "Time",
+                            "valueType": "String"
+                        },
+                        "position": {
+                            "keyName": "position",
+                            "position": [
+                                -620.1318359375,
+                                209.30467224121094
+                            ],
+                            "valueType": "Float2"
+                        }
+                    },
+                    "snippetName": "Time",
+                    "snippetSignature": "()->(Float)"
+                }
+            },
+            "uid": "9fd9fd28-690d-4694-aeff-f461ab057b58"
+        }
+    }
+}

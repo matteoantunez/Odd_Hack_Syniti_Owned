@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING</key>
+	<array>
+	</array>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>d[eé]j(euner)? (d['’]|pour (mon|notre) )anniversaire</string>
+		<string>brunch (d['’]|pour (mon|notre) )anniversaire</string>
+		<string>d[iî]ner d['’]anniversaire</string>
+	</array>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<array>
+		<string>d[eé]j(euner)? (d['’]|pour (mon|notre) )anniversaire</string>
+		<string>brunch (d['’]|pour (mon|notre) )anniversaire</string>
+		<string>d[iî]ner d['’]anniversaire</string>
+		<string>f[eê]te d['’]anniversaire</string>
+	</array>
+	<key>GATHERING::APERITIF</key>
+	<array>
+		<string>ap[eé]ro( dinatoire)?</string>
+	</array>
+	<key>GATHERING::CEREMONY</key>
+	<array>
+		<string>c[eé]r[eé]monie d['’]ouverture</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>oktoberfest</string>
+		<string>tourn[eé]es? des (bars?|pubs?)</string>
+		<string>barathons?</string>
+		<string>(bar|pub) crawl</string>
+		<string>afterwork</string>
+		<string>pot de no[eë]l</string>
+	</array>
+	<key>GATHERING::DRINKS::COFFEE</key>
+	<array>
+		<string>caf[eé][- ](philo(sophique)?|conversation)</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>brunch (d['’]|pour (mon|notre) )anniversaire</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>d[iî]ner de (no[eë]l|p[aâ]ques|r[eé]veillon)</string>
+		<string>repas de (no[eë]l|p[aâ]ques|r[eé]veillon)</string>
+		<string>d[iî]ner d['’]anniversaire</string>
+		<string>d[iî]ner (d['’][eé]quipe|du club)</string>
+		<string>(d[iî]ner|repas) (de|en) famille</string>
+		<string>raclette</string>
+		<string>pierrade</string>
+		<string>fondue (savoyarde|bourguignonne)</string>
+		<string>tartiflette</string>
+		<string>cocktail d[iî]natoire</string>
+		<string>d[iî]ner de gala( de fin d['’]ann[eé]e)?</string>
+		<string>d[iî]ner de charit[eé]</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>d[eé]j(euner)? de (no[eë]l|p[aâ]ques)</string>
+		<string>repas (de (no[eë]l|p[aâ]ques)|du r[eé]veillon)</string>
+		<string>d[eé]j(euner)? (d['’]|pour (mon|notre) )anniversaire</string>
+		<string>d[eé]j(euner)? d['’][eé]quipe</string>
+		<string>(d[eé]j(euner)?|repas) (de|en) famille</string>
+		<string>raclette</string>
+		<string>pierrade</string>
+		<string>fondue (savoyarde|bourguignonne)</string>
+		<string>tartiflette</string>
+	</array>
+	<key>GATHERING::MEAL::SNACK</key>
+	<array>
+		<string>go[u[uû]]ter d['’]anniversaire</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>halloween</string>
+		<string>(nouvel an( chinois)?|(saint|st\.?)[- ]sylvestre|r[eé]veillon de fin d['’]ann[eé]e)</string>
+		<string>(saint|st\.?)[- ]patrick</string>
+		<string>(soir[eé]e|f[eê]te|gala|r[eé]veillon) de (no[eë]l|fin d['’]ann[eé]e)</string>
+		<string>f[eê]te (des voisins|de la musique)</string>
+		<string>galette des rois</string>
+		<string>(f[eê]te de l['’])?a[iï]d( el-kebir| el-fitr)?</string>
+		<string>enterrement de vie de (jeune fille|gar[cç]on)</string>
+		<string>pot de no[eë]l</string>
+		<string>pot (de d[eé]part|d['’]arriv[eé]e|de mariage|de naissance)</string>
+		<string>vin d['’]honneur</string>
+		<string>soir[eé]e p[eé]niche</string>
+		<string>afterwork</string>
+		<string>beer bash</string>
+	</array>
+</dict>
+</plist>

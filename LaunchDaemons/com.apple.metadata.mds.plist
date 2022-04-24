@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.metadata.mds</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.mds.repeatingHealthCheck</key>
+			<dict>
+				<key>Interval</key>
+				<integer>518400</integer>
+				<key>Delay</key>
+				<integer>518400</integer>
+				<key>GracePeriod</key>
+				<integer>259200</integer>
+				<key>Repeating</key>
+				<true/>
+				<key>Priority</key>
+				<string>Maintenance</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Support/mds</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.metadata.mds</key>
+		<true/>
+		<key>com.apple.metadata.mds.legacy</key>
+		<true/>
+		<key>com.apple.metadata.mds.xpcs</key>
+		<true/>
+		<key>com.apple.metadata.mds.cachedelete</key>
+		<true/>
+	</dict>
+	<key>SoftResourceLimits</key>
+	<dict>
+		<key>NumberOfFiles</key>
+		<integer>2048</integer>
+	</dict>
+	<key>HardResourceLimits</key>
+	<dict>
+		<key>NumberOfFiles</key>
+		<integer>2048</integer>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Spotlight</string>
+	<key>LowPriorityBackgroundIO</key>
+	<false/>
+	<key>EnvironmentVariables</key>
+	<dict/>
+	<key>_ExponentialThrottling</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+(function(){return{en_US:{".ca":"en_CA",".co.uk":"en_GB",".com.au":"en_AU",".in":"en_IN"},es_ES:{".com.mx":"es_MX"},fr_FR:{".ca":"fr_CA"},zh_Hans_CN:{".com.hk":"zh_Hans_HK",".com.tw":"zh_Hans_TW"}}}).call();

@@ -1,0 +1,4 @@
+#import <AppKit/NSApplication.h>
+#import <Cocoa/Cocoa.h>
+#import "MyDocument.h"
+#import <objc/objc-runtime.h>			// for objc_msgSend

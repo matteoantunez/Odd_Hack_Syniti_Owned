@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#UnspecifiedActionForSupportedBinarySetting" locale="en">
+    <conditions>
+        <condition name="isBass">
+            <or>
+                <expression name="setting.identifier" op="eq" value="'bass'"/>
+                <expression name="setting.identifier" op="eq" value="'bassReduce'"/>
+            </or>
+        </condition>
+    </conditions>
+    <first>
+        <all condition="setting.value">
+            <first>
+                <dialog condition="isBass">The bass is on.</dialog>
+                <dialog><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is on.</dialog>
+            </first>
+            <dialog>Let me know if you want to turn it off.</dialog>
+        </all>
+        <all>
+            <first>
+                <dialog condition="isBass">The bass is off.</dialog>
+                <dialog><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is off.</dialog>
+            </first>
+            <dialog>Let me know if you want to turn it on.</dialog>
+        </all>
+    </first>
+</cat>

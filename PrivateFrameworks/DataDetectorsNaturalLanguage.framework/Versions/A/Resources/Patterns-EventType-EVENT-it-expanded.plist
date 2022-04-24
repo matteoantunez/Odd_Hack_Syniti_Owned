@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EVENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(sei|lei (si )?[eèé]) (iscritt|registrat)(o|a) a</string>
+			<string>siete (iscritt|registrat)(e|i)</string>
+			<string>(aggiung(ere|i|ete)|uni(sci|te|re|rvi)) a (noi|me)</string>
+			<string>(vieni|venite|invitat(o|a|i|e)) (da (me|noi)|(a casa mia|a casa nostra))</string>
+			<string>vogliamo (vederci|uscire)</string>
+			<string>trovarci</string>
+			<string>invitat(o|a|i|e) a</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<string>YES</string>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>TITLE_SENDER_TEMPLATE</key>
+		<string>%1$@ con %2$@</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

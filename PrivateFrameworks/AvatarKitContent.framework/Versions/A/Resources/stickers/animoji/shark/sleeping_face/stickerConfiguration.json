@@ -1,0 +1,73 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../../shared/cam.scnz"
+  },
+  "emoji" : "😴",
+  "identifier" : "sleeping_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "shark" : {
+      "dorsalFin_DYN" : {
+        "offset" : [
+          -2.0289087295532227,
+          -0.024868965148925781,
+          2.605531790322857e-09
+        ]
+      },
+      "L_pectoralFin_DYN" : {
+        "offset" : [
+          -1.7247262001037598,
+          0.0099472999572753906,
+          0.24261045455932617
+        ]
+      },
+      "R_pectoralFin_DYN" : {
+        "offset" : [
+          1.7245779037475586,
+          -0.010038852691650391,
+          -0.24274206161499023
+        ]
+      },
+      "tongue_DYN" : {
+        "offset" : [
+          4.2971675480105165e-17,
+          0.77241611480712891,
+          0.0012378692626953125
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "eyeBlink_L" : 1,
+    "eyeBlink_R" : 1,
+    "jawOpen" : 0.20185458660125732,
+    "mouthSmile_L" : 0.19559231400489807,
+    "mouthSmile_R" : 0.22038573026657104,
+    "mouthStretch_L" : 0.02627808041870594,
+    "neckOrientation" : [
+      -0.066273912787437439,
+      0,
+      0,
+      0.99780154228210449
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "image" : "../../../shared/sleeping_face/zs.heic",
+      "position" : {
+        "x" : 0.25,
+        "y" : 0.25,
+        "z" : 30
+      }
+    }
+  ]
+}

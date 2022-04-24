@@ -1,0 +1,5 @@
+(if (or (entitlement "com.apple.private.communicationsfilter"))
+   (allow mach-lookup (global-name "com.apple.cmfsyncagent.auth")))
+   
+(if (or (entitlement "com.apple.private.communicationsfilter"))
+    (allow mach-lookup (global-name "com.apple.cmfsyncagent.embedded.auth")))

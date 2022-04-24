@@ -1,0 +1,172 @@
+{
+    "Name": "PrimitiveRenderingCommon",
+    "OverrideMaterial": "engine:engineDefaults.rematerialdefinition",
+    "Library": "",
+    "Parameters": {
+        "Constants": {
+            "pointColor": "[1.0, 1.0, 1.0, 1.0]",
+            "pointSize": "1.0",
+            "lineColor": "[1.0, 1.0, 1.0, 1.0]",
+            "lineWidth": "1.0",
+            "shapeColor": "[1.0, 1.0, 1.0, 1.0]",
+            "shapeScale": "[1.0, 1.0, 1.0]",
+
+            "isPointColorUniform": "true",
+            "isPointSizeUniform": "true",
+            "isLineColorUniform": "true",
+            "isLineWidthUniform": "true",
+            "isShapeColorUniform": "true",
+            "isShapeScaleUniform": "true"
+        },
+        "Buffers": {
+            "position": "geometry.vertexPosition",
+
+            "pointPosition": "fallback.zeros",
+            "pointColor": "fallback.ones",
+            "pointSize": "fallback.ones",
+
+            "linePosition0": "fallback.zeros",
+            "linePosition1": "fallback.zeros",
+            "lineColor": "fallback.ones",
+            "lineWidth": "fallback.ones",
+
+            "shapePosition": "fallback.zeros",
+            "shapeOrientation": "fallback.origin",
+            "shapeColor": "fallback.ones",
+            "shapeScale": "fallback.ones"
+        }
+    },
+    "Techniques": [
+    {
+        "Name": "PrimitivePoint",
+        "VertexShader": {
+            "Entry": "vsPrimitivePoint"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Greater"
+        }
+    },
+    {
+        "Name": "PrimitivePointNoZ",
+        "VertexShader": {
+            "Entry": "vsPrimitivePoint"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Always"
+        }
+    },
+    {
+        "Name": "PrimitiveLine",
+        "VertexShader": {
+            "Entry": "vsPrimitiveLine"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Greater"
+        }
+    },
+    {
+        "Name": "PrimitiveLineNoZ",
+        "VertexShader": {
+            "Entry": "vsPrimitiveLine"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Always"
+        }
+    },
+    {
+        "Name": "PrimitiveShape",
+        "VertexShader": {
+            "Entry": "vsPrimitiveShape"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Greater"
+        }
+    },
+    {
+        "Name": "PrimitiveShapeNoZ",
+        "VertexShader": {
+            "Entry": "vsPrimitiveShape"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Always"
+        }
+    },
+    {
+        "Name": "PrimitiveShapeFlat",
+        "VertexShader": {
+            "Entry": "vsPrimitiveShapeFlat"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Greater"
+        }
+    },
+    {
+        "Name": "PrimitiveShapeFlatNoZ",
+        "VertexShader": {
+            "Entry": "vsPrimitiveShapeFlat"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": false,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Always"
+        }
+    },
+    {
+        "Name": "PrimitiveShapeFlatTransparent",
+        "VertexShader": {
+            "Entry": "vsPrimitiveShapeFlat"
+        },
+        "PixelShader": {
+            "Entry": "fsPrimitivePoint"
+        },
+        "State": {
+            "AlphaBlend": true,
+            "WriteDepth": true,
+            "DepthCompareFunction": "Greater",
+            "AlphaBlendOperation": "Add",
+            "AlphaSourceFactor": "One",
+            "AlphaDestinationFactor": "OneMinusSourceAlpha",
+            "RgbBlendOperation": "Add",
+            "RgbSourceFactor": "One",
+            "RgbDestinationFactor": "OneMinusSourceAlpha"
+        }
+    }]
+}

@@ -1,0 +1,18 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.PhoneHandle
+
+inputs:
+    phoneLabel:
+        access_mode: public
+    phoneHandle:
+        access_mode: public
+
+properties:
+    phoneLabel:
+        type: dialog.String
+        description: Handle label semantic concept for phone
+        semantic_concept: phoneType
+    phoneHandle:
+        type: dialog.String
+        description: Speakable string of phone number handle

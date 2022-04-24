@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APPOINTMENT::EDUCATION::TALK</key>
+	<array>
+		<string>caf[eé][ -](philo(sophique)?|citoyen|d[eé]bat)</string>
+	</array>
+	<key>APPOINTMENT::WELLNESS::HEALTH</key>
+	<array>
+		<string>visite m[eé]dicale</string>
+		<string>(consultation|examen|test) (m[eé]dicale?|p[eé]diatrique|gyn[eé]cologique)</string>
+		<string>centre m[eé]dical</string>
+		<string>chiropracteur</string>
+		<string>centre de sant[eé]</string>
+		<string>bilan sant[eé]</string>
+	</array>
+</dict>
+</plist>

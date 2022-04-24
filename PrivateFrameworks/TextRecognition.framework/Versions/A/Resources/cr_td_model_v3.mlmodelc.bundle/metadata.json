@@ -1,0 +1,93 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 4 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[4, 120, 120]",
+        "name" : "region_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 4 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[4, 120, 120]",
+        "name" : "affinity_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 4 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[4, 120, 120]",
+        "name" : "script_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 4 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[4, 120, 120]",
+        "name" : "link_score",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 1,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 6,
+      "ActivationLinear" : 58,
+      "ActivationReLU" : 54,
+      "Softmax" : 1,
+      "UpsampleBiLinear" : 5,
+      "Add" : 1,
+      "UnaryThreshold" : 29,
+      "BatchNorm" : 38,
+      "Convolution" : 55,
+      "PaddingConstant" : 5
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.3"
+    },
+    "generatedClassName" : "craft_mobilenet_east_like_script_classification_aspp_image_8fnxjnbw7g_000219_fixed",
+    "inputSchema" : [
+      {
+        "height" : "480",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "480",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 480 × 480)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "img_input"
+      }
+    ],
+    "method" : "predict"
+  }
+]

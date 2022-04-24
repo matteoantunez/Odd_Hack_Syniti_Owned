@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetNumericSettingIntent#ChangedNumericValueToSpokenOnly" locale="en">
+    <conditions>
+        <condition name="isDisplayBrightness">
+            <expression name="setting.identifier" op="eq" value="'displayBrightness'"/>
+        </condition>
+        <condition name="isSiriVoiceVolume">
+            <expression name="setting.identifier" op="eq" value="'voice'"/>
+        </condition>
+    </conditions>
+
+    <first>
+        <first condition="isDisplayBrightness">
+            <dialog condition="action.isMinimum">OK, this is as dark as it gets.</dialog>
+            <dialog condition="action.isMaximum">OK, this is as bright as it gets.</dialog>
+            
+            <dialog condition="action.isIncrease">OK, I made the screen brighter.</dialog>
+            <dialog condition="action.isDecrease">OK, I made the screen darker.</dialog>
+        </first>
+        
+        <first condition="isSiriVoiceVolume">
+            <dialog condition="action.isMinimum">OK, this is as quiet as it gets.</dialog>
+            <dialog condition="action.isMaximum">OK, this is as loud as it gets.</dialog>
+            
+            <random condition="action.isIncrease">
+                <dialog>I’ll speak louder.</dialog>
+                <dialog>I’ll speak up.</dialog>
+            </random>
+            <random condition="action.isDecrease">
+                <dialog>I’ll speak softer.</dialog>
+                <dialog>I’ll dial it down.</dialog>
+            </random>
+        </first>
+            
+        <first>
+            <first condition="action.isSetValue">
+                <dialog condition="action.isIncrease"><var name="setting.name"/> increased.</dialog>
+                <dialog condition="action.isDecrease"><var name="setting.name"/> decreased.</dialog>
+                <dialog><var name="setting.name"/> set to <var name="action.value"/>.</dialog>
+            </first>
+            
+            <dialog condition="action.isMinimum"><var name="setting.name"/> set to the minimum.</dialog>
+            <dialog condition="action.isMaximum"><var name="setting.name"/> set to the maximum.</dialog>
+
+            <dialog condition="action.isIncrease"><var name="setting.name"/> increased.</dialog>
+            <dialog condition="action.isDecrease"><var name="setting.name"/> decreased.</dialog>
+        </first>
+    </first>
+</cat>

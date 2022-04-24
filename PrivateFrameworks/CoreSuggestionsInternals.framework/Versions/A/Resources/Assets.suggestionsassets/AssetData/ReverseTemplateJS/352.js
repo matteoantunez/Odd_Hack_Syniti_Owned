@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("movie-generic",function(e){return loadHelper("ShouldDownloadMessageWithClassifier.js")(e,"movie")},function(e){var o=loadHelper("override_to_category.js")(e);return o&&"function"==typeof o?o(e):loadHelper("movie_generic.js")(e)},"SGa10e30fb")]);

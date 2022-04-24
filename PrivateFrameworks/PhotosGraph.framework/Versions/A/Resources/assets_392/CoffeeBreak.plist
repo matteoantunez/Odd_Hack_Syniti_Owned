@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<integer>1</integer>
+	<key>criteria</key>
+	<array>
+		<dict>
+			<key>POI</key>
+			<dict>
+				<key>positivePOIs</key>
+				<array>
+					<string>Restaurant</string>
+				</array>
+				<key>minimumNumberOfPOIs</key>
+				<integer>1</integer>
+			</dict>
+			<key>PartsOfDay</key>
+			<dict>
+				<key>positiveSignificantPartsOfDay</key>
+				<array>
+					<string>Noon</string>
+					<string>Afternoon</string>
+					<string>Morning</string>
+				</array>
+				<key>negativeSignificantPartsOfDay</key>
+				<array>
+					<string>Night</string>
+				</array>
+			</dict>
+			<key>Scene</key>
+			<dict>
+				<key>positiveScenes</key>
+				<array>
+					<string>coffee</string>
+					<string>drink_tea</string>
+					<string>bubble_tea</string>
+				</array>
+				<key>negativeScenes</key>
+				<array>
+					<string>liquor</string>
+					<string>meat</string>
+					<string>egg</string>
+					<string>seafood</string>
+					<string>vegetable</string>
+				</array>
+				<key>minimumNumberOfPositiveScenes</key>
+				<integer>1</integer>
+				<key>minimumNumberOfNegativeScenes</key>
+				<integer>1</integer>
+				<key>minimumNumberOfAssetsWithPositiveScenes</key>
+				<integer>1</integer>
+				<key>minimumNumberOfAssetsWithNegativeScenes</key>
+				<integer>4</integer>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

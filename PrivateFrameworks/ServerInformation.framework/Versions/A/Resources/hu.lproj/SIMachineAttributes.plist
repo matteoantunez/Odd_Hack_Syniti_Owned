@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Intel Core Duo processzorral fekete vagy fehér színben</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duo processzorral fekete vagy fehér színben</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duo processzorral fekete vagy fehér színben</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duo processzorral fekete vagy fehér színben</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo processzorral (alumíniumburkolat)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duo processzorral és alumínium házzal (2008 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo processzorral (fehér, 2009 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Fehér MacBook Intel Core 2 Duo processzorral (2009 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo processzorral (fehér, 2009 vége)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Fehér MacBook Intel Core 2 Duo processzorral és LED-kijelzővel (2009 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo processzorral (fehér, 2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Intel Core 2 Duo processzorral és fehér alumínium házzal (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12 hüvelykes MacBook (2015 eleje)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core iM</string>
+			<key>description</key>
+			<string>12 hüvelykes MacBook Retina kijelzővel (2015 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12 hüvelykes MacBook (2016 eleje)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core m3, kétmagos Intel Core m5, kétmagos Intel Core m7</string>
+			<key>description</key>
+			<string>12 hüvelykes MacBook Retina kijelzővel (2016 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12 hüvelykes MacBook (2017 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i3, kétmagos Intel Core i5, kétmagos Intel Core i7</string>
+			<key>description</key>
+			<string>12 hüvelykes MacBook, Retina kijelzővel (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(Eredeti)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Air Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Air Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 hüvelykes MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Air 11 hüvelykes kijelzővel (2010 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Air 13 hüvelykes kijelzővel (2010 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 hüvelykes MacBook Air (2011 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 11 hüvelykes kijelzővel (2011 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Air (2011 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 13 hüvelykes kijelzővel (2011 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 hüvelykes MacBook Air (2012 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 11 hüvelykes kijelzővel (2012 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Air (2012 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 13 hüvelykes kijelzővel (2012 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 hüvelykes MacBook Air (2013 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 11 hüvelykes kijelzővel (2013 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Air (2013 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 13 hüvelykes kijelzővel (2013 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11 hüvelykes MacBook Air (2015 eleje)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 11 hüvelykes kijelzővel (2015 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Air (2015 eleje)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air 13 hüvelykes kijelzővel (2015 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (2018 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Air Retina kijelzővel és Touch ID-val (2018 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (2019 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air Retina kijelzővel és Touch ID-val (2019 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core Duo processzorral és 15 vagy 17 hüvelykes kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core Duo processzorral és 15 vagy 17 hüvelykes kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és 15 vagy 17 hüvelykes kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és 15 vagy 17 hüvelykes kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és 15 vagy 17 hüvelykes kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral, 15 vagy 17 hüvelykes kijelzővel és Multi-Touch trackpaddel</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral (alumíniumburkolat) (2008 vége)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és alumínium házzal (2008 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral (alumíniumburkolat) (2009 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és alumínium házzal (2009 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral (alumíniumburkolat) (2009 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és alumínium házzal (2009 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral (alumíniumburkolat) (2009 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és alumínium házzal (2009 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral (alumíniumburkolat) (2009 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral és alumínium házzal (2009 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 processzorral (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core i5 vagy Intel Core i7 processzorral, 15 vagy 17 hüvelykes kijelzővel és alumínium házzal (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 processzorral (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>MacBook Pro Intel Core i5 vagy Intel Core i7 processzorral, 15 vagy 17 hüvelykes kijelzővel és alumínium házzal (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo processzorral (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Intel Core 2 Duo processzorral és alumíniumházzal (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 processzorral, 13 hüvelykes kijelzővel (2011 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro kétmagos Intel Core i5 vagy Intel Core i7 processzorral és alumíniumházzal (2011 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7 processzorral, 15 hüvelykes kijelzővel (2011 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro négymagos Intel Core i7 processzorral és alumínium házzal (2011 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7 processzorral, 17 hüvelykes kijelzővel (2011 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>17 hüvelykes MacBook Pro négymagos Intel Core i7 processzorral és alumínium házzal (2011 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7 processzorral, 15 hüvelykes (2012 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro kétmagos Intel Core i7 processzorral és alumínium házzal (2012 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 processzorral, 13 hüvelykes kijelzővel (2012 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro kétmagos Intel Core i5 vagy Intel Core i7 processzorral és alumíniumházzal (2012 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Retina kijelzővel, Intel Core i7 processzorral, 15 hüvelykes kijelzővel (2012 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel kétmagos Intel Core i7 processzorral és alumínium házzal (2012 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Retina kijelzővel, Intel Core i5 és Intel Core i7 processzorral, 13 hüvelykes kijelzővel (2012 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Retina kijelzővel, kétmagos Intel Core i5 vagy i7 processzorral és alumínium házzal (2012 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Retina kijelzővel (2013 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Retina kijelzővel és alumínium házzal (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel (2013 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel és alumínium házzal (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel, különálló NVIDIA grafikus processzorral (2013 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel és alumínium házzal, különálló NVIDIA grafikus processzorral (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel (2015 közepe)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel és alumínium házzal (2015 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel (2015 közepe)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Retina kijelzővel és alumínium házzal, különálló AMD grafikus processzorral (2015 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Retina kijelzővel (2015 eleje)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Retina kijelzővel és alumínium házzal (2015 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal (2016 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal (2016 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Touch Barral (2016)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2016 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2016 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2016 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal (2017 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2017 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val, (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2017 közepe)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2018 közepe)</string>
+			<key>processor</key>
+			<string>Hatmagos Intel Core i7, hatmagos Intel Core i9</string>
+			<key>description</key>
+			<string>15 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2018 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2018 közepe)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>13 hüvelykes MacBook Pro Thunderbolt 3-mal és Touch ID-val (2018 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2006 közepe)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Asztali számítógép toronyszerű kialakítással (alumíniumburkolat)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2006 közepe)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Asztali számítógép toronyszerű kialakítással (alumíniumburkolat)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2007 eleje)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Asztali számítógép toronyszerű kialakítással (alumíniumburkolat)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2008 eleje)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Asztali számítógép toronyszerű kialakítással (alumíniumburkolat)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2009 eleje)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Asztali számítógép toronyszerű kialakítással (alumíniumburkolat) (2009 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Asztali számítógép toronyszerű kialakítással (alumíniumburkolat) (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2013 vége)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Pro asztali burkolat (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core processzorral (2006 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core processzor</string>
+			<key>description</key>
+			<string>Kis helyigényű asztali Mac Intel Core 2 Duo, Intel Core Duo vagy Intel Core Solo processzorral.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (2007 közepe)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core processzorral</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Kis helyigényű asztali Mac Intel Core 2 Duo, Intel Core Duo vagy Intel Core Solo processzorral.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core processzorral (2009 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Mac mini NVIDIA GeForce 9400M grafikus processzorral (2009 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core processzorral (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Mac mini NVIDIA GeForce 320M grafikus processzorral (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2011 közepe) Intel HD Graphics 3000 processzorral</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5 processzor</string>
+			<key>description</key>
+			<string>Mac mini kétmagos Intel i5 és Intel HD Graphics 3000 processzorral (2011 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2011 közepe) AMD Radeon HD 6630M grafikus processzorral</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>Mac mini kétmagos Intel i5 vagy i7 processzorral és AMD Radeon HD 6630M grafikus processzorral (2011 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini server (2011 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>Mac mini server kétmagos i7 és Intel HD Graphics 3000 processzorral (2011 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2012 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini kétmagos Intel i5 processzorral és Intel HD Graphics 4000 videokártyával (2012 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2012 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini négymagos Intel i7 processzorral és Intel HD Graphics 4000 videokártyával (2012 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2014 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5, kétmagos Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>Mac mini kétmagos Intel processzorral és integrált videokártyával (2014 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2018 vége)</string>
+			<key>processor</key>
+			<string>Nyolcadik generációs Intel processzor (négymagos Core i3, hatmagos Core i5, hatmagos Core i7)</string>
+			<key>description</key>
+			<string>Mac mini nyolcadik generációs Intel processzorral és Intel UHD graphics 630 videokártyával (2018 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Hordozható számítógép fekete színű, műanyag-gumi kivitelű tokban, szoborszerűen megmunkált oldalakkal</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egy eredeti, csillogó színű „kagylóhéjat‟ tartalmaz, amely a beépített fogantyúnak köszönhetően tetszőlegesen hordozható, továbbá későbbi modelleket ezüst-fehér színű, műanyag, téglalap alakú burkolatban 12 vagy 14 hüvelykes, síkképernyős kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Fehér színű iBookok G4 processzorral.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Fehér színű iBookok G4 processzorral.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Fehér színű iBookok G4 processzorral.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egy eredeti, alacsony kialakítású titániumburkolatot tartalmaz 15 hüvelykes, síkképernyős kijelzővel, továbbá későbbi modelleket alumíniumházban 12, 15 vagy 17 hüvelykes kijelzővel.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Kék-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Kék-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kis helyigényű asztali Mac G4, amely szinte bármilyen LCD- vagy VGA-kijelzőhöz csatlakoztatható.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kis helyigényű asztali Mac G4, amely szinte bármilyen LCD- vagy VGA-kijelzőhöz csatlakoztatható.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumínium, toronyszerű kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumínium, toronyszerű kialakítású asztali számítógép.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Síkképernyős G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás, többek között eredeti, kék-fehér színű műanyag burkolattal, majd később különféle választható színekkel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás, többek között eredeti, kék-fehér színű műanyag burkolattal, majd később különféle választható színekkel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Szürke-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Szürke-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Szürke-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Szürke-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Szürke-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Szürke-fehér színű, formázott műanyag borítású, torony kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás, többek között eredeti, kék-fehér színű műanyag burkolattal, majd később különféle választható színekkel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás kupola alakú talppal és 15, 17 vagy 20 hüvelykes, síkképernyős kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás beépített síkképernyős CRT-monitorral egy helytakarékos, lekerekített burkolatban</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás kupola alakú talppal és 15, 17 vagy 20 hüvelykes, síkképernyős kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Letisztult felületű, műanyag, kocka alakú asztali számítógép.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Letisztult felületű, műanyag, kocka alakú asztali számítógép.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás kupola alakú talppal és 15, 17 vagy 20 hüvelykes, síkképernyős kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás kupola alakú talppal és 15, 17 vagy 20 hüvelykes, síkképernyős kijelzővel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Egybeépített formai kialakítás beépített síkképernyős CRT-monitorral egy helytakarékos, lekerekített burkolatban</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumínium, toronyszerű kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumínium, toronyszerű kialakítású asztali számítógép</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Síkképernyős G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Síkképernyős G5 iMac.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Alumínium, toronyszerű kialakítású asztali számítógép.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 állványba szerelhető szerver tálcás betöltésű vagy tálca nélküli optikai meghajtóval és négy bővítőhellyel vagy G4 klasztercsomópont alapú modell egyetlen bővítőhellyel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>G4 állványba szerelhető szerver tálcás betöltésű vagy tálca nélküli optikai meghajtóval és négy bővítőhellyel vagy G4 klasztercsomópont alapú modell egyetlen bővítőhellyel</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>G5 állványba szerelhető szerver számítógép tálca nélküli CD- vagy DVD-ROM-meghajtóval és három bővítőhellyel vagy klasztercsomópont alapú modell bővítőhely nélkül</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2006 vége)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 sorozat</string>
+			<key>description</key>
+			<string>Intel Xeon 5100 sorozaton alapuló, állványba szerelhető szerver (2006 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2008 eleje)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 sorozat</string>
+			<key>description</key>
+			<string>Intel Xeon 5400 sorozaton alapuló, állványba szerelhető szerver (2008 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2009 eleje)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 sorozat</string>
+			<key>description</key>
+			<string>Intel Xeon 5500 sorozaton alapuló, állványba szerelhető szerver (2009 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo processzor</string>
+			<key>description</key>
+			<string>Síkképernyős iMac Intel Core Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo processzor</string>
+			<key>description</key>
+			<string>Síkképernyős iMac Intel Core Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Síkképernyős iMac Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Síkképernyős iMac Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>Síkképernyős iMac Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alumíniumburkolat) (2007 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>20 vagy 24 hüvelykes, síkképernyős (alumíniumburkolatú) iMac Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alumíniumburkolat) (2008 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>20 vagy 24 hüvelykes, síkképernyős (alumíniumburkolatú) iMac Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (alumíniumburkolat) (2009 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>20 vagy 24 hüvelykes, síkképernyős (alumíniumburkolatú) iMac Intel Core 2 Duo processzorral</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (szélesvásznú, 2009 vége)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo processzor</string>
+			<key>description</key>
+			<string>21,5 vagy 27 hüvelykes iMac szélesvásznú LED-kijelzővel (2009 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (szélesvásznú, 2009 vége)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>27 hüvelykes iMac négymagos processzorral és szélesvásznú LED-kijelzővel (2009 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5 processzor</string>
+			<key>description</key>
+			<string>21,5 hüvelykes iMac szélesvásznú LED-kijelzővel (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2010 közepe)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>27 hüvelykes iMac szélesvásznú LED-kijelzővel (2010 közepén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2011 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>21,5 hüvelykes iMac Thunderbolt porttal (2011 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2011 eleje)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7 processzor</string>
+			<key>description</key>
+			<string>27 hüvelykes iMac Thunderbolt porttal (2011 elején jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2012 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2012 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2012 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2012 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2013 eleje)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i3</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2013 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2013 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2013 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2013 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i3</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2013 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2014 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú LED-háttérvilágítású kijelzővel (2014 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2014 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2014 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2015 vége)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú, LED-háttérvilágítású kijelzővel (2015 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2015 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 21,5 hüvelykes, szélesvásznú, Retina 4K kijelzővel (2015 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2015 vége)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5, négymagos Intel Core i7</string>
+			<key>description</key>
+			<string>iMac 27 hüvelykes, szélesvásznú, Retina 5K kijelzővel (2015 végén jelent meg)</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2017 közepe)</string>
+			<key>processor</key>
+			<string>Kétmagos Intel Core i5</string>
+			<key>description</key>
+			<string>21,5 hüvelykes iMac, szélesvásznú (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2017 közepe)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21,5 hüvelykes iMac, Retina 4K kijelzővel (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2017 közepe)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i5/i7</string>
+			<key>description</key>
+			<string>27 hüvelykes iMac, Retina 5K kijelzővel (2017 közepén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27 hüvelykes iMac (2019 eleje)</string>
+			<key>processor</key>
+			<string>Hatmagos Intel Core i5, nyolcmagos Intel Core i9</string>
+			<key>description</key>
+			<string>27 hüvelykes iMac Retina 5K kijelzővel (2019 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5 hüvelykes iMac (2019 eleje)</string>
+			<key>processor</key>
+			<string>Négymagos Intel Core i3, hatmagos Intel Core i5/i7</string>
+			<key>description</key>
+			<string>21,5 hüvelykes iMac Retina 4K kijelzővel (2019 elején jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (2017 vége)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro Xeon W-porcesszorral és Radeon Pro Vega videokártyával (2017 végén jelent meg).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

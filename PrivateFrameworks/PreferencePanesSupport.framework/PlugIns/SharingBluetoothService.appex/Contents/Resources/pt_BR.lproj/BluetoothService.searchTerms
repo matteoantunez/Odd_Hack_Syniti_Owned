@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Services_BluetoothSharing</key>
+	<dict>
+		<key>localizableStrings</key>
+		<array>
+			<dict>
+				<key>comments</key>
+				<string>Palavras localizáveis do índice</string>
+				<key>index</key>
+				<string>compartilhar, receber, aceitar, navegar, arquivo, intercâmbio, exchange, blue, tooth, share, receive, accept, browse, file, exchange, blue, tooth</string>
+				<key>title</key>
+				<string>Compartilhamento Bluetooth</string>
+			</dict>
+			<dict>
+				<key>comments</key>
+				<string>Palavras localizáveis do índice</string>
+				<key>index</key>
+				<string>emparelhar, pair</string>
+				<key>title</key>
+				<string>Requer Emparelhamento</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

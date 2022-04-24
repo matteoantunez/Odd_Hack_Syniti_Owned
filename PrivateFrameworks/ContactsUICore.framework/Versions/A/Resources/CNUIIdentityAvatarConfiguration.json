@@ -1,0 +1,870 @@
+{
+    "PlanetsAvatarLayoutAdHocConfigurations": {
+        "maxAvatarCount": 10,
+        "configurations": [
+            {
+                "avatarCount": 1,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 50,
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "avatarCount": 2,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 39,
+                        "x": -15.5,
+                        "y": -6
+                    },
+                    {
+                        "size": 30,
+                        "x": 20,
+                        "y": 9.5
+                    }
+                ]
+            },
+            {
+                "avatarCount": 3,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -14,
+                        "y": -10
+                    },
+                    {
+                        "size": 28,
+                        "x": 18,
+                        "y": 1
+                    },
+                    {
+                        "size": 20,
+                        "x": -4,
+                        "y": 17
+                    }
+                ]
+            },
+            {
+                "avatarCount": 4,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -14,
+                        "y": -10
+                    },
+                    {
+                        "size": 28,
+                        "x": 18,
+                        "y": 3
+                    },
+                    {
+                        "size": 19,
+                        "x": -5,
+                        "y": 18
+                    },
+                    {
+                        "size": 14,
+                        "x": 12,
+                        "y": -20
+                    }
+                ]
+            },
+            {
+                "avatarCount": 5,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -14,
+                        "y": -10
+                    },
+                    {
+                        "size": 28,
+                        "x": 18,
+                        "y": 3
+                    },
+                    {
+                        "size": 19,
+                        "x": -5,
+                        "y": 18
+                    },
+                    {
+                        "size": 14,
+                        "x": 12,
+                        "y": -20
+                    },
+                    {
+                        "size": 14,
+                        "x": -25,
+                        "y": 15.5
+                    }
+                ]
+            },
+            {
+                "avatarCount": 6,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -14,
+                        "y": -11
+                    },
+                    {
+                        "size": 28,
+                        "x": 12,
+                        "y": 12
+                    },
+                    {
+                        "size": 22,
+                        "x": 18,
+                        "y": -15
+                    },
+                    {
+                        "size": 18,
+                        "x": -15.5,
+                        "y": 18
+                    },
+                    {
+                        "size": 14,
+                        "x": -33,
+                        "y": 9
+                    },
+                    {
+                        "size": 14,
+                        "x": 33,
+                        "y": 1
+                    }
+                ]
+            },
+            {
+                "avatarCount": 7,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -17,
+                        "y": -11
+                    },
+                    {
+                        "size": 28,
+                        "x": 8,
+                        "y": 12
+                    },
+                    {
+                        "size": 22,
+                        "x": 15,
+                        "y": -15
+                    },
+                    {
+                        "size": 20,
+                        "x": 33,
+                        "y": 1
+                    },
+                    {
+                        "size": 18,
+                        "x": -18.5,
+                        "y": 18
+                    },
+                    {
+                        "size": 14,
+                        "x": -36,
+                        "y": 9
+                    },
+                    {
+                        "size": 12,
+                        "x": 30,
+                        "y": 20
+                    }
+                ]
+            },
+            {
+                "avatarCount": 8,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -14,
+                        "y": -11
+                    },
+                    {
+                        "size": 28,
+                        "x": 11,
+                        "y": 12
+                    },
+                    {
+                        "size": 25,
+                        "x": 38.5,
+                        "y": 0.5
+                    },
+                    {
+                        "size": 25,
+                        "x": -39.5,
+                        "y": 12.5
+                    },
+                    {
+                        "size": 21,
+                        "x": 18,
+                        "y": -16
+                    },
+                    {
+                        "size": 18,
+                        "x": -44,
+                        "y": -11
+                    },
+                    {
+                        "size": 18,
+                        "x": -15.5,
+                        "y": 18
+                    },
+                    {
+                        "size": 10,
+                        "x": 32,
+                        "y": 21
+                    }
+                ]
+            },
+            {
+                "avatarCount": 9,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -9,
+                        "y": -11
+                    },
+                    {
+                        "size": 28,
+                        "x": 17,
+                        "y": 12
+                    },
+                    {
+                        "size": 25,
+                        "x": 45.5,
+                        "y": 0.5
+                    },
+                    {
+                        "size": 25,
+                        "x": -33.5,
+                        "y": 12.5
+                    },
+                    {
+                        "size": 22,
+                        "x": 24,
+                        "y": -16
+                    },
+                    {
+                        "size": 18,
+                        "x": -39,
+                        "y": -12
+                    },
+                    {
+                        "size": 18,
+                        "x": -9.5,
+                        "y": 18
+                    },
+                    {
+                        "size": 10,
+                        "x": 38,
+                        "y": 21
+                    },
+                    {
+                        "size": 10,
+                        "x": -52,
+                        "y": 1
+                    }
+                ]
+            },
+            {
+                "avatarCount": 10,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 34,
+                        "x": -8,
+                        "y": -11
+                    },
+                    {
+                        "size": 28,
+                        "x": 17,
+                        "y": 12
+                    },
+                    {
+                        "size": 25,
+                        "x": 45.5,
+                        "y": 1.5
+                    },
+                    {
+                        "size": 25,
+                        "x": -33.5,
+                        "y": 12.5
+                    },
+                    {
+                        "size": 22,
+                        "x": 23,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": -38,
+                        "y": -11
+                    },
+                    {
+                        "size": 18,
+                        "x": -9.5,
+                        "y": 18
+                    },
+                    {
+                        "size": 10,
+                        "x": 38,
+                        "y": 21
+                    },
+                    {
+                        "size": 10,
+                        "x": -52,
+                        "y": 1
+                    },
+                    {
+                        "size": 10,
+                        "x": 42,
+                        "y": -19
+                    }
+                ]
+            }
+        ]
+    },
+    "PlanetsAvatarLayoutConfigurations": {
+        "maxAvatarCount": 10,
+        "configurations": [
+            {
+                "avatarCount": 1,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 50,
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "avatarCount": 2,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 18,
+                        "x": -37,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": 37,
+                        "y": 14
+                    }
+                ]
+            },
+            {
+                "avatarCount": 3,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 18,
+                        "x": -37,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": 39,
+                        "y": 0
+                    },
+                    {
+                        "size": 12,
+                        "x": -30,
+                        "y": 22
+                    }
+                ]
+            },
+            {
+                "avatarCount": 4,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -13
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 13
+                    },
+                    {
+                        "size": 14,
+                        "x": -36,
+                        "y": 12
+                    },
+                    {
+                        "size": 14,
+                        "x": 36,
+                        "y": -12
+                    }
+                ]
+            },
+            {
+                "avatarCount": 5,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -13
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 13
+                    },
+                    {
+                        "size": 14,
+                        "x": -36,
+                        "y": 12
+                    },
+                    {
+                        "size": 14,
+                        "x": -54,
+                        "y": 8
+                    },
+                    {
+                        "size": 14,
+                        "x": 36,
+                        "y": -12
+                    }
+                ]
+            },
+            {
+                "avatarCount": 6,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -11
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 11
+                    },
+                    {
+                        "size": 22,
+                        "x": 62,
+                        "y": -11
+                    },
+                    {
+                        "size": 22,
+                        "x": -62,
+                        "y": 11
+                    },
+                    {
+                        "size": 18,
+                        "x": 38,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": -38,
+                        "y": 14
+                    }
+                ]
+            },
+            {
+                "avatarCount": 7,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -11
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 11
+                    },
+                    {
+                        "size": 22,
+                        "x": 62,
+                        "y": -11
+                    },
+                    {
+                        "size": 22,
+                        "x": -62,
+                        "y": 11
+                    },
+                    {
+                        "size": 18,
+                        "x": 38,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": -38,
+                        "y": 14
+                    },
+                    {
+                        "size": 14,
+                        "x": -66,
+                        "y": -10
+                    }
+                ]
+            },
+            {
+                "avatarCount": 8,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -11
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 11
+                    },
+                    {
+                        "size": 22,
+                        "x": 62,
+                        "y": -11
+                    },
+                    {
+                        "size": 22,
+                        "x": -62,
+                        "y": 11
+                    },
+                    {
+                        "size": 18,
+                        "x": 38,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": -38,
+                        "y": 14
+                    },
+                    {
+                        "size": 14,
+                        "x": -66,
+                        "y": -10
+                    },
+                    {
+                        "size": 14,
+                        "x": 66,
+                        "y": 10
+                    }
+                ]
+            },
+            {
+                "avatarCount": 9,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -11
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 11
+                    },
+                    {
+                        "size": 22,
+                        "x": 62,
+                        "y": -11
+                    },
+                    {
+                        "size": 22,
+                        "x": -62,
+                        "y": 11
+                    },
+                    {
+                        "size": 18,
+                        "x": 38,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": -38,
+                        "y": 14
+                    },
+                    {
+                        "size": 14,
+                        "x": -66,
+                        "y": -10
+                    },
+                    {
+                        "size": 14,
+                        "x": 66,
+                        "y": 10
+                    },
+                    {
+                        "size": 14,
+                        "x": -82,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "avatarCount": 10,
+                "baseSize": 60,
+                "itemConfigurations": [
+                    {
+                        "size": 26,
+                        "x": -42,
+                        "y": -11
+                    },
+                    {
+                        "size": 26,
+                        "x": 42,
+                        "y": 11
+                    },
+                    {
+                        "size": 22,
+                        "x": 62,
+                        "y": -11
+                    },
+                    {
+                        "size": 22,
+                        "x": -62,
+                        "y": 11
+                    },
+                    {
+                        "size": 18,
+                        "x": 38,
+                        "y": -14
+                    },
+                    {
+                        "size": 18,
+                        "x": -38,
+                        "y": 14
+                    },
+                    {
+                        "size": 14,
+                        "x": -66,
+                        "y": -10
+                    },
+                    {
+                        "size": 14,
+                        "x": 66,
+                        "y": 10
+                    },
+                    {
+                        "size": 14,
+                        "x": -82,
+                        "y": 0
+                    },
+                    {
+                        "size": 14,
+                        "x": 82,
+                        "y": 0
+                    }
+                ]
+            }
+
+        ]
+    },
+    "SnowglobeAvatarLayoutConfigurations": {
+        "maxAvatarCount": 7,
+        "configurations": [
+            {
+                "avatarCount": 1,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 88,
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "avatarCount": 2,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 48,
+                        "x": -10.5,
+                        "y": -10.5
+                    },
+                    {
+                        "size": 28,
+                        "x": 17.5,
+                        "y": 17.5
+                    }
+                ]
+            },
+            {
+                "avatarCount": 3,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 42,
+                        "x": -12.5,
+                        "y": -12.5
+                    },
+                    {
+                        "size": 32,
+                        "x": 21.5,
+                        "y": 7.5
+                    },
+                    {
+                        "size": 26,
+                        "x": -6,
+                        "y": 23.5
+                    }
+                ]
+            },
+            {
+                "avatarCount": 4,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 42,
+                        "x": -12.5,
+                        "y": -12.5
+                    },
+                    {
+                        "size": 32,
+                        "x": 21.5,
+                        "y": 7.5
+                    },
+                    {
+                        "size": 26,
+                        "x": -6,
+                        "y": 23.5
+                    },
+                    {
+                        "size": 20,
+                        "x": 20,
+                        "y": -20.5
+                    }
+                ]
+            },
+            {
+                "avatarCount": 5,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 42,
+                        "x": -12.5,
+                        "y": -12.5
+                    },
+                    {
+                        "size": 32,
+                        "x": 21.5,
+                        "y": 7.5
+                    },
+                    {
+                        "size": 26,
+                        "x": -6,
+                        "y": 23.5
+                    },
+                    {
+                        "size": 20,
+                        "x": 20,
+                        "y": -20.5
+                    },
+                    {
+                        "size": 14,
+                        "x": -27.5,
+                        "y": 14
+                    }
+                ]
+            },
+            {
+                "avatarCount": 6,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 42,
+                        "x": -12.5,
+                        "y": -12.5
+                    },
+                    {
+                        "size": 32,
+                        "x": 21.5,
+                        "y": 7.5
+                    },
+                    {
+                        "size": 26,
+                        "x": -6,
+                        "y": 23.5
+                    },
+                    {
+                        "size": 20,
+                        "x": 20,
+                        "y": -20.5
+                    },
+                    {
+                        "size": 14,
+                        "x": -27.5,
+                        "y": 14
+                    },
+                    {
+                        "size": 10,
+                        "x": 7.5,
+                        "y": -32.5
+                    }
+                ]
+            },
+            {
+                "avatarCount": 7,
+                "baseSize": 88,
+                "itemConfigurations": [
+                    {
+                        "size": 42,
+                        "x": -12.5,
+                        "y": -12.5
+                    },
+                    {
+                        "size": 30,
+                        "x": 19.5,
+                        "y": 11.5
+                    },
+                    {
+                        "size": 22,
+                        "x": 21.5,
+                        "y": -16.5
+                    },
+                    {
+                        "size": 20,
+                        "x": -21,
+                        "y": 19.5
+                    },
+                    {
+                         "size": 15,
+                         "x": 2,
+                         "y": 30
+                    },
+                    {
+                        "size": 11,
+                        "x": -3,
+                        "y": 15
+                    },
+                    {
+                        "size": 10,
+                        "x": 9,
+                        "y": -31.5
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+
+framework module USDKit [system] {
+    umbrella header "USDKit.h"
+    export *
+    module * { export * }
+}

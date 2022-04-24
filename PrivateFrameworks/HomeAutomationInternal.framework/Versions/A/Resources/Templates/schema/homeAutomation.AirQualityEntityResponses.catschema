@@ -1,0 +1,34 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.AirQualityEntityResponses
+extends: homeAutomation.EntityResponses
+
+properties:
+    goodEntityResponses:
+        type: homeAutomation.AirQualityEntityResponses
+        optional: no
+        description: A collection of responses that have good air quality
+    badEntityResponses:
+        type: homeAutomation.AirQualityEntityResponses
+        optional: no
+        description: A collection of responses that have bad air quality
+    minPM25:
+        type: dialog.Number
+        description: The minimum PM2.5 value if there is any.
+    isAllGood:
+        type: dialog.Boolean
+        description: True if all responses are good air quality
+    isAllBad:
+        type: dialog.Boolean
+        description: True if all responses are bad air quality
+    hasOneAirQualityEntity:
+        type: dialog.Boolean
+        description: True if there is only one air quality result excluding PM2.5
+    hasMoreThanOneAirQualityEntity:
+        type: dialog.Boolean
+        description: True if there is more than one air quality result excluding PM2.5
+    uniqueRating:
+        type: dialog.String
+        description: The unique air quality rating shared among all air quality results(exlude PM2.5)
+    
+

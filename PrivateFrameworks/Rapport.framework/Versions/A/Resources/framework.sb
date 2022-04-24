@@ -1,0 +1,25 @@
+;
+;	Copyright (C) 2017-2019 Apple Inc. All Rights Reserved.
+;
+;	Sandbox extensions for the Rapport framework.
+;
+
+; Allow Mach lookup if they have a feature's entitlements.
+
+(if	(entitlement "com.apple.CompanionLink")
+	(allow mach-lookup (global-name "com.apple.CompanionLink")))
+
+(if	(entitlement "com.apple.rapport.people")
+	(allow mach-lookup (global-name "com.apple.rapport.people")))
+
+(if	(entitlement "com.apple.RemoteDisplay")
+	(allow mach-lookup (global-name "com.apple.RemoteDisplay")))
+
+; Allow CUPairingManager Mach lookup if they have its entitlements.
+(if	(or	(entitlement "com.apple.PairingManager.DeleteIdentity")
+		(entitlement "com.apple.PairingManager.HomeKit")
+		(entitlement "com.apple.PairingManager.Read")
+		(entitlement "com.apple.PairingManager.RemoveAdmin")
+		(entitlement "com.apple.PairingManager.RemovePeer")
+		(entitlement "com.apple.PairingManager.Write"))
+	(allow mach-lookup (global-name "com.apple.PairingManager")))

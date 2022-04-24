@@ -1,0 +1,126 @@
+{
+  "layer_shapes" : {
+    "output_label_prob_map" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 4,
+      "seq" : 2,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "rnn_block1_act1_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "cnn_block3_act1_output" : {
+      "k" : 64,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "top_act_prepare_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 4,
+      "seq" : 2,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "cnn_block1_conv1__activation___output" : {
+      "k" : 16,
+      "w" : 9,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "logits_output" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 4,
+      "seq" : 2,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "cnn_block4_pool_output" : {
+      "k" : 128,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 2
+    },
+    "cnn_block2_pool_output" : {
+      "k" : 32,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "cnn_block2_conv1__activation___output" : {
+      "k" : 32,
+      "w" : 5,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "cnn_feature_map_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "img_input" : {
+      "k" : 1,
+      "w" : 9,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "rnn_block2_act1_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "cnn_block4_act1_output" : {
+      "k" : 128,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "cnn_block3_pool_output" : {
+      "k" : 64,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "cnn_block4_conv2__activation___output" : {
+      "k" : 128,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "cnn_block1_pool_output" : {
+      "k" : 16,
+      "w" : 5,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "cnn_block3_conv2__activation___output" : {
+      "k" : 64,
+      "w" : 3,
+      "n" : 4,
+      "_rank" : 4,
+      "h" : 8
+    }
+  }
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ARRANGEMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::DATE</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>like to take you out on a date</string>
+			<string>let['’]s go out on a date</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>c(an|ould) you( please)? (pick .{0,20} up|pick[- ]?up)( ((?!(.{0,15} changes)).{0,20} )?(to|at|from|up)|\?)</string>
+			<string>stop by.{0,50} to pick up</string>
+			<string>your pickup is scheduled</string>
+			<string>will pick .{0,20} up at</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Pickup</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP::AIRPORT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(pick .{0,50} up|pickup).{0,50}airport</string>
+			<string>airport.{0,50}(pick .{0,50} up|pickup)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Airport Pickup</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>go(ing)? to the (mall|department store|supermarket)</string>
+			<string>(go|going|do some) (shoe )?shopping</string>
+			<string>shopping (trip|spree)</string>
+			<string>go(ing)? to (barneys|bloomingdale([ ['’]]?s)?|jc( )?penney|kohl[ ['’]]?s|macy[ ['’]]?s|nordstrom|saks fifth avenue|sears|belk|bon-ton|dillard[ ['’]]?s|t.j.maxx)</string>
+			<string>go(ing)? to (target|wal-?mart|whole food(s)?|safeway|trader joe([ ['’]]s)?|costco|kmart|aldi)</string>
+			<string>farmer[ ['’]]?s market</string>
+			<string>shopping maratahon</string>
+			<string>weekly shop</string>
+			<string>join( me| us) at the mall</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Shopping</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING::SALES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>on sales(?! (report|call|representative))</string>
+			<string>(winter|summer) sales</string>
+			<string>black friday</string>
+			<string>spring cleaning.{0,20} sales?</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Sales</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>travel(ing)? to</string>
+			<string>(booked|booking) (.{0,50}) (hotel|motel|pension)</string>
+			<string>trip to</string>
+			<string>road[ -]?trip</string>
+			<string>depart by (bus|train|plane)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL::DAYTRIP</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<string>YES</string>
+		<key>DURATION</key>
+		<integer>300</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(one-)?day[- ]trips?</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Day Trip</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL::FIELDTRIP</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(field|school)[ -]?trip</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Field Trip</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

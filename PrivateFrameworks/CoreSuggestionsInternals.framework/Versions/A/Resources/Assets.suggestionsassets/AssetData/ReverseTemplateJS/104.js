@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("emirates.com-flight-2016-cancel-en",function(e){return/Emirates Refund/.test(e.subject)},function(e){var t={reservationId:/Refund Request No : (\d+)/,nameCapture:/Dear ([\w ]+)/},n="en_US";return loadHelper("emirates.com-cancellation.js")(e,n,t)},"SG12ffb5bd")]);

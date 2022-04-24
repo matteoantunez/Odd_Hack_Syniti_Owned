@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App Sandbox</key>
+	<false/>
+	<key>application-identifier</key>
+	<string>com.apple.assistant.assistantd</string>
+	<key>com.apple.trial.client</key>
+	<array>
+		<string>755</string>
+		<string>910</string>
+	</array>
+	<key>com.apple.private.security.storage.SiriVocabulary</key>
+	<true/>
+	<key>com.apple.pegasus.context</key>
+	<true/>
+	<key>com.apple.coreduetd.allow</key>
+	<true/>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.parsecd</string>
+	</array>
+</dict>
+</plist>

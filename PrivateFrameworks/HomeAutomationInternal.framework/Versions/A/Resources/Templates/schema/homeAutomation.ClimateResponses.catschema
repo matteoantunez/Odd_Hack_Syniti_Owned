@@ -1,0 +1,60 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.ClimateResponses
+extends: homeAutomation.NumericEntityResponses
+    
+properties:
+  hasHeatingThresholdResponses:
+    type: dialog.Boolean
+    description: Returns true if one of the entity responses has the HeatingThreshold attribute, false otherwise.
+  heatingThresholdResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with the HeatingThreshold attribute.
+  hasCoolingThresholdResponses:
+    type: dialog.Boolean
+    description: Returns true if one of the entity responses has the CoolingThreshold attribute, false otherwise.
+  coolingThresholdResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with the CoolingThreshold attribute.
+  hasTemperatureResponses:
+    type: dialog.Boolean
+    description: Returns true if one of the entity responses has the Temperature attribute, false otherwise.
+  temperatureResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with the Temperature attribute.
+  hasThermostatModeResponses:
+    type: dialog.Boolean
+    description: Returns true if one of the entity responses has the HeatingCoolingMode attribute, false otherwise.
+  hasHeaterCoolerModeResponses:
+    type: dialog.Boolean
+    description: Returns true if one of the entity responses has the HeaterCoolerMode attribute, false otherwise.
+  thermostatModeResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with the HeatingCoolingMode attribute.
+  heaterCoolerModeResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with the HeaterCoolerMode attribute.
+  taskTypeGetResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with user task type GET associated with an entity state.
+  taskTypeGetTargetResponses:
+    type: homeAutomation.ClimateResponses
+    description: Get a list of temperatureEntityResponses that is filtered only to those with user task type GET_TARGET associated with an entity state.
+  isBelowRange:
+    type: dialog.Boolean
+    description: Returns true if the request performs an action to set a temperature value under a certain normal value, false otherwise.
+  isAboveRange:
+    type: dialog.Boolean
+    description: Returns true if the request performs an action to set a temperature value above a certain normal value, false otherwise.
+  thresholdsAreNotEqual:
+    type: dialog.Boolean
+    description: Returns true if the cooling threshold minus the heating threshold is less than two, false otherwise.
+  isComplexDevice:
+    type: dialog.Boolean
+    description: Returns true if the entity responses contain a complex device, with both heating and cooling thresholds for the same device, false otherwise.
+  isHeater:
+    type: dialog.Boolean
+    description: Returns true if the entity responses contain heating thresholds and no cooling thresholds, false otherwise.
+  isCooler:
+    type: dialog.Boolean
+    description: Returns true if the entity responses contain cooling thresholds and no heating thresholds, false otherwise.

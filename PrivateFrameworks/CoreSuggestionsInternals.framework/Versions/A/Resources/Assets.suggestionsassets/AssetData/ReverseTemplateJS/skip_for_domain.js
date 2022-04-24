@@ -1,0 +1,1 @@
+(function(){return{"interjet.com.mx":/(?:informaci\xf3n\sde\svuelos|Flight information)/i,"aircanada.ca":/(?:D[\xe9e]part|(?:Flight|Vol) \d|Salida|\u53bb\u7a0b|(Parte|Abflug|\u51fa\u767a|\ucd9c\uad6d)\s|\*\*)/,"fly4.emirates.com":/(?:Votre itin\xe9raire|Ihr Reiseplan)/,"flyasiana.com":/\uc5ec\uc815 \ud45c/,"info.flytap.com":/Itinerary updated/}}).call();

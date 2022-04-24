@@ -1,0 +1,85 @@
+{
+    "color": [0.298, 0.9535, 0.9307],
+    "snippets":[
+        {
+            "name" : "GetSize",
+            "inParameterNames" : ["smp"],
+            "inParameterTypes" : ["TextureSampler2D"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_get_size2d($smp)",
+                "metal"   : "vfx_make_float2($smp.texture.get_width(), $smp.texture.get_height())"
+            }
+        },
+        {
+            "name" : "Sample2d",
+            "hidden" : true,
+            "inParameterNames" : ["smp", "uv"],
+            "inParameterTypes" : ["TextureSampler2D", "Float2"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_sample2d($smp, $uv)",
+                "metal"   : "$smp.texture.sample($smp.sampler, $uv)"
+            }
+        },
+        {
+            "name" : "Sample2d",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["smp", "uv", "scale", "offset", "intensity"],
+            "inParameterTypes" : ["TextureSampler2D", "Float2", "Float2", "Float2", "Float"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "scale", "scale" : [1.0, 1.0], "valueType" : "Float2" },
+                { "keyName" : "intensity", "intensity" : 1.0, "valueType" : "Float" },
+                { "keyName" : "offset", "offset" : [0.0, 0.0], "valueType" : "Float2" }
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_sample2d($smp, $uv * $scale + $offset) * $intensity",
+                "metal"   : "$smp.texture.sample($smp.sampler, $uv * $scale + $offset) * $intensity"
+            }
+        },
+        {
+            "name" : "GetSize",
+            "inParameterNames" : ["smp"],
+            "inParameterTypes" : ["TextureSampler3D"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_get_size3d($smp)",
+                "metal"   : "vfx_make_float3($smp.texture.get_width(), $smp.texture.get_height(), $smp.texture.get_depth())"
+            }
+        },
+        {
+            "name" : "Sample3d",
+            "hidden" : true,
+            "inParameterNames" : ["smp", "uvw"],
+            "inParameterTypes" : ["TextureSampler3D", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_sample3d($smp, $uvw)",
+                "metal"   : "$smp.texture.sample($smp.sampler, $uvw)"
+            }
+        },
+        {
+            "name" : "Sample3d",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["smp", "uvw", "scale", "offset", "intensity"],
+            "inParameterTypes" : ["TextureSampler3D", "Float3", "Float3", "Float3", "Float"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "scale", "scale" : [1.0, 1.0, 1.0], "valueType" : "Float3" },
+                { "keyName" : "intensity", "intensity" : 1.0, "valueType" : "Float" },
+                { "keyName" : "offset", "offset" : [0.0, 0.0, 0.0], "valueType" : "Float3" }
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_script_texture_sample3d($smp, $uvw * $scale + $offset) * $intensity",
+                "metal"   : "$smp.texture.sample($smp.sampler, $uvw * $scale + $offset) * $intensity"
+            }
+        }
+    ]
+}

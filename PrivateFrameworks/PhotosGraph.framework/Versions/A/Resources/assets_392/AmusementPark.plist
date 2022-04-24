@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<real>1</real>
+	<key>criteria</key>
+	<array>
+		<dict>
+			<key>POI</key>
+			<dict>
+				<key>positivePOIs</key>
+				<array>
+					<string>AmusementPark</string>
+				</array>
+				<key>minimumNumberOfPOIs</key>
+				<integer>1</integer>
+				<key>mustBeSpecial</key>
+				<true/>
+			</dict>
+			<key>Location</key>
+			<dict>
+				<key>excludeHomeWorkLocations</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>POI</key>
+			<dict>
+				<key>positivePOIs</key>
+				<array>
+					<string>AmusementPark</string>
+				</array>
+				<key>minimumNumberOfPOIs</key>
+				<integer>1</integer>
+			</dict>
+			<key>Scene</key>
+			<dict>
+				<key>positiveScenes</key>
+				<array>
+					<string>carousel</string>
+					<string>rollercoaster</string>
+					<string>ferris_wheel</string>
+					<string>fairground</string>
+					<string>amusement_park</string>
+				</array>
+				<key>minimumNumberOfPositiveScenes</key>
+				<integer>1</integer>
+			</dict>
+			<key>Location</key>
+			<dict>
+				<key>excludeHomeWorkLocations</key>
+				<true/>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

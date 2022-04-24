@@ -1,0 +1,347 @@
+#usda 1.0
+
+def Shader "UsdPreviewSurface" (
+    
+)
+{
+    uniform token info:id = "UsdPreviewSurface"
+    uniform token info:implementationSource = "sourceAsset"
+
+    # XXX: This doesn't resolve if it's defined as a search path.
+    # Might require special resolver configuration, to include the resources
+    # directory.
+    uniform asset info:glslfx:sourceAsset = @./previewSurface.glslfx@
+
+    # Outputs
+    token outputs:surface (
+        sdrMetadata = {
+            string renderType = "terminal surface"
+        }
+    )
+    token outputs:displacement (
+        sdrMetadata = {
+            string renderType = "terminal displacement"
+        }
+    )
+ 
+    # Inputs
+    color3f inputs:diffuseColor = (0.18, 0.18, 0.18) (
+            )
+
+    color3f inputs:emissiveColor = (0.0, 0.0, 0.0) (
+            )
+
+    int inputs:useSpecularWorkflow = 0 (
+        connectability = "interfaceOnly"
+            )
+ 
+    color3f inputs:specularColor = (0.0, 0.0, 0.0) (
+            )
+ 
+    float inputs:metallic = 0.0 (
+            )
+ 
+    float inputs:roughness = 0.5 (
+            )
+ 
+    float inputs:clearcoat = 0.0 (
+            )
+ 
+    float inputs:clearcoatRoughness = 0.01 (
+            )
+ 
+    float inputs:opacity = 1.0 (
+            )
+
+    float inputs:opacityThreshold = 0.0 (
+        connectability = "interfaceOnly"
+            )
+
+    float inputs:ior = 1.5 (
+            )
+
+    normal3f inputs:normal = (0.0, 0.0, 1.0) (
+            )
+
+    float inputs:displacement = 0.0 (
+            )
+
+    float inputs:occlusion = 1.0 (
+            )
+}
+
+def Shader "UsdUVTexture" (
+        sdrMetadata = {
+        token role = "texture"
+    }
+)
+{
+    uniform token info:id = "UsdUVTexture"
+    uniform token info:implementationSource = "sourceAsset"
+    uniform asset info:glslfx:sourceAsset = @./uvTexture.glslfx@
+
+    asset inputs:file = @@ (
+        connectability = "interfaceOnly"
+            )
+
+    float2 inputs:st = (0.0, 0.0) (
+            )
+
+    token inputs:wrapS = "useMetadata" (
+        connectability = "interfaceOnly"
+            )
+
+    token inputs:wrapT = "useMetadata" (
+        connectability = "interfaceOnly"
+            )
+
+    float4 inputs:fallback = (0.0, 0.0, 0.0, 1.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    float4 inputs:scale = (1.0, 1.0, 1.0, 1.0) (
+        connectability = "interfaceOnly"
+            )
+
+    float4 inputs:bias = (0.0, 0.0, 0.0, 0.0) (
+        connectability = "interfaceOnly"
+            )
+
+    token inputs:sourceColorSpace = "auto" (
+        connectability = "interfaceOnly"
+        allowedTokens = ["raw", "sRGB", "auto"]
+            )
+
+    float outputs:r ( 
+        
+        sdrMetadata = {
+            token swizzle = "x"
+        }
+    )
+
+    float outputs:g (
+        
+        sdrMetadata = {
+            token swizzle = "y"
+        }
+    )
+
+    float outputs:b (
+        
+        sdrMetadata = {
+            token swizzle = "z"
+        }
+    )
+
+    float outputs:a (
+        
+        sdrMetadata = {
+            token swizzle = "w"
+        }
+    )
+
+    float3 outputs:rgb (
+        
+        sdrMetadata = {
+            token swizzle = "xyz"
+        }
+    )
+}
+
+class "UsdPrimvarReader" (
+    sdrMetadata = {
+        token role = "primvar"
+    }
+)
+{
+    uniform token info:implementationSource = "sourceAsset"
+    uniform asset info:glslfx:sourceAsset = @./primvarReader.glslfx@
+    string inputs:varname = "" (
+        connectability = "interfaceOnly"
+                sdrMetadata = {
+            token primvarProperty = "1"
+        }
+    )    
+}
+
+def Shader "UsdPrimvarReader_float" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_float"
+
+    float inputs:fallback = 0.0 (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    float outputs:result
+}
+
+def Shader "UsdPrimvarReader_float2" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_float2"
+
+    float2 inputs:fallback = (0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    float2 outputs:result
+}
+
+def Shader "UsdPrimvarReader_float3" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_float3"
+
+    float3 inputs:fallback = (0.0, 0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    float3 outputs:result
+}
+
+def Shader "UsdPrimvarReader_float4" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_float4"
+
+    float4 inputs:fallback = (0.0, 0.0, 0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    float4 outputs:result
+}
+
+def Shader "UsdPrimvarReader_int" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_int"
+
+    int inputs:fallback = 0 (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    int outputs:result
+}
+
+def Shader "UsdPrimvarReader_string" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_string"
+
+    string inputs:fallback = "" (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    string outputs:result
+}
+
+def Shader "UsdPrimvarReader_normal" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_normal"
+
+    normal3f inputs:fallback = (0.0, 0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    normal3f outputs:result
+}
+
+def Shader "UsdPrimvarReader_point" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_point"
+
+    point3f inputs:fallback = (0.0, 0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    point3f outputs:result
+}
+
+def Shader "UsdPrimvarReader_vector" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_vector"
+
+    vector3f inputs:fallback = (0.0, 0.0, 0.0) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    vector3f outputs:result
+}
+
+def Shader "UsdPrimvarReader_matrix" (
+    inherits = </UsdPrimvarReader>
+)
+{
+    uniform token info:id = "UsdPrimvarReader_matrix"
+
+    matrix4d inputs:fallback = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+                sdrMetadata = {
+            token defaultInput = "1"
+        }
+    )
+
+    matrix4d outputs:result
+}
+
+def Shader "UsdTransform2d" (
+        sdrMetadata = {
+        token role = "math"
+    }
+)
+{
+    uniform token info:id = "UsdTransform2d"
+    uniform token info:implementationSource = "sourceAsset"
+    uniform asset info:glslfx:sourceAsset = @./transform2d.glslfx@
+ 
+    float2 inputs:in = (0.0, 0.0) (
+            )
+
+    float inputs:rotation = 0.0 (
+        connectability = "interfaceOnly"
+            )
+
+    float2 inputs:scale = (1.0, 1.0) (
+        connectability = "interfaceOnly"
+            )
+
+    float2 inputs:translation = (0.0, 0.0) (
+        connectability = "interfaceOnly"
+            )
+
+    float2 outputs:result (
+        
+    )
+}

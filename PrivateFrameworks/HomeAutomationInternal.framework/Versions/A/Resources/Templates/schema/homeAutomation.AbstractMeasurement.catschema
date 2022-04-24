@@ -1,0 +1,39 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.AbstractMeasurement
+
+inputs:
+  numberValue:
+    optional: no
+    access_mode: public
+  unit:
+    access_mode: public
+    
+properties:
+  toString:
+    type: dialog.String
+    optional: no
+    description: Return string form of the actual value, e.g, 17°C -> "17°C"
+  unit:
+    type: dialog.String
+    description: The unit for the value.
+  temperatureValue:
+    type: dialog.Temperature
+    description: The temperature value if the measurement is a temperature measurement.
+    sample_value: 17°C
+  percentValue:
+    type: dialog.Percent
+    description: The percent value if the measurement is a percent measurement.
+    sample_value: 43%
+  durationValue:
+    type: dialog.Duration
+    description: The duration value if the measurement is a duration measurement.
+    sample_value: 2 mins and 25 seconds
+  numberValue:
+    type: dialog.Number
+    optional: no
+    description: The number portion of the measurement.
+  roundedNumberValue:
+    type: dialog.Number
+    optional: no
+    description: The number portion of the measurement, rounded to an integer.

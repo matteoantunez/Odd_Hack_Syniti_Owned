@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ConfirmBeforeTurningOffAnnounceNotifications">
+
+    <meta name="description" value="Prompt user to confirm turning off the Announce Notifications feature."/>
+    <meta name="category" value="Prompt"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters>
+        <parameter name="setting" type="settings.BinarySetting" description="The setting that the user asked about."/>
+        <parameter name="requestedValue" type="dialog.Boolean" description="This is true if the user asked to turn on the setting, and false if the user asked to turn it off."/>
+        <parameter name="deviceState" type="sirikit.DeviceState" description="Contains details about the user’s device."/>
+        <parameter name="confirmationMode" type="dialog.String" description="Indicates whether user has connected headphones or carplay or both in the past."/>
+        <parameter name="appName" type="sirikit.App" description="The name of the app whose notifications should be turned off."/>
+    </parameters>
+
+</cat>

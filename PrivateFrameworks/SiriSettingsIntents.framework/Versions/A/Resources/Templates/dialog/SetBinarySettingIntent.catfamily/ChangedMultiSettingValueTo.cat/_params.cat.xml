@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#ChangedMultiSettingValueTo">
+
+    <meta name="description" value="Tell the user what setting we changed, and to what."/>
+    <meta name="category" value="Handled"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="setting" type="settings.MultiSetting" description="The setting that the user changed."/>
+        <parameter name="updatedValue" type="dialog.Boolean" description="This is true if the user asked to turn on the setting, and false if the user asked to turn it off."/>
+        <parameter name="verbose" type="dialog.Boolean" description="Whether the dialog should include additional detail or not."/>
+        <parameter name="deviceState" type="sirikit.DeviceState" description="Contains details about the user’s device."/>
+        <parameter name="partOfDay" type="dialog.String" description="User requested to change a setting until morning/afternoon/evening."/>
+        <parameter name="isTimeNextDay" type="dialog.Boolean" description="Flag that indicates whether user specified time until which to change a setting is tomorrow and not today."/>
+        <parameter name="appName" type="sirikit.App" description="The name of the app that posted the notification"/>
+        <parameter name="isMessages" type="dialog.Boolean" description="Flag indicating whether the Messages app is being targeted"/>
+    </parameters>
+    
+</cat>

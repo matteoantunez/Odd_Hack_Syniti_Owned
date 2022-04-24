@@ -1,0 +1,27 @@
+<Nnet> 
+<AffineTransform> 4 6
+<LearnRateCoef> 1 <BiasLearnRateCoef> 1 <MaxNorm> 0 <GradientNormType> NoGradNorm <MaxGrad> 0  [
+0.0          0.000001  0.0  0.0     0.0          0.0
+0.0        100.0       0.0  0.0  -100.0          0.0
+0.000001     0.0       0.0  0.0     0.000001     0.0
+0.0          0.0       0.0  0.0     0.0          0.000001 ]
+[ 0.0 -50.0 0.0 0.0 ]
+<Sigmoid> 4 4 
+<AffineTransform> 3 4
+<LearnRateCoef> 1 <BiasLearnRateCoef> 1 <MaxNorm> 0 <GradientNormType> NoGradNorm <MaxGrad> 0  [
+   4.0    100.0    0.0    0.0
+   0.0   -100.0    4.0    0.0
+   0.0      0.0    0.0    4.0 ]
+[ -2.0  98.0  -2.0  ]
+<Sigmoid> 3 3
+<AffineTransform> 2 3 
+<LearnRateCoef> 1 <BiasLearnRateCoef> 1 <MaxNorm> 0 <GradientNormType> NoGradNorm <MaxGrad> 0  [
+  4.0  4.0  0.0
+  0.0  0.0  4.0 ]
+[ -6.0  -2.0 ]
+<AffineTransform> 1 2 
+<LearnRateCoef> 1 <BiasLearnRateCoef> 0.1 <MaxNorm> 0 <GradientNormType> NoGradNorm <MaxGrad> 0  [
+  10000000.0 -10000000.0 ]
+ [ 290.0 ]
+<Sigmoid> 1 1
+</Nnet>

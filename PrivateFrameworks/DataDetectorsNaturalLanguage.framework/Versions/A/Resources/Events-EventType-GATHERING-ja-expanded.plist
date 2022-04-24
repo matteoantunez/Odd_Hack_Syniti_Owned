@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>結婚記念日</string>
+	</array>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<array>
+		<string>誕生日会</string>
+	</array>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<array>
+		<string>(聖体拝領|正餐式)</string>
+		<string>堅信礼</string>
+		<string>洗礼(式)?</string>
+		<string>(バル|バート)ミツバー</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>オクトーバーフェスト</string>
+		<string>ビール(祭(り)?|まつり)</string>
+		<string>(sake|酒)(祭(り)?|まつり)</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>バースデーブランチ</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>(クリスマス|イースター|感謝祭|サンクスギビング)ディナー</string>
+		<string>チームディナー</string>
+		<string>家族で(の)?(ディナー|夕食)</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>(クリスマス|イースター|感謝祭|サンクスギビング)ランチ</string>
+		<string>家族で(の)?(ランチ|昼食)</string>
+		<string>チームランチ</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>ハロウィーン</string>
+		<string>新年会</string>
+		<string>シンコ・デ・マヨ</string>
+		<string>セントパトリックデー</string>
+		<string>クリスマスパーティ(ー)?</string>
+		<string>大晦日|年越しパーティ(ー)?|カウントダウンパーティ(ー)?</string>
+		<string>ビールパーティ(ー)?</string>
+		<string>(ひな|雛)(祭(り)?|まつり)</string>
+		<string>飲み会</string>
+		<string>旧正月</string>
+		<string>(送別|歓迎)会</string>
+		<string>ビヤパーティー</string>
+	</array>
+</dict>
+</plist>

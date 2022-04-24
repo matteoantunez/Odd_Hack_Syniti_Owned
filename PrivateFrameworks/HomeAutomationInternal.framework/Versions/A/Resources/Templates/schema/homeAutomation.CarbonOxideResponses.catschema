@@ -1,0 +1,22 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.CarbonOxideResponses
+extends: homeAutomation.NumericEntityResponses
+
+properties:
+  carbonOxideType:
+    type: dialog.String
+    optional: no
+    description: Type of the responses - carbonDioxide, carbonMonoxide
+  normalResponses:
+    type: homeAutomation.CarbonOxideResponses
+    optional: no
+    description: A collection of responses that are in normal range
+  abnormalResponses:
+    type: homeAutomation.CarbonOxideResponses
+    optional: no
+    description: A collection of responses that are in abnormal range
+  dangerousResponses:
+    type: homeAutomation.CarbonOxideResponses
+    optional: no
+    description: A collection of responses that are in dangerous range

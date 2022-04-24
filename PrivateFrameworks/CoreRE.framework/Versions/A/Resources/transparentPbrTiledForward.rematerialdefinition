@@ -1,0 +1,9 @@
+{
+    "Name": "TransparentPbrTiledForward",
+    "OverrideMaterial": "engine:pbrCommonTiledForward.rematerialdefinition",
+    "TechniqueMapping": {
+        "Transparent": "Transparent",
+        "TransparentDepthPrepass" : "TransparentDepthPrepass",
+        "TransparentTiledForward" : "TransparentTiledForward"
+    }
+}

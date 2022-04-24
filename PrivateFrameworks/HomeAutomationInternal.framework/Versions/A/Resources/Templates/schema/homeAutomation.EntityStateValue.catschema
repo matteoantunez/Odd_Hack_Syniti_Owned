@@ -1,0 +1,28 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.EntityStateValue
+
+inputs:
+  stringValue:
+    access_mode: public
+  numericValue:
+    access_mode: public
+  booleanValue:
+    access_mode: public
+    
+properties:
+  toString:
+    type: dialog.String
+    optional: no
+    semantic_concept: homeAutomationState
+    description: Return string form of the actual value, e.g, 17°C -> "17°C"
+  stringValue:
+    type: dialog.String
+    description: The string value of the state.
+  numericValue:
+    type: homeAutomation.AbstractMeasurement
+    description: The numeric value of the state, it can be a temperature measurement/percent measurement/number measurement.
+    sample_value: 17°C/80%/20.50
+  booleanValue:
+    type: dialog.Boolean
+    description: The boolean value of the state. Note, Although this field can be unset, Booleans don't get code generated as optionals. This is fine as the toString method for EntityStateValue will prioritize stringValue and numericValue over booleanValue, so booleanValue will only be picked when the other two are unset.

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>hochzeitstag</string>
+	</array>
+	<key>GATHERING::CEREMONY</key>
+	<array>
+		<string>trauung</string>
+	</array>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<array>
+		<string>kommunion</string>
+		<string>konfirmation</string>
+		<string>taufe</string>
+		<string>einschulung</string>
+		<string>(bar|bat) (mitzvah|mitzwa)</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>stammtisch</string>
+		<string>oktoberfest</string>
+		<string>waasen</string>
+		<string>bierb(ö|oe)rse</string>
+		<string>biergarten</string>
+		<string>(engli|iri)(sh|sche[rnm]) pub</string>
+		<string>(limonade|soda)</string>
+		<string>smoothies?</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>(geburtstags|sonntags|feiertags)[- ]?brunch</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>(weihnachts|oster|sylvester|neujahrs)(dinner|mahl|essen)</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>halloween[- ]?(party|feier)</string>
+		<string>sylvester[- ]?(party|feier)</string>
+		<string>(saint|st\.?)[- ]?patrick['’]?s?[- ]?day[- ]?(party|feier)</string>
+		<string>(weihnachts|frühjahrs|frühlings|sommer|herbst|winter)[- ]?(feier|party|fest)</string>
+		<string>maskenball</string>
+		<string>baby[- ]?(party|feier|shower)</string>
+		<string>neujahrs[- ]?(party|feier|fest)</string>
+		<string>(fasching|fastnacht|fassenacht)</string>
+		<string>[kc]arnevals?[- ]?(party|feier)</string>
+		<string>prunksitzung</string>
+		<string>rosenmontags?[- ]?(party|feier|umzug)</string>
+		<string>([a-zäöüß]{0,30})(jubilaeum|jubiläuum)</string>
+		<string>(bachelor|bachelorette)[- ]?party</string>
+		<string>junggesell(inn)?en[- ]?(party|abschied)</string>
+		<string>buddel[- ]?party</string>
+		<string>hochzeitsfeier</string>
+		<string>(beer bash|bierfest)</string>
+	</array>
+	<key>GATHERING::POTLUCK</key>
+	<array>
+		<string>mitbring[- ]?(party|buffet|feier)</string>
+	</array>
+</dict>
+</plist>

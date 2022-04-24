@@ -1,0 +1,243 @@
+{
+    "color": [0.98, 0.535, 0.307],
+    "snippets":[
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES", "String", "IntRange", "FloatRange", "Float4x4", "Float3x3", "QuaternionF"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "$out = $in; if String(@value).isEmpty { vfx_script_debug_log(scriptContext, $DOMAIN$, \"\\($in)\") } else { vfx_script_debug_log(scriptContext, $DOMAIN$, String(@value) + \": \\($in)\") }",
+                "metal" : "$out = $in"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Bool"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": %s\", $in ? \"true\" : \"false\"); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Float"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": %.3f\", $in); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Float2"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": [%.3f, %.3f]\", $in.x, $in.y); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Float3"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": [%.3f, %.3f, %.3f]\", $in.x, $in.y, $in.z); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Float4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": [%.3f, %.3f, %.3f, %.3f]\", $in.x, $in.y, $in.z, $in.w); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": %d\", $in); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["IntRange"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": [%d, %d]\", $in.lower_bound, $in.upper_bound); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["FloatRange"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [100]; snprintf(buffer#TEMP#, 100, @value \": [%.3f, %.3f]\", $in.lower_bound, $in.upper_bound); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Float4x4"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "c" : "$out = $in; char buffer#TEMP# [200]; snprintf(buffer#TEMP#, 200, @value \":  [%.3f, %.3f, %.3f, %.3f], [%.3f, %.3f, %.3f, %.3f], [%.3f, %.3f, %.3f, %.3f], [%.3f, %.3f, %.3f, %.3f] \", $in.columns[0].x, $in.columns[0].y, $in.columns[0].z, $in.columns[0].w, $in.columns[1].x, $in.columns[1].y, $in.columns[1].z, $in.columns[1].w, $in.columns[2].x, $in.columns[2].y, $in.columns[2].z, $in.columns[2].w, $in.columns[3].x, $in.columns[3].y, $in.columns[3].z, $in.columns[3].w); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Print",
+            "label" : "Print %TYPE%",
+            "valueType":"String",
+            "genericTypes" : ["Float3x3"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : { 
+                "c" : "$out = $in; char buffer#TEMP# [200]; snprintf(buffer#TEMP#, 200, @value \":  [%.3f, %.3f, %.3f], [%.3f, %.3f, %.3f], [%.3f, %.3f, %.3f], [%.3f, %.3f, %.3f] \", $in.columns[0].x, $in.columns[0].y, $in.columns[0].z, $in.columns[1].x, $in.columns[1].y, $in.columns[1].z, $in.columns[2].x, $in.columns[2].y, $in.columns[2].z, $in.columns[3].x, $in.columns[3].y, $in.columns[3].z); vfx_script_debug_log(scriptContext, $DOMAIN$, buffer#TEMP#)"
+            }
+        },
+        {
+            "name" : "Count",
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%Array"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int"],
+            "code" : {
+                "swift" : "$out = $in.count"
+            }
+        },
+        {
+            "name" : "GetElement",
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["idx"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "idx", "idx" : 0, "valueType" : "Int" }
+            ],
+            "inParameterNames" : ["in", "idx"],
+            "inParameterTypes" : ["%TYPE%Array", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "$out = $in[$idx]",
+                "metal" : "$out = $in[$idx]",
+                "c"     : "$out = $in[$idx]"
+            }
+        },
+        {
+            "name" : "GetElementSafe",
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "showInParameterDefaultValues" : ["idx"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "idx", "idx" : 0, "valueType" : "Int" }
+            ],
+            "inParameterNames" : ["in", "idx"],
+            "inParameterTypes" : ["%TYPE%Array", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "let arrayCount#TEMP# = $in.count; let validIndex#TEMP# = $idx < 0 ? 0 : ($idx >= arrayCount#TEMP# ? (arrayCount#TEMP# - 1) : $idx); $out = $in[validIndex#TEMP#]"
+            }
+        },
+        {
+            "name" : "%TYPE%ArraySequence",
+            "label" : "Sequence",
+            "toolCreateFunction" : "createArraySequenceSnippet:%TYPE%",
+            "skipTest": true,
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%Array"],
+            "code" : {
+                "swift" : "",
+                "metal" : "",
+                "c"     : ""
+            }
+        },
+        {
+            "name" : "%TYPE%StaticSwitch",
+            "label" : "Switch",
+            "toolCreateFunction" : "createStaticSwitchSnippet:%TYPE%",
+            "skipTest": true,
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "",
+                "metal" : "",
+                "c"     : ""
+            }
+        },
+        {
+            "name" : "Debug",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "vfx_script_debug_mode()",
+                "metal" : "false",
+                "c"     : "false"
+            }
+        },
+        {
+            "name" : "SwiftOnlyPassthrough",
+            "label" : "Swift Only Passthrough (Debugging)",
+            "genericTypes" : ["*"],
+            "skipTest": true,
+            "inParameterNames" : ["in"],
+            "inParameterTypes" : ["%TYPE%"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%"],
+            "code" : {
+                "swift" : "$out = $in"
+            }
+        }
+    ]
+}

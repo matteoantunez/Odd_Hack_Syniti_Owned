@@ -1,0 +1,4611 @@
+{
+  "tagIDs" : [
+    "Mood_Party",
+    "SongPace_Medium"
+  ],
+  "customOptions" : {
+    "OutroCanBeShortened" : false
+  },
+  "mainSegments" : [
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -43.107272163391116,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 45714,
+      "peakValue" : 0.029667628929018974,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In2a952"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -41.667400375366213,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 57143,
+      "peakValue" : 0.034622699022293091,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In2a1190"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -34.104355350494387,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 74286,
+      "peakValue" : 0.13375307619571686,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In2a1547"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -35.07641650772095,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 91429,
+      "peakValue" : 0.14290888607501984,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In2a1904"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -33.053906932830813,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 184201,
+      "peakValue" : 0.23849651217460632,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In2a3837"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -26.791342273712157,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 91429,
+      "peakValue" : 0.27887576818466187,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In20a1904"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -40.839611068725588,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 45715,
+      "peakValue" : 0.076897419989109039,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In21a952"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -41.927677169799807,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 57143,
+      "peakValue" : 0.082099504768848419,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In21a1190"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -41.723972335815432,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 74286,
+      "peakValue" : 0.088328912854194641,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In21a1547"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -43.304687515258792,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 45714,
+      "peakValue" : 0.072142757475376129,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In90a952"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -44.671746269226077,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 57142,
+      "peakValue" : 0.055332507938146591,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In90a1190"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -30.814045444488524,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 68571,
+      "peakValue" : 0.16322880983352661,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In90a1428"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -24.945746437072753,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 731384,
+      "peakValue" : 0.37621244788169861,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In2015s"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -25.444234386444091,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 365714,
+      "peakValue" : 0.29031515121459961,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In20769"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -27.288945690155028,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 91429,
+      "peakValue" : 0.18779048323631287,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_In911905"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -26.508477703094481,
+      "bars" : 8,
+      "transitions" : {
+        "FT_Body5a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans2to5",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body2a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182858,
+      "peakValue" : 0.28443679213523865,
+      "priority" : 53,
+      "sampleRate" : 48000,
+      "name" : "FT_Body2a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.332632080078124,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body12a" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body26a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body13a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body18a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body14a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body16a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body20a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182858,
+      "peakValue" : 0.33645397424697876,
+      "priority" : 99,
+      "sampleRate" : 48000,
+      "name" : "FT_Body5a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.484352127075194,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body12a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body26a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body18a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body80a" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 25,
+          "fadeIn" : 25
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body16a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body20a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.33198267221450806,
+      "priority" : 98,
+      "sampleRate" : 48000,
+      "name" : "FT_Body12a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.991233364105224,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body26a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body18a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body14a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body16a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body20a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 731428,
+      "peakValue" : 0.42516890168190002,
+      "priority" : 2,
+      "sampleRate" : 48000,
+      "name" : "FT_Body13a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.434858814239501,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body20a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body18a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : true
+        },
+        "FT_Body26a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body14a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.34157925844192505,
+      "priority" : 94,
+      "sampleRate" : 48000,
+      "name" : "FT_Body14a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.733285919189452,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body20a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body16a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body26a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.46110743284225464,
+      "priority" : 93,
+      "sampleRate" : 48000,
+      "name" : "FT_Body16a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.871711746215819,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body18a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans18to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body26a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans18to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.37296661734580994,
+      "priority" : 92,
+      "sampleRate" : 48000,
+      "name" : "FT_Body18a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.018515602111815,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body20a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.37439635396003723,
+      "priority" : 91,
+      "sampleRate" : 48000,
+      "name" : "FT_Body20a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.991233364105224,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 731428,
+      "peakValue" : 0.42516890168190002,
+      "priority" : 1,
+      "sampleRate" : 48000,
+      "name" : "FT_Body26a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.227553859710692,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body30a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to30",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body65d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body35a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to35",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to45",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to35",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body65a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body42a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to42",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body65c" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body27a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans27to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body35b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans27to35",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.42428398132324219,
+      "priority" : 56,
+      "sampleRate" : 48000,
+      "name" : "FT_Body27a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.734133735656737,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans28to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans28to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body28a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "prevented" : true,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 25,
+          "fadeIn" : 25
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans28to42",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans28to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans28to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182858,
+      "peakValue" : 0.38124150037765503,
+      "priority" : 54,
+      "sampleRate" : 48000,
+      "name" : "FT_Body28a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -30.190180316925048,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans30to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body30a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans30to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans30to42",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans30to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans30to40",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.24754650890827179,
+      "priority" : 53,
+      "sampleRate" : 48000,
+      "name" : "FT_Body30a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -26.123863235473632,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans35to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans35to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.27572953701019287,
+      "priority" : 52,
+      "sampleRate" : 48000,
+      "name" : "FT_Body35a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -26.692949310302733,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans35to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 25,
+          "fadeIn" : 25
+        },
+        "FT_Body35a" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 25,
+          "fadeIn" : 25
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 800,
+          "fadeIn" : 1200
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 1500,
+          "fadeIn" : 2000
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans35to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.23984168469905853,
+      "priority" : 51,
+      "sampleRate" : 48000,
+      "name" : "FT_Body35b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -26.29053212738037,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans35to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans35to80",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body35b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.30431339144706726,
+      "priority" : 49,
+      "sampleRate" : 48000,
+      "name" : "FT_Body35c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -25.198162570953368,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body70d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.28184574842453003,
+      "priority" : 5,
+      "sampleRate" : 48000,
+      "name" : "FT_Body40a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -25.083683506011962,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body70d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body65b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : {
+          "prevented" : false,
+          "useNextSegmentForFadeOut" : true,
+          "fadeOut" : 25,
+          "fadeIn" : 25
+        },
+        "FT_Body65a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body65c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.26983422040939331,
+      "priority" : 4,
+      "sampleRate" : 48000,
+      "name" : "FT_Body40b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -25.165062919616698,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        }
+      },
+      "sampleCount" : 182858,
+      "peakValue" : 0.27774125337600708,
+      "priority" : 3,
+      "sampleRate" : 48000,
+      "name" : "FT_Body40c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -24.981778636932372,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body65a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body65c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body40b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body40d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans40to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.25291943550109863,
+      "priority" : 2,
+      "sampleRate" : 48000,
+      "name" : "FT_Body40d"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -24.664968029022216,
+      "sliceable" : true,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body65c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body70a" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80a" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans42to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : [
+          {
+            "fadeOut" : 25,
+            "fadeIn" : 25,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans42to65",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body42a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 365714,
+      "peakValue" : 0.40897181630134583,
+      "priority" : 40,
+      "sampleRate" : 48000,
+      "name" : "FT_Body42a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.963970676422118,
+      "bars" : 4,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans45to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans45to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "prevented" : false,
+          "transitionSegmentName" : "FT_Trans45to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "prevented" : true,
+          "transitionSegmentName" : "FT_Trans45to70",
+          "fadeOut" : 0,
+          "fadeIn" : 0
+        },
+        "FT_Body45a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 731428,
+      "peakValue" : 0.43448373675346375,
+      "priority" : 39,
+      "sampleRate" : 48000,
+      "name" : "FT_Body45a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.792737976074218,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.37296357750892639,
+      "priority" : 38,
+      "sampleRate" : 48000,
+      "name" : "FT_Body65a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.021958366394042,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.32630199193954468,
+      "priority" : 37,
+      "sampleRate" : 48000,
+      "name" : "FT_Body65b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.921114459991454,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182858,
+      "peakValue" : 0.36359167098999023,
+      "priority" : 36,
+      "sampleRate" : 48000,
+      "name" : "FT_Body65c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.542577281951903,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : false
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 25,
+          "fadeIn" : 25,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body65c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.38913950324058533,
+      "priority" : 35,
+      "sampleRate" : 48000,
+      "name" : "FT_Body65d"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.803493038177489,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.36621382832527161,
+      "priority" : 22,
+      "sampleRate" : 48000,
+      "name" : "FT_Body70a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.616239086151122,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.40748175978660583,
+      "priority" : 21,
+      "sampleRate" : 48000,
+      "name" : "FT_Body70b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.834725872039794,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.3548072874546051,
+      "priority" : 20,
+      "sampleRate" : 48000,
+      "name" : "FT_Body70c"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -20.84265090560913,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70d" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70a" : {
+          "fadeOut" : 150,
+          "fadeIn" : 150,
+          "prevented" : false
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body70c" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.40095856785774231,
+      "priority" : 18,
+      "sampleRate" : 48000,
+      "name" : "FT_Body70d"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.982580200195311,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 1000,
+          "fadeIn" : 1000,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.33428186178207397,
+      "priority" : 97,
+      "sampleRate" : 48000,
+      "name" : "FT_Body80a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.030085102081298,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Body90b" : {
+          "fadeOut" : 75,
+          "fadeIn" : 75,
+          "prevented" : false
+        },
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body80a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182858,
+      "peakValue" : 0.33344826102256775,
+      "priority" : 96,
+      "sampleRate" : 48000,
+      "name" : "FT_Body80b"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.473858371734618,
+      "sliceable" : true,
+      "bars" : 2,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : [
+          {
+            "fadeOut" : 25,
+            "fadeIn" : 25,
+            "prevented" : false
+          },
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          }
+        ],
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : [
+          {
+            "fadeOut" : 0,
+            "fadeIn" : 0,
+            "prevented" : true
+          },
+          {
+
+          }
+        ],
+        "FT_Out90abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 182857,
+      "peakValue" : 0.3318294882774353,
+      "priority" : 13,
+      "sampleRate" : 48000,
+      "name" : "FT_Body90a"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.609785572052001,
+      "bars" : 1,
+      "transitions" : {
+        "FT_Out80ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90b" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90ab" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Body90a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out90aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80abc" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out80aa" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        },
+        "FT_Out5a" : {
+          "fadeOut" : 0,
+          "fadeIn" : 0,
+          "prevented" : true
+        }
+      },
+      "sampleCount" : 91428,
+      "peakValue" : 0.41518229246139526,
+      "priority" : 12,
+      "sampleRate" : 48000,
+      "name" : "FT_Body90b"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 45652
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -24.512902275085448,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.32760739326477051,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out5a"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 45503
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -22.78678514099121,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.36273100972175598,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out80aa"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 45350
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -23.679045215606688,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.36512976884841919,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out80ab"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 67902
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -22.98608876800537,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.36273100972175598,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out80abc"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 45116
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -25.471244827270507,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.27159988880157471,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out90aa"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 90739
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -23.291848674774169,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.38963201642036438,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out90ab"
+    },
+    {
+      "markers" : {
+        "OUTRO_STINGER" : 45457
+      },
+      "beatsPerBar" : 4,
+      "loudness" : -25.705135837554931,
+      "bars" : 1,
+      "sampleCount" : 148571,
+      "peakValue" : 0.28183737397193909,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Out90abc"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -24.490238204956054,
+      "bars" : 1,
+      "peakValue" : 0.35204055905342102,
+      "sampleCount" : 548526,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans2to5"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.126643196105956,
+      "bars" : 1,
+      "peakValue" : 0.37439635396003723,
+      "sampleCount" : 182857,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans18to80"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.734133735656737,
+      "bars" : 1,
+      "peakValue" : 0.38124150037765503,
+      "sampleCount" : 182858,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to30"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -24.702423587799071,
+      "bars" : 1,
+      "peakValue" : 0.38124150037765503,
+      "sampleCount" : 365715,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to35"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.734133735656737,
+      "bars" : 1,
+      "peakValue" : 0.38124150037765503,
+      "sampleCount" : 182858,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to40"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.734133735656737,
+      "bars" : 1,
+      "peakValue" : 0.38124150037765503,
+      "sampleCount" : 182858,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to42"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.721154228210448,
+      "bars" : 1,
+      "peakValue" : 0.38124150037765503,
+      "sampleCount" : 182858,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to45"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.820299640655517,
+      "bars" : 1,
+      "peakValue" : 0.40580189228057861,
+      "sampleCount" : 548425,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to65"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.838449016571044,
+      "bars" : 1,
+      "peakValue" : 0.40580189228057861,
+      "sampleCount" : 548572,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to70"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -21.734133735656737,
+      "bars" : 1,
+      "peakValue" : 0.38124150037765503,
+      "sampleCount" : 182858,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans27to80"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -27.119496837615966,
+      "bars" : 1,
+      "peakValue" : 0.28079923987388611,
+      "sampleCount" : 182856,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans28to40"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -27.119496837615966,
+      "bars" : 1,
+      "peakValue" : 0.28079923987388611,
+      "sampleCount" : 182856,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans28to42"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -25.934966579437255,
+      "bars" : 1,
+      "peakValue" : 0.29353770613670349,
+      "sampleCount" : 182857,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans30to40"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -25.934966579437255,
+      "bars" : 1,
+      "peakValue" : 0.29353770613670349,
+      "sampleCount" : 182857,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans30to42"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -26.29053212738037,
+      "bars" : 1,
+      "peakValue" : 0.30431339144706726,
+      "sampleCount" : 182857,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans35to80"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.963970676422118,
+      "bars" : 1,
+      "peakValue" : 0.43448373675346375,
+      "sampleCount" : 731428,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans40to65"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -24.979585186004638,
+      "bars" : 1,
+      "peakValue" : 0.25291940569877625,
+      "sampleCount" : 182857,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans40to70"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -22.963970676422118,
+      "bars" : 1,
+      "peakValue" : 0.43448373675346375,
+      "sampleCount" : 731428,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans42to65"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -23.325592056274413,
+      "bars" : 1,
+      "peakValue" : 0.36072367429733276,
+      "sampleCount" : 91428,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans42to70"
+    },
+    {
+      "beatsPerBar" : 4,
+      "loudness" : -23.555515781402587,
+      "bars" : 1,
+      "peakValue" : 0.38850075006484985,
+      "sampleCount" : 365714,
+      "priority" : 0,
+      "sampleRate" : 48000,
+      "name" : "FT_Trans45to70"
+    }
+  ],
+  "audioEncoderPresetName" : "HE-AAC v1 64",
+  "songName" : "Fade To You",
+  "artistName" : "Alvin Risk",
+  "uuid" : "97F859C4-9F58-4CF3-927B-0F58FBDC386F",
+  "contentVersion" : 1,
+  "compatibilityVersion" : 3,
+  "sampleRate" : 48000,
+  "audioFileExtension" : "m4a"
+}

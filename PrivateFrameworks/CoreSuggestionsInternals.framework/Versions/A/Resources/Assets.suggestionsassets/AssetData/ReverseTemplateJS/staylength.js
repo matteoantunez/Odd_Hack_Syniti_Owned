@@ -1,0 +1,1 @@
+(function(){return function(t,e){var n,r=0;if("undefined"!=typeof t.stayLengthCapture)for(n=0;n<t.stayLengthCapture.length&&0===r;n++)for(var a=e.getSpan().next(t.stayLengthCapture[n]);a.exists()&&!((r=parseInt(a.innerCapture(t.stayLengthCapture[n],1).toString()))>0);)a=a.next(t.stayLengthCapture[n]);return r}}).call();

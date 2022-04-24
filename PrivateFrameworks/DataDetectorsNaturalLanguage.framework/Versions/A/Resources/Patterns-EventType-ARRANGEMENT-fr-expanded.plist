@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ARRANGEMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(vien(s|t)?|venir) (te|me|vous|nous) (chercher|prendre|r[eé]cup[eé]rer)</string>
+			<string>(viendra|viendront|viendrons|viens|passe|passer|passera|passeront|passerons) (te|me|vous|nous) (chercher|prendre|r[eé]cup[eé]rer)</string>
+			<string>(passerais|passerai|viendrais|viendrai) (te|me|vous|nous) (chercher|prendre|r[eé]cup[eé]rer)</string>
+		</array>
+		<key>LOW_PRIORITY</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::PICKUP::AIRPORT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(cherch|r[eé]cup[eé]r|pass.{0,50} (me|nous) prendre).{0,50} l['’]a[eé]roport</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Aéroport</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(faire du shopping|(aller|va|vais) au centre commercial|faire les (courses|magasins|boutiques)|supermarch[eé]|magasin)</string>
+			<string>faire (du shopping|les courses|les magasins|les boutiques)</string>
+			<string>(aller|vais|allons|vas?) au centre commercial</string>
+			<string>(aller|vais|allons|vas?) (aux?|[aà]) (galeries lafayette|printemps|bon march[eé]|la samaritaine)</string>
+			<string>(aller|vais|allons|vas?) (aux?|[aà]) (auchan|carrefour|cora|e.leclerc|g[eé]ant casino|super[- ]u|intermarch[eé]|simply market|monop(.|rix))</string>
+			<string>(aller|vais|allons|vas?) au march[eé]</string>
+			<string>(shopping marathon|marathon shopping)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Shopping</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::SHOPPING::SALES</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>les soldes</string>
+			<string>(premi[eè]re|deuxi[eè]me|troisi[eè]me|derni[eè]re) d[eé]marque</string>
+			<string>ventes priv[eé]es</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Shopping</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>voyage(r)?</string>
+			<string>(r[eé]serv[eé]|r[eé]server|r[eé]servation) (.{0,50}) (hôtel|hotel|g[iî]te|logement|location|airbnb)(s)?</string>
+			<string>(?&lt;!personnel de l['’])(a[eé]roport)</string>
+			<string>excursion</string>
+			<string>(d[eé]part|voyage) en (bus|train|avion)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>ARRANGEMENT::TRAVEL::FIELDTRIP</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(sortie|excursion) avec ((la|ma) classe|l['’][eé]cole|mon [eé]cole)</string>
+			<string>(sortie|excursion) scolaire</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Excursion</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

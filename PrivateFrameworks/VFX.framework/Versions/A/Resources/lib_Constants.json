@@ -1,0 +1,642 @@
+{
+    "color": [0.338, 0.758, 1.0],
+    "snippets":[
+        {
+            "name" : "Float2",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "swift" : "@value",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Float3",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "@value",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Float3",
+            "showInParameterDefaultValues" : ["*"],
+            "hidden" : true,
+            "inParameterNames" : ["xy", "z"],
+            "inParameterTypes" : ["Float2", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "vfx_make_float3($xy, $z)",
+                "metal" : "vfx_make_float3($xy, $z)",
+                "c"     : "vfx_make_float3($xy, $z)"
+            }
+        },
+        {
+            "name" : "Float4",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "@value",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },  
+        {
+            "name" : "Float4",
+            "showInParameterDefaultValues" : ["*"],
+            "hidden" : true,
+            "inParameterNames" : ["xyz", "w"],
+            "inParameterTypes" : ["Float3", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "vfx_make_float4($xyz, $w)",
+                "metal" : "vfx_make_float4($xyz, $w)",
+                "c"     : "vfx_make_float4($xyz, $w)"
+            }
+        },
+        {
+            "name" : "ColorArray",
+            "showInParameterDefaultValues" : ["*"],
+            "toolCreateFunction" : "createTypedArraySnippet:Color",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4Array"],
+            "code" : {
+                "swift" : "[]",
+                "c" : "NULL"
+            }
+        },
+        {
+            "name" : "%TYPE%Array",
+            "showInParameterDefaultValues" : ["*"],
+            "toolCreateFunction" : "createTypedArraySnippet:%TYPE%",
+            "genericTypes" : ["Bool", "String", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Array"],
+            "code" : {
+                "swift" : "[]",
+                "c" : "NULL"
+            }
+        },
+        {
+            "name" : "URLArray",
+            "label" : "AssetArray",
+            "showInParameterDefaultValues" : ["*"],
+            "toolCreateFunction" : "createTypedArraySnippet:URL",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["URLArray"],
+            "code" : {
+                "swift" : "[]"
+            }
+        },
+        {
+            "name" : "Dummy%TYPE%Array",
+            "hidden" : true,
+            "genericTypes" : ["Bool", "Float", "Float2", "Float3", "Float4", "ALL_INT_TYPES"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Array"],
+            "code" : {
+                "swift" : "@value",
+                "metal" : "thread %TYPE% out#TEMP#[] = @value; thread $out = &out#TEMP#[0]",
+                "c"     : "%TYPE% out#TEMP#[] = @value; $out = &out#TEMP#[0]"
+            }
+        },
+        {
+            "name" : "Dummy%TYPE%Array",
+            "hidden" : true,
+            "genericTypes" : ["String", "URL"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["%TYPE%Array"],
+            "code" : {
+                "swift" : "@value",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "IntRange",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["lowerBound", "upperBound"],
+            "inParameterTypes" : ["Int", "Int"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["IntRange"],
+            "code" : {
+                "swift" : "Range<Int>(uncheckedBounds: (min($lowerBound, $upperBound), max($lowerBound, $upperBound)))",
+                "c|metal" :"vfx_make_int_range($lowerBound < $upperBound ? $lowerBound : $upperBound, $lowerBound > $upperBound ? $lowerBound : $upperBound)"
+            }
+        },
+        {
+            "name" : "FloatRange",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["lowerBound", "upperBound"],
+            "inParameterTypes" : ["Float", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["FloatRange"],
+            "code" : {
+                "swift"   : "Range<Float>(uncheckedBounds: (min($lowerBound, $upperBound), max($lowerBound, $upperBound)))",
+                "c|metal" :"vfx_make_float_range(vfx_min($lowerBound, $upperBound), vfx_max($lowerBound, $upperBound))"
+            }
+        },
+        {
+            "name" : "Matrix",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["col0", "col1", "col2"],
+            "inParameterTypes" : ["Float3", "Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_float3x3($col0, $col1, $col2)",
+                "metal" : "vfx_float3x3($col0, $col1, $col2)",
+                "c"     : "vfx_float3x3($col0, $col1, $col2)"
+            }
+        },  
+        {
+            "name" : "Matrix",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["col0", "col1", "col2", "col3"],
+            "inParameterTypes" : ["Float4", "Float4", "Float4", "Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_float4x4($col0, $col1, $col2, $col3)",
+                "metal" : "vfx_float4x4($col0, $col1, $col2, $col3)",
+                "c"     : "vfx_float4x4($col0, $col1, $col2, $col3)"
+            }
+        },  
+        {
+            "name" : "RotationMatrix",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Rotation Matrix(3x3) From Euler Angle",
+            "inParameterNames" : ["angleRadians"],
+            "inParameterTypes" : ["Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_make_transform($angleRadians, vfx_float2_zero(), vfx_float2_one())",
+                "metal" : "vfx_make_transform($angleRadians, vfx_float2_zero(), vfx_float2_one())",
+                "c"     : "vfx_make_transform($angleRadians, vfx_float2_zero(), vfx_float2_one())"
+            }
+        },  
+        {
+            "name" : "RotationMatrix",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Rotation Matrix(4x4) From Quaternion",
+            "inParameterNames" : ["rot"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_quat_to_matrix4x4($rot)",
+                "metal" : "vfx_quat_to_matrix4x4($rot)",
+                "c"     : "vfx_quat_to_matrix4x4($rot)"
+            }
+        },
+        {
+            "name" : "RotationMatrix",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Rotation Matrix(3x3) From Quaternion",
+            "inParameterNames" : ["rot"],
+            "inParameterTypes" : ["QuaternionF"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_quat_to_matrix3x3($rot)",
+                "metal" : "vfx_quat_to_matrix3x3($rot)",
+                "c"     : "vfx_quat_to_matrix3x3($rot)"
+            }
+        },
+        {
+            "name" : "RotationMatrixAround",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Rotation Matrix(4x4) Around",
+            "inParameterNames" : ["rot", "center"],
+            "inParameterTypes" : ["QuaternionF", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_make_rotation_around($rot, $center)",
+                "metal" : "vfx_make_rotation_around($rot, $center)",
+                "c"     : "vfx_make_rotation_around($rot, $center)"
+            }
+        },
+        {
+            "name" : "TRSMatrix",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["trn", "rot", "scl"],
+            "inParameterTypes" : ["Float2", "Float", "Float2"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "trn", "trn" : [0.0, 0.0], "valueType" : "Float2" },
+                { "keyName" : "rot", "rot" : 0.0, "valueType" : "Float" },
+                { "keyName" : "scl", "scl" : [1.0, 1.0], "valueType" : "Float2" }
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "vfx_make_transform($rot, $trn, $scl)",
+                "metal" : "vfx_make_transform($rot, $trn, $scl)",
+                "c"     : "vfx_make_transform($rot, $trn, $scl)"
+            }
+        },  
+        {
+            "name" : "TRSMatrix",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["trn", "rot", "scl"],
+            "inParameterTypes" : ["Float3", "QuaternionF", "Float3"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "trn", "trn" : [0.0, 0.0, 0.0], "valueType" : "Float3" },
+                { "keyName" : "rot", "rot" : [0.0, 0.0, 0.0, 1.0], "valueType" : "QuaternionF" },
+                { "keyName" : "scl", "scl" : [1.0, 1.0, 1.0], "valueType" : "Float3" }
+            ],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "vfx_make_transform($rot, vfx_make_float4($trn, 1.0), $scl)",
+                "metal" : "vfx_make_transform($rot, vfx_make_float4($trn, 1.0), $scl)",
+                "c"     : "vfx_make_transform($rot, vfx_make_float4($trn, 1.0), $scl)"
+            }
+        },  
+        {
+            "name" : "Half",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float(0.5)",
+                "metal" : "float(0.5)",
+                "c"     : "float(0.5)"
+            }
+        },
+        {
+            "name" : "One",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float(1.0)",
+                "metal" : "float(1.0)",
+                "c"     : "float(1.0)"
+            }
+        },
+        {
+            "name" : "Zero",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float.zero",
+                "metal" : "float(0.0)",
+                "c"     : "float(0.0)"
+            }
+        },
+        {
+            "name" : "String",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["String"],
+            "code" : {
+                "swift" : "String(@value)"
+            }
+        },
+        {
+            "name" : "URL",
+            "label" : "Asset",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["URL"],
+            "code" : {
+                "swift" : "@value"
+            }
+        },
+        {
+            "name" : "SwitchValue",
+            "skipTest": true,
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["SwitchValue"],
+            "code" : {
+                "*" : "@value"
+            }
+        },
+        {
+            "name" : "Float",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Double",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Double"],
+            "code" : {
+                "swift" : "Double(@value)"
+            }
+        },
+        {
+            "name" : "Bool",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "swift" : "Bool(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Int",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int"],
+            "code" : {
+                "swift" : "Int(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Int8",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int8"],
+            "code" : {
+                "swift" : "Int8(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Int16",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int16"],
+            "code" : {
+                "swift" : "Int16(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Int32",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int32"],
+            "code" : {
+                "swift" : "Int32(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "Int64",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int64"],
+            "code" : {
+                "swift" : "Int64(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        },
+        {
+            "name" : "UInt8",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt8"],
+            "code" : {
+                "swift" : "UInt8(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+
+            }
+        },
+        {
+            "name" : "UInt16",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt16"],
+            "code" : {
+                "swift" : "UInt16(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+
+            }
+        },
+        {
+            "name" : "UInt32",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt32"],
+            "code" : {
+                "swift" : "UInt32(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+
+            }
+        },
+        {
+            "name" : "UInt64",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["UInt64"],
+            "code" : {
+                "swift" : "UInt64(@value)",
+                "metal" : "@value",
+                "c"     : "@value"
+
+            }
+        },        
+        {
+            "name" : "Pi",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float.pi",
+                "metal" : "M_PI_F",
+                "c"     : "M_PI"
+            }
+        },
+        {
+            "name" : "TwoPi",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float.pi*2",
+                "metal" : "M_PI_F*2",
+                "c"     : "M_PI*2"
+            }
+        },
+        {
+            "name" : "Epsilon",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "Float(0.0000001)",
+                "metal" : "FLT_EPSILON",
+                "c"     : "FLT_EPSILON"
+            }
+        },
+        {
+            "name" : "Quaternion",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Quaternion From Normal",
+            "useNamedSignature" : true,
+            "inParameterNames" : ["normal"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_normal($normal)",
+                "metal" : "vfx_quat_from_normal($normal)",
+                "c"     : "vfx_quat_from_normal($normal)"
+            }
+        },
+        {
+            "name" : "Quaternion",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Quaternion From AxisAngle",
+            "useNamedSignature" : true,
+            "inParameterNames" : ["axis", "angle"],
+            "inParameterTypes" : ["Float3", "Float"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_axisangle($axis, $angle)",
+                "metal" : "vfx_quat_from_axisangle($axis, $angle)",
+                "c"     : "vfx_quat_from_axisangle($axis, $angle)"
+            }
+        },
+        {
+            "name" : "Quaternion",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Quaternion From AxisAngle",
+            "useNamedSignature" : true,
+            "inParameterNames" : ["axisAngle"],
+            "inParameterTypes" : ["Float4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_axisangle($axisAngle)",
+                "metal" : "vfx_quat_from_axisangle($axisAngle)",
+                "c"     : "vfx_quat_from_axisangle($axisAngle)"
+            }
+        },
+        {
+            "name" : "Quaternion",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Quaternion From Euler Angles",
+            "useNamedSignature" : true,
+            "inParameterNames" : ["eulerAngles"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_euler($eulerAngles)",
+                "metal" : "vfx_quat_from_euler($eulerAngles)",
+                "c"     : "vfx_quat_from_euler($eulerAngles)"
+            }
+        },
+        {
+            "name" : "Quaternion",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Quaternion From Rotation Matrix(3x3)",
+            "inParameterNames" : ["rotMatrix"],
+            "inParameterTypes" : ["Float3x3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_matrix3x3($rotMatrix)",
+                "metal" : "vfx_quat_from_matrix3x3($rotMatrix)",
+                "c"     : "vfx_quat_from_matrix3x3($rotMatrix)"
+            }
+        },
+        {
+            "name" : "Quaternion",
+            "showInParameterDefaultValues" : ["*"],
+            "label" : "Quaternion From Rotation Matrix(4x4)",
+            "inParameterNames" : ["rotMatrix"],
+            "inParameterTypes" : ["Float4x4"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_from_matrix4x4($rotMatrix)",
+                "metal" : "vfx_quat_from_matrix4x4($rotMatrix)",
+                "c"     : "vfx_quat_from_matrix4x4($rotMatrix)"
+            }
+        },
+        {
+            "name" : "Identity",
+            "label" : "Identity (QuaternionF)",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["QuaternionF"],
+            "code" : {
+                "swift" : "vfx_quat_identity()",
+                "metal" : "vfx_quat_identity()",
+                "c" : "vfx_quat_identity()"
+            }
+        },
+        {
+            "name" : "Identity",
+            "label" : "Identity (Float3x3)",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3x3"],
+            "code" : {
+                "swift" : "simd_float3x3(diagonal: simd_float3(1.0, 1.0, 1.0))",
+                "metal" : "vfx_float3x3(vfx_diagonal(vfx_make_float4(1.0, 1.0, 1.0, 1.0)))",
+                "c" : "vfx_float3x3(vfx_diagonal(vfx_make_float4(1.0, 1.0, 1.0, 1.0)))"
+            }
+        },
+        {
+            "name" : "Identity",
+            "label" : "Identity (Float4x4)",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4x4"],
+            "code" : {
+                "swift" : "simd_float4x4(diagonal: simd_float4(1.0, 1.0, 1.0, 1.0))",
+                "metal" : "vfx_diagonal(vfx_make_float4(1.0, 1.0, 1.0, 1.0))",
+                "c" : "vfx_diagonal(vfx_make_float4(1.0, 1.0, 1.0, 1.0))"
+            }
+        },
+        {
+            "name" : "Curve",
+            "supportedBy" : ["VFXBaseObject"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["CurveF"],
+            "code" : {
+                "c|swift" : "@value"
+            }
+        },
+        {
+            "name" : "Curve",
+            "supportedBy" : ["VFXEmitter"],
+            "skipTest": true,
+            "toolCreateFunction" : "createEmbeddedAsset:CurveTexture",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["CurveTexture"],
+            "code" : {
+                "c|metal|swift" : ""
+            }
+        },
+        {
+            "name" : "ColorRamp",
+            "supportedBy" : ["VFXBaseObject"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["ColorRamp"],
+            "code" : {
+                "c|swift" : "@value"
+            }
+        },
+        {
+            "name" : "ColorRamp",
+            "supportedBy" : ["VFXEmitter"],
+            "skipTest": true,
+            "toolCreateFunction" : "createEmbeddedAsset:ColorRampTexture",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["ColorRampTexture"],
+            "code" : {
+                "c|metal|swift" : ""
+            }
+        },
+        {
+            "name" : "Color",
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "swift" : "@value",
+                "metal" : "@value",
+                "c"     : "@value"
+            }
+        }
+    ]
+}

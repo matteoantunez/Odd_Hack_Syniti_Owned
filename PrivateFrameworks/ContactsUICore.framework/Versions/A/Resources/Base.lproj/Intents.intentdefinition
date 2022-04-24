@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>INEnums</key>
+	<array/>
+	<key>INIntentDefinitionManualCodegen</key>
+	<true/>
+	<key>INIntentDefinitionModelVersion</key>
+	<string>1.0</string>
+	<key>INIntentDefinitionNamespace</key>
+	<string>QhsO43</string>
+	<key>INIntentDefinitionSourceLanguage</key>
+	<string>Objective-C</string>
+	<key>INIntentDefinitionSystemVersion</key>
+	<string>20A241128</string>
+	<key>INIntentDefinitionToolsBuildVersion</key>
+	<string>13E6049a</string>
+	<key>INIntentDefinitionToolsVersion</key>
+	<string>13.3</string>
+	<key>INIntents</key>
+	<array>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>create</string>
+			<key>INIntentClassName</key>
+			<string>CNUICreateContactIntent</string>
+			<key>INIntentClassPrefix</key>
+			<string>CNUI</string>
+			<key>INIntentDescription</key>
+			<string>Creates a new contact</string>
+			<key>INIntentDescriptionID</key>
+			<string>IQl3gd</string>
+			<key>INIntentHash</key>
+			<integer>7302053177415402549</integer>
+			<key>INIntentName</key>
+			<string>CreateContact</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<false/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Create a new contact</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>LBTZ3b</string>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Create Contact</string>
+			<key>INIntentTitleID</key>
+			<string>xsBeCv</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Create</string>
+		</dict>
+	</array>
+	<key>INTypes</key>
+	<array/>
+</dict>
+</plist>

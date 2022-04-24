@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en" id="SetNumericSettingIntent#NoNeedToChangeNumericValueTo">
+	<conditions>
+		<condition name="isDisplayBrightness">
+			<expression name="setting.identifier" value="'displayBrightness'" op="eq"/>
+		</condition>
+		<condition name="isSiriVoiceVolume">
+			<expression name="setting.identifier" value="'voice'" op="eq"/>
+		</condition>
+	</conditions>
+	<first>
+		<first condition="isDisplayBrightness">
+			<dialog condition="action.isSetValue">The screen is already at <var name="action.value"/>.</dialog>
+			<dialog condition="action.isMinimum">The screen is already as dark as it gets.</dialog>
+			<dialog condition="action.isDecrease">The screen is already as dark as it gets.</dialog>
+			<dialog condition="action.isMaximum">The screen is already as bright as it gets.</dialog>
+			<dialog condition="action.isIncrease">The screen is already as bright as it gets.</dialog>
+		</first>
+		<all condition="isSiriVoiceVolume">
+			<first>
+				<dialog condition="wasSmartVolumeDisabled">OK. I turned off 'Automatic Siri Volume'.</dialog>
+				<dialog condition="action.isSetValue">I'm already speaking at <var name="action.value"/>.</dialog>
+				<dialog condition="action.isMinimum">This is as quiet as I get.</dialog>
+				<dialog condition="action.isDecrease">This is as quiet as I get.</dialog>
+				<dialog condition="action.isMaximum">This is as loud as I get.</dialog>
+				<dialog condition="action.isIncrease">This is as loud as I get.</dialog>
+			</first>
+		</all>
+		<first>
+			<dialog condition="action.isSetValue"><var name="setting.name"/> is already at <var name="action.value"/>.</dialog>
+			<dialog condition="action.isMinimum"><var name="setting.name"/> is already at the minimum.</dialog>
+			<dialog condition="action.isDecrease"><var name="setting.name"/> is already at the minimum.</dialog>
+			<dialog condition="action.isMaximum"><var name="setting.name"/> is already at the maximum.</dialog>
+			<dialog condition="action.isIncrease"><var name="setting.name"/> is already at the maximum.</dialog>
+		</first>
+	</first>
+</cat>

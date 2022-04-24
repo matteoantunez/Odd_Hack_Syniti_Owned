@@ -1,0 +1,378 @@
+//===-- metal_common ------------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_COMMON
+#define __METAL_COMMON
+
+namespace metal {
+  // 5.2 Common Functions
+
+
+  METAL_ASM half clamp(half x, half minval, half maxval) __asm("air.clamp.f16");
+  METAL_ASM half saturate(half x) __asm("air.saturate.f16");
+
+  METAL_ASM half mix(half x, half y, half a) __asm("air.mix.f16");
+
+  METAL_ASM half sign(half x) __asm("air.sign.f16");
+
+  METAL_FUNC half smoothstep(half edge0, half edge1, half x) {
+    half t = clamp((x - edge0) /
+      (edge1 - edge0),
+      half(0), half(1));
+    return t * t * (half(3) - half(2) * t);
+  }
+
+  METAL_FUNC half step(half edge, half x) {
+    return static_cast<half>(x >= edge);
+  }
+
+
+namespace precise {
+  METAL_ASM float clamp(float x, float minval, float maxval) __asm("air.clamp.f32");
+
+  METAL_ASM float saturate(float x) __asm("air.saturate.f32");
+}
+
+namespace fast {
+  METAL_ASM float clamp(float x, float minval, float maxval) __asm("air.fast_clamp.f32");
+
+  METAL_ASM float saturate(float x) __asm("air.fast_saturate.f32");
+}
+
+  METAL_FUNC float clamp(float x, float minval, float maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+
+  METAL_FUNC float saturate(float x) {
+#if defined(__FAST_MATH__)
+   return fast::saturate(x);
+#else
+   return precise::saturate(x);
+#endif
+  }
+
+  METAL_ASM float mix(float x, float y, float a) __asm("air.mix.f32");
+
+  METAL_ASM float sign(float x) __asm("air.sign.f32");
+
+  METAL_FUNC float smoothstep(float edge0, float edge1, float x) {
+    float t = clamp((x - edge0) /
+      (edge1 - edge0),
+      float(0), float(1));
+    return t * t * (float(3) - float(2) * t);
+  }
+
+  METAL_FUNC float step(float edge, float x) {
+    return static_cast<float>(x >= edge);
+  }
+
+
+
+
+
+  METAL_ASM vec<half,2> clamp(vec<half,2> x, vec<half,2> minval, vec<half,2> maxval) __asm("air.clamp.v2f16");
+  METAL_FUNC vec<half,2> clamp(vec<half,2> x, half minval, half maxval) {
+    return clamp(x, vec<half,2>(minval), vec<half,2>(maxval));
+  }
+  METAL_ASM vec<half,2> saturate(vec<half,2> x) __asm("air.saturate.v2f16");
+
+  METAL_ASM vec<half,2> mix(vec<half,2> x, vec<half,2> y, vec<half,2> a) __asm("air.mix.v2f16");
+  METAL_FUNC vec<half,2> mix(vec<half,2> x, vec<half,2> y, half a) {
+    return mix(x, y, vec<half,2>(a));
+  }
+
+  METAL_ASM vec<half,2> sign(vec<half,2> x) __asm("air.sign.v2f16");
+
+  METAL_FUNC vec<half,2> smoothstep(vec<half,2> edge0, vec<half,2> edge1, vec<half,2> x) {
+    vec<half,2> t = clamp((x - edge0) /
+      (edge1 - edge0),
+      vec<half,2>(0), vec<half,2>(1));
+    return t * t * (vec<half,2>(3) - vec<half,2>(2) * t);
+  }
+  METAL_FUNC vec<half,2> smoothstep(half edge0, half edge1, vec<half,2> x) {
+    return smoothstep(vec<half,2>(edge0), vec<half,2>(edge1), x);
+  }
+
+  METAL_FUNC vec<half,2> step(vec<half,2> edge, vec<half,2> x) {
+    return static_cast<vec<half,2>>(x >= edge);
+  }
+  METAL_FUNC vec<half,2> step(half edge, vec<half,2> x) {
+    return step(vec<half,2>(edge), x);
+  }
+
+
+namespace precise {
+  METAL_ASM vec<float,2> clamp(vec<float,2> x, vec<float,2> minval, vec<float,2> maxval) __asm("air.clamp.v2f32");
+  METAL_FUNC vec<float,2> clamp(vec<float,2> x, float minval, float maxval) {
+    return clamp(x, vec<float,2>(minval), vec<float,2>(maxval));
+  }
+
+  METAL_ASM vec<float,2> saturate(vec<float,2> x) __asm("air.saturate.v2f32");
+}
+
+namespace fast {
+  METAL_ASM vec<float,2> clamp(vec<float,2> x, vec<float,2> minval, vec<float,2> maxval) __asm("air.fast_clamp.v2f32");
+  METAL_FUNC vec<float,2> clamp(vec<float,2> x, float minval, float maxval) {
+    return clamp(x, vec<float,2>(minval), vec<float,2>(maxval));
+  }
+
+  METAL_ASM vec<float,2> saturate(vec<float,2> x) __asm("air.fast_saturate.v2f32");
+}
+
+  METAL_FUNC vec<float,2> clamp(vec<float,2> x, vec<float,2> minval, vec<float,2> maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+
+  METAL_FUNC vec<float,2> clamp(vec<float,2> x, float minval, float maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+  METAL_FUNC vec<float,2> saturate(vec<float,2> x) {
+#if defined(__FAST_MATH__)
+   return fast::saturate(x);
+#else
+   return precise::saturate(x);
+#endif
+  }
+
+  METAL_ASM vec<float,2> mix(vec<float,2> x, vec<float,2> y, vec<float,2> a) __asm("air.mix.v2f32");
+  METAL_FUNC vec<float,2> mix(vec<float,2> x, vec<float,2> y, float a) {
+    return mix(x, y, vec<float,2>(a));
+  }
+
+  METAL_ASM vec<float,2> sign(vec<float,2> x) __asm("air.sign.v2f32");
+
+  METAL_FUNC vec<float,2> smoothstep(vec<float,2> edge0, vec<float,2> edge1, vec<float,2> x) {
+    vec<float,2> t = clamp((x - edge0) /
+      (edge1 - edge0),
+      vec<float,2>(0), vec<float,2>(1));
+    return t * t * (vec<float,2>(3) - vec<float,2>(2) * t);
+  }
+  METAL_FUNC vec<float,2> smoothstep(float edge0, float edge1, vec<float,2> x) {
+    return smoothstep(vec<float,2>(edge0), vec<float,2>(edge1), x);
+  }
+
+  METAL_FUNC vec<float,2> step(vec<float,2> edge, vec<float,2> x) {
+    return static_cast<vec<float,2>>(x >= edge);
+  }
+  METAL_FUNC vec<float,2> step(float edge, vec<float,2> x) {
+    return step(vec<float,2>(edge), x);
+  }
+
+
+
+
+
+  METAL_ASM vec<half,3> clamp(vec<half,3> x, vec<half,3> minval, vec<half,3> maxval) __asm("air.clamp.v3f16");
+  METAL_FUNC vec<half,3> clamp(vec<half,3> x, half minval, half maxval) {
+    return clamp(x, vec<half,3>(minval), vec<half,3>(maxval));
+  }
+  METAL_ASM vec<half,3> saturate(vec<half,3> x) __asm("air.saturate.v3f16");
+
+  METAL_ASM vec<half,3> mix(vec<half,3> x, vec<half,3> y, vec<half,3> a) __asm("air.mix.v3f16");
+  METAL_FUNC vec<half,3> mix(vec<half,3> x, vec<half,3> y, half a) {
+    return mix(x, y, vec<half,3>(a));
+  }
+
+  METAL_ASM vec<half,3> sign(vec<half,3> x) __asm("air.sign.v3f16");
+
+  METAL_FUNC vec<half,3> smoothstep(vec<half,3> edge0, vec<half,3> edge1, vec<half,3> x) {
+    vec<half,3> t = clamp((x - edge0) /
+      (edge1 - edge0),
+      vec<half,3>(0), vec<half,3>(1));
+    return t * t * (vec<half,3>(3) - vec<half,3>(2) * t);
+  }
+  METAL_FUNC vec<half,3> smoothstep(half edge0, half edge1, vec<half,3> x) {
+    return smoothstep(vec<half,3>(edge0), vec<half,3>(edge1), x);
+  }
+
+  METAL_FUNC vec<half,3> step(vec<half,3> edge, vec<half,3> x) {
+    return static_cast<vec<half,3>>(x >= edge);
+  }
+  METAL_FUNC vec<half,3> step(half edge, vec<half,3> x) {
+    return step(vec<half,3>(edge), x);
+  }
+
+
+namespace precise {
+  METAL_ASM vec<float,3> clamp(vec<float,3> x, vec<float,3> minval, vec<float,3> maxval) __asm("air.clamp.v3f32");
+  METAL_FUNC vec<float,3> clamp(vec<float,3> x, float minval, float maxval) {
+    return clamp(x, vec<float,3>(minval), vec<float,3>(maxval));
+  }
+
+  METAL_ASM vec<float,3> saturate(vec<float,3> x) __asm("air.saturate.v3f32");
+}
+
+namespace fast {
+  METAL_ASM vec<float,3> clamp(vec<float,3> x, vec<float,3> minval, vec<float,3> maxval) __asm("air.fast_clamp.v3f32");
+  METAL_FUNC vec<float,3> clamp(vec<float,3> x, float minval, float maxval) {
+    return clamp(x, vec<float,3>(minval), vec<float,3>(maxval));
+  }
+
+  METAL_ASM vec<float,3> saturate(vec<float,3> x) __asm("air.fast_saturate.v3f32");
+}
+
+  METAL_FUNC vec<float,3> clamp(vec<float,3> x, vec<float,3> minval, vec<float,3> maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+
+  METAL_FUNC vec<float,3> clamp(vec<float,3> x, float minval, float maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+  METAL_FUNC vec<float,3> saturate(vec<float,3> x) {
+#if defined(__FAST_MATH__)
+   return fast::saturate(x);
+#else
+   return precise::saturate(x);
+#endif
+  }
+
+  METAL_ASM vec<float,3> mix(vec<float,3> x, vec<float,3> y, vec<float,3> a) __asm("air.mix.v3f32");
+  METAL_FUNC vec<float,3> mix(vec<float,3> x, vec<float,3> y, float a) {
+    return mix(x, y, vec<float,3>(a));
+  }
+
+  METAL_ASM vec<float,3> sign(vec<float,3> x) __asm("air.sign.v3f32");
+
+  METAL_FUNC vec<float,3> smoothstep(vec<float,3> edge0, vec<float,3> edge1, vec<float,3> x) {
+    vec<float,3> t = clamp((x - edge0) /
+      (edge1 - edge0),
+      vec<float,3>(0), vec<float,3>(1));
+    return t * t * (vec<float,3>(3) - vec<float,3>(2) * t);
+  }
+  METAL_FUNC vec<float,3> smoothstep(float edge0, float edge1, vec<float,3> x) {
+    return smoothstep(vec<float,3>(edge0), vec<float,3>(edge1), x);
+  }
+
+  METAL_FUNC vec<float,3> step(vec<float,3> edge, vec<float,3> x) {
+    return static_cast<vec<float,3>>(x >= edge);
+  }
+  METAL_FUNC vec<float,3> step(float edge, vec<float,3> x) {
+    return step(vec<float,3>(edge), x);
+  }
+
+
+
+
+
+  METAL_ASM vec<half,4> clamp(vec<half,4> x, vec<half,4> minval, vec<half,4> maxval) __asm("air.clamp.v4f16");
+  METAL_FUNC vec<half,4> clamp(vec<half,4> x, half minval, half maxval) {
+    return clamp(x, vec<half,4>(minval), vec<half,4>(maxval));
+  }
+  METAL_ASM vec<half,4> saturate(vec<half,4> x) __asm("air.saturate.v4f16");
+
+  METAL_ASM vec<half,4> mix(vec<half,4> x, vec<half,4> y, vec<half,4> a) __asm("air.mix.v4f16");
+  METAL_FUNC vec<half,4> mix(vec<half,4> x, vec<half,4> y, half a) {
+    return mix(x, y, vec<half,4>(a));
+  }
+
+  METAL_ASM vec<half,4> sign(vec<half,4> x) __asm("air.sign.v4f16");
+
+  METAL_FUNC vec<half,4> smoothstep(vec<half,4> edge0, vec<half,4> edge1, vec<half,4> x) {
+    vec<half,4> t = clamp((x - edge0) /
+      (edge1 - edge0),
+      vec<half,4>(0), vec<half,4>(1));
+    return t * t * (vec<half,4>(3) - vec<half,4>(2) * t);
+  }
+  METAL_FUNC vec<half,4> smoothstep(half edge0, half edge1, vec<half,4> x) {
+    return smoothstep(vec<half,4>(edge0), vec<half,4>(edge1), x);
+  }
+
+  METAL_FUNC vec<half,4> step(vec<half,4> edge, vec<half,4> x) {
+    return static_cast<vec<half,4>>(x >= edge);
+  }
+  METAL_FUNC vec<half,4> step(half edge, vec<half,4> x) {
+    return step(vec<half,4>(edge), x);
+  }
+
+
+namespace precise {
+  METAL_ASM vec<float,4> clamp(vec<float,4> x, vec<float,4> minval, vec<float,4> maxval) __asm("air.clamp.v4f32");
+  METAL_FUNC vec<float,4> clamp(vec<float,4> x, float minval, float maxval) {
+    return clamp(x, vec<float,4>(minval), vec<float,4>(maxval));
+  }
+
+  METAL_ASM vec<float,4> saturate(vec<float,4> x) __asm("air.saturate.v4f32");
+}
+
+namespace fast {
+  METAL_ASM vec<float,4> clamp(vec<float,4> x, vec<float,4> minval, vec<float,4> maxval) __asm("air.fast_clamp.v4f32");
+  METAL_FUNC vec<float,4> clamp(vec<float,4> x, float minval, float maxval) {
+    return clamp(x, vec<float,4>(minval), vec<float,4>(maxval));
+  }
+
+  METAL_ASM vec<float,4> saturate(vec<float,4> x) __asm("air.fast_saturate.v4f32");
+}
+
+  METAL_FUNC vec<float,4> clamp(vec<float,4> x, vec<float,4> minval, vec<float,4> maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+
+  METAL_FUNC vec<float,4> clamp(vec<float,4> x, float minval, float maxval) {
+#if defined(__FAST_MATH__)
+   return fast::clamp(x, minval, maxval);
+#else
+   return precise::clamp(x, minval, maxval);
+#endif  
+  }
+  METAL_FUNC vec<float,4> saturate(vec<float,4> x) {
+#if defined(__FAST_MATH__)
+   return fast::saturate(x);
+#else
+   return precise::saturate(x);
+#endif
+  }
+
+  METAL_ASM vec<float,4> mix(vec<float,4> x, vec<float,4> y, vec<float,4> a) __asm("air.mix.v4f32");
+  METAL_FUNC vec<float,4> mix(vec<float,4> x, vec<float,4> y, float a) {
+    return mix(x, y, vec<float,4>(a));
+  }
+
+  METAL_ASM vec<float,4> sign(vec<float,4> x) __asm("air.sign.v4f32");
+
+  METAL_FUNC vec<float,4> smoothstep(vec<float,4> edge0, vec<float,4> edge1, vec<float,4> x) {
+    vec<float,4> t = clamp((x - edge0) /
+      (edge1 - edge0),
+      vec<float,4>(0), vec<float,4>(1));
+    return t * t * (vec<float,4>(3) - vec<float,4>(2) * t);
+  }
+  METAL_FUNC vec<float,4> smoothstep(float edge0, float edge1, vec<float,4> x) {
+    return smoothstep(vec<float,4>(edge0), vec<float,4>(edge1), x);
+  }
+
+  METAL_FUNC vec<float,4> step(vec<float,4> edge, vec<float,4> x) {
+    return static_cast<vec<float,4>>(x >= edge);
+  }
+  METAL_FUNC vec<float,4> step(float edge, vec<float,4> x) {
+    return step(vec<float,4>(edge), x);
+  }
+
+
+
+} // namespace metal
+
+#endif // __METAL_COMMON

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PublishesEvents</key>
+	<string>com.apple.GameController.events.controllers-changed</string>
+	<key>Label</key>
+	<string>com.apple.GameController.gamecontrollerd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.GameController.gamecontrollerd</key>
+		<true/>
+		<key>com.apple.GameController.gamecontrollerd.app</key>
+		<true/>
+		<key>com.apple.GameController.gamecontrollerd.driver</key>
+		<true/>
+		<key>com.apple.GameController.gamecontrollerd.haptics</key>
+		<true/>
+	</dict>
+	<key>UserName</key>
+	<string>_gamecontrollerd</string>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/gamecontrollerd</string>
+	</array>
+</dict>
+</plist>

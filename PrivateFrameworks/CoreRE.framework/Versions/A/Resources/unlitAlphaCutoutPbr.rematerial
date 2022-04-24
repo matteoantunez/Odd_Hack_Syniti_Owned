@@ -1,0 +1,11 @@
+{
+    "Name": "unlitAlphaCutoutPbr",
+    "MaterialDefinition": "unlitAlphaCutoutPbr.rematerialdefinition",
+    "Parameters": {
+        "Textures": {
+            "textureEmissive" : "fallback.white",
+            "textureOpacity" : "fallback.white"
+        }
+    },
+}
+

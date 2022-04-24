@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>Prístup obmedzený</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- Localization notes: see blockpage.html  -->
+	
+	<body onload="javascript:LoadNetworkPage(	'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 
+												32, 51)" >
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						Ups! Túto webovú stránku si nemôžete prezerať.
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						Stránka
+						„<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>“
+						sa nezobrazí, pretože nie je na zozname povolených stránok v rodičovskej ochrane.
+					</p>
+					
+					<p class="text"		id="HowToAddText">
+						Ak chcete stránku pridať do zoznamu povolených stránok, kontaktujte správcu siete.
+					</p>
+
+					<p class="text"		id="GoBackText">
+						Ak sa chcete vrátiť na predošlú stránku, kliknite na Naspäť. 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  Naspäť  " onclick="GoBack()" />
+					</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>

@@ -1,0 +1,985 @@
+v5 / 08/19/04
+
+** canonical
+
+Note about date translation:
+- We are using NSCalendarDate to handle date representations, and are using the timezone information in it to keep 
+track of the entered timezone for the event.
+- In iSync 1.X, -if- the date was date-only (such as in all-day events properties for start date, end date, until date, ...) we were using a NSCalendarDate set at midnight, in GMT/UTC Timezone.
+- In SyncServices, the definition for a date-only NSCalendarDate is now noon, GMT/UTC TimeZone
+
+
+com.apple.Calendars dataclass
+
+* com.apple.calendars.CalendarOrder
+
+This will give the orders of the calendars (this is the order that
+is appearing is iCal. This did not exist in iCal 1.5.
+
+attributes:
+	identity: NSString
+		  This value will always be com.apple.calendars.CalendarOrder.
+		  This will be used to help the mingler to merge this record.
+		  There will only be one instance of that record.
+
+relationships:
+	calendars: array of recordID of the calendars
+		(com.apple.calendars.Calendar)
+
+* com.apple.calendars.Calendar
+
+attributes:
+	title: NSString
+		name of the calendar
+		This is equivalent to NSSyncFolderName in iSync 1.x schema.
+		(we had a unique-name policy)
+
+	url: NSURL
+		URL of a page about the calendar
+		No equivalent in iSync 1.x schema
+
+	notes: NSString
+		additional description of the calendar
+		This is equivalent to NSSyncFolderCalendarDescription in
+		iSync 1.x schema.
+
+	read only: NSNumber (BOOL)
+		inform about the write status of the calendar
+		Should be TRUE if NSSyncFolderRemoteCalendarURL in
+		iSync 1.X schema is set
+	 	
+relationships :
+	events : array of recordID of events of the calendar
+	tasks : array of recordID of tasks of the calendar
+
+Unused in iSync 1.x
+	NSSyncFolderCalendarType: never used
+	NSSyncFolderCalendarExpirationDate: never used
+	NSSyncFolderCalendarColorImage: never used
+
+Obsoleted:
+	NSSyncFolderCalendarColorDescription: this key is synchronized in
+	iSync 1.x but there is no mapping to an MadHatter property
+
+
+* com.apple.calendars.Event
+
+  Unused in iSync 1.x
+	NSSyncExceptionRules; never used
+	NSSyncRDates: never used
+
+  attributes:
+	original date: NSCalendarDate
+		when this event is a detached from a recurrent event, this
+		date will give the date of the event in the recurrence if it
+		was not detached.
+		This is equivalent to NSSyncRecurID (note about date
+		translation apply)
+
+	summary: NSString
+		summary of the event
+		This is equivalent to NSSyncSummary
+
+	url: NSURL
+		URL of the event
+		This is semantically equivalent to NSSyncUrl (NSString)
+
+	description: NSString
+		additional description of the event
+		This is equivalent to NSSyncDescription
+
+	location: NSString
+		place where the event will take place
+		This is equivalent to NSSyncLocation
+
+	start date: NSCalendarDate
+		start date of the event 
+		This is equivalent to NSSyncStartDate (note about
+		date translation apply)
+
+	end date: NSCalendarDate
+		end date of the event
+		This is equivalent to NSSyncEndDate (note about
+		date translation apply)
+
+	all day: NSNumber (BOOL)
+		the value will be true if the event is an all-day event,
+		and false in other case.
+		If this is set to YES (TRUE), start date and end date
+		will be given at 12:00 GMT.
+		This is equivalent to NSSyncAllDayEvent
+
+	status: NSString among: "tentative", "confirmed", "cancelled", "none"
+		this is the status of the scheduled event
+		default value is none.
+		In iSync 1.X this is encoded in the NSSyncStatus property,
+		as a NSNumber with (1=tentative,2=confirmed,5=cancelled). 
+		   	All other values are not relevant for event records
+			and should be ignored
+
+	exception dates: NSArray of NSCalendarDate
+		Array of dates when a recurrent event won't have occurrences
+		This is equivalent to NSSyncExDates
+		(note about date translation apply)
+
+	priority: NSNumber (int : value from 0 to 9)
+		0 means no priority, 1 means max priority, 9 means min priority
+		This is equivalent to NSSyncPriority
+
+	classification: NSString among: public, private, confidential
+		Confidentiality status for the event
+		In iSync 1.X this is encoded in the NSSyncClassification
+		property, as a NSNumber with
+		(0=public,1=private,2=confidential).
+
+  relationships:
+	calendar: this is an array containing a single element :
+		 the recordID of the calendar the event is from.
+		 
+	recurrences: this is an array with a single recordID of recurrence.
+		In iSync 1.x, NSSyncRecurrenceRules is an
+		array of NSDictionary (see recurrence rules for
+		further information)
+	
+	audio alarms: this is an array of recordID of audio alarms.
+	mail alarms: this is an array of recordID of mail alarms.
+	display alarms: this is an array of recordID of display alarms.
+		 In iSync 1.x, NSSyncAlarms is an array of
+		 NSDictionary (see alarms for further information)
+	
+	organizer: this is an array containing a single element :
+		 the recordID of the organizer.
+		 In iSync 1.x, NSSyncOrganizer is a dictionary
+		 (see organizer for further information)
+		 
+	attendees: this is an array of recordID of attendees.
+		 In iSync 1.x, NSSyncAttendees is an array
+		 of dictionary.
+	
+	detached events: if this is a recurrent event,
+		 this is an array of recordID of the
+		 event detached from the recurrence.
+		 In iSync 1.x, all events with the same value
+		 of NSSyncICalendarUID and NSSyncRecurID not empty
+		 will be detached.
+		 
+	main event: if this is a detached event,
+		 this is the recordID of the event it has
+		 been detached from.
+		 In iSync 1.x, the event with the same value
+		 of NSSyncICalendarUID and NSSyncRecurID empty
+		 will be the main event.
+
+
+* com.apple.calendars.Task
+
+  attributes:
+	original date: NSCalendarDate
+		 when this task is a detached from a
+		 recurrent task, this date will give the date
+		 of the task in the recurrence if it was not detached.
+		 This is equivalent to NSSyncRecurID (note about date
+		 translation apply)
+
+	summary: NSString
+	         summary of the task
+		 This is equivalent to NSSyncSummary
+
+	url: NSURL
+	         URL of the task
+		 This is semantically equivalent to NSSyncUrl (NSString)
+
+	description: NSString
+	        additional description of the task
+		This is equivalent to NSSyncDescription
+
+	completion date: NSCalendarDate
+	        this is the date of completion of the task
+
+	start date: NSCalendarDate
+	        this is the start date of the task
+
+	due date: NSCalendarDate
+	        this is the due date of the task
+
+	status: NSString
+	        this is the status of the scheduled task,
+		about its confirmation. This is used, for example,
+		for invitation. The values can be :
+		cancelled, needsaction, completed, inprocess,
+		none
+		default is none.
+		previous definition :
+		NSNumber
+		3 = Completed
+		4 = NeedsAction
+		5 = Cancelled
+		6 = InProcess
+		other values can be ignored
+
+	exception dates: NSArray of NSCalendarDate
+	        this an array of exception dates.
+		This is equivalent to NSSyncExDates
+		(note about date translation apply)
+
+	priority: NSNumber (int)
+	        this is a number from zero to nine.
+		zero is undefined priority,
+		one is the highest priority,
+		nine is the lower priority.
+		This is equivalent to NSSyncPriority
+
+	classification: NSString
+	        this is the access classification of the
+		event. The values can be :
+		public, private, confidential.
+		default is public.
+		In iSync 1.X this is encoded in the NSSyncClassification
+		property, as a NSNumber with
+		(0=public,1=private,2=confidential).
+
+  relationships:
+	calendar: this is an array containing a single element :
+		 the recordID of the calendar the task is from.
+
+	recurrences: this is an array with a single recordID of recurrence.
+
+	audio alarms: this is an array of recordID of audio alarms.
+	mail alarms: this is an array of recordID of mail alarms.
+	display alarms: this is an array of recordID of display alarms.
+		 In iSync 1.x, NSSyncAlarms is an array of
+		 NSDictionary (see alarms for further information)
+
+	organizer: this is an array containing a single element :
+		 the recordID of the organizer.
+		 In iSync 1.x, NSSyncOrganizer is a dictionary
+		 (see organizer for further information)
+
+	attendees: this is an array of recordID of attendees.
+		 In iSync 1.x, NSSyncAttendees is an array
+		 of dictionary.
+
+	detached tasks: if this is a recurrent task,
+		 this is an array of recordID of the
+		 task detached from the recurrence.
+		 In iSync 1.x, all tasks with the same value
+		 of NSSyncICalendarUID and NSSyncRecurID not empty
+		 will be detached.
+		 
+	main task: if this is a detached task,
+		 this is the recordID of the task it has
+		 been detached from.
+		 In iSync 1.x, the event with the same value
+		 of NSSyncICalendarUID and NSSyncRecurID empty
+		 will be the main event.
+
+
+* com.apple.calendars.Recurrence
+
+  attributes:
+	frequency: NSString
+		This is the frequency of the recurrence.
+		The values can be :
+		daily, weekly, monthly, yearly
+		in iSync 1.x, that was NSSyncRecurRuleFrequency
+		NSNumber
+		0 = Secondly Recurrence Frequency
+		1 = Minutely Recurrence Frequency
+        	2 = Hourl yRecurrence Frequency
+		3 = Daily Recurrence Frequency
+		4 = Weekly Recurrence Frequency
+		5 = Monthly Recurrence Frequency
+		6 = Yearly Recurrence Frequency
+
+	until: NSCalendarDate
+	        This is the end date of the recurrence
+		in iSync 1.x, that was NSSyncRecurRuleFinalDate.
+
+	count: NSNumber (int)
+	        This is the number of occurrences generated by the
+		recurrence.
+		in iSync 1.x, that was NSSyncRecurRuleCount.
+
+	interval: NSNumber (int)
+		  This is the number representing how often
+		  the recurrence will repeat.
+		  (for example 2 will be every 2 days)
+		  in iSync 1.x, that was NSSyncRecurRuleInterval.
+
+	bymonth: NSArray of NSNumber (int)
+		  This is an array of number that inform
+		  the months on which the recurrence will occur.
+		  (the number will be from 1 to 12,
+		  january to december).
+		  in iSync 1.x, that was NSSyncRecurRuleByMonth.
+
+	byweeknumber: NSArray of NSNumber (int)
+		  This is an array of number that inform
+		  the week on which the recurrence will occur.
+		  (the number will be from 1 to 53 or
+		  from -53 to -1. A negative
+		  value will indicate the number of weeks from
+		  the last week.) The first week of the year
+		  is the week of at least 4 days.
+		  in iSync 1.x, that was NSSyncRecurRuleByWeekNumber.
+
+	byyearday: NSArray of NSNumber (int)
+		  This is an array of number that inform
+		  the day of year on which the recurrence will occur.
+		  (the number will be from 1 to 366 or 
+		  from -366 to -1. Same thing as previous for
+		  negative values).
+		  in iSync 1.x, that was NSSyncRecurRuleByYearDay.
+
+	bymonthday: NSArray of NSNumber (int)
+		  This is an array of number that inform
+		  the day of month on which the recurrence will occur.
+		  (the number will be from 1 to 31 or 
+		  from -31 to -1. Same thing as previous for
+		  negative values).
+		  in iSync 1.x, that was NSSyncRecurRuleByMonthDay.
+
+	bydayfreq, bydaydays: NSArray of NSNumber (int) and
+		  NSArray of NSString.
+		  bydayfreq is an array of number,
+		  bydaydays is an array of strings.
+		  The valid strings are day names :
+		  sunday, monday, tuesday, wednesday, thursday,
+		  friday, saturday.
+		  For a given index, we take the number of bydayfreq
+		  and the day of bydaydays. The number gives the 
+		  occurrence of a specific day on which the
+		  recurrence will occur.
+		  in iSync 1.x, that was NSSyncRecurRuleByDay,
+		  NSArray of NSNumber. 
+		  Must use two integer for each 'byday' definition,
+		  first is the nth occurrence of the
+		  specific day within the rule (0 if every) and the
+		  second is the day value (0=Sunday, 6=Saturday)
+		  Every 20th Monday (of the year): {20, 1}
+		  Every Monday and Friday: {0, 1, 0, 5}
+		  Every Third Sunday and last saturday: {3, 0, -1, 6}
+
+	bysetpos: NSArray of NSNumber (int).
+		  This is an array of number giving the number
+		  of the occurrence on which the recurrence will
+		  occur. (A negative value will indicate the
+		  number of occurrences from the last occurrence)
+		  in iSync 1.x, that was NSSyncRecurRuleBySetPos.
+
+	weekstartday: NSString
+		  This let us specify the start day of the
+		  week.
+		  The valid strings are day names :
+		  sunday, monday, tuesday, wednesday, thursday,
+		  friday, saturday.
+		  in iSync 1.x, that was NSSyncRecurRuleWeekStartDay.
+
+  relationships:
+	event: This is an array with a single element : the recordID
+	       of the event in which the recurrence appears if this
+	       is a recurrent event, else this is an empty array.
+
+	task: This is an array with a single element : the recordID
+	       of the task in which the recurrence appears if this
+	       is a recurrent task, else this is an empty array.
+
+
+* com.apple.calendars.AudioAlarm
+
+  attributes:
+	triggerdate: NSCalendarDate
+		This is the trigger date of the alarm.
+		This is an absolute date.
+		in iSync 1.x, this is NSSyncTriggerDate.
+
+	triggerduration: NSNumber (int)
+	        This is the delay between the alarm
+		and the start date of the event or task, the alarm
+		will occur before the event of task.
+		This is a relative date.
+		(This is called duration although it seems
+		not to match the meaning, see RFC 2445)
+		in iSync 1.x, this is NSSyncTriggerDuration.
+
+	repeat count: NSNumber (int)
+	        This is the number of times the alarm
+	        will repeat.
+		in iSync 1.x, this is NSSyncRepeatCount.
+		
+	repeat interval: NSNumber (int)
+	        This is the delay between two repeats
+	        of an alarm in seconds.
+		in iSync 1.x, this is NSSyncRepeatInterval.
+		
+	summary: NSString
+		This is a summary of the audio alarm.
+		in iSync 1.x, this is NSSyncSummary.
+
+	description: NSString
+		This is additional description of the audio alarm.
+		in iSync 1.x, this is NSSyncDescription.
+
+  relationships:
+	event, task: An array with a single element : the recordID
+	        of the task or the event the alarm belongs to.
+
+
+* com.apple.calendars.MailAlarm
+
+  attributes:
+	triggerdate: This is the trigger date of the alarm.
+		same as previous.
+
+	triggerduration: This is the delay between the alarm
+		and the start date of the event or task before.
+		same as previous.
+
+	repeat count: This is the number of times the alarm
+	        will repeat.
+		same as previous.
+
+	repeat interval: This is the delay between two repeats
+	        of an alarm in seconds.
+		same as previous.
+
+	summary: This is a summary of the mail alarm.
+		same as previous.
+
+	description: This is additional description of the mail alarm.
+		same as previous.
+
+	recipients: NSArray of NSString
+		This is a list of mail addresses in RFC (2)822 format.
+		in iSync 1.x, this is NSSyncRecipients.
+		This is an array of NSDictionary. You can
+		extract the NSSyncEmailAddress key of the dictionary
+		to get the same string.
+
+  relationships:
+	event, task: An array with a single element : the recordID
+	        of the task or the event the alarm belongs to.
+
+
+* com.apple.calendars.DisplayAlarm
+
+  attributes:
+	triggerdate: This is the trigger date of the alarm
+		same as previous.
+
+	triggerduration: This is the delay between the alarm
+		and the start date of the event or task before.
+		same as previous.
+
+	repeat count: This is the number of times the alarm
+	        will repeat.
+		same as previous.
+
+	repeat interval: This is the delay between two repeats
+	        of an alarm in seconds.
+		same as previous.
+
+	description: This is the description of the alarm.
+		same as previous.
+
+
+  relationships:
+	event, task: An array with a single element : the recordID
+	        of the task or the event the alarm belongs to.
+
+
+* com.apple.calendars.Organizer
+
+  attributes:
+	directory entry: NSURL
+		This is the URL of the directory entry.
+		This can be an LDAP URL.
+		in iSync 1.x, this is NSSyncDirectoryEntry.
+		This was a NSString.
+
+	common name: NSString
+	        This is the display name of the organizer.
+	        in iSync 1.x, this is NSSyncCommonName.
+
+	email: NSString
+	        This is a RFC (2)822 address.
+	        in iSync 1.x, this is NSSyncEmailAddress. 
+
+  relationships:
+	event, task: An array with a single element : the recordID
+	        of the task or the event the organizer belongs to.
+
+
+* com.apple.calendars.Attendee
+
+  attributes:
+	directory entry: This is the URL of the directory entry.
+		This can be an LDAP URL.
+		same as previous.
+
+	common name: This is the display name of the organizer.
+		same as previous.
+
+	email: This is a RFC (2)822 address.
+		same as previous.
+
+	user type: NSString
+	      This is the type of the attendee.
+	      Valid values are :
+	      individual, group, resource, room, unknown.
+	      Default value is individual.
+	      in iSync 1.x, this is was NSSyncAttendeeUserType.
+	      The type was NSNumber
+	      0 / other values = ?
+	      1 = Person
+	      2 = Group
+	      3 = resource
+	      4 = room
+	      5 = unknown  (why is this not 0)
+
+	role: NSString
+	      This is the role of the attendee.
+	      Valid values are :
+	      chair, requiredparticipant, optionalparticipant,
+	      nonparticipant.
+	      Default value is requiredparticipant.
+	      in iSync 1.x, this was NSSyncAttendeeRole.
+	      The type was NSNumber
+	      1 = Chair
+	      2 = required attendee
+	      3 = optional attendee
+	      4 = Non participant; e.g. resources, or people being
+	      informed but not attending
+
+	status: NSString
+		This is the participation status of the attendee :
+		Valid values are :
+		needsaction, accepted, declined, tentative,
+		delegated, completed, inprocess.
+		Default value is needsaction.
+		in iSync 1.x, this was NSSyncAttendeeStatus.
+		The type was NSNumber.
+		1 = NeedsAction   (for events, tasks)
+		2 = Accepted participation   (for events, tasks)
+		3 = Declined participation    (for events, tasks)
+		4 = Tentative participation  (for events, tasks)a
+		5 = Delegated participation   (for events, tasks)
+		6 = Completed participation   (for events, tasks)
+		7 = In Process participation   (for events, tasks)
+
+	rsvp: NSNumber (BOOL)
+	        If reply of the attendee is required.
+	        Default is FALSE.
+		in iSync 1.x, this was a NSSyncRsvpStatus.
+
+	delegatedto: NSArray of NSString
+		This is an array of RFC (2)822 address.
+		in iSync 1.x, this was a NSSyncDelegatedTo.
+		Each email was prefixed by 'MAILTO:'.
+		This is no more prefix by 'MAILTO:' in MadHatter.
+
+	delegatedfrom: NSArray of NSString
+		This is an array of RFC (2)822 address.
+		in iSync 1.x, this was a NSSyncDelegatedFrom.
+		Each email was prefixed by 'MAILTO:'.
+		This is no more prefix by 'MAILTO:' in MadHatter.
+
+  relationships:
+	event, task: An array with a single element : the recordID
+	        of the task or the event the attendee belongs to.
+
+
+ Note : NSSyncDelegatedTo and NSSyncDelegatedFrom were never used in iCal 1.5.x
+
+
+
+** specific MadHatter
+
+* com.apple.calendars.Calendar
+
+  attributes:
+        com.apple.ical.type: NSString
+	        This is the type of the calendar.
+		This can be 'local', 'birthday' or 'urlsubscribe'.
+		'local' for a read write local calendar.
+		'birthday' for birthday calendars.
+		'urlsubscribe' for URL subscribed calendars.
+
+    In the case of a 'urlsubscribe' calendar :
+
+        in iSync 1.x, NSSyncFolderRemoteCalendarURL is the
+	URL of the subscribed calendar.
+	The format is :
+	[http://subscribeURL]#[value]
+	
+	com.apple.ical.urlsubscribe.uid: NSString
+		This is the unique identifier of the
+		published calendar.
+		in iSync 1.x, this information is not synchronized.
+		
+	com.apple.ical.urlsubscribe.url: NSString
+		This is the URL of the published calendar.
+		in iSync 1.x, this will be [http://subscribeURL].
+	
+	in iSync 1.x, the URL will be suffixed by a value '#[value]',
+	for example '#1502'.
+	
+	Use this value, divide it by 10, use the remainder.
+	This is a binary combinaison of the following :
+        1 : remove todo
+        2 : remove alarms
+	
+	com.apple.ical.urlsubscribe.filtertasks : NSNumber (BOOL)
+		This is a boolean telling whether the todo are
+		filtered or not (YES will make todo appear,
+		NO otherwise).
+
+	com.apple.ical.urlsubscribe.filteralarms : NSNumber (BOOL)
+		This is a boolean telling whether the alarm are
+		filtered or not (YES will make alarm appear,
+		NO otherwise).
+
+	com.apple.ical.urlsubscribe.autorefresh : NSNumber (BOOL)
+		This is a boolean telling whether the calendar
+		will refresh automatically from its source.
+		in iSync 1.x, for the refresh interval, you take
+		[value] and you divide it by 10.
+		If this is zero, that means that auto-refresh is
+		disabled.
+
+	com.apple.ical.urlsubscribe.refreshinterval : NSNumber (int)
+		This is the delay in seconds between two refreshes
+		of the subscribed calendar when the autorefresh is enabled.
+		in iSync 1.x, for the refresh interval, you take
+		[value] and you divide it by 10.
+		If this is zero, that means that auto-refresh is
+		disabled, else, this is the value in second of
+		the refresh interval.
+
+  relationships:
+	com.apple.ical.node: This is a relationship to a single
+		entity of type com.apple.ical.calendars.Node.
+		This will give additionnal UI information about
+		the calendar.
+		This will be used to retrieve the information about
+		theme.
+
+
+* com.apple.ical.calendars.Node
+
+This will give the tree structure of the nodes.
+This also contains UI information such as color.
+The root will be of type 'group', the groups will be of type 'namedgroup'
+and the node that contains calendars will be of type 'source'.
+
+  attributes:
+	theme: NSColor
+	        This is the color of the node.
+		In iSync 1.x, this is NSSyncFolderCalendarColorDescription.
+		This is a text representation of a dictionary.
+		The key 'mainColor' will return the same value, encoded
+		differently ("#%02X%02X%02X%02X", red, green, blue, alpha).
+
+	title: NSString
+	        This is the name of the node.
+		In iSync 1.x, this is NSSyncFolderName.
+
+	type: NSString
+	        This can be 'none', 'source', 'group', 'namedgroup'.
+		for all calendars, this will be 'source'.
+		in iSync 1.x, there is no group.
+
+  relationships:
+	calendar: in case of a source node
+		This will be a relationship to the calendar.
+		This tell which calendar has these UI information.
+
+	nodes: in case of a group node
+	        This will give relationships to the children
+		node in the tree.
+		in iSync 1.x, there is no tree of calendars.
+
+ 	parent node: parent node
+	        This will give a relationship to the parent
+		node in the tree.
+		in iSync 1.x, there is no tree of calendars.
+
+        url publishers: list of publishers
+		This will give a relationship to the urlpublishers.
+		This will be the link to the WebDAV publishers.
+
+        dot mac publishers: list of publishers
+		This will give a relationship to the dotmacpublishers.
+		This will be the link to the DotMac publishers.
+
+
+* com.apple.calendars.Event
+
+  attributes:
+	com.apple.ical.creationdate: NSCalendarDate
+		This will give the creation date of the event
+		inside a calendar.
+		in iSync 1.x, this is NSSyncCreationDate.
+
+	com.apple.ical.stampdate: NSCalendarDate
+		This is the last modification date of the event.
+		in iSync 1.x, this information is not synchronized.
+
+	com.apple.ical.lastmodificationdate: NSCalendarDate
+		This is the last modification date of the event
+		inside a calendar.
+		in iSync 1.x, this is NSSyncLastModificationDate.
+
+	com.apple.ical.sequence: NSNumber (int)
+		This is the sequence number.
+		in iSync 1.x, this is NSSyncSequence.
+
+	com.apple.ical.uid: NSString
+		This is the identifier of the event.
+		in iSync 1.x, this is NSSyncICalendarUID.
+		
+	com.apple.ical.itip.sent: NSNumber (BOOL)
+		This boolean will tell if an invitation for
+		this event has been sent or not. This
+		did not exist in iSync 1.x
+		
+	com.apple.ical.itip.mystatus: NSNumber (BOOL)
+		This boolean will tell if I modified an invitation
+		I received. This did not exist in iSync 1.x
+		
+	com.apple.ical.itip.needsupdate: NSNumber (BOOL)
+		This boolean will tell if I modified the event
+		since the last time I sent the invitation.
+		This was NSSyncEventInvitationStatus in iSync 1.x
+		This was a NSString set to value "UNCLEAN" when
+		the event was modified since the last time 
+		I sent the invitation.
+		
+   relationships:
+	com.apple.ical.proc alarms:
+		This the relationships to proc alarms.
+		 In iSync 1.x, NSSyncAlarms is an array of
+		 NSDictionary (see alarms for further information)
+
+
+* com.apple.calendars.Task
+
+  attributes:
+	com.apple.ical.creationdate: NSCalendarDate
+		This will give the creation date of the task
+		inside a calendar.
+		in iSync 1.x, this is NSSyncCreationDate.
+
+	com.apple.ical.stampdate: NSCalendarDate
+		This is the last modification date of the task.
+		in iSync 1.x, this information is not synchronized.
+
+	com.apple.ical.lastmodificationdate: NSCalendarDate
+		This is the last modification date of the task
+		inside a calendar.
+		in iSync 1.x, this is NSSyncLastModificationDate.
+
+	com.apple.ical.sequence: NSNumber (int)
+		This is the sequence number.
+		in iSync 1.x, this is NSSyncSequence.
+
+	com.apple.ical.uid: NSString
+		This is the identifier of the task.
+		in iSync 1.x, this is NSSyncICalendarUID.
+
+  relationships:
+	com.apple.ical.proc alarms:
+		This the relationships to proc alarms.
+		 In iSync 1.x, NSSyncAlarms is an array of
+		 NSDictionary (see alarms for further information)
+
+
+* com.apple.calendars.AudioAlarm
+
+  attributes:
+	com.apple.ical.sound name: NSURL
+		This is the URL of the sound to be played for the alarm.
+		in iSync 1.x, NSSyncAttachments was an array with a single
+		element : a string that contains a URL.
+	
+	com.apple.ical.occurrencetriggerid: NSArray of NSString
+                This is an array of string that are used internally by iCal.
+		
+	com.apple.ical.occurrencetriggerdate: NSArray of NSCalendarDate
+	        This is an array of dates that are used internally by iCal.
+
+	These two last field are used when you snooze alarms of
+	recurrent event. These two fields do not exist in iCal 1.5.
+
+
+* com.apple.calendars.MailAlarm
+
+	com.apple.ical.occurrencetriggerid: NSArray of NSString
+	com.apple.ical.occurrencetriggerdate: NSArray of NSCalendarDate
+		refer to com.apple.calendars.AudioAlarm.
+
+
+* com.apple.calendars.DisplayAlarm
+
+	com.apple.ical.occurrencetriggerid: NSArray of NSString
+	com.apple.ical.occurrencetriggerdate: NSArray of NSCalendarDate
+		refer to com.apple.calendars.AudioAlarm.
+
+
+* com.apple.ical.calendars.ProcAlarm
+
+(see com.apple.calendars.AudioAlarm for common properties)
+
+  attributes:
+	triggerdate: calendar date
+	triggerduration: number
+	repeat count: number
+	repeat interval: number
+	description: string
+
+	path: NSURL
+	        This is the URL of procedure to be run.
+		in iSync 1.x, NSSyncAttachments was an array with a single
+		element : a string that contains a URL.
+
+  relationships:
+	event, task: An array with a single element : the recordID
+	        of the task or the event the alarm belongs to.
+
+
+
+in iSync 1.x, publishers were defined through
+NSSyncFolderPublishedCalendarURL (a NSString containing a URL),
+the format is : [http://login@baseURL]/[publishname]#[value]
+
+* com.apple.ical.calendars.URLPublisher
+
+  attributes:
+        name: NSString
+	        name of the published calendar.
+		in iSync 1.x, This is the last component in the path of
+		the URL. This is [publishname].
+
+	publisher id: NSString
+		unique identifier of the published calendar.
+		This was not synchronized in iSync 1.x
+
+	url:  NSURL
+	        destination of the publication.
+		This URL will also include the filename on the server.
+		For example, this will be http://my.private.server/foo.ics
+		in iSync 1.x, this will be
+		[http://login@baseURL]/[publishname].ics
+
+	in iSync 1.x, the URL was suffixed with : '#12'
+	'#' with a decimal value : '[value]'.
+	
+	If this decimal value is >= 10, this means that auto-updating
+	is enabled for this publisher.
+	
+	After you removed 10 from this decimal value if this is >= 10,
+	this is a binary combinaison of the following :	
+        1 : means that this todo are not published.
+        2 : means that text are not published.
+        3 : means that alarms are not published.
+	  
+	with Sync Services :
+	
+	autoupdate: NSNumber (BOOL)
+	        boolean that will tell whether the publisher
+		will send the changes on modification of the
+		calendar.
+		in iSync 1.x, this was encoded in the URL.
+
+	filtertexts: NSNumber (BOOL)
+	        boolean that will tell whether texts are published.
+		in iSync 1.x, this was encoded in the URL.
+
+	filteralarms: NSNumber (BOOL)
+	        boolean that will tell whether alarms are published.
+		in iSync 1.x, this was encoded in the URL.
+
+	filtertasks: NSNumber (BOOL)
+	        boolean that will tell whether todos are published.
+		in iSync 1.x, this was encoded in the URL.
+
+in iSync 1.x, NSSyncFolderAccessToPublishedCalendarURL is a URL 
+that can be generated from the URL. This is the publish URL
+where you replace the scheme http with webcal.
+
+
+* com.apple.ical.calendars.DotMacPublisher
+
+You know this is a .mac publisher when the URL begins with dotmac://dotmac/
+
+  attributes:
+        name: NSString
+	        name of the published calendar.
+		in iSync 1.x, This is the last component in the path
+		of the URL.
+
+	publisher id: NSString
+		unique identifier of the published calendar.
+		unique identifier of the published calendar.
+		This was not synchronized in iSync 1.x
+
+	filename: NSString
+	        destination calendar filename of the publication.
+		This is a filename with extension '.ics'.
+		The file will be written on :
+		http://idisk.mac.com/Sites/.calendars/[filename]
+		in iSync 1.x, you can add '.ics' extension to the
+		publish name.
+		Note that you also have to make the proper
+		modification on the filename so that there is
+		only ASCII in filename (this is a limitation of
+		.mac iDisk)
+
+	(see the previous description for all these fields)
+	
+	autoupdate: NSNumber (BOOL)
+	        boolean that will tell whether the publisher
+		will send the changes on modification of the
+		calendar.
+
+	filtertexts: NSNumber (BOOL)
+	        boolean that will tell whether texts are published.
+
+	filteralarms: NSNumber (BOOL)
+	        boolean that will tell whether alarms are published.
+
+	filtertasks: NSNumber (BOOL)
+	        boolean that will tell whether todos are published.
+
+in iSync 1.x, NSSyncFolderAccessToPublishedCalendarURL is a URL 
+that can be generated from the URL. with .mac publishers, this will be
+http://ical.mac.com/[login]/[filename]
+
+
+* com.apple.ical.calendars.TaskOrder
+
+This will give the orders of the tasks (this is the order that
+is appearing is iCal. This did not exist in iCal 1.5.
+
+  attributes:
+	identity: NSString
+		  This value will always be com.apple.ical.calendars.TaskOrder.
+		  This will be used to help the mingler to merge this record.
+		  There will only be one instance of that record.
+
+  relationships:
+	tasks: NSArray
+	       An array with the recordID of the tasks ordered.
+
+
+* com.apple.ical.calendars.Invitation
+
+This is the invitation of iCal.
+
+  attributes:
+	uid: NSString
+		This is internal identifier of the invitation.
+
+	data: NSData
+	        This is internal data of the invitation.
+

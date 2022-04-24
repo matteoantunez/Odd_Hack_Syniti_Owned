@@ -1,0 +1,2036 @@
+{
+  "layer_shapes" : {
+    "batch_norm_66" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/mul_1" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Bottleneck_13_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_71" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Bottleneck_12_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Bottleneck_11_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 720,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/add_1" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "embedding\/Maximum" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_65" : {
+      "k" : 64,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/mul" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/add" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Bottleneck_14_1\/Conv_1\/Relu6" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_70" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "fully_connected\/biases\/read" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "batch_norm_59" : {
+      "k" : 64,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Bottleneck_12_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Bottleneck_6\/Conv\/Relu" : {
+      "k" : 46,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/gap\/Mean\/scale" : {
+      "k" : 1008,
+      "w" : 24,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 24
+    },
+    "batch_norm_64" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Bottleneck_4_1\/Conv_1\/mul" : {
+      "k" : 112,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/mul" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_58" : {
+      "k" : 112,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "embedding\/Sum" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Relu6" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Bottleneck_5_1\/Conv_1\/mul" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/gap\/Mean" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/mul" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/add_1" : {
+      "k" : 240,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_62" : {
+      "k" : 64,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Bottleneck_13_1\/Conv_1\/mul" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Bottleneck_6_1\/Conv_1\/mul" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_56" : {
+      "k" : 40,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "embedding\/Rsqrt" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_61" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/Relu6__relu6_neg__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/mul_1" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/Relu6" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Bottleneck_15_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "fully_connected\/BiasAdd" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Relu6__relu6_neg__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Bottleneck_14\/Conv\/Relu" : {
+      "k" : 360,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Relu6__relu6_threshold6__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/Relu6__relu6_relu__" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Bottleneck_14_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Bottleneck_5_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Bottleneck_15_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/Relu6" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/mul_1" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_1\/add" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/Relu6__relu6_neg__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_53" : {
+      "k" : 40,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/gap\/Mean\/scale" : {
+      "k" : 184,
+      "w" : 48,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 48
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/Relu6__relu6_threshold6__" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_47" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/add" : {
+      "k" : 64,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Relu" : {
+      "k" : 112,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Bottleneck_11_1\/Conv_1\/mul" : {
+      "k" : 720,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/Relu6__relu6_neg__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Bottleneck_12_1\/Conv_1\/mul" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/add" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_50" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/gap\/Mean\/scale" : {
+      "k" : 184,
+      "w" : 48,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 48
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/mul" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/add" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_1\/expand\/Relu" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/Relu6__relu6_relu__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/gap\/Mean\/scale" : {
+      "k" : 112,
+      "w" : 48,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 48
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/mul" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/mul_1" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Bottleneck_12\/Conv\/Relu" : {
+      "k" : 252,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/Relu6__relu6_relu__" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/mul" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/gap\/Mean" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/add" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/Relu6__relu6_neg__" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Bottleneck_6_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/mul" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/Relu6" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/expand\/Relu" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/Relu6" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/Relu6" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/mul_1" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/Relu6" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Bottleneck_13_1\/Conv_1\/Relu6" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/mul_1" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "fully_connected\/Conv2Dx" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/mul" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/add" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/gap\/Mean\/scale_constant_in_scale" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/mul_2" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/Relu6__relu6_relu__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/Relu6" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/add_1" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/mul" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/gap\/Mean\/scale_constant_in_scale" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/gap\/Mean" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/gap\/Mean\/pad" : {
+      "k" : 184,
+      "w" : 48,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 48
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/mul" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Relu6__relu6_neg__" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/Relu6__relu6_relu__" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_3\/Relu" : {
+      "k" : 112,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "stem\/MobilenetV3\/Bottleneck_2\/expand\/Relu" : {
+      "k" : 96,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/add" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/mul" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/Relu6__relu6_threshold6__" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/gap\/Mean\/scale_constant_in_scale" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Relu6__relu6_threshold6__" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/Relu6__relu6_neg__" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/Relu6" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/add" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/mul_1" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/Relu6__relu6_relu__" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/Relu6__relu6_threshold6__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/mul_1" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Bottleneck_11_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 720,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Bottleneck_4_1\/Conv_1\/Relu6" : {
+      "k" : 112,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/add" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/mul_2" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/mul_1" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/mul" : {
+      "k" : 112,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/add" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/Relu6__relu6_relu__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/mul" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/mul_1" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/gap\/Mean\/scale_constant_in_scale" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Relu6" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Bottleneck_6_1\/Conv_1\/Relu6" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/gap\/Mean\/pad" : {
+      "k" : 720,
+      "w" : 24,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 24
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/mul" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Bottleneck_6_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/Relu6__relu6_neg__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Bottleneck_5_1\/Conv_1\/Relu6" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/gap\/Mean" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/Relu6__relu6_neg__" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/mul" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/mul" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_3\/expand\/Relu" : {
+      "k" : 112,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/add" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/Relu6__relu6_relu__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/mul" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "image" : {
+      "k" : 3,
+      "w" : 360,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 360
+    },
+    "stem\/MobilenetV3\/Bottleneck_2\/Relu" : {
+      "k" : 96,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/Relu6__relu6_neg__" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/mul_1" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/mul_1" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/gap\/Mean\/scale_constant_in_scale" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/mul_2" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Relu6__relu6_relu__" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Bottleneck_12_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Bottleneck_15\/Conv\/Relu" : {
+      "k" : 360,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Relu6" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Mean" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/Relu6" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/add_1" : {
+      "k" : 168,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_3\/add" : {
+      "k" : 40,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/expand\/add" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Bottleneck_12_1\/Conv_1\/Relu6" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/mul_1" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/gap\/Mean" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/add" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Bottleneck_15_1\/Conv_1\/Relu6" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/Relu6__relu6_neg__" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/mul" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Bottleneck_4_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 112,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/add" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "embedding\/Square" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/add" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/mul" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/mul" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/mul_1" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Bottleneck_13\/Conv\/Relu" : {
+      "k" : 252,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/gap\/Mean" : {
+      "k" : 720,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/Relu6__relu6_relu__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/Relu6__relu6_relu__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/mul_1" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Relu6__relu6_neg__" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Relu" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/mul_2" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Relu6__relu6_relu__" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Bottleneck_4_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 112,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/Relu6" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/gap\/Mean\/pad" : {
+      "k" : 112,
+      "w" : 48,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 48
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/mul_1" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Relu6" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_1\/Relu" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/add" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Bottleneck_13_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/expand\/mul" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "embedding\/Maximum\/y" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/add" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/mul_1" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/Relu6__relu6_neg__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/mul" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/expand\/Relu" : {
+      "k" : 112,
+      "w" : 90,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 90
+    },
+    "batch_norm_89" : {
+      "k" : 240,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Relu6__relu6_threshold6__" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/Relu6__relu6_neg__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_88" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/Relu6__relu6_threshold6__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Bottleneck_11\/Conv\/Relu" : {
+      "k" : 180,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_93" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/add_1" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/Relu6__relu6_neg__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_87" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_92" : {
+      "k" : 240,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_86" : {
+      "k" : 240,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Bottleneck_5_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/mul_1" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_91" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/Relu6__relu6_relu__" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_85" : {
+      "k" : 1008,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "embedding" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_90" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_79" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/Relu6" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/mul_2" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_84" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/gap\/Mean" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/Bottleneck_6_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/gap\/Mean" : {
+      "k" : 112,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Bottleneck_14_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/add" : {
+      "k" : 64,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Bottleneck_11_1\/Conv_1\/Relu6" : {
+      "k" : 720,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_13\/Bottleneck_13_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 1008,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_78" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Relu6" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/gap\/Mean\/scale" : {
+      "k" : 720,
+      "w" : 24,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 24
+    },
+    "batch_norm_83" : {
+      "k" : 168,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Bottleneck_4\/Conv\/Relu" : {
+      "k" : 28,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/add" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/Relu6" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/Relu6" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_77" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/Relu6__relu6_neg__" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/add_1" : {
+      "k" : 240,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Conv2d_0\/Relu6__relu6_relu__" : {
+      "k" : 24,
+      "w" : 180,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 180
+    },
+    "batch_norm_82" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Bottleneck_15_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/mul_1" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/add" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Conv2d_16\/Relu6" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_76" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/Bottleneck_11_1\/Conv_1\/Relu6__relu6_neg__" : {
+      "k" : 720,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_11\/expand\/mul_1" : {
+      "k" : 720,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_81" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Bottleneck_14_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Relu" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_4\/Bottleneck_4_1\/Conv_1\/Relu6__relu6_relu__" : {
+      "k" : 112,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_75" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/gap\/Mean\/pad" : {
+      "k" : 1008,
+      "w" : 24,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 24
+    },
+    "stem\/MobilenetV3\/Bottleneck_10\/expand\/add" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "batch_norm_80" : {
+      "k" : 168,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_6\/mul" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "batch_norm_69" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_7\/expand\/Relu6__relu6_relu__" : {
+      "k" : 360,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "stem\/MobilenetV3\/Bottleneck_12\/expand\/Relu6__relu6_threshold6__" : {
+      "k" : 1008,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Bottleneck_5_1\/Conv_1\/Relu6__relu6_threshold6__" : {
+      "k" : 184,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_74" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/add" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "stem\/MobilenetV3\/Bottleneck_9\/expand\/Relu6" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/Bottleneck_5\/Conv\/Relu" : {
+      "k" : 46,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/expand\/Relu6__relu6_relu__" : {
+      "k" : 1440,
+      "w" : 12,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 12
+    },
+    "batch_norm_68" : {
+      "k" : 120,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_14\/Bottleneck_14_1\/Conv_1\/mul" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/expand\/Relu" : {
+      "k" : 184,
+      "w" : 45,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 45
+    },
+    "batch_norm_73" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_8\/Relu6__relu6_threshold6__" : {
+      "k" : 304,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_5\/gap\/Mean\/pad" : {
+      "k" : 184,
+      "w" : 48,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 48
+    },
+    "batch_norm_67" : {
+      "k" : 360,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    },
+    "stem\/MobilenetV3\/Bottleneck_15\/Bottleneck_15_1\/Conv_1\/mul" : {
+      "k" : 1440,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "fully_connected\/Conv2D" : {
+      "k" : 1,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "batch_norm_72" : {
+      "k" : 280,
+      "w" : 23,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 23
+    }
+  }
+}

@@ -1,0 +1,1 @@
+(function(){return function(e,t){var g=86400,i=Math.abs(e.getTime()/1e3-t.getTime()/1e3);return i<g?5:e.getTime()<t.getTime()?5:i/3600/24>365&&!1===fromSuggestTool?-1:0}}).call();

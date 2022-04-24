@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("cancellation-en",function(e){return/Cancellation/.test(e.subject)},function(e){var n="en_GB",t={bookingReference:/Ref:/i,dear:/Dear/i};return loadHelper("bravo-cancellation-skeleton.js")(e,n,t)},"SG909b5880")]);

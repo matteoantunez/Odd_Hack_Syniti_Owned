@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("copa-flight-cancellation-en",function(e){return/^Refund Request/.test(e.subject)},function(e){if(/^Refund Request/.test(e.subject)){var t="en_US",n={ticketNumber:/E-ticket number/,names:/Passenger's name/,eTic:/Etkt/,reservationId:/case number/i};return loadHelper("copa-flight-cancellation.js")(e,t,n)}},"SGc1084ef9")]);

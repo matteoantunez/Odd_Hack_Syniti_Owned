@@ -1,0 +1,18 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.EmailHandle
+
+inputs:
+    emailLabel:
+        access_mode: public
+    emailHandle:
+        access_mode: public
+
+properties:
+    emailLabel:
+        type: dialog.String
+        description: Handle label semantic concept for email
+        semantic_concept: emailType
+    emailHandle:
+        type: dialog.String
+        description: Speakable string of email address handle

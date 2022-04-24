@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<array>
+		<string>結婚((週|周)年)?(記|紀)念日</string>
+		<string>結婚((週|周)年)(記|紀)念</string>
+	</array>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<array>
+		<string>百日宴</string>
+	</array>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<array>
+		<string>洗禮</string>
+		<string>浸禮</string>
+		<string>受洗</string>
+		<string>領洗</string>
+	</array>
+	<key>GATHERING::DRINKS</key>
+	<array>
+		<string>(十月)?啤酒節</string>
+		<string>紅酒節</string>
+		<string>美酒(佳餚)?節</string>
+	</array>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<array>
+		<string>生日( ?brunch|早午餐)</string>
+	</array>
+	<key>GATHERING::MEAL::DINNER</key>
+	<array>
+		<string>(聖誕|復活節|感恩節)(大|晚)餐</string>
+		<string>(公司|團隊|同事)晚餐</string>
+		<string>(家庭|家人)晚餐</string>
+		<string>(聖誕|耶誕|復活節|感恩節|情人節)(大|晚)餐</string>
+		<string>團年飯</string>
+	</array>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<array>
+		<string>(聖誕|復活節|感恩節)午餐</string>
+		<string>(家庭|家人)午餐</string>
+		<string>(公司|團隊|同事)午餐</string>
+		<string>(聖誕|復活節|感恩節)(午餐|中餐)</string>
+		<string>(家庭|家人)(午餐|中餐)</string>
+		<string>(公司|團隊|同事)(午餐|中餐)</string>
+		<string>開年飯</string>
+	</array>
+	<key>GATHERING::PARTY</key>
+	<array>
+		<string>(大)?除夕(夜)?</string>
+		<string>春節</string>
+		<string>(農|舊)曆新年</string>
+		<string>(大)?年初(一|二|三)</string>
+		<string>元宵(佳)?節</string>
+		<string>復活節</string>
+		<string>五月節</string>
+		<string>端午節</string>
+		<string>母親節</string>
+		<string>父親節</string>
+		<string>中秋節</string>
+		<string>萬聖節</string>
+		<string>天后誕</string>
+		<string>冬(節|至)</string>
+		<string>做冬</string>
+		<string>感恩節</string>
+		<string>聖誕節</string>
+		<string>婚前派對</string>
+		<string>(大)?年初(一|二|三|四|五)</string>
+		<string>(冬|夏)(節|至)</string>
+		<string>單身派對</string>
+	</array>
+</dict>
+</plist>

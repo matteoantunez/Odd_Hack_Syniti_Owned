@@ -1,0 +1,148 @@
+{
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "metadata_in_weights" : [
+
+  ],
+  "layers" : [
+    {
+      "top" : "greater_0_y_0",
+      "w" : 1,
+      "h" : 1,
+      "name" : "greater_0_y_0",
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "bottom" : "",
+      "debug_info" : "greater_0_y_0",
+      "n" : 1,
+      "weights" : {
+
+      },
+      "constant_blob" : 1
+    },
+    {
+      "bottom" : "countEngagedInInterval:720.0,greater_0_y_0",
+      "alpha" : 1,
+      "operation" : 105,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "greater_0",
+      "top" : "greater_0",
+      "type" : "elementwise",
+      "name" : "greater_0",
+      "beta" : 0
+    },
+    {
+      "top" : "greater_1_y_0",
+      "w" : 1,
+      "h" : 1,
+      "name" : "greater_1_y_0",
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "bottom" : "",
+      "debug_info" : "greater_1_y_0",
+      "n" : 1,
+      "weights" : {
+
+      },
+      "constant_blob" : 3
+    },
+    {
+      "bottom" : "highlightDateSecondsBeforeNow,greater_1_y_0",
+      "alpha" : 1,
+      "operation" : 105,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "greater_1",
+      "top" : "greater_1",
+      "type" : "elementwise",
+      "name" : "greater_1",
+      "beta" : 0
+    },
+    {
+      "bottom" : "greater_0,greater_1",
+      "alpha" : 1,
+      "operation" : 111,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "logical_or_0",
+      "top" : "logical_or_0",
+      "type" : "elementwise",
+      "name" : "logical_or_0",
+      "beta" : 0
+    },
+    {
+      "bottom" : "logical_or_0",
+      "alpha" : 1,
+      "operation" : 112,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "logical_not_0",
+      "top" : "logical_not_0",
+      "type" : "elementwise",
+      "name" : "logical_not_0",
+      "beta" : 0
+    },
+    {
+      "bottom" : "countEngagedMatchingDomainFromSender",
+      "weights" : {
+
+      },
+      "mode" : 3,
+      "debug_info" : "sigmoid_0",
+      "top" : "sigmoid_0",
+      "type" : "activation",
+      "name" : "sigmoid_0"
+    },
+    {
+      "top" : "score_b_0",
+      "w" : 1,
+      "h" : 1,
+      "name" : "score_b_0",
+      "nd_rank" : 1,
+      "type" : "load_constant",
+      "k" : 1,
+      "bottom" : "",
+      "debug_info" : "score_b_0",
+      "n" : 1,
+      "weights" : {
+
+      },
+      "constant_blob" : 5
+    },
+    {
+      "name" : "score",
+      "fused_relu" : 0,
+      "beta" : 0,
+      "operation" : 101,
+      "type" : "elementwise",
+      "alpha" : 1,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "logical_not_0,sigmoid_0,score_b_0",
+      "debug_info" : "score",
+      "nd_mode" : true,
+      "weights" : {
+
+      },
+      "top" : "score"
+    }
+  ]
+}

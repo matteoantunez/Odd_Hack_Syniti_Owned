@@ -1,0 +1,1 @@
+(function(){return function(t,e){for(var n,r=0;r<t.ticketNumber.length&&(!n||!n.exists());r++)n=e.getSpan().innerCapture(t.ticketNumber[r],1);return n}}).call();

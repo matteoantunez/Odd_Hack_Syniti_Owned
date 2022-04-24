@@ -1,0 +1,926 @@
+// See README.txt for information and build instructions.
+syntax = "proto2";
+package CLP;
+
+option java_package="com.apple.locationd.protobuf.CLP";
+
+message SatelliteInfo {
+    // NOTE: This uses parallel arrays because they pack better than objects.
+    //   It is a little awkward for development, but we prefer this for smaller size for users and our backend.
+    //   We still separate out constellation types (e.g. GPS, Glonass, etc.) to avoid including an enum type with each individual satellite.
+    //   In general, storing values in a columnar fashion is expected to compress better, since values of the same type are more likely to have similar values than 
+    //   values of different types (e.g. satellite ids for gps range from 1-32, but azimuths range from 0 to 360).
+    //
+    // NOTE: We include both Azimuth/Elevation even though it could be technically derived from a satelliteId + timestamp.
+    //   The reason it's left in here is to:
+    //     a) provide a crosscheck against satelliteId + timestamp (in the event there is something wrong on the client) 
+    //     b) avoid having to preprocess the entire dataset on the backend to insert az/el, which is ultimately what we want
+    //
+    repeated int32  satIds          = 1 [packed=true];
+    repeated sint32 cnos            = 2 [packed=true];     // stored as integer deci db-hz, expected to range from 0-400, which fits into a 2 byte varint compared to 4 byte float
+    repeated sint32 azimuths        = 3 [packed=true];     // stored as integer deci-degrees, expected to range from 0 to 3600; which fits into a 2 byte varint compared to 4 byte float
+    repeated sint32 elevations      = 4 [packed=true];     // stored as integer deci-degrees, expected to range from -10 to 900; which fits into a 2 byte varint compared to 4 byte float
+    repeated bool   isUsedInFixes   = 5 [packed=true];
+}
+
+message SatelliteReport {
+    optional SatelliteInfo gps = 1;
+    optional SatelliteInfo glonass = 2;
+    optional SatelliteInfo qzss = 3;
+    optional SatelliteInfo galileo = 4;
+}
+
+message Location {
+	// Coordinates
+	required double latitude = 1;
+	required double longitude = 2;
+	// the accuracy of the location estimate in meters
+	required float horizontalAccuracy = 3;
+
+	// in CFAbsoluteTime
+	// required float timestamp = 4; // changed from float to double
+	required double timestamp = 9;
+
+	// vertical info in meters
+	optional float altitude = 5;
+	optional float verticalAccuracy = 6;
+
+	// m/s
+	optional float speed = 7;
+	// degrees true north
+	optional float course = 8;
+
+	optional int32 context = 10 [deprecated=true];
+	optional int32 motionActivityType = 11 [deprecated=true];
+	optional int32 motionActivityConfidence = 12 [deprecated=true];
+
+    // CLLocationType
+	optional int32 provider = 13;
+
+	optional int32 floor = 14;
+
+	repeated string appBundleIdIndices = 15;
+
+	// whether device has been recently connected/disconnected from a vehicle
+	optional bool motionVehicleConnectedStateChanged = 16;
+
+	// whether device is currently connected to a vehicle
+	optional bool motionVehicleConnected = 17;
+
+	// these types represent different motion states defined within locationd
+	// motion state based on raw classifier (see Oscar code)
+	optional MotionActivity rawMotionActivity = 18;
+	// motion state based on final classifier
+	optional MotionActivity motionActivity = 19;
+	// motion state that is dominant over some time interval.
+	optional MotionActivity dominantMotionActivity = 20;
+
+	optional float courseAccuracy = 21;
+	optional float speedAccuracy = 22;
+	
+	enum ModeIndicator {
+		NotRecognized = 0;
+		NotSpecified = 1;
+		Autonomous = 2;
+		Differential = 3;
+		Estimated = 4;
+	}
+
+	optional ModeIndicator modeIndicator = 23;
+	
+	optional float horzUncSemiMaj = 24;	    // uncertainty ellipse - semi-major axis (95% probability region)
+	optional float horzUncSemiMin = 25;     // uncertainty ellipse - semi-minor axis (95% probability region)
+	optional float horzUncSemiMajAz = 26;   // uncertainty ellipse - azimuth of the semi-major axis
+
+    optional SatelliteReport satReport = 27;
+
+    // indicates if this location is vended from LocationController
+    optional bool isFromLocationController = 28;
+
+    optional PipelineDiagnosticReport pipelineDiagnosticReport = 29;
+
+    optional BaroCalibrationIndication baroCalibrationIndication = 30;
+}
+
+message Meta {
+	required string productId = 1;
+	required string softwareVersion = 2;
+	optional int64 submissionId = 3; // server internal use
+	optional string probeId = 4;
+}
+
+message AccessoryMeta {
+	optional string make = 1;
+	optional string model = 2;
+	optional string version = 3;
+}
+
+message CellNeighbor {
+	optional sint32 uarfcn = 1;
+	optional sint32 psc = 2;
+	optional sint32 rssi = 3;
+	optional sint32 ecn0 = 4;
+	optional sint32 rscp = 5;
+}
+
+message CdmaCellNeighbor {
+	optional sint32 pnoffset = 1;
+	optional sint32 pilotPhase = 2;
+	optional sint32 ecn0 = 3;
+	optional sint32 rscp = 4;
+	optional sint32 channel = 5;
+}
+
+message LteCellNeighbor {
+	optional sint32 uarfcn = 1;
+	optional sint32 pid = 2;
+	optional sint32 rssi = 3;
+	optional sint32 ecn0 = 4;
+	optional sint32 rscp = 5;
+    optional uint32 bandwidth = 6;
+    optional uint32 neighborType = 7;
+    optional uint32 maxThroughput = 8;
+}
+
+message NRCellNeighbor {
+	optional sint32 nrarfcn = 1;
+	optional sint32 pid = 2;
+	optional sint32 rssi = 3;
+	optional sint32 ecn0 = 4;
+	optional sint32 rscp = 5;
+	optional uint32 scs = 6;
+	optional uint32 saOrNsaNeighbor = 7;
+    optional uint32 bandwidth = 8;
+    optional uint32 neighborType = 9;
+    optional uint32 maxThroughput = 10;
+    optional uint32 bwpSupport = 11;
+}
+
+message CellNeighborsGroup {
+	repeated CellNeighbor gsmNeighbors = 1;
+	repeated CellNeighbor scdmaNeighbors = 2;
+	repeated CdmaCellNeighbor cdmaNeighbors = 3;
+	repeated LteCellNeighbor lteNeighbors = 4;
+	repeated NRCellNeighbor nrNeighbors = 5;
+}
+
+message CellTowerLocation {
+	required int32 mcc = 1;
+	required int32 mnc = 2;
+	required int32 lac = 3;
+	required int32 ci = 4;
+	required int32 rssi = 5;
+	optional int32 arfcn = 6;
+	optional int32 psc = 7;
+
+	required Location location = 8;
+	optional string appBundleId = 9;
+
+	optional int32 serverHash = 10; // server internal use
+
+	optional int32 transmit = 11;
+	optional string operatorName = 12;
+
+	// signal strength fields for UMTS
+	optional sint32 ecn0 = 15;
+	optional sint32 rscp = 16;
+
+	optional int32 rat = 17;
+
+	repeated CellNeighbor neighbor = 20;
+
+	optional CellNeighborsGroup neighborGroup = 21;
+	optional bool isLimitedService = 22;
+	optional string serviceProviderName = 23;
+}
+
+message SCdmaCellTowerLocation {
+	required int32 mcc = 1;
+	required int32 mnc = 2;
+	required int32 lac = 3;
+	required int32 ci = 4;
+	required int32 rssi = 5;
+	optional int32 arfcn = 6;
+	optional int32 psc = 7;
+
+	required Location location = 8;
+	optional string appBundleId = 9;
+
+	optional int32 serverHash = 10; // server internal use
+
+	optional int32 transmit = 11;
+	optional string operatorName = 12;
+
+	optional sint32 ecn0 = 15;
+	optional sint32 rscp = 16;
+
+	optional int32 rat = 17;
+
+	repeated CellNeighbor neighbor = 20;
+
+	optional CellNeighborsGroup neighborGroup = 21;
+	optional bool isLimitedService = 22;
+	optional string serviceProviderName = 23;
+}
+
+message CdmaCellTowerLocation {
+	required int32 mcc = 1;
+	required int32 mnc = 2;
+	required int32 sid = 3;
+	required int32 nid = 4;
+	required int32 bsid = 5;
+
+	optional double bsLatitude = 6;
+	optional double bsLongitude = 7;
+	optional int32 zoneid = 8;
+	optional string sectorid = 9;
+	optional double sectorLatitude = 10;
+	optional double sectorLongitude = 11;
+	optional int32 bandclass = 12;
+	optional int32 rat = 13;
+	optional int32 celltype = 14;
+	optional int32 pnoffset = 15;
+	optional int32 channel = 16;
+
+	required Location location = 17;
+	optional string appBundleId = 18;
+
+	optional int32 serverHash = 19; // server internal use
+
+	optional string operatorName = 20;
+
+	optional int32 ltmOffset = 21;
+	optional int32 dayLightSavings = 22;
+	repeated int32 derivedMcc = 23; // Derived MCC value, provided by baseband
+
+	optional sint32 ecn0 = 25;
+	optional sint32 rscp = 26;
+
+	repeated CdmaCellNeighbor neighbor = 30;
+
+	optional CellNeighborsGroup neighborGroup = 31;
+	optional bool isLimitedService = 32;
+	optional string serviceProviderName = 33;
+}
+
+message LteCellTowerLocation {
+	required int32 mcc = 1;
+	required int32 mnc = 2;
+	required int32 tac = 3;
+	required int32 ci = 4;
+
+	optional int32 uarfcn = 5;
+	optional int32 pid = 6;
+	optional int32 bandInfo = 7;
+
+	required Location location = 8;
+	optional string appBundleId = 9;
+	optional string operatorName = 10;
+
+	optional double cellLatitude = 11;
+	optional double cellLongitude = 12;
+
+	optional int32 serverHash = 13; // server internal use
+
+	optional sint32 ecn0 = 14;
+	optional sint32 rscp = 15;
+	optional sint32 rssi = 16;
+
+	repeated LteCellNeighbor neighbor = 20;
+
+	optional CellNeighborsGroup neighborGroup = 21;
+
+	optional int32 bandwidth = 22;
+	optional bool isLimitedService = 23;
+	optional string serviceProviderName = 24;
+	optional uint32 deploymentType = 25;
+
+    optional uint32 downlinkBandwidth = 26;
+    optional bool isStalled = 27;
+    optional uint32 latency = 28;
+
+    optional uint32 pmax = 29;
+    optional uint32 maxThroughput = 30;
+    optional uint32 csgIndication = 31;
+    optional uint32 csgId = 32;
+}
+
+//5G(NR) cell towers
+message NRCellTowerLocation {
+	optional int32 mcc = 1;
+	optional int32 mnc = 2;
+	optional int32 tac = 3;
+	optional int64 ci = 4;
+
+	optional int32 nrarfcn = 5;
+	optional int32 pid = 6;
+	optional int32 bandInfo = 7;
+
+	optional Location location = 8;
+	optional string appBundleId = 9;
+	optional string operatorName = 10;
+
+	optional double cellLatitude = 11;
+	optional double cellLongitude = 12;
+
+	optional int32 serverHash = 13; // server internal use
+
+	optional sint32 ecn0 = 14;
+	optional sint32 rscp = 15;
+	optional sint32 rssi = 16;
+
+	repeated NRCellNeighbor neighbor = 20;
+
+	optional CellNeighborsGroup neighborGroup = 21;
+
+	optional int32 bandwidth = 22;
+	optional bool isLimitedService = 23;
+	optional string serviceProviderName = 24;
+	optional uint32 scs = 25;
+	optional uint32 gscn = 26;
+
+    optional uint32 downlinkBandwidth = 27;
+    optional bool isStalled = 28;
+    optional uint32 latency = 29;
+
+    optional uint32 pmax = 30;
+    optional uint32 maxThroughput = 31;
+    optional uint32 bwpSupport = 32;
+}
+
+message CellOutOfServiceInfo {
+	optional Location location = 1;
+	optional string serviceProviderName = 2;
+    optional bool uniqueCount = 3;
+    optional bool hasWifiFallback = 4;
+}
+
+message WifiAPLocation {
+	required string mac = 1;
+	required int32 channel = 2;
+	optional int32 hidden = 7;
+	required int32 rssi = 3;
+	optional double scanTimestamp = 8;
+	required Location location = 4;
+	optional string appBundleId = 5;
+	optional int32 serverHash = 6; // server internal use
+	
+	enum ScanType {
+		Invalid = 0;
+		TwoGhzSet1 = 1;
+		TwoGhzSet2 = 2;
+		FiveGhzSet1 = 3;
+		FiveGhzSet2 = 4;
+		FiveGhzSet3 = 5;
+		Cached = 6;
+		Channel = 7;
+		Fast = 8;
+		Stage1 = 9;
+		Stage2 = 10;
+		Normal = 11;
+		CustomScan = 12;
+		FiveGhzStage1 = 13;
+		Max = 14;
+	}
+	optional ScanType scanType = 9;
+}
+
+// message type kCellWifiCollectionType = 100;
+message CellWifiCollectionRequest {
+	required Meta meta = 1;
+	repeated CellTowerLocation cellTowerLocation = 2;
+	repeated CdmaCellTowerLocation cdmaCellTowerLocation = 4;
+	repeated LteCellTowerLocation lteCellTowerLocation = 5;
+    repeated NRCellTowerLocation nrCellTowerLocation = 8;
+	repeated WifiAPLocation wifiAPLocation = 3;
+	repeated SCdmaCellTowerLocation scdmaCellTowerLocation = 6;
+	repeated CellOutOfServiceInfo cellOutOfServiceInfo = 7;
+}
+
+message CellWifiCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+// message type kLocationCollectionType = 101;
+message LocationCollectionRequest {
+	required Meta meta = 1;
+
+	repeated Location location = 2;
+	optional string appBundleId = 3;
+	required string tripId = 4;
+	optional int32 rat = 5;
+	optional int32 mcc = 6;
+	optional int32 mnc = 7;
+
+	repeated string appBundleIds = 8;
+
+	optional AccessoryMeta accessoryMeta = 9;
+	repeated Location accessoryLocation = 10;
+}
+
+message LocationCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+message AppLocation {
+	required string appBundleId = 1;
+	required int32 appState = 2;
+	optional double age = 3;
+
+	required Location location = 4;
+
+	optional int32 serverHash = 5; // server internal use
+	optional int32 routineMode = 6 [default = -1];
+	optional int32 loiType = 7 [default = -1];
+}
+
+// message type kAppCollectionType = 102;
+message AppCollectionRequest {
+	required Meta meta = 1;
+
+	repeated AppLocation appLocation = 2;
+
+    optional bytes signature = 3; // Mescal signed SHA1 of encoded tag #2 data
+}
+
+message AppCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+message PassLocation {
+	required string passTypeId = 1;
+	repeated string associatedStoreId = 2;
+	required int32 passSource = 3;
+	optional double age = 4;
+
+	required Location location = 5;
+
+	optional int32 serverHash = 6; // server internal use
+}
+
+// message type kPassCollectionType = 103;
+message PassCollectionRequest {
+	required Meta meta = 1;
+
+	repeated PassLocation passLocation = 2;
+
+    optional bytes signature = 3; // Mescal signed SHA1 of encoded tag #2 data
+}
+
+message PassCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+
+// message type kWtwCollectionType = 104;
+message WtwCollectionRequest {
+	required Meta meta = 1;
+
+	repeated WifiAPLocation wtwLocation = 2;
+}
+
+message WtwCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+// NOTE: this is optimized for unit quaternions used to describe attitude
+message Quaternion {
+	// NOTE: scalar part (w) is optional if unit quaternion, since w^2 + x^2 + y^2 + z^2 = 1
+	//       w is assumed to be positive
+	optional float w = 1;
+	// NOTE: using required here because at least three elements are needed to define a unit quaternion
+	required float x = 2;
+	required float y = 3;
+	required float z = 4;
+}
+
+// All indoor timestamps are in wall time (CFAbsoluteTime)
+message IndoorCMAttitude {
+	// corresponds to CLMotionTypeCompassCalibrationLevel
+	enum CompassCalibrationLevel {
+		Unknown = -1;
+		Unreliable = 0;
+		_2DWeak = 1;
+		_2DStrong = 2;
+		_3DWeak = 3;
+		_3D = 4;
+		_3DStrong = 5;
+		Max = 6;
+	}
+
+	optional double timestamp = 1;
+	optional Quaternion quaternion = 2;
+	// accuracy in degrees? TODO: confirm with motion
+	optional float magneticAccuracy = 3;
+	// <rdar://problem/30571099> Indoor harvest pipeline is failing to serialize this field when it is set to Unknown by client
+	optional CompassCalibrationLevel magneticCalibration = 4;
+}
+
+message IndoorCMPedometer {
+	optional double timestamp = 1;
+	// "calibrated" distance traveled in meters
+	optional float distance = 2;
+	optional int32 numberOfSteps = 3;
+	optional int32 floorsAscended = 4;
+	optional int32 floorsDescended = 5;
+	// time of first step in wall time
+	optional double firstStepTime = 6;
+	// active time (i.e. last step time - first step time) in seconds
+	optional float activeTime = 7;
+}
+
+message IndoorMotionActivity {
+	optional double timestamp = 1;
+	optional MotionActivity motionActivity = 2;
+}
+
+message IndoorPressure {
+	optional double timestamp = 1;
+	// pressure in kPa
+	optional float pressure = 2;
+	// temperature in deg C
+	optional float temperature = 3;
+}
+
+message IndoorWifiScan {
+    required double timestamp = 1;
+	required string mac = 2;
+	required int32 channel = 3;
+	optional int32 hidden = 4;
+	required int32 rssi = 5;
+	optional double age = 6;
+	optional string bundleId = 7 [deprecated=true];
+}
+
+message BundleId {
+    optional double timestamp = 1;
+    // short key referenced in Location.appBundleIdIndices field
+    optional string shortKey = 2;
+    // full bundle ID string e.g. "com.apple.Maps"
+    optional string fullName = 3;
+}
+
+message IndoorEvent {
+	enum IndoorEventType {
+		CMAttitude = 1;
+		CMPedometer = 2;
+		Location = 3;
+		MotionActivity = 4;
+		Pressure = 5;
+		WifiScan = 6;
+        BundleId = 7;
+	}
+
+	optional IndoorEventType type = 1;
+	optional IndoorCMAttitude cmAttitude = 2;
+	optional IndoorCMPedometer cmPedometer = 3;
+	optional Location location = 4;
+	optional IndoorMotionActivity motionActivity = 5;
+	optional IndoorPressure pressure = 6;
+	optional IndoorWifiScan wifiScan = 7;
+    optional BundleId bundleId = 8;
+}
+
+// message type kIndoorCollectionType = 105;
+message IndoorCollectionRequest {
+	required Meta meta = 1;
+
+	// <rdar://problem/30838843> Refactor IndoorCollectionRequest as repeated IndoorEventType indoorEvent
+	repeated IndoorWifiScan indoorWifis = 2;
+	repeated Location indoorLocations = 3;
+	repeated IndoorCMAttitude indoorCMAttitude = 4;
+	repeated IndoorCMPedometer indoorCMPedometer = 5;
+	repeated IndoorMotionActivity indoorMotionActivity = 6;
+	repeated IndoorPressure indoorPressure = 7;
+    repeated BundleId bundleId = 8;
+}
+
+message IndoorCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+message Pressure {
+	required double timestamp = 1;
+	//average pressure over last 20 samples in pascals
+	required double value=2;
+	//standard deviation of samples used to produce average
+	required double std=3;
+}
+
+// message type kPressureCollectionType = 106;
+message PressureCollectionRequest {
+	required Meta meta = 1;
+
+	required Pressure pressure = 2;
+	required Location pressureLocation = 3;
+}
+
+message PressureCollectionResponse {
+        required bool success = 1;
+        optional string msg = 2;
+}
+
+message RTVisit {
+	optional double entryTime = 1;
+	optional double exitTime = 2;
+}
+
+message PoiTriggerEvent {
+  enum PoiTriggerType {
+    Type_Unknown = 0;
+    Passbook = 1;
+    Visit = 2;
+    VisitSettled = 3;
+    Review = 4;
+  }
+
+  enum PoiTriggerSubTypePassbook {
+    SubTypePassbook_Unknown = 0;
+    ApplePay = 1;
+  }
+
+  enum PoiTriggerSubTypeVisit {
+    SubTypeVisit_Unknown = 0;
+    ReverseGeocode = 1;
+    Contacts = 2;
+    User = 4;
+    MapsSupportFavorite = 8;
+    MapsSupportHistoryEntryRoute = 16;
+    MapsSupportHistoryEntryPlaceDisplay = 32;
+    EventKit = 64;
+    ForwardGeocode = 128;
+    LocalSearch = 256;
+    MapItemHandle = 512;
+    ProactiveExperts = 1024;
+    Portrait = 2048;
+    LearnedPlace = 4096;
+    BluePOI = 8192;
+    MapItemURL = 16384;
+  }
+
+  required uint64 muid = 1;
+  optional int32 providerIdentifier = 2;
+  optional PoiTriggerType triggerType = 3;
+  optional double triggerTimestamp = 4;
+  // The trigger type will determine what is encoded here. i.e. PoiTriggerType::Visit will use PoiTriggerSubTypeVisit
+  optional int32 triggerSubType = 5;
+}
+
+message PoiWifiAccessPoint {
+  required string mac = 1;
+  required int32 rssi = 2;
+  required int32 channel = 3;
+  optional double age = 4;
+  optional double scanTimestamp = 5;
+}
+
+message PoiHarvest {
+  required PoiTriggerEvent triggerEvent = 1;
+  repeated Location locations = 2;
+  repeated PoiWifiAccessPoint accessPoints = 3;
+}
+
+message PoiCollectionRequest {
+  required Meta meta = 1;
+  repeated PoiHarvest harvests = 2;
+}
+
+message PoiCollectionResponse {
+  required bool success = 1;
+  optional string msg = 2;
+}
+
+// This message corresponds to CLMotionActivity and describes the user motion state and confidence of being in that state
+message MotionActivity {
+  enum Type {
+    TypeUnknown = 0;
+    TypeFrozen = 1;                 //  1: seriously not moving (don't breathe on it)
+    TypeStatic = 2;                 //  2: very low motion (car in idle)
+    TypeMoving = 3;                 //  3: default moving state
+    TypeWalking = 4;                //  4: walking, slow walking
+    TypeDriving = 5;                //  5: driving, potentially mounted
+    TypeCycling = 6;                //  6: riding a bicycle, useful for context confusion analysis with driving
+    TypeSemiStationary = 7;         //  7: for user sitting or standing still but using the device, or any other moving transitional state
+    TypeRunning = 8;                //  8: running
+    TypeMovingCoarse = 9;           //  9: same as kTypeMoving but derived from 10 Hz data
+    TypeInVehicleFrozen = 10;       // 10: same as kTypeFrozen but there is a strong indication that the user is in vehicle
+    TypeInVehicleStatic = 11;       // 11: same as kTypeStatic but there is a strong indication that the user is in vehicle
+    TypeWalkingSlow = 41;           // why 41, 4 for walking * 10 + 1(arbitrary)
+    TypeVehicularInHand = 52;       // why 52, 5 for driving * 10 + 2(arbitrary)
+    TypeDrivingOther = 56;          // why 56, 5 for driving * 10 + 6(arbitrary)
+    TypeMachineWorkout = 61;
+    TypeWorkout = 62;
+    TypeCyclingLeg = 100;           // 100: Add an arbitrary offset.  This is the confused state between walking and cycling.
+    TypeStationaryCycling = 2010;   // 02010: Compendium of Physical Activities code value for Stationary Bicycle
+    TypeCalisthenics = 2020;        // 02020: Compendium of Physical Activities Reference List Category 2 - Conditioning code value for Calisthenics (e.g., pushups, sit ups, pull-ups, jumping jacks), vigorous effort
+    TypeElliptical = 2048;          // 02048: Compendium of Physical Activities code value for Elliptical trainer, moderate effort
+    TypeCrossTraining = 2061;       // 02061: Compendium of Physical Activities code value for Conditioning Exercise, General
+    TypeStairClimbing = 2065;       // 02065: Compendium of Physical Activities code value for Stair-Treadmill ergometer, general
+    TypeRowing = 2071;              // 02070: Compendium of Physical Activities code value for Rowing, stationary, general, moderate effort
+    TypeYoga = 2150;                // 02150: Compendium of Physical Activities code value for Yoga, Hatha
+    TypeDancing = 3015;             // 03015: Compendium of Physical Activities code value for Dancing, Aerobic, General
+    TypeIndoorRunning = 12150;      // 12150: Compendium of Physical Activities code value for Running
+    TypeIndoorWalking = 17150;      // 17150: Compendium of Physical Activities code value for Walking, household
+    TypeSwimming = 18240;           // 18230: Compendium of Physical Activities code value for Swimming, Moderate Effort Freestyle Laps
+    TypePushingWheelchair = 11805;  // 11805: Compendium of Physical Activities code value for Walking, pushing a wheelchair
+    TypeOutdoorWheelchair = 90603;  // 90603: Compendium of Energy Costs of Physical Activities for Individuals Who use Manual Wheelchairs code value for wheeling outside
+    TypeDownhillSkiing = 19150;     // 19150: Compendium of Physical Activities code value for Skiing, downhill, alpine or snowboarding, light effort, active time only
+  }
+
+  enum Confidence {
+    ConfidenceLow = 0;
+    ConfidenceMedium = 1;
+    ConfidenceHigh = 2;
+  }
+
+  optional Type type = 1;
+  optional Confidence confidence = 2;
+}
+
+// message type kTraceCollectionType = 109;
+message TraceCollectionRequest {
+	enum TraceCollectionType {
+		RandomCollection = 1;
+		ScoredCollection = 2;
+	}
+
+	required Meta meta = 1;
+
+	repeated IndoorEvent events = 2;
+
+	optional TraceCollectionType type = 3;
+}
+
+message TraceCollectionResponse {
+	required bool success = 1;
+	optional string msg = 2;
+}
+
+// message type kAltimeterCollectionType = 110;
+message AltimeterCollectionRequest {
+	enum CollectionType {
+		CollectionHVAC = 1;
+		CollectionBiasEstimation = 2;
+		CollectionSensorCharacterization = 3;
+	}
+
+	message Context {
+		optional int32 type = 1;
+		optional bool isDriving = 2;
+		optional int32 workoutType = 3;
+		optional string bundleCategory = 4;
+	}
+
+	optional Meta meta = 1;
+
+	optional double startTimestamp = 2;
+	optional double stopTimestamp = 3;
+	optional CollectionType collectionType = 4;
+	optional Context context = 5;
+
+	optional Location location = 6;
+
+	repeated IndoorPressure pressure = 7;
+	repeated IndoorWifiScan wifiScan = 8;
+	repeated Location locations = 9;
+
+}
+
+message LocationConsumptionScoreInfo {
+	optional double startTime = 1;
+	optional double stopTime = 2;
+	optional string clientKey = 3;
+	optional int32 score = 4;
+}
+
+// message type kLocationConsumptionScoreInfoType = 111;
+message LocationConsumptionScoreInfoRequest {
+	repeated LocationConsumptionScoreInfo locationConsumptionScoreInfo = 1;
+}
+
+message PipelineDiagnosticReport {
+    enum YieldType {
+        YieldTypeUnknown = 0;
+        YieldTypePrimary = 1;
+        YieldTypeAuxilary = 2;
+        YieldTypeDeadReckoning = 3;
+    }
+
+    enum YieldStatus {
+        YieldStatusUnknown = 0;
+        YieldStatusOK = 1;
+        YieldStatusLow = 2;
+        YieldStatusOffmap = 3;
+        YieldStatusNone = 4;
+    }
+
+    optional YieldType yieldType = 1 [default=YieldTypeUnknown];
+    optional double prbPipelinedSaysYield = 2;
+    optional double prbCoarseIndoorSaysIndoor = 3;
+    optional double prbWifiSaysIndoor = 4;
+    optional double prbGpsSaysIndoor = 5;
+    optional double prbParticleFilterSaysYield = 6;
+    optional double prbOnFloorsEstimate = 7;
+    repeated double prbOnFloorEstimate = 8 [packed=true];
+    optional double prbInlierEstimate = 9;
+    optional double prbLocalizerIoWrapperSaysWifiOk = 10;
+    optional double prbInjectionOccupancyRetryLimitOk = 11;
+    optional double prbInjectionGainRetryLimitOk = 12;
+    optional YieldStatus pfYieldStatusBeforeCalculatePose = 13 [default=YieldStatusUnknown];
+    optional YieldStatus yieldStatusBeforeCalculatePose = 14 [default=YieldStatusUnknown];
+}
+
+message BaroCalibrationIndication {
+    enum RoadType {
+        Unknown = 0;
+        PartOfMotorway = 1;
+        PartOfMultiCarriageWayNotMotorway = 2;
+        ParOfSingleCarriageWayDefault = 3;
+        PartOfRoundabout = 4;
+        PartOfAnEtaParkingPlace = 5;
+        PartOfAnEtaParkingGarageBuilding = 6;
+        PartOfEtaUnstructuredTrafficSquare = 7;
+        PartOfSlipRoad = 8;
+        PartOfServiceRoad = 9;
+        EntraceExitToFormCarPark = 10;
+        PartOfPedestrianZone = 11;
+        PartOfWalkWay = 12;
+        SpecialTrafficFigures = 13;
+        FowEtaGallery = 14;
+        FowStairs = 15;
+        RoadForAuthorities = 16;
+        FowConnector = 17;
+        FowCulDeSac = 18;
+    }
+
+    optional bool isCalibratedBarometricAlt = 1;
+    optional bool isMapMatched = 2;
+    optional bool isOutdoorContext = 3;
+    optional double outdoorConfidence = 4;
+    optional RoadType mapMatchRoadType = 5;
+}
+
+message IonosphereData {
+	optional double latitude_deg = 1;
+	optional double longitude_deg = 2;
+	optional double geodetic_altitude_m = 3;
+	optional double applicable_time_sec = 4;
+	optional double hmax_km = 5;
+	optional double vtec0 = 6;                // (TECU)
+	optional double dvtec_dtheta = 7;         // (TECU/rad)
+	optional double dvtec_dphi = 8;           // (TECU/rad)
+	optional double d2vtec_dtheta2 = 9;       // (TECU/rad^2)
+	optional double d2vtec_dthetaphi = 10;    // (TECU/rad^2)
+	optional double d2vtec_dphi2 = 11;        // (TECU/rad^2)
+	optional double estimator_age_sec = 12;
+	optional double phmax_hmax_km2 = 13;                        // (km^2)
+	optional double pvtec0_vtec0 = 14;                          // (TECU^2)
+	optional double pdvtec_dtheta_dvtec_dtheta = 15;            // ((TECU/rad)^2)
+	optional double pdvtec_dphi_dvtec_dphi = 16;                // ((TECU/rad)^2)
+	optional double pd2vtec_dtheta2_d2vtec_dtheta2 = 17;        // ((TECU/rad^2)^2)
+	optional double pd2vtec_dthetadphi_d2vtec_dthetadphi = 18;  // ((TECU/rad^2)^2)
+	optional double pd2vtec_dphi2_d2vtec_dphi2 = 19;            // ((TECU/rad^2)^2)
+}
+
+// message type kIonosphereCollectionType = 112;
+message IonosphereCollectionRequest {
+	optional Meta meta = 1;
+	repeated IonosphereData iono_data = 2;
+}
+
+
+// message type kReferencePressureCollectionType = 113;
+message CalibratedPressureCollectionRequest {
+    enum Reliability {
+        //Device Reliability
+        ReliabilityProtobufDefault      =   0;
+        ReliablityLow                   =   1;
+        ReliablityMedium                =   2;
+        ReliabilityHigh                 =   3;
+    }
+    
+    optional float devicePressure_pa = 1;           // Pressure value corresponds to the pressure measured on device from device Altimeter(CMA) in pascal.
+    optional float devicePressureUnc_pa = 2;        // Pressure Uncertainty value measured on device in pascal.
+    optional float calibratedPressure_pa = 3;       // Calibrated pressure on the device in pascal.
+    optional float calibratedPressureUnc_pa = 4;    // Calibrated pressure uncertainty in pascal.
+    optional double timestampOfCalibration_s = 5;   // CFAbsolute time of the calibration on device.
+    optional double latitude_deg = 6;               // Latitude in degree at which pressure is calibrated on device.
+    optional double longitude_deg = 7;              // Longitude at which pressure is calibrated on device.
+    optional float horizontalUnc_m = 8;             // Horizontal uncertainty on device.
+    optional float altitudeHAE_m = 9;               // Calibrated altitude in meteres.
+    optional float altitudeHAEUnc_m = 10;           // Altitude uncertainty in meteres.
+    optional float speed_mps = 11;                  // Speed of the device in mps, if in motion.
+    optional float speedUnc_mps = 12;               // Uncertainty of Speed.
+    optional float referenceAlt_m = 13;             // Reference altitude used for calibration.
+    optional float referenceAltUnc_m = 14;          // Reference altitude uncertainty on the device.
+    optional double timeSinceLastSignificantLocationVisitExit_s = 15; // Time since exit from last significant location visit.
+    optional MotionActivity activity = 16;          // Activity type.
+    optional Reliability reliability = 17;          // Reliability.
+    optional BaroCalibrationIndication Calibration = 18;    // Calibration type.
+}

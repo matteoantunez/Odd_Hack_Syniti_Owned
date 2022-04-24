@@ -1,0 +1,109 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/cam.scnz"
+  },
+  "emoji" : "🤫",
+  "identifier" : "shushing_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "memoji" : {
+      "lowerBack_DYN" : {
+        "offset" : [
+          -0.0593414306640625,
+          1.6393632888793945,
+          1.1052788977394812e-06
+        ]
+      },
+      "lowerBackLeft_DYN" : {
+        "offset" : [
+          -0.073904037475585938,
+          1.1501450538635254,
+          -1.2422733306884766
+        ]
+      },
+      "lowerBackRight_DYN" : {
+        "offset" : [
+          -0.070508003234863281,
+          1.1497039794921875,
+          1.2418311834335327
+        ]
+      },
+      "lowerFront_DYN" : {
+        "offset" : [
+          -0.18783283233642578,
+          1.5520491600036621,
+          -1.9566776643387129e-08
+        ]
+      },
+      "lowerFrontLeft_DYN" : {
+        "offset" : [
+          -0.221099853515625,
+          -0.74138164520263672,
+          -1.4517874717712402
+        ]
+      },
+      "lowerFrontRight_DYN" : {
+        "offset" : [
+          -0.22111606597900391,
+          -0.74138832092285156,
+          1.4518011808395386
+        ]
+      },
+      "lowerLeft_DYN" : {
+        "offset" : [
+          -0.16118431091308594,
+          0.25113439559936523,
+          -1.7212111949920654
+        ]
+      },
+      "lowerRight_DYN" : {
+        "offset" : [
+          -0.16073989868164062,
+          -0.25070381164550781,
+          -1.7180500030517578
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browInnerUp" : 0.23013697564601898,
+    "browOuterUp_L" : 0.024657543748617172,
+    "browOuterUp_R" : 0.043835628777742386,
+    "eyeLookDown_L" : 0.3023872971534729,
+    "eyeLookDown_R" : 0.30308493971824646,
+    "eyeSquint_L" : 0.58620685338973999,
+    "eyeSquint_R" : 0.59151202440261841,
+    "jawOpen" : 0.12328767031431198,
+    "mouthDimple_L" : 0.11506850272417068,
+    "mouthDimple_R" : 0.20000000298023224,
+    "mouthPucker" : 1,
+    "mouthSmile_L" : 0.32054796814918518,
+    "mouthSmile_R" : 0.32328769564628601,
+    "neckOrientation" : [
+      -0.1984199732542038,
+      0,
+      0,
+      0.98011714220046997
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "palettes" : [
+        {
+          "material" : "skin_MAT",
+          "palette" : "skin"
+        }
+      ],
+      "scene" : "shushing_face_hand.scnz"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>Truy cập bị hạn chế</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- Localization notes: see blockpage.html  -->
+	
+	<body>
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						Rất tiếc! Bạn không thể xem các trang trên trang web này.
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						Bạn không thể xem trang
+						&#8220;<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>&#8221;
+						vì trang này không nằm trong danh sách được phê duyệt trong Thời gian sử dụng.
+					</p>
+					
+					<p class="text"		id="HowToAddText">
+						Để thêm trang web này vào danh sách được phê duyệt của bạn, hãy bấm vào Thêm trang web. 
+					</p>
+					
+					<form class="button" id="OverrideForm" name="OverrideInfo"	action="SEND_FORM_TO_URL_NO_LOC"	method="POST">
+						<input type="hidden" name="Title"	value="PAGE_TO_OVERRIDE_TITLE_NO_LOC" />
+						<input type="hidden" name="URL" 	value="PAGE_TO_OVERRIDE_URL_NO_LOC" />
+						
+						<input type="submit" value="  Thêm trang web  " />
+					</form>
+
+					<p class="text"		id="GoBackText">
+						Để trở lại trang mà bạn vừa xem, hãy bấm vào Quay lại. 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  Quay lại  " onclick="GoBack()" />
+					</p>
+					
+					
+					<p class="title"			id="AllowedWebsitesTitle">
+						Trang web được phép
+					</p>			
+					
+					<div class="allowedlinks"	id="AllowedWebsitesLinks">
+						 
+						ALLOWED_LIST_OF_WEBSITES_NO_LOC
+						
+						<!--
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>						
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>
+						<a href="www.apple.com">Apple</a>
+						<br>						
+						<a href="www.apple.com">Apple</a>
+						<br>
+						-->	
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+        <script	type="text/javascript">
+            LoadPage( 'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 32, 51);
+        </script>
+
+	</body>
+
+</html>

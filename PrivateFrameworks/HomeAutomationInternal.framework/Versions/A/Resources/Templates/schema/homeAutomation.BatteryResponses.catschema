@@ -1,0 +1,32 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.BatteryResponses
+extends: homeAutomation.NumericEntityResponses
+
+properties:
+    chargingResponses:
+        type: homeAutomation.BatteryResponses
+        optional: no
+        description: A collection of responses that are in charging state
+    batteryLevelResponses:
+        type: homeAutomation.BatteryResponses
+        optional: no
+        description: A collection of responses that report the battery level of charging entities, if not empty, should have the same size as chargingResponses.
+    notChargingResponses:
+        type: homeAutomation.BatteryResponses
+        optional: no
+        description: A collection of responses that are in not charging state
+    notChargeableResponses:
+        type: homeAutomation.BatteryResponses
+        optional: no
+        description: A collection of responses that are not chargeable
+    lowBatteryResponses:
+        type: homeAutomation.BatteryResponses
+        optional: no
+        description: A collection of responses that are in low battery state
+    normalBatteryResponses:
+        type: homeAutomation.BatteryResponses
+        optional: no
+        description: A collection of responses that are in normal battery state
+    
+

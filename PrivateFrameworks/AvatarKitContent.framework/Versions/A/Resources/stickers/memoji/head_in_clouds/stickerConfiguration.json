@@ -1,0 +1,82 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/head_in_clouds/cam.scnz"
+  },
+  "identifier" : "head_in_clouds",
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "Emoji" : 1,
+    "eyeBlink_L" : 0.22739721834659576,
+    "eyeBlink_R" : 0.2246575802564621,
+    "neckOrientation" : [
+      0,
+      0,
+      0,
+      1
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "image" : "../../shared/head_in_clouds/cloudC.heic",
+      "position" : {
+        "x" : 0.56000000000000005,
+        "y" : -0.35999999999999999,
+        "z" : -30
+      },
+      "rotation" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : 0
+      },
+      "scale" : 0.25
+    },
+    {
+      "image" : "../../shared/head_in_clouds/cloudA.heic",
+      "position" : {
+        "x" : -0.47999999999999998,
+        "y" : -0.35999999999999999,
+        "z" : 20
+      },
+      "rotation" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : 0
+      },
+      "scale" : 0.29999999999999999
+    },
+    {
+      "image" : "../../shared/head_in_clouds/cloudC.heic",
+      "position" : {
+        "x" : -0.56000000000000005,
+        "y" : 0.40000000000000002,
+        "z" : -30
+      },
+      "rotation" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : 0
+      },
+      "scale" : 0.29999999999999999
+    },
+    {
+      "image" : "../../shared/head_in_clouds/cloudD.heic",
+      "position" : {
+        "x" : 0.40000000000000002,
+        "y" : 0.47999999999999998,
+        "z" : 20
+      },
+      "rotation" : {
+        "x" : 0,
+        "y" : 0,
+        "z" : 0
+      },
+      "scale" : 0.29999999999999999
+    }
+  ]
+}

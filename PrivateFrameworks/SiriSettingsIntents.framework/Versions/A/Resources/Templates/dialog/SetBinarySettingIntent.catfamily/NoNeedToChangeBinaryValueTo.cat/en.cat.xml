@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetBinarySettingIntent#NoNeedToChangeBinaryValueTo" locale="en">
+    <conditions>
+        <condition name="isBass">
+            <or>
+                <expression name="setting.identifier" op="eq" value="'bass'"/>
+                <expression name="setting.identifier" op="eq" value="'bassReduce'"/>
+            </or>
+        </condition>
+        <condition name="isSmartVolume">
+            <expression name="setting.identifier" op="eq" value="'smartVolume'"/>
+        </condition>
+    </conditions>
+    <first>
+        <first condition="isBass">
+            <dialog condition="setting.value">The bass is already turned on.</dialog>
+            <dialog>The bass is already turned off.</dialog>
+        </first>
+        <first condition="isSmartVolume">
+            <dialog condition="setting.value">I already adjust my volume automatically on this HomePod.</dialog>
+            <dialog>I'm currently speaking at the same level as the media volume.</dialog>
+        </first>
+        <dialog condition="setting.value"><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is already turned on.</dialog>
+        <dialog><transform mode="capitalizeFirst"><var name="setting.name"/></transform> is already turned off.</dialog>
+    </first>
+</cat>

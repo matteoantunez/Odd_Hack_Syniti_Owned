@@ -1,0 +1,1 @@
+(function(){return function(n,t){for(var r,e=0;e<n.modifyUrl.length&&(!r||!r.exists());e++)r=t.getSpan().next(n.modifyUrl[e]).nextLink();return r}}).call();

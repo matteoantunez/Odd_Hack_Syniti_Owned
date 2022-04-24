@@ -1,0 +1,63 @@
+//===-- metal_config ------------------------------------------------------===//
+// Copyright (c) 2015-2016 Apple Inc. All rights reserved
+//
+// This header is for internal use only. All definitions below may change
+// between releases.
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_CONFIG
+#define __METAL_CONFIG
+
+#define __HAVE_AIR_FRACT__ 1
+#define __HAVE_AIR_LDEXP__ 1
+#define __HAVE_ALWAYS_NEVER_COMPARE_FUNCTION__ 1
+#define __HAVE_CLZ_ZERO_UNDEF__ 1
+#define __HAVE_CTZ_ZERO_UNDEF__ 1
+#define __HAVE_DEPTH_CUBE_ARRAY__ 1
+#define __HAVE_DEPTH_CUBE_READ__ 1
+#define __HAVE_DRAW_INDIRECT__ 1
+#define __HAVE_FMA__ 1
+#define __HAVE_RELAXED_ORDER_ATOMIC__ 1
+#define __HAVE_TEXTURE_CUBE_ARRAY__ 1
+#define __HAVE_TEXTURE_CUBE_READ__ 1
+#define __HAVE_TEXTURE_CUBE_WRITE__ 1
+#define __HAVE_TRIG_PI__ 1
+#define __HAVE_ZERO_LOD_ARG__ 1
+
+#if (100 <= __METAL_VERSION__) && (__METAL_VERSION__ < 120)
+#define __HAVE_VECTOR_CONVERSION_IN_ARRAY_INIT__ 1
+#endif
+
+#if (__METAL_VERSION__ >= 120)
+#define __HAVE_16B_COORDS__ 1
+#define __HAVE_BORDER_COLOR__ 1
+#define __HAVE_EARLY_FRAGMENT_TEST__ 1
+#define __HAVE_FUNCTION_CONSTANTS__ 1
+#define __HAVE_INTEGER_BIT_EDIT_FUNCTIONS__ 1
+#define __HAVE_MATRIX_MULTIPLE_SCALAR_CONSTRUCTORS__ 1
+#define __HAVE_MEMFLAG_OPERATORS__ 1
+#define __HAVE_SIMD_PACKED__ 1
+#define __HAVE_TESSELLATION__ 1
+#define __HAVE_TEXTURE_READWRITE__ 1
+#define __HAVE_UNIONS__ 1
+#endif
+
+#if (__METAL_VERSION__ >= 200)
+#define __HAVE_ANISOTROPY_LOD_MIN_MAX__ 1
+#define __HAVE_ARRAYS_OF_SAMPLERS__ 1
+#define __HAVE_ARRAYS_OF_TEXTURES__ 1
+#define __HAVE_ARRAY__ 1
+#define __HAVE_COMPUTE_IMPROVED_INDIRECT__ 1
+#define __HAVE_COPY_ASSIGNABLE_TEXTURE__ 1
+#define __HAVE_DEFAULT_CONSTRUCTABLE_TEXTURE__ 1
+#define __HAVE_NULL_TEXTURE__ 1
+#define __HAVE_SIMDGROUP_BARRIER__ 1
+#define __HAVE_SIMDGROUP__ 1
+#endif
+
+#if (__AIR_VERSION__ >= 20000)
+#define __HAVE_AIR_SAMPLER_ANISOTROPY_LOD_MIN_MAX__ 1
+#endif
+
+
+#endif // __METAL_CONFIG

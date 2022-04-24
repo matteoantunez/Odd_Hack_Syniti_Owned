@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MESSAGES</key>
+	<string>com.apple.mail</string>
+	<key>OTHER</key>
+	<string>com.apple.other</string>
+	<key>CONTACT</key>
+	<string>com.apple.contacts</string>
+	<key>APPLICATIONS</key>
+	<string>com.apple.applications</string>
+	<key>DOCUMENTS</key>
+	<string>com.apple.documents</string>
+	<key>EVENT_TODO</key>
+	<string>com.apple.calendar</string>
+	<key>SYSTEM_PREFS</key>
+	<string>com.apple.settings</string>
+	<key>MENU_EXPRESSION</key>
+	<string>com.apple.calculator</string>
+	<key>MENU_CONVERSION</key>
+	<string>com.apple.conversions</string>
+	<key>PRESENTATIONS</key>
+	<string>com.apple.keynote</string>
+	<key>SPREADSHEETS</key>
+	<string>com.apple.numbers</string>
+	<key>PDF</key>
+	<string>com.apple.pdfs</string>
+	<key>IMAGES</key>
+	<string>com.apple.photos</string>
+	<key>BOOKMARKS</key>
+	<string>com.apple.bookmarks</string>
+	<key>MOVIES</key>
+	<string>com.apple.video</string>
+	<key>FONTS</key>
+	<string>com.apple.fonts</string>
+	<key>SOURCE</key>
+	<string>com.apple.developer</string>
+	<key>MENU_DEFINITION</key>
+	<string>com.apple.dictionary</string>
+	<key>MENU_SPOTLIGHT_SUGGESTIONS</key>
+	<string>com.apple.parsec</string>
+	<key>DIRECTORIES</key>
+	<string>com.apple.directories</string>
+	<key>FOUND_IN_APPS</key>
+	<string>com.apple.intelligentsuggestions</string>
+	<key>MUSIC</key>
+	<string>com.apple.music</string>
+	<key>Siri Found in Apps</key>
+	<string>com.apple.intelligentsuggestions</string>
+	<key>MENU_TOP_HIT</key>
+	<string>com.apple.tophit</string>
+	<key>MENU_TOP_HITS</key>
+	<string>com.apple.tophit</string>
+	<key>AUDIOBOOKS</key>
+	<string>com.apple.ibooks</string>
+</dict>
+</plist>

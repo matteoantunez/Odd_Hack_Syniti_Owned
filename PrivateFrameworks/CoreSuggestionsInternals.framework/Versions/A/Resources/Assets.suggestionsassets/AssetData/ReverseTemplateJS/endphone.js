@@ -1,0 +1,1 @@
+(function(){return function(n,e){var t,o=e.getNullSpan();for(t=0;t<n.endPhone.length&&(!o||!o.exists());t++)o=e.getSpan().next(n.endPhone[t]).firstPhoneNumber();if(o&&o.exists()&&!e.getSpan().isPlain())for(t=0;t<n.footer.length;t++)e.getSpan().next(n.footer[t]).contains(o)&&(o=e.getNullSpan());return o}}).call();

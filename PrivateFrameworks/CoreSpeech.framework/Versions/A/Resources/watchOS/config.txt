@@ -1,0 +1,57 @@
+
+[main]
+acanal: frontend
+normalize: 
+hmmdetector: detector
+rescoredetector:
+external: external
+
+[external]
+version: dixnn_zgsm-s1
+threshold_normal:       2.2
+threshold_2ndchance:    1.91
+threshold_siriup:       1.91
+threshold_inactiveuser: -0.592
+threshold_inactiveuser2ndchance: -0.592
+threshold_logging:      1.91
+
+do_supervector_secondarytest:  false
+extra_samples_at_start: 2000
+
+[frontend]
+sample_rate: 16000
+logical_order: false
+confstring:  true
+acanal_file:
+    TARGETKIND = MFCC_0
+    SOURCEKIND = WAVEFORM
+    SOURCEFORMAT = WAV
+    TARGETRATE = 100000.0
+    SAVECOMPRESSED = T
+    SAVEWITHCRC = T
+    WINDOWSIZE = 250000.0
+    USEHAMMING = T
+    PREEMCOEF = 0.97
+    NUMCHANS = 26
+    CEPLIFTER = 22
+    NUMCEPS = 12
+    LOFREQ = -1.0
+    HIFREQ = 7999.0
+    ZMEANSOURCE = T
+
+[detector]
+output_dist_file:  $(NROOT)/dixnn_en_US_5x96_zgsm.8bitab4.dnnc
+hmm_file:          $(NROOT)/dixnn_en_US_hs_gsm_sil.hmm
+gsm_label:         gsm
+keyword_label:     hs
+phrase_scores:     true
+state_init_file:   $(NROOT)/dixnn_en_US_5x96_zgsm_state_init_16.dnnc
+expected_interval_secs: 3600
+background_init_secs:   0
+zerosample_init_secs:   0
+early_warn_state:  20
+early_warn_thres:  1.9
+frame_skip:        0
+latency_offset:    0
+lengthnorm_power:  1.0
+

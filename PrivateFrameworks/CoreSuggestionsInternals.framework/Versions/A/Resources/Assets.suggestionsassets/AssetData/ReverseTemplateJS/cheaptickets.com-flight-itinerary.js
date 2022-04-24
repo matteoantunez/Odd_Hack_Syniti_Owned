@@ -1,0 +1,1 @@
+(function(){return function(t){return loadHelper("cheaptickets.com-microdata.js")(parseMicrodata(t.html))}}).call();

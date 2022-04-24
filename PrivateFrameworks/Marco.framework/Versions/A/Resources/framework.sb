@@ -1,0 +1,4 @@
+(if (entitlement "com.apple.private.imcore.imremoteurlconnection")
+   (allow mach-lookup (global-name "com.apple.imfoundation.IMRemoteURLConnectionAgent")))
+
+(allow mach-lookup (global-name "com.apple.marco"))

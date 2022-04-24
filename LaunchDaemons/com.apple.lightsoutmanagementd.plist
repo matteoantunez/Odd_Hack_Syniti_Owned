@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>Crashed</key>
+		<true/>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.lightsoutmanagementd</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.AppleLOM.XPC</key>
+		<true/>
+		<key>com.apple.AppleLOM.Watchdog</key>
+		<dict>
+			<key>HideUntilCheckIn</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/lightsoutmanagementd</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>Disabled</key>
+	<true/>
+</dict>
+</plist>

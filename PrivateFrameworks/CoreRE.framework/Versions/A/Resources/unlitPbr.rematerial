@@ -1,0 +1,10 @@
+{
+    "Name": "unlitPbr",
+    "MaterialDefinition": "unlitPbr.rematerialdefinition",
+    "Parameters": {
+        "Textures": {
+            "textureEmissive" : "fallback.white"
+        }
+    },
+}
+

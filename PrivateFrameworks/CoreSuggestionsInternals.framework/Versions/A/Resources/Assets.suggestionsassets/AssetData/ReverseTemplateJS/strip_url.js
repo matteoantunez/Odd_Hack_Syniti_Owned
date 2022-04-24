@@ -1,0 +1,1 @@
+(function(){return function(n){return/\s<.*>/.test(n)?n.innerCapture(/[^<]+/,0).trim():n}}).call();

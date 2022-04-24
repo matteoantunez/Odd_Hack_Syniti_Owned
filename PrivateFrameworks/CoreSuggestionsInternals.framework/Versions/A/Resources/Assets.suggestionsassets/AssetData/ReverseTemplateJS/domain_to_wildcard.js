@@ -1,0 +1,1 @@
+(function(){return function(n){if(n)return n.replace(/^(.+?)\./,function(n,r){return n.replace(r,"*")})}}).call();

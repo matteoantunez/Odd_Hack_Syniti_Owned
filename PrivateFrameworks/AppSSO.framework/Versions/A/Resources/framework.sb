@@ -1,0 +1,2 @@
+;; allow clients to communicate with AppSSO service
+(allow mach-lookup (global-name "com.apple.AppSSO.service-xpc"))

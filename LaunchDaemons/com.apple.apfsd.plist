@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.apfsd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/apfsd</string>
+	</array>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.apfsd.ca_stats_report</key>
+			<dict>
+				<key>Interval</key>
+				<integer>604800</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>Repeating</key>
+				<true/>
+				<key>RequiresDeviceInactivity</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>apfsd-published</key>
+			<dict>
+				<key>IOProviderClass</key>
+				<string>AppleAPFSContainer</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

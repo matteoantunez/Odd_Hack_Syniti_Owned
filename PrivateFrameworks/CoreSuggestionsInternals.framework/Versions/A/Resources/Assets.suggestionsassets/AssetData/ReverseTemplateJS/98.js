@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("delta.com-confirmation-alt-en",function(e){return/Get Ready For Your/.test(e.subject)},function(e){if(!/Get Ready For Your/.test(e.subject))return CONTINUE;var t="en_US",r={depart:/DEPART:/,arrive:/ARRIVE:/,flight:/FLIGHT #:/i,hi:/Hi\s/};return loadHelper("delta.com-confirmation-alt.js")(e,t,r)},"SG4315e0a8")]);

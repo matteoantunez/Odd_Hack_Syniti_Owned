@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>20A241128</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>VCPRealtimeEncoder</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.VCPRealtimeEncoder</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>VCPRealtimeEncoder</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CMClassImplementations</key>
+	<array>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.videoencoder</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.videoencoder.ftvc.sw</string>
+			<key>CMClassImplementationName</key>
+			<string>VCP Realtime H.264 Encoder (SW)</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2012 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>x86_64</string>
+				<string>arm64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>H264VideoEncoder_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTCodecType</key>
+				<string>ftvc</string>
+				<key>VTRating</key>
+				<integer>-1</integer>
+			</dict>
+			<key>VTCodecName</key>
+			<string>H.264</string>
+			<key>VTEncoderName</key>
+			<string>Realtime H.264 (SW)</string>
+		</dict>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.videoencoder</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.videoencoder.h264.rtvc</string>
+			<key>CMClassImplementationName</key>
+			<string>VCP Realtime H.264 Encoder</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2012 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>x86_64</string>
+				<string>arm64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>PassthroughEncoder_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTCodecType</key>
+				<string>avc1</string>
+				<key>VTRating</key>
+				<integer>-1</integer>
+			</dict>
+			<key>VTCodecName</key>
+			<string>H.264</string>
+			<key>VTEncoderName</key>
+			<string>Realtime H.264 (RTVC)</string>
+		</dict>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.videoencoder</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.videoencoder.h264.rtvc.sw</string>
+			<key>CMClassImplementationName</key>
+			<string>VCP Realtime H.264 Encoder(SW)</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2012 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>x86_64</string>
+				<string>arm64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>H264VideoEncoder_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTCodecType</key>
+				<string>avc1</string>
+				<key>VTRating</key>
+				<integer>-10</integer>
+			</dict>
+			<key>VTCodecName</key>
+			<string>H.264</string>
+			<key>VTEncoderName</key>
+			<string>Realtime H.264 (RTVC SW)</string>
+		</dict>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.videoencoder</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.videoencoder.ftvc.ave</string>
+			<key>CMClassImplementationName</key>
+			<string>VCP Realtime H.264 Encoder (AVE)</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2012 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>PassthroughEncoder_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTCodecType</key>
+				<string>ftvc</string>
+				<key>VTRating</key>
+				<integer>0</integer>
+			</dict>
+			<key>VTCodecName</key>
+			<string>H.264</string>
+			<key>VTEncoderName</key>
+			<string>Realtime H.264 (AVE)</string>
+		</dict>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.videoencoder</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.videoencoder.ftvh.ave</string>
+			<key>CMClassImplementationName</key>
+			<string>VCP Realtime HEVC Encoder (AVE)</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2012 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>PassthroughEncoder_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTCodecType</key>
+				<string>ftvh</string>
+				<key>VTRating</key>
+				<integer>0</integer>
+			</dict>
+			<key>VTCodecName</key>
+			<string>HEVC</string>
+			<key>VTEncoderName</key>
+			<string>Realtime HEVC (AVE)</string>
+		</dict>
+	</array>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>13E6049a</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>12.3</string>
+	<key>DTSDKBuild</key>
+	<string>21E216a</string>
+	<key>DTSDKName</key>
+	<string>macosx12.3.internal</string>
+	<key>DTXcode</key>
+	<string>1330</string>
+	<key>DTXcodeBuild</key>
+	<string>13E6049a</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.3</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2019 Apple Inc. All rights reserved.</string>
+</dict>
+</plist>

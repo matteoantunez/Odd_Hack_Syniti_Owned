@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook s procesorom Intel Core Duo dostupan u crnoj ili bijeloj boji.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook s procesorom Intel Core 2 Duo dostupan u crnoj ili bijeloj boji.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook s procesorom Intel Core 2 Duo dostupan u crnoj ili bijeloj boji.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook s procesorom Intel Core 2 Duo dostupan u crnoj ili bijeloj boji.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook s procesorom Intel Core 2 Duo (aluminijsko kućište)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen završetkom 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook s procesorom Intel Core 2 Duo (bijeli, početak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Bijeli MacBook s procesorom Intel Core 2 Duo, predstavljen početkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook s procesorom Intel Core 2 Duo (bijeli, završetak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Bijeli MacBook s procesorom Intel Core 2 Duo i LED zaslonom, predstavljen završetkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook s procesorom Intel Core 2 Duo (bijeli, sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook s procesorom Intel Core 2 Duo i bijelim jednodjelnim aluminijskim kućištem, predstavljen sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-inčni MacBook (početak 2015.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core M</string>
+			<key>description</key>
+			<string>12-inčni MacBook s Retina zaslonom, predstavljen početkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-inčni MacBook (početak 2016.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core m3, dvojezgreni Intel Core m5, dvojezgreni Intel Core m7</string>
+			<key>description</key>
+			<string>12-inčni MacBook s Retina zaslonom, predstavljen početkom 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12-inčni MacBook (sredina 2017.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core m3, dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook s 12-inčnim Retina zaslonom, predstavljen sredinom 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(izvorno)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-inčni MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air s 11-inčnim zaslonom, predstavljen završetkom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air s 13-inčnim zaslonom, predstavljen završetkom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-inčni MacBook Air (sredina 2011.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 11-inčnim zaslonom, predstavljen sredinom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Air (sredina 2011.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 13-inčnim zaslonom, predstavljen sredinom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-inčni MacBook Air (sredina 2012.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 11-inčnim zaslonom, predstavljen sredinom 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Air (sredina 2012.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 13-inčnim zaslonom, predstavljen sredinom 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-inčni MacBook Air (sredina 2013.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 11-inčnim zaslonom, predstavljen sredinom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Air (sredina 2013.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 13-inčnim zaslonom, predstavljen sredinom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11-inčni MacBook Air (početak 2015.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 11-inčnim zaslonom, predstavljen početkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Air (početak 2015.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s 13-inčnim zaslonom, predstavljen početkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (završetak 2018.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air s Retina zaslonom i Touch ID-jem, predstavljen završetkom 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (sredina 2019.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air s 13-inčnim Retina zaslonom i Touch ID-jem, predstavljen sredinom 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core Duo i 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core Duo i 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i 15-inčnim ili 17-inčnim zaslonom te Multi-Touch dodirnom površinom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo (aluminijsko kućište) (završetak 2008.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen završetkom 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo (aluminijsko kućište) (početak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen početkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo (aluminijsko kućište) (sredina 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo (aluminijsko kućište) (sredina 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo (aluminijsko kućište) (sredina 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i5, Intel Core i7 (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core i5 ili Intel Core i7, 15-inčnim ili 17-inčnim zaslonom i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i5, Intel Core i7 (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro s procesorom Intel Core i5 ili Intel Core i7, 15-inčnim ili 17-inčnim zaslonom i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core 2 Duo (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s procesorom Intel Core 2 Duo i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2010. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i5, Intel Core i7, 13-inčni (početak 2011.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s dvojezgrenim procesorom Intel Core i5 ili Intel Core i7 i jednodjelnim aluminijskim kućištem, predstavljen početkom 2011. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i7, 15-inčni (početak 2011.)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s četverojezgrenim procesorom Intel Core i7 i jednodjelnim aluminijskim kućištem, predstavljen početkom 2011. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i7, 17-inčni (početak 2011.)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17-inčni MacBook Pro s četverojezgrenim procesorom Intel Core i7 i jednodjelnim aluminijskim kućištem, predstavljen početkom 2011. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i7, 15-inčni (sredina 2012.)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s dvojezgrenim procesorom Intel Core i7 i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2012. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s procesorom Intel Core i5, Intel Core i7, 13-inčni (sredina 2012.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s dvojezgrenim procesorom Intel Core i5 ili Intel Core i7 i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2012. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s Retina zaslonom, procesorom Intel Core i7, 15-inčni (sredina 2012.)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom, dvojezgrenim procesorom Intel Core i7 i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2012. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro s Retina zaslonom, procesorom Intel Core i5, Intel Core i7, 13-inčni (završetak 2012.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s Retina zaslonom, dvojezgrenim procesorom Intel Core i5 ili i7 i jednodjelnim aluminijskim kućištem, predstavljen završetkom 2012. godine.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s Retina zaslonom (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s Retina zaslonom i jednodjelnim aluminijskim kućištem, predstavljen završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom i jednodjelnim aluminijskim kućištem, predstavljen završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom, zasebna grafička kartica NVIDIA (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom i jednodjelnim aluminijskim kućištem, zasebna grafička kartica NVIDIA, predstavljen završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom (sredina 2015.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom i jednodjelnim aluminijskim kućištem, predstavljen sredinom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom (sredina 2015.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s Retina zaslonom i jednodjelnim aluminijskim kućištem, zasebna grafička kartica AMD, predstavljen sredinom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s Retina zaslonom (početak 2015.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s Retina zaslonom i jednodjelnim aluminijskim kućištem, predstavljen početkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3 (završetak 2016.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3, predstavljen krajem 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s Touch Barom (2016.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom, predstavljen krajem 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s Touch Barom (2016.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom, predstavljen krajem 2016.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3 (sredina 2017.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3, predstavljen sredinom 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s Touch Barom (2017.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom, predstavljen sredinom 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s Touch Barom (2017.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom, predstavljen krajem 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom (sredina 2018.)</string>
+			<key>processor</key>
+			<string>Šesterojezgreni Intel Core i7, šesterojezgreni Intel Core i9</string>
+			<key>description</key>
+			<string>15-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom, predstavljen sredinom 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom (sredina 2018.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>13-inčni MacBook Pro s priključnicom Thunderbolt 3 i Touch ID senzorom, predstavljen sredinom 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (sredina 2006.)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stolno tower računalo (aluminijsko kućište).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (sredina 2006.)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stolno tower računalo (aluminijsko kućište).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (početak 2007.)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stolno tower računalo (aluminijsko kućište).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (početak 2008.)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stolno tower računalo (aluminijsko kućište).</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (početak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stolno tower računalo (aluminijsko kućište), predstavljeno početkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>Stolno tower računalo (aluminijsko kućište), predstavljeno sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Pro stolno kućište, predstavljeno završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini s procesorom Intel Core (početak 2006.)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>Kompaktno stolno računalo Mac s procesorom Intel Core 2 Duo, Intel Core Duo ili Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (sredina 2007.)</string>
+			<key>marketingModel</key>
+			<string>Mac mini s procesorom Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Kompaktno stolno računalo Mac s procesorom Intel Core 2 Duo, Intel Core Duo ili Intel Core Solo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini s procesorom Intel Core (početak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini s grafičkom karticom NVIDIA GeForce 9400M, predstavljen početkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini s procesorom Intel Core (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini s grafičkom karticom NVIDIA GeForce 320M, predstavljen sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (sredina 2011.) s grafičkom karticom Intel HD Graphics 3000.</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini s procesorom Intel Dual-Core i5 i grafičkom karticom Intel HD Graphics 3000, predstavljen sredinom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (sredina 2011.) s grafičkom karticom AMD Radeon HD 6630M.</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini s procesorom Intel Dual-Core i5 ili i7 i grafičkom karticom AMD Radeon HD 6630M, predstavljen sredinom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini poslužitelj (sredina 2011.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini poslužitelj s procesorom Dual-Core i7 i grafičkom karticom Intel HD Graphics 3000, predstavljen sredinom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (završetak 2012.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini s dvojezgrenim procesorom i5 i grafičkom karticom Intel HD Graphics 4000, predstavljen završetkom 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (završetak 2012.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini s četverojezgrenim procesorom i7 i grafičkom karticom Intel HD Graphics 4000, predstavljen završetkom 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (završetak 2014.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5, dvojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini s dvojezgrenim Intel procesorom i integriranom grafičkom karticom, predstavljen završetkom 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (završetak 2018.)</string>
+			<key>processor</key>
+			<string>8. generacija Intel procesora (četverojezgreni Core i3, šesterojezgreni Core i5, šesterojezgreni Core i7)</string>
+			<key>description</key>
+			<string>Mac mini s Intel procesorom 8. generacije i grafičkom karticom Intel UHD graphics 630, predstavljen završetkom 2018.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Prijenosno računalo u crnom plastično-gumenom kućištu zaobljenih bočnih strana.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Uključuje izvorni školjkasti prijenosnik jarkih boja s ugrađenom drškom i kasnije četvrtaste modele u srebrno-bijelom plastičnom kućištu s 12-inčnim ili 14-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBook računala bijele boje s procesorom G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBook računala bijele boje s procesorom G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>iBook računala bijele boje s procesorom G4.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Uključuje originalno tankoprofilno kućište od titana s 15-inčnim ravnim zaslonom i kasnije modele u aluminijskom kućištu s 12-inčnim, 15-inčnim ili 17-inčnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Plavo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Plavo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kompaktno stolno računalo Mac s procesorom G4 koje se može spojiti sa gotovo svim LCD ili VGA zaslonima.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Kompaktno stolno računalo Mac s procesorom G4 koje se može spojiti sa gotovo svim LCD ili VGA zaslonima.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Aluminijsko stolno tower računalo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Aluminijsko stolno tower računalo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom G5</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn, uključujući originalno plavo-bijelo plastično kućište, a naknadno će biti dostupni i mnogi drugi stilovi.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn, uključujući originalno plavo-bijelo plastično kućište, a naknadno će biti dostupni i mnogi drugi stilovi.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sivo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sivo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sivo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sivo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sivo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sivo-bijelo stolno tower računalo izrađeno od plastike.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn, uključujući originalno plavo-bijelo plastično kućište, a naknadno će biti dostupni i mnogi drugi stilovi.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn s kupolastom bazom i 15-inčnim, 17-inčnim ili 20-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn s ugrađenim ravnim CRT zaslonom u zaobljenom kućištu koje štedi prostor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn s kupolastom bazom i 15-inčnim, 17-inčnim ili 20-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Prozirno plastično stolno računalo kockastog oblika.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Prozirno plastično stolno računalo kockastog oblika.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn s kupolastom bazom i 15-inčnim, 17-inčnim ili 20-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn s kupolastom bazom i 15-inčnim, 17-inčnim ili 20-inčnim ravnim zaslonom.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Sveobuhvatan dizajn s ugrađenim ravnim CRT zaslonom u zaobljenom kućištu koje štedi prostor.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Aluminijsko stolno tower računalo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Aluminijsko stolno tower računalo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom G5.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom G5.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Aluminijsko stolno tower računalo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Poslužitelj s procesorom G4 u rack izvedbi s optičkim pogonom koji se umeće u pretinac ili u utor te s četiri ležišta za proširenje ili model čvora grozda s procesorom G4 i jednim ležištem za proširenje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>Poslužitelj s procesorom G4 u rack izvedbi s optičkim pogonom koji se umeće u pretinac ili u utor te s četiri ležišta za proširenje ili model čvora grozda s procesorom G4 i jednim ležištem za proširenje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>Poslužiteljsko računalo s procesorom G5 u rack izvedbi s CD ili DVD-ROM pogonom koji se umeće u utor te s tri ležišta za proširenje ili model čvora grozda bez ležišta za proširenje.</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (završetak 2006.)</string>
+			<key>processor</key>
+			<string>Intel Xeon serije 5100</string>
+			<key>description</key>
+			<string>Poslužitelj u rack izvedbi s procesorom Intel Xeon serije 5100, predstavljen završetkom 2006.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (početak 2008.)</string>
+			<key>processor</key>
+			<string>Intel Xeon serije 5400</string>
+			<key>description</key>
+			<string>Poslužitelj u rack izvedbi s procesorom Intel Xeon serije 5400, predstavljen početkom 2008.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (početak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Xeon serije 5500</string>
+			<key>description</key>
+			<string>Poslužitelj u rack izvedbi s procesorom Intel Xeon serije 5500, predstavljen početkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom Intel Core Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>iMac ravnog zaslona s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac s procesorom Intel Core 2 Duo (aluminijsko kućište) (sredina 2007.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20-inčni ili 24-inčni iMac ravnog zaslona (aluminijsko kućište) s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac s procesorom Intel Core 2 Duo (aluminijsko kućište) (početak 2008.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20-inčni ili 24-inčni iMac ravnog zaslona (aluminijsko kućište) s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac s procesorom Intel Core 2 Duo (aluminijsko kućište) (početak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20-inčni ili 24-inčni iMac ravnog zaslona (aluminijsko kućište) s procesorom Intel Core 2 Duo.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac s procesorom Intel Core 2 Duo (zaslon širokog formata, završetak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21,5-inčni ili 27-inčni iMac s LED zaslonom širokog formata, predstavljen završetkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac s procesorom Intel Core i5, Intel Core i7 (zaslon širokog formata, završetak 2009.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-inčni iMac s četverojezgrenim procesorom i LED zaslonom širokog formata, predstavljen završetkom 2009.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>21,5-inčni iMac s LED zaslonom širokog formata, predstavljen sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (sredina 2010.)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-inčni iMac s LED zaslonom širokog formata, predstavljen sredinom 2010.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (početak 2011.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>21,5-inčni iMac sa sučeljem Thunderbolt, predstavljen početkom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (početak 2011.)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27-inčni iMac sa sučeljem Thunderbolt, predstavljen početkom 2011.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (završetak 2012.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (završetak 2012.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 27-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2012.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (početak 2013.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i3</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen početkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 27-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (završetak 2013.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i3</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2013.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (sredina 2014.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen sredinom 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (završetak 2014.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 27-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2014.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (završetak 2015.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom s LED pozadinskim osvjetljenjem, predstavljen završetkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (završetak 2015.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim ili Retina 4K zaslonom, predstavljen završetkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (završetak 2015.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5, četverojezgreni Intel Core i7</string>
+			<key>description</key>
+			<string>iMac s 27-inčnim širokim ili Retina 5K zaslonom, predstavljen završetkom 2015.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (sredina 2017.)</string>
+			<key>processor</key>
+			<string>Dvojezgreni Intel Core i5</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim širokim zaslonom, predstavljen sredinom 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (sredina 2017.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim Retina 4K zaslonom, predstavljen sredinom 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (sredina 2017.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac s 27-inčnim Retina 5K zaslonom, predstavljen sredinom 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27-inčni iMac (početak 2019.)</string>
+			<key>processor</key>
+			<string>Šesterojezgreni Intel Core i5, osmerojezgreni Intel Core i9</string>
+			<key>description</key>
+			<string>iMac s 27-inčnim Retina 5K zaslonom, predstavljen početkom 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21,5-inčni iMac (početak 2019.)</string>
+			<key>processor</key>
+			<string>Četverojezgreni Intel Core i3, šesterojezgreni Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac s 21,5-inčnim Retina 4K zaslonom, predstavljen početkom 2019.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (završetak 2017.)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>iMac Pro s procesorom Xeon W i grafičkom karticom Radeon Pro Vega, predstavljen krajem 2017.</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

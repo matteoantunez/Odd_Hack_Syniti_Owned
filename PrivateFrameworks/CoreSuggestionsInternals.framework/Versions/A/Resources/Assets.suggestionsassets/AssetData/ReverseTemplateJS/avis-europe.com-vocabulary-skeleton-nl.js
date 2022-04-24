@@ -1,0 +1,1 @@
+(function(){return function(){var e={underNameCapture:/Beste\s+(.*),/,pickupDate:/OPHAALDATUM/,dropoffDate:/INLEVERDATUM/,reservationIdCapture:/(?:Uw Avis-reserveringsbevestiging|reservering\s+\(nummer)\s+(.*?)(?:\s|\))/,pickupLocation:/OPHAALLOCATIE/,dropoffLocation:/INLEVERLOCATIE/,cancellation:/Bevestiging annulering/,brandLabel:/Uw reserveringsgegevens:/};return e}}).call();

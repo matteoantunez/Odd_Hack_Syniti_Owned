@@ -1,0 +1,1 @@
+(function(){return function(e,t,o,r){o=o||Scanner.fromMessage(e),r=r||loadHelper("vocab.js")(t);o.setLocale(t);var a=loadHelper("dd_hotel_time.js")(o,r);return a[0]=o.getDateDD(a[0]),a[1]=o.getDateDD(a[1]),a[0]=a[0]&&a[0].iso8601?a[0].iso8601:a[0].toString(),a[1]=a[1]&&a[1].iso8601?a[1].iso8601:a[1].toString(),a}}).call();

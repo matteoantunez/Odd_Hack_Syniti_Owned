@@ -1,0 +1,8 @@
+framework module BookUtility_Private [extern_c] {
+    umbrella header "BookUtility_Private.h"
+    
+    export *
+    module * {
+        export *
+    }
+}

@@ -1,0 +1,175 @@
+{
+  "colors" : {
+    "eyeshadow" : {
+      "name" : "Eyeshadow Stone",
+      "variation" : 0
+    },
+    "facialhair" : {
+      "name" : "Soft Black",
+      "variation" : 0
+    },
+    "foreheadmark" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "earrings_left" : {
+      "name" : "Silver",
+      "variation" : 0
+    },
+    "facewear" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "headwear" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "eyeliner" : {
+      "name" : "Eyeliner Black",
+      "variation" : -1
+    },
+    "eyepatch" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "hair" : {
+      "name" : "Soft Black",
+      "variation" : 0
+    },
+    "facialhairhighlights" : {
+      "name" : "Soft Black",
+      "variation" : 0
+    },
+    "earrings_right" : {
+      "name" : "Silver",
+      "variation" : 0
+    },
+    "outfit" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "browspiercings" : {
+      "name" : "Silver",
+      "variation" : 0
+    },
+    "eyebrows" : {
+      "name" : "Soft Black",
+      "variation" : 0
+    },
+    "lips" : {
+      "name" : "Natural",
+      "variation" : 0
+    },
+    "tonguepiercings" : {
+      "name" : "Silver",
+      "variation" : 0
+    },
+    "nosepiercings" : {
+      "name" : "Silver",
+      "variation" : 0
+    },
+    "mouthpiercings" : {
+      "name" : "Silver",
+      "variation" : 0
+    },
+    "audio_left" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "head" : {
+      "name" : "Yellow",
+      "variation" : 0
+    },
+    "audio_right" : {
+      "name" : "White",
+      "variation" : 0
+    },
+    "blush" : {
+      "name" : "Blush Pink",
+      "variation" : 0
+    },
+    "eyelashes" : {
+      "name" : "Black",
+      "variation" : 0
+    },
+    "eyewear" : {
+      "name" : "Black",
+      "variation" : 0
+    },
+    "sideburns" : {
+      "name" : "Soft Black",
+      "variation" : 0
+    },
+    "highlights" : {
+      "name" : "Soft Black",
+      "variation" : 0
+    },
+    "eyes" : {
+      "name" : "Brown",
+      "variation" : 0
+    }
+  },
+  "minVersion" : 10,
+  "tertiaryColors" : {
+    "outfit" : {
+      "name" : "Black",
+      "variation" : 0.5
+    },
+    "headwear" : {
+      "name" : "Black",
+      "variation" : 0.5
+    }
+  },
+  "secondaryColors" : {
+    "eyewear" : {
+      "name" : "Clear",
+      "variation" : 0
+    },
+    "outfit" : {
+      "name" : "Black",
+      "variation" : -0.5
+    },
+    "headwear" : {
+      "name" : "Black",
+      "variation" : -0.5
+    }
+  },
+  "class" : 2,
+  "presets" : {
+    "ears" : "medium",
+    "outfit" : "sweater",
+    "head" : "round_medium",
+    "beautymarks" : "none",
+    "tonguepiercings" : "none",
+    "teeth" : "default",
+    "facialhair" : "none",
+    "eyepatch" : "none",
+    "eyelashes" : "natural_thin",
+    "eyes" : "large_straight",
+    "eyeshadow" : "none",
+    "nosewear" : "none",
+    "eyewear" : "none",
+    "headwear" : "none",
+    "foreheadmark" : "none",
+    "freckles" : "none",
+    "nose" : "medium",
+    "eyeliner" : "none",
+    "highlights" : "modern",
+    "hair" : "none",
+    "audio_left" : "none",
+    "lips" : "oval_medium",
+    "sideburns" : "none",
+    "audio_right" : "none",
+    "facialhairhighlights" : "gradient",
+    "mouthpiercings" : "none",
+    "earrings_left" : "none",
+    "facewear" : "none",
+    "blush" : "none",
+    "age" : "adult",
+    "browspiercings" : "none",
+    "earrings_right" : "none",
+    "nosepiercings" : "none",
+    "eyebrows" : "even_rounded_thin"
+  },
+  "version" : 10
+}

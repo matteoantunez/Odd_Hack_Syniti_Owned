@@ -1,0 +1,103 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/cam.scnz"
+  },
+  "emoji" : "😯",
+  "identifier" : "hushed_face",
+  "options" : {
+    "duration" : 1
+  },
+  "physicsState" : {
+    "memoji" : {
+      "lowerBack_DYN" : {
+        "offset" : [
+          -0.033567428588867188,
+          -0.62329912185668945,
+          -2.647041696945962e-07
+        ]
+      },
+      "lowerBackLeft_DYN" : {
+        "offset" : [
+          -0.041395187377929688,
+          -0.4233241081237793,
+          0.63932502269744873
+        ]
+      },
+      "lowerBackRight_DYN" : {
+        "offset" : [
+          -0.041394233703613281,
+          -0.42332363128662109,
+          -0.63932502269744873
+        ]
+      },
+      "lowerFront_DYN" : {
+        "offset" : [
+          -0.0044708251953125,
+          -0.6033625602722168,
+          6.7353767008171417e-08
+        ]
+      },
+      "lowerFrontLeft_DYN" : {
+        "offset" : [
+          -0.015293121337890625,
+          0.44145059585571289,
+          0.58695435523986816
+        ]
+      },
+      "lowerFrontRight_DYN" : {
+        "offset" : [
+          -0.015292167663574219,
+          0.44144916534423828,
+          -0.58695423603057861
+        ]
+      },
+      "lowerLeft_DYN" : {
+        "offset" : [
+          -0.03725433349609375,
+          0.027063369750976562,
+          0.86473941802978516
+        ]
+      },
+      "lowerRight_DYN" : {
+        "offset" : [
+          -0.037257194519042969,
+          -0.027058124542236328,
+          0.86473941802978516
+        ]
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browInnerUp" : 1,
+    "browOuterUp_L" : 1,
+    "browOuterUp_R" : 1,
+    "eyeLookDown_L" : 0.16306468844413757,
+    "eyeLookDown_R" : 0.16699407994747162,
+    "eyeWide_L" : 0.99044567346572876,
+    "eyeWide_R" : 1,
+    "jawOpen" : 1,
+    "mouthClose" : 0.11009173095226288,
+    "mouthFrown_L" : 0.18952083587646484,
+    "mouthFrown_R" : 0.2097478061914444,
+    "mouthFunnel" : 0.25,
+    "mouthLowerDown_L" : 0.51669937372207642,
+    "mouthLowerDown_R" : 0.51866400241851807,
+    "mouthPucker" : 0.25,
+    "neckOrientation" : [
+      0.044207267463207245,
+      0,
+      0,
+      0.99902242422103882
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+
+  ]
+}

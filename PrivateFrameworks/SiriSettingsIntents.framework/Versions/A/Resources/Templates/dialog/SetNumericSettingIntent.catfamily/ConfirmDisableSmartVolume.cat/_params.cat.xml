@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SetNumericSettingIntent#ConfirmDisableSmartVolume">
+	<meta name="category" value="Handled"/>
+	<meta name="readyForLoc" value="true"/>
+	<parameters>
+		<parameter name="isStickyOffsetEnabledDown" description="Indicates whether the siri voice volume sticky offset was enabled and lowered for subsequent tts." type="dialog.Boolean"/>
+		<parameter name="isStickyOffsetEnabledUp" description="Indicates whether the siri voice volume sticky offset was enabled and increased for subsequent tts." type="dialog.Boolean"/>
+		<parameter name="action" description="The change the user requested." type="settings.NumericSettingAction"/>
+	</parameters>
+	<meta name="description" value="Inform user of how volume was changed and offer to disable ASV"/>
+</cat>

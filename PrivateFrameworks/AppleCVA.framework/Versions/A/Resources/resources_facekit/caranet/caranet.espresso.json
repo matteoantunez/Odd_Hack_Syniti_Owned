@@ -1,0 +1,1 @@
+{"Configurations": ["1", "2", "3", "4"], "Inputs": ["network-inputs/transpose:0_bridge", "network-inputs/transpose_1:0_bridge"], "Outputs": ["bs_latent_output", "angles_output", "translation_output", "gaze_output", "failure_logit_output", "tongue_logits_output"], "tongue_checkpoint_id": 467974, "Checkpoints": {"caranet": 666184}}

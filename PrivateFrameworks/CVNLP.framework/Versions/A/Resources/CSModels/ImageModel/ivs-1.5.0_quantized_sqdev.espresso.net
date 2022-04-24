@@ -1,0 +1,56 @@
+{
+  "layers" : [
+    {
+      "bottom" : "image",
+      "top_shapes" : [
+        {
+          "k" : 14,
+          "w" : 1,
+          "n" : 1,
+          "_rank" : 4,
+          "h" : 1
+        }
+      ],
+      "weights" : {
+
+      },
+      "id" : 0,
+      "platform" : 10007,
+      "debug_info" : "",
+      "top" : "leaf\/probabilities",
+      "type" : "dev_op",
+      "name" : "dev_op__0",
+      "bottom_shapes" : [
+        {
+          "k" : 3,
+          "w" : 299,
+          "n" : 1,
+          "_rank" : 4,
+          "h" : 299
+        }
+      ]
+    }
+  ],
+  "transform_params" : {
+    "image" : {
+      "bias_a" : 0,
+      "bias_g" : -1,
+      "bias_r" : -1,
+      "bias_b" : -1,
+      "center_mean" : 0,
+      "is_network_bgr" : 0,
+      "scale" : 0.0078431377187371254
+    }
+  },
+  "storage" : "ivs-1.5.0_quantized_sqdev.espresso.weights",
+  "metadata_in_weights" : [
+
+  ],
+  "properties" : {
+    "experimental.ane.dev_op_override" : "ivs-1.5.0_quantized.espresso.net"
+  },
+  "analyses" : {
+
+  },
+  "format_version" : 200
+}

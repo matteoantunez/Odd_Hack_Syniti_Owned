@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#SettingNavigationButtonText">
+
+    <meta name="description" value="Settings navigation button label."/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="setting" type="settings.BinarySetting" description="The setting being linked to."/>
+        <parameter name="isFocus" type="dialog.Boolean" description="Flag indicating that a general Focus Settings label is to be used rather than setting name based one."/>
+    </parameters>
+    
+</cat>

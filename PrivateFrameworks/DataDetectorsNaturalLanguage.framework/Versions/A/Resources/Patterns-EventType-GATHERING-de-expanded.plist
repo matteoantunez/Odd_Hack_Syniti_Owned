@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GATHERING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>FAIRLY_GENERIC</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(bei|zu) (mir|dir|ihr|ihm|uns|euch|denen|ihnen) (ab|rum)(hängen|chillen)</string>
+			<string>(mäde?ls|männer|frauen)(abend|nachmittag|nacht)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::ANNIVERSARY</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<false/>
+		<key>ALLOW_GENERIC_PATTERNS_KEYWORDS</key>
+		<string>NO</string>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>HIGH_PRIORITY</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(hochzeits|jahres)tag</string>
+			<string>jubiläum</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Jubiläum</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::ANNIVERSARY::BIRTHDAY</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>ALLOW_GENERIC_PATTERNS_KEYWORDS</key>
+		<string>NO</string>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>HIGH_PRIORITY</key>
+		<true/>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?&lt;!(alles gute zu(m| deinem) |(beste|herzlichen) glückw(u|ü)nsche? zu(m| deinem) ))geburtstag</string>
+			<string>geburtstag(spicknick|sfrühstück)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>([0-9][0-9]? jahre|party)</string>
+		<key>TITLE</key>
+		<string>Geburtstag</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::BBQ</key>
+	<dict>
+		<key>DURATION</key>
+		<string>240</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>bbq</string>
+			<string>barbecue</string>
+			<string>grillen</string>
+			<string>angrillen</string>
+			<string>abgrillen</string>
+		</array>
+		<key>START_TIME</key>
+		<string>03:00 PM</string>
+		<key>TITLE</key>
+		<string>Grillen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::CEREMONY</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>jugendweihe</string>
+			<string>(\w*)(-)?zeremonie</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Zeremonie</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::CEREMONY::MORNING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+		</array>
+		<key>START_TIME</key>
+		<string>10:00 AM</string>
+		<key>TITLE</key>
+		<string>Zeremonie</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::CEREMONY::WEDDING</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>heiraten</string>
+			<string>hochzeit</string>
+			<string>heirat</string>
+			<string>trauung</string>
+			<string>ringtausch</string>
+			<string>den bund der ehe</string>
+			<string>hochzeitsfeier</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>hochzeit</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(drink|martini)s?</string>
+			<string>(champagner|wein|chardonnay|pinot grigio|sauvignon|cabernet|pinot|merlot|burgunder|sekt)</string>
+			<string>(kühles|frisches) (dunkles|helles|blondes)</string>
+			<string>(bier|wein)(chen)?</string>
+			<string>(schoppen|helle(s)|koelsch|kölsch|(weiss|wei(ß|ss)|rot)?wein|glas (.{3,30})) (zu )?trinken</string>
+			<string>(riesling|müller-thurgau|silvaner|grauburgunder|kerner|wei(ß|ss)burgunder|bacchus|scheurebe|gutedel|chardonnay|traminer|faberrebe)</string>
+			<string>wei(ss|(ß|ss))bier(e)</string>
+			<string>(stamm|eck)?kneipe(ntour)?</string>
+			<string>(?&lt;!in )bar</string>
+			<string>(🍻|🍷|🍹|🍾|🍸)</string>
+			<string>(im pub|schenke)</string>
+			<string>(besaufen|saufen|einen heben|bechern|zechen|betrinken)</string>
+			<string>was trinken gehen</string>
+			<string>in den pub</string>
+			<string>noch.{0,20}(?&lt;! zu) trinken</string>
+			<string>(wein|bier)(verkostung|probe)</string>
+		</array>
+		<key>START_TIME</key>
+		<string>06:00 PM</string>
+		<key>TITLE</key>
+		<string>Drinks</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::COCKTAIL</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>cocktails?</string>
+		</array>
+		<key>START_TIME</key>
+		<string>06:00 PM</string>
+		<key>TITLE</key>
+		<string>Cocktails</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::COFFEE</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>kaffeepause</string>
+			<string>[☕☕️]</string>
+			<string>((fra|ca)ppuccino|caf[eé]tiero|caff([eè]|[eé])|macchiato|mocha|kaffee|käffchen).{0,20}? (trinken|treffen|(vorbei|mit)(zu)?kommen)</string>
+			<string>(trinken|treffen|(vorbei|mit)(zu)?kommen).{0,20}? ((fra|ca)ppuccino|caf[eé]tiero|caff([eè]|[eé])|macchiato|mocha|kaffee|käffchen)</string>
+			<string>(bei|zu|von).{0,10}? (starbucks|san francisco coffee company|mc ?caf[eé]|dunkin['’]? donuts).{0,20}? (treffen|gehen|trinken)</string>
+			<string>ins caf[eé] gehen</string>
+			<string>(zeit für|lust auf|wie sieht es|was (haltet|hältst|denkst|denkt)).{0,10}? ((fra|ca)ppuccino|caf[eé]tiero|caff([eè]|[eé])|macchiato|mocha|kaffee|käffchen)</string>
+			<string>(zu|auf (einen)?) kaffee und kuchen</string>
+		</array>
+		<key>TITLE</key>
+		<string>Kaffee</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::HAPPY_HOUR</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>happy[- ]?hour</string>
+		</array>
+		<key>START_TIME</key>
+		<string>05:00 PM</string>
+		<key>TITLE</key>
+		<string>Happy Hour</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+	</dict>
+	<key>GATHERING::DRINKS::HOTCHOCOLATE</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(hei(ß|ss)e(n)?) schokolade</string>
+		</array>
+		<key>START_TIME</key>
+		<string>3:00 PM</string>
+		<key>TITLE</key>
+		<string>Heiße Schokolade</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::DRINKS::TEA</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(?!abwarten und )tee .{0,40}(zu ?)?trinken</string>
+			<string>(?!abwarten und )🍵 .{0,40}(zu ?)?trinken</string>
+			<string>(ei)ne tasse tee</string>
+			<string>(ei)ne tasse 🍵</string>
+			<string>(im|in (ei)nem|in der|in das|ins|in die).{0,10} tee ?(stube|haus)</string>
+			<string>(im|in (ei)nem|in der|in das|ins|in die).{0,10} 🍵 ?(stube|haus)</string>
+			<string>teetrinken</string>
+			<string>🍵trinken</string>
+			<string>auf ?(einen|nen)? tee</string>
+			<string>auf ?(einen|nen)? 🍵</string>
+			<string>teepause</string>
+		</array>
+		<key>START_TIME</key>
+		<string>3:00 PM</string>
+		<key>TITLE</key>
+		<string>Tee</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>essen</string>
+			<string>restaurant</string>
+			<string>steakhaus</string>
+			<string>mahlzeit</string>
+			<string>(fast ?food|suppe|ramen|pasta|noodles?|sushi(s)?|pizza(s)?|pizzen|döner|(cheese)?(burger)(s)?|burrito(s)?|salate?|dim sum)</string>
+			<string>(italiener|brasilianer|grieche|chinesisch essen|mexikaner)</string>
+			<string>pizzeria</string>
+			<string>(etwas|eine(n happen| kleinigkeit)) essen</string>
+			<string>einen tischen (gebucht|buchen|reserviert|reservieren)</string>
+			<string>tisch (.{0,50})reservier(en|t)</string>
+			<string>(🍕|🍔|🍟|🍴|🍣|🍲|🍝|🍳|🍜|🌯|🌮|🍛|🍱)</string>
+			<string>take ?away</string>
+			<string>fisch</string>
+			<string>m(a)cdonald(['’]| ?)s</string>
+			<string>salat(bar)?</string>
+			<string>(quesadillas|spaghetti|kässpätzle)</string>
+			<string>catering service</string>
+			<string>buffet</string>
+			<string>frühstücksbuffet</string>
+			<string>bekochen</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Gemeinsames Essen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::BREAKFAST</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>frühstück(en)?</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>08:00 AM</string>
+		<key>START_TIME_MAX</key>
+		<string>10:30 AM</string>
+		<key>START_TIME_MIN</key>
+		<string>06:00 AM</string>
+		<key>TITLE</key>
+		<string>Frühstück</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<true/>
+	</dict>
+	<key>GATHERING::MEAL::BRUNCH</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(brunch|brunchen)</string>
+			<string>frühstücksbrunch</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>11:00 AM</string>
+		<key>START_TIME_MAX</key>
+		<string>2:00 PM</string>
+		<key>START_TIME_MIN</key>
+		<string>10:00 AM</string>
+		<key>TITLE</key>
+		<string>Brunch</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::DINNER</key>
+	<dict>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(lust|bock|zeit) .{0,30}abendessen( zusammen| heute| (über)?morgen| spät(er)?)?</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?) abendessen</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)( zu| am)? abend .{0,30}essen</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?) abend zu essen</string>
+			<string>mit (dir|mir|uns|euch)( zusammen| heute| (über)?morgen| spät(er)?)? abendessen</string>
+			<string>mit (dir|mir|uns|euch)( zusammen| heute| (über)?morgen| spät(er)?)?( zu| am)? abend( )?essen</string>
+			<string>mit (dir|mir|uns|euch)( zusammen| heute| (über)?morgen| spät(er)?)? abend zu essen</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)? abendessen mit (dir|mir|uns|euch)</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)?( zu| am)? abend( )?essen mit (dir|mir|uns|euch)</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)? abend zu essen mit (dir|mir|uns|euch)</string>
+			<string>abendessen .{0,20}?(ein(ge)?laden|revanchieren|ausführen|(aus|weg)gehen|koche(n)?|bestellen|bestellt|auswählen|ausgewählt)</string>
+			<string>abend zum essen .{0,20}?(einlade|revanchiere|ausführe|(aus|weg)gehe|koche|brate|backe|bestelle|auswähle)(n)?</string>
+			<string>abend zum essen .{0,20}?(eingeladen|revanchiert|ausgeführt|(aus|weg)gegangen|gekocht|gebraten|gebackt|gebacken|bestellt|ausgewählt)</string>
+			<string>wir (heute|(über)?morgen|spät(er)?)( zu| am)? abend( zusammen| mit (dir|mir|uns|euch)| auswärts)? .{0,30}(esse|bestelle|koche|brate|backe)(n)?</string>
+			<string>(heute|(über)?morgen|spät(er)?)( zu| am)? abend( zusammen| mit (dir|mir|uns|euch)| auswärts) .{0,30}(esse|bestelle|koche|brate|backe)(n)?</string>
+			<string>(koche|grille)(n)? .{0,20} zum abendessen</string>
+			<string>(tisch(e)?|platz|plätze) für (heute|(über)?morgen) abend .{0,20}?(reserviert|reservierst|reservieren|bestellt|bestellst|bestellen)</string>
+			<string>für (heute|(über)?morgen) abend .{0,20}?(tisch(e)?|platz|plätze) .{0,20}?(reserviert|reservierst|reservieren|bestellt|bestellst|bestellen)</string>
+			<string>(reserviere|reservierst|reservieren|bestelle|bestellst|bestellen) .{0,20}?für (heute|(über)?morgen) abend .{0,20}?(tisch(e)?|platz|plätze)</string>
+			<string>abendbrot</string>
+			<string>abendessen</string>
+			<string>nachtessen</string>
+			<string>nachtmahl</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>07:00 PM</string>
+		<key>START_TIME_MAX</key>
+		<string>10:00 PM</string>
+		<key>START_TIME_MIN</key>
+		<string>05:00 PM</string>
+		<key>TITLE</key>
+		<string>Abendessen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<true/>
+	</dict>
+	<key>GATHERING::MEAL::DINNER::MOVIES</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(netflix|dvd|film|movie)( |-)?(dinner|essen)</string>
+			<string>film und abendessen</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>MOVIE_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>7:00 PM</string>
+		<key>TITLE</key>
+		<string>Film-Dinner</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::ICECREAM</key>
+	<dict>
+		<key>DURATION</key>
+		<string>60</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(eis ?essen|eisdiele)</string>
+			<string>auf ein eis</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>3:00 PM</string>
+		<key>TITLE</key>
+		<string>Eisessen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::MEAL::LUNCH</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>60</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(lust|bock|zeit) .{0,30}mittagessen( zusammen| heute| (über)?morgen| spät(er)?)?</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?) mittagessen</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)( zu| am)? mittag .{0,30}essen</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?) mittag zu essen</string>
+			<string>mit (dir|mir|uns|euch)( zusammen| heute| (über)?morgen| spät(er)?)? mittagessen</string>
+			<string>mit (dir|mir|uns|euch)( zusammen| heute| (über)?morgen| spät(er)?)?( zu| am)? mittag( )?essen</string>
+			<string>mit (dir|mir|uns|euch)( zusammen| heute| (über)?morgen| spät(er)?)? mittag zu essen</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)? mittagessen mit (dir|mir|uns|euch)</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)?( zu| am)? mittag( )?essen mit (dir|mir|uns|euch)</string>
+			<string>(zusammen|heute|(über)?morgen|spät(er)?)? mittag zu essen mit (dir|mir|uns|euch)</string>
+			<string>mittagessen .{0,20}?(ein(ge)?laden|revanchieren|ausführen|(aus|weg)gehen|koche(n)?|bestellen|bestellt|auswählen|ausgewählt)</string>
+			<string>mittag zum essen .{0,20}?(einlade|revanchiere|ausführe|(aus|weg)gehe|koche|brate|backe|bestelle|auswähle)(n)?</string>
+			<string>mittag zum essen .{0,20}?(eingeladen|revanchiert|ausgeführt|(aus|weg)gegangen|gekocht|gebraten|gebackt|gebacken|bestellt|ausgewählt)</string>
+			<string>(heute|(über)?morgen|spät(er)?)( zu| am)? mittag( zusammen| mit (dir|mir|uns|euch)| auswärts)? .{0,30}(esse|bestelle|koche|brate|backe)(n)?</string>
+			<string>(koche|grille)(n)? .{0,20} zum mittagessen</string>
+			<string>(tisch(e)?|platz|plätze) für (heute|(über)?morgen) mittag .{0,20}?(reserviert|reservierst|reservieren|bestellt|bestellst|bestellen)</string>
+			<string>für (heute|(über)?morgen) mittag .{0,20}?(tisch(e)?|platz|plätze) .{0,20}?(reserviert|reservierst|reservieren|bestellt|bestellst|bestellen)</string>
+			<string>(reserviere|reservierst|reservieren|bestelle|bestellst|bestellen) .{0,20}?für (heute|(über)?morgen) mittag .{0,20}?(tisch(e)?|platz|plätze)</string>
+			<string>(in der|zur) mittagspause</string>
+			<string>mittags(menü|tisch|karte) (bestellen|aus(wählen|suchen))</string>
+			<string>(bestellen|aus(wählen|suchen)) .{0,30}mittags(menü|tisch|karte)</string>
+			<string>(bestell|wähl|such) .{0,30}mittags(menü|tisch|karte)</string>
+			<string>mit dem mittagstisch</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>START_TIME_MAX</key>
+		<string>02:00 PM</string>
+		<key>START_TIME_MIN</key>
+		<string>11:00 AM</string>
+		<key>TITLE</key>
+		<string>Mittagessen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<true/>
+		<key>USE_FOR_TIME_ADJUSTMENT</key>
+		<true/>
+	</dict>
+	<key>GATHERING::MEAL::SNACK</key>
+	<dict>
+		<key>DURATION</key>
+		<string>30</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>snack</string>
+			<string>einen happen</string>
+		</array>
+		<key>MEAL_RELATED</key>
+		<true/>
+		<key>START_TIME</key>
+		<string>4:30 PM</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(\w*)(-)?(party|feier|fete|festessen|gala)</string>
+			<string>einstand feiern</string>
+			<string>(boys|girls|ladies|single)[- ]?(night)</string>
+			<string>ü(30|40|50)[- ]?party</string>
+		</array>
+		<key>START_TIME</key>
+		<string>8:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>.{0,15}party</string>
+		<key>TITLE</key>
+		<string>Party</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::BIRTHDAY</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>geburtstag[- s]?(party|feiern?)</string>
+		</array>
+		<key>START_TIME</key>
+		<string>8:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>([0-9][0-9]? jahre|party)</string>
+		<key>TITLE</key>
+		<string>Geburtstagsfeier</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::CLUBBING</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(dis[kc]o|club|tanzen) (zu )?gehen</string>
+			<string>(nacht|tanz)club</string>
+		</array>
+		<key>START_TIME</key>
+		<string>09:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Nachtclub</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::COCKTAIL</key>
+	<dict>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>cocktail[- ]?party</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Cocktailparty</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::GRADUATION</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(abi|abschluss)(-?)(party|ball|feier|fete|festessen|gala|zeremonie)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Abschlussfeier</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::HOUSEWARMING</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>einweihungs(-?)(party|ball|feier|fete)</string>
+		</array>
+		<key>START_TIME</key>
+		<string>08:00 PM</string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Einweihungsfeier</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::RETIREMENT</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(ruhestand|p[ae]nsionierung)[- ]?(s)?(party|ball|feier|fete)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>party</string>
+		<key>TITLE</key>
+		<string>Ruhestandsfeier</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PARTY::WEDDING</key>
+	<dict>
+		<key>ALLDAY_ALLOWED</key>
+		<true/>
+		<key>DURATION</key>
+		<integer>180</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(hochzeit|heiraten)[- s]?(party|feier)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>SUBJECT_KEYWORDS</key>
+		<string>(party|hochzeit)</string>
+		<key>TITLE</key>
+		<string></string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::PICNIC</key>
+	<dict>
+		<key>DURATION</key>
+		<string>180</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(pic(-)?nic|pique(-)?nique|pick(-)?nick)</string>
+			<string>picknicken</string>
+			<string>picknickkorb</string>
+		</array>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>TITLE</key>
+		<string>Picknick</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::POTLUCK</key>
+	<dict>
+		<key>DURATION</key>
+		<string>120</string>
+		<key>KEYWORDS</key>
+		<array>
+			<string>potluck</string>
+			<string>mitbring[- ]?(party|buffet|feier)</string>
+		</array>
+		<key>START_TIME</key>
+		<string>12:00 PM</string>
+		<key>TITLE</key>
+		<string>Potluck</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::REUNION</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>gemeinsames treffen</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Gemeinsames Treffen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::REUNION::ALUMNI</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(klassen|stufen|alumni|abi|ehemaligen)-?treffen</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Ehemaligentreffen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+	<key>GATHERING::REUNION::FAMILY</key>
+	<dict>
+		<key>DURATION</key>
+		<integer>120</integer>
+		<key>KEYWORDS</key>
+		<array>
+			<string>(familien|family )(treffen|fest|feier|fete)</string>
+		</array>
+		<key>START_TIME</key>
+		<string></string>
+		<key>TITLE</key>
+		<string>Familientreffen</string>
+		<key>USE_DEFAULT_TIME</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

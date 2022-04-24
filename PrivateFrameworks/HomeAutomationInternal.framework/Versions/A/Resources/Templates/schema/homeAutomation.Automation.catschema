@@ -1,0 +1,32 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.Automation
+
+inputs:
+  trigger:
+    access_mode: public
+    optional: no
+  recurrence:
+    access_mode: public
+    
+properties:
+  trigger:
+    type: homeAutomation.DialogTrigger
+    optional: no
+    description: Describes the conditions for which the automation will run
+  recurrence:
+    type: dialog.Duration
+    description: Describes the recurrence at which the automation is evaluated
+  willTriggerOnUserLeaveHome:
+    type: dialog.Boolean
+    description: True if the event based trigger will trigger when the user leaves their home
+  willTriggerOnUserArriveHome:
+    type: dialog.Boolean
+    description: True if the event based trigger will trigger when the user arrives at their home
+  willTriggerOnSunrise:
+    type: dialog.Boolean
+    description: True if the event based trigger will trigger at (or around) Sunrise
+  willTriggerOnSunset:
+    type: dialog.Boolean
+    description: True if the event based trigger will trigger at (or around) Sunset
+

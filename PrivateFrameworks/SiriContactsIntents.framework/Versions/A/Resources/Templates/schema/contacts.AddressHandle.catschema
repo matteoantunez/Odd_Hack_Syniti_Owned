@@ -1,0 +1,18 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.AddressHandle
+
+inputs:
+    addressLabel:
+        access_mode: public
+    addressHandle:
+        access_mode: public
+
+properties:
+    addressLabel:
+        type: dialog.String
+        description: Handle label semantic concept for address
+        semantic_concept: addressType
+    addressHandle:
+        type: dialog.Location
+        description: Location dialog concept representing address. Don't use name, use addressLabel from this type only.

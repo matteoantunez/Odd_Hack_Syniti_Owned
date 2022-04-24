@@ -1,0 +1,37 @@
+graphName "BuiltInMic"
+
+; -------------------------------------------------------------------------
+; Definitions
+; -------------------------------------------------------------------------
+
+[def sampleRateIn 44100]
+[def numChannelsIn 2]
+
+; -------------------------------------------------------------------------
+; Graph Ins and Outs
+; -------------------------------------------------------------------------
+
+in in
+out out
+
+; -------------------------------------------------------------------------
+; Boxes and AUs
+; -------------------------------------------------------------------------
+box AUChannelSelector (aufx clsl appl) 1 1
+box AUFIRFilter (aufx firf appl) 1 1
+box AUNBandEQ (aufx nbeq appl) 1 1
+
+; -------------------------------------------------------------------------
+; DSP Graph topology
+; -------------------------------------------------------------------------
+wire in AUChannelSelector ([sampleRateIn] [numChannelsIn])
+wire AUChannelSelector AUFIRFilter ([sampleRateIn] [numChannelsIn])
+wire AUFIRFilter AUNBandEQ ([sampleRateIn] [numChannelsIn])
+wire AUNBandEQ out ([sampleRateIn] [numChannelsIn])
+
+
+; -------------------------------------------------------------------------
+; Graph parameters and properties
+; -------------------------------------------------------------------------
+property slcm in
+wireGraphProperty slcm (AUChannelSelector 1936483181 0 0)

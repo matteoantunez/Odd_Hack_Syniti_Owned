@@ -1,0 +1,29 @@
+#CAT-SCHEMA 1.0
+
+name: settings.MultiSetting
+extends: settings.Setting
+
+inputs:
+    name:
+        type: dialog.String
+        description: The full name of the setting.
+        optional: no
+        access_mode: public
+    value:
+        type: dialog.Boolean
+        description: The value of the setting prior to the Siri request.
+        optional: no
+        access_mode: public
+
+properties:
+    name:
+        type: dialog.String
+        semantic_concept: multiSettingName
+        description: The full name of the setting.
+        sample_value: Announce Messages By Siri
+        optional: no
+    value:
+        type: dialog.Boolean
+        description: The value of the setting prior to the Siri request.
+        sample_value: on, off
+        optional: no

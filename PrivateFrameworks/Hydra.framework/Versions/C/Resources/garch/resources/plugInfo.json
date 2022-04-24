@@ -1,0 +1,30 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Types": {
+                    "GarchPtexTexture" : {
+                        "bases": ["GarchTexture"],
+                        "textureTypes": ["ptx", "ptex"],
+                        "precedence": 1
+                    },
+                    "GarchUVTexture" : {
+                        "bases": ["GarchBaseTexture"],
+                        "textureTypes": ["*"],
+                        "precedence": 0
+                    },
+                    "GarchBaseTexture" : {
+                        "bases": ["GarchTexture"],
+                        "textureTypes": [],
+                        "precedence": 3
+                    }
+                }
+            },
+            "LibraryPath": "",
+            "Name": "garch",
+            "ResourcePath": "resources",
+            "Root": "..",
+            "Type": "library"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnablePressuredExit</key>
+	<false/>
+	<key>Label</key>
+	<string>com.apple.iomfb_fdr_loader</string>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>ExitTimeOut</key>
+	<integer>5</integer>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/IOMFB_FDR_Loader</string>
+		<string>--launchd_boot</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>com.apple.fdr.load</key>
+			<dict>
+				<key>IOPropertyMatch</key>
+				<dict>
+					<key>IOMFBLaunchFDR</key>
+					<true/>
+				</dict>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+				<key>IOMatchAll</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

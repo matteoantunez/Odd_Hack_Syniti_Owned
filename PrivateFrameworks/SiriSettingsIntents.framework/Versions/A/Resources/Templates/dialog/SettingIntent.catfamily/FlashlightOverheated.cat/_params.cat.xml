@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="SettingIntent#FlashlightOverheated">
+    <meta name="description" value="User requested to turn on flashlight but it's currently overheated and needs to cool down."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="readyForLoc" value="true"/>
+
+    <parameters></parameters>
+</cat>

@@ -1,0 +1,49 @@
+{
+  "camera" : {
+    "name" : "stickerCam",
+    "scene" : "../../shared/cam.scnz"
+  },
+  "identifier" : "person_with_tissue",
+  "options" : {
+    "presetOverrides" : {
+      "facewear" : {
+        "value" : "none"
+      }
+    }
+  },
+  "pose" : {
+    "bakedAnimationBlendFactor" : 0,
+    "browDown_L" : 0.62939345836639404,
+    "browDown_R" : 0.58466458320617676,
+    "cheekSquint_L" : 1,
+    "cheekSquint_R" : 1,
+    "eyeBlink_L" : 1,
+    "eyeBlink_R" : 1,
+    "eyeSquint_L" : 0.7698630690574646,
+    "eyeSquint_R" : 0.73972600698471069,
+    "mouthFrown_L" : 0.78913736343383789,
+    "mouthFrown_R" : 0.6996806263923645,
+    "neckOrientation" : [
+      0,
+      0,
+      0,
+      1
+    ],
+    "neckPosition" : [
+      0,
+      0,
+      0
+    ]
+  },
+  "props" : [
+    {
+      "palettes" : [
+        {
+          "material" : "skin_MAT",
+          "palette" : "skin"
+        }
+      ],
+      "scene" : "tissue.scnz"
+    }
+  ]
+}

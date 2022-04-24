@@ -1,0 +1,17 @@
+#CAT-SCHEMA 1.0
+
+name: contacts.BirthdayInfo
+
+inputs:
+    birthday:
+        access_mode: public
+    durationUntilBirthday:
+        access_mode: public
+    
+properties:
+    birthday:
+        type: dialog.Calendar
+        description: Representation of a birthday with various supporting properties.
+    durationUntilBirthday:
+        type: dialog.String
+        description: Duration from today until birthday. Represented as a String and not a Number.

@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook, Intel Core Duo प्रोसेसर के साथ काले या सफ़ेद रंग में उपलब्ध।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, Intel Core 2 Duo प्रोसेसर के साथ काले या सफ़ेद रंग में उपलब्ध।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, Intel Core 2 Duo प्रोसेसर के साथ काले या सफ़ेद रंग में उपलब्ध।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, Intel Core 2 Duo प्रोसेसर के साथ काले या सफ़ेद रंग में उपलब्ध।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (ऐल्यूमिनियम यूनिबॉडी)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, Intel Core 2 Duo, ऐल्यूमिनियम यूनिबॉडी के साथ 2008 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (सफ़ेद, 2009 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>सफ़ेद MacBook, Intel Core 2 Duo प्रोसेसर के साथ 2009 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (सफ़ेद, 2009 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>सफ़ेद MacBook, Intel Core 2 Duo प्रोसेसर और LED डिस्प्ले के साथ 2009 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>MacBook Intel Core 2 Duo (सफ़ेद, 2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook, Intel Core 2 Duo प्रोसेसर और सफ़ेद यूनिबॉडी फ़्रेम के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12" MacBook (2015 के शुरू में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core M</string>
+			<key>description</key>
+			<string>12" MacBook, Retina डिस्प्ले के साथ 2015 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12" MacBook (2016 के शुरू में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core m3, ड्युअल-कोर Intel Core m5, ड्युअल-कोर Intel Core m7</string>
+			<key>description</key>
+			<string>12" MacBook, Retina डिस्प्ले के साथ 2016 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBook10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook</string>
+			<key>marketingModel</key>
+			<string>12" MacBook (2017 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core m3, ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook, 12" Retina डिस्प्ले के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>(मूल)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, Intel Core 2 Duo के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, Intel Core 2 Duo के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, 11" डिस्प्ले के साथ 2010 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Air, 13" डिस्प्ले के साथ 2010 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2011 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 11" डिस्प्ले के साथ 2011 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2011 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 13" डिस्प्ले के साथ 2011 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2012 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 11" डिस्प्ले के साथ 2012 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2012 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 13" डिस्प्ले के साथ 2012 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2013 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 11" डिस्प्ले के साथ 2013 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2013 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 13" डिस्प्ले के साथ 2013 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>11" MacBook Air (2015 के शुरू में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 11" डिस्प्ले के साथ 2015 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Air (2015 के शुरू में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, 13" डिस्प्ले के साथ 2015 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (2018 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Air, Retina डिस्प्ले और Touch ID के साथ 2018 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookAir8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Air</string>
+			<key>marketingModel</key>
+			<string>MacBook Air (2019 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5</string>
+			<key>description</key>
+			<string>MacBook Air, 13" Retina डिस्प्ले और Touch ID के साथ 2019 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core Duo प्रोसेसर और 15" या 17" डिस्प्ले के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core Duo प्रोसेसर और 15" या 17" डिस्प्ले के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>MacBookPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo प्रोसेसर और 15" या 17" डिस्प्ले के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>marketingModel</key>
+			<string>(Core 2 Duo)</string>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo प्रोसेसर और 15" या 17" डिस्प्ले के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo प्रोसेसर और 15" या 17" डिस्प्ले के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo प्रोसेसर, 15" या 17" डिस्प्ले और Multi-Touch ट्रैकपैड के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (ऐल्यूमिनियम यूनिबॉडी) (2008 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo, ऐल्यूमिनियम यूनिबॉडी के साथ 2008 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (ऐल्यूमिनियम यूनिबॉडी) (2009 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo, ऐल्यूमिनियम यूनिबॉडी के साथ 2009 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (ऐल्यूमिनियम यूनिबॉडी) (2009 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo, ऐल्यूमिनियम यूनिबॉडी के साथ 2009 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (ऐल्यूमिनियम यूनिबॉडी) (2009 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo, ऐल्यूमिनियम यूनिबॉडी के साथ 2009 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (ऐल्यूमिनियम यूनिबॉडी) (2009 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core 2 Duo, ऐल्यूमिनियम यूनिबॉडी के साथ 2009 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core i5 या Intel Core i7 प्रोसेसर, 15" या 17" डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7 (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>MacBook Pro, Intel Core i5 या Intel Core i7 प्रोसेसर, 15" या 17" डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core 2 Duo (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>13" MacBook Pro, Intel Core 2 Duo प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13" (2011 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13" MacBook Pro, ड्युअल-कोर Intel Core i5 या Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2011 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15" (2011 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, क्वॉड-कोर Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2011 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro8,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 17" (2011 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>17" MacBook Pro, क्वॉड-कोर Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2011 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i7, 15" (2012 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, ड्युअल-कोर Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2012 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro9,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro Intel Core i5, Intel Core i7, 13" (2012 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13" MacBook Pro, ड्युअल-कोर Intel Core i5 या Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2012 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro, Retina डिस्प्ले, Intel Core i7, 15" के साथ (2012 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले, ड्युअल-कोर Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2012 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>MacBook Pro, Retina डिस्प्ले, Intel Core i5, Intel Core i7, 13" के साथ (2012 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>13" MacBook Pro, Retina डिस्प्ले, ड्युअल-कोर Intel Core i5 या Intel Core i7 प्रोसेसर और ऐल्यूमिनियम यूनिबॉडी के साथ 2012 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Retina डिस्प्ले के साथ (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13" MacBook Pro, Retina डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी के साथ 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले के साथ (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी के साथ 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले, डिस्क्रीट NVIDIA ग्राफ़िक्स के साथ (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी, डिस्क्रीट NVIDIA ग्राफ़िक्स के साथ 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले के साथ (2015 के मध्य में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी के साथ 2015 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro11,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले के साथ (2015 के मध्य में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>15" MacBook Pro, Retina डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी, डिस्क्रीट AMD ग्राफ़िक्स के साथ 2015 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Retina डिस्प्ले के साथ (2015 के शुरू में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13" MacBook Pro, Retina डिस्प्ले और ऐल्यूमिनियम यूनिबॉडी के साथ 2015 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Thunderbolt 3 के साथ (2016 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13” MacBook Pro, Thunderbolt 3 के साथ 2016 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Thunderbolt 3 और Touch ID के साथ (2016 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13” MacBook Pro, Thunderbolt 3 और Touch ID के साथ 2016 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Thunderbolt 3 और Touch ID के साथ (2016 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>15” MacBook Pro, Thunderbolt 3 और Touch ID के साथ 2016 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Thunderbolt 3 के साथ (मध्य 2017)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13” MacBook Pro, Thunderbolt 3 के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Thunderbolt 3 और Touch ID के साथ (मध्य 2017)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13” MacBook Pro, Thunderbolt 3 और Touch ID के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Thunderbolt 3 और Touch ID के साथ (मध्य 2017)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>15” MacBook Pro, Thunderbolt 3 और Touch ID के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>15" MacBook Pro, Thunderbolt 3 और Touch ID के साथ (मध्य 2018)</string>
+			<key>processor</key>
+			<string>6-कोर Intel Core i7, 6-कोर Intel Core i9</string>
+			<key>description</key>
+			<string>15” MacBook Pro, Thunderbolt 3 और Touch ID के साथ 2018 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacBookPro15,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>MacBook Pro</string>
+			<key>marketingModel</key>
+			<string>13" MacBook Pro, Thunderbolt 3 और Touch ID के साथ (मध्य 2018)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>13” MacBook Pro, Thunderbolt 3 और Touch ID के साथ 2018 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2006 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>डेस्कटॉप टावर (ऐल्यूमिनियम फ़्रेम)।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro1,1,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2006 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>डेस्कटॉप टावर (ऐल्यूमिनियम फ़्रेम)।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>cores</key>
+		<integer>4</integer>
+	</dict>
+	<key>MacPro2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2007 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>डेस्कटॉप टावर (ऐल्यूमिनियम फ़्रेम)।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2008 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>डेस्कटॉप टावर (ऐल्यूमिनियम फ़्रेम)।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2009 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>डेस्कटॉप टावर (ऐल्यूमिनियम फ़्रेम), 2009 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Xeon</string>
+			<key>description</key>
+			<string>डेस्कटॉप टावर (ऐल्यूमिनियम फ़्रेम), 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>MacPro6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac Pro</string>
+			<key>marketingModel</key>
+			<string>Mac Pro (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Xeon E5</string>
+			<key>description</key>
+			<string>Pro डेस्कटॉप फ़्रेम, 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (2006 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core</string>
+			<key>description</key>
+			<string>कम जगह घेरने वाला डेस्कटॉप Mac, Intel Core 2 Duo, Intel Core Duo या Intel Core Solo प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Macmini2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini (2007 के मध्य में)</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>कम जगह घेरने वाला डेस्कटॉप Mac, Intel Core 2 Duo, Intel Core Duo या Intel Core Solo प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (2009 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini, NVIDIA GeForce 9400M के साथ 2009 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini Intel Core (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>Mac mini, NVIDIA GeForce 320M के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2011 के मध्य में), Intel HD Graphics 3000 के साथ।</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini, Intel Dual-Core i5 और Intel HD Graphics 3000 के साथ 2011 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2011 के मध्य में), AMD Radeon HD 6630M के साथ।</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini, Intel Dual-Core i5 या i7 और AMD Radeon HD 6630M के साथ 2011 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini सर्वर (2011 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini सर्वर, Dual-Core i7 और Intel HD Graphics 3000 के साथ 2011 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2012 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5</string>
+			<key>description</key>
+			<string>Mac mini, ड्युअल-कोर i5 और Intel HD Graphics 4000 के साथ 2012 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2012 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini, क्वॉड-कोर i7 और Intel HD Graphics 4000 के साथ 2012 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2014 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5, ड्युअल-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>Mac mini, Intel ड्युअल-कोर प्रोसेसर और इंटीग्रेटेड ग्राफ़िक्स के साथ 2014 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Macmini8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini (2018 के अंत में)</string>
+			<key>processor</key>
+			<string>आठवीं पीढ़ी का Intel प्रोसेसर (क्वॉड-कोर Core i3, 6-कोर Core i5, 6-कोर Core i7)</string>
+			<key>description</key>
+			<string>Mac mini, आठवीं पीढ़ी के Intel प्रोसेसर और Intel UHD graphics 630 के साथ 2018 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>PowerBook1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Macintosh PowerBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>ख़ूबसूरत किनारों वाले प्लास्टिक और रबर के काले फ़्रेम में पोर्टेबल कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook2,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>बिल्टइन हैंडल के साथ पोर्टेबल सुविधा वाला चमकदार रंगों का "क्लैमशैल" शामिल है, और बाद वाले मॉडलों में 12" या 14" फ़्लैट-पैनल डिस्प्ले के साथ सिल्वर-ह्वाइट रंग के आयताकार प्लास्टिक फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook5,9</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद रंग का iBooks, G4 प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद रंग का iBooks, G4 प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,7</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद रंग का iBooks, G4 प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerBook6,8</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>PowerBook</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>15" फ़्लैट-पैनल डिस्प्ले के साथ पतला टाइटेनियम फ़्रेम शामिल है और बाद वाले मॉडलों में 12", 15" या 17" डिस्प्ले के साथ ऐल्यूमिनियम फ़्रेम लगाए गए।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+		<key>cores</key>
+		<integer>1</integer>
+	</dict>
+	<key>PowerMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>नीले और सफ़ेद रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Macintosh</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>नीले और सफ़ेद रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>कम जगह घेरने वाला डेस्कटॉप Mac G4 जो किसी LCD या VGA डिस्प्ले के साथ कनेक्ट हो जाता है।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac10,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Mac mini</string>
+			<key>marketingModel</key>
+			<string>Mac mini</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>कम जगह घेरने वाला डेस्कटॉप Mac G4 जो किसी LCD या VGA डिस्प्ले के साथ कनेक्ट हो जाता है।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>ऐल्यूमिनियम टावर-शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac11,2,Quad</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>ऐल्यूमिनियम टावर-शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन, जिसमें नीला-सफ़ेद प्लास्टिक फ़्रेम है और बाद में कई "फ़्लेवर" में से पसंदीदा फ़्लेवर चुनने की ख़ूबी शामिल की गई।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac2,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन, जिसमें नीला-सफ़ेद प्लास्टिक फ़्रेम है और बाद में कई "फ़्लेवर" में से पसंदीदा फ़्लेवर चुनने की ख़ूबी शामिल की गई।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद और धूसर रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद और धूसर रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद और धूसर रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद और धूसर रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद और धूसर रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac3,6</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>सफ़ेद और धूसर रंगों से तराशा गया प्लास्टिक टावर शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G3</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन, जिसमें नीला-सफ़ेद प्लास्टिक फ़्रेम है और बाद में कई "फ़्लेवर" में से पसंदीदा फ़्लेवर चुनने की ख़ूबी शामिल की गई।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन जिसमें गुंबदनुमा बेस और 15", 17" या 20" फ़्लैट-पैनल डिस्प्ले की सुविधा है।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>जगह बचाने वाले गोलाकार फ़्रेम में अंर्तर्निहित फ़्लैट-स्क्रीन CRT के साथ ऑल-इन-वन डिज़ाइन।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac4,5</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन जिसमें गुंबदनुमा बेस और 15", 17" या 20" फ़्लैट-पैनल डिस्प्ले की सुविधा है।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>क्यूब आकार का पारदर्शी प्लास्टिक वाला डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac Cube</string>
+			<key>marketingModel</key>
+			<string>Power Mac G4 Cube</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>क्यूब आकार का पारदर्शी प्लास्टिक वाला डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन जिसमें गुंबदनुमा बेस और 15", 17" या 20" फ़्लैट-पैनल डिस्प्ले की सुविधा है।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ऑल-इन-वन डिज़ाइन जिसमें गुंबदनुमा बेस और 15", 17" या 20" फ़्लैट-पैनल डिस्प्ले की सुविधा है।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac6,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>eMac</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>जगह बचाने वाले गोलाकार फ़्रेम में अंर्तर्निहित फ़्लैट-स्क्रीन CRT के साथ ऑल-इन-वन डिज़ाइन।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>ऐल्यूमिनियम टावर-शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac7,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>ऐल्यूमिनियम टावर-शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac8,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल G5 iMac</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>PowerMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Power Mac</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>ऐल्यूमिनियम टावर-शैली का डेस्कटॉप कंप्यूटर।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ट्रे-लोडिंग या स्लॉट-लोडिंग ऑप्टिकल ड्राइव और चार एक्सपेंशन बे वाला G4 रैक-माउंटेड सर्वर अथवा एक एक्सपेंशन बे वाला G4 क्लस्टर नोड मॉडल।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac1,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G4</string>
+			<key>description</key>
+			<string>ट्रे-लोडिंग या स्लॉट-लोडिंग ऑप्टिकल ड्राइव और चार एक्सपेंशन बे वाला G4 रैक-माउंटेड सर्वर अथवा एक एक्सपेंशन बे वाला G4 क्लस्टर नोड मॉडल।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>RackMac3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>processor</key>
+			<string>G5</string>
+			<key>description</key>
+			<string>स्लॉट-लोडिंग CD-ROM या DVD-ROM ड्राइव और तीन एक्सपेंशन बे वाला G5 आधारित रैक-माउंटेड सर्वर कंप्यूटर अथवा बिना एक्सपेंशन बे वाला क्लस्टर नोड मॉडल।</string>
+		</dict>
+		<key>architecture</key>
+		<string>ppc</string>
+	</dict>
+	<key>Xserve1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2006 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5100 सीरीज़</string>
+			<key>description</key>
+			<string>Intel Xeon 5100 सीरीज़ आधारित रैक-माउंटेड सर्वर, 2006 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>Xserve2,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2008 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5400 सीरीज़</string>
+			<key>description</key>
+			<string>Intel Xeon 5400 Series आधारित रैक-माउंट किए गए सर्वर, 2008 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>Xserve3,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>Xserve</string>
+			<key>marketingModel</key>
+			<string>Xserve (2009 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Xeon 5500 सीरीज़</string>
+			<key>description</key>
+			<string>Intel Xeon 5500 सीरीज़ आधारित रैक-माउंटेड सर्वर, 2009 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac4,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल iMac Intel Core Duo।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac4,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core Duo</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल iMac Intel Core Duo।</string>
+		</dict>
+		<key>architecture</key>
+		<string>i386</string>
+	</dict>
+	<key>iMac5,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल iMac Intel Core 2 Duo।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac5,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल iMac Intel Core 2 Duo।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac6,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>फ़्लैट-पैनल iMac Intel Core 2 Duo।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac7,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (ऐल्यूमिनियम फ़्रेम) (2007 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20" या 24" फ़्लैट-पैनल iMac (ऐल्यूमिनियम फ़्रेम), Intel Core 2 Duo प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac8,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (ऐल्यूमिनियम फ़्रेम) (2008 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20" या 24" फ़्लैट-पैनल iMac (ऐल्यूमिनियम फ़्रेम), Intel Core 2 Duo प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac9,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (ऐल्यूमिनियम फ़्रेम) (2009 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>20" या 24" फ़्लैट-पैनल iMac (ऐल्यूमिनियम फ़्रेम), Intel Core 2 Duo प्रोसेसर के साथ।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac10,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core 2 Duo (वाइडस्क्रीन, 2009 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Core 2 Duo</string>
+			<key>description</key>
+			<string>21.5" या 27" iMac, वाइडस्क्रीन LED डिस्प्ले के साथ 2009 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>iMac Intel Core i5, Intel Core i7 (वाइडस्क्रीन, 2009 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27" iMac, क्वॉड कोर प्रोसेसर और वाइडस्क्रीन LED डिस्प्ले के साथ 2009 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5</string>
+			<key>description</key>
+			<string>21.5" iMac, वाइडस्क्रीन LED डिस्प्ले के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac11,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2010 के मध्य में)</string>
+			<key>processor</key>
+			<string>Intel Core i3, Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27" iMac, वाइडस्क्रीन LED डिस्प्ले के साथ 2010 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2011 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>21.5" iMac, Thunderbolt के साथ 2011 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac12,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2011 के शुरू में)</string>
+			<key>processor</key>
+			<string>Intel Core i5, Intel Core i7</string>
+			<key>description</key>
+			<string>27" iMac, Thunderbolt के साथ 2011 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2012 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2012 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2012 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 27" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2012 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac13,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2013 के शुरू में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i3</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2013 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 27" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2013 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i3</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2013 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac14,4</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2014 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2014 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac15,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2014 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 27" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2014 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2015 के अंत में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन LED-बैकलिट डिस्प्ले के साथ 2015 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac16,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2015 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन या Retina 4K डिस्प्ले के साथ 2015 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac17,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2015 के अंत में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5, क्वॉड-कोर Intel Core i7</string>
+			<key>description</key>
+			<string>iMac, 27" वाइडस्क्रीन या Retina 5K डिस्प्ले के साथ 2015 के अंत में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2017 के मध्य में)</string>
+			<key>processor</key>
+			<string>ड्युअल-कोर Intel Core i5</string>
+			<key>description</key>
+			<string>iMac, 21.5" वाइडस्क्रीन के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2017 के मध्य में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac, 21.5" Retina 4K डिस्प्ले के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac18,3</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2017 के मध्य में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac, 27" Retina 5K डिस्प्ले के साथ 2017 के मध्य में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>27" iMac (2019 के शुरू में)</string>
+			<key>processor</key>
+			<string>6-कोर Intel Core i5, 8-कोर Intel Core i9</string>
+			<key>description</key>
+			<string>iMac, 27" Retina 5K डिस्प्ले के साथ 2019 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMac19,2</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac</string>
+			<key>marketingModel</key>
+			<string>21.5" iMac (2019 के शुरू में)</string>
+			<key>processor</key>
+			<string>क्वॉड-कोर Intel Core i3, 6-कोर Intel Core i5/i7</string>
+			<key>description</key>
+			<string>iMac, 21.5" Retina 4K डिस्प्ले के साथ 2019 के शुरू में पेश।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+	<key>iMacPro1,1</key>
+	<dict>
+		<key>_LOCALIZABLE_</key>
+		<dict>
+			<key>model</key>
+			<string>iMac Pro</string>
+			<key>marketingModel</key>
+			<string>iMac Pro (2017 के अंत में)</string>
+			<key>processor</key>
+			<string>Intel Xeon W</string>
+			<key>description</key>
+			<string>Xeon W प्रोसेसर और Radeon Pro Vega ग्राफ़िक वाला iMac Pro 2017 के अंत में पेश किया गया।</string>
+		</dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+	</dict>
+</dict>
+</plist>

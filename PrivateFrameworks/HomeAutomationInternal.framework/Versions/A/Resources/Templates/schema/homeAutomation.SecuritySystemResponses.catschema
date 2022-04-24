@@ -1,0 +1,26 @@
+#CAT-SCHEMA 1.0
+
+name: homeAutomation.SecuritySystemResponses
+extends: homeAutomation.EntityResponses
+    
+properties:
+  alarmTriggeredResponses:
+    type: homeAutomation.SecuritySystemResponses
+    optional: no
+    description: Get a list of responses that is filtered only to those with the ALARM_TRIGGERED value.
+  disarmResponses:
+    type: homeAutomation.SecuritySystemResponses
+    optional: no
+    description: Get a list of responses that is filtered only to those with the DISARM value.
+  awayArmResponses:
+    type: homeAutomation.SecuritySystemResponses
+    optional: no
+    description: Get a list of responses that is filtered only to those with the AWAY_ARM value.
+  nightArmResponses:
+    type: homeAutomation.SecuritySystemResponses
+    optional: no
+    description: Get a list of responses that is filtered only to those with the NIGHT_ARM value.
+  stayArmResponses:
+    type: homeAutomation.SecuritySystemResponses
+    optional: no
+    description: Get a list of responses that is filtered only to those with the STAY_ARM value.

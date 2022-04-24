@@ -1,0 +1,37 @@
+graphName "SiriRecord"
+
+; -------------------------------------------------------------------------
+; Formats (Can be changed at init time)
+; -------------------------------------------------------------------------
+[def sampleRateIn 44100]
+[def numChannels 1]
+
+; -------------------------------------------------------------------------
+; Graph Ins and Outs
+; -------------------------------------------------------------------------
+in in
+out out
+
+; -------------------------------------------------------------------------
+; Boxes and AUs
+; -------------------------------------------------------------------------
+
+box AUChannelSelector ( aufx clsl appl ) 1 1
+box AUNBandEQ ( aufx nbeq appl ) 1 1
+box AUMeisterStueck ( aufx mstk appl ) 1 1
+box AUControlFreak ( aufx cfrk appl ) 1 1
+
+; -------------------------------------------------------------------------
+; DSP Graph topology
+; -------------------------------------------------------------------------
+
+wire ( in 0 ) ( AUChannelSelector 0 ) ([sampleRateIn] [numChannels])
+wire ( AUChannelSelector 0 ) ( AUNBandEQ 0 ) ([sampleRateIn] [numChannels])
+wire ( AUNBandEQ 0 ) ( AUMeisterStueck 0 ) ([sampleRateIn] [numChannels])
+wire ( AUMeisterStueck 0 ) ( AUControlFreak 0 ) ([sampleRateIn] [numChannels])
+wire ( AUControlFreak 0 ) ( out 0 ) ([sampleRateIn] [numChannels])
+
+; -------------------------------------------------------------------------
+; Graph parameters and properties
+; -------------------------------------------------------------------------
+

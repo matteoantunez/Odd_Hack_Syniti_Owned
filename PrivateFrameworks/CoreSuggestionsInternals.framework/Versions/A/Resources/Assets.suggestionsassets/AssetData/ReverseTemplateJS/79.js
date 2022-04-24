@@ -1,0 +1,1 @@
+new ReverseTemplateList([new ReverseTemplate("alaskaair.com-details-en",function(e){return/^Details on your/.test(e.subject)},function(e){var a={confirmationCode:/Confirmation code:/i,departs:/Departs/i,arrives:/Arrives/i,missingOut:/(\w+)\s*,\s*you're missing out/},i="en_US";return loadHelper("alaskaair.com-details-2017.js")(e,i,a)},"SGa9ee4d9a")]);

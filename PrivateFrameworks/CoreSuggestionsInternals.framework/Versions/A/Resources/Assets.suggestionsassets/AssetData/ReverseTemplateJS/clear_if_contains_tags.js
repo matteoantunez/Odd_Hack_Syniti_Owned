@@ -1,0 +1,1 @@
+(function(){return function(t,n){return/\[\/?t(?:[hrd]|able)\d+\]/.test(n)?t.getNullSpan():n}}).call();

@@ -1,0 +1,294 @@
+{
+    "color": [0.883, 0.588, 1.0],
+    "snippets":[
+        {
+            "name" : "RandomUnitVector",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["offset", "constant"],
+            "inParameterTypes" : ["UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "vfx_robust_normalize(vfx_random01_float3(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) - vfx_float3_half_one())",
+                "metal"   : "vfx_robust_normalize(vfx_random01_float3(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) - vfx_float3_half_one())"
+            }
+        },
+        {
+            "name" : "RandomBarycentricCoordinatesInTriangle",
+            "showInParameterDefaultValues" : ["*"],
+            "includeFunctions" : ["Random@Float3/randomBarycentricCoordinatesInTriangle"],
+            "inParameterNames" : ["offset", "constant"],
+            "inParameterTypes" : ["UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "swift" : "simd_float3.randomBarycentricCoordinatesInTriangle##(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)",
+                "c"     : "randomBarycentricCoordinatesInTriangle##(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)",
+                "metal" : "randomBarycentricCoordinatesInTriangle##(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#)"
+            }
+        },
+        {
+            "name" : "RandomPositionInsideCube",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "size", "size" : [1.0, 1.0, 1.0], "valueType" : "Float3" },
+                { "keyName" : "offset", "offset" : 0, "valueType" : "UInt32" }
+            ],
+            "inParameterNames" : ["size", "offset", "constant"],
+            "inParameterTypes" : ["Float3", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "2.0 * $size * (vfx_random01_float3(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)  - vfx_float3_half_one())",
+                "metal"   : "2.0 * $size * (vfx_random01_float3(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#)  - vfx_float3_half_one())"
+            }
+        },
+        {
+            "name" : "RandomPositionOnSphere",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "radius", "radius" : 1.0, "valueType" : "Float" }
+            ],
+            "inParameterNames" : ["radius", "offset", "constant"],
+            "inParameterTypes" : ["Float", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "$radius * vfx_robust_normalize(vfx_random01_float3(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) - vfx_float3_half_one())",
+                "metal"   : "$radius * vfx_robust_normalize(vfx_random01_float3(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) - vfx_float3_half_one())"
+            }
+        },
+        {
+            "name" : "RandomPositionInsideSphere",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "radius", "radius" : 1.0, "valueType" : "Float" }
+            ],
+            "inParameterNames" : ["radius", "offset", "constant"],
+            "inParameterTypes" : ["Float", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * ($radius) * vfx_robust_normalize(vfx_random01_float3(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE# + 1) - vfx_float3_half_one())",
+                "metal"   : "vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * ($radius) * vfx_robust_normalize(vfx_random01_float3(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE# + 1) - vfx_float3_half_one())"
+            }
+        },
+        {
+            "name" : "Random01",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["offset", "constant"],
+            "inParameterTypes" : ["UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift" : "vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)",
+                "metal"   : "vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#)"
+            }
+        },
+        {
+            "name" : "Random01",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["offset", "constant"],
+            "inParameterTypes" : ["UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "c|swift" : "vfx_random01_float2(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)",
+                "metal"   : "vfx_random01_float2(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#)"
+            }
+        },
+        {
+            "name" : "Random01",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["offset", "constant"],
+            "inParameterTypes" : ["UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "vfx_random01_float3(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)",
+                "metal"   : "vfx_random01_float3(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#)"
+            }
+        },
+        {
+            "name" : "Random01",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["offset", "constant"],
+            "inParameterTypes" : ["UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "vfx_random01_float4(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#)",
+                "metal"   : "vfx_random01_float4(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#)"
+            }
+        },
+        {
+            "name" : "WhiteNoiseFloat",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "intensity", "intensity" : 1.0, "valueType" : "Float" }
+            ],
+            "inParameterNames" : ["intensity", "offset", "constant"],
+            "inParameterTypes" : ["Float", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift" : "$intensity * (vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * 2 - 1)",
+                "metal"   : "$intensity * (vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * 2 - 1)"
+            }
+        },
+        {
+            "name" : "WhiteNoiseFloat2",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "intensity", "intensity" : [1.0, 1.0], "valueType" : "Float2" }
+            ],
+            "inParameterNames" : ["intensity", "offset", "constant"],
+            "inParameterTypes" : ["Float2", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "c|swift" : "$intensity * (vfx_random01_float2(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * vfx_float2_two() - vfx_float2_one())",
+                "metal"   : "$intensity * (vfx_random01_float2(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * vfx_float2_two() - vfx_float2_one())"
+            }
+        },
+        {
+            "name" : "WhiteNoiseFloat3",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "intensity", "intensity" : [1.0, 1.0, 1.0], "valueType" : "Float3" }
+            ],
+            "inParameterNames" : ["intensity", "offset", "constant"],
+            "inParameterTypes" : ["Float3", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift" : "$intensity * (vfx_random01_float3(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * vfx_float3_two() - vfx_float3_one())",
+                "metal"   : "$intensity * (vfx_random01_float3(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * vfx_float3_two() - vfx_float3_one())"
+            }
+        },
+        {
+            "name" : "WhiteNoiseFloat4",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "intensity", "intensity" : [1.0, 1.0, 1.0, 1.0], "valueType" : "Float4" }
+            ],
+            "inParameterNames" : ["intensity", "offset", "constant"],
+            "inParameterTypes" : ["Float4", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift" : "$intensity * (vfx_random01_float4(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * vfx_float4_two() - vfx_float4_one())",
+                "metal"   : "$intensity * (vfx_random01_float4(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * vfx_float4_two() - vfx_float4_one())"
+            }
+        },
+        {
+            "name" : "RandomInRange",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "inMin", "inMin" : 0, "valueType" : "Int" },
+                { "keyName" : "inMax", "inMax" : 1, "valueType" : "Int" },
+            ],
+            "previousInParameterNames" : ["min", "max", "offset", "constant"],
+            "inParameterNames" : ["inMin", "inMax", "offset", "constant"],
+            "inParameterTypes" : ["Int", "Int", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Int"],
+            "code" : {
+                "swift" : "$inMin + Int(vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * Float($inMax - $inMin))",
+                "c"     : "$inMin + int(vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * float($inMax - $inMin))",
+                "metal" : "$inMin + int(vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * float($inMax - $inMin))"
+            }
+        },
+        {
+            "name" : "RandomInRange",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterDefaultValues" : [
+                { "keyName" : "inMin", "inMin" : 0.0, "valueType" : "Float" },
+                { "keyName" : "inMax", "inMax" : 1.0, "valueType" : "Float" },
+            ],
+            "previousInParameterNames" : ["min", "max", "offset", "constant"],
+            "inParameterNames" : ["inMin", "inMax", "offset", "constant"],
+            "inParameterTypes" : ["Float", "Float", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$inMin + Float(vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * Float($inMax - $inMin))",
+                "c"     : "$inMin + float(vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * float($inMax - $inMin))",
+                "metal" : "$inMin + float(vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * float($inMax - $inMin))"
+            }
+        },
+        {
+            "name" : "RandomInRange",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["inRange", "offset", "constant"],
+            "inParameterTypes" : ["FloatRange", "UInt32", "Bool"],
+            "outParameterNames" : ["outVal"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "swift" : "$inRange.lowerBound + Float(vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * Float($inRange.upperBound - $inRange.lowerBound))",
+                "c"     : "$inRange.lower_bound + float(vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) * float($inRange.upper_bound - $inRange.lower_bound))",
+                "metal" : "$inRange.lower_bound + float(vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) * float($inRange.upper_bound - $inRange.lower_bound))"
+            }
+        },
+        {
+            "name" : "Probability",
+            "showInParameterDefaultValues" : ["*"],
+            "inParameterNames" : ["gate", "offset", "constant"],
+            "inParameterTypes" : ["Float", "UInt32", "Bool"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Bool"],
+            "code" : {
+                "c|swift" : "$gate > 0 && ($gate >= 1 || vfx_random01(currentSeed + ($constant ? 0 : vfx_script_clock_simulation_index(scriptContext)) + $offset + #UID_INDEX_VALUE#) < $gate)",
+                "metal"   : "$gate > 0 && ($gate >= 1 || vfx_random01(currentSeed + ($constant ? 0 : scriptContext.simulationIndex) + $offset + #UID_INDEX_VALUE#) < $gate)"
+            }
+        },
+        {
+            "name" : "PerlinNoise",
+            "showInParameterDefaultValues" : ["*"],
+            "includeFunctions" : ["Random@Float/perlinNoise"],
+            "inParameterNames" : ["x"],
+            "inParameterTypes" : ["Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float"],
+            "code" : {
+                "c|swift|metal" : "perlinNoise##($x)"
+            }
+        },
+        {
+            "name" : "PerlinNoise",
+            "showInParameterDefaultValues" : ["*"],
+            "includeFunctions" : ["Random@Float2/perlinNoise"],
+            "inParameterNames" : ["x", "y"],
+            "inParameterTypes" : ["Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float2"],
+            "code" : {
+                "c|swift|metal" : "perlinNoise##($x, $y)"
+            }
+        },
+        {
+            "name" : "PerlinNoise",
+            "showInParameterDefaultValues" : ["*"],
+            "includeFunctions" : ["Random@Float3/perlinNoise"],
+            "inParameterNames" : ["x", "y", "z"],
+            "inParameterTypes" : ["Float3", "Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float3"],
+            "code" : {
+                "c|swift|metal" : "perlinNoise##($x, $y, $z)"
+            }
+        },
+        {
+            "name" : "PerlinNoise",
+            "showInParameterDefaultValues" : ["*"],
+            "includeFunctions" : ["Random@Float4/perlinNoise"],
+            "inParameterNames" : ["x", "y", "z", "w"],
+            "inParameterTypes" : ["Float3", "Float3", "Float3", "Float3"],
+            "outParameterNames" : ["out"],
+            "outParameterTypes" : ["Float4"],
+            "code" : {
+                "c|swift|metal" : "perlinNoise##($x, $y, $z, $w)"
+            }
+        }
+    ]
+}

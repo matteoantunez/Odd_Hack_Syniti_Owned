@@ -1,0 +1,522 @@
+{
+  "layer_shapes" : {
+    "id_features_rgb\/4-densenet\/5-concat" : {
+      "k" : 112,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "pose-regression\/1-fully-connected\/add" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "repeat" : {
+      "k" : 2,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "pose-regression\/0-fully-connected\/relu" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "network-inputs\/transpose_3:0_bridge" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/7-densenet\/7-concat" : {
+      "k" : 128,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "network-inputs\/transpose:0_bridge" : {
+      "k" : 3,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "id_features_rgb\/7-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "latents_output" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/7-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "add_1" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/7-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "id_features_rgb\/8-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "id_features_rgb\/15-conv-block\/relu" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "detach_1" : {
+      "k" : 51,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/1-densenet\/1-concat" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "id_features_rgb\/2-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "concatenate_2" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 2
+    },
+    "id_features_rgb\/7-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "concatenate" : {
+      "k" : 514,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/4-densenet\/3-concat" : {
+      "k" : 96,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "id_features_rgb\/10-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/13-densenet\/7-concat" : {
+      "k" : 192,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "network-inputs\/transpose_2:0_bridge" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/7-densenet\/5-concat" : {
+      "k" : 112,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "blendshape-regression\/0-fully-connected\/relu" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/9-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/3-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "id_features_rgb\/12-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "id_features_rgb\/10-densenet\/7-concat" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/13-densenet\/5-concat" : {
+      "k" : 160,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "id_features_rgb\/13-densenet\/0-conv-block\/conv-3x3-64-32-variables\/conv-3x3-64-32-variables\/relu" : {
+      "k" : 32,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "slice" : {
+      "k" : 51,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "identity_latents_regression_neutral\/0-fully-connected\/relu" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/4-densenet\/1-concat" : {
+      "k" : 80,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "id_features_rgb\/10-densenet\/5-concat" : {
+      "k" : 112,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "depth_drop_in_regressor\/0-fully-connected\/relu" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "identity_mf_fusion_neutral\/0-fully-connected\/relu" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/13-densenet\/6-conv-block\/conv-3x3-160-32-variables\/conv-3x3-160-32-variables\/relu" : {
+      "k" : 32,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "network-inputs\/transpose_1:0_bridge" : {
+      "k" : 51,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/14-conv-block\/relu" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 2
+    },
+    "id_features_rgb\/7-densenet\/3-concat" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "identity_latents_regression_neutral\/1-fully-connected\/add" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/1-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "depth_drop_in_regressor\/1-fully-connected\/add" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/1-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "id_features_rgb\/13-densenet\/3-concat" : {
+      "k" : 128,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "detach" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/13-densenet\/2-conv-block\/conv-3x3-96-32-variables\/conv-3x3-96-32-variables\/relu" : {
+      "k" : 32,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "slice_1" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "neutral_pca_subset_coeffs_output" : {
+      "k" : 30,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/1-densenet\/5-concat" : {
+      "k" : 112,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "id_features_rgb\/13-densenet\/4-conv-block\/conv-3x3-128-32-variables\/conv-3x3-128-32-variables\/relu" : {
+      "k" : 32,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "id_features_rgb\/10-densenet\/3-concat" : {
+      "k" : 96,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/5-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "concatenate_1" : {
+      "k" : 568,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/11-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/1-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "id_features_rgb\/13-densenet\/1-concat" : {
+      "k" : 96,
+      "w" : 4,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 4
+    },
+    "id_features_rgb\/10-densenet\/6-conv-block\/conv-3x3-112-16-variables\/conv-3x3-112-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/7-densenet\/1-concat" : {
+      "k" : 80,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "id_features_rgb\/6-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "id_features_rgb\/10-densenet\/1-concat" : {
+      "k" : 80,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/4-densenet\/2-conv-block\/conv-3x3-80-16-variables\/conv-3x3-80-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "id_features_rgb\/4-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "id_features_rgb\/0-conv-block\/relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "blendshape-regression\/1-fully-connected\/add" : {
+      "k" : 51,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "multiply" : {
+      "k" : 51,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/1-densenet\/3-concat" : {
+      "k" : 96,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "id_features_rgb\/10-densenet\/4-conv-block\/conv-3x3-96-16-variables\/conv-3x3-96-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "id_features_rgb\/10-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 8,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 8
+    },
+    "add" : {
+      "k" : 51,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "multiply_1" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "id_features_rgb\/4-densenet\/0-conv-block\/conv-3x3-64-16-variables\/conv-3x3-64-16-variables\/relu" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    }
+  }
+}

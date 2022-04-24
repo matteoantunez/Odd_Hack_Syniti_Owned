@@ -1,0 +1,47 @@
+//===-- metal_pack --------------------------------------------------------===//
+// Copyright (c) 2014-2016 Apple Inc. All rights reserved
+//===----------------------------------------------------------------------===//
+
+#ifndef __METAL_PACK
+#define __METAL_PACK
+
+namespace metal {
+  // 5.11 Pack and Unpack Functions
+  METAL_ASM vec<float,4> unpack_unorm4x8_to_float(uint x) __asm("air.unpack.unorm4x8.v4f32");
+  METAL_ASM vec<float,4> unpack_snorm4x8_to_float(uint x) __asm("air.unpack.snorm4x8.v4f32");
+  METAL_ASM vec<half,4> unpack_unorm4x8_to_half(uint x) __asm("air.unpack.unorm4x8.v4f16");
+  METAL_ASM vec<half,4> unpack_snorm4x8_to_half(uint x) __asm("air.unpack.snorm4x8.v4f16");
+
+  METAL_ASM vec<float,4> unpack_unorm4x8_srgb_to_float(uint x) __asm("air.unpack.unorm4x8.srgb.v4f32");
+  METAL_ASM vec<half,4> unpack_unorm4x8_srgb_to_half(uint x) __asm("air.unpack.unorm4x8.srgb.v4f16");
+
+  METAL_ASM vec<float,2> unpack_unorm2x16_to_float(uint x) __asm("air.unpack.unorm2x16.v2f32");
+  METAL_ASM vec<float,2> unpack_snorm2x16_to_float(uint x) __asm("air.unpack.snorm2x16.v2f32");
+  METAL_ASM vec<half,2> unpack_unorm2x16_to_half(uint x) __asm("air.unpack.unorm2x16.v2f16");
+  METAL_ASM vec<half,2> unpack_snorm2x16_to_half(uint x) __asm("air.unpack.snorm2x16.v2f16");
+
+  METAL_ASM vec<float,4> unpack_unorm10a2_to_float(uint x) __asm("air.unpack.unorm.rgb10a2.v4f32");
+  METAL_ASM vec<float,3> unpack_unorm565_to_float(ushort x) __asm("air.unpack.unorm.rgb565.v3f32");
+  METAL_ASM vec<half,4> unpack_unorm10a2_to_half(uint x) __asm("air.unpack.unorm.rgb10a2.v4f16");
+  METAL_ASM vec<half,3> unpack_unorm565_to_half(ushort x) __asm("air.unpack.unorm.rgb565.v3f16");
+
+  METAL_ASM uint pack_float_to_unorm4x8(vec<float,4> x) __asm("air.pack.unorm4x8.v4f32");
+  METAL_ASM uint pack_float_to_snorm4x8(vec<float,4> x) __asm("air.pack.snorm4x8.v4f32");
+  METAL_ASM uint pack_half_to_unorm4x8(vec<half,4> x) __asm("air.pack.unorm4x8.v4f16");
+  METAL_ASM uint pack_half_to_snorm4x8(vec<half,4> x) __asm("air.pack.snorm4x8.v4f16");
+
+  METAL_ASM uint pack_float_to_srgb_unorm4x8(vec<float,4> x) __asm("air.pack.unorm4x8.srgb.v4f32");
+  METAL_ASM uint pack_half_to_srgb_unorm4x8(vec<half,4> x) __asm("air.pack.unorm4x8.srgb.v4f16");
+
+  METAL_ASM uint pack_float_to_unorm2x16(vec<float,2> x) __asm("air.pack.unorm2x16.v2f32");
+  METAL_ASM uint pack_float_to_snorm2x16(vec<float,2> x) __asm("air.pack.snorm2x16.v2f32");
+  METAL_ASM uint pack_half_to_unorm2x16(vec<half,2> x) __asm("air.pack.unorm2x16.v2f16");
+  METAL_ASM uint pack_half_to_snorm2x16(vec<half,2> x) __asm("air.pack.snorm2x16.v2f16");
+
+  METAL_ASM uint pack_float_to_unorm10a2(vec<float,4>) __asm("air.pack.unorm.rgb10a2.v4f32");
+  METAL_ASM ushort pack_float_to_unorm565(vec<float,3>) __asm("air.pack.unorm.rgb565.v3f32");
+  METAL_ASM uint pack_half_to_unorm10a2(vec<half,4>) __asm("air.pack.unorm.rgb10a2.v4f16");
+  METAL_ASM ushort pack_half_to_unorm565(vec<half,3>) __asm("air.pack.unorm.rgb565.v3f16");
+} // namespace metal
+
+#endif // __METAL_PACK

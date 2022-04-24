@@ -1,0 +1,1 @@
+(function(){return function(e,n){for(var r,t,i=n.getSpan(),a=0;a<e.meetingID.length&&!r;a++){var l=i.innerCapture(e.meetingID[a],1);r=l.exists()?l:null}for(a=0;a<e.meetingPassword.length&&!t;a++){var s=i.innerCapture(e.meetingPassword[a],1);t=s.exists()?s:null}return[r,t]}}).call();

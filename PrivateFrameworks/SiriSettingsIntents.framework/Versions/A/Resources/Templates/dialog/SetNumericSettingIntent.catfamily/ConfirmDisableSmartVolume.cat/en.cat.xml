@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en" id="SetNumericSettingIntent#ConfirmDisableSmartVolume">
+    <conditions/>
+    <all>
+        <first>
+            <dialog condition="action.isMinimum">OK, this is as quiet as it gets.</dialog>
+            <dialog condition="action.isMaximum">OK, this is as loud as it gets.</dialog>
+            <dialog condition="isStickyOffsetEnabledUp">Ok, I'll remember to speak up.</dialog>
+            <dialog condition="isStickyOffsetEnabledDown">Ok, I'll remember to speak softer.</dialog>
+            <random condition="action.isIncrease">
+                <dialog>I’ll speak louder.</dialog>
+                <dialog>I’ll speak up.</dialog>
+            </random>
+            <random condition="action.isDecrease">
+                <dialog>I’ll speak softer.</dialog>
+                <dialog>I’ll dial it down.</dialog>
+            </random>
+            <dialog condition="action.isSetValue">I'm already speaking at <var name="action.value"/>.</dialog>
+        </first>
+        
+        <dialog>Instead of adjusting the volume of my voice automatically, would you like me to speak at the same level as the media on this HomePod?</dialog>
+    </all>
+    <fallback/>
+    <phrases/>
+</cat>
