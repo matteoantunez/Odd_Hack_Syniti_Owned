@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Packages</key>
+	<array>
+		<dict>
+			<key>HashAlgorithm</key>
+			<integer>0</integer>
+			<key>Identifier</key>
+			<string>com.apple.pkg.InstallAssistant.macOSMonterey</string>
+			<key>Size</key>
+			<integer>12225260436</integer>
+			<key>URL</key>
+			<string>InstallAssistant.pkg</string>
+			<key>Version</key>
+			<string>21.4.258</string>
+		</dict>
+		<dict>
+			<key>HashAlgorithm</key>
+			<integer>0</integer>
+			<key>Identifier</key>
+			<string>com.apple.pkg.IncompatibleAppList.12_0.16U2172</string>
+			<key>Size</key>
+			<integer>54136</integer>
+			<key>URL</key>
+			<string>OSX_12_0_IncompatibleAppList.pkg</string>
+			<key>Version</key>
+			<string>1.0.0.0.1.1621908336</string>
+		</dict>
+	</array>
+</dict>
+</plist>
