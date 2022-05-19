@@ -8,3 +8,5 @@ Update (05-17-2022): Hack is based in Pearl, a known hacking language with one o
 [Pearl Archive](cpan.org)
 
 [Pearl Mongers](Pm.org)
+
+[ Marines Force 30 'Plan' ](https://www.marines.mil/0)
